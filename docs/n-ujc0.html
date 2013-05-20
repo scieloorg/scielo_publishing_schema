@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Author Note Group</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;author-notes&gt;</h1><h1 class="elementname">Author Note Group</h1></div><div class="definition"><p class="para">Container element for notes about the article’s contributors.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Usage:</strong> Typical <a href="n-ujc0.html" target="main" title="Author Note Group"><span class="elementtag">&lt;author-notes&gt;</span></a>  include correspondence notes and other footnotes to authors (and potentially about other contributors). Such footnotes/notes may name one of the authors a corresponding author, provide the author affiliation or current contact information, explain that the person has changed organizations, or provide other contributor-related material.</p><p class="para"><strong>Best Practice:</strong> References to these footnotes <a href="n-g3w0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a>, as to any other footnote, should be made using the <a href="n-5wr0.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> element.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-kmj0.html" target="main"><span class="attrtag">rid</span></a> <a href="n-kmj0.html" target="main"><span class="attrname">Reference to an Identifier</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para"><strong>Best Practice:</strong> The current model allows identification of the corresponding contributor either by explicit tagging using a <a href="n-8p80.html" target="main" title="Correspondence Information"><span class="elementtag">&lt;corresp&gt;</span></a> element or by providing a footnote <a href="n-g3w0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> concerning the contributor. While this Tag Set supports both practices, best practice is to tag the correspondent information using the <a href="n-8p80.html" target="main" title="Correspondence Information"><span class="elementtag">&lt;corresp&gt;</span></a> element.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  author-notes <a href="n-f290.html" target="main" title="Author Notes Model"><span class="petag">%author-notes-model;</span></a>                         &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, title?, (corresp | fn | p)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-sxv0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li><a href="n-3z60.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-3z60.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one</li><li>One or more of any of:<ul class="bullist"><li><a href="n-8p80.html" target="main" title="Correspondence Information"><span class="elementtag">&lt;corresp&gt;</span></a> <a href="n-8p80.html" target="main" title="<corresp&gt;"><span class="elementname">Correspondence Information</span></a></li><li><a href="n-g3w0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-g3w0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a></li><li><a href="n-y9s0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-y9s0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;...&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Hajnsdorf&lt;/surname&gt;
+&lt;given-names&gt;Eliane&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;R&amp;#x00E9;gnier&lt;/surname&gt;
+&lt;given-names&gt;Philippe&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="author-notes" rid="FN150"&gt;&amp;#x002A;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;Institut de Biologie Physico-Chimique, 13 rue Pierre et Marie Curie,
+75005 Paris, France&lt;/aff&gt;
+<strong><span class="focus">&lt;author-notes&gt;
+&lt;fn id="FN150"&gt;&lt;p&gt;To whom reprint requests should be addressed. E-mail:
+&lt;email&gt;regnier@ibpc.fr&lt;/email&gt;.&lt;/p&gt;&lt;/fn&gt;
+&lt;fn fn-type="com"&gt;&lt;p&gt;Communicated by Marianne Grunberg-Manago, Institute
+of Physico-Chemical Biology, Paris, France&lt;/p&gt;&lt;/fn&gt;
+&lt;/author-notes&gt;</span></strong>
+...
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Access Date for Cited Work</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;access-date&gt;</h1><h1 class="elementname">Access Date for Cited Work</h1></div><div class="definition"><p class="para">This element is deprecated; avoid using it. Use <a href="n-8aa0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a>.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">The <span class="elementtag">&lt;access-date&gt;</span> element has been replaced by the <a href="n-8aa0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> element with a <a href="n-vfh0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute 
+value “<tt>access-date</tt>”) that 
+records the date on which the cited work was examined.</p><p class="para"> This element is an artifact, now used only within the <a href="n-vxs0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a> element, which is deprecated. Use of this
+            element is therefore also deprecated.</p><p class="para">Some online resources are changing so quickly that a citation to the resource is not complete without the date on which the cited resource was examined, since a day before or a day later, the relevant material might be different. The <a href="n-8aa0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> element is now used to record such information inside <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> and <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> elements.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Use <a href="n-8aa0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> to record information such as this inside a <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  access-date  (#PCDATA <a href="n-eab0.html" target="main" title="Access Date Elements"><span class="petag">%access-date-elements;</span></a>)*            &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-vxs0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><p class="para">Used only in <a href="n-vxs0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>,
+an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;nlm-citation publisher-type="book"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;
+&lt;surname&gt;Lawrence&lt;/surname&gt;
+&lt;given-names&gt;Ruth A&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;source&gt;A review of the medical benefits and contraindications
+to breastfeeding in the United States [Internet]&lt;/source&gt;
+&lt;year iso-8601-date="1997-10"&gt;1997&lt;/year&gt;
+&lt;month&gt;10&lt;/month&gt;
+<strong><span class="focus">&lt;access-date&gt;cited 2000 Apr 24&lt;/access-date&gt;</span></strong>
+&lt;publisher-loc&gt;Arlington (VA)&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;National Center for Education in Maternal
+and Child Health&lt;/publisher-name&gt;
+&lt;fpage&gt;40&lt;/fpage&gt;
+&lt;comment&gt;Available from:
+&lt;ext-link ext-link-type="url" xlink:href="www.ncemch.org/pubs/PDFs/
+breastfeedingTIB.pdf"&gt;http://www.ncemch.org/pubs/PDFs/
+breastfeedingTIB.pdf&lt;/ext-link&gt;
+&lt;/comment&gt;
+&lt;/nlm-citation&gt;
+&lt;/ref&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-references1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

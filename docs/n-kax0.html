@@ -1,0 +1,41 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: History: Document History</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;history&gt;</h1><h1 class="elementname">History: Document History</h1></div><div class="definition"><p class="para">Container element for dates related to the processing history of the document (for example,
+            received date, accepted date).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Best Practice:</strong> The dates inside the <a href="n-kax0.html" target="main" title="History: Document History"><span class="elementtag">&lt;history&gt;</span></a> element are used to preserve events <em>other than publication date(s)</em> in the life cycle of the article. Publication dates are considered to be an important part of the article metadata and are tagged using the <a href="n-9a70.html" target="main" title="Publication Date"><span class="elementtag">&lt;pub-date&gt;</span></a> element. History dates include received date(s), accepted date(s), reviewed date(s), revision date(s), and other dates that may be important to the publisher, but are not a likely part of the article metadata for searching, building a DOI, etc.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  history      <a href="n-i4k2.html" target="main" title="History Model"><span class="petag">%history-model;</span></a>                              &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(date)+</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para"><a href="n-z3a0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a> <a href="n-z3a0.html" target="main" title="<date&gt;"><span class="elementname">Date</span></a>, one or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><p class="para">Article history with dates typically important in the lifecycle of an article:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+...
+&lt;pub-date pub-type="epub" iso-8601-date="1998-09-17"&gt;
+&lt;day&gt;17&lt;/day&gt;&lt;month&gt;09&lt;/month&gt;
+&lt;year&gt;1998&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;pub-date pub-type="ppub" iso-8601-date="1998-11-09"&gt;
+&lt;day&gt;09&lt;/day&gt;&lt;month&gt;11&lt;/month&gt;
+&lt;year&gt;1998&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;31&lt;/volume&gt;
+&lt;issue&gt;187&lt;/issue&gt;
+&lt;fpage&gt;483&lt;/fpage&gt;
+&lt;lpage&gt;501&lt;/lpage&gt;
+<strong><span class="focus">&lt;history&gt;
+&lt;date date-type="received" iso-8601-date="1998-01-05"&gt;
+&lt;day&gt;05&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1998&lt;/year&gt;&lt;/date&gt;
+&lt;date date-type="rev-request" iso-8601-date="1998-03-14"&gt;
+&lt;day&gt;14&lt;/day&gt;
+&lt;month&gt;03&lt;/month&gt;
+&lt;year&gt;1998&lt;/year&gt;&lt;/date&gt;
+&lt;date date-type="rev-received" iso-8601-date="1998-05-24"&gt;
+&lt;day&gt;24&lt;/day&gt;
+&lt;month&gt;05&lt;/month&gt;
+&lt;year&gt;1998&lt;/year&gt;&lt;/date&gt;
+&lt;date date-type="accepted" iso-8601-date="1998-06-06"&gt;
+&lt;day&gt;06&lt;/day&gt;
+&lt;month&gt;06&lt;/month&gt;
+&lt;year&gt;1998&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;</span></strong>
+...
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

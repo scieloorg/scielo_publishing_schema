@@ -1,0 +1,53 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Edition Statement, Cited</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;edition&gt;</h1><h1 class="elementname">Edition Statement, Cited</h1></div><div class="definition"><p class="para"> The full edition statement for a cited or referenced publication.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class="elementtag">&lt;edition&gt;</span>, see <a href="n-buw2.html#pub-tag-vol-edt">Ordinal Numbers</a>.</p><p class="para">This element is used in bibliographic references (<a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>).</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-48i0.html" target="main"><span class="attrtag">designator</span></a> <a href="n-48i0.html" target="main"><span class="attrname">Designator of the Edition</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  edition      (#PCDATA <a href="n-dsz0.html" target="main" title="Edition Elements"><span class="petag">%edition-elements;</span></a>)*                &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-vxs0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-w9t0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pd70.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-f970.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style citation (punctuation and spacing removed):
+</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref id="B6"&gt;
+&lt;element-citation&gt;
+&lt;collab&gt;National Committee for Clinical Laboratory
+Standards&lt;/collab&gt;
+&lt;source&gt;Performance standards for antimicrobial disk
+susceptibility tests&lt;/source&gt;
+&lt;comment&gt;Approved standard&lt;/comment&gt;
+<strong><span class="focus">&lt;edition&gt;7&lt;/edition&gt;</span></strong>
+&lt;fpage&gt;M2&lt;/fpage&gt;
+&lt;lpage&gt;A7&lt;/lpage&gt;
+&lt;publisher-loc&gt;Wayne, Pa&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;National Committee for Clinical Laboratory
+Standards&lt;/publisher-name&gt;
+&lt;year iso-8601-date="2000"&gt;2000&lt;/year&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style citation (punctuation and spacing preserved):
+</p><div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;...&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...
+&lt;ref-list&gt;
+&lt;title&gt;REFERENCES&lt;/title&gt;
+...
+&lt;ref id="B6"&gt;
+&lt;mixed-citation&gt;
+&lt;collab&gt;National Committee for Clinical Laboratory
+Standards&lt;/collab&gt;.
+&lt;source&gt;Performance standards for antimicrobial disk
+susceptibility tests&lt;/source&gt;.
+&lt;comment&gt;Approved standard&lt;/comment&gt;.
+<strong><span class="focus">&lt;edition&gt;7&lt;/edition&gt;</span></strong>&lt;sup&gt;th&lt;/sup&gt; ed.
+p. &lt;fpage&gt;M2&lt;/fpage&gt;&amp;ndash;
+&lt;lpage&gt;A7&lt;/lpage&gt;.
+&lt;publisher-loc&gt;Wayne, Pa&lt;/publisher-loc&gt;:
+&lt;publisher-name&gt;National Committee for Clinical
+Laboratory Standards&lt;/publisher-name&gt;;
+&lt;year iso-8601-date="2000"&gt;2000&lt;/year&gt;.
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-references1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

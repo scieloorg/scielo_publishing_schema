@@ -1,0 +1,46 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Phone Number: in an Address</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;phone&gt;</h1><h1 class="elementname">Phone Number: in an Address</h1></div><div class="definition"><p class="para">Portion of an address which contains a phone number.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The elements used in an address may include the address class elements: <a href="n-gp00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-p980.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href="n-piu0.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a>, <a href="n-3fx0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>, and <a href="n-gft0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a> and the address linking class elements: <a href="n-ptu0.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a>, <a href="n-gnu0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>, and <a href="n-9bd0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  phone        (#PCDATA <a href="n-bx32.html" target="main" title="Phone Number Elements"><span class="petag">%phone-elements;</span></a>)*                  &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-wz00.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>, <a href="n-gp00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-ya50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-8p80.html" target="main" title="Correspondence Information"><span class="elementtag">&lt;corresp&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Silverstein&lt;/surname&gt;
+&lt;given-names&gt;Michael Q.&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;xref ref-type="aff" rid="affDorelco"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Taylor&lt;/surname&gt;
+&lt;given-names&gt;James C.&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;degrees&gt;Ph D&lt;/degrees&gt;
+&lt;aff id="affDorelco"&gt;Dorelco Corporation Ltd.&lt;/aff&gt;
+&lt;aff id="IIDR"&gt;
+&lt;institution&gt;Institute of Infectious Disease Research
+&lt;/institution&gt;
+&lt;addr-line&gt;Oberlin, Washington 96204;&lt;/addr-line&gt;
+&lt;/aff&gt;
+&lt;aff id="UWW"&gt;
+&lt;institution&gt;Department of Pathobiology,
+University of WallieWash&lt;/institution&gt;
+&lt;addr-line&gt;Oberlin, Washington 96204&lt;/addr-line&gt;
+&lt;/aff&gt;
+&lt;aff&gt;
+&lt;institution&gt;University of Kuopio&lt;/institution&gt;
+&lt;addr-line&gt;Kuopio&lt;/addr-line&gt;
+&lt;country&gt;Finland&lt;/country&gt;
+&lt;/aff&gt;
+&lt;address&gt;
+&lt;institution&gt;Kalakukko Corporation&lt;/institution&gt;
+&lt;addr-line&gt;17 West Jefferson St.&lt;/addr-line&gt;
+&lt;addr-line&gt;Suite 207&lt;/addr-line&gt;
+&lt;addr-line&gt;New South Finland, MD 20856.&lt;/addr-line&gt;
+<strong><span class="focus">&lt;phone&gt;(301) 754-5766&lt;/phone&gt;</span></strong>
+&lt;fax&gt;(301) 754-5765&lt;/fax&gt;
+&lt;email&gt;jct@kalakukko.com.fi&lt;/email&gt;
+&lt;uri&gt;http://www.kalakukko.com&lt;/uri&gt;
+&lt;/address&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;...
+&lt;/article-meta&gt;...
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

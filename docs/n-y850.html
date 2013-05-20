@@ -1,0 +1,37 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Table Column Group (NISO JATS table model)</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;colgroup&gt;</h1><h1 class="elementname">Table Column Group (NISO JATS table model)</h1></div><div class="definition"><p class="para">A container element to hold column descriptions (element <a href="n-j550.html" target="main" title="Table Column (NISO JATS table model)"><span class="elementtag">&lt;col&gt;</span></a>) for a group of columns in a table—or for all of the columns in the table if there is only one <a href="n-y850.html" target="main" title="Table Column Group (NISO JATS table model)"><span class="elementtag">&lt;colgroup&gt;</span></a> in the table. Attributes on the <a href="n-y850.html" target="main" title="Table Column Group (NISO JATS table model)"><span class="elementtag">&lt;colgroup&gt;</span></a> apply to all of the columns in the group unless over-ridden on the <a href="n-j550.html" target="main" title="Table Column (NISO JATS table model)"><span class="elementtag">&lt;col&gt;</span></a>. (This element is based on and intended to be converted easily to the XHMTL <tt>col</tt> element.)</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">A container element to hold column descriptions (element <a href="n-j550.html" target="main" title="Table Column (NISO JATS table model)"><span class="elementtag">&lt;col&gt;</span></a>) for a group of columns in a table — or for all of the columns in the table if there is only one <a href="n-y850.html" target="main" title="Table Column Group (NISO JATS table model)"><span class="elementtag">&lt;colgroup&gt;</span></a> in the table. Attributes on the <a href="n-y850.html" target="main" title="Table Column Group (NISO JATS table model)"><span class="elementtag">&lt;colgroup&gt;</span></a> apply to all of the columns in the group unless overridden on the <a href="n-j550.html" target="main" title="Table Column (NISO JATS table model)"><span class="elementtag">&lt;col&gt;</span></a>.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-2dr0.html" target="main"><span class="attrtag">align</span></a> <a href="n-2dr0.html" target="main"><span class="attrname">Horizontal Alignment (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-nxh0.html" target="main"><span class="attrtag">char</span></a> <a href="n-nxh0.html" target="main"><span class="attrname">Table Cell Alignment Character (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-54h0.html" target="main"><span class="attrtag">charoff</span></a> <a href="n-54h0.html" target="main"><span class="attrname">Table Character Offset (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-24p0.html" target="main"><span class="attrtag">span</span></a> <a href="n-24p0.html" target="main"><span class="attrname">Span (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">style</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Style (NISO JATS table model; MathML 2.0 Tag Set)</span></a></h5><h5 class="header"><a href="n-bmp0.html" target="main"><span class="attrtag">valign</span></a> <a href="n-bmp0.html" target="main"><span class="attrname">Vertical Alignment (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-acq0.html" target="main"><span class="attrtag">width</span></a> <a href="n-acq0.html" target="main"><span class="attrname">Width (NISO JATS table model; MathML 2.0 Tag Set)</span></a></h5></div><div class="contentmodel"><h2 class="header first">Expanded Content Model</h2><p class="contentdesc">(col)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para"><a href="n-j550.html" target="main" title="Table Column (NISO JATS table model)"><span class="elementtag">&lt;col&gt;</span></a> <a href="n-j550.html" target="main" title="<col&gt;"><span class="elementname">Table Column (NISO JATS table model)</span></a>, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-6fn0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="TX0.180"&gt;
+&lt;label&gt;Table 3&lt;/label&gt;
+&lt;caption&gt;&lt;p&gt;Patient costs for institutional
+care at the end of scheduled follow up&lt;/p&gt;&lt;/caption&gt;
+&lt;table border="1"&gt;
+<strong><span class="focus">&lt;colgroup&gt;
+&lt;col span="1"/&gt;
+&lt;col align="char" char="," charoff="50%" span="1"/&gt;
+&lt;/colgroup&gt;</span></strong>
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Cost per patient&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1997&lt;/td&gt;
+&lt;td&gt;$8,250&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2000&lt;/td&gt;
+&lt;td&gt;$31,400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;$125,600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-xhtml-table-1.mod</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

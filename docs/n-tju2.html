@@ -1,0 +1,163 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Two Citation Styles</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h4 class="header">Two Citation Styles</h4><p class="para">This Tag Set allows citations to be tagged in two markedly different ways. Neither
+            is superior to the other in supporting searching or making the citations into live
+            links. Neither is inherently more semantically detailed than the other. One, the
+            “mixed” style, mixes tags and text inside the citation content, and thus
+            can preserve more closely the element order, punctuation, and spacing found in an
+            original printed document or created editorially. The other, the “element”
+            style, has only element content and does not contain any untagged text, which makes it
+            possible to regularize the punctuation for references across a publication,
+            publisher’s content management system, or archive’s content. It also
+            requires that spacing and punctuation be created in formatting the content for
+            display.</p><div class="section"><a name="pub-tag-cit-mixed"></a><h4 class="header">Mixed Style Citations</h4><p class="para">The “mixed” style is named because its content is what XML calls
+                “mixed content”, a mixture of text and embedded elements. In this
+              style, the citation is captured exactly as it was found in the print, complete with
+              punctuation marks, line breaks, spaces, etc. It would be possible to tag a citation
+              with just the <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> element
+              and text inside, though this is not best practice.</p><div class="codeblock"><pre> &lt;mixed-citation&gt;Petitti DB, Crooks VC, Buckwalter JG, Chiu V. Blood 
+ pressure levels before dementia. Arch Neurol. 2005 Jan; 62 (1): 
+ 112–116.&lt;/mixed-citation&gt;</pre></div><p class="para">Although this Tag Set does not enforce it, best practice is to tag as many of the
+              following elements as possible within a citation to a journal article, so that PubMed
+              Central, CrossRef, or other matching services can make the journal citation into a
+              live link: <ul class="bullist"><li>
+                    <a href="n-jsc0.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>
+                  </li><li>
+                    <a href="n-bff0.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a> (journal title)</li><li>
+                    <a href="n-55r0.html" target="main" title="Volume Number"><span class="elementtag">&lt;volume&gt;</span></a> (volume number)</li><li>
+                    <a href="n-taw0.html" target="main" title="First Page"><span class="elementtag">&lt;fpage&gt;</span></a> (first page of the
+                    article)</li><li>
+                    <a href="n-qjv0.html" target="main" title="Last Page"><span class="elementtag">&lt;lpage&gt;</span></a> (last page of the
+                    article)</li><li>
+                    <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> (at least the surname of the
+                    primary author)</li><li>Publication date (using one or more of the date elements such as
+                      <a href="n-mvr0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-qi40.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-wwa0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>).</li></ul>
+            </p><p class="para">In order to make a citation into a live link, as much of this author and date
+              information as is available should be preserved, even if it is not possible to tag all
+              the elements just named. The most important date tag is <a href="n-mvr0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, and it should always be tagged if possible,
+              for example, <tt>&lt;year&gt;2003&lt;/year&gt;</tt>. The <a href="n-wwa0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-qi40.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-bye0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> elements
+              are used more rarely; they are provided because some of the citation matching services
+              can use the month and day information if it is available.</p><p class="para">The simple citation we just examined would more properly be tagged with the name
+              of the first author, the publication data (issue and volume), and the year of
+              publication: </p><div class="codeblock"><pre> &lt;mixed-citation&gt;
+  &lt;string-name&gt;&lt;surname&gt;Petitti&lt;/surname&gt;  &lt;given-names&gt;DB&lt;/given-names&gt;
+  &lt;/string-name&gt;, Crooks VC, Buckwalter JG, Chiu V. &lt;article-title&gt;Blood pressure levels 
+  before dementia&lt;/article-title&gt;. &lt;source&gt;Arch Neurol&lt;/source&gt;. 
+  &lt;year&gt;2005&lt;/year&gt; Jan; &lt;volume&gt;62&lt;/volume&gt;(&lt;issue&gt;1&lt;/issue&gt;): 
+  &lt;fpage&gt;112&lt;/fpage&gt;–116.&lt;/mixed-citation&gt;</pre></div><p class="para">Best practice, however, is to tag as many of the author and publication details as
+              possible for retrieval and linking purposes:</p><div class="codeblock"><pre>
+  &lt;mixed-citation publication-type="journal" publication-format="print"&gt;
+  &lt;string-name&gt;&lt;surname&gt;Petitti&lt;/surname&gt; &lt;given-names&gt;DB&lt;/given-names&gt; 
+  &lt;/string-name&gt;, &lt;string-name&gt;&lt;surname&gt;Crooks&lt;/surname&gt;
+  &lt;given-names&gt;VC&lt;/given-names&gt;&lt;/string-name&gt;, 
+  &lt;string-name&gt;&lt;surname&gt;Buckwalter&lt;/surname&gt; &lt;given-names&gt;JG&lt;/given-names&gt;
+  &lt;/string-name&gt;,
+  &lt;string-name&gt;&lt;surname&gt;Chiu&lt;/surname&gt; &lt;given-names&gt;V&lt;/given-names&gt;
+  &lt;/string-name&gt;.
+  &lt;article-title&gt;Blood pressure levels before dementia&lt;/article-title&gt;.
+  &lt;source&gt;Arch Neurol&lt;/source&gt;. &lt;year&gt;2005&lt;/year&gt; &lt;month&gt;Jan&lt;/month&gt;;
+  &lt;volume&gt;62&lt;/volume&gt;(&lt;issue&gt;1&lt;/issue&gt;):
+  &lt;fpage&gt;112&lt;/fpage&gt;–&lt;lpage&gt;116&lt;/lpage&gt;.&lt;/mixed-citation&gt;</pre></div></div><div class="section"><a name="pub-tag-cit-element"></a><h4 class="header">Element Style Citations</h4><p class="para">The “element” style is named for its element content, as it is
+              referred to in XML. Element content, unlike mixed content, does not include any text
+              interspersed with the elements. In this model, any text that would not be separately
+              tagged in a <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> can be
+              wrapped in a <a href="n-8t50.html" target="main" title="Comment in a Citation"><span class="elementtag">&lt;comment&gt;</span></a> element, thus
+              ensuring that all text is enclosed in tags. All punctuation marks, line breaks,
+              spaces, etc. are removed from the tagged citation and must be replaced
+              programmatically to view the citation in display or print. Also, there is the
+              possibility that the display of existing content converted to element-style citations
+              will not match the display of the same citations in their source documents. This is
+              the style used to regularize the appearance of citations. Displaying this style of
+              citation requires more complex output processing and means that all parts of the
+              citation need to be tagged.</p><p class="para">Although this Tag Set does not enforce it, best practice is to tag as many of the
+              following elements as possible within a citation to a journal article or a book, so
+              that PubMed Central, CrossRef, or other matching services can make the journal
+              citation into a live link: <ul class="bullist"><li>
+                    <a href="n-jsc0.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>
+                  </li><li>
+                    <a href="n-bff0.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a> (journal title)</li><li>
+                    <a href="n-55r0.html" target="main" title="Volume Number"><span class="elementtag">&lt;volume&gt;</span></a> (volume number)</li><li>
+                    <a href="n-taw0.html" target="main" title="First Page"><span class="elementtag">&lt;fpage&gt;</span></a> (first page of the
+                    article)</li><li>
+                    <a href="n-qjv0.html" target="main" title="Last Page"><span class="elementtag">&lt;lpage&gt;</span></a> (last page of the
+                    article)</li><li>
+                    <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> (at least the surname of the
+                    primary author)</li><li>Publication date (using one or more of the date elements such as
+                      <a href="n-mvr0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-qi40.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-wwa0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>).</li></ul>
+            </p><p class="para">So the citation we just examined would be tagged as an element-style citation as
+              follows: </p><div class="codeblock"><pre>  
+  &lt;element-citation publication-type="journal" publication-format="print"&gt;
+  &lt;name&gt;&lt;surname&gt;Petitti&lt;/surname&gt;&lt;given-names&gt;DB&lt;/given-names&gt;&lt;/name&gt;
+  &lt;name&gt;&lt;surname&gt;Crooks&lt;/surname&gt;&lt;given-names&gt;VC&lt;/given-names&gt;&lt;/name&gt;
+  &lt;name&gt;&lt;surname&gt;Buckwalter&lt;/surname&gt;&lt;given-names&gt;JG&lt;/given-names&gt;&lt;/name&gt;
+  &lt;name&gt;&lt;surname&gt;Chiu&lt;/surname&gt;&lt;given-names&gt;V&lt;/given-names&gt;&lt;/name&gt;
+  &lt;article-title&gt;Blood pressure levels before dementia&lt;/article-title&gt;
+  &lt;source&gt;Arch Neurol&lt;/source&gt;&lt;year&gt;2005&lt;/year&gt;&lt;month&gt;Jan&lt;/month&gt;
+  &lt;volume&gt;62&lt;/volume&gt;&lt;issue&gt;1&lt;/issue&gt;&lt;fpage&gt;112&lt;/fpage&gt;&lt;lpage&gt;116&lt;/lpage&gt;
+  &lt;/element-citation&gt;</pre></div></div><div class="section"><a name="pub-tag-cite-critical"></a><h4 class="header">The Critical Tags for Journals</h4><p class="para">Citations to journal articles should include elements that clearly identify the
+              article. These identifying elements are used by citation matching services to make the
+              articles into live links and by citation indexes in determining which articles are
+              being cited. The most useful of the references elements for identifying journal
+              articles are: <div class="deflist"><table class="deflisttable"><tr class="row1"><td class="dterm"><p>source</p></td><td class="ddef"><p class="para">For journal article citations, this is the title of the journal in which
+   the cited article was published. (Publishers and archives
+   typically establish authority lists of journal titles. For example, in PubMed Central processing,
+the journal title source is usually the NLM title abbreviation of the journal name:
+<tt>&lt;source&gt;Physiol Rev&lt;/source&gt;</tt>). For
+   book citations, the source is the title of the book: <tt>&lt;source&gt;Moby
+  Dick&lt;/source&gt;</tt>.)</p></td></tr><tr class="row0"><td class="dterm"><p>article-title</p></td><td class="ddef"><p class="para">Title of the journal article, typically in English. Usually this is the
+                      exact title as given in the print or display of the article:
+                        <tt>&lt;article-title&gt;The ethics of quackery and fraud in dentistry: a position paper&lt;/article-title&gt;</tt>. Editorial added content, for
+                      example the word “[Retracted]”, should not be added to the title,
+                      but should follow the title as text or a <a href="n-8t50.html" target="main" title="Comment in a Citation"><span class="elementtag">&lt;comment&gt;</span></a>.</p></td></tr><tr class="row1"><td class="dterm"><p>volume</p></td><td class="ddef"><p class="para">The volume number of the journal in which the article was published, if
+                      applicable.</p></td></tr><tr class="row0"><td class="dterm"><p>issue</p></td><td class="ddef"><p class="para">The issue number of the journal in which the article was published. The
+                      issue number element is typically just a simple counting number such as
+                        “4” or “35”, but some journals do simultaneous
+                      multiple issues, and in such cases both numbers should be placed inside the
+                      single <a href="n-hdx0.html" target="main" title="Issue Number"><span class="elementtag">&lt;issue&gt;</span></a> element:
+                        <tt>&lt;issue&gt;4-5&lt;/issue&gt;</tt>. </p></td></tr><tr class="row1"><td class="dterm"><p>fpage</p></td><td class="ddef"><p class="para">Page number on which the article starts. (Although many citations also
+                      list the last page on which the article can be found (<a href="n-qjv0.html" target="main" title="Last Page"><span class="elementtag">&lt;lpage&gt;</span></a>), current citation matchers place
+                      more emphasis on the first page.)</p></td></tr><tr class="row0"><td class="dterm"><p>name</p></td><td class="ddef"><p class="para">The name (typically the <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) of the first author or editor of the article.</p></td></tr><tr class="row1"><td class="dterm"><p>year</p></td><td class="ddef"><p class="para">The year of publication. Multiple publication years
+                        (“2009-2010”) can be recorded in two ways: as successive
+                        <a href="n-mvr0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> elements</p><div class="codeblock"><pre>
+&lt;year&gt;2009&lt;/year&gt;– &lt;year&gt;2010&lt;/year&gt;</pre></div><p class="para">or as a single combined year</p><div class="codeblock"><pre>&lt;year&gt;2009–2010&lt;/year&gt;</pre></div></td></tr><tr class="row0"><td class="dterm"><p>month</p></td><td class="ddef"><p class="para">The month of publication (if present).</p></td></tr><tr class="row1"><td class="dterm"><p>day</p></td><td class="ddef"><p class="para">The day of publication if present. This is of lesser importance, but some
+                      citation matchers use it if it is available.</p></td></tr></table></div>
+            </p></div><div class="section"><a name="pub-tag-cite-books"></a><h4 class="header">Cited Books</h4><p class="para">The majority of the non-journal citations are for books, in whole or part. There
+              are additional elements used in book citations that are rarely used for journals: <ul class="bullist"><li>Publisher information (<a href="n-z470.html" target="main" title="Publisher’s Name"><span class="elementtag">&lt;publisher-name&gt;</span></a> and <a href="n-av70.html" target="main" title="Publisher’s Location"><span class="elementtag">&lt;publisher-loc&gt;</span></a>) is nearly always present for a cited book, and may be tagged
+                    to aid in identification.</li><li>Most modern books are assigned ISBN values (<a href="n-anx0.html" target="main" title="ISBN"><span class="elementtag">&lt;isbn&gt;</span></a>). Occasionally a journal series will
+                    also have an ISBN.</li><li>Books series titles and other series information should be tagged in a
+                      <a href="n-h2f0.html" target="main" title="Series"><span class="elementtag">&lt;series&gt;</span></a> element. </li><li>The length or page count of books should be tagged as the <a href="n-7ef0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a> element (“250p.”, tagged
+                    as <tt>&lt;size units="pages"&gt;250&lt;/size&gt;p.</tt>). Citations to
+                    entire books should not use the elements <a href="n-taw0.html" target="main" title="First Page"><span class="elementtag">&lt;fpage&gt;</span></a>, <a href="n-qjv0.html" target="main" title="Last Page"><span class="elementtag">&lt;lpage&gt;</span></a>, or
+                      <a href="n-vut0.html" target="main" title="Page Ranges"><span class="elementtag">&lt;page-range&gt;</span></a>.</li><li>
+                    <a href="n-sy30.html" target="main" title="Chapter Title in a Citation"><span class="elementtag">&lt;chapter-title&gt;</span></a>s and <a href="n-xxt0.html" target="main" title="Part Title in a Citation"><span class="elementtag">&lt;part-title&gt;</span></a>s are almost exclusively used in
+                    book citations.</li></ul>
+            </p><p class="para">Here is a typical book, tagged in both element- and mixed-citation styles:</p><div class="codeblock"><pre>&lt;element-citation publication-type="book" publication-format="print"&gt;
+&lt;collab&gt;Joint Commission on Accreditation of Healthcare Organizations&lt;/collab&gt;
+&lt;source&gt;Are you prepared? Hospital emergency management checklist&lt;/source&gt;
+&lt;publisher-name&gt;Joint Commission Resources&lt;/publisher-name&gt;
+&lt;publisher-loc&gt;Oak Brook (IL)&lt;/publisher-loc&gt;
+&lt;comment&gt;Forthcoming 2006&lt;/comment&gt;
+&lt;/element-citation&gt;
+
+&lt;mixed-citation publication-type="book" publication-format="print"&gt;
+&lt;collab&gt;Joint Commission on Accreditation of Healthcare 
+Organizations&lt;/collab&gt;. &lt;source&gt;Are you prepared? Hospital emergency 
+management checklist&lt;/source&gt;. &lt;publisher-loc&gt;Oak Brook
+(IL)&lt;/publisher-loc&gt;: &lt;publisher-name&gt;Joint Commission Resources&lt;/publisher-name&gt;.
+Forthcoming 2006.&lt;/mixed-citation&gt;</pre></div><p class="para">Here is a book in a non-print format, tagged in both element- and mixed-citation
+              styles:</p><div class="codeblock"><pre>&lt;element-citation publication-type="book" publication-format="mpic"&gt;
+&lt;source&gt;Clinical tonometry&lt;/source&gt;
+&lt;comment&gt;[motion picture]&lt;/comment&gt;
+&lt;collab collab-type="producer"&gt;Public Health Service Audiovisual Facility&lt;/collab&gt;
+&lt;publisher-loc&gt;[Washington]&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;Department of Health, Education, and Welfare (US), 
+Public Health Service&lt;/publisher-name&gt;&lt;year&gt;1965&lt;/year&gt;
+&lt;comment&gt;1 reel: silent, black &amp; white, 35 mm&lt;/comment&gt;
+&lt;/element-citation&gt;
+
+&lt;mixed-citation publication-type="book" publication-format="mpic"&gt;
+&lt;source&gt;Clinical tonometry&lt;/source&gt; [motion picture]. &lt;collab 
+collab-type="producer"&gt;Public Health Service Audiovisual 
+Facility&lt;/collab&gt;, producer. &lt;publisher-loc&gt;[Washington]&lt;/publisher-loc&gt;:
+&lt;publisher-name&gt;Department of Health, Education, and Welfare (US), 
+Public Health Service&lt;/publisher-name&gt;; &lt;year&gt;1965&lt;/year&gt;. 1 reel: 
+silent, black &amp; white, 35mm.&lt;/mixed-citation&gt;</pre></div></div></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

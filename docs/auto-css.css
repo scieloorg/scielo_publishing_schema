@@ -1,0 +1,467 @@
+
+body.main {background-color: white;
+                      color: black }
+
+
+div.titlepage
+        { background-color: #CFCFEF;
+          text-align: center;
+          margin-top: 2em;
+          margin-left: 2em;
+          margin-right: 2em;
+          margin-bottom: 2em;
+          padding-top: 4em;
+          padding-left: 3em;
+          padding-right: 3em;
+          padding-bottom: 2em }
+
+div.developer
+        { margin-top: 3em; }
+
+div.vershistory
+        { text-align: left }
+
+h3.sponsor
+        { margin-top: 3em;
+          font-style: italic;
+          font-size: 140% }
+
+.header { font-family: sans-serif;
+          margin-top: 1em;
+          margin-bottom: 0em;
+          padding-top: 0.25em }
+
+.header.first
+  { border-top: thin ridge }
+
+h1.elementtag
+        { font-family: monospace;
+          font-size: 200%;
+          margin-top: 0em;
+          margin-bottom: 0em;
+    display: inline }
+
+/*h1.elementtag:before
+        { font-size: 80%;
+          font-weight: normal;
+          font-family: sans-serif;
+          content: "Element: " }*/
+
+h1.attrtag
+        { font-family: monospace;
+          font-size: 200%;
+          margin-top: 0em;
+          margin-bottom: 0em;
+    display: inline }
+
+h1.petag
+        { font-family: monospace;
+          font-size: 200%;
+          margin-top: 0em;
+          margin-bottom: 0em;
+    display: inline }
+
+/*h1.petag:before
+        { font-size: 80%;
+          font-weight: normal;
+          font-family: sans-serif;
+          content: "Parameter Entity: " }*/
+
+h1.attrname:before, h1.elementname:before, h1.pename:before
+        { font-size: 200%;
+          font-weight: normal;
+          font-family: sans-serif;
+          content: "\A0";
+          display: inline }
+
+h1.attrname
+        { font-family: sans-serif;
+          font-size: 200%;
+          margin-top: 0em;
+          margin-bottom: 0em;
+    display: inline }
+h1.elementname
+        { font-family: sans-serif;
+          font-size: 200%;
+          margin-top: 0em;
+          margin-bottom: 0em;
+    display: inline }
+h1.pename
+        { font-family: sans-serif;
+          font-size: 200%;
+          margin-top: 0em;
+          margin-bottom: 0em;
+    display: inline }
+
+div.definition h2 { display:none }
+
+pre.contentdesc,
+p.contentdesc
+        { font-family: monospace;
+    background-color: #CFCFEF;
+          margin-top: 0.5em;
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+          padding-left: 0.5em;
+          padding-right: 0.5em }
+
+pre.taggedtext
+        { background-color: #CFCFEF;
+          margin-top: 0.5em;
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+          padding-left: 0.5em;
+          padding-right: 0.5em }
+
+pre.taggedtext strong
+        { display: inline;
+          background-color: white;
+          color: midnightblue }
+
+p       { margin-top: 0.5em;
+          margin-bottom: 0em }
+
+ul      { margin-top: 0em;
+          margin-bottom: 0em }
+
+div.attrlist h5
+        { font-size: 110%;
+          margin-left: 0.5em;
+          margin-top: 0.25em;
+          margin-bottom: 0em }
+
+div.attrvalues
+        { background-color: #CFCFEF;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          padding-left: 0.25em;
+          padding-right: 0.25em;
+          padding-top: 0.25em;
+          padding-bottom: 0.25em }
+
+div.deflist
+        { margin-top: 1em;
+          padding-left: 0.25em;
+          padding-right: 0.25em;
+          padding-top: 0.25em;
+          padding-bottom: 0.25em }
+
+div.attrvalues h4
+        { font-size: 80%;
+          margin-top: 0em;
+          margin-bottom: 0em }
+
+div.attrvalues h5
+        { font-size: 100%;
+          margin-left: 0.5em;
+          margin-top: 0.25em;
+          margin-bottom: 0em }
+
+div.letterindex
+        { padding-top: 0.25em;
+          padding-bottom: 0.25em;
+          margin-bottom: 1.5em;
+          margin-top: 0em }
+
+tr      { vertical-align: top }
+
+tr.row0 { vertical-align: top }
+
+tr.row1 { vertical-align: top;
+          background-color: #BBD9EE; }
+
+table.attrtable
+        { margin-top: 0.5em }
+
+table.attrtable td
+        { border-top: thin ridge;
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          padding-top: 0.2em;
+          padding-bottom: 0em;
+        }
+table.attrtable th
+        { font-family: sans-serif;
+          font-size: 80%;
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          padding-top: 0.2em;
+          padding-bottom: 0em;
+        }
+
+td.attrvalue
+        { text-align: right;
+          font-weight: bold }
+
+table.deflisttable
+        {  }
+
+tr.defitem
+        { vertical-align: top;
+          margin-top: 0.5em }
+
+th.termhead
+        { text-align: right;
+          border-bottom: thin groove;
+          margin-top: 0.25em;
+          margin-bottom: 0.25em;
+          padding-right: 1em;
+          font-weight: bold;
+          font-style:italic }
+
+th.defhead
+        { border-bottom: thin groove;
+          font-style:italic }
+
+td.dterm
+        { text-align: right;
+          border-bottom: thin groove;
+          margin-top: 0.25em;
+          margin-bottom: 0.25em;
+          padding-right: 1em;
+          font-weight: bold }
+
+td.ddef
+        { margin-top: 0.25em;
+          margin-bottom: 0.25em;
+          border-bottom: thin groove }
+
+td.attrrestrict
+        { font-style: italic }
+
+/* "Context table" styles */
+table.contexttable
+  { margin-bottom: 1.5em }
+td.containedcellname
+        { padding-left: 0.25em;
+          padding-right: 0.25em;
+          vertical-align: top }
+
+td.containedcelltag,
+td.containingcelltag,
+td.notcontained,
+td.containingcellname,
+td.contextcelltag
+        { padding-left: 0.25em;
+          padding-right: 0.25em;
+          vertical-align: top }
+
+.intable
+  { font-size: 0.66em }
+
+div.revhistory h2
+        { font-size: 100%;
+          font-style: italic;
+    border-top: thin ridge }
+
+div.contentmodel h2, 
+div.modeldesc h2, 
+div.elementcontext h2, 
+div.attrvalueinfo h2,
+div.presentinfo h2,
+div.remarks h2,
+div.relatedelem h2,
+div.usage h2,
+div.source h2 
+        { font-size: 120% }
+
+div.attrvalueinfo h2
+        { border-top: thin ridge }
+
+div.moduledefined h2
+        { font-size: 100%;
+          font-style: italic;
+    border-top: thin ridge }
+
+div.mod p
+        { font-size: 80%;
+          font-family: sans-serif;
+          margin-top: 0em;
+          margin-bottom: 0em }
+
+dt      { font-weight: bold }
+
+dd p    { margin-top: 0em;
+          margin-bottom: 0.5em }
+
+div.mod
+        { margin-top: 0.25em;
+          margin-bottom: 0.25em;
+          border-left: thin solid;
+          padding-left: 0.5em }
+
+p.moduledefined
+        { font-family: monospace;
+          font-weight: bold }
+
+p.moddesc
+        { font-style: italic }
+
+p.modpara
+        { margin-left: 0.5em }
+
+div.pageheader
+        { background-color: midnightblue;
+          color: white;
+          border-top: thin solid;
+          border-bottom: thin solid;
+          border-left: thin solid;
+          border-right: thin solid;
+          padding-top: 0.25em;
+          padding-bottom: 0.25em;
+          padding-left: 0.25em;
+          padding-right: 0.25em }
+
+div.pageheader h2.headname
+        { text-align: right;
+          border-top: none;
+          font-size: 120%;
+          font-style: italic;
+          font-weight: bold;
+          margin-top: 0em;
+          margin-bottom: 0em }
+
+div.pageheader h4.sponsor
+        { text-align: right;
+          border-top: none;
+          font-size: 80%;
+          margin-top: 0em;
+          margin-bottom: 0.5em }
+
+div.pagefooter
+        { background-color: midnightblue;
+          color: white;
+          margin-top: 1em;
+          padding-top: 0.25em;
+          padding-bottom: 0.25em;
+          padding-left: 0.25em;
+          padding-right: 0.25em }
+
+div.pagefooter h2.headname
+        { border-top: none;
+          font-size: 90%;
+          font-weight: bold;
+          margin-top: 0em;
+          margin-bottom: 0em }
+
+div.pagefooter h4.sponsor
+        { border-top: none;
+          font-size: 70%;
+          font-weight: normal;
+          margin-top: 0em;
+          margin-bottom: 0em }
+
+div.pagefooter h4.pubdate
+        { border-top: none;
+          font-size: 70%;
+          font-weight: normal;
+          margin-top: 0em;
+          margin-bottom: 0em }
+
+div.pagefooter h4.developer
+        { border-top: none;
+          font-size: 90%;
+          margin-top: 0em;
+          margin-bottom: 0em }
+
+span.devlabel
+        { font-style: italic }
+
+div.copyright
+        { font-style: italic;
+          font-weight: normal;
+          border-top: none;
+          font-size: 80%;
+          margin-top: 0em;
+          margin-bottom: 0em }
+
+span.modlabel
+        { font-style: italic }
+
+span.elementname
+        { font-family: serif;
+          font-weight: bold }
+
+span.elementtag
+        { font-family: monospace }
+
+span.attrname
+        { font-family: serif;
+          font-weight: bold }
+
+span.attrtag
+        { font-family: monospace }
+
+span.petag
+        { font-family: monospace }
+
+
+img { border: none }
+
+body.main a { color: black;
+        text-decoration: none }
+
+body.main a:hover { background-color: #336699;
+                    color: white }
+
+hr { display:none }
+
+/* styles for index */
+
+span[class~="index.alternative"][class~="only"]
+  {display: inline;
+   margin-left: 0em}
+span[class~="index.alternative"]
+  {display: block;
+   margin-left: 2em}
+
+p[class~="index.index"]
+  { background-color: #CFCFEF;
+    margin-top: 1em }
+
+/* styles for ToC (left) panel */
+
+div.toc { font-family: sans-serif;
+          font-size: 80%;
+          margin-left: 0.75em }
+
+table.toc-title { position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: 0;
+	background-color: midnightblue;
+	padding: 0.5em 0;
+	text-align: center; }
+
+div.toc-section { margin-left: 1em }
+
+body.toc  {padding-top: 4.5em;
+	   background-color: midnightblue;
+           color: white }
+
+div.toc-entry { margin: 2px;
+                padding-top: 0px;
+                padding-bottom: 4px;
+                padding-left: 4px;
+                padding-right: 4px;
+                background-color: midnightblue }
+
+img.toc-icon { vertical-align: text-bottom;
+               margin-left: -18px;
+               float: left;
+               width: 12px }
+
+body.toc a { color: white;
+             background-color: midnightblue;
+             text-decoration: none }
+
+body.toc a:hover { background-color: inherit;
+                   color: white}
+
+body.toc a.linkbox:hover { color: white;
+                           background-color: midnightblue;
+                           text-decoration: none }
+
+

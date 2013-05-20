@@ -1,0 +1,36 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Permissions</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;permissions&gt;</h1><h1 class="elementname">Permissions</h1></div><div class="definition"><p class="para">Container element for copyright and license information.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">The sub-elements of this elements are repeatable. If multiple values are applicable (such as multiple copyright years), they should be tagged separately rather than as multiple values within a single element.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  permissions  <a href="n-9832.html" target="main" title="Permissions Model"><span class="petag">%permissions-model;</span></a>                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(copyright-statement*, copyright-year*, copyright-holder*, license*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-er80.html" target="main" title="Copyright Statement"><span class="elementtag">&lt;copyright-statement&gt;</span></a> <a href="n-er80.html" target="main" title="<copyright-statement&gt;"><span class="elementname">Copyright Statement</span></a>, zero or more</li><li><a href="n-jy80.html" target="main" title="Copyright Year"><span class="elementtag">&lt;copyright-year&gt;</span></a> <a href="n-jy80.html" target="main" title="<copyright-year&gt;"><span class="elementname">Copyright Year</span></a>, zero or more</li><li><a href="n-q680.html" target="main" title="Copyright Holder"><span class="elementtag">&lt;copyright-holder&gt;</span></a> <a href="n-q680.html" target="main" title="<copyright-holder&gt;"><span class="elementname">Copyright Holder</span></a>, zero or more</li><li><a href="n-jsv0.html" target="main" title="License Information"><span class="elementtag">&lt;license&gt;</span></a> <a href="n-jsv0.html" target="main" title="<license&gt;"><span class="elementname">License Information</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-dd20.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-m920.html" target="main" title="Array (Simple Tabulation)"><span class="elementtag">&lt;array&gt;</span></a>, <a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-af30.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-ek50.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-gqa0.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a>, <a href="n-pyu0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a>, <a href="n-6cx0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href="n-kbv0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, <a href="n-unt0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a>, <a href="n-rze0.html" target="main" title="Section Metadata"><span class="elementtag">&lt;sec-meta&gt;</span></a>, <a href="n-hif0.html" target="main" title="Statement, Formal"><span class="elementtag">&lt;statement&gt;</span></a>, <a href="n-txn0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-ajn0.html" target="main" title="Table Wrapper Footer"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>, <a href="n-nmd0.html" target="main" title="Verse Form for Poetry"><span class="elementtag">&lt;verse-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub" iso-8601-date="1999-03-27"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted" iso-8601-date="1999-01-29"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+<strong><span class="focus">&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;</span></strong>
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

@@ -1,0 +1,43 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Copyright Year</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;copyright-year&gt;</h1><h1 class="elementname">Copyright Year</h1></div><div class="definition"><p class="para">The year of copyright.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Since the <a href="n-er80.html" target="main" title="Copyright Statement"><span class="elementtag">&lt;copyright-statement&gt;</span></a> element is intended for display, this element’s contents may not be displayed (but will be available for searching). The <a href="n-jy80.html" target="main" title="Copyright Year"><span class="elementtag">&lt;copyright-year&gt;</span></a> element need not be used, if having the year as part of the <a href="n-er80.html" target="main" title="Copyright Statement"><span class="elementtag">&lt;copyright-statement&gt;</span></a> is sufficient. (See <a href="n-er80.html" target="main" title="Copyright Statement"><span class="elementtag">&lt;copyright-statement&gt;</span></a>.) </p><p class="para"><strong>Historical Note:</strong> This element (<a href="n-jy80.html" target="main" title="Copyright Year"><span class="elementtag">&lt;copyright-year&gt;</span></a>) was significantly remodeled 
+for NLM 3.0. The current NISO JATS values are backwards compatible 
+with NLM 3.0 but not with earlier versions. 
+Specifically, in
+            prior versions the <span class="elementtag">&lt;copyright-year&gt;</span> element
+            was allowed outside the <a href="n-mst0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a>
+            container element (although this was not best practice).</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">There are three copyright elements which may be contained in the <a href="n-mst0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> grouping element: <ul class="bullist"><li> <a href="n-er80.html" target="main" title="Copyright Statement"><span class="elementtag">&lt;copyright-statement&gt;</span></a>, which is the textual statement of the copyright intended for print and display (The full statement usually contains the copyright holder’s name and the year among other information.); </li><li> <a href="n-jy80.html" target="main" title="Copyright Year"><span class="elementtag">&lt;copyright-year&gt;</span></a>, a metadata element that names just the copyright year (This is intended for metadata searching and aggregation and is typically not displayed.); and </li><li> <a href="n-q680.html" target="main" title="Copyright Holder"><span class="elementtag">&lt;copyright-holder&gt;</span></a>, also a metadata element that is typically not displayed.</li></ul> </p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  copyright-year
+                        (#PCDATA)                                    &gt;</pre></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-mst0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub" iso-8601-date="1999-03-27"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted" iso-8601-date="1999-01-29"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+<strong><span class="focus">&lt;copyright-year&gt;1999&lt;/copyright-year&gt;</span></strong>
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

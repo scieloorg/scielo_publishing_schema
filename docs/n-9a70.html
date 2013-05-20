@@ -1,0 +1,36 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Publication Date</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;pub-date&gt;</h1><h1 class="elementname">Publication Date</h1></div><div class="definition"><p class="para">Container element for the parts of a single date associated with an article’s publication (for example, date preprint was released, date article was published in print).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">As part of the article metadata, the <a href="n-9a70.html" target="main" title="Publication Date"><span class="elementtag">&lt;pub-date&gt;</span></a> is allowed to repeat; each repetition can take a <a href="n-csj0.html" target="main" title="Type of Publication"><span class="attrtag">@pub-type</span></a> attribute to distinguish which form of publication, for example, print publication, preprint distribution, electronic publication, etc.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-pah0.html" target="main"><span class="attrtag">calendar</span></a> <a href="n-pah0.html" target="main"><span class="attrname">Calendar</span></a></h5><h5 class="header"><a href="n-xki0.html" target="main"><span class="attrtag">date-type</span></a> <a href="n-xki0.html" target="main"><span class="attrname">Type of Date</span></a></h5><h5 class="header"><a href="n-t2y0.html" target="main"><span class="attrtag">iso-8601-date</span></a> <a href="n-t2y0.html" target="main"><span class="attrname">ISO-8601 Formatted Date</span></a></h5><h5 class="header"><a href="n-csj0.html" target="main"><span class="attrtag">pub-type</span></a> <a href="n-csj0.html" target="main"><span class="attrname">Type of Publication</span></a></h5><h5 class="header"><a href="n-z7j0.html" target="main"><span class="attrtag">publication-format</span></a> <a href="n-z7j0.html" target="main"><span class="attrname">Format of Publication</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  pub-date     <a href="n-3r32.html" target="main" title="Publication Date Model"><span class="petag">%pub-date-model;</span></a>                             &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(((day?, month?) | season)?, year)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>Optionally any one of:<ul class="bullist"><li>The following, in order:<ul class="bullist"><li><a href="n-wwa0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-wwa0.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a>, zero or one</li><li><a href="n-qi40.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-qi40.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a>, zero or one</li></ul></li><li><a href="n-bye0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-bye0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a></li></ul></li><li><a href="n-mvr0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-mvr0.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+<strong><span class="focus">&lt;pub-date pub-type="pub" iso-8601-date="1999-03-27"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;&lt;year&gt;1999&lt;/year&gt;
+&lt;/pub-date&gt;</span></strong>
+&lt;volume&gt;318&lt;/volume&gt;
+&lt;issue&gt;7187&lt;/issue&gt;
+&lt;fpage&gt;837&lt;/fpage&gt;
+&lt;lpage&gt;841&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted" iso-8601-date="1999-01-29"&gt;
+&lt;day&gt;29&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;1999&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 1999, British
+Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;1999&lt;/copyright-year&gt;
+&lt;copyright-holder&gt;British Medical Journal&lt;/copyright-holder&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;To examine the effectiveness of
+day hospital attendance in prolonging independent living for elderly
+people.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

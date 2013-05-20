@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Publisher</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;publisher&gt;</h1><h1 class="elementname">Publisher</h1></div><div class="definition"><p class="para">Container element for information about the person, company, or other entity that published a work.</p></div><div class="attrlist"><h2 class="header">Attribute</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  publisher    <a href="n-3y32.html" target="main" title="Publisher Content Model"><span class="petag">%publisher-model;</span></a>                            &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((publisher-name, publisher-loc?)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any one of:<ul class="bullist"><li>The following sequence (in order), one or more times:<ul class="bullist"><li><a href="n-z470.html" target="main" title="Publisher’s Name"><span class="elementtag">&lt;publisher-name&gt;</span></a> <a href="n-z470.html" target="main" title="<publisher-name&gt;"><span class="elementname">Publisher’s Name</span></a></li><li><a href="n-av70.html" target="main" title="Publisher’s Location"><span class="elementtag">&lt;publisher-loc&gt;</span></a> <a href="n-av70.html" target="main" title="<publisher-loc&gt;"><span class="elementname">Publisher’s Location</span></a>, zero or one</li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-wzx0.html" target="main" title="Journal Metadata"><span class="elementtag">&lt;journal-meta&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="pmc"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="publisher"&gt;BR MED J&lt;/journal-id&gt;
+&lt;issn&gt;0959-8138&lt;/issn&gt;
+<strong><span class="focus">&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;</span></strong>
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub" iso-8601-date="1999-03-27"&gt;
+...&lt;/pub-date&gt;
+...
+&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Book published by a Canadian publisher showing the Publisher name in two languages:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;journal-meta&gt;
+&lt;journal-id
+ journal-id-type="publisher"&gt;J. NLM DTD Res.&lt;/journal-id&gt;
+&lt;issn&gt;9999-9994&lt;/issn&gt;
+<strong><span class="focus">&lt;publisher&gt;
+&lt;publisher-name
+xml:lang="fr"&gt;&amp;Eacute;tudiant Presse&lt;/publisher-name&gt;
+&lt;publisher-loc&gt;Montr&amp;eacute;al&lt;/publisher-loc&gt;
+&lt;publisher-name
+xml:lang="en"&gt;Etudiant Press&lt;/publisher-name&gt;
+&lt;publisher-loc&gt;Van Couver&lt;/publisher-loc&gt;
+&lt;/publisher&gt;</span></strong>
+&lt;/journal-meta&gt;...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

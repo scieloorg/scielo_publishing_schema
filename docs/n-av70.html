@@ -1,0 +1,50 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Publisher’s Location</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;publisher-loc&gt;</h1><h1 class="elementname">Publisher’s Location</h1></div><div class="definition"><p class="para">Place of publication, usually a city, such as New York or London.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">The <a href="n-av70.html" target="main" title="Publisher’s Location"><span class="elementtag">&lt;publisher-loc&gt;</span></a> element is used in two contexts: <ol class="olist"><li>As a part of the metadata concerning the article itself (inside the <a href="n-wzx0.html" target="main" title="Journal Metadata"><span class="elementtag">&lt;journal-meta&gt;</span></a>; and </li><li>As part of the reference metadata inside a bibliographic reference list (inside a <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> within a <a href="n-vf70.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a>).</li></ol> </p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  publisher-loc
+                        (#PCDATA <a href="n-ni32.html" target="main" title="Publisher’s Location Elements"><span class="petag">%publisher-loc-elements;</span></a>)*          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | email | ext-link | uri)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li>Linking Elements<ul class="bullist"><li><a href="n-ptu0.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-ptu0.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a></li><li><a href="n-gnu0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-gnu0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-9bd0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-9bd0.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-vxs0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-w9t0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-3x70.html" target="main" title="Publisher"><span class="elementtag">&lt;publisher&gt;</span></a>, <a href="n-pd70.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-f970.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed): </p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="book" publication-format="print"&gt;
+&lt;person-group person-group-type="editor"&gt;
+&lt;name&gt;&lt;surname&gt;Chaponnier&lt;/surname&gt;
+&lt;given-names&gt;Christine&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Desmouli&amp;egrave;re&lt;/surname&gt;
+&lt;given-names&gt;Alexis&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Gabbiani&lt;/surname&gt;
+&lt;given-names&gt;Giulio&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;source&gt;Tissue Repair, Contraction and the Myofibroblast&lt;/source&gt;
+<strong><span class="focus">&lt;publisher-loc&gt;Georgetown (TX)&lt;/publisher-loc&gt;</span></strong>
+&lt;publisher-name&gt;Landes Bioscience&lt;/publisher-name&gt;
+<strong><span class="focus">&lt;publisher-loc&gt;New York&lt;/publisher-loc&gt;</span></strong>
+&lt;publisher-name&gt;Springer Verlag&lt;/publisher-name&gt;
+&lt;year iso-8601-date="2006"&gt;2006&lt;/year&gt;
+&lt;size units="pages"&gt;153 p&lt;/size&gt;
+&lt;series&gt;Biotechnology Intelligence Unit&lt;/series&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved): </p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="book" publication-format="print"&gt;
+&lt;string-name&gt;&lt;surname&gt;Chaponnier&lt;/surname&gt;,
+&lt;given-names&gt;Christine&lt;/given-names&gt;&lt;/string-name&gt;,
+&lt;string-name&gt;&lt;surname&gt;Desmouli&amp;egrave;re&lt;/surname&gt;,
+&lt;given-names&gt;Alexis&lt;/given-names&gt;&lt;/string-name&gt;,
+&lt;string-name&gt;&lt;surname&gt;Gabbiani&lt;/surname&gt;,
+&lt;given-names&gt;Giulio&lt;/given-names&gt;&lt;/string-name&gt;, editors.
+&lt;source&gt;Tissue Repair, Contraction and the Myofibroblast&lt;/source&gt;.
+<strong><span class="focus">&lt;publisher-loc&gt;Georgetown (TX)&lt;/publisher-loc&gt;</span></strong>:
+&lt;publisher-name&gt;Landes Bioscience&lt;/publisher-name&gt;;
+<strong><span class="focus">&lt;publisher-loc&gt;New York&lt;/publisher-loc&gt;</span></strong>:
+&lt;publisher-name&gt;Springer Verlag&lt;/publisher-name&gt;;
+&lt;year iso-8601-date="2006"&gt;2006&lt;/year&gt;.
+&lt;size units="pages"&gt;153 p&lt;/size&gt;. (&lt;series&gt;Biotechnology
+Intelligence Unit&lt;/series&gt;).&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

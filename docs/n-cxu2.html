@@ -1,0 +1,377 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Tagging Personal Names</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h3 class="header">Tagging Personal Names</h3><p class="para">In article metadata, the personal names of authors, editors, translators, and other contributors can all be tagged using either the 
+  element <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> or the element <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a>. Both <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>  and <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> 
+  can identify the surname (family name or last name) and given names (first names and middle names) of a person.</p><p class="para">Unlike nearly all elements in this Tag Set, the <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element requires a specific sequence and
+may not contain spaces (more properly, it will not retain spaces if they are 
+present). The required order for a personal name is:
+<ul class="bullist"><li>First, one of the following
+  <ul class="bullist"><li>Just a <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>;</li><li>A <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> followed by 
+     a <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>; or</li><li>Just a <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> (for cultures that do not use a family name)</li></ul></li><li>Next (optionally), a <a href="n-fgt0.html" target="main" title="Prefix"><span class="elementtag">&lt;prefix&gt;</span></a> such as
+     a formal title 
+(“<tt>Senator</tt>”);</li><li>Next (optionally), a <a href="n-vkn0.html" target="main" title="Suffix"><span class="elementtag">&lt;suffix&gt;</span></a> such as
+     a lineage distinguisher 
+(“<tt>Jr.</tt>”,
+ “<tt>Sr.</tt>”, etc.).</li></ul>
+as illustrated here:</p><div class="codeblock"><pre>&lt;name&gt;
+  &lt;surname&gt;Jones-Smythe&lt;/surname&gt;
+  &lt;given-names&gt;Johnathan Irving Browning&lt;/given-names&gt;
+  &lt;prefix&gt;The Honorable&lt;/prefix&gt;
+  &lt;suffix&gt;III&lt;/suffix&gt;
+&lt;/name&gt;</pre></div><div class="section"><a name="pub-tag-name-string"></a><h4 class="header">String Names</h4><p class="para">The <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> element is a container for personal names where the stricter organization 
+  of the <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element cannot be followed or is not appropriate for other reasons. This is a very loose element, which may contain text, numbers, and special characters as well as any or all of the naming elements, such as  <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>  and <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>. A <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> can be used to hold sort versions of the name, the full name in display order (for example, as a byline that does not require recombining the components), the name components with punctuation and spacing between them, a name where family versus given cannot be determined, etc. In the example below, notice that the <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> contains a “comma-space” as well as the <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> and <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> elements:</p><div class="codeblock"><pre> &lt;string-name&gt;
+      &lt;surname&gt;Lincoln&lt;/surname&gt;, &lt;given-names&gt;Abraham&lt;/given-names&gt;
+  &lt;/string-name&gt;
+</pre></div><p class="para">String names may also be partially tagged, identifying only some of the name components:</p><div class="codeblock"><pre> &lt;string-name&gt;The Honorable Johnathan Irving 
+    Browning &lt;surname&gt;Jones-Smythe&lt;/surname&gt;, III
+  &lt;/string-name&gt;
+</pre></div></div><div class="section"><a name="pub-tag-name-space-punc"></a><h4 class="header">Spaces and Punctuation in Names</h4><p class="para">The model for <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> does not allow spaces or punctuation between the surname, 
+  given names, prefixes, or suffixes components. Even if 
+one or more spaces exist in the XML source file, XML processors remove any space 
+that occurs <em>between elements</em>. In other words, in the following XML examples, there will be no space between the surname, the given names, and the suffix. The <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element cannot preserve these spaces.</p><div class="codeblock"><pre>&lt;name&gt;
+  &lt;surname&gt;Petitti&lt;/surname&gt;  &lt;given-names&gt;DB&lt;/given-names&gt; &lt;suffix&gt;III&lt;/suffix&gt;
+&lt;/name&gt;
+ 
+&lt;name&gt;
+ &lt;surname&gt;Petitti&lt;/surname&gt;
+  &lt;given-names&gt;DB&lt;/given-names&gt;
+  &lt;suffix&gt;III&lt;suffix&gt;
+&lt;/name&gt;
+
+&lt;name&gt;  &lt;surname&gt;Petitti&lt;/surname&gt; &lt;given-names&gt;DB&lt;/given-names&gt;   &lt;/name&gt;</pre></div><p class="para">In contrast with  <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, the element <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> 
+  allows, but does not
+ require, spacing and punctuation within the name:</p><div class="codeblock"><pre>
+ &lt;string-name&gt;
+      &lt;surname&gt;Jefferson&lt;/surname&gt;,   &lt;given-names&gt;T&lt;/given-names&gt;.
+ &lt;/string-name&gt;
+
+  &lt;string-name&gt;
+      &lt;surname&gt;Jefferson&lt;/surname&gt;&lt;given-names&gt;T&lt;/given-names&gt;
+   &lt;/string-name&gt;.</pre></div></div><div class="section"><a name="pub-tag-name-multipart"></a><h4 class="header">Multipart Names</h4><p class="para">Many names have multiple parts, and care should be taken with multipart names to divide the components into family 
+  names (<a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) and personal names (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) 
+  in a culturally appropriate fashion. The Tag Suite cannot give guidance on how to divide names, but it enables most cultural variations. 
+  For example:</p><div class="codeblock"><pre>&lt;surname&gt;Llanos De La Torre Quiralte&lt;/surname&gt;
+&lt;given-names&gt;M&lt;/given-names&gt;    
+
+&lt;surname&gt;Sánchez Mendoza&lt;/surname&gt;   
+&lt;given-names&gt;Josquin&lt;/given-names&gt;    
+
+&lt;surname&gt;Las Heras&lt;/surname&gt;   
+&lt;given-names&gt;Juan Fernando&lt;/given-names&gt;    
+
+&lt;surname&gt;Lapeyre&lt;/surname&gt;   
+&lt;given-names&gt;Kenneth Pritchard Carnu&lt;/given-names&gt; 
+
+&lt;surname&gt;Ben Gurion&lt;/surname&gt;   
+&lt;given-names&gt;David&lt;/given-names&gt;    
+
+&lt;surname&gt;de la Mare&lt;/surname&gt;   
+&lt;given-names&gt;Walter John&lt;/given-names&gt;
+
+&lt;surname&gt;Toulouse-Lautrec-Monfa, de&lt;/surname&gt;   
+&lt;given-names&gt;Henri Marie Raymond&lt;/given-names&gt;
+
+&lt;name name-style=”eastern”&gt;
+&lt;surname&gt;Zhou&lt;/surname&gt;   
+&lt;given-names&gt;Xun-Ze&lt;/given-names&gt;
+&lt;/name&gt;    
+ 
+&lt;name name-style=”eastern”&gt;
+&lt;surname&gt;Chou&lt;/surname&gt;   
+&lt;given-names&gt;Hsun-Tse&lt;/given-names&gt;
+&lt;/name&gt;    
+ 
+&lt;name name-style=”eastern”&gt;
+&lt;surname&gt;Si-Ma&lt;/surname&gt;   
+&lt;given-names&gt;Mary-Sue&lt;/given-names&gt;
+&lt;/name&gt;    
+ 
+&lt;name name-style=”eastern”&gt;
+&lt;surname&gt;SI-MA&lt;/surname&gt;   
+&lt;given-names&gt;Mary-Sue&lt;/given-names&gt;
+&lt;/name&gt;    
+ 
+&lt;name&gt;
+&lt;given-names&gt;Cai-Rang&lt;/given-names&gt;
+&lt;/name&gt;</pre></div></div><div class="section"><a name="pub-tag-name-alts"></a><h4 class="header">Multiple Versions of a Name</h4><p class="para">Anywhere a person’s name can be used, inside both the metadata and bibliographic citations, this Tag Set allows the possibility of 
+  providing more than one version of that name.
+The <a href="n-cb40.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> element is intended to collect multiple versions of a single name without multiplying the 
+    number of names. (Three versions of one contributor’s name is not the same as three different contributors.) The element 
+    <span class="elementtag">&lt;name-alternatives&gt;</span> works similarly to the  <span class="elementtag">&lt;alternatives&gt;</span> 
+    construction for graphics, allowing multiple name variations to be linked together as processing alternatives for a single name. It will 
+    be up to an application how multiple versions of a single name are to be processed. The <a href="n-m4p0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a>, <a href="n-vfh0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a>, and <a href="n-c6q0.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attributes can be used to distinguish the cases for separate processing.
+ For example, the following names are distinguished by language:</p><div class="codeblock"><pre>
+        
+...
+&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+&lt;name name-style="eastern" xml:lang="ja-Jpan"&gt;
+&lt;surname&gt;中西&lt;/surname&gt;
+&lt;given-names&gt;秀彦&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name name-style="western" xml:lang="en"&gt;
+&lt;surname&gt;Nakanishi&lt;/surname&gt;
+&lt;given-names&gt;Hidehiko&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name name-style="eastern" xml:lang="ja-Kana"&gt;
+&lt;surname&gt;ナカニシ&lt;/surname&gt;
+&lt;given-names&gt;ヒデヒコ&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/name-alternatives&gt;
+ &lt;xref ref-type="aff" rid="aff2"&gt;&amp;ast;&amp;ast;&lt;/xref&gt;
+ &lt;/contrib&gt;...
+ 
+
+
+     </pre></div><p class="para">The <span class="elementtag">&lt;name-alternatives&gt;</span> element can be used to record:<ul class="bullist"><li>A name in multiple languages (For example, a name in Korean or Chinese-Han characters and a transliterated version of the same 
+   name in the Latin alphabet);</li><li>A name in multiple language/script combinations (For example, a name in Japanese [<tt>xml:lang="ja-Jpan"</tt> for Han + Hiragana + Katakana] and the same name written in Kanji [<tt>xml:lang="ja-Hani"</tt>]);</li><li>An alternate name for sorting or searching (For example, a name in French with accented letters (such as an “é”) and a plain-letter lower-ASCII version of the same name with “é” replaced by “e” for sorting. The <a href="n-m4p0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> attribute can be used to indicate that the ASCII version is only for “sort”, not for display.);</li><li>An alternate name indexing (For example, an XML database may need to record all the name variants found for an individual from “President Thomas Jefferson” to “Long Tom”, with <a href="n-m4p0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> used to mark “primary” and “index”.); or</li><li>Both validated and known-to-be-incorrect names (For example, in the PubMed DTD, there is an attribute called “<tt>ValidYN</tt>” [valid yes or no], that can be used to record the fact that one version of a name was received, found to be in error and corrected. Only the corrected version should be displayed, but both name variants might be used for searching.).</li></ul>
+</p><p class="para">The name variants inside a <a href="n-cb40.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> element within the document metadata do not take a unique identifier (<a href="n-epi0.html" target="main" title="Identifier"><span class="attrtag">@id</span></a>) 
+   because they all represent the same person. This Tag Set assumes that any necessary unique identifier will be placed on the enclosing element (such as the <a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> element or the <a href="n-7jt0.html" target="main" title="Principal Investigator"><span class="elementtag">&lt;principal-investigator&gt;</span></a> element) that contains the name alternatives.</p><p class="para"><strong>String Name:</strong> Both <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> and <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> are allowed inside <a href="n-cb40.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a>. Within a <a href="n-cb40.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> 
+   grouping, the element <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> can be used, for example, to hold an undifferentiated 
+   transliteration (that is, one not tagged with specific name elements such as <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) or a search-specific name. In the following example, the <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> element is used for both a byline-style uninverted display and an abbreviated form of the name.</p><div class="codeblock"><pre>&lt;name-alternatives&gt;
+  &lt;string-name specific-use=”display”&gt;José del Pozo García&lt;/string-name&gt;
+  &lt;name specific-use=”primary” name-style=”eastern”&gt;
+    &lt;surname&gt;del Pozo García&lt;/surname&gt;
+    &lt;given-names&gt;José&lt;/given-names&gt;
+  &lt;/name&gt;
+  &lt;string-name specific-use=”abbrev-form”&gt;Pozo Garcia J del&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+
+&lt;name-alternatives&gt;
+  &lt;string-name specific-use=”display”&gt;PM Sudha&lt;/string-name&gt;
+  &lt;name specific-use=”primary&gt;
+    &lt;given-names initials=”PM”&gt;Sudha&lt;/given-names&gt;
+  &lt;/name&gt;
+  &lt;string-name specific-use=”abbrev-form”&gt;Sudha PM&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+
+&lt;name-alternatives&gt;
+  &lt;name content-type=”formal-name” xml:lang-“fr”&gt;
+    &lt;surname&gt;Giscard d'Estaing&lt;/surname&gt;   
+    &lt;given-names&gt;Valéry Marie René Georges&lt;/given-names&gt;
+  &lt;/name&gt;
+  &lt;name content-type=”common-name” xml:lang-“fr”&gt;
+     &lt;surname&gt;Giscard d'Estaing&lt;/surname&gt;
+     &lt;given-names&gt;Valéry&lt;/given-names&gt;
+  &lt;/name&gt;
+  &lt;string-name specific-use=”abbrev-form”&gt;Giscard d'Estaing V&lt;/string-name&gt;
+&lt;/name-alternatives&gt;</pre></div><p class="para"><strong>Best Practice Caveat:</strong> Before this release of this Tag Set, the element <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> was not permitted within metadata because this Tag Set strives to regularize names.Now, <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> will be allowed as one of the alternatives inside a <a href="n-cb40.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> grouping. Inside an <a href="n-cb40.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a>, the element <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> should not be used for the primary name, but only to support name variants for such purposes as indexing, searching, or an undifferentiated transliteration. The element <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> should always be used for the primary name.</p></div><div class="section"><a name="pub-tag-cite-name-style"></a><h4 class="header">Name Display Order</h4><p class="para"></p><p class="para">The problem of eastern versus western display of names (for example, Toshiro Mifune versus
+ Mifune Toshiro) can be addressed using the <a href="n-rny0.html" target="main" title="Name Style"><span class="attrtag">@name-style</span></a> attribute. The <a href="n-rny0.html" target="main" title="Name Style"><span class="attrtag">@name-style</span></a> attribute can record the preferred display order 
+   for the name, typically to make the distinction between eastern and western display order. Name ordering information can be used for 
+   choosing an inversion algorithm for sorting, for ordering the names for display, or for other processing functions. The values of the 
+   <a href="n-rny0.html" target="main" title="Name Style"><span class="attrtag">@name-style</span></a> attribute and their approximate
+ meanings are given below.</p><ul class="bullist"><li>When the value is “<tt>western</tt>” 
+ <ul class="bullist"><li>The display order is: given (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) followed by family (<a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>); and</li><li>The Sort/inversion is family (<a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) then given (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>).</li></ul>
+ </li><li>When the value is “<tt>eastern</tt>” 
+ <ul class="bullist"><li>The display order is: family (<a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) followed by given (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>); and</li><li>The Sort/inversion is family (<a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) then given (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>).</li></ul>
+ </li><li>When the value is “<tt>given-only</tt>” 
+ <ul class="bullist"><li>The display order is: given (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>); and</li><li>The Sort order is given (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>); there is no inversion with a single name.</li></ul>
+ </li><li>When the value is “<tt>islensk</tt>” 
+ <ul class="bullist"><li>The display order is: given (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) followed by patronymic (<a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>); and</li><li>The Sort/inversion is given (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) then patronymic (<a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>).</li></ul>
+ </li></ul><p class="para">On the whole, this Tag Set can encode many, perhaps most, of the name variations found in the
+world. Both given names and surnames can be multiple words; there is no need to separate given names
+into first and middle names. Articles can be kept at the front of a name, or relegated to the rear following a comma. The element 
+  <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> is available for those who choose not to name a surname or given name or for the cases where 
+  this distinction does not exist or cannot be determined.</p><p class="para">There are some areas where this Tag Set cannot provide complete advice, and each Tag Set user
+must make business related rules. These include:
+<ul class="bullist"><li>How to recognize/differentiate surnames from given names;</li><li>How to handle all single names (It is usually best practice to tag most westernized single names (“Pele”, 
+    “Cher”, and “Ice Cube”) as <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> elements. Tibetan, Burmese, and other 
+    Indian single names that are not surnames may be tagged as <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>.</li><li>How to treat the article portions of both surnames and given names (such as
+“de”, “Del”,  “Las”, “de la”, et al.).
+For example, whether “Rudolpho Del Pozo Garcia” (who may also be known as “Rudolpho del Pozo García”) sorts as 
+    an initial “P” or as an initial “D” is a business, not a Tag Set, decision.</li></ul>
+The finer points of personal names are probably best determined by native speakers of the language involved.</p></div><div class="section"><a name="pub-tag-names-cites"></a><h4 class="header">Names and String Names in Citations</h4><p class="para">The names of authors, editors, translators, and other contributors can also be
+ tagged within <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and
+ <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> using <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a>, or <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>.
+ The elements <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> and <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> identify the surname (family name or last name) and
+ given names (first names and middle names) of the person. The element <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> is a 
+   container for <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> elements, <a href="n-cb40.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> elements, and <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> elements.</p><p class="para">Here is a typical citation tagged using <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, tagged as an element citation:</p><div class="codeblock"><pre>&lt;element-citation publication-type="journal" publication-format="print"&gt;
+  &lt;name&gt;
+    &lt;surname&gt;Leifer&lt;/surname&gt;&lt;given-names&gt;BP&lt;/given-names&gt;
+  &lt;/name&gt;
+  &lt;article-title&gt;Early diagnosis of Alzheimer’s disease: clinical and 
+  economic benefits&lt;/article-title&gt;
+  &lt;source&gt;J Am Geriatr Soc&lt;/source&gt;
+  &lt;year&gt;2003&lt;/year&gt;&lt;month&gt;May&lt;/month&gt;
+  &lt;volume&gt;51&lt;/volume&gt;
+  &lt;issue&gt;5 Suppl&lt;/issue&gt;&lt;issue-title&gt;Dementia&lt;/issue-title&gt;
+  &lt;fpage&gt;S281&lt;/fpage&gt;&lt;lpage&gt;S288&lt;/lpage&gt;
+&lt;/element-citation&gt;
+</pre></div><p class="para">and here is the same citation tagged as a mixed citation:</p><div class="codeblock"><pre>&lt;mixed-citation publication-type="journal" publication-format="print"&gt;
+  &lt;string-name&gt;&lt;surname&gt;Leifer&lt;/surname&gt;, 
+     &lt;given-names&gt;BP&lt;/given-names&gt;
+  &lt;/string-name&gt;. &lt;article-title&gt;Early diagnosis of Alzheimer's 
+  disease: clinical and economic benefits&lt;/article-title&gt;. 
+  &lt;source&gt;J Am Geriatr Soc&lt;/source&gt;. 
+  &lt;year&gt;2003&lt;/year&gt;
+  &lt;month&gt;May&lt;/month&gt;;
+  &lt;volume&gt;51&lt;/volume&gt;(&lt;issue&gt;5 Suppl&lt;/issue&gt;  
+  &lt;issue-title&gt;Dementia&lt;/issue-title&gt;):&lt;fpage&gt;S281
+  &lt;/fpage&gt;-&lt;lpage&gt;S288&lt;/lpage&gt;.
+&lt;/mixed-citation&gt;</pre></div><div class="section"><a name="pub-tag-names-cites-space"></a><h4 class="header">Spacing in Citation Names</h4><p class="para">Note that <em>even when</em> the <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element is <em>inside</em> 
+  a <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, the element cannot be used to preserve this space. In the tagged examples below, 
+  there will be no space between the surname and given names, no matter which type of citation contains the <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>:</p><div class="codeblock"><pre>
+&lt;element-citation publication-type="journal"&gt;
+  &lt;name&gt;
+    &lt;surname&gt;Petitti&lt;/surname&gt;  &lt;given-names&gt;DB&lt;/given-names&gt;
+  &lt;/name&gt;
+&lt;/element-citation&gt; 
+
+&lt;mixed-citation publication-type="journal"&gt;
+  &lt;name&gt;
+    &lt;surname&gt;Petitti&lt;/surname&gt;  &lt;given-names&gt;DB&lt;/given-names&gt;
+  &lt;/name&gt;
+&lt;/mixed-citation&gt;</pre></div><p class="para">Within both types of citations, the elements <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> and  
+   <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> can be used to preserve punctuation. These elements are typically used in mixed citations to preserve the punctuation and spacing.
+</p><p class="para"><strong>String Name.</strong> A <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> can preserve the punctuation that separates the surname from the initials or the
+given names, so <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> elements are frequently used inside 
+  <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>s:</p><div class="codeblock"><pre>&lt;mixed-citation publication-type="journal"&gt;
+  &lt;string-name&gt;
+    &lt;surname&gt;Washington&lt;/surname&gt;, &lt;given-names&gt;George&lt;/given-names&gt;
+  &lt;/string-name&gt;. ...
+&lt;mixed-citation&gt;</pre></div><p class="para">In element-style citations, which do not preserve punctuation or spacing,
+ <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> is typically only used to hold
+ name alternatives or unusual names that are not easily broken into <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> and <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> components. For
+ example:</p><div class="codeblock"><pre>&lt;element-citation publication-type="journal"&gt;
+  &lt;string-name&gt;His Royal Highness The Prince Charles, 
+  Prince of Wales and Earl of Chester&lt;/string-name&gt; ...
+&lt;/element-citation&gt;</pre></div><p class="para">The element <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> can also be
+ used to preserve the order of publication for a name. All of the following are legal string
+ names:</p><div class="codeblock"><pre>
+&lt;string-name&gt;
+  &lt;surname&gt;Smith&lt;/surname&gt;, &lt;given-names&gt;JH&lt;/given-names&gt;
+&lt;/string-name&gt;
+
+&lt;string-name&gt;
+  &lt;given-names&gt;JH&lt;/given-names&gt; &lt;surname&gt;Smith&lt;/surname&gt;
+&lt;/string-name&gt;
+
+&lt;string-name&gt;J.H.  &lt;surname&gt;Smith&lt;/surname&gt;&lt;/string-name&gt;</pre></div><p class="para">The first example above would not be a valid <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> because of the comma and space between <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> and <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>. The second and third examples are not
+ valid <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>s because of name component order. The <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element specifies an order for the name component elements to help users regularize this data.</p></div><div class="section"><a name="pub-tag-cite-persongroup"></a><h4 class="header">Person Groups</h4><p class="para">The <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> elements within citations may be
+grouped using the <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element.
+ <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> is very similar to
+ <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> in the article metadata
+ in that it can contain <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>,
+                <a href="n-ya50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, or <a href="n-g620.html" target="main" title="Anonymous"><span class="elementtag">&lt;anonymous&gt;</span></a> elements. <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> takes an optional attribute
+                <a href="n-t9y0.html" target="main" title="Type of People in the Person Group"><span class="attrtag">@person-group-type</span></a> that identifies the
+              type of contributor (editor, illustrator) tagged within the group.</p><p class="para">Here is an editor tagged using <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> inside <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>: </p><div class="codeblock"><pre>  &lt;element-citation publication-type="journal" publication-format="print"&gt;
+  &lt;source&gt;Folia Primatologica: International Journal of Primatology&lt;/source&gt;
+  &lt;person-group person-group-type="editor"&gt;
+  &lt;name&gt;&lt;surname&gt;Crompton&lt;/surname&gt;&lt;given-names&gt;R.H.&lt;/given-names&gt;&lt;/name&gt;
+  &lt;/person-group&gt;
+  &lt;publisher-loc&gt;Basel (Switzerland)&lt;/publisher-loc&gt;
+  &lt;publisher-name&gt;S. Karger AG&lt;/publisher-name&gt;
+  &lt;vol&gt;1&lt;/vol&gt;&lt;year&gt;1863&lt;/year&gt;&lt;comment&gt; -suspect date, may be 1864.&lt;/comment&gt;
+  &lt;/element-citation&gt;</pre></div><p class="para">And that same person group in a mixed citation:</p><div class="codeblock"><pre>  &lt;mixed-citation publication-type="journal" publication-format="print"&gt;
+  &lt;source&gt;Folia Primatologica: International Journal of Primatology&lt;/source&gt;. 
+  &lt;person-group person-group-type="editor"&gt;
+  &lt;name&gt;&lt;surname&gt;Crompton&lt;/surname&gt;&lt;given-names&gt;R.H.&lt;/given-names&gt;
+  &lt;/name&gt;&lt;/person-group&gt;, editor. &lt;publisher-loc&gt;Basel (Switzerland)&lt;/publisher-loc&gt;: 
+  &lt;publisher-name&gt;S. Karger AG&lt;/publisher-name&gt;. Vol. &lt;vol&gt;1&lt;/vol&gt; 
+  &lt;year&gt;1863&lt;/year&gt; -suspect date, may be 1864.&lt;/mixed-citation&gt;
+</pre></div><p class="para">Notice that, in the mixed-style example just given, the information that a person
+ is an editor may be there twice, once as loose textual material with a comma and
+ space, and once as a searchable attribute on the <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element. </p><p class="para">Within both citation types, but more typically used within mixed citations, a <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> 
+  allows preservation of the punctuation between names or the punctuation between a name and its affiliation, such as the square brackets below:</p><div class="codeblock"><pre>&lt;mixed-citation publisher-type="gov"&gt;
+  &lt;person-group person-group-type="author"&gt;
+    &lt;name&gt;&lt;surname&gt;Norman&lt;/surname&gt;
+    &lt;given-names&gt;John C&lt;/given-names&gt;&lt;/name&gt;
+    [&lt;aff&gt;Texas Heart Institute, Houston, TX&lt;/aff&gt;]
+  &lt;/person-group&gt;
+&lt;/mixed-citation&gt;
+</pre></div><p class="para">The <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element can also
+ be used to tag a person’s name and affiliation or to collect a group of
+ contributors, all of whom have a single affiliation. In the example below, two
+ individuals share an affiliation, tagged in an element-style citation.</p><div class="codeblock"><pre>
+&lt;element-citation publication-type="commun"&gt;
+  &lt;person-group&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Hennen&lt;/surname&gt;&lt;given-names&gt;John&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;name&gt;
+      &lt;surname&gt;McDougall&lt;/surname&gt;&lt;given-names&gt;Jenni&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;aff&gt;Edinburgh, Scotland&lt;/aff&gt;
+  &lt;/person-group&gt;
+  &lt;source&gt;Letter to: Dr. Duncan&lt;/source&gt;&lt;year&gt;[date unknown]&lt;/year&gt;
+  &lt;size units="pages"&gt;9 p&lt;/size&gt;&lt;comment&gt;Located at: History of Medicine
+  Division, National Library of Medicine, Bethesda, MD; W6 P3 v.1575.
+  Observations on the cure of syphilis without mercury.&lt;/comment&gt;
+  &lt;/element-citation&gt;</pre></div><p class="para">Another possible use of the <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> is to hold the element <a href="n-afu0.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a>, to designate unnamed individuals (typically indicated in print
+ with the text “et al.”). Unlike many journal Tag Sets, this Tag Set allows <a href="n-afu0.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a> 
+   to contain text, so the user may choose between generating text based on the element or including the text inside the element.</p></div><div class="section"><a name="pub-tag-cite-apa-etal"></a><h4 class="header">APA Ellipses Style for Multiple Authors</h4><p class="para">The 6th edition of the APA Style Guide eliminates long lists of authors when citing a work with more than 7 or 8 authors. (Many 
+  genomics articles have hundreds of authors.) When there are more than 7 authors, the APA citation lists the first 6 authors, then an ellipsis 
+  or the words “et al.”, followed by the last author. Here is an example of such a citation, that has a large number of authors, 
+  as it would be shown in APA style for display or print:</p><div class="codeblock"><pre>
+Dodge, K. A., Berlin, L. J., Epstein, M., Spitz Roth, A., O'Donnell, K., 
+Kauffman, M., . . ., &amp; Christopoulos, C. (2003). The Durham 
+Family Initiative: A preventive system of care. Child Welfare, 
+83(2), 109-128</pre></div><p class="para">Here is the example above tagged as a <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, 
+using the element <a href="n-afu0.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a> as a placeholder, from which the
+ellipses could be generated:</p><div class="codeblock"><pre>
+...
+&lt;ref id="r1"&gt;
+&lt;element-citation publication-type="journal"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Dodge&lt;/surname&gt;
+&lt;given-names&gt;K. A.&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Berlin&lt;/surname&gt;
+&lt;given-names&gt;L. J.&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Epstein&lt;/surname&gt;
+&lt;given-names&gt;M.&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Spitz Roth&lt;/surname&gt;
+&lt;given-names&gt;A.&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;O&amp;#x2019;Donnell&lt;/surname&gt;
+&lt;given-names&gt;K.&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Kauffman&lt;/surname&gt;
+&lt;given-names&gt;M.&lt;/given-names&gt;&lt;/name&gt;
+&lt;etal/&gt;
+&lt;name&gt;&lt;surname&gt;Christopoulos&lt;/surname&gt;
+&lt;given-names&gt;C.&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;year iso-8601-date="2003"&gt;2003&lt;/year&gt;
+&lt;article-title&gt;The Durham Family Initiative: A
+preventive system of care&lt;/article-title&gt;
+&lt;source&gt;Child Welfare&lt;/source&gt;
+&lt;volume&gt;83&lt;/volume&gt;
+&lt;issue&gt;2&lt;/issue&gt;
+&lt;fpage&gt;109&lt;/fpage&gt;
+&lt;lpage&gt;128&lt;/lpage&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+</pre></div><p class="para">Here is the example above tagged as a <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, 
+using the element <a href="n-afu0.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a> to hold the entity reference
+for the ellipsis, the comma-space following each author (including et al.), and the 
+ampersand before the name of the final author:</p><div class="codeblock"><pre>
+...
+&lt;ref id="r1"&gt;
+&lt;mixed-citation publication-type="journal"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Dodge&lt;/surname&gt;
+&lt;given-names&gt;K. A.&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Berlin&lt;/surname&gt;
+&lt;given-names&gt;L. J.&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Epstein&lt;/surname&gt;
+&lt;given-names&gt;M.&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Spitz Roth&lt;/surname&gt;
+&lt;given-names&gt;A.&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;O&amp;#x2019;Donnell&lt;/surname&gt;
+&lt;given-names&gt;K.&lt;/given-names&gt;&lt;/name&gt;,
+&lt;name&gt;&lt;surname&gt;Kauffman&lt;/surname&gt;
+&lt;given-names&gt;M.&lt;/given-names&gt;&lt;/name&gt;,
+&lt;etal&gt;&amp;hellip;&lt;/etal&gt;, &amp;amp; &lt;name&gt;
+&lt;surname&gt;Christopoulos&lt;/surname&gt;
+&lt;given-names&gt;C.&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt; (&lt;year iso-8601-date="2003"&gt;2003&lt;/year&gt;).
+&lt;article-title&gt;The Durham Family Initiative: A preventive
+system of care&lt;/article-title&gt;. &lt;source&gt;Child Welfare&lt;/source&gt;,
+&lt;volume&gt;83&lt;/volume&gt;(&lt;issue&gt;2&lt;/issue&gt;),
+&lt;fpage&gt;109&lt;/fpage&gt;&amp;#x2013;&lt;lpage&gt;128&lt;/lpage&gt;.
+&lt;/mixed-citation&gt;&lt;/ref&gt;
+...
+
+</pre></div><p class="para">Since this Tag Set allows <a href="n-afu0.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a> to contain
+text, the user may choose between generated or contained text. Both of the samples above could alternately have included 
+   <tt>&lt;etal&gt;et al.&lt;/etal&gt;</tt> or <tt>&lt;etal&gt;…&lt;/etal&gt;</tt> instead of the empty 
+   <a href="n-afu0.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a> element.</p></div></div></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

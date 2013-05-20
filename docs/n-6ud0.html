@@ -1,0 +1,52 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Translated Abstract</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;trans-abstract&gt;</h1><h1 class="elementname">Translated Abstract</h1></div><div class="definition"><p class="para">Abstract that has been translated into a language other than that in which the work was originally published.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-efr0.html" target="main"><span class="attrtag">abstract-type</span></a> <a href="n-efr0.html" target="main"><span class="attrname">Type of Abstract</span></a></h5><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">See element <a href="n-br00.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a>, which is the original-language version of the abstract.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  trans-abstract
+                        <a href="n-5ua2.html" target="main" title="Translated Abstract Model"><span class="petag">%trans-abstract-model;</span></a>                       &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, title?, (p)*, (sec)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-sxv0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li><a href="n-3z60.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-3z60.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one</li><li><a href="n-y9s0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-y9s0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, zero or more</li><li><a href="n-4pe0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a> <a href="n-4pe0.html" target="main" title="<sec&gt;"><span class="elementname">Section</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;...&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="publisher-id"&gt;0002792-200209170-00001&lt;/article-id&gt;
+&lt;article-categories&gt;
+&lt;subj-group&gt;
+&lt;subject&gt;Editorial&lt;/subject&gt;
+&lt;/subj-group&gt;
+&lt;/article-categories&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Quebec's Bill 114&lt;/article-title&gt;
+&lt;trans-title-group  xml:lang="fr"&gt;
+&lt;trans-title&gt;La Loi 114 du Qu&amp;eacute;bec&lt;/trans-title&gt;
+&lt;/trans-title-group&gt;
+&lt;/title-group&gt;
+&lt;pub-date pub-type="pub" iso-8601-date="2001-01-02"&gt;
+&lt;day&gt;02&lt;/day&gt;
+&lt;month&gt;01&lt;/month&gt;
+&lt;year&gt;2001&lt;/year&gt;
+&lt;/pub-date&gt;
+...
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 2001, The Canadian Medical
+Association&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;2001&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;
+&lt;p&gt;When 51-year-old Claude Dufresne, experiencing his second myocardial
+infarction, arrived ...&lt;/p&gt;
+&lt;/abstract&gt;
+<strong><span class="focus">&lt;trans-abstract xml:lang="fr"&gt;
+&lt;p&gt;Claude Dufresne, 51 ans, en proie &amp;agrave; son deuxi&amp;egrave;me infarctus
+du myocarde, est arriv&amp;eacute; trop tard de six minutes &amp;agrave; l&amp;apos;urgence
+du Centre hospitalier du Centre-de-la-Mauricie, h&amp;ocirc;pital de 142 lits
+de Shawinigan- Sud. Les portes de l&amp;apos;urgence &amp;eacute;taient en effet
+ferm&amp;eacute;es pour la nuit, parce qu&amp;apos;aucun des 60 m&amp;eacute;decins de
+famille ou internistes de l&amp;apos;h&amp;ocirc;pital n&amp;apos;&amp;eacute;tait disponible
+pour assurer le service. M. Dufresne est d&amp;eacute;c&amp;eacute;d&amp;eacute; en chemin
+vers la salle d&amp;apos;urgence ouverte la plus pr&amp;egrave;s, &amp;agrave; quelque
+30 minutes de l&amp;agrave;.&lt;/p&gt;
+&lt;/trans-abstract&gt;</span></strong>
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

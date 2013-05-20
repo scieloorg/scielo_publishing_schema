@@ -1,0 +1,103 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Tagging Keywords</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h3 class="header">Tagging Keywords</h3><p class="para">Keywords are words and phrases used to name an article’s or section’s key concepts for
+  search and retrieval purposes. Typically an author, publisher, or indexing service will assign a small
+  number of key terms to expand lookup beyond full text, to point up the most important topics
+described in an article, or to map an article to a taxonomy. Indexers assigning keywords can make
+sure that someone searching for “this topic” will find this article or section, even
+if the exact words are not present in the text.  Thus keywords may be key words taken from the text, from an outside 
+vocabulary or taxonomy, or selected by authors, indexers, or publishers.</p><p class="para">In this Tag Set, keywords come in sets (<a href="n-auv0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>), each of which may come from a particular source or ontology (such as 
+“<tt>author-created</tt>” or the 
+“<tt>MeSH Subject Headings</tt>”). The sets are
+  named using the <a href="n-way0.html" target="main" title="@kwd-group-type"><span class="attrname">Keyword Authority</span></a> attribute.
+  Here are some sample tagged keywords that a contributor chose as best describing an
+  article:</p><div class="codeblock"><pre>&lt;kwd-group kwd-group-type="author-created"&gt;
+   &lt;kwd&gt;acid precipitation&lt;/kwd&gt;
+   &lt;kwd&gt;acid rainfall&lt;/kwd&gt;    
+   &lt;kwd&gt;smelting region&lt;/kwd&gt;
+   &lt;kwd&gt;Aluminum residues&lt;/kwd&gt;
+   &lt;kwd&gt;Sulphur dioxide&lt;/kwd&gt;
+   &lt;kwd&gt;Copper-nickel smelters&lt;/kwd&gt;
+   &lt;/kwd-group&gt;</pre></div><p class="para">Earlier versions of this Tag Set allowed for multiple sets of keywords, but
+the individual keywords in the set had no structure; they were just text, words, and
+phrases — possibly with face markup, superscripts, and subscripts (such 
+as “<tt>&lt;kwd&gt;XML&lt;/kwd&gt;</tt>”, 
+“<tt>&lt;kwd&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/kwd&gt;</tt>”, and 
+“<tt>&lt;kwd&gt;blood-brain barrier&lt;/kwd&gt;</tt>”). The current NISO JATS 
+   accommodates more elaborate keyword structures as described below.</p><div class="section"><a name="pub-kwd-compound-kwds"></a><h4 class="header">Tagging Complex/Compound Keywords</h4><p class="para">Keywords can possess an internal structure of their own; for example, a keyword may
+  include both a textual phrase and its corresponding code (“863 Icelandic
+  sagas”). Many styles of such compound keywords can be handled in this Tag Set
+  with the <a href="n-an50.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> element, which is
+  modeled as a series of repeatable parts (<a href="n-z650.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a>). These parts can differentiate a text/code pair, divide a coded
+  keyword into multiple code segments, describe a hierarchy, and name a variety of other
+  compound structures. The <a href="n-vfh0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a>
+  attribute on the <a href="n-z650.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a>
+  element is used to name each part, describe the role it plays, or otherwise define how
+  each part functions within the keyword as a whole.</p><div class="section"><a name="pub-kwd-compound-codes"></a><h4 class="header">Keywords with Codes</h4><p class="para">The simplest case of a compound keyword is a keyword that includes both a textual
+  phrase and its corresponding code, for example, “863 Icelandic sagas”.
+  Both the code and the text can be tagged as keywords parts (<a href="n-z650.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a>) inside the element <a href="n-an50.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a>, with the <a href="n-vfh0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the role or
+  type of each part:</p><div class="codeblock"><pre>
+ &lt;kwd-group kwd-group-type="ISO-463"&gt;
+   &lt;compound-kwd&gt;
+     &lt;compound-kwd-part 
+        content-type="ISO-463-code"&gt;863&lt;/compound-kwd-part&gt;
+     &lt;compound-kwd-part
+        content-type="ISO-463-text"&gt;Icelandic sagas&lt;/compound-kwd-part&gt;
+   &lt;/compound-kwd&gt;
+   ...
+ &lt;/kwd-group&gt;</pre></div></div><div class="section"><a name="pub-kwd-compound-abbr"></a><h4 class="header">Abbreviation and Expansion Keywords</h4><p class="para">Compound keywords can also be used to handle keywords that hold an abbreviation
+              and its expansion. Both the abbreviation and the expansion are tagged as <a href="n-z650.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a> in a single <a href="n-an50.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a>. The <a href="n-way0.html" target="main" title="Keyword Authority"><span class="attrtag">@kwd-group-type</span></a> attribute on <a href="n-auv0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>, which is sometimes used to name the
+              source or the descriptor for the keywords, can be used instead to name the type of
+              information, such as “abbreviations”. For example:</p><div class="codeblock"><pre>
+ &lt;kwd-group kwd-group-type="abbreviations"&gt;
+    &lt;compound-kwd&gt;
+      &lt;compound-kwd-part content-type="abbrev"&gt;WT&lt;/compound-kwd-part&gt;
+      &lt;compound-kwd-part content-type="expansion"&gt;WildType&lt;/compound-kwd-part&gt;
+    &lt;/compound-kwd&gt;
+    &lt;compound-kwd&gt;
+      &lt;compound-kwd-part content-type="abbrev"&gt;CFU&lt;/compound-kwd-part&gt;
+      &lt;compound-kwd-part content-type="expansion"&gt;Colony-forming unit&lt;/compound-kwd-part&gt;
+    &lt;/compound-kwd&gt;
+ &lt;/kwd-group&gt;
+</pre></div></div><div class="section"><a name="pub-kwd-compound-hier"></a><h4 class="header">Tagging Nested or Hierarchical Keywords</h4><p class="para">Some publishers assign hierarchical topics to articles. For example, a publisher
+              might tag selected topics (“Blood–brain barrier”), nested inside themes
+                (“Cellular and Molecular Biology”), grouped into larger units like
+                “Neuroscience”, and grouped into still larger units such as
+                “Biological Sciences”, forming the following hierarchy:</p><div class="codeblock"><pre>Biological Sciences
+   Neuroscience
+      Cellular and Molecular Biology
+         Blood–brain barrier</pre></div><p class="para">This kind of structure places an article in context or sorts articles into
+              categories. This is commonly seen in Tables of Contents, where all the Neuroscience
+              articles are grouped together and all the Biochemistry articles are grouped, etc.
+              Since keywords are intended to aid in searching and retrieval of articles
+              rather than establishing an article’s context, best practice is to tag this
+              topic structure as subject groups:</p><div class="codeblock"><pre>
+&lt;article-categories&gt;
+  &lt;subj-group subj-group-type="keywords"&gt; 
+     &lt;subject&gt;Biological Sciences&lt;/subject&gt;
+     &lt;subj-group subj-group-type="keywords"&gt;
+        &lt;subject&gt;Neuroscience&lt;/subject&gt;
+        &lt;subj-group subj-group-type="keywords"&gt;
+            &lt;subject&gt;Cellular and Molecular Biology&lt;/subject&gt;  
+          &lt;subj-group subj-group-type="keywords"&gt;
+               &lt;subject&gt;Blood–brain barrier&lt;/subject&gt;
+            &lt;/subj-group&gt;
+        &lt;/subj-group&gt;
+     &lt;/subj-group&gt;
+  &lt;/subj-group&gt; 
+&lt;/article-categories&gt;</pre></div><p class="para">But Hierarchical (nested) keywords structures are also possible. These, while still rare, are
+becoming more common as taxonomies are used to tag keywords for articles. Each <a href="n-qas0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a> contains a single keyword and any levels of nesting under that
+keyword. Since nested keywords are recursive, these lower levels are inside an inner <a href="n-qas0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a>. The same example is used below to show how nested keywords work.</p><div class="codeblock"><pre>
+&lt;kwd-group kwd-group-type="author" xml:lang="en"&gt;
+&lt;nested-kwd&gt;   
+  &lt;kwd&gt;Biological Sciences&lt;/kwd&gt;
+  &lt;nested-kwd&gt;
+     &lt;kwd&gt;Neuroscience&lt;/kwd&gt;
+     &lt;nested-kwd&gt; 
+       &lt;kwd&gt;Cellular and Molecular Biology&lt;/kwd&gt;  
+       &lt;nested-kwd&gt;
+         &lt;kwd&gt;Blood–brain barrier&lt;/kwd&gt; 
+       &lt;/nested-kwd&gt;
+     &lt;/nested-kwd&gt;
+  &lt;/nested-kwd&gt; 
+&lt;/nested-kwd&gt;
+&lt;/kwd-group&gt;</pre></div></div></div></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>
