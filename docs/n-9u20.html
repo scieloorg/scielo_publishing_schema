@@ -1,0 +1,68 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Alternate Text Name (for a figure, etc.)</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;alt-text&gt;</h1><h1 class="elementname">Alternate Text Name (for a figure, etc.)</h1></div><div class="definition"><p class="para">Word or phrase used to provide a very short textual name, description, or purpose-statement for a structure such as a graphic or figure.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Accessibility:</strong> The short <span class="elementtag">&lt;alt-text&gt;</span> can be used for special accessibility display or presentation on graphic-limited websites or devices, as an alternative to providing the full graphic. (For example, the <span class="elementtag">&lt;alt-text&gt;</span> element is typically read by screen readers and <span class="elementtag">&lt;alt-text&gt;</span> may also be used to display a few words “behind” a figure or graphic for devices with limited graphics capacity.) </p><p class="para"><em>Please</em> reserve this tag for accessibility uses such as pronouncing screen readers. This element should <em>not</em> to be used as a replacement for <a href="n-dh30.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>, which is a visual element typically displayed alongside a figure, table, etc. The <span class="elementtag">&lt;alt-text&gt;</span> is not a visual element, unless the figure, caption, or other major element that holds the <span class="elementtag">&lt;alt-text&gt;</span> is not available or cannot be processed by the person or device-type being addressed. Since it is not visual, <span class="elementtag">&lt;alt-text&gt;</span> does not allow face markup inside it; a simplified textual alternative for a graphical object (including face markup) can be created using the <a href="n-ng60.html" target="main" title="Textual Form"><span class="elementtag">&lt;textual-form&gt;</span></a> element.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para"> The similarly non-visual element <a href="n-4yv0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> is meant for an extended description of the figure, table, etc.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  alt-text     (#PCDATA)                                    &gt;</pre></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-m920.html" target="main" title="Array (Simple Tabulation)"><span class="elementtag">&lt;array&gt;</span></a>, <a href="n-3q30.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>, <a href="n-ek50.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-cra0.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-dja0.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-pyu0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-wmu0.html" target="main" title="Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a>, <a href="n-6cx0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href="n-x4x0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>, <a href="n-qsx0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>, <a href="n-kbv0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, <a href="n-unt0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a>, <a href="n-txn0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-ppn0.html" target="main" title="Table Wrapper Group"><span class="elementtag">&lt;table-wrap-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Short description of an image in a figure:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;sec sec-type="results"&gt;
+&lt;title&gt;Results&lt;/title&gt;
+&lt;p&gt;We identified 703 abstracts, of which 687 were not
+relevant ... Details of randomisation procedures,
+treatment schedules, and numbers of patients followed up
+are given on the &lt;italic&gt;BMJ&lt;/italic&gt; website.&lt;/p&gt;
+&lt;fig id="F1"&gt;
+&lt;caption&gt;
+&lt;title&gt;Deaths among patients receiving day hospital care
+or alternative services.&lt;/title&gt;&lt;p&gt;Odds ratios of death by end
+of follow up were calculated by fixed effects model.
+Heterogeneity between trials is presented as
+&amp;#x03C7;&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;/caption&gt;
+<strong><span class="focus">&lt;alt-text&gt;Deaths in hospitals or with alternative services&lt;/alt-text&gt;</span></strong>
+&lt;graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="fors2662.f1"&gt;
+&lt;object-id&gt;456472&lt;/object-id&gt;
+&lt;/graphic&gt;
+&lt;/fig&gt;
+...
+&lt;/sec&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">For speaking an inline graphic:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;p&gt;The McDuck Corporation&lt;inline-graphic
+xlink:href="images/1742-9994-3-18-1.jpg"&gt;
+<strong><span class="focus">&lt;alt-text&gt;McDuck logo&lt;/alt-text&gt;</span></strong>
+&lt;/inline-graphic&gt; first initiated these far-flung
+programs in 2005...&lt;/p&gt;...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Short description of an image in a boxed text:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;boxed-text position="float" id="B1"&gt;
+&lt;caption&gt;
+&lt;title&gt;The Hens First Meeting on Day 1&lt;/title&gt;
+&lt;p&gt;The music notation graph for four hens on their first day
+of meeting. The horizontal lines represent the hens by
+their ranks within their hierarchy: red for the top-ranked hen,
+blue for the second-ranked, green for the third-ranked, and black
+for the fourth-ranked. Arrows indicate aggressive acts from one
+hen to another, and the arrows are in the color of the initiator
+and go from her line to the line of the receiver. The numbers at
+the ends of the lines show the wing badge identification numbers
+of the hens, and the time in minutes and hours elapsed since the
+group was introduced is indicated above each block of the
+graph.&lt;/p&gt;&lt;/caption&gt;
+&lt;graphic xlink:href="images/1742-9994-3-18-1.jpg"&gt;
+<strong><span class="focus">&lt;alt-text&gt;music notation graph of first meeting&lt;/alt-text&gt;</span></strong>
+&lt;/graphic&gt;
+&lt;/boxed-text&gt;...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">The alternative text is descriptive and need not echo the caption:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+  &lt;fig id="fg-3"&gt;
+   &lt;caption&gt;&lt;p&gt;Picture with a Positive Association&lt;/p&gt;&lt;/caption&gt;
+     &lt;graphic xlink:href="frontView.png"&gt;
+       <strong><span class="focus">&lt;alt-text&gt;Collie puppy image&lt;/alt-text&gt;</span></strong>
+     &lt;/graphic&gt;
+  &lt;/fig&gt;
+...
+
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

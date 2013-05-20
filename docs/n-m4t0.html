@@ -1,0 +1,41 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Patent Number, Cited</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;patent&gt;</h1><h1 class="elementname">Patent Number, Cited</h1></div><div class="definition"><p class="para">Identification information for a patent in a bibliographic reference or product.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">This element may be used in bibliographic references (<a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>).</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-x9h0.html" target="main"><span class="attrtag">country</span></a> <a href="n-x9h0.html" target="main"><span class="attrname">Country</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  patent       (#PCDATA <a href="n-7832.html" target="main" title="Patent Number Elements"><span class="petag">%patent-elements;</span></a>)*                 &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-vxs0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-w9t0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pd70.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-f970.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):
+</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="patent"&gt;
+&lt;person-group person-group-type="inventor"&gt;
+&lt;name&gt;&lt;surname&gt;Cho&lt;/surname&gt;
+&lt;given-names&gt;ST&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;collab collab-type="assignee"&gt;Hospira, Inc.&lt;/collab&gt;
+&lt;article-title&gt;Microneedles for minimally invasive
+drug delivery&lt;/article-title&gt;
+&lt;source&gt;United States patent&lt;/source&gt;
+<strong><span class="focus">&lt;patent country="US"&gt;US 6,980,855&lt;/patent&gt;</span></strong>
+&lt;year iso-8601-date="2005-12-27"&gt;2005&lt;/year&gt;
+&lt;month&gt;Dec&lt;/month&gt;
+&lt;day&gt;27&lt;/day&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):
+</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="patent"&gt;
+&lt;string-name&gt;&lt;surname&gt;Cho&lt;/surname&gt;,
+&lt;given-names&gt;ST&lt;/given-names&gt;&lt;/string-name&gt;, inventor;
+&lt;collab&gt;Hospira, Inc.&lt;/collab&gt;, assignee.
+&lt;article-title&gt;Microneedles for minimally invasive
+drug delivery&lt;/article-title&gt;. &lt;source&gt;United States
+patent&lt;/source&gt; <strong><span class="focus">&lt;patent country="US"&gt;US 6,980,855&lt;/patent&gt;</span></strong>.
+&lt;year iso-8601-date="2005-12-27"&gt;2005&lt;/year&gt;
+&lt;month&gt;Dec&lt;/month&gt; &lt;day&gt;27&lt;/day&gt;.&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-references1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

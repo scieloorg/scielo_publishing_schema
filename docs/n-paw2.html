@@ -1,0 +1,20 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Length and Size</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h4 class="header">Length and Size</h4><p class="para">This Tag Set has a single general purpose element <a href="n-7ef0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a> for recording the number of pages in a book, the showing time of a
+            film, the number of kilo/mega/tera-bytes in a dataset, or any other measurement of size,
+            length, or extent that may be recorded for a cited work. The <a href="n-j9p0.html" target="main" title="Units"><span class="attrtag">@units</span></a> attribute should be used whenever possible to
+            state the units of measure, such as 
+“<tt>pages</tt>”, 
+“<tt>minutes</tt>”,
+ “<tt>paragraphs</tt>”, 
+“<tt>MB</tt>”, etc., which is typically given in the
+            plural.</p><p class="para"><a href="n-38t0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a> is a metadata element
+            in the description of the work that records similar page-size information for the work
+            rather than for cited material. The <a href="n-7ef0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a>
+            and <a href="n-38t0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a> are modeled very
+            differently. The size element is assumed to contain the textual value of the size</p><div class="codeblock"><pre>&lt;size unit="paragraphs"&gt;8&lt;size&gt;</pre></div><p class="para">while the page count element is an <tt>EMPTY</tt> element that stores its value
+            in the <a href="n-8qh0.html" target="main" title="Count"><span class="attrtag">@count</span></a> attribute:</p><div class="codeblock"><pre>&lt;page-count count="26"/&gt;</pre></div><p class="para">In element-style citations (<a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>), the units can be handled in the following ways. If the
+              <a href="n-j9p0.html" target="main" title="Units"><span class="attrtag">@units</span></a> attribute value has been tagged
+            consistently, the text can be generated on display and does not have to be included in
+            the tag:</p><div class="codeblock"><pre>&lt;size units="pages"&gt;256&lt;/size&gt;</pre></div><p class="para">If the publisher or archive does not wish to generate text based on the attribute or
+            the attributes have not been tagged consistently, the text can be included in the
+              <a href="n-7ef0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a> tag:</p><div class="codeblock"><pre>&lt;size units="pages"&gt;256 pages&lt;/size&gt;</pre></div></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

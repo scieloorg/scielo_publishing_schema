@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Article Identifier</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;article-id&gt;</h1><h1 class="elementname">Article Identifier</h1></div><div class="definition"><p class="para">Unique identifier assigned to an article.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">There may be many identifiers for a single article, and each <a href="n-8ac0.html" target="main" title="Article Identifier"><span class="elementtag">&lt;article-id&gt;</span></a>  holds only one. While such an identifier may be a unique identifier in some system, an article can be identified in many systems. The content for this element may be assigned by a publisher, a jobber, CrossRef, or PubMed Central, for example. Examples of such identifiers include the publisher’s tracking number, a DOI, a PNAS number, etc.</p><p class="para">The <a href="n-g8j0.html" target="main" title="Type of Publication Identifier"><span class="attrtag">@pub-id-type</span></a> attribute may be used to name the type of identifier (such as DOI or SICI), or the organization or system (such as PubMed Central) that defined this identifier. This attribute need only be used if the type is known, for example, to identify DOIs explicitly.</p><p class="para"><strong>Conversion Note:</strong> An archive may attempt to carry all the identifiers associated with an article. For example, during conversion PubMed Central will create <a href="n-8ac0.html" target="main" title="Article Identifier"><span class="elementtag">&lt;article-id&gt;</span></a>s for identifiers that come from the publisher as elements or as attributes on the original article.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-g8j0.html" target="main"><span class="attrtag">pub-id-type</span></a> <a href="n-g8j0.html" target="main"><span class="attrname">Type of Publication Identifier</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  article-id   (#PCDATA)                                    &gt;</pre></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="pmc"&gt;BMJ&lt;/journal-id&gt;
+&lt;journal-id journal-id-type="publisher"&gt;BR MED J&lt;/journal-id&gt;
+&lt;issn&gt;0959-8138&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+<strong><span class="focus">&lt;article-id pub-id-type="pmid"&gt;10092260&lt;/article-id&gt;</span></strong>
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;...&lt;/aff&gt;
+&lt;pub-date pub-type="pub" iso-8601-date="1999-03-27"&gt;
+...&lt;/pub-date&gt;
+...
+&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

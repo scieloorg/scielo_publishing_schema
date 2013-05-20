@@ -1,0 +1,73 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Caption of a Figure, Table, etc.</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;caption&gt;</h1><h1 class="elementname">Caption of a Figure, Table, etc.</h1></div><div class="definition"><p class="para">Container element for the textual description that is associated with an object (for example, with a <a href="n-pyu0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> or <a href="n-6fn0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a>).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">A caption is a visible textual description of a table, figure, or similar object. In print or display, a caption is usually recognizable because it is not part of the ordinary text flow; it sits just under, above, beside, or in the same small window or page area as the tabular portions of a table or the graphical portions of a figure. A <a href="n-dh30.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> may contain many kinds of text associated with its object, for example, a title (tagged as <a href="n-3z60.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>), a descriptive paragraph (tagged as <a href="n-y9s0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>), or a legend (which is not identified as a separate element in this Suite).</p><p class="para">The text of the caption does not typically include words such as “Figure 3.” or “Table 11-a”. These labels may not be present in the XML file, since many publishers choose to generate such text at display time, but if they are in the source XML, they may be preserved using the <a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> element.</p><p class="para"><strong>Best Practice:</strong> In many journal articles, a distinction is made between the caption of a figure/table/etc. and its title. There may be two separate tags (<a href="n-dh30.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> and <a href="n-3z60.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>), or the first sentence of the caption may be set off typographically from the rest of the caption to indicate that it is a title, for example, the first sentence may be italic or bold. In either case, if it is obvious that the figure/table/etc. contains both a title and a caption, both the title and the caption should both be tagged during conversion, and the title should be moved inside the caption if it is outside.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">style</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Style (NISO JATS table model; MathML 2.0 Tag Set)</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  caption      <a href="n-tt90.html" target="main" title="Caption Model"><span class="petag">%caption-model;</span></a>                              &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(title?, (p)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-3z60.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-3z60.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one</li><li><a href="n-y9s0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-y9s0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-af30.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-ek50.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-dja0.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-pyu0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-wmu0.html" target="main" title="Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a>, <a href="n-6cx0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href="n-kbv0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, <a href="n-txn0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-ppn0.html" target="main" title="Table Wrapper Group"><span class="elementtag">&lt;table-wrap-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In a figure:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;sec&gt;
+&lt;title&gt;Results&lt;/title&gt;
+&lt;p&gt;We identified .... Details of randomization procedures,
+treatment schedules, and numbers of patients followed up
+are given on the &lt;italic&gt;BMJ&lt;/italic&gt; website.&lt;/p&gt;
+&lt;fig id="F1"&gt;
+&lt;label&gt;Figure 1&lt;/label&gt;
+<strong><span class="focus">&lt;caption&gt;
+&lt;title&gt;Deaths Among Patients Receiving Day Hospital
+Care or Alternative Services.&lt;/title&gt;
+&lt;p&gt; Odds ratios of death by end of follow up were calculated
+by fixed effects model. Heterogeneity between trials is
+presented as &amp;amp;#x03C7;&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;/caption&gt;</span></strong>
+&lt;graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="fors2662.f1"&gt;&lt;/graphic&gt;
+&lt;/fig&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/sec&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a table:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="TN0.170"&gt;
+&lt;label&gt;Table 17&lt;/label&gt;
+<strong><span class="focus">&lt;caption&gt;&lt;p&gt;Numbers of patients receiving institutional
+care at the end of scheduled follow up and use of hospital
+beds among those allocated to day hospital or alternative
+services&lt;/p&gt;&lt;/caption&gt;</span></strong>
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th/&gt;
+&lt;th colspan="3" align="center" rowspan="1"&gt;Institutional
+care&lt;/th&gt;
+&lt;th align="left"/&gt; &lt;th colspan="2" align="center"
+rowspan="1"&gt;&amp;#x2003;Bed use (days)&lt;/th&gt;
+&lt;/tr&gt;
+...
+&lt;/table&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Multiple captions for a graphic:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;fig id="F4"&gt;
+&lt;graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="pq0405498004" specific-use="internet"&gt;
+<strong><span class="focus">&lt;caption specific-use="short"&gt;
+&lt;p&gt;Functional and evolutionary relationships between
+polyadenylation machineries and telomerases. The
+functional relationships described here are shaded.&lt;/p&gt;
+&lt;/caption&gt;</span></strong>
+<strong><span class="focus">&lt;caption specific-use="long"&gt;
+&lt;p&gt;Functional and evolutionary relationships between
+polyadenylation machineries and telomerases. The thick
+rectangular frame encompasses the Hfq and PABP II
+polyadenylation stimulatory factors. Hfq and PABP II are
+linked to enzymes that they modulate by thin rectangular
+frames. Members of the nucleotidyltransferase family are
+surrounded by an oval, and telomerase-related enzymes
+that maintain the 5&amp;#x2032; extremities of RNA tagged
+by a hairpin structure are circled. The functional
+relationships described here are shaded.&lt;/p&gt;
+&lt;/caption&gt;</span></strong>
+&lt;/graphic&gt;
+&lt;/fig&gt;
+...
+
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-display1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

@@ -1,0 +1,91 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Table (NISO JATS table model)</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;table&gt;</h1><h1 class="elementname">Table (NISO JATS table model)</h1></div><div class="definition"><p class="para">The rows and columns part of a full table. (This element is based on and intended to be converted easily to the XHMTL <tt>table</tt> element.)</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">By default, the NISO JATS table model (based on and designed to be converted easily to the XHTML 1.1 table model) should be used as defined in the XHTML 1.1 table model, to take advantage of existing software for table handling.</p><p class="para">This element contains <em>only</em> the rows and columns of the table, which is typically just part of what would be called a “table” in print or display. A full table might also include a table number (label), a table title, a table caption, table notes and footnotes, introductory paragraphs, etc., so a full table is tagged using the <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element. If the complex table contains rows and columns, <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> will contain a <span class="elementtag">&lt;table&gt;</span> as well as other content.</p><p class="para">In the NISO JATS table model, the XHMTL™ table model has been modified to remove the <a href="n-dh30.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> element from within the <a href="n-6fn0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a> element, because, in the base Suite, the <a href="n-dh30.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> element has been made part of the <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the table formatting, see <a href="n-egw2.html#pub-tag-table-format">Table Formatting</a>. For a discussion on the use of <span class="elementtag">&lt;table&gt;</span>s inside <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> and for related groups of tables, see <a href="n-egw2.html#pub-tag-table-wrap">Table, Table Wrapper, and Table Group</a>.</p><p class="para"><strong>OASIS CALS Table Note:</strong>  The OASIS XML Exchange (CALS)
+table model has also been included in the NISO JATS Suite and may be used as an alternative table
+model. It is even possible, though not easy, to include two different table models in a JATS-based
+DTD, by using pseudo-namespaces with a fixed prefix to differentiate any name clashes. The
+XHTML-based table model is usually taken as primary (no name space prefix) and the OASIS Exchange
+table model set up to use pseudo-namespaces (prefix “<tt>oasis</tt>”) with an
+<tt>xmlns #FIXED</tt> attribute. For organizations that choose to use the OASIS model instead of
+the more XHTML-like NISO JATS table model, a version of the Publishing DTD has been provided with
+the OASIS table model (<tt>JATS-archive-oasis-article1.dtd</tt>). A separate Tag Library describing the OASIS table model elements, attributes, and parameter entities may be accessed at <a href="http://jats.nlm.nih.gov/options/OASIS/tag-library/19990315/index.html" target="_new" class="external">http://jats.nlm.nih.gov/options/OASIS/tag-library/19990315/index.html</a>.</p><p class="para">The following changes were made to the OASIS XML Exchange (CALS) table model: <ul class="bullist"><li>The <tt>%titles;</tt> parameter entity for the OASIS table model has been set to the null string (<tt>""</tt>), since the table title <a href="n-3z60.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> is also part of the <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>; and </li><li>The OASIS pseudo-namespace with a prefix of “oasis” has been added to each element.</li></ul> </p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-b8h0.html" target="main"><span class="attrtag">border</span></a> <a href="n-b8h0.html" target="main"><span class="attrname">Border (Frame) around a Table (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-quh0.html" target="main"><span class="attrtag">cellpadding</span></a> <a href="n-quh0.html" target="main"><span class="attrname">Cell Padding (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-iwh0.html" target="main"><span class="attrtag">cellspacing</span></a> <a href="n-iwh0.html" target="main"><span class="attrname">Cell Spacing (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-3hi0.html" target="main"><span class="attrtag">frame</span></a> <a href="n-3hi0.html" target="main"><span class="attrname">Frame (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-dkp0.html" target="main"><span class="attrtag">rules</span></a> <a href="n-dkp0.html" target="main"><span class="attrname">Rules (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">style</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Style (NISO JATS table model; MathML 2.0 Tag Set)</span></a></h5><h5 class="header"><a href="n-cyp0.html" target="main"><span class="attrtag">summary</span></a> <a href="n-cyp0.html" target="main"><span class="attrname">Summary (NISO JATS table model)</span></a></h5><h5 class="header"><a href="n-acq0.html" target="main"><span class="attrtag">width</span></a> <a href="n-acq0.html" target="main"><span class="attrname">Width (NISO JATS table model; MathML 2.0 Tag Set)</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The <a href="n-6fn0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a> element is an element defined by either the NISO JATS table model (based on and designed to be converted easily to the XHTML 1.1 table model) or the OASIS XML Exchange (CALS) table model. The <a href="n-6fn0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a> element is not, by itself, a full table, including only the rows and columns portions of a table. A full table may have other features, such as a title, caption, table footnotes, etc. The <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a> element contains the elements of a full table. Note: A full table may <em>or may not</em> include a <a href="n-6fn0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a> element within it, since other constructions, such as 2-part lists, may also be given table titles, captions, etc.</p></div><div class="contentmodel"><h2 class="header first">Expanded Content Model</h2><p class="contentdesc">((col* | colgroup*), ((thead?, tfoot?, tbody+) | (tr+)))</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>Any one of:<ul class="bullist"><li><a href="n-j550.html" target="main" title="Table Column (NISO JATS table model)"><span class="elementtag">&lt;col&gt;</span></a> <a href="n-j550.html" target="main" title="<col&gt;"><span class="elementname">Table Column (NISO JATS table model)</span></a>, zero or more</li><li><a href="n-y850.html" target="main" title="Table Column Group (NISO JATS table model)"><span class="elementtag">&lt;colgroup&gt;</span></a> <a href="n-y850.html" target="main" title="<colgroup&gt;"><span class="elementname">Table Column Group (NISO JATS table model)</span></a>, zero or more</li></ul></li><li>Any one of:<ul class="bullist"><li>The following, in order:<ul class="bullist"><li><a href="n-c960.html" target="main" title="Table Header (NISO JATS table model)"><span class="elementtag">&lt;thead&gt;</span></a> <a href="n-c960.html" target="main" title="<thead&gt;"><span class="elementname">Table Header (NISO JATS table model)</span></a>, zero or one</li><li><a href="n-mr60.html" target="main" title="Table Footer (NISO JATS table model)"><span class="elementtag">&lt;tfoot&gt;</span></a> <a href="n-mr60.html" target="main" title="<tfoot&gt;"><span class="elementname">Table Footer (NISO JATS table model)</span></a>, zero or one</li><li><a href="n-kzn0.html" target="main" title="Table Body (NISO JATS table model)"><span class="elementtag">&lt;tbody&gt;</span></a> <a href="n-kzn0.html" target="main" title="<tbody&gt;"><span class="elementname">Table Body (NISO JATS table model)</span></a>, one or more</li></ul></li><li><a href="n-fad0.html" target="main" title="Table Row (NISO JATS table model)"><span class="elementtag">&lt;tr&gt;</span></a> <a href="n-fad0.html" target="main" title="<tr&gt;"><span class="elementname">Table Row (NISO JATS table model)</span></a>, one or more</li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-ke20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a>, <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="TN0.170"&gt;
+&lt;caption&gt;
+&lt;p&gt;Numbers of patients receiving institutional
+care at the end of scheduled follow up and
+use of hospital beds among those allocated
+to day hospital or alternative services&lt;/p&gt;
+&lt;/caption&gt;
+<strong><span class="focus">&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="3" align="center"
+rowspan="1"&gt;Institutional care&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="2" align="center"
+rowspan="1"&gt;&amp;#x2003;Bed use (days)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3"&gt;&lt;hr/&gt;&lt;/td&gt;
+&lt;td colspan="2"&gt;&lt;hr/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;Control group&lt;/th&gt;
+&lt;th align="center"&gt;Day hospital&lt;/th&gt;
+&lt;th align="center"&gt;Control&lt;/th&gt;
+&lt;th align="center"&gt;Odds ratio (95&amp;#x0025; CI)&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align="center"&gt;Day hospital&lt;/th&gt;
+&lt;th align="center"&gt;Control&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="7"&gt;&lt;hr/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Comprehensive care (5 trials)&lt;/td&gt;
+&lt;td align="center"&gt;151/597&lt;xref ref-type="table-fn"
+rid="TF1-150"&gt;&lt;/xref&gt;&lt;/td&gt;
+&lt;td align="center"&gt;159/584&lt;/td&gt;
+&lt;td align="center"&gt;0.91 (0.70 to 1.19)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;20.5&lt;/td&gt;
+&lt;td align="center"&gt;21.4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Domiciliary care (4 trials)&lt;/td&gt;
+&lt;td align="center"&gt;20/216&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;19/227&lt;/td&gt;
+&lt;td align="center"&gt;1.61 (0.30 to 8.55)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;7.7&lt;/td&gt;
+&lt;td align="center"&gt;11.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;No comprehensive care (3 trials)&lt;/td&gt;
+&lt;td align="center"&gt;37/411&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;66/403&lt;/td&gt;
+&lt;td align="center"&gt;0.50&lt;xref ref-type="table-fn"
+rid="TF1-151"&gt;&lt;/xref&gt; (0.26 to 0.96)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;11.2&lt;/td&gt;
+&lt;td align="center"&gt;11.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td align="center"&gt;208/1224&lt;/td&gt;
+&lt;td align="center"&gt;244/1214&lt;/td&gt;
+&lt;td align="center"&gt;0.77 (0.52 to 1.13)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;15.0&lt;/td&gt;&lt;td align="center"&gt;16.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</span></strong>
+&lt;table-wrap-foot&gt;
+&lt;fn-group&gt;
+&lt;fn id="TF1-150"&gt;&lt;p&gt;Data not available for 1 trial.&lt;/p&gt;&lt;/fn&gt;
+&lt;fn id="TF1-151"&gt;&lt;p&gt;P&amp;#x003C;0.05 (random effects model).&lt;/p&gt;&lt;/fn&gt;
+&lt;/fn-group&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-xhtml-table-1.mod</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

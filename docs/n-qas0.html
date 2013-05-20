@@ -1,0 +1,79 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Nested Keyword</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;nested-kwd&gt;</h1><h1 class="elementname">Nested Keyword</h1></div><div class="definition"><p class="para">A hierarchically-structured keyword, such as a keywords from a taxonomy.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Key words are contained in <a href="n-auv0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>s. There may be several <a href="n-auv0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>s, each of which can be identified separately by language, vocabulary, or taxonomy source. None of the individual keyword elements (<span class="elementtag">&lt;kwd&gt;</span>, <a href="n-an50.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a>, <a href="n-qas0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a>) take the <a href="n-c6q0.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attribute; that is reserved for the <a href="n-auv0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>. This means that keywords must be sorted by language and entered in language groups.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class="elementtag">&lt;kwd&gt;</span>, see <a href="n-cuu2.html#pub-tag-keywords">Keywords</a>.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">This Tag Set contains several differently-structured types of keywords:<ul class="bullist"><li>The element <a href="n-k5v0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a> is used with simple keywords: words or phrases. </li><li>The element <a href="n-an50.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> is used with multi-part keywords, such as a keyword that is a code-and-term pair.</li><li>The element <a href="n-qas0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a> is used with hierarchical keywords structures, such as taxonomies, to record a portion of a taxonomic hierarchy. Both simple and compound keywords can be nested hierarchically.</li></ul></p><p class="para"><strong>Best Practice:</strong> In this Tag Set,  nested keywords ( <a href="n-qas0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a>) should be reserved for hierarchical material such as taxonomies. There are a few journal tag sets in which keyword nesting is used to simulate a two-part list. Such a keyword list should be tagged as a <a href="n-hga0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> instead.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  nested-kwd   <a href="n-6rc2.html" target="main" title="Nested Keyword Model"><span class="petag">%nested-kwd-model;</span></a>                           &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((kwd | compound-kwd)+, nested-kwd*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>One or more of any of:<ul class="bullist"><li><a href="n-k5v0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a> <a href="n-k5v0.html" target="main" title="<kwd&gt;"><span class="elementname">Keyword</span></a></li><li><a href="n-an50.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> <a href="n-an50.html" target="main" title="<compound-kwd&gt;"><span class="elementname">Compound Keyword</span></a></li></ul></li><li><a href="n-qas0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a> <a href="n-qas0.html" target="main" title="<nested-kwd&gt;"><span class="elementname">Nested Keyword</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-auv0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>, <a href="n-qas0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;kwd-group kwd-group-type="xyw-food-taxonomy"&gt;
+<strong><span class="focus">&lt;nested-kwd&gt;
+  &lt;kwd&gt;drink&lt;/kwd&gt;
+  <strong><span class="focus">&lt;nested-kwd&gt;
+    &lt;kwd&gt;alcoholic&lt;/kwd&gt;
+    <strong><span class="focus">&lt;nested-kwd&gt;
+      &lt;kwd&gt;beer&lt;/kwd&gt;
+      &lt;kwd&gt;martini&lt;/kwd&gt;
+      &lt;kwd&gt;wine&lt;/kwd&gt;
+    &lt;/nested-kwd&gt;</span></strong>
+  &lt;/nested-kwd&gt;</span></strong>
+  <strong><span class="focus">&lt;nested-kwd&gt;
+    &lt;kwd&gt;dairy&lt;/kwd&gt;
+    <strong><span class="focus">&lt;nested-kwd&gt;
+      &lt;kwd&gt;milk&lt;/kwd&gt;
+      &lt;kwd&gt;drinkable yogurt&lt;/kwd&gt;
+      &lt;kwd&gt;milkshakes&lt;/kwd&gt;
+    &lt;/nested-kwd&gt;</span></strong>
+  &lt;/nested-kwd&gt;</span></strong>
+&lt;/nested-kwd&gt;</span></strong>
+&lt;/kwd-group&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;kwd-group kwd-group-type="ISO-party-codes"&gt;
+<strong><span class="focus">&lt;nested-kwd&gt;
+  &lt;compound-kwd content-type="ISO-party-codes"&gt;
+    &lt;compound-kwd-part content-type="ISO-party-code-value"&gt;4335&lt;/compound-kwd-part&gt;
+     &lt;compound-kwd-part content-type="ISO-party-code-name"&gt;Halloween&lt;/compound-kwd-part&gt;
+  &lt;/compound-kwd&gt;
+  <strong><span class="focus">&lt;nested-kwd&gt;
+    &lt;compound-kwd&gt;
+      &lt;compound-kwd-part content-type="ISO-party-code-value"&gt;43351&lt;/compound-kwd-part&gt;
+      &lt;compound-kwd-part content-type="ISO-party-code-name"&gt;Adult Halloween 
+        Party&lt;/compound-kwd-part&gt;
+    &lt;/compound-kwd&gt;
+    &lt;compound-kwd&gt;
+      &lt;compound-kwd-part content-type="ISO-party-code-value"&gt;43352&lt;/compound-kwd-part&gt;
+      &lt;compound-kwd-part content-type="ISO-party-code-name"&gt;Children's Halloween 
+        Party&lt;/compound-kwd-part&gt;
+    &lt;/compound-kwd&gt;
+  &lt;/nested-kwd&gt;</span></strong>
+&lt;/nested-kwd&gt;</span></strong>
+&lt;/kwd-group&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+...
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;kwd-group kwd-group-type="author"&gt;
+  <strong><span class="focus">&lt;nested-kwd&gt;
+    &lt;kwd&gt;Other rheumatic heart disease&lt;/kwd&gt;
+    <strong><span class="focus">&lt;nested-kwd&gt;
+      &lt;kwd&gt;Rhematic myocarditis&lt;/kwd&gt;
+      &lt;kwd&gt;Other and unspecified rheumatic heart disease&lt;/kwd&gt;
+      <strong><span class="focus">&lt;nested-kwd&gt;
+        &lt;kwd&gt;Rheumatic heart disease, unspecified&lt;/kwd&gt;
+        &lt;kwd&gt;Rheumatic heart failure (congestive)&lt;/kwd&gt;
+        &lt;kwd&gt;Other&lt;/kwd&gt;
+      &lt;/nested-kwd&gt;</span></strong>
+    &lt;/nested-kwd&gt;</span></strong>
+  &lt;/nested-kwd&gt;</span></strong>
+&lt;/kwd-group&gt;
+&lt;/article-meta&gt;
+...
+
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

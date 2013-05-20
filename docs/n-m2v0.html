@@ -1,0 +1,20 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Journal Title (Full)</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;journal-title&gt;</h1><h1 class="elementname">Journal Title (Full)</h1></div><div class="definition"><p class="para">Full title of the journal in which the article was published.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Historical Note:</strong> This element (<span class="elementtag">&lt;journal-title&gt;</span>) was significantly remodeled for NLM 3.0. The current NISO JATS values are backwards compatible with NLM 3.0 but not with earlier versions. Specifically, in prior versions the <span class="elementtag">&lt;journal-title&gt;</span> element was allowed outside the <a href="n-qcv0.html" target="main" title="Journal Title Group"><span class="elementtag">&lt;journal-title-group&gt;</span></a> element.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  journal-title
+                        (#PCDATA <a href="n-ve22.html" target="main" title="Journal Title Elements"><span class="petag">%journal-title-elements;</span></a>)*          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-qcv0.html" target="main" title="Journal Title Group"><span class="elementtag">&lt;journal-title-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id&gt;...&lt;/journal-id&gt;
+&lt;journal-title-group&gt;
+<strong><span class="focus">&lt;journal-title&gt;International Journal of Health Geographics&lt;/journal-title&gt;</span></strong>
+&lt;/journal-title-group&gt;
+&lt;issn&gt;1476-072X&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;BioMed Central&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;...&lt;/article-meta&gt;
+&lt;/front&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-journalmeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

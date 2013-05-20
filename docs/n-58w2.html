@@ -1,0 +1,85 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Citation Attributes</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h4 class="header">Citation Attributes</h4><div class="section"><a name="pub-tag-cite-attr-type"></a><h4 class="header">
+              “Type” of Cited Work</h4><p class="para">Many tag sets have different models for different types of citations: journals,
+              books, patents, standards, etc. This Tag Suite has only two models, both of which are
+              independent of citation type. The semantic information describing the type of citation
+              is captured using the <a href="n-zfj0.html" target="main" title="Type of Referenced Publication"><span class="attrtag">@publication-type</span></a>
+              attribute. This Suite does not prescribe a list of values, so this attribute can be
+              used to record that a cited work is a journal article, a book, a personal
+              communication, a newspaper, etc.:</p><div class="codeblock"><pre>&lt;element-citation publication-type="journal"&gt;
+&lt;mixed-citation   publication-type="book"&gt;
+&lt;element-citation publication-type="report"&gt;
+&lt;mixed-citation   publication-type="webpage"&gt;
+&lt;element-citation publication-type="commun"
+&lt;mixed-citation   publication-type="newspaper"&gt;
+&lt;element-citation publication-type="conf-paper"&gt;
+&lt;mixed-citation   publication-type="poster-session"&gt;
+&lt;element-citation publication-type="discussion"&gt;
+&lt;mixed-citation   publication-type="wiki"&gt;
+&lt;element-citation publication-type="blog"&gt;
+&lt;mixed-citation   publication-type="database""&gt;
+&lt;element-citation publication-type="thesis"&gt;
+&lt;mixed-citation   publication-type="patent"&gt;
+&lt;mixed-citation   publication-type="std"&gt;</pre></div></div><div class="section"><a name="pub-tag-cite-attr-format"></a><h4 class="header">Format or Media of Cited Work</h4><p class="para">The format or media type of the cited material can also be preserved using the
+                <a href="n-z7j0.html" target="main" title="Format of Publication"><span class="attrtag">@publication-format</span></a> attribute. This
+              allows, for example, an online reference to a publication to be distinguished from a
+              citation to the same source material in print. This is not a controlled set of values
+              or formal types such as mime types; this attribute takes a text value that can be used
+              to preserve almost anything a publisher has named as a format or media.</p><p class="para">Here are the same sample publication types that were just given, this time with
+              the publication format added as well:</p><div class="codeblock"><pre>&lt;element-citation publication-type="journal" publication-format="print"&gt;
+&lt;mixed-citation   publication-type="journal" publication-format="web"&gt;
+
+&lt;element-citation publication-type="book" publication-format="print"&gt;
+&lt;mixed-citation   publication-type="book" publication-format="web"&gt;
+&lt;mixed-citation   publication-type="book" publication-format="online"&gt;
+&lt;element-citation publication-type="book" publication-format="dvd"&gt;
+&lt;mixed-citation   publication-type="book" publication-format="videocassette"&gt;
+&lt;element-citation publication-type="book" publication-format="cd-rom"&gt;
+&lt;mixed-citation   publication-type="book" publication-format="ebook"&gt;
+&lt;element-citation publication-type="book" publication-format="audiocassette"&gt;
+&lt;mixed-citation   publication-type="book" publication-format="slide"
+   publisher-type="gov"&gt;
+&lt;element-citation publication-type="book" publication-format="dvd"&gt;
+
+&lt;mixed-citation   publication-type="webpage"&gt;
+&lt;element-citation publication-type="wiki" publication-format="web"&gt;
+&lt;mixed-citation   publication-type="blog" publication-format="web"&gt;
+
+&lt;element-citation publication-type="conf-paper"&gt;
+&lt;mixed-citation   publication-type="poster-session"&gt;
+
+&lt;element-citation publication-type="commun" publication-format="email"&gt;
+&lt;mixed-citation   publication-type="discussion" publication-format="list"&gt;
+
+&lt;mixed-citation   publication-type="newspaper" publication-format="print"&gt;
+
+&lt;element-citation publication-type="database" publication-format="cd-rom"&gt;
+&lt;mixed-citation   publication-type="database" publication-format="dvd"&gt;
+&lt;element-citation publication-type="database" publication-format="web"&gt;
+
+&lt;element-citation publication-type="report" publisher-type="gov"
+  publication-format="print"&gt;
+
+&lt;element-citation publication-type="thesis" publication-format="print"&gt;
+&lt;mixed-citation   publication-type="dissertation" publication-format="print"&gt;
+
+&lt;element-citation publication-type="patent" publication-format="print"&gt;
+&lt;mixed-citation   publication-type="std" publication-format="pdf"&gt;
+
+&lt;mixed-citation   publication-format="spreadsheet"&gt;</pre></div></div><div class="section"><a name="pub-tag-cite-attr-publisher"></a><h4 class="header">Publisher</h4><p class="para">The type of the publisher (government, non-profit, individual) may be named using
+              the <a href="n-gnj0.html" target="main" title="Type of Publisher"><span class="attrtag">@publisher-type</span></a> attribute. This
+              attribute is not as frequently used as the other two; the most common values being
+                “gov” for a government document such as a report and
+                “stds-body” for standard published by a national or international
+              standards organization.</p></div><div class="section"><a name="pub-tag-cite-conversion"></a><h4 class="header">Citation Type Conversion</h4><p class="para">The three attributes just described replace the “citation-type”
+              attribute used in prior versions of this Tag Suite. The citation-type attribute was
+              broad and provided no clear way to distinguish these different notions. After
+              examination of many uses of the type attribute, the Tag Suite Working Group decided
+              that the most useful information was the type of cited material, the format, and the
+              type of publisher.</p><p class="para">Conversion from the old citation type to the new attributes and values is mostly
+              straight-forward. The Working Group’s experience has been that a brief
+              examination of existing tagged data will reveal the obvious conversions
+                (<tt>@citation-type="journal"</tt> becomes
+                <tt>@publication-type="journal"</tt>), and a short list of these can be made
+              that will handle most cases. The few remaining odd things can typically be listed as
+              publication types, since this is still a fairly loose categorization.</p></div></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

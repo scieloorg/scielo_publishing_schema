@@ -1,0 +1,82 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Tagging Multiple Versions</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h3 class="header">Tagging Multiple Versions</h3><div class="section"><a name="pub-tag-multiver-proc"></a><h4 class="header">Processing Alternatives</h4><p class="para">The <a href="n-ke20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> element holds
+            multiple, logically equivalent (substitutable) versions of the same information object.
+            The typical case is a graphic (<a href="n-6cx0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>)
+            which is provided in multiple formats (such as a TIF, a JPEG, and an SVG image). These
+            various formats offer processing alternatives for use by production personnel or by
+            software in presenting the work to the user. For example, a high-resolution TIF image
+            may be included and designated for use in printing while the same image, provided as a
+            lower-resolution JPEG file, may be designated for use in web display.</p><p class="para">Other potential use cases include:</p><ul class="bullist"><li>An equation (<a href="n-cra0.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a> or
+                  <a href="n-9ux0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a>) that is available
+                as an image as well as both TeX- and MathML-tagged versions;</li><li>A video for online display and a thumbnail that represents one image from the
+                video for use in print versions of the work (<a href="n-kbv0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>); or </li><li>A table (<a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>) for which
+                both XHTML-inspired table tagging and an image have been provided.</li></ul><p class="para">The <a href="n-ke20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> element can be used
+            everywhere that <a href="n-6cx0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> and <a href="n-kbv0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> are allowed. For example, <a href="n-ke20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> can be used inside a <a href="n-pyu0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> as part of the large group of options that can be
+            inside a Figure. (See <a href="n-wtw2.html#pub-tag-fig-graphic">Tagging
+              Figures</a>.) This example shows a single figure (“Figure
+              3”) with four processing alternatives—3 graphics in different image
+            formats and one media file:</p><div class="codeblock"><pre>
+  &lt;fig id="Fig12a"&gt;
+      &lt;label&gt;Figure 3&lt;label&gt;
+      &lt;caption&gt;
+        &lt;title&gt;Large Poodles&lt;/title&gt;
+      &lt;/caption&gt;
+      &lt;alternatives&gt;
+         &lt;graphic xlink:href="poodle12.tif"/&gt;
+         &lt;graphic xlink:href="poodle12.jpeg"/&gt;
+         &lt;graphic xlink:href="poodle12.gif"/&gt;
+         &lt;media mimetype="xyz" xlink:href="poodle-jump12"/&gt;
+      &lt;/alternatives&gt;
+   &lt;/fig&gt;
+</pre></div><p class="para">Similarly, a table (<a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>) may
+            be provided in multiple formats: for example, the table below has three alternative
+            formats: an XML-tagged table, the equivalent image file, and a textual version with the
+            tabular look created by lines and spacing.</p><div class="codeblock"><pre>
+  &lt;table-wrap&gt;
+    &lt;id&gt; ... a DOI&lt;/id&gt;
+    &lt;label&gt;Table 6.&lt;/label&gt;
+    &lt;alternatives&gt;
+      &lt;table...&gt;...an XHTML-inspired formatted table ...&lt;/table&gt;
+      &lt;preformat&gt;...a tabular form with spaces and tabs...&lt;/preformat&gt;
+      &lt;graphic ...a JPEG of the same table/&gt;
+   &lt;/alternatives&gt;
+   &lt;table-wrap-foot&gt;...&lt;/table-wrap-foot&gt;
+   &lt;attrib&gt;...&lt;/attrib&gt;
+   &lt;permissions&gt;
+      &lt;copyright-statement&gt;...&lt;/copyright-statement&gt;
+   &lt;/permissions&gt;
+&lt;/table-wrap&gt;
+</pre></div></div><div class="section"><a name="pub-cite-alt-mixed"></a><h4 class="header">Alternatives in Mixed-content</h4><p class="para">Within elements that need to contain alternatives but have mixed content rather than
+            element content models (<a href="n-cra0.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>,
+              <a href="n-3q30.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>), there may be an
+            alternative that contains just text characters. For example, the alternatives may be an
+            equation in MathML, a JPEG image of the equation, and a plain text equation for
+searching.
+            The <a href="n-ng60.html" target="main" title="Textual Form"><span class="elementtag">&lt;textual-form&gt;</span></a> element can be used
+            inside <a href="n-ke20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> to hold such plain
+            text version alternatives. For example, a <a href="n-ng60.html" target="main" title="Textual Form"><span class="elementtag">&lt;textual-form&gt;</span></a> element might contain an equation such as <tt>a + b = c</tt> as
+            an alternative to the same expression tagged as MathML.</p></div><div class="section"><a name="pub-cite-alt-use"></a><h4 class="header">Audience or Use Alternatives</h4><p class="para">The <a href="n-ke20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> element names
+ processing alternatives for a single display object such as a graphic or a table. It
+ does not, however, accommodate versions of semantically equivalent material intended for
+ different audiences (for patients versus for doctors). Typical cases of this type of
+ multiple versions include: </p><ul class="bullist"><li>Two versions of a section, a short one for print to save paper and a
+                significantly longer one for online display;</li><li>A paragraph that is only in the online version and not in the print version of
+                the same article;</li><li>Two or more versions of a section of semantically equivalent material prepared
+                at different levels for different audiences (top secret versus secret versus
+                publicly disseminated or doctor/nurses/patients); or</li><li>Alternative versions of a <a href="n-af30.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a> for different print products (one for the magazine and one for
+                the journal).</li></ul><p class="para">These textual/semantic alternatives are very different from the case of multiple
+            formats of the same graphic, in part because there is a structural difference; a given
+            section does or does not contain this paragraph. There is also a slight difference in
+            complexity between this case and that of the graphic in that, for the multiple graphic
+formats, software can pick one alternative, whereas, for the structure, the software must build
+            a different structural tree. While this Tag Suite does not support alternate trees, it
+            does include an attribute (<a href="n-m4p0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a>)
+            to record these distinctions.</p><p class="para">The <a href="n-m4p0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> attribute can be used to
+            record that certain paragraphs are for print-only:</p><div class="codeblock"><pre>
+   &lt;p specific-use="print-only"&gt;See the latest updates on our website:
+   http://www.mulberrytech.com&lt;/p&gt;
+</pre></div><p class="para">The <a href="n-m4p0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> attribute can be
+            placed on all the block-level structures, that is, on paragraphs, figures, sections, and
+            all the block display objects. There is no recommended set of values, but publishers
+            have used “<tt>print-only</tt>”,
+“<tt>web-only</tt>”, “<tt>online-only</tt>”, “<tt>voice-only</tt>”, “<tt>specific-product-name</tt>”, etc.</p></div></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

@@ -1,0 +1,23 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Tagging Sub-articles</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h3 class="header">Tagging Sub-articles</h3><p class="para">A <a href="n-2fg0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a> is an article of any type
+          (letter, reply, review, short new piece) which is entirely contained within another
+          article.</p><p class="para">The containing (main) article, the sub-article(s), or both, are often quite small. For
+          example, an article titled “Member News Column” may contain one paragraph
+          introducing the news items (main article) and then contain three longer news stories
+          (sub-articles). An example of a longer article is a summary article which begins with a
+          full review of the literature (main article) and includes several small related essays
+          (sub-articles).</p><p class="para">Many journals have regular columns such as “News”, “Book
+            Reviews”, or “50 years ago in the journal”, which consist of a
+          series of small entries grouped under a single article title. The group as a whole might
+          have some introductory material in addition to the title. Each of these columns could be
+          tagged as an article with the introductory material as its direct content and the various
+          entries as sub-articles.</p><p class="para">How much
+metadata goes with a sub-article is a business decision. Sub-articles usually inherit all journal metadata (<a href="n-wzx0.html" target="main" title="Journal Metadata"><span class="elementtag">&lt;journal-meta&gt;</span></a>) from the parent article,  however, the <a href="n-2fg0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a> element <em>allows</em> for the inclusion of a full <a href="n-yww0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> (which contains both the journal and article metadata) for the rare instance in which the journal metadata is different from the parent article.
+Sub-articles also typically inherit the article’s metadata (<a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>) unless explicitly overridden by using a <a href="n-hvw0.html" target="main" title="<front-stub&gt;"><span class="elementname">Stub Front Metadata</span></a> element or <a href="n-yww0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> element. For example, a sub-article may
+need its own article metadata because it begins on a different page than the primary article, it has
+different authors than the primary article, or it takes different keywords. Usually the goal is to
+keep the <a href="n-hvw0.html" target="main" title="<front-stub&gt;"><span class="elementname">Stub Front Metadata</span></a> of a sub-article as small as possible, listing just the article metadata that is
+different from the main article, but a publisher or archive may choose to replicate most or all of the
+article metadata inside the sub-article for more accurate record keeping or retrieval. </p><p class="para">The decision of whether one article should be bundled into another, and thus tagged as
+          a sub-article rather than a full article in its own right, is subjective. Publishers and
+          archives may wish to establish house guidelines for such decisions.</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

@@ -1,0 +1,82 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Conference Sponsor</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;conf-sponsor&gt;</h1><h1 class="elementname">Conference Sponsor</h1></div><div class="definition"><p class="para">One organization identified as a sponsor of a conference.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">If more than one organization sponsored the conference, use a separate <a href="n-2880.html" target="main" title="Conference Sponsor"><span class="elementtag">&lt;conf-sponsor&gt;</span></a> element for each one.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The container element <a href="n-zx80.html" target="main" title="Conference Information"><span class="elementtag">&lt;conference&gt;</span></a> holds all of the elements that may be used to describe a conference, when an article was originally presented at a conference. Those elements include: <a href="n-wz50.html" target="main" title="Conference Date"><span class="elementtag">&lt;conf-date&gt;</span></a>, <a href="n-dc80.html" target="main" title="Conference Name"><span class="elementtag">&lt;conf-name&gt;</span></a>, <a href="n-b950.html" target="main" title="Conference Acronym"><span class="elementtag">&lt;conf-acronym&gt;</span></a>, <a href="n-b380.html" target="main" title="Conference Number"><span class="elementtag">&lt;conf-num&gt;</span></a>, <a href="n-c280.html" target="main" title="Conference Location"><span class="elementtag">&lt;conf-loc&gt;</span></a>, <a href="n-2880.html" target="main" title="Conference Sponsor"><span class="elementtag">&lt;conf-sponsor&gt;</span></a>, and <a href="n-ta80.html" target="main" title="Conference Theme"><span class="elementtag">&lt;conf-theme&gt;</span></a>.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  conf-sponsor (#PCDATA <a href="n-tvm0.html" target="main" title="Conference Sponsor Elements"><span class="petag">%conf-sponsor-elements;</span></a>)*           &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-zx80.html" target="main" title="Conference Information"><span class="elementtag">&lt;conference&gt;</span></a>, <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-w9t0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pd70.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-f970.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="confproc"&gt;
+&lt;person-group person-group-type="editor"&gt;
+&lt;name&gt;&lt;surname&gt;van Pelt&lt;/surname&gt;
+&lt;given-names&gt;J&lt;/given-names&gt;&lt;/name&gt;
+...
+&lt;/person-group&gt;
+&lt;source&gt;Development, dynamics, and pathology of neuronal
+networks: from molecules to functional circuits&lt;/source&gt;
+&lt;conf-name&gt;Proceedings of the 23rd International
+Summer School of Brain Research&lt;/conf-name&gt;
+&lt;conf-date iso-8601-date="2003-08-25"&gt;2003 Aug 25-29&lt;/conf-date&gt;
+<strong><span class="focus">&lt;conf-sponsor&gt;Royal Netherlands Academy of Arts and Sciences,
+Amsterdam, the Netherlands&lt;/conf-sponsor&gt;</span></strong>
+&lt;publisher-loc&gt;Amsterdam&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;Elsevier&lt;/publisher-name&gt;
+&lt;year iso-8601-date="2005"&gt;2005&lt;/year&gt;
+&lt;size units="pages"&gt;385 p&lt;/size&gt;
+&lt;comment&gt;(Progress in brain research; vol. 147)&lt;/comment&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="confproc"&gt;
+&lt;string-name&gt;&lt;surname&gt;van Pelt&lt;/surname&gt;,
+&lt;given-names&gt;J&lt;/given-names&gt;&lt;/string-name&gt;,
+..., editors.
+&lt;source&gt;Development, dynamics, and pathology of neuronal
+networks: from molecules to functional circuits&lt;/source&gt;.
+&lt;conf-name&gt;Proceedings of the 23rd International Summer
+School of Brain Research&lt;/conf-name&gt;;
+&lt;conf-date iso-8601-date="2003-08-25"&gt;2003 Aug
+25-29&lt;/conf-date&gt;; <strong><span class="focus">&lt;conf-sponsor&gt;Royal Netherlands
+Academy of Arts and Sciences, Amsterdam, the
+Netherlands&lt;/conf-sponsor&gt;</span></strong>.
+&lt;publisher-loc&gt;Amsterdam&lt;/publisher-loc&gt;:
+&lt;publisher-name&gt;Elsevier&lt;/publisher-name&gt;;
+&lt;year iso-8601-date="2005"&gt;2005&lt;/year&gt;.
+&lt;size units="pages"&gt;385 p&lt;/size&gt;. (Progress in
+brain research; vol. 147).&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">In article metadata:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+...
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;conference&gt;
+&lt;conf-date iso-8601-date="1999"&gt;1999&lt;/conf-date&gt;
+&lt;conf-name&gt;The 27th annual ACM SI/GUCCS
+conference&lt;/conf-name&gt;
+&lt;conf-acronym&gt;SIGUCCS&lt;/conf-acronym&gt;
+&lt;conf-num&gt;27&lt;/conf-num&gt;
+&lt;conf-loc&gt;Denver, Colorado, United States&lt;/conf-loc&gt;
+<strong><span class="focus">&lt;conf-sponsor&gt;ACM, Assoc. for Computing
+Machinery&lt;/conf-sponsor&gt;</span></strong>
+&lt;conf-theme&gt;User services conference for
+university and college computing service
+organizations&lt;/conf-theme&gt;
+&lt;/conference&gt;
+&lt;counts&gt;
+&lt;count count-type="contributors" count="3"/&gt;
+&lt;fig-count count="5"/&gt;
+&lt;table-count count="3"/&gt;
+&lt;equation-count count="10"/&gt;
+&lt;ref-count count="26"/&gt;
+&lt;page-count count="6"/&gt;
+&lt;word-count count="2847"/&gt;
+&lt;/counts&gt;
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

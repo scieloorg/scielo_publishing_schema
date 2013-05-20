@@ -1,0 +1,34 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Standards Organization</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;std-organization&gt;</h1><h1 class="elementname">Standards Organization</h1></div><div class="definition"><p class="para">The name of the standards body that created or that promulgates a standard, such as NISO, ISO, ANSI, or industry standards organizations.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  std-organization
+                        (#PCDATA <a href="n-gk82.html" target="main" title="Standards Organization Elements"><span class="petag">%std-organization-elements;</span></a>)*       &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | sub | sup)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li><a href="n-f4g0.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-f4g0.html" target="main" title="<sub&gt;"><span class="elementname">Subscript</span></a></li><li><a href="n-x2n0.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-x2n0.html" target="main" title="<sup&gt;"><span class="elementname">Superscript</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-8jf0.html" target="main" title="Standard, Cited"><span class="elementtag">&lt;std&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;ref&gt;
+&lt;element-citation publisher-type="stds-body"&gt;
+&lt;std&gt;International standard <strong><span class="focus">&lt;std-organization&gt;ISO&lt;/std-organization&gt;</span></strong> 
+10993-10:2002(E): Biological evaluation of medical devices-Part 10: 
+Tests for irritation and delayed-type hypersensitivity&lt;/std&gt;
+&lt;edition&gt;Second&lt;/edition&gt;
+&lt;year iso-8601-date="2002-09-01"&gt;2002&lt;/year&gt;
+&lt;month&gt;09&lt;/month&gt;
+&lt;day&gt;01&lt;/day&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;ref&gt;
+&lt;mixed-citation publisher-type="stds-body"&gt;
+&lt;std&gt;International standard <strong><span class="focus">&lt;std-organization&gt;ISO&lt;/std-organization&gt;</span></strong> 
+10993-10:2002(E): Biological evaluation of medical devices-Part 10: Tests 
+for irritation and delayed-type hypersensitivity&lt;/std&gt;. &lt;edition&gt;Second&lt;/edition&gt;. 
+&lt;year iso-8601-date="2002-09-01"&gt;2002&lt;/year&gt;&amp;ndash;&lt;month&gt;09&lt;/month&gt;&amp;ndash;&lt;day&gt;01&lt;/day&gt;.
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-format1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

@@ -1,0 +1,149 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Article Grouping Data</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;article-categories&gt;</h1><h1 class="elementname">Article Grouping Data</h1></div><div class="definition"><p class="para">Container element for elements that may be used to group articles into related clusters, for example, by subject matter or by series.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Usage:</strong> Article groups may be used to group articles into related clusters, for example, by subject matter or by series</p><p class="para"><strong>Subject Groupings:</strong> For some journals, articles are grouped into categories called subject groupings <a href="n-k6g0.html" target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a>, and the category is shown in the article’s display or in print. Sometimes the grouping or category refers to the type of article, such as “Essay”, “Commentary”, or “Article”. Sometimes the grouping refers to subject areas, such as “Physical Sciences”, “Biological Sciences”, or “Social Sciences”. Sometimes the grouping refers to topics within one of these larger subject areas, such as “Applied Math”, “Biology”, or “Chemistry”.</p><p class="para">In some printed journals, as well as on websites such as the PubMed Central website, articles may be grouped or arranged under these subject headings (here are all the Essays, here are all the Biology articles, etc.).</p><p class="para">Some journals divide articles into three layers of grouping, some into two, and some into only one. For example, a one-level grouping might be: </p><div class="codeblock"><pre>
+  &lt;subj-group&gt;
+    &lt;subject&gt;Retraction&lt;/subject&gt;
+  &lt;/subj-group&gt;
+  </pre></div><p class="para">or, as another example: </p><div class="codeblock"><pre>
+  &lt;subj-group&gt;
+    &lt;subject&gt;Essay&lt;/subject&gt;
+  &lt;/subj-group&gt;
+  </pre></div><p class="para">And a three-level grouping might be: </p><div class="codeblock"><pre>
+  &lt;subj-group&gt;
+    &lt;subject&gt;Articles&lt;/subject&gt;
+    &lt;subj-group&gt;
+      &lt;subject&gt;Biological Sciences&lt;/subject&gt;
+      &lt;subj-group&gt;
+        &lt;subject&gt;Entomology&lt;/subject&gt;
+      &lt;/subj-group&gt;
+    &lt;/subj-group&gt;
+  &lt;/subj-group&gt;
+  </pre></div><p class="para">Articles may also be assigned to more than one grouping. For example, if an article is classified both as “Biochemistry” under “Biological Sciences” and as “Chemistry” under “Physical Sciences”, the <a href="n-k6g0.html" target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a> container element will repeat to describe both groupings. For example: </p><div class="codeblock"><pre>
+  &lt;subj-group&gt;
+    &lt;subject&gt;Articles&lt;/subject&gt;
+    &lt;subj-group&gt;
+      &lt;subject&gt;Biological Sciences&lt;/subject&gt;
+      &lt;subj-group&gt;
+        &lt;subject&gt;Biochemistry&lt;/subject&gt;
+      &lt;/subj-group&gt;
+    &lt;/subj-group&gt;
+    &lt;subj-group&gt;
+      &lt;subject&gt;Physical Sciences&lt;/subject&gt;
+      &lt;subj-group&gt;
+        &lt;subject&gt;Chemistry&lt;/subject&gt;
+      &lt;/subj-group&gt;
+    &lt;/subj-group&gt;
+  &lt;/subj-group&gt;</pre></div></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para"><strong>Grouping Articles in Series:</strong> The related elements <a href="n-5uf0.html" target="main" title="Series Title"><span class="elementtag">&lt;series-title&gt;</span></a> and <a href="n-q5f0.html" target="main" title="Series Text: Header Text to Describe"><span class="elementtag">&lt;series-text&gt;</span></a> are used for groupings of articles within one issue of a journal. For example, in some journals, articles are grouped into a series such as “From the Cover” and identified as part of a series. The <a href="n-5uf0.html" target="main" title="Series Title"><span class="elementtag">&lt;series-title&gt;</span></a> element names the series and the <a href="n-q5f0.html" target="main" title="Series Text: Header Text to Describe"><span class="elementtag">&lt;series-text&gt;</span></a> element provides textual description (if any) describing the series.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  article-categories
+                        <a href="n-pjb0.html" target="main" title="Article Grouping Data Model"><span class="petag">%article-categories-model;</span></a>                   &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(subj-group*, series-title*, series-text*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-k6g0.html" target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a> <a href="n-k6g0.html" target="main" title="<subj-group&gt;"><span class="elementname">Subject Group</span></a>, zero or more</li><li><a href="n-5uf0.html" target="main" title="Series Title"><span class="elementtag">&lt;series-title&gt;</span></a> <a href="n-5uf0.html" target="main" title="<series-title&gt;"><span class="elementname">Series Title</span></a>, zero or more</li><li><a href="n-q5f0.html" target="main" title="Series Text: Header Text to Describe"><span class="elementtag">&lt;series-text&gt;</span></a> <a href="n-q5f0.html" target="main" title="<series-text&gt;"><span class="elementname">Series Text: Header Text to Describe</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Article categories that are very like keywords:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+<strong><span class="focus">&lt;article-categories&gt;
+  &lt;subj-group subj-group-type="kwd"&gt;
+    &lt;subject content-type="neurosci"&gt;Cellular and Molecular
+      Biology&lt;/subject&gt;
+    &lt;subj-group&gt;
+      &lt;subject content-type="neurosci"&gt;Blood&amp;ndash;brain
+        barrier&lt;/subject&gt;
+    &lt;/subj-group&gt;
+  &lt;/subj-group&gt;
+&lt;/article-categories&gt;</span></strong>
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Categories for Table of Contents grouping:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+<strong><span class="focus">&lt;article-categories&gt;
+&lt;subj-group&gt;
+&lt;subject&gt;Departments&lt;/subject&gt;
+   &lt;subj-group&gt;
+   &lt;subject&gt;Federal Court Decisions&lt;/subject&gt;
+      &lt;subj-group&gt;
+      &lt;subject&gt;Supreme Court Opinions&lt;/subject&gt;
+         &lt;subj-group&gt;
+         &lt;subject&gt;Criminal Procedure&lt;/subject&gt;
+            &lt;subj-group&gt;
+            &lt;subject&gt;Fourth Amendment:  Search and Seizure&lt;/subject&gt;
+               &lt;subj-group&gt;
+               &lt;subject&gt;Vehicle Passenger Rights: &lt;italic&gt;Brendlin v.
+               California&lt;/italic&gt;&lt;/subject&gt;
+               &lt;/subj-group&gt;
+            &lt;/subj-group&gt;
+         &lt;/subj-group&gt;
+      &lt;/subj-group&gt;
+      &lt;subj-group&gt;
+      &lt;subject&gt;4th Circuit Decisions&lt;/subject&gt;
+         &lt;subj-group&gt;
+         &lt;subject&gt;Habeas Corpus&lt;/subject&gt;
+            &lt;subj-group&gt;
+            &lt;subject&gt;Detaining U.S. Residents: &lt;italic&gt;Al-Marri v.
+            Wright&lt;/italic&gt;&lt;/subject&gt;
+            &lt;/subj-group&gt;
+         &lt;/subj-group&gt;
+      &lt;/subj-group&gt;
+   &lt;/subj-group&gt;
+
+   &lt;subj-group&gt;
+   &lt;subject&gt;Federal Law&lt;/subject&gt;
+      &lt;subj-group&gt;
+      &lt;subject&gt;Changes to FISA Surveillance:  Protect America Act of
+      2007&lt;/subject&gt;
+      &lt;/subj-group&gt;
+   &lt;/subj-group&gt;
+
+   &lt;subj-group&gt;
+   &lt;subject&gt;Ethical Guidelines&lt;/subject&gt;
+      &lt;subj-group&gt;
+      &lt;subject&gt;Protecting Client Confidences&lt;/subject&gt;
+         &lt;subj-group&gt;
+         &lt;subject&gt;Potential for Identity Theft in Pleadings and
+         Filings&lt;/subject&gt;
+            &lt;subj-group&gt;
+            &lt;subject&gt;Drivers License Numbers&lt;/subject&gt;
+            &lt;/subj-group&gt;
+            &lt;subj-group&gt;
+            &lt;subject&gt;Social Security Numbers&lt;/subject&gt;
+            &lt;/subj-group&gt;
+         &lt;/subj-group&gt;
+      &lt;/subj-group&gt;
+   &lt;/subj-group&gt;
+
+&lt;/subj-group&gt;
+&lt;/article-categories&gt;</span></strong>
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+...
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+...
+&lt;article-id pub-id-type="pmid"&gt;11274384&lt;/article-id&gt;
+<strong><span class="focus">&lt;article-categories&gt;
+&lt;subj-group&gt;
+  &lt;subject&gt;Physical Sciences&lt;/subject&gt;
+  &lt;subj-group&gt;
+    &lt;subject&gt;Chemistry&lt;/subject&gt;
+  &lt;/subj-group&gt;
+&lt;/subj-group&gt;
+
+&lt;subj-group&gt;
+  &lt;subject&gt;Biological Sciences&lt;/subject&gt;
+  &lt;subj-group&gt;
+    &lt;subject&gt;Biophysics&lt;/subject&gt;
+  &lt;/subj-group&gt;
+&lt;/subj-group&gt;
+&lt;/article-categories&gt;</span></strong>
+&lt;title-group&gt;
+...
+&lt;/title-group&gt;
+...
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;
+...
+&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

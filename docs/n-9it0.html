@@ -1,0 +1,48 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Principal Award Recipient</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;principal-award-recipient&gt;</h1><h1 class="elementname">Principal Award Recipient</h1></div><div class="definition"><p class="para">Individual(s) or institution(s) to whom the award was given (for example, the principal grant holder or the sponsored individual).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Although the content of this element may contain an institution name, this is not the place to record the affiliation (<a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>) of a person who is the award recipient. An organization name (<a href="n-3fx0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>) within this element indicates that an organization (such as a Laboratory) was the recipient of the award.</p><p class="para">The <span class="elementtag">&lt;principal-award-recipient&gt;</span> may or may not be the same as the <a href="n-7jt0.html" target="main" title="Principal Investigator"><span class="elementtag">&lt;principal-investigator&gt;</span></a>, for example, a grant could be awarded to a Department or to individual A, and individual B could serve as the Principal Investigator. When the same individual serves in both roles, the name should be listed in both places.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  principal-award-recipient
+                        (#PCDATA
+                         <a href="n-4f32.html" target="main" title="Principal Award Recipient Elements"><span class="petag">%principal-award-recipient-elements;</span></a>)*      &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | contrib-id | name | name-alternatives | institution | string-name)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li><a href="n-c680.html" target="main" title="Contributor Identifier"><span class="elementtag">&lt;contrib-id&gt;</span></a> <a href="n-c680.html" target="main" title="<contrib-id&gt;"><span class="elementname">Contributor Identifier</span></a></li><li><a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> <a href="n-qj40.html" target="main" title="<name&gt;"><span class="elementname">Name of Person</span></a></li><li><a href="n-cb40.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> <a href="n-cb40.html" target="main" title="<name-alternatives&gt;"><span class="elementname">Name Alternatives</span></a></li><li><a href="n-3fx0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a> <a href="n-3fx0.html" target="main" title="<institution&gt;"><span class="elementname">Institution Name: in an Address</span></a></li><li><a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> <a href="n-jkg0.html" target="main" title="<string-name&gt;"><span class="elementname">Name of Person (Unstructured)</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-cqc0.html" target="main" title="Award Group"><span class="elementtag">&lt;award-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><p class="para">Funding metadata and the textual Acknowledgment that states the
+same information in the narrative of the document:</p><div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+...
+&lt;article-meta&gt;
+...
+&lt;kwd-group kwd-group-type="author"&gt;...&lt;/kwd-group&gt;
+&lt;funding-group&gt;
+&lt;award-group id="nih-509"&gt;
+&lt;funding-source country="US"&gt;NIH&lt;/funding-source&gt;
+&lt;award-id&gt;NIH GM61374&lt;/award-id&gt;
+<strong><span class="focus">&lt;principal-award-recipient&gt;Stanford&lt;/principal-award-recipient&gt;</span></strong>
+&lt;/award-group&gt;
+&lt;/funding-group&gt;
+&lt;funding-group&gt;
+&lt;award-group id="nsf-510"&gt;
+&lt;funding-source country="US"&gt;NSF&lt;/funding-source&gt;
+&lt;award-id&gt;NSF DBI-0317510&lt;/award-id&gt;
+<strong><span class="focus">&lt;principal-award-recipient&gt;Berkeley&lt;/principal-award-recipient&gt;</span></strong>
+&lt;/award-group&gt;
+&lt;award-group id="arda-511"  award-type="contract"&gt;
+&lt;funding-source country="US"&gt;ARDA ACQUAINT&lt;/funding-source&gt;
+<strong><span class="focus">&lt;principal-award-recipient&gt;Berkeley&lt;/principal-award-recipient&gt;</span></strong>
+&lt;/award-group&gt;
+&lt;award-group id="geneentech-512" award-type="gift"&gt;
+&lt;funding-source country="US"&gt;Genentech Corp.&lt;/funding-source&gt;
+<strong><span class="focus">&lt;principal-award-recipient&gt;Berkeley&lt;/principal-award-recipient&gt;</span></strong>
+&lt;/award-group&gt;
+&lt;/funding-group&gt;
+&lt;counts&gt;...&lt;/counts&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;back&gt;
+&lt;ack&gt;
+&lt;p&gt;... Part of the research at Stanford was supported by NIH GM61374.
+The Berkeley portion of this research was supported by NSF DBI-0317510,
+an ARDA AQUAINT contract, and a gift from Genentech Corp.&lt;/p&gt;
+&lt;/ack&gt;
+...
+&lt;/back&gt;
+&lt;/article&gt;
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-funding1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

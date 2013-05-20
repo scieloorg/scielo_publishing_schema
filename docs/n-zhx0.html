@@ -1,0 +1,58 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Issue Part</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;issue-part&gt;</h1><h1 class="elementname">Issue Part</h1></div><div class="definition"><p class="para">Number, name, or other identifier of a sub-part of a journal issue.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">This is not the machine-readable internal identifier such as a DOI or SICI; that is tagged with the related element <a href="n-xhx0.html" target="main" title="Issue Identifier"><span class="elementtag">&lt;issue-id&gt;</span></a>. Nor is it the name or number of an entire issue; that is tagged with <a href="n-hdx0.html" target="main" title="Issue Number"><span class="elementtag">&lt;issue&gt;</span></a>.</p><p class="para">Some journals seldom or never use sub-issues, and therefore seldom or never use this element. Journals might, however, use it for a large journal issue whose print edition is bound in more than one separate part; those parts might well be numbered or named distinctly despite being parts of the same issue. Distinct numbers or names for each bound portion would then be tagged with this element, while the common identifier of the entire issue would be tagged with <a href="n-hdx0.html" target="main" title="Issue Number"><span class="elementtag">&lt;issue&gt;</span></a>.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  issue-part   (#PCDATA <a href="n-wa22.html" target="main" title="Issue Part Elements"><span class="petag">%issue-part-elements;</span></a>)*             &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a>, <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-w9t0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pd70.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-f970.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In article metadata:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Chron&amp;rsquo;s Disease:  Treatment Strategies&lt;/article-title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Layman&lt;/surname&gt;
+&lt;given-names&gt;Steven&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Aug&lt;/surname&gt;
+&lt;given-names&gt;Lisa&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;Gastrointestinal Department, St
+Mark&amp;#x2019;s Hospital, Lexington, KY&lt;/aff&gt;
+&lt;author-notes&gt;
+&lt;fn&gt;
+&lt;p&gt;Correspondence to: S. Layman &lt;email&gt;slay@stmark.org&lt;/email&gt;&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/author-notes&gt;
+&lt;pub-date pub-type="pub" iso-8601-date="1994-03-27"&gt;
+&lt;day&gt;27&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;&lt;year&gt;1994&lt;/year&gt;&lt;/pub-date&gt;
+&lt;volume&gt;12&lt;/volume&gt;
+&lt;issue&gt;3&lt;/issue&gt;
+&lt;issue-sponsor&gt;Pharmaceutical Research Association&lt;/issue-sponsor&gt;
+<strong><span class="focus">&lt;issue-part&gt;2&lt;/issue-part&gt;</span></strong>
+&lt;fpage&gt;522&lt;/fpage&gt;
+&lt;lpage&gt;528&lt;/lpage&gt;
+...
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic references (punctuation and spacing preserved):</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="journal" publication-format="print"&gt;
+&lt;string-name&gt;&lt;surname&gt;Gosse&lt;/surname&gt;,
+&lt;given-names&gt;P&lt;/given-names&gt;&lt;/string-name&gt;,
+...
+&lt;string-name&gt;&lt;surname&gt;Clementy&lt;/surname&gt;,
+&lt;given-names&gt;J&lt;/given-names&gt;&lt;/string-name&gt;.
+&lt;article-title&gt;Reduction in arterial distensibility in
+hypertensive patients as evaluated by ambulatory measurement
+of the QKD interval is correlated with concentric remodeling
+of the left ventricle&lt;/article-title&gt;. &lt;source&gt;Am J
+Hypertens&lt;/source&gt;. &lt;year iso-8601-date="1999-12"&gt;1999&lt;/year&gt;
+&lt;month&gt;Dec&lt;/month&gt;;&lt;volume&gt;12&lt;/volume&gt;
+(&lt;issue&gt;12&lt;/issue&gt; <strong><span class="focus">&lt;issue-part&gt;Pt 1-2&lt;/issue-part&gt;</span></strong>):
+&lt;fpage&gt;1252&lt;/fpage&gt;-&lt;lpage&gt;1255&lt;/lpage&gt;.&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

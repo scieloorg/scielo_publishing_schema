@@ -1,0 +1,40 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: List Item</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;list-item&gt;</h1><h1 class="elementname">List Item</h1></div><div class="definition"><p class="para">Single item (one entry) in a list of items.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">On display or in print, a list entry may be preceded by a prefix character, such as a bullet or a number. This character is determined by the <a href="n-54y0.html" target="main" title="Type of List"><span class="attrtag">@list-type</span></a>  attribute, possibly combined with the <a href="n-bkj0.html" target="main" title="Prefix Word (For a List Item)"><span class="attrtag">@prefix-word</span></a> attribute. If the <a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> element is used in a <a href="n-ghv0.html" target="main" title="List Item"><span class="elementtag">&lt;list-item&gt;</span></a>, it overrides the <a href="n-54y0.html" target="main" title="Type of List"><span class="attrtag">@list-type</span></a> and <a href="n-bkj0.html" target="main" title="Prefix Word (For a List Item)"><span class="attrtag">@prefix-word</span></a> attributes.</p><p class="para"><strong>Best Practice:</strong> While this element contains an optional <a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> element, the <a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> element should be included only in those circumstances where a formatting override is needed; <a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> should NOT be used in the ordinary course of tagging.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  list-item    <a href="n-n922.html" target="main" title="List Item Model"><span class="petag">%list-item-model;</span></a>                            &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, (p | def-list | list)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-sxv0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li>One or more of any of:<ul class="bullist"><li><a href="n-y9s0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-y9s0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a></li><li>Lists<ul class="bullist"><li><a href="n-hga0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> <a href="n-hga0.html" target="main" title="<def-list&gt;"><span class="elementname">Definition List</span></a></li><li><a href="n-wrv0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a> <a href="n-wrv0.html" target="main" title="<list&gt;"><span class="elementname">List</span></a></li></ul></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-wrv0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;sec&gt;
+&lt;title&gt;Conclusions&lt;/title&gt;
+&lt;p&gt;Day hospital care ... are justifiable.&lt;/p&gt;
+&lt;boxed-text position="float"&gt;
+&lt;sec&gt;
+&lt;title&gt;Key messages&lt;/title&gt;
+&lt;p&gt;
+&lt;list list-type="bullet"&gt;
+<strong><span class="focus">&lt;list-item&gt;
+&lt;p&gt;The benefits of geriatric day hospital care have been
+controversial for many years.&lt;/p&gt;
+&lt;/list-item&gt;</span></strong>
+<strong><span class="focus">&lt;list-item&gt;
+&lt;p&gt;This systematic review of 12 randomised trials comparing
+a variety of day hospitals with a range of alternative
+services found no overall advantage for day hospital care.&lt;/p&gt;
+&lt;/list-item&gt;</span></strong>
+<strong><span class="focus">&lt;list-item&gt;
+&lt;p&gt;Day hospitals had a possible advantage over no comprehensive
+care in terms of death or poor outcome, disability, and use of
+resources.&lt;/p&gt;
+&lt;/list-item&gt;</span></strong>
+<strong><span class="focus">&lt;list-item&gt;
+&lt;p&gt;The costs of day hospital care may be partly offset by
+a reduced use of hospital beds and institutional care among
+survivors.&lt;/p&gt;
+&lt;/list-item&gt;</span></strong>
+&lt;/list&gt;
+&lt;/p&gt;
+&lt;/sec&gt;
+&lt;/boxed-text&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/sec&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-list1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

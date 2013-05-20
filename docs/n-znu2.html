@@ -1,0 +1,397 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Tagging Affiliations</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h3 class="header">Tagging Affiliations</h3><p class="para">Affiliations are commonly listed for some or all authors of an article to provide
+          information about their company, university or other institution, and their contact
+          information. In print, affiliations are commonly displayed in the footnote area, with
+          footnote numbers or other symbols to identify which contributors go with which
+          affiliations. Because this Tag Set has been written as a conversion target, this Tag Set
+          allows more than one way to associate an author with his or her affiliation(s). For example,
+          an author’s affiliation(s) may be recorded as part of an individual contributor
+            (<a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>) or as author notes or footnotes
+            (<a href="n-ujc0.html" target="main" title="Author Note Group"><span class="elementtag">&lt;author-notes&gt;</span></a>). This allows an author,
+          archive, or publisher to choose the tagging closest to their practice.</p><p class="para">In this Tag Set, the element to hold affiliation information is <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, which allows many sub-elements, with the address
+          and address-linking elements being most common. <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> typically occurs inside <a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> or <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a>,
+          although it is also permitted inside other elements such as <a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-ya50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a>, <a href="n-87t0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>, or <a href="n-fsf0.html" target="main" title="Signature Block"><span class="elementtag">&lt;sig-block&gt;</span></a>, or with other affiliations inside 
+          an <a href="n-2a20.html" target="main" title="Affiliation Alternatives"><span class="elementtag">&lt;aff-alternatives&gt;</span></a>.</p><p class="para">When the affiliation is grouped with the contributors’ names, there is no need
+          to link the name and affiliations explicitly. However, when the name and affiliation are
+          separated, they should be explicitly linked, using the <a href="n-5wr0.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> element.</p><p class="para">Each method is described in the following list, then in more detail below, with an
+          example. The same method should be used consistently throughout an article, even if it is
+          not possible to make all articles the same. Ways of placing the affiliations
+          include:</p><div class="deflist"><table class="deflisttable"><tr class="row1"><td class="dterm"><p>Per-contributor affiliation</p></td><td class="ddef"><p class="para">The <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> for each contributor may
+                be put directly within the corresponding <a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> element, commonly at the end. If two or more contributors have
+                the same affiliation, the affiliation is repeated for each contributor to which it
+                applies, inside each <a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>
+                element.</p></td></tr><tr class="row0"><td class="dterm"><p>Single group affiliation</p></td><td class="ddef"><p class="para">When all contributors in a <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> share the same affiliation, the <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> element should be placed just inside the end of the <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a>, thus marking it as the affiliation
+                for all.</p></td></tr><tr class="row1"><td class="dterm"><p>Post-contrib-group multiple affiliation</p></td><td class="ddef"><p class="para">When the contributors in a single <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> have different affiliations, an <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> element should be provided for each distinct affiliation, and all
+                the affiliations should be placed in <a href="n-4uc0.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, immediately following the <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a>. Each contributor (<a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>) should be linked to the appropriate
+                  <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> element(s) with an
+                  <a href="n-5wr0.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> element inside each
+                  <a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>.</p><p class="para">The <a href="n-ydj0.html" target="main" title="Type of Cross-Reference"><span class="attrtag">@ref-type</span></a> attribute on the
+                  <a href="n-5wr0.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> should be set to 
+“<tt>aff</tt>”, and the <a href="n-kmj0.html" target="main" title="Reference to an Identifier"><span class="attrtag">@rid</span></a> attribute
+                should point to the corresponding <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>
+                using the XML <tt>ID</tt> of the <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>. Multiple contributors with the same affiliations will each have
+                an <a href="n-5wr0.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> specifying the same
+                  <tt>ID</tt>.</p></td></tr><tr class="row0"><td class="dterm"><p>Text affiliation</p></td><td class="ddef"><p class="para">In some cases, affiliation information is presented as a single block of text
+                where the relationships between author and affiliation cannot be separated easily.
+                In such cases, place the entire affiliation block in one <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> element. There may be multiple <a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> elements in this text-block
+                affiliation.</p></td></tr><tr class="row1"><td class="dterm"><p>Footnote affiliation</p></td><td class="ddef"><p class="para">Some affiliations have a print layout very similar to that used for footnotes.
+                Affiliations may be put in <a href="n-g3w0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a>
+                elements instead of <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> elements,
+                placed as for any of the methods described above. For convenience, this
+                documentation refers to those methods by adding “footnotes” to each
+                of the names given above. This section does not show separate examples for this
+                variation, since they would differ only by the change from <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> to <a href="n-g3w0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a>. Affiliation footnotes may be numbered in sequence with regular
+                footnotes, or may use distinct symbols (for example, letters instead of numbers)
+                indicated using the <a href="n-wpp0.html" target="main" title="Symbol"><span class="attrtag">@symbol</span></a> attribute.
+                The <a href="n-g3w0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> element(s) may also provide an
+                  <a href="n-hfi0.html" target="main" title="Type of Footnote"><span class="attrtag">@fn-type</span></a> attribute, with a value
+                such as “<tt>current-aff</tt>” or “<tt>corresp</tt>”, so processing software can easily distinguish them from other
+                footnotes.</p></td></tr></table></div><p class="para">Affiliation tagging should be placed in logical locations in the document. For
+          example, do not tag an affiliation within a <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> that has no contributors with that affiliation, or in a <a href="n-fsf0.html" target="main" title="Signature Block"><span class="elementtag">&lt;sig-block&gt;</span></a> at the end of a document when the
+            <a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> is in the metadata.</p><p class="para">In some cases, one or more authors will be designated “corresponding”
+          authors (that is, readers should contact them rather than other authors concerning the
+          article). The <a href="n-m480.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> element provides the
+            <a href="n-5ph0.html" target="main" title="Corresponding Author"><span class="attrtag">@corresp</span></a> attribute, which should be set to “<tt>yes</tt>” for those authors.</p><div class="section"><a name="pub-tag-aff-per-contrib"></a><h4 class="header">Per-contributor Affiliation</h4><p class="para">This style is appropriate when different contributors each have their own
+            affiliations.</p><div class="codeblock"><pre>
+
+&lt;contrib-group&gt;
+  &lt;contrib contrib-type="author" corresp="yes"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Tanabe&lt;/surname&gt;
+      &lt;given-names&gt;Lorraine&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;aff&gt;National Center for Biotechnology Information, National Library of
+   Medicine, NIH, 8600 Rockville Pike, Bethesda, MD, USA&lt;/aff&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Thom&lt;/surname&gt;
+      &lt;given-names&gt;Lynne H.&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;aff&gt;Consolidated Safety Services, 10335 Democracy Lane, Suite 202,
+   Fairfax, VA, USA&lt;/aff&gt;
+  &lt;/contrib&gt;
+&lt;/contrib-group&gt;</pre></div></div><div class="section"><a name="pub-tag-aff-single"></a><h4 class="header">Single Group Affiliation</h4><p class="para">This form is appropriate when one affiliation applies for all of the contributors in
+            a <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a>.</p><div class="codeblock"><pre>&lt;contrib-group&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Marth&lt;/surname&gt;
+      &lt;given-names&gt;Gabor T.&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;xref ref-type="author-notes" rid="FN1"&gt;1&lt;/xref&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Czabarka&lt;/surname&gt;
+      &lt;given-names&gt;Eva&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Murvai&lt;/surname&gt;
+      &lt;given-names&gt;Janos&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Sherry&lt;/surname&gt;
+      &lt;given-names&gt;Stephen T.&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;aff&gt;National Center for Biotechnology Information, National Library of
+  Medicine, National Institutes of Health, Bethesda, Maryland 20894&lt;/aff&gt;
+&lt;/contrib-group&gt;</pre></div><p class="para">This style is also appropriate when there are multiple <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> elements, but the contributors in any
+            particular one share the same affiliation.</p><div class="codeblock"><pre>
+&lt;contrib-group&gt;
+  &lt;contrib contrib-type="author" corresp="yes"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Tanabe&lt;/surname&gt;
+      &lt;given-names&gt;Lorraine&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Xie&lt;/surname&gt;
+      &lt;given-names&gt;Natalie&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;aff&gt;National Center for Biotechnology Information, National Library of
+  Medicine, NIH, 8600 Rockville Pike, Bethesda, MD, USA&lt;/aff&gt;
+&lt;/contrib-group&gt;
+&lt;contrib-group&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Thom&lt;/surname&gt;
+      &lt;given-names&gt;Lynne H.&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Matten&lt;/surname&gt;
+      &lt;given-names&gt;Wayne&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;aff&gt;Consolidated Safety Services, 10335 Democracy Lane, Suite 202,
+  Fairfax, VA, USA&lt;/aff&gt;
+&lt;/contrib-group&gt;
+</pre></div></div><div class="section"><a name="pub-tag-aff-contribs"></a><h4 class="header">Post-contrib-group Multiple Affiliations</h4><p class="para">This form is appropriate when there are complex relationships between multiple
+            affiliations and contributors, for example, if there are only 3 or 4 affiliations, and
+            several members of different <a href="n-3f80.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a>s are associated with each. </p><div class="codeblock"><pre>
+
+&lt;contrib-group&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Moroz&lt;/surname&gt;
+      &lt;given-names&gt;Olga V.&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;xref ref-type="aff" rid="A1"&gt;1&lt;/xref&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Harkiolaki&lt;/surname&gt;
+      &lt;given-names&gt;Maria&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;xref ref-type="aff" rid="A1"&gt;1&lt;/xref&gt;
+    &lt;xref ref-type="aff" rid="A2"&gt;2&lt;/xref&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Galperin&lt;/surname&gt;
+      &lt;given-names&gt;Michael&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;xref ref-type="aff" rid="A3"&gt;3&lt;/xref&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Vagin&lt;/surname&gt;
+      &lt;given-names&gt;Alexei A.&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;xref ref-type="aff" rid="A1"&gt;1&lt;/xref&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Gonz&amp;#x00E1;lez-Pacanowska&lt;/surname&gt;
+      &lt;given-names&gt;Delores&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;xref ref-type="aff" rid="A4"&gt;4&lt;/xref&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Wilson&lt;/surname&gt;
+      &lt;given-names&gt;Keith S.&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;xref ref-type="aff" rid="A1"&gt;1&lt;/xref&gt;
+    &lt;xref ref-type="author-notes" rid="FN1"&gt;*&lt;/xref&gt;
+  &lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff id="A1"&gt;
+  &lt;label&gt;1&lt;/label&gt;Structural Biology Laboratory, Department of Chemistry,
+  University of York, Heslington, York YO10 5YW, UK;
+&lt;/aff&gt;
+&lt;aff id="A2"&gt;
+  &lt;label&gt;2&lt;/label&gt;Cancer Research UK Cell Signalling Group and Weatherall
+  Institute of Molecular Medicine, Oxford, OX3 9DS, UK;
+&lt;/aff&gt;
+&lt;aff id="A3"&gt;
+  &lt;label&gt;3&lt;/label&gt;National Center for Biotechnology Information, National
+  Library of Medicine, National Institutes of Health, Bethesda, Maryland 20894,
+  USA;
+&lt;/aff&gt;
+&lt;aff id="A4"&gt;
+  &lt;label&gt;4&lt;/label&gt;Instituto de Parasitolog&amp;#x00ED;a y Biomedicina
+  "L&amp;#x00F3;pez-Neyra", C/Ventanilla, 11. 18001 Granada, Spain
+&lt;/aff&gt;</pre></div></div><div class="section"><a name="pub-tag-aff-text"></a><h4 class="header">Text Affiliation</h4><p class="para">This form is appropriate when the affiliation information has been presented as a
+            single block of text in which the relationships between author and affiliation are
+            complex and cannot be separated easily.</p><div class="codeblock"><pre>
+
+&lt;contrib-group&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Soares&lt;/surname&gt;
+      &lt;given-names&gt;Heloisa P.&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Kumar&lt;/surname&gt;
+      &lt;given-names&gt;Ambuj&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Daniels&lt;/surname&gt;
+      &lt;given-names&gt;Stephanie&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Swann&lt;/surname&gt;
+      &lt;given-names&gt;Suzanne&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Cantor&lt;/surname&gt;
+      &lt;given-names&gt;Alan&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Hozo&lt;/surname&gt;
+      &lt;given-names&gt;Iztok&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Clark&lt;/surname&gt;
+      &lt;given-names&gt;Mike&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Serdarevic&lt;/surname&gt;
+      &lt;given-names&gt;Fadila&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Gwede&lt;/surname&gt;
+      &lt;given-names&gt;Clement&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Trotti&lt;/surname&gt;
+      &lt;given-names&gt;Andy&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Djulbegovic&lt;/surname&gt;
+      &lt;given-names&gt;Benjamin&lt;/given-names&gt;
+    &lt;/name&gt;
+  &lt;/contrib&gt;
+  &lt;aff&gt;Author Affiliations: H. Lee Moffitt Cancer Center &amp; Research Institute at 
+  University of South Florida, Tampa (Drs Soares, Kumar, Cantor, Serdarevic, Gwede, 
+  Trotti, and Djulbegovic and Ms Daniels); Department of Statistics, Radiation Therapy 
+  Oncology Group, Philadelphia, Pa (Dr Swann); Department of Mathematics, University 
+  of Indiana Northwest, Gary (Dr Hozo); UK Cochrane Centre, Oxford, England 
+  (Dr Clark).&lt;/aff&gt;
+&lt;/contrib-group&gt;
+</pre></div><div class="codeblock"><pre>
+
+&lt;contrib-group&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Leverenz&lt;/surname&gt;
+      &lt;given-names&gt;James B.&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;MD&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Fishel&lt;/surname&gt;
+      &lt;given-names&gt;Mark A.&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;MD&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Peskind&lt;/surname&gt;
+      &lt;given-names&gt;Elaine R.&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;MD&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Montine&lt;/surname&gt;
+      &lt;given-names&gt;Thomas J.&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;MD&lt;/degrees&gt;
+      &lt;degrees&gt;PhD&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Nochlin&lt;/surname&gt;
+      &lt;given-names&gt;David&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;MD&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Steinbart&lt;/surname&gt;
+      &lt;given-names&gt;Ellen&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;RN, MA&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Raskin&lt;/surname&gt;
+      &lt;given-names&gt;Murray A.&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;MD&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Schellenberg&lt;/surname&gt;
+      &lt;given-names&gt;Gerard D.&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;PhD&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Bird&lt;/surname&gt;
+      &lt;given-names&gt;Thomas D.&lt;/given-names&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;MD&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;contrib&gt;
+    &lt;name&gt;
+      &lt;given-names&gt;Debby Tsuang&lt;/surname&gt;
+    &lt;/name&gt;
+      &lt;degrees&gt;MD, MS&lt;/degrees&gt;
+  &lt;/contrib&gt;
+  &lt;aff&gt;Author Affiliations: Parkinson's Disease (Dr Leverenz), Mental Illness 
+  (Drs Leverenz, Peskind, Raskind, Schellenberg, and Tsuang and Ms Steinbart), 
+  Research, Education, and Clinical Centers, Veterans Affairs Puget Sound Health 
+  Care System, Seattle, Wash; and Departments of Neurology (Drs Leverenz, 
+  Fishel, and Bird) and Psychiatry and Behavioral Science (Drs Leverenz, 
+  Peskind, Raskind, and Tsuang), Division of Neuropathology, Department of 
+  Pathology (Drs Montine and Nochlin), and Division of Gerontology/Geriatrics, 
+  Department of Medicine  (Dr Schellenberg), University of Washington School 
+  of Medicine, Seattle.&lt;/aff&gt;
+&lt;/contrib-group&gt;
+</pre></div></div><div class="section"><a name="pub-tag-multiaff"></a><h4 class="header">Multiple Versions of an Affiliation</h4><p class="para">Sometimes an affiliation is present in multiple languages or multiple scripts and care should
+be taken so that it does not  appear to multiply the number of affiliations. (Three versions of the
+name of a university is not the same as three different universities.) The <a href="n-epi0.html" target="main" title="Identifier"><span class="attrtag">@id</span></a> attribute that is normally placed 
+  onto the <a href="n-6220.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> element should be placed on the alternatives wrapper element instead, to make the connection 
+  between the contributors and the affiliations.</p><p class="para">The <a href="n-2a20.html" target="main" title="Affiliation Alternatives"><span class="elementtag">&lt;aff-alternatives&gt;</span></a> element is intended to collect multiple
+versions of a single affiliation. Like the similar construction for graphics <span class="elementtag">&lt;alternatives&gt;</span>, it will be up to an application how multiple versions of a single affiliation are to be processed. The <a href="n-c6q0.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attributes can be used to distinguish the different affiliations for separate processing. The <span class="elementtag">&lt;aff-alternatives&gt;</span> element can be used to record:
+<ul class="bullist"><li>The name of an affiliation in multiple languages (For example, a university name in Korean or Chinese-Han characters and a 
+   transliterated version of the same name in the Latin alphabet);</li><li>The name of an affiliation in multiple language/script combinations (For example, a university name in Japanese 
+   [<tt>xml:lang="ja-Jpan"</tt> for Han + Hiragana + Katakana] and the same university name written in Kanji [<tt>xml:lang="ja-Hani"</tt>]);</li><li>An alternate affiliation for sorting or searching (For example, a name in French with
+accented letters, such as an “é”, and a plain lower-ASCII version of the same
+name with the “é” replaced by “e”. The attribute <a href="n-m4p0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> attribute can be used to indicate that the ASCII version is only for “sort”, not for display.);</li><li>An alternate name indexing (For example, an XML database may need to record all the name variants found for an individual from “President Thomas Jefferson” to “Long Tom”, with <a href="n-m4p0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> used to mark “primary” and “index”.</li></ul></p><div class="codeblock"><pre>
+... 
+&lt;article-meta&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib rid="aff1"&gt;
+&lt;name&gt;&lt;surname&gt;Smythe-Barring&lt;/surname&gt;
+&lt;given-names&gt;John&lt;/given-names&gt;
+&lt;/name&gt;
+<strong><span class="focus">&lt;aff-alternatives id="aff1"&gt;
+&lt;aff&gt; 
+&lt;institution xml:lang="ja-Jpan"&gt;国立言語学博物館&lt;/institution&gt;
+&lt;/aff&gt;
+&lt;aff&gt;
+&lt;institution xml:lang="en"&gt;National Museum of Linguistics&lt;/institution&gt;
+&lt;/aff&gt;
+&lt;/aff-alternatives&gt;</span></strong>
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;...
+&lt;/article-meta&gt;
+...
+ 
+
+</pre></div></div></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

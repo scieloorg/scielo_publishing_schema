@@ -1,0 +1,70 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Surname</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;surname&gt;</h1><h1 class="elementname">Surname</h1></div><div class="definition"><p class="para">Surname of a person.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Care should be taken with multipart names to divide the components into family names (usually <span class="elementtag">&lt;surname&gt;</span>) and personal names (<a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) in as culturally appropriate a fashion as possible. Initials can be preserved separately using the <a href="n-uzi0.html" target="main" title="Initials for Personal Names"><span class="attrtag">@initials</span></a> attribute.</p><div class="codeblock"><pre>&lt;surname initials=”Q”&gt;Llanos De La Torre Quiralte&lt;/surname&gt;   
+&lt;given-names initials=”M”&gt;M&lt;/given-names&gt;    
+
+&lt;surname initials=”U”&gt;Usdin&lt;/surname&gt;   
+&lt;given-names initials=”BT”&gt;B. Tommie&lt;/given-names&gt;
+
+&lt;surname initials=”GM” &gt;Gonzalez Martin&lt;/surname&gt;   
+&lt;given-names initials=”J”&gt;Josquin&lt;/given-names&gt;    
+
+&lt;surname initials=”M”&gt;McNair&lt;/surname&gt;   
+&lt;given-names initials=”KPC”&gt;Kenneth Pritchard Carnu&lt;/given-names&gt;    
+
+&lt;surname initials=”B”&gt;Ben Gurion&lt;/surname&gt;   
+&lt;given-names initials=”D”&gt;David&lt;/given-names&gt;    
+
+&lt;surname initials=”B”&gt;Ben-Gurion&lt;/surname&gt;   
+&lt;given-names initials=”D”&gt;David&lt;/given-names&gt;    
+
+&lt;surname initials=”M”&gt;de la Mare&lt;/surname&gt;   
+&lt;given-names initials=”WJ”&gt;Walter John&lt;/given-names&gt;                
+
+&lt;surname initials=”D” &gt;Di Iorio&lt;/surname&gt;   
+&lt;given-names initials=”S”&gt;Silvio&lt;/given-names&gt;
+
+&lt;surname initials=”T”&gt;Toulouse-Lautrec-Monfa, de&lt;/surname&gt;   
+&lt;given-names initials=”H”&gt;Henri Marie Raymond&lt;/given-names&gt;
+
+&lt;surname initials=”L”&gt;Lewis&lt;/surname&gt;   
+&lt;given-names initials=”CS”&gt;CS&lt;/given-names&gt;
+
+&lt;surname initials=”L”&gt;Lewis&lt;/surname&gt;   
+&lt;given-names initials=”CS”&gt;C.S.&lt;/given-names&gt;
+</pre></div><p class="para"><strong>Best Practice:</strong> There is no single style that best handles all single (one-part) names. Tibetan, Indian, and Burmese single names <em>that are not surnames</em> may be tagged as <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>; there is no need to commit the tag abuse of calling the given name a surname. Most westernized single names (“Pele”, “Prince”, “Babyface”, “Aztek”) are more likely to be retrieved properly if they are tagged as <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>s. Where it is allowed by this Tag Set, for example, within a bibliographic reference (the <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> elements), a single name could also be tagged as a <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a>.</p><p class="para"><strong>Design Note:</strong> The <a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element is one of the few elements in this Tag Set to require a <em>specific element sequence</em>. The idea was that names would be converted to this sequence during import conversion, allowing a publisher or archive to regularize the names in their repository, since names are frequently critical search items. However, that leaves the case of names where the component parts are not in the required order. If the name parts are unknown or untagged in the input to be converted, or if the name would require complex conversion processing, for example, “His Royal Highness The Prince Charles, Prince of Wales and Earl of Chester”, there are several options. The whole name can be put within the element <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> where that element is allowed (for example, within a bibliographic reference): </p><div class="codeblock"><pre>&lt;string-name&gt;His Royal Highness The Prince Charles,
+  Prince of Wales and Earl of Chester &lt;/string-name&gt;
+  </pre></div><p class="para">Since the <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> element permits the tagging of name parts within it, “Charles” could be tagged as a <a href="n-viw0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> element and the <a href="n-fgt0.html" target="main" title="Prefix"><span class="elementtag">&lt;prefix&gt;</span></a> and <a href="n-vkn0.html" target="main" title="Suffix"><span class="elementtag">&lt;suffix&gt;</span></a> element used to tag the remainder, but such tagging is likely to be rare.</p><p class="para">If the complexity is less or the element <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> is not allowed in the context, the entire name can be placed into the <a href="n-i7n0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> element. For example: </p><div class="codeblock"><pre>&lt;surname&gt;Prince Charles&lt;/surname&gt;</pre></div></div><div class="attrlist"><h2 class="header">Attribute</h2><h5 class="header"><a href="n-uzi0.html" target="main"><span class="attrtag">initials</span></a> <a href="n-uzi0.html" target="main"><span class="attrname">Initials for Personal Names</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  surname      (#PCDATA <a href="n-z782.html" target="main" title="Surname Elements"><span class="petag">%surname-elements;</span></a>)*                &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-qj40.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, <a href="n-udf0.html" target="main" title="Speaker"><span class="elementtag">&lt;speaker&gt;</span></a>, <a href="n-jkg0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;<strong><span class="focus">&lt;surname&gt;Forster&lt;/surname&gt;</span></strong>
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;xref ref-type="aff" rid="StLukes"/&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;<strong><span class="focus">&lt;surname&gt;Young&lt;/surname&gt;</span></strong>
+&lt;given-names&gt;John G.&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;xref ref-type="aff" rid="RoyalInf"/&gt;
+&lt;author-comment&gt;&lt;p&gt;on behalf of the Day Hospital
+Group&lt;/p&gt;&lt;/author-comment&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff id="StLukes"&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5
+0NA&lt;/aff&gt;
+&lt;aff id="RoyalInf"&gt;Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow
+G4 0SF&lt;/aff&gt;
+&lt;pub-date pub-type="pub" iso-8601-date="1999-03-27"&gt;
+...&lt;/pub-date&gt;
+...
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

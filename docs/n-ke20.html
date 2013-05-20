@@ -1,0 +1,134 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Alternatives For Processing</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;alternatives&gt;</h1><h1 class="elementname">Alternatives For Processing</h1></div><div class="definition"><p class="para">Container element used to hold a group of processing alternatives, for example, a single <a href="n-6cx0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> that ships in several formats (<tt>tif</tt>, <tt>gif</tt>, and <tt>jpeg</tt>) or in different resolutions. This element is a physical grouping to contain multiple logically equivalent (substitutable) versions of the same information object. Typically these are processing alternatives and the reader is expected to see only one version of the object.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"> <a href="n-ke20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> is neither inherently block nor inline in nature, because the block or inline quality is determined by context and usage. Typical examples for this element are a <a href="n-6cx0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> that ships with a document in multiple versions (for example, as a <tt>.tif</tt>, a <tt>.jpeg</tt>, and an SVG file); or an <a href="n-9ux0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> that is available as a <tt>.tif</tt> (<a href="n-x4x0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>), encoded in MathML, as well as encoded in TeX, and as a plain ASCII.</p><p class="para"><strong>Accessibility:</strong> This element, by providing a container for alternative versions of a graphical or media object, enables providing a textual alternative to any graphical or media object as well as providing an enlarged graphic version for accessibility </p><p class="para"><strong>Accessibility:</strong> This element, by providing a container element to related all versions of a graphical or media object, enables “G58: Placing a link to the alternative for time-based media immediately next to the non-text content” and “G69: Providing an alternative for time based media” from the W3C <a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/"><span class="citetitle">Techniques for WCAG 2.0</span></a> (December 2008). This element, by providing a place to always provide a textual alternative to any graphical or media object, enables “G68: Providing a descriptive label that describes the purpose of live audio-only and live video-only content” from the W3C <a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/"><span class="citetitle">Techniques for WCAG 2.0</span></a> (December 2008).</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  alternatives <a href="n-5gb0.html" target="main" title="Alternatives Model"><span class="petag">%alternatives-model;</span></a>                         &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(array | chem-struct | graphic | inline-graphic | inline-supplementary-material | media | preformat | private-char | supplementary-material | table | textual-form | tex-math | mml:math)+</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">One or more of any of:<ul class="bullist"><li><a href="n-m920.html" target="main" title="Array (Simple Tabulation)"><span class="elementtag">&lt;array&gt;</span></a> <a href="n-m920.html" target="main" title="<array&gt;"><span class="elementname">Array (Simple Tabulation)</span></a></li><li><a href="n-3q30.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-3q30.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a></li><li><a href="n-6cx0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-6cx0.html" target="main" title="<graphic&gt;"><span class="elementname">Graphic</span></a></li><li>Inline Display Elements<ul class="bullist"><li><a href="n-x4x0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-x4x0.html" target="main" title="<inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a></li><li><a href="n-qpt0.html" target="main" title="Private Character (Custom or Unicode)"><span class="elementtag">&lt;private-char&gt;</span></a> <a href="n-qpt0.html" target="main" title="<private-char&gt;"><span class="elementname">Private Character (Custom or Unicode)</span></a></li></ul></li><li><a href="n-qsx0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-qsx0.html" target="main" title="<inline-supplementary-material&gt;"><span class="elementname">Inline Supplementary Material</span></a></li><li><a href="n-kbv0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-kbv0.html" target="main" title="<media&gt;"><span class="elementname">Media Object</span></a></li><li><a href="n-unt0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a> <a href="n-unt0.html" target="main" title="<preformat&gt;"><span class="elementname">Preformatted Text</span></a></li><li><a href="n-txn0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> <a href="n-txn0.html" target="main" title="<supplementary-material&gt;"><span class="elementname">Supplementary Material</span></a></li><li><a href="n-6fn0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a> <a href="n-6fn0.html" target="main" title="<table&gt;"><span class="elementname">Table (NISO JATS table model)</span></a></li><li><a href="n-ng60.html" target="main" title="Textual Form"><span class="elementtag">&lt;textual-form&gt;</span></a> <a href="n-ng60.html" target="main" title="<textual-form&gt;"><span class="elementname">Textual Form</span></a></li><li>Math Elements<ul class="bullist"><li><a href="n-pf60.html" target="main" title="TeX Math Equation"><span class="elementtag">&lt;tex-math&gt;</span></a> <a href="n-pf60.html" target="main" title="<tex-math&gt;"><span class="elementname">TeX Math Equation</span></a></li><li><a href="n-9g40.html" target="main" title="Math (MathML 2.0 Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-9g40.html" target="main" title="<mml:math&gt;"><span class="elementname">Math (MathML 2.0 Tag Set)</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-gp00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-fx20.html" target="main" title="Alternate Title"><span class="elementtag">&lt;alt-title&gt;</span></a>, <a href="n-dd20.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-dj20.html" target="main" title="Appendix Group"><span class="elementtag">&lt;app-group&gt;</span></a>, <a href="n-m920.html" target="main" title="Array (Simple Tabulation)"><span class="elementtag">&lt;array&gt;</span></a>, <a href="n-jsc0.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>, <a href="n-v6c0.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a>, <a href="n-gbc0.html" target="main" title="Award Identifier"><span class="elementtag">&lt;award-id&gt;</span></a>, <a href="n-7c30.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-5u30.html" target="main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-b430.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a>, <a href="n-af30.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-3q30.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>, <a href="n-ek50.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-ya50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-8t50.html" target="main" title="Comment in a Citation"><span class="elementtag">&lt;comment&gt;</span></a>, <a href="n-z650.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a>, <a href="n-yj50.html" target="main" title="Compound Subject Part Name"><span class="elementtag">&lt;compound-subject-part&gt;</span></a>, <a href="n-ta80.html" target="main" title="Conference Theme"><span class="elementtag">&lt;conf-theme&gt;</span></a>, <a href="n-p4a0.html" target="main" title="Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>, <a href="n-cra0.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-gqa0.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a>, <a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-pyu0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-wmu0.html" target="main" title="Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a>, <a href="n-bkw0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a>, <a href="n-dgw0.html" target="main" title="Funding Source"><span class="elementtag">&lt;funding-source&gt;</span></a>, <a href="n-5jw0.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a>, <a href="n-9ux0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a>, <a href="n-4jx0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a>, <a href="n-sxv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a>, <a href="n-ytv0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-gk40.html" target="main" title="Metadata Data Value for Custom Metadata"><span class="elementtag">&lt;meta-value&gt;</span></a>, <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-s640.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a>, <a href="n-cz40.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-p7s0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a>, <a href="n-njs0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a>, <a href="n-y9s0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-w9t0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-vf70.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a>, <a href="n-q4e0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a>, <a href="n-ufe0.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a>, <a href="n-gde0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a>, <a href="n-4pe0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-fsf0.html" target="main" title="Signature Block"><span class="elementtag">&lt;sig-block&gt;</span></a>, <a href="n-fbf0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a>, <a href="n-u3g0.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-f4g0.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a>, <a href="n-qrg0.html" target="main" title="Subject Grouping Name"><span class="elementtag">&lt;subject&gt;</span></a>, <a href="n-cpg0.html" target="main" title="Document Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a>, <a href="n-x2n0.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a>, <a href="n-j8n0.html" target="main" title="Supplement Information"><span class="elementtag">&lt;supplement&gt;</span></a>, <a href="n-txn0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-bzn0.html" target="main" title="Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-ma60.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>, <a href="n-us60.html" target="main" title="Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a>, <a href="n-qh60.html" target="main" title="Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a>, <a href="n-3z60.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>, <a href="n-g4d0.html" target="main" title="Translated Subtitle"><span class="elementtag">&lt;trans-subtitle&gt;</span></a>, <a href="n-cgd0.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a>, <a href="n-tyd0.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a>, <a href="n-fkr0.html" target="main" title="Line of a Verse"><span class="elementtag">&lt;verse-line&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Alternatives to a table inside <a href="n-ndn0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>:
+ </p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="pbio-0020328-t003" position="float"&gt;
+&lt;label&gt;Table 3&lt;/label&gt;
+&lt;caption&gt;
+&lt;title&gt;Systematic Inactivation of SpoIIID-Activated Genes&lt;/title&gt;
+&lt;/caption&gt;
+<strong><span class="focus">&lt;alternatives&gt;
+
+&lt;graphic xlink:href="pbio.0020328.t003.tif"/&gt;
+
+&lt;graphic xlink:href="pbio.0020328.t003.gif"/&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;td&gt;Strain&lt;/td&gt;
+&lt;td&gt;Description&lt;/td&gt;
+&lt;td&gt;Sporulation Efficiency (Percent)&lt;sup&gt;a&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;PY79&lt;/td&gt;
+&lt;td&gt;wild type&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RL2391&lt;/td&gt;
+&lt;td&gt;&lt;italic&gt;asnO&amp;Delta;::spc&lt;/italic&gt;&lt;/td&gt;
+&lt;td&gt;0.000001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PE563&lt;/td&gt;
+&lt;td&gt;&lt;italic&gt;cotF&amp;Delta;::cat&lt;/italic&gt;&lt;/td&gt;
+&lt;td&gt;83&lt;/td&gt;
+&lt;/tr&gt;
+...
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;/alternatives&gt;</span></strong>
+&lt;table-wrap-foot&gt;
+&lt;fn id="nt301"&gt;
+&lt;p&gt;&lt;sup&gt;a&lt;/sup&gt;&amp;thinsp;Sporulation efficiency is defined as the
+number of heat-resistant spores ...&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Alternatives to an equation, including MathML and a graphic:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;disp-formula id="pbio-0020328-e001"&gt;
+<strong><span class="focus">&lt;alternatives&gt;
+&lt;mml:math display='block'&gt;&lt;mml:mrow&gt;&lt;mml:msub&gt;
+&lt;mml:mrow&gt;&lt;mml:mtext&gt;Strength&lt;/mml:mtext&gt;&lt;/mml:mrow&gt;
+&lt;mml:mi&gt;i&lt;/mml:mi&gt;&lt;/mml:msub&gt;
+&lt;mml:mo&gt;=&lt;/mml:mo&gt;
+&lt;mml:mi&gt;log&lt;/mml:mi&gt;
+&lt;mml:mo&gt;&amp;ApplyFunction;&lt;/mml:mo&gt;
+&lt;mml:mfrac&gt;...&lt;/mml:mfrac&gt;
+&lt;mml:mo&gt;=&lt;/mml:mo&gt;
+...&lt;/mml:math&gt;
+&lt;graphic xlink:href="pbio.0020328.e001.gif"/&gt;
+&lt;/alternatives&gt;</span></strong>
+&lt;/disp-formula&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Alternatives to a table including supplementary material:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="pbio-0020328-t002" position="float"&gt;
+&lt;label&gt;Table 2&lt;/label&gt;
+&lt;caption&gt;
+&lt;title&gt;Genes Activated in the Mother-Cell Line of Gene Expression&lt;/title&gt;
+&lt;/caption&gt;
+<strong><span class="focus">&lt;alternatives&gt;
+
+&lt;graphic xlink:href="pbio.0020328.t002.tif"/&gt;
+
+&lt;table&gt;...&lt;/table&gt;
+
+&lt;supplementary-material id="S1" xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:title="local_file" xlink:href="pbio-0020328-t002.xls"
+mimetype="application/vnd.ms-excel"&gt;
+&lt;label&gt;Supporting Material&lt;/label&gt;
+&lt;caption&gt;
+&lt;p&gt;Supplementary Microsoft Excel file (raw study data) supplied by authors.&lt;/p&gt;
+&lt;/caption&gt;
+&lt;/supplementary-material&gt;
+
+&lt;/alternatives&gt;</span></strong>
+&lt;table-wrap-foot&gt;...&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">An example of a triple bond glyph. To a chemist, a triple bond is
+not the same as Unicode x2261, but using alternatives, as shown below, is sometimes
+the easiest way to display the character visually and still stay within
+Unicode:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+<strong><span class="focus">&lt;alternatives&gt;
+
+&lt;textual-form specific-use="unicode-look-alike"&gt;&amp;#x2261;&lt;/textual-form&gt;
+
+&lt;private-char name="Triple Bond" description="Chemistry Triple Bond"&gt;
+&lt;glyph-data id="tbond" format="PBM" resolution="300"
+x-size="16" y-size="32"&gt;
+0000000000000000000000000000000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0001111111111111111111111100000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0001111111111111111111111100000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0001111111111111111111111100000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0000000000000000000000000000000
+0000000000000000000000000000000
+&lt;/glyph-data&gt;&lt;/private-char&gt;
+
+&lt;/alternatives&gt;</span></strong>
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

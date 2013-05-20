@@ -1,0 +1,74 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Annotation in a Citation</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;annotation&gt;</h1><h1 class="elementname">Annotation in a Citation</h1></div><div class="definition"><p class="para">Commentary, summary, review, or similar non-bibliographic information concerning the cited work.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">While most citations simply provide the bibliographic information for a cited reference, a few describe the work, categorize the work, comment upon the nature or quality of the work, or summarize its findings. The <a href="n-an20.html" target="main" title="Annotation in a Citation"><span class="elementtag">&lt;annotation&gt;</span></a> element is intended to hold such commentary.</p><p class="para"><strong>Display/Formatting Note:</strong> All of the other reference elements are inline elements. In contrast, an <a href="n-an20.html" target="main" title="Annotation in a Citation"><span class="elementtag">&lt;annotation&gt;</span></a> is typically presented as a block element, with space before and after it.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-vfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">This element is not related to the MathML <tt>&lt;annotation&gt;</tt> element, which is a mathematical term used only with equations.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  annotation   <a href="n-8nb0.html" target="main" title="Date Elements Model"><span class="petag">%annotation-model;</span></a>                           &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((p)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any one of:<ul class="bullist"><li><a href="n-y9s0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-y9s0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-c2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-ya40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-vxs0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-w9t0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pd70.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-f970.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):
+</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;ref id="B27"&gt;
+&lt;label&gt;27&lt;/label&gt;
+&lt;element-citation&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Hughes&lt;/surname&gt;
+&lt;given-names&gt;TR&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Marton&lt;/surname&gt;
+&lt;given-names&gt;MJ&lt;/given-names&gt;&lt;/name&gt;
+&lt;name&gt;&lt;surname&gt;Jones&lt;/surname&gt;
+&lt;given-names&gt;AC&lt;/given-names&gt;&lt;/name&gt;
+&lt;etal/&gt;
+&lt;/person-group&gt;
+&lt;article-title&gt;Functional discovery via a compendium
+of expression profiles&lt;/article-title&gt;
+&lt;source&gt;Cell&lt;/source&gt;
+&lt;year iso-8601-date="2000"&gt;2000&lt;/year&gt;
+&lt;volume&gt;102&lt;/volume&gt;
+&lt;fpage&gt;109&lt;/fpage&gt;
+&lt;lpage&gt;126&lt;/lpage&gt;
+<strong><span class="focus">&lt;annotation&gt;
+&lt;p&gt;This report is the most extensive DNA expression
+profile of yeast genes. It examines the expression
+pattern of the whole yeast genome in 300 mutant
+strains. It infers the function of many unknown
+genes comparing profiles among the different
+mutants.&lt;/p&gt;
+&lt;/annotation&gt;</span></strong>
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;
+&lt;/back&gt;...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):
+</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;back&gt;
+&lt;ref-list&gt;
+...
+&lt;ref id="B27"&gt;
+&lt;label&gt;27&lt;/label&gt;
+&lt;mixed-citation&gt;
+&lt;string-name&gt;
+&lt;surname&gt;Hughes&lt;/surname&gt;, &lt;given-names&gt;TR&lt;/given-names&gt;
+&lt;/string-name&gt;,
+&lt;string-name&gt;&lt;surname&gt;Marton&lt;/surname&gt;,
+&lt;given-names&gt;MJ&lt;/given-names&gt;&lt;/string-name&gt;,
+&lt;string-name&gt;&lt;surname&gt;Jones&lt;/surname&gt;,
+&lt;given-names&gt;AC&lt;/given-names&gt;&lt;/string-name&gt;. et al.
+&lt;article-title&gt;Functional discovery via a compendium
+of expression profiles&lt;/article-title&gt;.
+&lt;source&gt;Cell&lt;/source&gt; &lt;year iso-8601-date="2000"&gt;2000&lt;/year&gt;;
+&lt;volume&gt;102&lt;/volume&gt;:&lt;fpage&gt;109&lt;/fpage&gt;&amp;ndash;
+&lt;lpage&gt;126&lt;/lpage&gt;
+(<strong><span class="focus">&lt;annotation&gt;
+&lt;p&gt;This report is the most extensive DNA expression
+profile of yeast genes. It examines the expression
+pattern of the whole yeast genome in 300 mutant
+strains. It infers the function of many unknown
+genes comparing profiles among the different
+mutants.&lt;/p&gt;
+&lt;/annotation&gt;</span></strong>).
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+&lt;/ref-list&gt;
+&lt;/back&gt;...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-references1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

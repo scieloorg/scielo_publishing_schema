@@ -1,0 +1,110 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Sub-article</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;sub-article&gt;</h1><h1 class="elementname">Sub-article</h1></div><div class="definition"><p class="para">An article that is completely contained inside another article.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">This model assumes that there is always an outside article, and that both the article and the sub-article have their own metadata. The container article will have, at the very least, journal information, issue information, and start and end pages; it may also have a title, author, or other metadata. The contained sub-article will have its own, independent metadata, such as authors or a smaller page range, that it may not share with the article that encloses it. The sub-article metadata may be tagged using the <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a> element if all of the journal metadata is identical to that of the outside article; if the <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a> element is used, any metadata not specifically tagged is inherited from the outside article.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class="elementtag">&lt;sub-article&gt;</span>, see <a href="n-ubw2.html#pub-tag-sub-article">Sub-articles to an Article</a>.</p><p class="para"><strong>Usage:</strong>
+      “Super-articles” that contain other articles rarely contain much content of their own, perhaps just a title and introductory paragraph.</p><p class="para"><strong>Best Practice:</strong> This construction should <em>not</em> be used for an article and its response, or for a series of responses, even if the original article to which the responses are replying is elsewhere.</p><p class="para"><strong>Multi-language:</strong> In current multi-language journal publishing, it is not unusual for the narrative body of an article to be available in two languages (for example, English and Korean or French and English). This situation can be handled by tagging each language as a <span class="elementtag">&lt;sub-article&gt;</span>. The <a href="n-c6q0.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attribute on <span class="elementtag">&lt;sub-article&gt;</span> names the appropriate language. The articles can share metadata or keep that separate, using the <a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a> element. If figures and tables are shared, these can be placed in the <a href="n-bkw0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a> at the end of the article and referenced from each sub-article. If figures and tables are completely separate, each sub-article will need to maintain its own numbering system and placement.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-2qr0.html" target="main"><span class="attrtag">article-type</span></a> <a href="n-2qr0.html" target="main"><span class="attrname">Type of Article</span></a></h5><h5 class="header"><a href="n-epi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-epi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m4p0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m4p0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-c6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-c6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">A journal article <a href="n-52c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> may be divided into several components: <ol class="olist"><li>the <a href="n-yww0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> (the article metadata or header information, which contains both journal and article metadata); </li><li>the <a href="n-5u30.html" target="main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a> (the textual and graphical content of the article); </li><li>any <a href="n-izc0.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a> (any ancillary information such as a glossary, reference list, or appendix); </li><li>a <a href="n-bkw0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a> (single container element some publishers and archives use to hold all floating elements such as figures and tables that are referenced in the article body or back matter); and </li><li>either a series of <a href="n-z8e0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a> elements or a series of <a href="n-2fg0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a> elements. (A <a href="n-z8e0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a> is a commentary on the article itself, such as a summation by an editor, an answer to a letter-article, or words from the author responding to peer-review comments. Sub-articles are articles such as news pieces, abstracts, or committee reports that are completely contained within a main article.)</li></ol> </p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  sub-article  <a href="n-ta82.html" target="main" title="Sub-article Model"><span class="petag">%sub-article-model;</span></a>                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((front | front-stub), body?, back?, floats-group?, (sub-article* | response*))</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>Any one of:<ul class="bullist"><li><a href="n-yww0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> <a href="n-yww0.html" target="main" title="<front&gt;"><span class="elementname">Front Matter</span></a></li><li><a href="n-hvw0.html" target="main" title="Stub Front Metadata"><span class="elementtag">&lt;front-stub&gt;</span></a> <a href="n-hvw0.html" target="main" title="<front-stub&gt;"><span class="elementname">Stub Front Metadata</span></a></li></ul></li><li><a href="n-5u30.html" target="main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a> <a href="n-5u30.html" target="main" title="<body&gt;"><span class="elementname">Body of the Document</span></a>, zero or one</li><li><a href="n-izc0.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-izc0.html" target="main" title="<back&gt;"><span class="elementname">Back Matter</span></a>, zero or one</li><li><a href="n-bkw0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a> <a href="n-bkw0.html" target="main" title="<floats-group&gt;"><span class="elementname">Floating Element Group</span></a>, zero or one</li><li>Any one of:<ul class="bullist"><li><a href="n-2fg0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a> <a href="n-2fg0.html" target="main" title="<sub-article&gt;"><span class="elementname">Sub-article</span></a>, zero or more</li><li><a href="n-z8e0.html" target="main" title="Response"><span class="elementtag">&lt;response&gt;</span></a> <a href="n-z8e0.html" target="main" title="<response&gt;"><span class="elementname">Response</span></a>, zero or more</li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-52c0.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a>, <a href="n-2fg0.html" target="main" title="Sub-article"><span class="elementtag">&lt;sub-article&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+&lt;article&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="publisher"&gt;BR MED J&lt;/journal-id&gt;
+&lt;issn&gt;0959-8138&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id&gt;bmj-4619-a6&lt;/article-id&gt;
+&lt;article-categories&gt;
+&lt;subj-group&gt;
+&lt;subject&gt;General Practice&lt;/subject&gt;
+&lt;subject&gt;11&lt;/subject&gt;
+&lt;subject&gt;9&lt;/subject&gt;
+&lt;subject&gt;76&lt;/subject&gt;
+&lt;subject&gt;215&lt;/subject&gt;
+&lt;subject&gt;110&lt;/subject&gt;
+&lt;subject&gt;318&lt;/subject&gt;
+&lt;/subj-group&gt;
+&lt;series-title&gt;Controversy in primary care&lt;/series-title&gt;
+&lt;/article-categories&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Should asymptomatic haemochromatosis
+be treated?&lt;/article-title&gt;&lt;/title-group&gt;
+&lt;pub-date pub-type="pub" iso-8601-date="2000-05-13"&gt;
+&lt;day&gt;13&lt;/day&gt;&lt;month&gt;05&lt;/month&gt;&lt;year&gt;2000&lt;/year&gt;&lt;/pub-date&gt;
+&lt;volume&gt;320&lt;/volume&gt;&lt;issue&gt;7245&lt;/issue&gt;
+&lt;fpage&gt;1314&lt;/fpage&gt;
+&lt;lpage&gt;1317&lt;/lpage&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 2000,
+British Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;2000&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;&lt;p&gt;Genetic testing ...&lt;/p&gt;
+&lt;/body&gt;
+<strong><span class="focus">&lt;sub-article article-type="research-article"&gt;
+&lt;front&gt;
+&lt;journal-meta&gt;
+&lt;journal-id journal-id-type="publisher"&gt;BR MED J&lt;/journal-id&gt;
+&lt;issn&gt;0959-8138&lt;/issn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;British Medical Journal&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;/journal-meta&gt;
+&lt;article-meta&gt;
+&lt;article-id&gt;...&lt;/article-id&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Treatment can be onerous for patient and
+doctor&lt;/article-title&gt;&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;&lt;name&gt;
+&lt;surname&gt;Seamark&lt;/surname&gt;
+&lt;given-names&gt;Clare J&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;general practitioner&lt;/role&gt;
+&lt;xref ref-type="aff"&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Hutchinson&lt;/surname&gt;
+&lt;given-names&gt;Margaret&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;retired headmistress&lt;/role&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff&gt;&lt;sup&gt;&lt;italic&gt;a&lt;/italic&gt;&lt;/sup&gt;Honiton
+Group Practice, Honiton, Devon EX14 2NY&lt;/aff&gt;
+&lt;author-notes&gt;
+&lt;fn&gt;&lt;p&gt;Correspondence to: C Seamark
+&lt;email&gt;daseamark@msn.com&lt;/email&gt;&lt;/p&gt;&lt;/fn&gt;
+&lt;fn&gt;&lt;p&gt;Competing interests: None declared.&lt;/p&gt;&lt;/fn&gt;
+&lt;/author-notes&gt;
+&lt;pub-date iso-8601-date="2000"&gt;&lt;year&gt;2000&lt;/year&gt;&lt;/pub-date&gt;
+&lt;fpage&gt;...&lt;/fpage&gt;
+&lt;lpage&gt;...&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="accepted" iso-8601-date="2000-02-07"&gt;
+&lt;day&gt;07&lt;/day&gt;&lt;month&gt;02&lt;/month&gt;
+&lt;year&gt;2000&lt;/year&gt;&lt;/date&gt;
+&lt;/history&gt;
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;#x00A9; 2000,
+British Medical Journal&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;2000&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;/article-meta&gt;
+&lt;/front&gt;
+&lt;body&gt;
+&lt;p&gt;The development of genetic testing for disease has
+raised the problem of whether to test asymptomatic
+individuals....&lt;/p&gt;
+...
+&lt;/body&gt;
+&lt;back&gt;
+&lt;ack&gt;
+&lt;p&gt;We thank MH&amp;apos;s family for their willingness to be involved in
+genetic testing ...&lt;/p&gt;
+&lt;/ack&gt;
+&lt;ref-list&gt;...&lt;/ref-list&gt;
+&lt;/back&gt;
+&lt;/sub-article&gt;</span></strong>
+<strong><span class="focus">&lt;sub-article article-type="research-article"&gt;...&lt;/sub-article&gt;</span></strong>
+<strong><span class="focus">&lt;sub-article article-type="research-article"&gt;...&lt;/sub-article&gt;</span></strong>
+&lt;/article&gt;
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-journalpublishing0.dtd</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

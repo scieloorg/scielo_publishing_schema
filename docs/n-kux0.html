@@ -1,0 +1,83 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Horizontal Rule</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;hr&gt;</h1><h1 class="elementname">Horizontal Rule</h1></div><div class="definition"><p class="para">An explicit horizontal rule.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Best Practice:</strong> This element was retained when NISO JATS adapted and modified the XHTML 1.1 table model, thus it and <em>should</em> be restricted to use inside table cells (<a href="n-bzn0.html" target="main" title="Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a> and <a href="n-qh60.html" target="main" title="Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a>), even though this Tag Set allows more widespread usage.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  hr           EMPTY                                        &gt;</pre></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">This is an EMPTY element</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-bzn0.html" target="main" title="Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-qh60.html" target="main" title="Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="TN0.170"&gt;
+&lt;caption&gt;
+&lt;p&gt;Numbers of patients receiving institutional
+care at the end of scheduled follow up and
+use of hospital beds among those allocated
+to day hospital or alternative services&lt;/p&gt;
+&lt;/caption&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="3" align="center"
+rowspan="1"&gt;Institutional care&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th colspan="2" align="center"
+rowspan="1"&gt;&amp;#x2003;Bed use (days)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3"&gt;<strong><span class="focus">&lt;hr/&gt;</span></strong>&lt;/td&gt;
+&lt;td colspan="2"&gt;<strong><span class="focus">&lt;hr/&gt;</span></strong>&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;Control group&lt;/th&gt;
+&lt;th align="center"&gt;Day hospital&lt;/th&gt;
+&lt;th align="center"&gt;Control&lt;/th&gt;
+&lt;th align="center"&gt;Odds ratio (95&amp;#x0025; CI)&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align="center"&gt;Day hospital&lt;/th&gt;
+&lt;th align="center"&gt;Control&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="7"&gt;<strong><span class="focus">&lt;hr/&gt;</span></strong>&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Comprehensive care (5 trials)&lt;/td&gt;
+&lt;td align="center"&gt;151/597&lt;xref ref-type="table-fn"
+rid="TF1-150"&gt;&lt;/xref&gt;&lt;/td&gt;
+&lt;td align="center"&gt;159/584&lt;/td&gt;
+&lt;td align="center"&gt;0.91 (0.70 to 1.19)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;20.5&lt;/td&gt;
+&lt;td align="center"&gt;21.4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Domiciliary care (4 trials)&lt;/td&gt;
+&lt;td align="center"&gt;20/216&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;19/227&lt;/td&gt;
+&lt;td align="center"&gt;1.61 (0.30 to 8.55)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;7.7&lt;/td&gt;
+&lt;td align="center"&gt;11.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;No comprehensive care (3 trials)&lt;/td&gt;
+&lt;td align="center"&gt;37/411&lt;/td&gt;
+&lt;td align="center"&gt;&amp;#x2002;66/403&lt;/td&gt;
+&lt;td align="center"&gt;0.50&lt;xref ref-type="table-fn"
+rid="TF1-151"&gt;&lt;/xref&gt; (0.26 to 0.96)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;11.2&lt;/td&gt;
+&lt;td align="center"&gt;11.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td align="center"&gt;208/1224&lt;/td&gt;
+&lt;td align="center"&gt;244/1214&lt;/td&gt;
+&lt;td align="center"&gt;0.77 (0.52 to 1.13)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align="center"&gt;15.0&lt;/td&gt;&lt;td align="center"&gt;16.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table-wrap-foot&gt;
+&lt;fn-group&gt;
+&lt;fn id="TF1-150"&gt;&lt;p&gt;Data not available for 1 trial.&lt;/p&gt;&lt;/fn&gt;
+&lt;fn id="TF1-151"&gt;&lt;p&gt;P&amp;#x003C;0.05 (random effects model).&lt;/p&gt;&lt;/fn&gt;
+&lt;/fn-group&gt;
+&lt;/table-wrap-foot&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-format1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library Proposed NISO JATS Version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>
