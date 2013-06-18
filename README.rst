@@ -14,6 +14,14 @@ Tag Library
 
 The Tag Library is available at: http://scieloorg.github.io/scielo_publishing_schema/
 
+----------
+Schema Url
+----------
+
+The public schema url is: 
+
+http://static.scielo.org/sps/schema/SciELO-journalpublishing1.xsd
+
 -----------
 Use license
 -----------
