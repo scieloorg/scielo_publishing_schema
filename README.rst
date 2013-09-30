@@ -4,7 +4,7 @@ SciELO Publishing Schema
 
 This repository is responsible for keeping track of the SciELO Publishing Schema.
 
-The SciELO Publishing Schema is based on the NLM PubMedCentral Schema.
+The SciELO Publishing Schema is based on the NLM PubMedCentral Schema, Journal Article Tag Suite (JATS), NISO Z39.96-2012.
 
 See the last versions available at: http://github.com/scieloorg/scielo_publishing_schema/tags
 
