@@ -28,20 +28,18 @@ Adjustments
 
 Comment line 248
 
-```
-    <!--xs:element ref="piecewise"/-->
-```
+
+ <!--xs:element ref="piecewise"/-->
 
 Comment line 193 to 198
 
-```
-    <!--xs:complexType name="piecewise.type">
-      <xs:group ref="piecewise.content"/>
-      <xs:attributeGroup ref="piecewise.attlist"/>
-    </xs:complexType>
-    
-    <xs:element name="piecewise" type="piecewise.type"/-->
-```
+ <!--xs:complexType name="piecewise.type">
+   <xs:group ref="piecewise.content"/>
+   <xs:attributeGroup ref="piecewise.attlist"/>
+ </xs:complexType>
+
+ <xs:element name="piecewise" type="piecewise.type"/-->
+
 
 -----------
 Use license
