@@ -190,12 +190,12 @@
   </xs:sequence>
 </xs:group>
 
-<xs:complexType name="piecewise.type">
+<!--xs:complexType name="piecewise.type">
   <xs:group ref="piecewise.content"/>
   <xs:attributeGroup ref="piecewise.attlist"/>
 </xs:complexType>
 
-<xs:element name="piecewise" type="piecewise.type"/>
+<xs:element name="piecewise" type="piecewise.type"/-->
 
 <!-- "bvar" -->
 
@@ -245,7 +245,7 @@
     <xs:element ref="condition"/>
     <xs:element ref="declare"/>
     <xs:element ref="lambda"/>
-    <xs:element ref="piecewise"/>
+    <!--xs:element ref="piecewise"/-->
     <xs:element ref="bvar"/>
     <xs:element ref="degree"/>
   </xs:choice>
