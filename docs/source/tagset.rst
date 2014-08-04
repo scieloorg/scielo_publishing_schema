@@ -1,3 +1,5 @@
+.. _xml-encoding:
+
 encoding
 ========
 Atributo que especifica a codificação de caracteres usada na elaboração do documento. 
@@ -11,10 +13,12 @@ Para maiores detalhes leia a especificação do padrão XML
     <?xml version="1.0" encoding="utf-8"?>
  
 
+.. _xml-doctype:
+
 <!DOCTYPE>
 ==========
  
-A tag de declaração ``<!DOCTYPE>`` serve para indicar a :term:`DTD` 
+A tag de declaração :ref:`xml-doctype` serve para indicar a :term:`DTD` 
 a qual o XML é associado, ou seja, as regras estruturais do documento. 
 O SciELO Publishing Schema utiliza como base o padrão *JATS 1.0*. 
  
@@ -25,7 +29,7 @@ Exemplo versão JATS 1.0:
     <!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "JATS-journalpublishing1.dtd">
  
 
-Exemplo versão PMC 3.0:
+Exemplo versão PMC 3.0 (suporte por tempo indeterminado):
  
 .. code-block:: xml
  
@@ -341,11 +345,12 @@ Ocorre
   Uma vez
  
 
-A tag :ref:`elemento-article` representa o elemento raiz do XML, e deve conter obrigatoriamente 
-os atributos ``@dtd-version``, ``@article-type`` e ``@xml:lang``. 
+A tag :ref:`elemento-article` representa o elemento raiz do XML, e deve conter 
+obrigatoriamente os atributos ``@dtd-version``, ``@article-type`` e 
+``@xml:lang``. 
 
 Para ``@dtd-version`` utilizar os valores 1.0 ou 3.0 conforme a :term:`DTD`, 
-explicitada em ``<!DOCTYPE>``. Para ``@article-type`` define-se a tipologia 
+explicitada em :ref:`xml-doctype`. Para ``@article-type`` define-se a tipologia 
 de artigos, os valores que podem ser utilizados são:
  
 +--------------------+----------------------------------------------------------+
@@ -432,7 +437,7 @@ de artigos, os valores que podem ser utilizados são:
 
 Para ``@xml:lang``, utilizar código de duas letras conforme norma *ISO 639-1*. 
 Para uma lista completa dos códigos disponíveis e mais informações sobre a 
-norma *ISO 639-1*, acesse *http://www.mathguide.de/info/tools/languagecode.html*.
+norma *ISO 639-1*, acesse http://www.mathguide.de/info/tools/languagecode.html.
  
 
 Exemplo da tag completa versão JATS 1.0:
@@ -468,17 +473,23 @@ Commons, data de publicação, seção de cabeçalho, histórico de datas, dados
 de correspondência, notas de autor, informações de resenhas de livros.
  
 
+.. _elemento-journal-meta:
+
 <journal-meta>
 --------------
-Em <journal-meta> faz-se a identificação dos metadados do periódico.
- 
-.. note:: Confira a novidade criada pela equipe de TI SciELO, consulte link para preencher corretamente os metadados da revista em: http://static.scielo.org/sps/titles-tab-utf-8.csv
 
 Aparece em
- 1. article/front
+  1. article/front
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+Em :ref:`elemento-journal-meta` faz-se a identificação dos metadados do periódico.
+ 
+.. note:: Consulte o link http://static.scielo.org/sps/titles-tab-utf-8.csv para 
+          preencher corretamente os metadados do periódico. 
+
  
 <journal-id>
 ^^^^^^^^^^^^
