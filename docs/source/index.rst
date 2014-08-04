@@ -26,14 +26,15 @@ Convenções tipográficas
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 *Itálico*
-  Utilizado para nomes de arquivos, URLs ou para introduzir novos termos.
+  Utilizado para nomes de arquivos, normas, URLs ou para introduzir novos termos.
 
 ``Largura fixa``
   Utilizado para exemplos, trechos ou referências a elementos ou atributos
   do XML.
 
 
-Contents:
+Lista de elementos
+------------------
 
 .. toctree::
    :maxdepth: 2

@@ -34,7 +34,19 @@ Exemplo versão PMC 3.0:
 
 <article>
 =========
+
+Aparece em
+  1. /
  
+Atributos obrigatórios
+  1. dtd-version
+  2. article-type
+  3. xml:lang
+ 
+Ocorre
+  Uma vez
+ 
+
 A tag ``<article>`` representa o elemento raiz do XML, e deve conter obrigatoriamente 
 os atributos ``@dtd-version``, ``@article-type`` e ``@xml:lang``. 
 
@@ -113,8 +125,8 @@ Para ``@article-type`` define-se a tipologia de artigos, os valores que podem se
 +--------------------+----------------------------------------------------------+
 | collection         | coleção - utilizada quando há um conjunto de cartas,     |
 |                    | respostas, resenhas etc. O tipo collection é utilizado   |
-|                    | em "article" do artigo principal e em <sub-article> ou   |
-|                    | <response> é identificado cada carta, resenha,           |
+|                    | em "article" do artigo principal e em ``<sub-article>``  |
+|                    | ou ``<response>`` é identificado cada carta, resenha,    | 
 |                    | resposta etc.                                            |
 +--------------------+----------------------------------------------------------+
 
@@ -123,30 +135,24 @@ Para ``@article-type`` define-se a tipologia de artigos, os valores que podem se
           Não confundir com a seção em que o documento aparece no sumário.
  
 
-Para @xml:lang, utilizar código de duas letras conforme norma ISO 639-1. Para uma lista completa dos códigos disponíveis e mais informações sobre a norma ISO 639-1, acesse http://www.mathguide.de/info/tools/languagecode.html.
+Para ``@xml:lang``, utilizar código de duas letras conforme norma *ISO 639-1*. 
+Para uma lista completa dos códigos disponíveis e mais informações sobre a 
+norma *ISO 639-1*, acesse *http://www.mathguide.de/info/tools/languagecode.html.*
  
 
-**Exemplo da tag completa versão 1.0:**
+Exemplo da tag completa versão 1.0:
  
 .. code-block:: xml
  
      <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" article-type="research-article" xml:lang="en">
  
-**Exemplo da tag completa versão 3.0:**
+
+Exemplo da tag completa versão 3.0:
  
 .. code-block:: xml
-<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" article-type="research-article" xml:lang="en">
+
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" article-type="research-article" xml:lang="en">
  
-Aparece em
- 1. /
- 
-Atributos obrigatórios
- 1. dtd-version
- 2. article-type
- 3. xml:lang
- 
-Ocorre
- Uma vez
  
 Tags Flutuantes
 ================
