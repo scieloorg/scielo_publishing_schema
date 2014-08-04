@@ -14,7 +14,7 @@ Para maiores detalhes leia a especificação do padrão XML
 <!DOCTYPE>
 ==========
  
-A tag de declaração ``<!DOCTYPE>`` serve para indicar a *DTD* (Definição de Tipo de Documento)
+A tag de declaração ``<!DOCTYPE>`` serve para indicar a :term:`DTD` 
 a qual o XML é associado, ou seja, as regras estruturais do documento. 
 O SciELO Publishing Schema utiliza como base o padrão *JATS 1.0*. 
  
@@ -50,8 +50,9 @@ Ocorre
 A tag ``<article>`` representa o elemento raiz do XML, e deve conter obrigatoriamente 
 os atributos ``@dtd-version``, ``@article-type`` e ``@xml:lang``. 
 
-Para ``@dtd-version`` utilizar os valores 1.0 ou 3.0, conforme a DTD explicitada em ``<!DOCTYPE>``.
-Para ``@article-type`` define-se a tipologia de artigos, os valores que podem ser utilizados são:
+Para ``@dtd-version`` utilizar os valores 1.0 ou 3.0 conforme a :term:`DTD`, 
+explicitada em ``<!DOCTYPE>``. Para ``@article-type`` define-se a tipologia 
+de artigos, os valores que podem ser utilizados são:
  
 +--------------------+----------------------------------------------------------+
 | Valor              | Descrição                                                |
@@ -137,7 +138,7 @@ Para ``@article-type`` define-se a tipologia de artigos, os valores que podem se
 
 Para ``@xml:lang``, utilizar código de duas letras conforme norma *ISO 639-1*. 
 Para uma lista completa dos códigos disponíveis e mais informações sobre a 
-norma *ISO 639-1*, acesse *http://www.mathguide.de/info/tools/languagecode.html.*
+norma *ISO 639-1*, acesse *http://www.mathguide.de/info/tools/languagecode.html*.
  
 
 Exemplo da tag completa versão 1.0:
@@ -155,104 +156,173 @@ Exemplo da tag completa versão 3.0:
  
  
 Tags Flutuantes
-================
-As chamadas tags flutuantes podem aparecer em todo o documento, <front>, <body> e <back>.
- 
+===============
+
+As chamadas tags flutuantes podem aparecer em todo o documento, ``<front>``, 
+``<body>`` e ``<back>``.
+
+
 <xref>
 ------
-Tag de Referência Cruzada usada para relacionar e/ou fazer link com alguma informação no texto. 
- 
-Os atributos obrigatórios para xref são:
- 
-- **@rid:** representa "a referência ao id" e é utilizado para fazer a ligação de elementos que possuem @id no arquivo. É imprescindível que haja um "@id" para cada "@rid" e ambos deverão ter o valor idêntico para sua relação.
- 
-- **@ref-type:**especifica o tipo de referência cruzada. Os valores para este atributo podem ser:
- 
-     aff: afiliação
-     app: apêndice
-     author-notes: notas de autor (ou relacionado a autor)
-     bibr: referência bibliográfica
-     boxed-text: caixa de texto
-     contrib: contribuinte
-     corresp: autor correspondente
-     disp-formula: fórmula
-     fig: figura ou grupos de figuras
-     fn: nota de rodapé
-     kwd: palavra-chave
-     list: lista
-     other: nenhum dos tipos listados
-     sec: seção
-     statement: declaração
-     supplementary-material: material suplementar
-     table: tabela ou grupo de tabelas
-     table-fn: nota de rodapé de tabelas
- 
-**Alguns Exemplos:**
- 
-.. code-block:: xml
- 
-    <xref ref-type="aff" rid="aff1">1</xref>
-     <aff id="aff01">1</aff>
-     
-     <xref ref-type="birb" rid="B01">1</xref>
-      <ref id="B01">1</ref>
 
-     <xref ref-type="fig" rid="f01">figure 1</xref>
-      <fig id="f01">
-
-     <xref ref-type="table" rid="t01">table 1</xref>
-      <table-wrap id="t01">
-
-     <xref ref-type="sec" rid="sec01">Seção Metodologia</xref>
-      <sec sec-type="methods" id="sec01">
-
-     <xref ref-type="app" rid="app01">Apêndice 1</xref>
-      <app id="app01">
-     
-     <xref ref-type="supplementary-material" rid="suppl01">Material Suplementar A</xref>
-     <supplementary-material id="suppl01">
- 
 Aparece em
- 1. article/front/article-meta/title-group/article-title
- 2. article/front/article-meta/trans-title-group/trans-title
- 3. article/front/article-meta/contrib-group/contrib
- 4. article/body/p
- 5. article/body/sec/p
- 6. article/body/p/table-wrap/table/thead/tr/th
- 7. article/body/p/table-wrap/table/tbody/tr/td
- 8. article/body/sec/p/table-wrap/table/thead/tr/th
- 9. article/body/sec/p/table-wrap/table/tbody/tr/td
- 8. article/back/app-group/app/table-wrap/table/thead/tr/th
- 9. article/back/app-group/app/table-wrap/table/tbody/tr/td
- 10. article/back/app-group/app/supplementary-material/table-wrap/table/thead/tr/th
- 11. article/back/app-group/app/supplementary-material/table-wrap/table/tbody/tr/td
+  1. article/front/article-meta/title-group/article-title
+  2. article/front/article-meta/trans-title-group/trans-title
+  3. article/front/article-meta/contrib-group/contrib
+  4. article/body/p
+  5. article/body/sec/p
+  6. article/body/p/table-wrap/table/thead/tr/th
+  7. article/body/p/table-wrap/table/tbody/tr/td
+  8. article/body/sec/p/table-wrap/table/thead/tr/th
+  9. article/body/sec/p/table-wrap/table/tbody/tr/td
+  #. article/back/app-group/app/table-wrap/table/thead/tr/th
+  #. article/back/app-group/app/table-wrap/table/tbody/tr/td
+  #. article/back/app-group/app/supplementary-material/table-wrap/table/thead/tr/th
+  #. article/back/app-group/app/supplementary-material/table-wrap/table/tbody/tr/td
  
 Atributos obrigatórios
- 1. rid
- 2. ref-type
+  1. rid
+  2. ref-type
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Tag de Referência Cruzada usada para relacionar e/ou fazer link com alguma 
+informação no texto. 
  
-<label>
-^^^^^^^^
-A tag <label> é responsável pela identificação numérica ou alfabética que faz a ligação entre etiquetas.
+Os atributos obrigatórios para ``@xref`` são:
  
-**Alguns Exemplos**
+* ``@rid``: representa "a referência ao id" e é utilizado para fazer a ligação 
+  de elementos que possuem ``@id`` no arquivo. É imprescindível que haja um 
+  ``@id`` para cada ``@rid`` e ambos deverão ter o valor idêntico para 
+  sua relação.
+* ``@ref-type``: especifica o tipo de referência cruzada. Os valores para 
+  este atributo podem ser:
+ 
+
++------------------------+-----------------------------------------+
+| Valor                  | Descrição                               |
++========================+=========================================+
+| aff                    | afiliação                               |
++------------------------+-----------------------------------------+
+| app                    | apêndice                                |
++------------------------+-----------------------------------------+
+| author-notes           | notas de autor (ou relacionado a autor) |
++------------------------+-----------------------------------------+
+| bibr                   | referência bibliográfica                |
++------------------------+-----------------------------------------+
+| boxed-text             | caixa de texto                          |
++------------------------+-----------------------------------------+
+| contrib                | contribuinte                            |
++------------------------+-----------------------------------------+
+| corresp                | autor correspondente                    |
++------------------------+-----------------------------------------+
+| disp-formula           | fórmula                                 |
++------------------------+-----------------------------------------+
+| fig                    | figura ou grupos de figuras             |
++------------------------+-----------------------------------------+
+| fn                     | nota de rodapé                          |
++------------------------+-----------------------------------------+
+| kwd                    | palavra-chave                           |
++------------------------+-----------------------------------------+
+| list                   | lista                                   |
++------------------------+-----------------------------------------+
+| other                  | nenhum dos tipos listados               |
++------------------------+-----------------------------------------+
+| sec                    | seção                                   |
++------------------------+-----------------------------------------+
+| statement              | declaração                              |
++------------------------+-----------------------------------------+
+| supplementary-material | material suplementar                    |
++------------------------+-----------------------------------------+
+| table                  | tabela ou grupo de tabelas              |
++------------------------+-----------------------------------------+
+| table-fn               | nota de rodapé de tabelas               |
++------------------------+-----------------------------------------+
+ 
+Exemplos:
  
 .. code-block:: xml
  
+    <!-- CORRIGIR: Exemplo desconexo e com fragmentos mal formados de XML -->
 
-     <aff id="aff01">
-          <label>a</label>
+    <xref ref-type="aff" rid="aff1">1</xref>
+    <aff id="aff01">1</aff>
      
-         <corresp id="c01">
-            <label>*</label>
+    <xref ref-type="birb" rid="B01">1</xref>
+    <ref id="B01">1</ref>
 
-<fig id="f01">
+    <xref ref-type="fig" rid="f01">figure 1</xref>
+    <fig id="f01">
+
+    <xref ref-type="table" rid="t01">table 1</xref>
+
+    <table-wrap id="t01">
+    <xref ref-type="sec" rid="sec01">Seção Metodologia</xref>
+    <sec sec-type="methods" id="sec01">
+
+    <xref ref-type="app" rid="app01">Apêndice 1</xref>
+    <app id="app01">
+     
+    <xref ref-type="supplementary-material" rid="suppl01">Material Suplementar A</xref>
+    <supplementary-material id="suppl01">
+ 
+ 
+<label>
+^^^^^^^
+
+Aparece em
+  1. article/front/article-meta/aff
+  2. article/front/article-meta/author-notes/corresp
+  3. article/front/article-meta/author-notes/fn
+  4. article/body/p/fig
+  5. article/body/p/table-wrap
+  6. article/body/p/disp-formula
+  7. article/body/p/media
+  8. article/body/p/supplementary-material
+  9. article/body/p/list
+  10. article/body/p/list/list-item
+  11. article/body/sec/p/fig
+  12. article/body/sec/p/table-wrap
+  13. article/body/sec/p/disp-formula
+  14. article/body/sec/p/media
+  15. article/body/sec/p/supplementary-material
+  16. article/body/sec/p/list
+  17. article/body/sec/p/list/list-item
+  18. article/back/ref-list/ref
+  19. article/back/app-group/app/glossary
+  20. article/back/glossary
+  21. article/back/app-group/app
+  22. article/back/app-group/app/table-wrap
+  23. article/back/app-group/app/fig  
+  24. article/back/app-group/app/glossary/desf-list
+  25. article/back/glossary/def-list
+  26. article/back/fn-group/fn
+  27. article/back/app-group/app/supplementary-material/table-wrap
+  28. article/back/app-group/app/supplementary-material/fig
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+A tag ``<label>`` é responsável pela identificação numérica ou alfabética 
+que faz a ligação entre etiquetas.
+
+Exemplos:
+ 
+.. code-block:: xml
+
+    <!-- CORRIGIR: Exemplo desconexo e com fragmentos mal formados de XML -->
+
+    <aff id="aff01">
+        <label>a</label>
+        <corresp id="c01">
+            <label>*</label>
+            <fig id="f01">
           <label>Figure 1</label>
 
-<table-wrap id="t01">
+    <table-wrap id="t01">
           <label>Table 1</label>
  
      <ref id="B01">1</ref>
@@ -261,121 +331,119 @@ A tag <label> é responsável pela identificação numérica ou alfabética que 
       <app>
           <label>Apêndice</label>
  
-Aparece em
- 1. article/front/article-meta/aff
- 2. article/front/article-meta/author-notes/corresp
- 3. article/front/article-meta/author-notes/fn
- 4. article/body/p/fig
- 5. article/body/p/table-wrap
- 6. article/body/p/disp-formula
- 7. article/body/p/media
- 8. article/body/p/supplementary-material
- 9. article/body/p/list
- 10. article/body/p/list/list-item
- 11. article/body/sec/p/fig
- 12. article/body/sec/p/table-wrap
- 13. article/body/sec/p/disp-formula
- 14. article/body/sec/p/media
- 15. article/body/sec/p/supplementary-material
- 16. article/body/sec/p/list
- 17. article/body/sec/p/list/list-item
- 18. article/back/ref-list/ref
- 19. article/back/app-group/app/glossary
- 20. article/back/glossary
- 21. article/back/app-group/app
- 22. article/back/app-group/app/table-wrap
- 23. article/back/app-group/app/fig  
- 24. article/back/app-group/app/glossary/desf-list
- 25. article/back/glossary/def-list
- 26. article/back/fn-group/fn
- 27. article/back/app-group/app/supplementary-material/table-wrap
- 28. article/back/app-group/app/supplementary-material/fig
- 
-Ocorre
- Zero ou mais vezes
  
 <p>
 ^^^
  
-Esta tag identifica parágrafos. Deve ser inserida no documento sem nenhum tipo de atributo.
- 
 Aparece em
- 1. article/front/article-meta/abstract
- 2. article/front/article-meta/abstract/sec
- 3. article/front/article-meta/trans-abstract
- 4. article/front/article-meta/trans-abstract/sec
- 5. article/front/article-meta/author-notes/fn
- 6. article/body
- 7. article/body/sec/title  
- 8. article/body/p/table-wrap/table-wrap-foot/fn
- 9. article/body/p/disp-quote
- 10. article/body/p/list/list-item
- 11. article/body/sec/p/table-wrap/table-wrap-foot/fn
- 12. article/body/sec/p/disp-quote
- 13. article/body/sec/p/list/list-item   
- 14. article/body/sig-block/sig
- 15. article/back/ack/title
- 16. article/back/fn-group/fn
- 17. article/back/app-group/app
- 18. article/back/app-group/app/glossary/desf-list/def-item/def  
- 19. article/back/glossary/desf-list/def-item/def
+  1. article/front/article-meta/abstract
+  2. article/front/article-meta/abstract/sec
+  3. article/front/article-meta/trans-abstract
+  4. article/front/article-meta/trans-abstract/sec
+  5. article/front/article-meta/author-notes/fn
+  6. article/body
+  7. article/body/sec/title  
+  8. article/body/p/table-wrap/table-wrap-foot/fn
+  9. article/body/p/disp-quote
+  10. article/body/p/list/list-item
+  11. article/body/sec/p/table-wrap/table-wrap-foot/fn
+  12. article/body/sec/p/disp-quote
+  13. article/body/sec/p/list/list-item   
+  14. article/body/sig-block/sig
+  15. article/back/ack/title
+  16. article/back/fn-group/fn
+  17. article/back/app-group/app
+  18. article/back/app-group/app/glossary/desf-list/def-item/def  
+  19. article/back/glossary/desf-list/def-item/def
  
 Ocorre
- Uma ou mais vezes
+  Uma ou mais vezes
  
+
+Esta tag identifica parágrafos. Deve ser inserida no documento sem nenhum 
+tipo de atributo.
+
+.. _regra-atribuicao-id:
+
 Regra de atribuição de @id
 ==========================
  
-Para a composição do @id, combine um prefixo com uma numeração sequencial, como segue:
+Para a composição do ``@id``, combine um prefixo com uma numeração sequencial, 
+como segue:
  
-- **Afiliações, prefixo "aff":** aff01, aff02,...aff15.;
-- **Apêndice, prefixo "app":** app01, app02,...app15;
-- **Correspondência, prefixo "c":** c01, c02,...c15.;
-- **Equações, prefixo "e":** e01, e02,...e15;
-- **Figuras, prefixo "f":** f01,f02,... f15;
-- **Glossário, prefixo "d":** d01, d02,... d15;
-- **Notas de rodapé de tabelas, prefixo "TFN":** TFN01, TFN02,..TFN15;
-- **Notas de rodapé do artigo, prefixo "fn":** fn01, fn02..fn15;
-- **Tabelas, prefixo "t"**: t01, t02. ...t15;
-- **Suplemento, prefixo "suppl"**: suppl01, suppl02, … suppl15;
-- **Referência bibliográfica , prefixo "B"**: B01, B02,..B15;
-- **Media, prefixo "m"**: m01, m02,..m15;
-- **Seções, prefixo "sec"**: sec01, sec02,..sec15;
- 
+
++------------------------+---------------------------+---------+-----------------------+
+| Elemento XML           | Descrição                 | Prefixo | Exemplo               |
++========================+===========================+=========+=======================+
+| aff                    | Afiliação                 | aff     | aff01, aff02, ...     |
++------------------------+---------------------------+---------+-----------------------+
+| app                    | Apêndice                  | app     | app01, app02, ...     |
++------------------------+---------------------------+---------+-----------------------+
+|                        | Correspondência           | c       | c01, c02, ...         |
++------------------------+---------------------------+---------+-----------------------+
+| disp-formula           | Equações                  | e       | e01, e02, ...         |
++------------------------+---------------------------+---------+-----------------------+
+| fig                    | Figuras                   | f       | f01, f02, ...         |
++------------------------+---------------------------+---------+-----------------------+
+| def-list               | Glossário                 | d       | d01, d02, ...         |
++------------------------+---------------------------+---------+-----------------------+
+| table-wrap-foot/fn     | Notas de rodapé de tabela | TFN     | TFN01, TFN02, ...     |
++------------------------+---------------------------+---------+-----------------------+
+|                        | Notas de rodapé do artigo | fn      | fn01, fn02, ...       |
++------------------------+---------------------------+---------+-----------------------+
+| table-wrap             | Tabela                    | t       | t01, t02, ...         |
++------------------------+---------------------------+---------+-----------------------+
+| supplementary-material | Suplemento                | suppl   | suppl01, suppl02, ... |
++------------------------+---------------------------+---------+-----------------------+
+| ref                    | Referência bibliográfica  | B       | B01, B02, ...         |
++------------------------+---------------------------+---------+-----------------------+
+|                        | Media                     | m       | m01, m02, ...         |
++------------------------+---------------------------+---------+-----------------------+
+|                        | Seções                    | sec     | sec01, sec02, ...     |
++------------------------+---------------------------+---------+-----------------------+
+
+
 Regra de nomeação de imagens
 ============================
  
-Para imagens (que podem ser figuras, equações, apêndices e etc) utilizar a seguinte estrutura de nomeação tanto nas imagens dentro do XML quanto para as imagens da pasta do pacote do fascículo ou lote de ahead-of-print.
+Para imagens (que podem ser figuras, equações, apêndices e etc) utilizar a 
+seguinte estrutura de nomeação tanto nas imagens dentro do XML quanto para 
+as imagens da pasta do pacote do fascículo ou lote de :term:`ahead-of-print`.
  
-Para fascículo:
+Para fascículo: 
+
+    **ISSN**-**acrônimo**-**volume**-**número**-**paginação**-**nomedaimagem.extensãodaimagem**
  
-ISSN-acrônimo-volume-número-paginação-nomedaimagem.extensãodaimagem
- 
+
 Sendo:
  
-**ISSN:** Se houver mais que um dar preferência ao impresso.
-**Acrônimo:** Sigla do periódico na SciELO
-**Volume:** Volume do fascículo
-**Número:** número e/ou suplemento do fascículo (tratar como “n” e “s”)
-**Paginação:** Manter a informação da primeira página contendo no mínimo 4 dígitos
-**Nome da imagem:** prefixo com uma numeração sequencial (ver “Regra de atribuição de @id”)
+* ISSN: Se houver mais de um, dar preferência ao impresso.
+* Acrônimo: Sigla do periódico na SciELO
+* Volume: Volume do fascículo
+* Número: Número e/ou suplemento do fascículo (tratar como “n” e “s”)
+* Paginação: Manter a informação da primeira página contendo no mínimo 4 dígitos
+* Nome da imagem: Prefixo com uma numeração sequencial 
+  (ver :ref:`regra-atribuicao-id`)
  
-**Exemplo:**
+Exemplo:
  
-1807-5932-clin-69-05-0308-gf01.tif
+    *1807-5932-clin-69-05-0308-gf01.tif*
  
-.. note:: Cada item deve ser separado por um hifén e obrigatoriamente deve-se manter visível a extensão da imagem após o “ponto”, optando preferencialmente por imagens em formato .tif.
+
+.. note:: Cada item deve ser separado por um hifén e obrigatoriamente deve-se 
+          manter visível a extensão da imagem após o “ponto”, optando 
+          preferencialmente por imagens em formato *tif*.
  
-Para ahead-of-print
+
+Para ahead-of-print:
  
-ISSN-acrônimo-númerodedoisemoprefixo.extensãodaimagem
+    **ISSN**-**acrônimo**-**númerodedoisemoprefixo.extensãodaimagem**
  
-**Exemplo:**
+Exemplo:
  
-0074-0276-mioc-00740276130057-gf01.tif
- 
-.. note:: Esse número de ordem deve ser sequencial.
- 
+    *0074-0276-mioc-00740276130057-gf01.tif*
+
+
 <front>
 =======
 No Front devem estar apresentados os seguintes dados:

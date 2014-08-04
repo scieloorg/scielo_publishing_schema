@@ -22,11 +22,19 @@ Convenções utilizadas neste guia
 A fim de facilitar a compreensão deste guia, foram utilizadas algumas
 convenções de estilo e formatação.
 
+.. note:: Estas caixas apresentam informações importantes e diretamente relacionadas ao contexto
+          em que estão inseridas.
+
+
 Convenções tipográficas
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 *Itálico*
   Utilizado para nomes de arquivos, normas, URLs ou para introduzir novos termos.
+
+**Negrito**
+  Utilizado para identificar textos que devem ser substituídos por valores fornecidos
+  pelo usuário.
 
 ``Largura fixa``
   Utilizado para exemplos, trechos ou referências a elementos ou atributos
