@@ -30,14 +30,15 @@ Convenções tipográficas
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 *Itálico*
-  Utilizado para nomes de arquivos, normas, URLs ou para introduzir novos termos.
+  Utilizado para nomes de arquivos, normas, URLs, referências ativas a elementos do XML 
+  (hiperlinks) ou para introduzir novos termos.
 
 **Negrito**
   Utilizado para identificar textos que devem ser substituídos por valores fornecidos
   pelo usuário.
 
 ``Largura fixa``
-  Utilizado para exemplos, trechos ou referências a elementos ou atributos
+  Utilizado para exemplos, trechos ou referências estáticas a elementos ou atributos
   do XML.
 
 
@@ -45,7 +46,7 @@ Lista de elementos
 ------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    tagset
 

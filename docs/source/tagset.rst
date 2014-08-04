@@ -30,130 +30,7 @@ Exemplo versão PMC 3.0:
 .. code-block:: xml
  
     <!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "journalpublishing3.dtd">
- 
 
-<article>
-=========
-
-Aparece em
-  1. /
- 
-Atributos obrigatórios
-  1. dtd-version
-  2. article-type
-  3. xml:lang
- 
-Ocorre
-  Uma vez
- 
-
-A tag ``<article>`` representa o elemento raiz do XML, e deve conter obrigatoriamente 
-os atributos ``@dtd-version``, ``@article-type`` e ``@xml:lang``. 
-
-Para ``@dtd-version`` utilizar os valores 1.0 ou 3.0 conforme a :term:`DTD`, 
-explicitada em ``<!DOCTYPE>``. Para ``@article-type`` define-se a tipologia 
-de artigos, os valores que podem ser utilizados são:
- 
-+--------------------+----------------------------------------------------------+
-| Valor              | Descrição                                                |
-+====================+==========================================================+
-| research-article   | artigo original - abrange pesquisas, experiências        |
-|                    | clínicas ou cirúrgicas ou outras contribuições originais.|
-+--------------------+----------------------------------------------------------+
-| letter             | cartas - comunicação entre pessoas ou instituições e     |
-|                    | organizações por intercâmbio de cartas                   |
-+--------------------+----------------------------------------------------------+
-| article-commentary | comentários - uma nota crítica ou esclarecedora, escrita |
-|                    | para discutir, apoiar ou debater um artigo ou outra      |
-|                    | apresentação anteriormente publicada. Pode ser um artigo,| 
-|                    | carta, editorial, etc. Estas publicações podem aparecer  |
-|                    | como comentário, comentário editorial, ponto de vista,   |
-|                    | etc.                                                     |
-+--------------------+----------------------------------------------------------+
-| brief-communication| comunicação breve - compreende breves relatos de         |
-|                    | experiências, trabalhos ou projetos de investigação      |
-|                    | em andamento.                                            |
-+--------------------+----------------------------------------------------------+
-| editorial          | editorial - uma declaração de opiniões, crenças e        |
-|                    | políticas do editor de uma revista, geralmente sobre     |
-|                    | assuntos de significado científico de interesse da       |
-|                    | comunidade científica ou da sociedade.                   |
-+--------------------+----------------------------------------------------------+
-| in-brief           | press release - comunicação breve de linguagem           |
-|                    | jornalística sobre um artigo ou tema.                    |
-+--------------------+----------------------------------------------------------+
-| case-report        | informe/relato de caso - descrição sumária de casos      |
-|                    | especiais, que, por sua raridade despertam interesse     |
-|                    | informativo para a coletividade.                         |
-+--------------------+----------------------------------------------------------+
-| report             | informe/relatório técnico - um informe que dá detalhes   |
-|                    | de uma investigação ou resultado de um problema          |
-|                    | científico. Pode também relatar um artigo científico,    |
-|                    | o estado e posição atual de uma investigação científica  |
-|                    | e o desenvolvimento da mesma.                            |
-+--------------------+----------------------------------------------------------+
-| note               | nota - relata resultados parciais ou preliminares de     |
-|                    | investigação empírica.                                   |
-+--------------------+----------------------------------------------------------+
-| correction         | errata - corrige erros apresentados em artigos após      |
-|                    | sua publicação online/impressa.                          |
-+--------------------+----------------------------------------------------------+
-| obituary           | obituário - anúncio de morte normalmente de              |
-|                    | pesquisadores de notório saber de uma determinada        |
-|                    | área para conhecimento de seus pares.                    |
-+--------------------+----------------------------------------------------------+
-| abstract           | resumo - uma apresentação precisa e resumida de uma      |
-|                    | obra sem agregar interpretação ou crítica, acompanhado   |
-|                    | de uma referência bibliográfica da obra original.        |
-+--------------------+----------------------------------------------------------+
-| review-article     | revisão - um artigo que se refere a um material          |
-|                    | já publicado sobre um tema. Pode ser extenso quanto      |
-|                    | à complexidade e ao intervalo de tempo do material       |
-|                    | investigado.                                             |
-+--------------------+----------------------------------------------------------+
-| book-review        | resenha - análise críticas de livros e outras            |
-|                    | monografias.                                             |
-+--------------------+----------------------------------------------------------+
-| product-review     | comentário de produto - Descrição, análise ou avaliação  |
-|                    | de um produto, como um livro.                            |
-+--------------------+----------------------------------------------------------+
-| clinical-trial     | ensaio clínico - ensaio clínico que segue um plano ou    |
-|                    | protocolo pré-definido e registrado.                     |
-+--------------------+----------------------------------------------------------+
-| retraction         | retratação - a retratação de um artigo científico é um   |
-|                    | instrumento para corrigir o registro acadêmico publicado |
-|                    | equivocadamente, por plágio, por exemplo.                |
-+--------------------+----------------------------------------------------------+
-| collection         | coleção - utilizada quando há um conjunto de cartas,     |
-|                    | respostas, resenhas etc. O tipo collection é utilizado   |
-|                    | em "article" do artigo principal e em ``<sub-article>``  |
-|                    | ou ``<response>`` é identificado cada carta, resenha,    | 
-|                    | resposta etc.                                            |
-+--------------------+----------------------------------------------------------+
-
-
-.. note:: O atributo ``@article-type`` identifica o tipo de documento. 
-          Não confundir com a seção em que o documento aparece no sumário.
- 
-
-Para ``@xml:lang``, utilizar código de duas letras conforme norma *ISO 639-1*. 
-Para uma lista completa dos códigos disponíveis e mais informações sobre a 
-norma *ISO 639-1*, acesse *http://www.mathguide.de/info/tools/languagecode.html*.
- 
-
-Exemplo da tag completa versão 1.0:
- 
-.. code-block:: xml
- 
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" article-type="research-article" xml:lang="en">
- 
-
-Exemplo da tag completa versão 3.0:
- 
-.. code-block:: xml
-
-    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" article-type="research-article" xml:lang="en">
- 
  
 Tags Flutuantes
 ===============
@@ -363,6 +240,7 @@ Ocorre
 Esta tag identifica parágrafos. Deve ser inserida no documento sem nenhum 
 tipo de atributo.
 
+
 .. _regra-atribuicao-id:
 
 Regra de atribuição de @id
@@ -402,6 +280,8 @@ como segue:
 |                        | Seções                    | sec     | sec01, sec02, ...     |
 +------------------------+---------------------------+---------+-----------------------+
 
+
+.. _regra-nomeacao-imagem:
 
 Regra de nomeação de imagens
 ============================
@@ -444,22 +324,155 @@ Exemplo:
     *0074-0276-mioc-00740276130057-gf01.tif*
 
 
-<front>
-=======
-No Front devem estar apresentados os seguintes dados:
-Metadados do periódico, título, autoria, afiliação, resumo, palavras-chave, DOI, volume, número, suplemento, paginação, indicação da licença Creative Commons, data de publicação, seção de cabeçalho, histórico de datas, dados de correspondência, notas de autor, informações de resenhas de livros.
- 
+.. _elemento-article:
+
+<article>
+=========
+
 Aparece em
- 1. article
+  1. /
+ 
+Atributos obrigatórios
+  1. dtd-version
+  2. article-type
+  3. xml:lang
  
 Ocorre
- Uma vez
+  Uma vez
  
+
+A tag :ref:`elemento-article` representa o elemento raiz do XML, e deve conter obrigatoriamente 
+os atributos ``@dtd-version``, ``@article-type`` e ``@xml:lang``. 
+
+Para ``@dtd-version`` utilizar os valores 1.0 ou 3.0 conforme a :term:`DTD`, 
+explicitada em ``<!DOCTYPE>``. Para ``@article-type`` define-se a tipologia 
+de artigos, os valores que podem ser utilizados são:
+ 
++--------------------+----------------------------------------------------------+
+| Valor              | Descrição                                                |
++====================+==========================================================+
+| research-article   | artigo original - abrange pesquisas, experiências        |
+|                    | clínicas ou cirúrgicas ou outras contribuições originais.|
++--------------------+----------------------------------------------------------+
+| letter             | cartas - comunicação entre pessoas ou instituições e     |
+|                    | organizações por intercâmbio de cartas                   |
++--------------------+----------------------------------------------------------+
+| article-commentary | comentários - uma nota crítica ou esclarecedora, escrita |
+|                    | para discutir, apoiar ou debater um artigo ou outra      |
+|                    | apresentação anteriormente publicada. Pode ser um artigo,| 
+|                    | carta, editorial, etc. Estas publicações podem aparecer  |
+|                    | como comentário, comentário editorial, ponto de vista,   |
+|                    | etc.                                                     |
++--------------------+----------------------------------------------------------+
+| brief-communication| comunicação breve - compreende breves relatos de         |
+|                    | experiências, trabalhos ou projetos de investigação      |
+|                    | em andamento.                                            |
++--------------------+----------------------------------------------------------+
+| editorial          | editorial - uma declaração de opiniões, crenças e        |
+|                    | políticas do editor de uma revista, geralmente sobre     |
+|                    | assuntos de significado científico de interesse da       |
+|                    | comunidade científica ou da sociedade.                   |
++--------------------+----------------------------------------------------------+
+| in-brief           | press release - comunicação breve de linguagem           |
+|                    | jornalística sobre um artigo ou tema.                    |
++--------------------+----------------------------------------------------------+
+| case-report        | informe/relato de caso - descrição sumária de casos      |
+|                    | especiais, que, por sua raridade despertam interesse     |
+|                    | informativo para a coletividade.                         |
++--------------------+----------------------------------------------------------+
+| report             | informe/relatório técnico - um informe que dá detalhes   |
+|                    | de uma investigação ou resultado de um problema          |
+|                    | científico. Pode também relatar um artigo científico,    |
+|                    | o estado e posição atual de uma investigação científica  |
+|                    | e o desenvolvimento da mesma.                            |
++--------------------+----------------------------------------------------------+
+| note               | nota - relata resultados parciais ou preliminares de     |
+|                    | investigação empírica.                                   |
++--------------------+----------------------------------------------------------+
+| correction         | errata - corrige erros apresentados em artigos após      |
+|                    | sua publicação online/impressa.                          |
++--------------------+----------------------------------------------------------+
+| obituary           | obituário - anúncio de morte normalmente de              |
+|                    | pesquisadores de notório saber de uma determinada        |
+|                    | área para conhecimento de seus pares.                    |
++--------------------+----------------------------------------------------------+
+| abstract           | resumo - uma apresentação precisa e resumida de uma      |
+|                    | obra sem agregar interpretação ou crítica, acompanhado   |
+|                    | de uma referência bibliográfica da obra original.        |
++--------------------+----------------------------------------------------------+
+| review-article     | revisão - um artigo que se refere a um material          |
+|                    | já publicado sobre um tema. Pode ser extenso quanto      |
+|                    | à complexidade e ao intervalo de tempo do material       |
+|                    | investigado.                                             |
++--------------------+----------------------------------------------------------+
+| book-review        | resenha - análise críticas de livros e outras            |
+|                    | monografias.                                             |
++--------------------+----------------------------------------------------------+
+| product-review     | comentário de produto - Descrição, análise ou avaliação  |
+|                    | de um produto, como um livro.                            |
++--------------------+----------------------------------------------------------+
+| clinical-trial     | ensaio clínico - ensaio clínico que segue um plano ou    |
+|                    | protocolo pré-definido e registrado.                     |
++--------------------+----------------------------------------------------------+
+| retraction         | retratação - a retratação de um artigo científico é um   |
+|                    | instrumento para corrigir o registro acadêmico publicado |
+|                    | equivocadamente, por plágio, por exemplo.                |
++--------------------+----------------------------------------------------------+
+| collection         | coleção - utilizada quando há um conjunto de cartas,     |
+|                    | respostas, resenhas etc. O tipo collection é utilizado   |
+|                    | em "article" do artigo principal e em ``<sub-article>``  |
+|                    | ou ``<response>`` é identificado cada carta, resenha,    | 
+|                    | resposta etc.                                            |
++--------------------+----------------------------------------------------------+
+
+
+.. note:: O atributo ``@article-type`` identifica o tipo de documento. 
+          Não confundir com a seção em que o documento aparece no sumário.
+ 
+
+Para ``@xml:lang``, utilizar código de duas letras conforme norma *ISO 639-1*. 
+Para uma lista completa dos códigos disponíveis e mais informações sobre a 
+norma *ISO 639-1*, acesse *http://www.mathguide.de/info/tools/languagecode.html*.
+ 
+
+Exemplo da tag completa versão JATS 1.0:
+ 
+.. code-block:: xml
+ 
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" article-type="research-article" xml:lang="en">
+ 
+
+Exemplo da tag completa versão PMC 3.0:
+ 
+.. code-block:: xml
+
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" article-type="research-article" xml:lang="en">
+ 
+
+.. _elemento-front:
+
+<front>
+=======
+
+Aparece em
+  1. article
+ 
+Ocorre
+  Uma vez
+
+
+No :ref:`elemento-front` devem estar apresentados os seguintes dados:
+Metadados do periódico, título, autoria, afiliação, resumo, palavras-chave, 
+DOI, volume, número, suplemento, paginação, indicação da licença Creative 
+Commons, data de publicação, seção de cabeçalho, histórico de datas, dados 
+de correspondência, notas de autor, informações de resenhas de livros.
+ 
+
 <journal-meta>
 --------------
 Em <journal-meta> faz-se a identificação dos metadados do periódico.
  
-..note:: Confira a novidade criada pela equipe de TI SciELO, consulte link para preencher corretamente os metadados da revista em: http://static.scielo.org/sps/titles-tab-utf-8.csv
+.. note:: Confira a novidade criada pela equipe de TI SciELO, consulte link para preencher corretamente os metadados da revista em: http://static.scielo.org/sps/titles-tab-utf-8.csv
 
 Aparece em
  1. article/front
