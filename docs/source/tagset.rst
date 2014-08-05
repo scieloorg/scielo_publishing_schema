@@ -18,7 +18,7 @@ Para maiores detalhes leia a especificação do padrão XML
 <!DOCTYPE>
 ==========
  
-A tag de declaração :ref:`xml-doctype` serve para indicar a :term:`DTD` 
+A tag de declaração ``<!DOCTYPE>`` serve para indicar a :term:`DTD` 
 a qual o XML é associado, ou seja, as regras estruturais do documento. 
 O SciELO Publishing Schema utiliza como base o padrão *JATS 1.0*. 
  
@@ -149,6 +149,8 @@ Exemplos:
     <xref ref-type="supplementary-material" rid="suppl01">Material Suplementar A</xref>
     <supplementary-material id="suppl01">
  
+
+.. _elemento-label:
  
 <label>
 ^^^^^^^
@@ -345,7 +347,7 @@ Ocorre
   Uma vez
  
 
-A tag :ref:`elemento-article` representa o elemento raiz do XML, e deve conter 
+A tag ``<article>`` representa o elemento raiz do XML, e deve conter 
 obrigatoriamente os atributos ``@dtd-version``, ``@article-type`` e 
 ``@xml:lang``. 
 
@@ -466,7 +468,7 @@ Ocorre
   Uma vez
 
 
-No :ref:`elemento-front` devem estar apresentados os seguintes dados:
+No ``<front>`` devem estar apresentados os seguintes dados:
 Metadados do periódico, título, autoria, afiliação, resumo, palavras-chave, 
 DOI, volume, número, suplemento, paginação, indicação da licença Creative 
 Commons, data de publicação, seção de cabeçalho, histórico de datas, dados 
@@ -485,358 +487,564 @@ Ocorre
   Uma vez
 
 
-Em :ref:`elemento-journal-meta` faz-se a identificação dos metadados do periódico.
+Em ``<journal-meta>`` faz-se a identificação dos metadados do periódico.
  
 .. note:: Consulte o link http://static.scielo.org/sps/titles-tab-utf-8.csv para 
           preencher corretamente os metadados do periódico. 
 
+
+.. _elemento-journal-id:
  
 <journal-id>
 ^^^^^^^^^^^^
-Especifica o título padronizado do periódico.
- 
+
 Aparece em
- 1. article/front/journal-meta
+  1. article/front/journal-meta
  
 Atributos obrigatórios
- 1. journal-id-type='nlm-ta' ou journal-id-type='publisher-id'
+  1. journal-id-type='nlm-ta' ou journal-id-type='publisher-id'
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+Especifica o título padronizado do periódico.
  
-Para o uso do título do periódico no Pubmed, utiliza-se o valor "nlm-ta":
+Para o uso do título do periódico no Pubmed, 
+utiliza-se ``@journal-id-type="nlm-ta"``:
  
 .. code-block:: xml
  
- <journal-id journal-id-type="nlm-ta">
-   Mem Inst Oswaldo Cruz
- </journal-id>
+    <journal-id journal-id-type="nlm-ta">
+        Mem Inst Oswaldo Cruz
+    </journal-id>
  
- ..note:: Para verificar se o periódico está indexado no Medline consulte o link:http://www.ncbi.nlm.nih.gov/pubmed/advanced
+
+..note:: Para verificar se o periódico está indexado no Medline 
+         consulte o link http://www.ncbi.nlm.nih.gov/pubmed/advanced
 
 
-Para o uso do acrônimo do periódico no SciELO, utiliza-se o valor "publisher-id":
+Para o uso do acrônimo do periódico no SciELO, 
+utiliza-se ``@journal-id-type="publisher-id"``:
  
 .. code-block:: xml
  
- <journal-id journal-id-type="publisher-id">
-   mioc
- </journal-id>
+    <journal-id journal-id-type="publisher-id">
+        mioc
+    </journal-id>
+
+
+.. _elemento-journal-title-group:
  
 <journal-title-group>
 ^^^^^^^^^^^^^^^^^^^^^
- 
-Esta tag irá abranger tags que representam os metadados identificadores da revista.
- 
-.. code-block:: xml
- 
- <journal-title-group>
-   <journal-title>Brazilian Journal of Otorhinolaryngology</journal-title>
-   <abbrev-journal-title abbrev-type="publisher">Braz J Otorhinolaryngol.
-</abbrev-journal-title>
- </journal-title-group>
- 
+
 Aparece em
- 1. article/front/journal-meta
+  1. article/front/journal-meta
  
 Ocorre
- Uma vez
+  Uma vez
+ 
+
+Esta tag irá abranger tags que representam os metadados identificadores da revista.
+ 
+Exemplo:
+
+.. code-block:: xml
+ 
+    <journal-title-group>
+        <journal-title>
+            Brazilian Journal of Otorhinolaryngology
+        </journal-title>
+        <abbrev-journal-title abbrev-type="publisher">
+            Braz J Otorhinolaryngol.
+        </abbrev-journal-title>
+    </journal-title-group>
+ 
+
+.. _elemento-journal-title:
  
 <journal-title>
 ^^^^^^^^^^^^^^^
-Neste item é incluído o título longo do periódico de acordo com seu registro no ISSN. Pode-se consultar a forma adotada no site da coleção, na homepage do periódico.
- 
+
 Aparece em
- 1. article/front/journal-meta/journal-title-group
+  1. article/front/journal-meta/journal-title-group
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+Neste item é incluído o título longo do periódico de acordo com seu registro 
+no ISSN. Pode-se consultar a forma adotada no site da coleção, 
+na homepage do periódico.
  
+Exemplo:
+
 .. code-block:: xml
  
- <journal-title-group>
-   <journal-title>Brazilian Journal of Medical and Biological Research</journal-title>
- </journal-title-group>
+    <journal-title-group>
+        <journal-title>
+            Brazilian Journal of Medical and Biological Research
+        </journal-title>
+    </journal-title-group>
  
+
+.. _elemento-abbrev-journal-title:
+
 <abbrev-journal-title>
 ^^^^^^^^^^^^^^^^^^^^^
+
+Aparece em
+  1. article/front/journal-meta/journal-title-group
  
-Nesta tag é incluída a forma abreviada do título do periódico de acordo com seu registro no ISSN. Pode-se consultar a forma adotada no site da coleção, na homepage do periódico. É obrigatório o uso do atributo **@abbrev-type** do tipo “publisher” conforme exemplo a seguir:
+Atributo obrigatório
+  1. abbrev-type="publisher"
+ 
+Ocorre
+  Uma vez
+ 
+
+Nesta tag é incluída a forma abreviada do título do periódico de acordo 
+com seu registro no ISSN. Pode-se consultar a forma adotada no site da 
+coleção, na homepage do periódico. É obrigatório o uso do atributo 
+``@abbrev-type="publisher"``.
+
+Exemplo:
  
 .. code-block:: xml
  
-<journal-title-group>  
-  <abbrev-journal-title abbrev-type="publisher">Braz. J. Med. Biol. Res.</abbrev-journal-title>
-</journal-title-group>
+    <journal-title-group>  
+        <abbrev-journal-title abbrev-type="publisher">
+            Braz. J. Med. Biol. Res.
+        </abbrev-journal-title>
+    </journal-title-group>
  
-Aparece em
- 1. article/front/journal-meta/journal-title-group
- 
-Atributo obrigatório
- 1. abbrev-type="publisher"
- 
-Ocorre
- Uma vez
+
+.. _elemento-issn:
  
 <issn>
 ^^^^^^
-O ISSN é um código numérico, único, que identifica uma publicação seriada a qual é definida pela norma ISO 3297:2007. Normalmente cada tipo de suporte utilizado pelo periódico possui um número específico. Pode-se consultar a forma adotada no site da coleção, na homepage do periódico. É possível também encontrar esta informação em <back> dentro de <element-citation> nas referências, mas não se faz o uso de nenhum atributo neste caso.
- 
+
 Aparece em
- 1. article/front/journal-meta
- 2. article/back/ref-list/ref/element-citation
+  1. article/front/journal-meta
+  2. article/back/ref-list/ref/element-citation
  
-Atributos obrigatórios em <front>
- 1. pub-type='ppub'ou pub-type='epub'
+Atributos obrigatórios em ``<front>``
+  1. pub-type='ppub' ou pub-type='epub'
  
 Ocorre
- Uma ou mais vezes
+  Uma ou mais vezes
+
+
+O ISSN é um código numérico, único, que identifica uma publicação seriada 
+a qual é definida pela norma *ISO 3297:2007*. Normalmente cada tipo de 
+suporte utilizado pelo periódico possui um número específico. 
+
+Pode-se consultar a forma adotada no site da coleção, na homepage do periódico. 
+É possível também encontrar esta informação em :ref:`elemento-back` dentro de 
+:ref:`elemento-element-citation` nas referências, mas não se faz o uso de 
+nenhum atributo neste caso.
+
+Os valores permitidos para o atributo ``@pub-type`` são:
+
++-------+-------------------------+
+| Valor | Descrição               |
++=======+=========================+
+| ppub  | ISSN da versão impressa |
++-------+-------------------------+
+| epub  | ISSN da versão digital  |
++-------+-------------------------+
  
-*@pub-type="ppub"* para a versão impressa
+No caso de estarem disponíveis, ambos os ISSNs deverão ser identificados, 
+conforme o exemplo:
+ 
 .. code-block:: xml
- 
- <issn pub-type="ppub">1808-8694</issn>
- 
-*@pub-type="epub"* para a versão digital
- 
-.. code-block:: xml
- 
- <issn pub-type="epub">1808-8686</issn>
- 
-Ou ambos, *@pub-type="epub"* + *@pub-type="epub"*
- 
-.. code-block:: xml
- 
- <issn pub-type="epub">1808-8686</issn>
- <issn pub-type="ppub">1808-8694</issn>
+    
+    ...
+    <journal-meta>
+        ...
+        <issn pub-type="epub">1808-8686</issn>
+        <issn pub-type="ppub">1808-8694</issn>
+        ...
+    </journal-meta>
+    ...
+
+
+.. _elemento-publisher:
  
 <publisher>
 ^^^^^^^^^^^
-O nome da instituição responsável pela publicação do periódico deve ser especificado de acordo com o registro no SciELO. Pode-se consultar a forma adotada no site da coleção, na homepage do periódico.
- 
+
 Aparece em
- 1. article/front/journal-meta
+  1. article/front/journal-meta
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+O nome da instituição responsável pela publicação do periódico deve ser 
+especificado de acordo com o registro na SciELO. Pode-se consultar a forma 
+adotada no site da coleção, na homepage do periódico.
+ 
+Exemplo:
  
 .. code-block:: xml
  
- <publisher>
-   <publisher-name>Instituto Oswaldo Cruz, Ministério da Saúde</publisher-name>
- </publisher>
+    ...
+    <journal-meta>
+        ...
+        <publisher>
+            <publisher-name>
+                Instituto Oswaldo Cruz, Ministério da Saúde
+            </publisher-name>
+        </publisher>
+        ...
+    </journal-meta>
+    ...
  
+
+.. _elemento-article-meta:
      
 <article-meta>
 --------------
-Contém os metadados do artigo. Seus elementos básicos são DOI, seção (de acordo com o sumário do periódico), título(s) do artigo, autor (es) e suas respectivas afiliações e notas, data de publicação, volume, número e paginação do artigo, resumo(s), palavras-chave, histórico, permissão de uso (licença)e contagem de elementos.
 
 Aparece em
- 1. article/front
+  1. article/front
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+Contém os metadados do artigo. Seus elementos básicos são :term:`DOI`, seção 
+(de acordo com o sumário do periódico), título(s) do artigo, autor (es) e 
+suas respectivas afiliações e notas, data de publicação, volume, número e 
+paginação do artigo, resumo(s), palavras-chave, histórico, permissão 
+de uso e contagem de elementos.
+
  
+.. _elemento-article-id:
+
 <article-id>
 ^^^^^^^^^^^^
-Cada artigo deve ter um identificador único. O SciELO utiliza o padrão Digital Object Identifier (DOI), norma ISO 26324. O DOI é fornecido pela DOI Foundation. O atributo @pub-id-type='doi' é obrigatório nesta tag.
- 
+
 Aparece em
- 1. article/front/article-meta
+  1. article/front/article-meta
  
 Atributos obrigatórios
- 1. pub-id-type='doi'
+  1. pub-id-type='doi'
  
 Ocorre
- Uma ou mais vezes
+  Uma ou mais vezes
+
+
+Cada artigo deve possuir um identificador único, e para tal a SciELO utiliza 
+o identificador :term:`DOI` do artigo. 
+ 
+Exemplo:
  
 .. code-block:: xml
- 
- <article-id pub-id-type="doi">10.1590/0074-0276130047</article-id>
+    
+    ...
+    <article-meta>
+        ...
+        <article-id pub-id-type="doi">
+            10.1590/0074-0276130047
+        </article-id>
+        ...
+    </article-meta>
+    ...
      
+
+.. _elemento-article-categories:
  
 <article-categories>
 --------------------
-Em <article-categories> classifica-se o artigo de acordo com a seção que aparece no sumário do periódico. Esta classificação pode ser temática ou por tipologia do documento.
- 
+
 Aparece em
- 1. article/front/article-meta
+  1. article/front/article-meta
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+Em ``<article-categories>`` classifica-se o artigo de acordo com a seção 
+que aparece no sumário do periódico. Esta classificação pode ser temática 
+ou por tipologia do documento.
  
+ 
+.. _elemento-subj-group:
+
 <subj-group>
 ^^^^^^^^^^^^
- 
-Designa a seção do documento e serve para organizar documentos em grupo por assunto. É obrigatório o uso de atributo @subj-group-type na tag <subj-group> do tipo "heading" (cabeçalho). Em <subject> atribui-se a seção em que o artigo foi classificado (consultar o sumário para melhor identificação) e para ahead-of-print deve ser adotado sempre a seção “Articles”.
- 
+
 Aparece em
- 1. article/front/article-meta/article-categories
+  1. article/front/article-meta/article-categories
  
 Atributos obrigatórios
- 1. subj-group-type="heading"
+  1. subj-group-type="heading"
  
 Ocorre
- Uma vez
+  Uma vez
  
-**Exemplo:**
+
+Designa a seção do documento e serve para organizar documentos em grupos 
+por assunto. É obrigatória a presença de uma e somente uma ocorrência do
+elemento ``<subj-group>`` com o atributo ``@subj-group-type="heading"``. 
+Em ``<subject>`` atribui-se a seção em que o artigo foi classificado 
+(consultar o sumário para melhor identificação) e para :term:`ahead-of-print` 
+deve ser adotado sempre a seção ``Articles``.
  
-*Para seção temática:*
  
-.. code-block:: xml
+Exemplos:
  
- <article-categories>
-   <subj-group subj-group-type="heading">
-     <subject>Biotechnology</subject>
-   </subj-group>
- </article-categories>
- 
-*Para seção por tipo de documento:*
- 
-.. code-block:: xml
- 
- <article-categories>
-   <subj-group subj-group-type="heading">
-     <subject>Original Article</subject>
-   </subj-group>
- </article-categories>
- 
-*Para ahead-of-print:*
+Seção temática:
  
 .. code-block:: xml
  
- <article-categories>
-   <subj-group subj-group-type="heading">
-     <subject>Articles</subject>
-   </subj-group>
- </article-categories>
+    ...
+    <article-categories>
+        <subj-group subj-group-type="heading">
+            <subject>Biotechnology</subject>
+        </subj-group>
+    </article-categories>
+    ...
+
+
+Seção por tipo de documento:
  
+.. code-block:: xml
+ 
+    ...
+    <article-categories>
+        <subj-group subj-group-type="heading">
+            <subject>Original Article</subject>
+        </subj-group>
+    </article-categories>
+    ...
+ 
+Para ahead-of-print:
+ 
+.. code-block:: xml
+ 
+    ...
+    <article-categories>
+        <subj-group subj-group-type="heading">
+            <subject>Articles</subject>
+        </subj-group>
+    </article-categories>
+    ...
+ 
+
+.. _elemento-title-group:
+
 <title-group>
 -------------
-Esta tag é utilizada para especificar o título ou um conjunto de títulos de um artigo. Nele são identificados <article-title>, e <trans-title-group>.
- 
+
 Aparece em
- 1. article/front/article-meta
+  1. article/front/article-meta
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+Esta tag é utilizada para especificar o título ou um conjunto de títulos 
+do artigo. Nele são identificados :ref:`elemento-article-title` e 
+:ref:`elemento-trans-title-group`.
  
+ 
+.. _elemento-article-title:
+
 <article-title>
 ^^^^^^^^^^^^^^^
-Esta tag pode ser utilizada para especificar o título do artigo em si em <article-meta>, ou para especificar um título de documento nas referências em <element-citation>. Em ambos os casos, o atributo @xml:lang não deve ser utilizado.
- 
+
 Aparece em
- 1. article/front/article-meta/title-group
- 2. article/back/ref-list/ref/element-citation
+  1. article/front/article-meta/title-group
+  2. article/back/ref-list/ref/element-citation
  
 Ocorre
- Uma vez
- 
-.. code-block:: xml
- 
- <title-group>
-   <article-title>The teaching of temporomandibular disorders and  orofacial pain at undergraduate level in Brazilian dental schools
-</article-title>
- </title-group>
+  Uma vez
 
-.. note:: Se o título do artigo ou da referência possuir um subtítulo ele deve ser marcado junto a tag de <article-title>, não se deve marcar nenhum texto separadamente em outras tags (a mesma regra se aplica a <trans-title>).
+
+Esta tag pode ser utilizada para especificar o título do artigo em si 
+em :ref:`elemento-article-meta`, ou para especificar um título de documento 
+nas referências em :ref:`elemento-element-citation`. Em ambos os casos, o 
+atributo ``@xml:lang`` não deve ser utilizado.
  
-**Exemplo:**
+Exemplo:
  
 .. code-block:: xml
  
-     <title-group>
-          <article-title>Correlação entre sintomas e tempo de evolução do câncer do trato aerodigestivo superior com o estádio inicial e avançado <xref ref-type="fn" rid="fn01">*</xref> </article-title>
-     </title-group>.
+    ...
+    <title-group>
+        <article-title>
+            The teaching of temporomandibular disorders and  orofacial pain at undergraduate level in Brazilian dental schools
+        </article-title>
+        ...
+    </title-group>
+    ...
+
+.. note:: Se o título do artigo ou da referência possuir um subtítulo, ele deve 
+          ser marcado junto a tag ``<article-title>``. Não se deve marcar 
+          nenhum texto separadamente em outras tags 
+          (a mesma regra se aplica a :ref:`elemento-trans-title`).
+ 
+Exemplo:
+ 
+.. code-block:: xml
+ 
+    <!-- CORRIGIR: Impressão de que esse exemplo está relacionado com a nota acima -->
+
+    ...
+    <title-group>
+        <article-title>
+            Correlação entre sintomas e tempo de evolução do câncer do trato aerodigestivo superior com o estádio inicial e avançado <xref ref-type="fn" rid="fn01">*</xref> 
+        </article-title>
+        ...
+    </title-group>.
+    ...
+
+
+.. _elemento-trans-title-group:
  
 <trans-title-group>
 ^^^^^^^^^^^^^^^^^^^
-Esta tag é utilizada para apresentar o título traduzido ou um conjunto de títulos traduzidos do artigo. O uso do atributo @xml:lang é obrigatório e deve ser utilizado para especificar o idioma traduzido do título.
 
 Aparece em
- 1.article/front/article-meta/title-group
+  1. article/front/article-meta/title-group
  
 Atributos obrigatórios
- 1. xml:lang
+  1. xml:lang
  
 Ocorre
- zero ou mais vezes
+  Zero ou mais vezes
+
+
+Esta tag é utilizada para apresentar o título traduzido ou um conjunto de 
+títulos traduzidos do artigo. O atributo ``@xml:lang`` é obrigatório 
+e deve ser utilizado para especificar o idioma traduzido do título.
+
+
+.. _elemento-trans-title:
 
 <trans-title>
 ^^^^^^^^^^^^^
 
-Marca o título traduzido, dentro da tag <trans-title-group>.
+Aparece em
+  1. article/front/article-meta/title-group/trans-title-group
+ 
+Ocorre 
+  Uma ou mais vezes
 
-**Exemplo:**
+
+Marca o título traduzido, dentro da tag :ref:`elemento-trans-title-group`.
+
+
+Exemplo:
  
 .. code-block:: xml
  
-<title-group>
-          <article-title>Between spiritual wellbeing and spiritual distress: possible related factors in elderly patients with cancer</article-title>
-          <trans-title-group xml:lang="pt">
-                <trans-title>Entre o bem-estar espiritual e a angústia espiritual: possíveis fatores relacionados a idosos com cancro</trans-title>
-          </trans-title-group>
-          <trans-title-group xml:lang="es">
-                <trans-title>Entre el bienestar espiritual y el sufrimiento espiritual: posibles factores relacionados en ancianos con câncer</trans-title>
-          </trans-title-group>
-     </title-group>
- 
+    ...
+    <title-group>
+        <article-title>
+            Between spiritual wellbeing and spiritual distress: possible related factors in elderly patients with cancer
+        </article-title>
+        <trans-title-group xml:lang="pt">
+            <trans-title>
+                Entre o bem-estar espiritual e a angústia espiritual: possíveis fatores relacionados a idosos com cancro
+            </trans-title>
+        </trans-title-group>
+        <trans-title-group xml:lang="es">
+            <trans-title>
+                Entre el bienestar espiritual y el sufrimiento espiritual: posibles factores relacionados en ancianos con câncer
+            </trans-title>
+        </trans-title-group>
+    </title-group>
+    ...
           
-Aparece em
- 1.article/front/article-meta/title-group/trans-title-group
- 
-Ocorre (quando houver <trans-title-group>)
- Uma ou mais vezes
+
+.. _elemento-contrib-group:
  
 <contrib-group>
-----------------
-Representa o grupo dos que contribuiram para a elaboração do artigo. Os tipos de contribuintes mais frequentes são de autores pessoais, instituições e grupos de pesquisa. A tag pode ou não envolver a informação de afiliação, sendo obrigatória na identificação do contribuidor do tipo autores (author) sejam institucionais ou não. Os principais elementos de <contrib-group> são: <contrib>, <xref>, <collab>, <aff> e <role>.
- 
+---------------
+
 Aparece em
- 1.article/front/article-meta
+  1. article/front/article-meta
  
 Ocorre
- uma vez
+  Uma vez
+
+
+Representa o grupo dos que contribuiram para a elaboração do artigo. 
+Os tipos de contribuintes mais frequentes são de autores pessoais, 
+instituições e grupos de pesquisa. A tag pode ou não envolver a 
+informação de afiliação, sendo obrigatória na identificação do contribuidor 
+do tipo autores (author) sejam institucionais ou não. Os principais 
+elementos de ``<contrib-group>`` são: :ref:`elemento-contrib`, 
+:ref:`elemento-xref`, :ref:`elemento-collab`, :ref:`elemento-aff` e 
+:ref:`elemento-role`.
+
+
+.. _elemento-contrib:
  
 <contrib>
 ^^^^^^^^^
-Em <contrib> especifica-se o indivíduo ou instituição que contribuiu para o artigo. Pode ser anônimo ou ter um ou vários autores, inclusive autores institucionais. Tags como <name>, <collab>, <on-behalf-of>, <xref>, <role> e <anonymous> podem ser encontradas neste elemento. Um atributo deve ser inserido nesta tag:
- 
-- **@contrib-type:** Pode possuir os seguintes valores,
-- author: autor(es) do conteúdo
-- compiler: Compilador(es), pessoa(s) que montou um trabalho composto de várias fontes.
-     - editor: Editor(es) do conteúdo.
-     - translator: Tradutor(es) do conteúdo
- 
-.. code-block:: xml
- 
-     <contrib contrib-type="author">
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-     <contrib-group>
-          <contrib contrib-type="author">
-                <name>
-                     <surname>Último Sobrenome</surname>
-                     <given-names>Prenomes</given-names>
-                     <prefix>Qualificadores que antecendem o nome como Prof, Dr.,Marechal, dentre outros</prefix>
-                     <suffix>Partículas do nome como Filho, Junior, Neto</suffix>
-                </name>
-                     <xref ref-type="aff" rid="aff01">Identificador da afiliação</xref>
-     </contrib>
- 
-.. note:: Observar normas para entrada de nomes (AACR2 - Código de Catalogação Anglo Americano e/ou Currículo Lattes dos autores, avaliar formas de entrada autorizadas).
- 
+
 Aparece em
- 1.article/front/article-meta/contrib-group
+  1. article/front/article-meta/contrib-group
  
 Atributos obrigatórios
- 1. contrib-type
+  1. contrib-type
  
 Ocorre
- Uma ou mais vezes
+  Uma ou mais vezes
+
+
+Em ``<contrib>`` especifica-se o indivíduo ou instituição que contribuiu para 
+o artigo. Pode ser anônimo ou ter um ou vários autores, inclusive autores 
+institucionais. Tags como ``<name>``, ``<collab>``, ``<on-behalf-of>``, 
+``<xref>``, ``<role>`` e ``<anonymous>`` podem ser encontradas neste elemento. 
+ 
+O atributo ``@contrib-type`` pode possuir os valores:
+
++------------+----------------------------------------------------------------+
+| Valor      | Descrição                                                      |
++============+================================================================+
+| author     | Autor do conteúdo                                              |
++------------+----------------------------------------------------------------+
+| compiler   | Compilador - pessoa que montou um trabalho composto de várias  |
+|            | fontes                                                         |
++------------+----------------------------------------------------------------+
+| editor     | Editor do conteúdo                                             |
++------------+----------------------------------------------------------------+
+| translator | Tradutor do conteúdo                                           |
++------------+----------------------------------------------------------------+
+
+ 
+Exemplo:
+ 
+.. code-block:: xml
+
+    <!-- CORRIGIR: Trocar por exemplo real -->
+    
+    ...
+    <contrib-group>
+        <contrib contrib-type="author">
+            <name>
+                <surname>Último Sobrenome</surname>
+                <given-names>Prenomes</given-names>
+                <prefix>Qualificadores que antecendem o nome como Prof, Dr.,Marechal, dentre outros</prefix>
+                <suffix>Partículas do nome como Filho, Junior, Neto</suffix>
+            </name>
+            <xref ref-type="aff" rid="aff01">Identificador da afiliação</xref>
+        </contrib>
+        ...
+    </contrib-group>
+    ...
+ 
+.. note:: Observar normas para entrada de nomes (*AACR2* - Código de Catalogação 
+          Anglo Americano e/ou Currículo Lattes dos autores, avaliar formas 
+          de entrada autorizadas).
+ 
  
 <collab>
 ^^^^^^^^
