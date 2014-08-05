@@ -1045,230 +1045,331 @@ Exemplo:
           Anglo Americano e/ou Currículo Lattes dos autores, avaliar formas 
           de entrada autorizadas).
  
+
+.. _elemento-collab:
  
 <collab>
 ^^^^^^^^
-Utilizado para especificar um grupo de colaboradores (autores, editores, pesquisadores, instituição, laboratório etc que atuaram como colaboradores do trabalho). Pode ser identificada em <contrib>, <element-citation>, <person-group>, <product>.
- 
+
 Aparece em
- 1. article/front/article-meta/contrib-group/contrib
- 2. article/front/article-meta/product/person-group
- 2. article/back/ref-list/ref/element-citation
+  1. article/front/article-meta/contrib-group/contrib
+  2. article/front/article-meta/product/person-group
+  3. article/back/ref-list/ref/element-citation
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Utilizado para especificar um grupo de colaboradores (autores, editores, 
+pesquisadores, instituição, laboratório etc que atuaram como colaboradores 
+do trabalho). Pode ser identificada em :ref:`elemento-contrib`, 
+:ref:`elemento-element-citation`, :ref:`elemento-person-group`, 
+:ref:`elemento-product`.
  
+ 
+.. _elemento-on-behold-of:
+
 <on-behalf-of>
 ^^^^^^^^^^^^^^
-Utiliza-se quando um autor age como representante de um grupo ou organização. Ou seja, quando o autor diz ter escrito ou editado um trabalho em nome de uma organização. Essa tag pode ser encontrada em: <collab>, <contrib> e <contrib-group>.
- 
-.. code-block:: xml
- 
-     </name>
-          <on-behalf-of>Identificação de um grupo ou organização</on-behalf-of>
-     </contrib>
- 
-ou
-.. code-block:: xml
- 
-     </contrib>
-          <on-behalf-of>Identificação de um grupo ou organização</on-behalf-of>
-     </contrib-group>
- 
+
 Aparece em
- 1. article/front/article-meta/contrib-group
- 2. article/front/article-meta/contrib-group/contrib
+  1. article/front/article-meta/contrib-group
+  2. article/front/article-meta/contrib-group/contrib
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Utiliza-se quando um autor age como representante de um grupo ou 
+organização. Ou seja, quando o autor diz ter escrito ou editado um trabalho 
+em nome de uma organização. Essa tag pode ser encontrada em: 
+:ref:`elemento-collab`, :ref:`elemento-contrib` e :ref:`elemento-contrib-group`.
  
+Exemplo:
+
+.. code-block:: xml
+
+    <!-- CORRIGIR: Dados reais -->
+
+    ...
+    <contrib-group>
+        ...
+        <contrib>
+            ...
+            <on-behalf-of>
+                Identificação de um grupo ou organização
+            </on-behalf-of>
+            ...
+        </contrib>
+        ...
+    </contrib-group>
+    ...
+ 
+ 
+.. _elemento-role:
+
 <role>
 ^^^^^^
-A tag "role" (função ou papel) é usada para especificar o cargo (ou função) do contribuinte do documento. Essa tag pode ser encontrada nos seguintes elementos: <collab>, <contrib>, <contrib-group>, <element-citation>, <person-group>, <product>.
- 
-**Exemplos:**
- 
-*Em contrib:*
- 
-.. code-block:: xml
- 
-     <contrib contrib-type="author">
-     <name>
-     <surname>Meader</surname>
-     <given-names>CR</given-names>
-     <prefix>Dr.</prefix>
-     <suffix>Junior</suffix>
- </name>
-     <xref ref-type="aff" rid="aff02">2</xref>
-     <role>Pesquisador</role>
- </contrib>
- 
-*Em referências:*
- 
-.. code-block:: xml
- 
-     <element-citation publication-type="journal">
-     <person-group person-group-type="author">
-          <name>
-                <surname>Petitti</surname>
-                <given-names>DB</given-names>
-         </name>
-          <name>
-               <surname>Crooks</surname>
-               <given-names>VC</given-names>
-         </name>
-         <role>pesquisador</role>
-     </person-group>
 
-      
 Aparece em
- 1. article/front/article-meta/contrib-group/contrib
- 2. article/front/article-meta/product/person-group
- 3. article/back/ref-list/ref/element-citation/person-group
+  :ref:`elemento-collab`, :ref:`elemento-contrib`, 
+  :ref:`elemento-contrib-group`, :ref:`elemento-element-citation`, 
+  :ref:`elemento-person-group`, :ref:`elemento-product`
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+A tag ``<role>`` (função ou papel) é usada para especificar o cargo 
+(ou função) do contribuinte do documento.  
+
+Exemplos:
+ 
+Em :ref:`elemento-contrib`:
+ 
+.. code-block:: xml
+ 
+    ...
+    <contrib contrib-type="author">
+        ...
+        <name>
+            <surname>Meader</surname>
+            <given-names>CR</given-names>
+            <prefix>Dr.</prefix>
+            <suffix>Junior</suffix>
+        </name>
+        <xref ref-type="aff" rid="aff02">2</xref>
+        <role>Pesquisador</role>
+        ...
+    </contrib>
+    ...
+ 
+
+Em :ref:`elemento-ref`:
+ 
+.. code-block:: xml
+ 
+    ...
+    <element-citation publication-type="journal">
+        ...
+        <person-group person-group-type="author">
+            <name>
+                <surname>Petitti</surname>
+                <given-names>DB</given-names>
+                ...
+            </name>
+            <name>
+                <surname>Crooks</surname>
+                <given-names>VC</given-names>
+                ...
+            </name>
+            <role>pesquisador</role>
+            ...
+        </person-group>
+        ...
+    </element-citation>
+    ...
+      
+
+.. _elemento-name:
  
 <name>
 ^^^^^^
-A tag <name> é utilizada para especificar o nome pessoal do contribuinte autoral e pode ser encontrada em:
-<contrib>, <element-citation>, <person-group>, <product>.
- 
-As tags possíveis em <name> são:
- 
-     - <surname>;
-     - <given-names>;
-     - <prefix>;
-     - <suffix>.
- 
-..note:: As tags possíveis dentro de <name> devem seguir obrigatoriamente a sequência de aparecimento citada acima.
- 
-Aparece em
- 1. article/front/article-meta/contrib-group/contrib
- 2. article/front/article-meta/product/person-group
- 3. article/back/ref-list/ref/element-citation/person-group
- 
- 
-Ocorre
- Zero ou mais vezes
- 
-<surname>
-^^^^^^^^^^
-É utilizada para especificar sobrenome de autores. Aqui deve ser especificado o último nome do autor. Deve-se observar as regras para identificação de sobrenome de acordo com a norma adotada pelo periódico. A recomendação do SciELO é utilizar a AACR2 Código de Catalogação Anglo Americano e/ou Currículo Lattes dos autores).
- 
-.. code-block:: xml
- 
-     <surname>Almeida</surname>
-     <given-names>Antônio Golçalves de</given-names>
- 
-Aparece em
- 1.article/front/article-meta/contrib-group/contrib
- 2. article/back/ref-list/ref/element-citation/person-group
- 3. article/front/article-meta/product/person-group
- 
-Ocorre (Quando houver <name>)
- Uma ou mais vezes
- 
-<given-names>
-^^^^^^^^^^^^^
-Identifica o prenome do autor, ou seja, o primeiro nome e também o nome(s) do(s) meio(s).
- 
-.. code-block:: xml
- 
- <surname>Santos</surname>
-     <given-names>Ana Maria da Silva</given-names>
- 
-Aparece em
- 1. article/front/article-meta/contrib-group/contrib
- 2. article/back/ref-list/ref/element-citation/person-group
- 3. article/front/article-meta/product/person-group
- 
-Ocorre
- Zero ou mais vezes
- 
-<prefix>
-^^^^^^^^
-Especifica o qualificador que precede o prenome do autor. Geralmente é utilizado quando há qualificadores como "Prof. Dr., "Dr.","Sr","Presidente", "Embaixador" dentre outros.
- 
-<contrib contrib-type="author">
-     <name>
-     <surname>Oliveira</surname>
-     <given-names>Marcos de</given-names>
-     <prefix>Prof.</prefix>
-     </name>
- 
-Aparece em
- 1.article/front/article-meta/contrib-group/contrib
- 2. article/back/ref-list/ref/element-citation/person-group
- 3. article/front/article-meta/product/person-group
- 
-Ocorre
- Zero ou mais vezes
- 
-<suffix>
-^^^^^^^^
-Especifica sufixos do nome como as partículas "Neto", "Júnior", "Jr.", "Filho", "Sobrinho" etc.
- 
-.. code-block:: xml
- 
-     <contrib contrib-type="author">
-     <name>
-     <surname>Santos</surname>
-     <given-names>João da Silva</given-names>
-     <suffix>Neto</suffix>
-     </name>
- 
-.. note:: para as tags que compõem <name> há uma ordem pré-estabelecida obrigatória:
- 
-.. code-block:: xml
- 
-     <name>
-          <surname></surname>
-          <given-names></given-names>
-          <prefix></prefix>
-          <suffix></suffix>
-     </name>
- 
-Aparece em
- 1. article/front/article-meta/contrib-group/contrib
- 2. article/front/article-meta/product/person-group
- 3. article/back/ref-list/ref/element-citation/person-group
- 
- 
-Ocorre
- Zero ou mais vezes
- 
-<aff>
------
-Considera-se como afiliação o vínculo institucional do(s) contribuinte(s) do artigo. Os dados de afiliação são importantes para localizar e mensurar a produção científica por país, estado, cidade, bem como por instituição e seus departamentos. Recomenda-se que os nomes das instituições das afiliações sejam especificadas em sua forma original, sem tradução ou abreviações de seus nomes. Ou seja, por exemplo, identificar preferencialmente **Universidade de São Paulo** a USP, ou University of São Paulo, ou Saint Paul University, entre outras possíveis formas. Por isso, quando ocorre no documento de existir mais de uma forma, usar a original.
- 
-Pode possuir o atributo @id. Para composição de @id de **afiliação** utiliza-se o seguinte padrão: "aff" + o número de ordem da afiliação. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** aff01... aff10, aff11;
- 
-**Exemplo completo de uma afiliação:**
- 
-.. code-block:: xml
- 
-     <aff id="aff01">
-     <label>1</label>
-     <institution content-type="orgname">Fundação Oswaldo Cruz</institution> 
-<institution content-type="orgdiv1">Escola Nacional de Saúde Pública Sérgio Arouca</institution>
-<institution content-type="orgdiv2">Centro de Estudos da Saúde do Trabalhador e Ecologia Humana</institution>   
-     <addr-line>
-     <named-content content-type="city">Manguinhos</named-content>
-     <named-content content-type="state">RJ</named-content>
-     </addr-line>
-     <country>Brasil</country>
-     <institution content-type="original">Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. <named-content        content-type="email">maurosilva@fiocruz.com</named-content></institution>
-     </aff>
 
 Aparece em
- 1.article/front/article-meta
+  :ref:`elemento-contrib`, :ref:`elemento-element-citation`, 
+  :ref:`elemento-person-group`, :ref:`elemento-product`
+
+  
+Ocorre
+  Zero ou mais vezes
+
+
+A tag ``<name>`` é utilizada para especificar o nome pessoal do contribuinte 
+autoral e pode ser encontrada em:  
+As tags possíveis em <name> são: :ref:`elemento-surname`, 
+:ref:`elemento-given-names`, :ref:`elemento-prefix`, :ref:`elemento-prefix`,
+:ref:`elemento-suffix`.
+ 
+
+.. note:: As tags possíveis em ``<name>`` devem seguir obrigatoriamente a 
+          sequência de aparecimento citada acima.
+ 
+
+.. _elemento-surname:
+ 
+<surname>
+^^^^^^^^^
+
+Aparece em
+  :ref:`elemento-name`
  
 Ocorre
- Zero ou mais vezes
+  Uma ou mais vezes
+
+
+É utilizada para especificar sobrenome de autores. Aqui deve ser 
+especificado o último nome do autor. Deve-se observar as regras para 
+identificação de sobrenome de acordo com a norma adotada pelo periódico. 
+A recomendação da SciELO é utilizar a norma *AACR2* Código de Catalogação 
+Anglo Americano e/ou Currículo Lattes dos autores).
  
+Exemplo:
+
+.. code-block:: xml
+ 
+    ...
+    <name>
+        <surname>Almeida</surname>
+        <given-names>Antônio Golçalves de</given-names>
+        ...
+    </name>
+    ...
+ 
+
+.. _elemento-given-names:
+
+<given-names>
+^^^^^^^^^^^^^
+
+Aparece em
+  :ref:`elemento-name`
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+Identifica o prenome do autor, ou seja, todos os nomes que não o sobrenome.
+ 
+.. code-block:: xml
+ 
+    ...
+    <name>
+        <surname>Santos</surname>
+        <given-names>Ana Maria da Silva</given-names>
+        ...
+    </name>
+    ...
+ 
+
+.. _elemento-prefix:
+
+<prefix>
+^^^^^^^^
+
+Aparece em
+  :ref:`elemento-name`
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+Especifica o qualificador que precede o prenome do autor. Geralmente é 
+utilizado para identificar qualificadores como "Prof. Dr.", "Dr.", "Sr",
+"Presidente", "Embaixador" dentre outros.
+ 
+Exemplo:
+
+.. code-block:: xml
+
+    ...
+    <name>
+        <surname>Oliveira</surname>
+        <given-names>Marcos de</given-names>
+        <prefix>Prof.</prefix>
+        ...
+    </name>
+    ... 
+ 
+
+.. _elemento-suffix:
+
+<suffix>
+^^^^^^^^
+
+Aparece em
+  :ref:`elemento-name`
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+Especifica sufixos do nome como as partículas "Neto", "Júnior", "Jr.", 
+"Filho", "Sobrinho" etc.
+ 
+Exemplo:
+
+.. code-block:: xml
+ 
+    ...
+    <name>
+        <surname>Santos</surname>
+        <given-names>João da Silva</given-names>
+        <suffix>Neto</suffix>
+        ...
+    </name>
+    ...
+
+
+.. _elemento-aff:
+
+<aff>
+-----
+
+Aparece em
+  :ref:`elemento-article-meta`
+
+Atributos obrigatórios
+  1. id
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+Considera-se como afiliação o vínculo institucional dos contribuintes do artigo. 
+Os dados de afiliação são importantes para localizar e mensurar a produção 
+científica por país, estado, cidade, bem como por instituição e seus 
+departamentos. Recomenda-se que os nomes das instituições das afiliações 
+sejam especificadas em sua forma original, sem tradução ou abreviações de 
+seus nomes. Ou seja, por exemplo, identificar preferencialmente 
+**Universidade de São Paulo** a USP, ou University of São Paulo, ou 
+Saint Paul University, entre outras possíveis formas. 
+Por isso, quando ocorre no documento de existir mais de uma forma, usar a original.
+ 
+Para composição do atributo ``@id``, utiliza-se o seguinte padrão: 
+``aff`` + o número de ordem da afiliação. (Ver :ref:`regra-atribuicao-id`)
+ 
+ 
+Exemplo:
+ 
+.. code-block:: xml
+ 
+    ...
+    <aff id="aff01">
+        <label>1</label>
+        <institution content-type="orgname">
+            Fundação Oswaldo Cruz
+        </institution> 
+        <institution content-type="orgdiv1">
+            Escola Nacional de Saúde Pública Sérgio Arouca
+        </institution>
+        <institution content-type="orgdiv2">
+            Centro de Estudos da Saúde do Trabalhador e Ecologia Humana
+        </institution>   
+        <addr-line>
+            <named-content content-type="city">Manguinhos</named-content>
+            <named-content content-type="state">RJ</named-content>
+        </addr-line>
+        <country>Brasil</country>
+        <institution content-type="original">
+            Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. <named-content content-type="email">maurosilva@fiocruz.com</named-content>
+        </institution>
+    </aff>
+    ...
+ 
+
+.. _elemento-institution:
+
 <institution>
 ^^^^^^^^^^^^^
 Nesta tag especifica-se a instituição do autor, a qual pode ser dividida em até três níveis. Estes níveis serão definidos pelo atributo obrigatório @content-type, podendo possuir os seguintes valores:
