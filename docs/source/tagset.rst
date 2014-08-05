@@ -3424,504 +3424,630 @@ Aparece em
 Ocorre
  Zero ou uma vez
  
+.. _elemento-back:
+
 <back>
 ======
-O back é a parte final do documento que compreende lista de referências e demais dados referentes a pesquisa como: notas de rodapé, agradecimentos, apêndice, material suplementar, anexos e glossário.
+
+O ``<back>`` é a parte final do documento que compreende lista de referências e demais
+dados referentes a pesquisa como: notas de rodapé, agradecimentos, apêndice,
+material suplementar, anexos e glossário.
  
 Aparece em
- 1. article
+  :ref:`elemento-article`
+
 Ocorre
- Zero ou uma vez
+  Zero ou uma vez
  
+.. _elemento-ack:
+
 <ack>
 -----
-A seção de agradecimentos quando aparecer no documento deve ser marcada dentro de <back>.
+A seção de agradecimentos quando aparecer no documento deve ser marcada dentro
+de :ref:`back`.
  
-É em agradecimentos que frequentemente os dados de financiamento da pesquisa são indicados, como descrito em <funding-group> em <front>.
+É em agradecimentos que frequentemente os dados de financiamento da pesquisa são 
+indicados, como descrito em :ref:`elemento-funding-group`
+em :ref:`elemento-front`.
  
-Todo o conteúdo de agradecimentos deverá ser identificado com a tag <ack>, caso haja o título "Agradecimentos" ou "Acknowledgment" identifique-o com a tag <title>. Em <ack> é possível especificar um ou mais parágrafos <p>.
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-     <back>
-          <ack>
-                <title>Agradecimentos</title>
-                <p>Texto de agradecimentos, pode ou não conter dados de financiamento</p>
-     </ack>
- 
-.. note:: Não inserir a tag <sec> para identificação da seção agradecimentos. 
+Todo o conteúdo de agradecimentos deverá ser identificado com a tag ``<ack>``, 
+caso haja o título "Agradecimentos" ou "Acknowledgment" identifique-o com a tag
+:ref:`elemento-title`. Em ``<ack>`` é possível especificar um ou mais parágrafos
+:ref:`elemento-p`. 
  
 Aparece em
- 1. article/back
+  :ref:`elemento-back`
 
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
 
+Exemplo:
+ 
+.. code-block:: xml
+
+    <back>
+        <ack>
+            <title>Agradecimentos</title>
+            <p>Texto de agradecimentos, pode ou não conter dados de financiamento</p>
+        </ack>
+    </back>
+
+.. note:: Não inserir a tag :ref:`elemento-sec` para identificação da seção
+          agradecimentos.
+
+.. _elemento-ref-list:
 
 <ref-list>
 ----------
 
- O conjunto de referências biliográficas de um artigo é representado pela tag <ref-list>. Esse elemento deve conter, obrigatóriamente, três tags: <ref>, <mixed-citation> e <element-citation>.
+ O conjunto de referências biliográficas de um artigo é representado pela tag
+ ``<ref-list>``. Esse elemento deve conter, obrigatóriamente, três tags: 
+ :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
+ :ref:`elemento-element-citation`.
 
 Aparece em
- 1. article/back
+  :ref:`elemento-element-back`
 
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
 
- 
+.. _elemento-ref:
+
 <ref>
 -----
-Existem diversos tipos de referências e normas para apresentá-las num documento textual (ABNT, Vancouver, APA, ISO e OTHER). Independente da norma usada, a representação dos elementos essenciais em xml de uma referência devem ser identificados corretamente.
+
+Existem diversos tipos de referências e normas para apresentá-las num documento 
+textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e 
+:term:`OTHER`). Independente da norma usada, a representação dos elementos
+essenciais em xml de uma referência devem ser identificados corretamente.
  
-Para composição de @id de **referências** utiliza-se o seguinte padrão: "B" + o número de ordem das referências. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** B01... B10, B11;
+Para composição de ``@id`` de referências utiliza-se o seguinte padrão:
+"B" + o número de ordem das referências. (Ver :ref:`regra-atribuicao-id`)
  
 Aparece em
- 1. article/back/ref-list
+  :ref:`elemento-ref-list`
 
-Ocorre (quando houver <ref-list>)
- Uma ou mais vezes
- 
 Atributo Obrigatório 
- 1. id
+  ``@id``
+
+Ocorre
+  (quando houver :ref:`elemento-ref-list`)
+  Uma ou mais vezes
+ 
+Exemplo:
 
 .. code-block:: xml
  
-<ref-list>
-   <ref id="B01">
-      <mixed-citation>referência inteira sem marcação</mixed-citation>
-      <element-citation publication-type=“tipo da referência”>elementos marcados um a um</element-citation>
-   </ref>
-</ref-list>
- 
-- <ref>
-Na tag <ref> deve ser inserido um @id para cada referência citada;
- 
-     - <mixed-citation>
-Tag utilizada para identificar uma referência bibliográfica conforme consta no PDF;
- 
-- <element-citation>
-A tag element-citation apresenta a identificação detalhada de cada referência biliográfica. Essa tag deve apresentar o atributo @publication-type. O atributo indica o tipo de referência.
-     
-Tipos de publicação - **@publication-type:**:
- 
-- **journal:** utilizada para referenciar publicações seriadas, editadas em unidades sucessivas, com designações numéricas e/ou cronológicas e destinada a ser continuada indefinidamente.   
-- **book:** utilizada para referenciar monografia/livro. Pode também representar somente uma parte ou capítulo de um livro.
-- **webpage:** utilizada para referencias de um relatório técnico, normalmente de autoria institucional.
-- **thesis:** utilizada para referenciar TCC para obtenção de um grau acadêmico, tais como livre-docência, doutorado, mestrado, bacharelado, licenciatura, etc.
-- **confproc :** utilizada para referenciar documentos relacionados com eventos científicos: atas, anais, resultados, proceedings, convenção, conferência entre outras denominações.
-- **patent:** utilizada para referenciar patentes.
-- **software:** utilizada para referenciar um software que pode estar em vários suportes, como CDs, DVDs, em suporte online, dispositivos usb e etc.
-- **database:** utilizada para referenciar bases de dados.
+    <ref-list>
+        <ref id="B01">
+            <mixed-citation>referência inteira sem marcação</mixed-citation>
+            <element-citation publication-type=“tipo da referência”>elementos marcados um a um</element-citation>
+        </ref>
+    </ref-list>
+  
+.. _elemento-mixed-citation:
 
+<mixed-citation>
+^^^^^^^^^^^^^^^^
 
-**IMPORTANTE:**
+Tag utilizada para identificar uma referência bibliográfica conforme consta no
+PDF;
  
-- Nunca manter uma informação toda com formatação <italic>, <bold> etc, dentro de alguma tag;
-- Todas as referências devem conter informação de fonte principal <source>;
-- Evitar pontuação dentro da marcação em element-citation (ponto final, vírgula etc);
-- Todas as informaçoess de uma referência devem ser marcadas, caso nao haja nenhuma tag específica para uma informação insira em <comment>.
+.. _elemento-element-citation:
 
+<element-citation>
+^^^^^^^^^^^^^^^^^^
 
-**Exemplos:**
- 
-*Para journal:*
+A tag ``<element-citation>`` apresenta a identificação detalhada de cada
+referência biliográfica. Essa tag deve apresentar o atributo
+``@publication-type``. O atributo indica o tipo de referência, os valores que
+podem ser utilizados para o atributo ``@publication-type`` são:
+
++-----------+------------------------------------------------------------------+
+| Valor     | Descrição                                                        |
++===========+==================================================================+
+| journal   | utilizada para referenciar publicações seriadas, editadas em     |
+|           | unidades sucessivas, com designações numéricas e/ou cronológicas |
+|           | e destinada a ser continuada indefinidamente                     |
++-----------+------------------------------------------------------------------+
+| book      | utilizada para referenciar monografia/livro. Pode Também         |
+|           | representar somente uma parte ou capítulo de um livro            |
++-----------+------------------------------------------------------------------+
+| webpage   | utilizada para referencias de um relatório técnico, normalmente  |
+|           | de autoria institucional                                         |
++-----------+------------------------------------------------------------------+
+| thesis    | utilizada para referenciar TCC para obtenção de um grau          |
+|           | acadêmico, tais como livre-docência, doutorado, mestrado,        |
+|           | bacharelado, licenciatura, etc                                   |
++-----------+------------------------------------------------------------------+
+| confproc  | utilizada para referenciar documentos relacionados com eventos   |
+|           | científicos: atas, anais, resultados, proceedings, convenção,    |
+|           | conferência entre outras denominações                            |
++-----------+------------------------------------------------------------------+
+| patent    | utilizada para referenciar patentes                              |
++-----------+------------------------------------------------------------------+
+| software  | utilizada para referenciar um software que pode estar em vários  |
+|           | suportes, como CDs, DVDs, em suporte online, dispositivos usb e  |
+|           | etc                                                              |
++-----------+------------------------------------------------------------------+
+| database  | utilizada para referenciar bases de dados                        |
++-----------+------------------------------------------------------------------+
+
+.. note::
+
+  * Nunca manter uma informação toda com formatação <italic>, <bold>, etc,
+    dentro de alguma tag;
+  * Todas as referências devem conter informação de fonte principal
+    :ref:`elemento-source`;
+  * Evitar pontuação dentro da marcação em :ref:`elemento-element-citation`
+    (ponto final, vírgula etc);
+  * Todas as informaçoes de uma referência devem ser marcadas, caso não exista
+    uma tag específica para uma informação insirir esta em
+    :ref:`elemento-comment`.
+
+Exemplos:
  
 .. code-block:: xml
- 
-     <ref id="B01">
-          <label>1</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="journal">
-          <person-group person-group-type="author">
-                <name>
-                     <surname>Sobrenome</surname>
-                     <given-names>Prenomes</given-names>
-                </name>
-                <name>
-                     <surname>Sobrenome</surname>
-                     <given-names>Prenomes</given-names>
-                </name>
-           </person-group>
-          <article-title>Título do artigo</article-title>
-          <source>Nome do Periódico</source>
+
+    <!-- Journal Sample -->
+
+    <ref-list>
+        <ref id="B01">
+            <label>1</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="journal">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>Sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                    <name>
+                        <surname>Sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                </person-group>
+                <article-title>Título do artigo</article-title>
+                <source>Nome do Periódico</source>
                 <season>Estações do ano (ex.: Inverno)</season>
-<month>Mês ou intervalo de meses (Ex.: Jan-Mar)</month>
+                <month>Mês ou intervalo de meses (Ex.: Jan-Mar)</month>
                 <year>ano</year>
                 <volume>volume</volume>
                 <issue>número</issue>
                 <fpage>página inicial</fpage>
                 <lpage>página final</lpage>
-<issn>número do ISSN na revista</issn>   
-     <pub-id pub-id-type="pmid">somente números</article-id>
-     <pub-id pub-id-type="pcmid">somente números</article-id>
-     <pub-id pub-id-type="doi">somente números</article-id>
-     <pub-id pub-id-type="pii">somente números</article-id>
-     <elocation-id>representa um número de página eletrônica</elocation-id>
-     </element-citation>
- </ref>
- 
-*Para book:*
- 
+                <issn>número do ISSN na revista</issn>   
+                <pub-id pub-id-type="pmid">somente números</article-id>
+                <pub-id pub-id-type="pcmid">somente números</article-id>
+                <pub-id pub-id-type="doi">somente números</article-id>
+                <pub-id pub-id-type="pii">somente números</article-id>
+                <elocation-id>representa um número de página eletrônica</elocation-id>
+            </element-citation>
+        </ref>
+    <ref-list> 
 .. code-block:: xml
- 
-     <ref id="B02">
-          <label>2</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>    
-     <element-citation publication-type="book">
-         <person-group person-group-type="author">                  
-          <name>
-                <surname>Sobrenome</surname>
-                <given-names>Prenomes</given-names>
-          </name>
-          </person-group>
-          <source>Nome do Livro</source>
-          <edition>edição (inserir informação ed. ou th. e etc conforme no pdf)</edition>
-          <publisher-loc>Lugar de publicação do livro (cidade, estado, país e etc)</publisher-loc>
-          <publisher-name>Nome da editora/Casa publicadora</publisher-name>
-          <year>Ano de publicação da obra</year>
-     <size units="page">quantidade total de páginas do livro</size>
-        <isbn>número do ISBN do livro</isbn>
-        <fpage>100</fpage>
-  <lpage>120</lpage>
-  <page-range>100-101, 105, 107-120</page-range>
-     </element-citation>
-     </ref>
- 
-*Para chapter-title (capítulo de livro):*
- 
-.. code-block:: xml
- 
-     <ref id="B03">
-          <label>3</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="book">
-          <person-group person-group-type="author">
-          <name>
-                <surname>Sobrenome</surname>
-                <given-names>Prenomes</given-names>
-          </name>
-        <etal/>
-         </person-group>
-          <source>Nome do livro</source>
-          <edition>edição (inserir informação ed. ou th. e etc conforme no pdf)</edition>
-          <publisher-loc>Lugar de publicação do livro (cidade, estado, país e etc)</publisher-loc>
-          <publisher-name>Nome da editora/Casa publicadora</publisher-name>
-           <year>ano de publicação da obra</year>
-           <chapter-title>Parte do livro ou capítulo</chapter-title>
-           <fpage>página inicial da parte</fpage>
-          <lpage>página final da parte</lpage>
-      </element-citation>
-     </ref>
- 
-*Para webpage*:
- 
-.. code-block:: xml
- 
-     <ref id="B04">
-          <label>4</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="webpage">
-          <source>Título do documento (pode ser nome do site) [Internet]</source>
-          <publisher-loc>Lugar de publicação</publisher-loc>
-          <publisher-name>Nome da mantenedoura/instituição</publisher-name>
-          <year>ano</year>
-          <date-in-citation content-type="access-date">data de acesso ao link</date-in-citation>
-     <date-in-citation content-type="updated">data de uptated</date-in-citation>
-     <comment>Available from:<ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org
-     </ext-link></comment>
-     </element-citation>
-     </ref>
- 
-.. note:: Quando a referência apresentar URL com texto (Disponível em: ou Available from) identificar conforme o exemplo acima.
 
-*Para report:*
+  <!-- Book Sample --> 
+
+    <ref-list>
+        <ref id="B02">
+            <label>2</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>    
+            <element-citation publication-type="book">
+                <person-group person-group-type="author">                  
+                    <name>
+                        <surname>Sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                </person-group>
+                <source>Nome do Livro</source>
+                <edition>edição (inserir informação ed. ou th. e etc conforme no pdf)</edition>
+                <publisher-loc>Lugar de publicação do livro (cidade, estado, país e etc)</publisher-loc>
+                <publisher-name>Nome da editora/Casa publicadora</publisher-name>
+                <year>Ano de publicação da obra</year>
+                <size units="page">quantidade total de páginas do livro</size>
+                <isbn>número do ISBN do livro</isbn>
+                <fpage>100</fpage>
+                <lpage>120</lpage>
+                <page-range>100-101, 105, 107-120</page-range>
+            </element-citation>
+        </ref>
+     </ref-list>
+
+.. code-block:: xml
+ 
+    <!-- Book Chapter Sample --> 
+
+    <ref-list>
+        <ref id="B03">
+            <label>3</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="book">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>Sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                    <etal/>
+                </person-group>
+                <source>Nome do livro</source>
+                <edition>edição (inserir informação ed. ou th. e etc conforme no pdf)</edition>
+                <publisher-loc>Lugar de publicação do livro (cidade, estado, país e etc)</publisher-loc>
+                <publisher-name>Nome da editora/Casa publicadora</publisher-name>
+                <year>ano de publicação da obra</year>
+                <chapter-title>Parte do livro ou capítulo</chapter-title>
+                <fpage>página inicial da parte</fpage>
+                <lpage>página final da parte</lpage>
+            </element-citation>
+       </ref>
+    </ref-list>
  
 .. code-block:: xml
  
-     <ref id="B05">
-          <label>5</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="report">
-     <person-group person-group-type="author">
-          <collab>Nome da instituição organizadora</collab>
-</person-group>     
-     <source>Título do Relatório</source>
-          <publisher-loc>Lugar de publicação, cidade, estado, país e etc</publisher-loc>
-          <publisher-name>Nome da casa publicadora</publisher-name>
-     <year>ano do relatório</year>
-     <month>mês do relatório</month>
-     <pub-id pub-id-type="other">Report No: XXXXXX</pub-id>
-     <comment>para outras informações mencionadas que fazem parte do relatório que não tenham tags específicas</comment>
-     </element-citation>
-     </ref>
+    <!-- Webpage Sample -->
+
+    <ref-list>
+        <ref id="B04">
+            <label>4</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="webpage">
+                <source>Título do documento (pode ser nome do site) [Internet]</source>
+                <publisher-loc>Lugar de publicação</publisher-loc>
+                <publisher-name>Nome da mantenedoura/instituição</publisher-name>
+                <year>ano</year>
+                <date-in-citation content-type="access-date">data de acesso ao link</date-in-citation>
+                <date-in-citation content-type="updated">data de uptated</date-in-citation>
+                <comment>
+                  Available from:
+                  <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">
+                    www.scielo.org
+                  </ext-link>
+                </comment>
+            </element-citation>
+        </ref>
+    </ref-list> 
+
+.. note:: Quando a referência apresentar URL com texto (Disponível em: ou 
+          Available from:) identificar conforme o exemplo acima.
  
+.. code-block:: xml
+
+    <!-- Report Sample -->
+    <ref-list>
+        <ref id="B05">
+              <label>5</label>
+              <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+              <element-citation publication-type="report">
+                  <person-group person-group-type="author">
+                      <collab>Nome da instituição organizadora</collab>
+                  </person-group>     
+                  <source>Título do Relatório</source>
+                  <publisher-loc>Lugar de publicação, cidade, estado, país e etc</publisher-loc>
+                  <publisher-name>Nome da casa publicadora</publisher-name>
+                  <year>ano do relatório</year>
+                  <month>mês do relatório</month>
+                  <pub-id pub-id-type="other">Report No: XXXXXX</pub-id>
+                  <comment>para outras informações mencionadas que fazem parte do relatório que não tenham tags específicas</comment>
+              </element-citation>
+        </ref>
+    </ref-list> 
 *Para confproc (proceedings):*
  
 .. code-block:: xml
  
-     <ref id="B06">
-          <label>6</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="confproc">
-     <person-group person-group-type="editor">
-          <name>
-                <surname>sobrenome</surname>
-                <given-names>Prenomes</given-names>
-          </name>
-           <name>
-                <surname>sobrenome</surname>
-                <given-names>Prenomes</given-names>
-          </name>
-     </person-group>
-     <source>título do documento usado referente a uma ou mais palestras do evento</source>
-     <conf-name>Nome da conferência</conf-name>
-     <conf-date>Data da conferência, pode ser composta por um período por, ex: 2003 Aug 25-29</conf-date>
-     <conf-loc>Local físico da conferência (ex: anfiteatro, saguão…) mais nome da cidade, estado, país e etc</conf-loc>
-     <publisher-loc>Lugar de publicação do apanhado informacional extraído da conferência</publisher-loc>
-     <publisher-name>Nome da casa publicadora/Editora</publisher-name>
-     <year>ano da composição do apanhado informacional extraído da conferência</year>
-     <size units="page">quantidade total de páginas (se for impresso)</size>
-     <comment>Outras informações da conferência que não tenham tags específicas</comment>
-     </element-citation>
-     </ref>
+    <!-- Confproc (proceedings) Sample -->
+
+    <ref-list>
+        <ref id="B06">
+            <label>6</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="confproc">
+                <person-group person-group-type="editor">
+                    <name>
+                        <surname>sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                    <name>
+                        <surname>sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                </person-group>
+                <source>título do documento usado referente a uma ou mais palestras do evento</source>
+                <conf-name>Nome da conferência</conf-name>
+                <conf-date>Data da conferência, pode ser composta por um período por, ex: 2003 Aug 25-29</conf-date>
+                <conf-loc>Local físico da conferência (ex: anfiteatro, saguão…) mais nome da cidade, estado, país e etc</conf-loc>
+                <publisher-loc>Lugar de publicação do apanhado informacional extraído da conferência</publisher-loc>
+                <publisher-name>Nome da casa publicadora/Editora</publisher-name>
+                <year>ano da composição do apanhado informacional extraído da conferência</year>
+                <size units="page">quantidade total de páginas (se for impresso)</size>
+                <comment>Outras informações da conferência que não tenham tags específicas</comment>
+            </element-citation>
+        </ref>
+    </ref-list> 
+
+.. code-block:: xml
+
+    <!-- Thesis Sample -->
  
-*Para thesis:*
- 
+    <ref-list>
+      <ref id="B07">
+            <label>7</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="thesis">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                </person-group>
+                <source>título do trabalho acadêmico</source>
+                <publisher-loc>local da publicação, cidade, estado, país etc</publisher-loc>
+                <publisher-name>nome da casa publicadora (normalmente é a própria faculdade/universidade)</publisher-name>
+                <year>ano de realização do trabalho</year>
+                <size units="page">total de folhas do trabalho</size>
+            </element-citation>
+        </ref>
+    </ref-list>
+
 .. code-block:: xml
  
-     <ref id="B07">
-          <label>7</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="thesis">
-     <person-group person-group-type="author">
-          <name>
-                <surname>sobrenome</surname>
-                <given-names>Prenomes</given-names>
-          </name>
-     </person-group>
-      <source>título do trabalho acadêmico</source>
-          <publisher-loc>local da publicação, cidade, estado, país etc</publisher-loc>
-          <publisher-name>nome da casa publicadora (normalmente é a própria faculdade/universidade)</publisher-name>
-          <year>ano de realização do trabalho</year>
-     <size units="page">total de folhas do trabalho</size>
-     </element-citation>
-     </ref>
- 
-*Para patent:*
- 
+    <!-- Patent Sample -->
+
+    <ref-list>
+        <ref id="B08">
+            <label>8</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="patent">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                    <collab>autor institucional</collab>
+                </person-group>     
+                <article-title>título do documento de patente</article-title>
+                <source>identificado o nome do país autorizou a patente. Ex.: United States patent</source>
+                <patent country="XX">XX Número da Patente</patent>
+                <year>ano do documento da patente</year>
+                <month>mês</month>
+                <day>dia</day>
+            </element-citation>
+        </ref>
+    </ref-list>
+
 .. code-block:: xml
  
-     <ref id="B08">
-     <label>8</label>
-     <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="patent">
-     <person-group person-group-type="author">
-          <name>
-                <surname>sobrenome</surname>
-                <given-names>Prenomes</given-names>
-          </name>
-    <collab>autor institucional</collab>
-     </person-group>     
-     <article-title>título do documento de patente</article-title>
-     <source>identificado o nome do país autorizou a patente. Ex.: United States patent</source>
-     <patent country="XX">XX Número da Patente</patent>
-     <year>ano do documento da patente</year>
-     <month>mês</month>
-     <day>dia</day>
-     </element-citation>
-</ref>
- 
-*Para software:*
- 
+    <!-- Software Sample -->
+
+    <ref-list>     
+        <ref id="B09">
+            <label>9</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="software">
+                <person-group person-group-type="editor">
+                    <name>
+                        <surname>sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                    <name>
+                        <surname>sobrenome</surname>
+                        <given-names>Prenomes</given-names>
+                    </name>
+                </person-group>
+                <source>título ou nome do software</source>
+                <edition>Para software a versão pode ser considerada a edição ex: New version 4.0</edition>
+                <publisher-loc>local de publicação/fabricação</publisher-loc>
+                <publisher-name>nome da casa publicadora/distribuidora</publisher-name>
+                <year>ano de criação do software</year>
+                <comment>informações adicionais do software, ex.: informação de suporte: CDs, DVDs, e também especificações de cor, som, dimensões etc</comment>
+            </element-citation>
+        </ref>
+    <ref-list>
+
 .. code-block:: xml
  
-     <ref id="B09">
-          <label>9</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="software">
-          <person-group person-group-type="editor">
-                <name>
-                     <surname>sobrenome</surname>
-                     <given-names>Prenomes</given-names>
-               </name>
-                <name>
-                     <surname>sobrenome</surname>
-                     <given-names>Prenomes</given-names>
-                </name>
-          </person-group>
-          <source>título ou nome do software</source>
-          <edition>Para software a versão pode ser considerada a edição ex: New version 4.0</edition>
-          <publisher-loc>local de publicação/fabricação</publisher-loc>
-          <publisher-name>nome da casa publicadora/distribuidora</publisher-name>
-          <year>ano de criação do software</year>
-          <comment>informações adicionais do software, ex.: informação de suporte: CDs, DVDs, e também especificações de cor, som, dimensões etc</comment>
-     </element-citation>
-     </ref>
+    <!-- Database Sample -->
+
+    <ref-list>
+        <ref id="B10">
+            <label>10</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="database">
+                <source>título da base de dados</source>
+                <publisher-loc>local de publicação/país, cidade e/ou estado de origem da base de dados</publisher-loc>
+                <publisher-name>nome da casa publicadora/mantenedora</publisher-name>
+                <year>ano de criação da base</year>
+                <comment>informações adicionais da base de dados</comment>
+            </element-citation>
+        </ref>
+    </ref-list>
  
-*Para database:*
- 
-.. code-block:: xml
- 
-     <ref id="B10">
-          <label>10</label>
-          <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-     <element-citation publication-type="database">
-          <source>título da base de dados</source>
-          <publisher-loc>local de publicação/país, cidade e/ou estado de origem da base de dados</publisher-loc>
-          <publisher-name>nome da casa publicadora/mantenedora</publisher-name>
-     <year>ano de criação da base</year>
-     <comment>informações adicionais da base de dados</comment>
-     </element-citation>
-     </ref>
-     </ref-list>
- 
-.. note:: Deve-se levar em consideração que muitas vezes as referências são contruídas de forma incorreta, o que dificulta a marcação de seus elementos.
+.. note:: Deve-se levar em consideração que muitas vezes as referências são
+          contruídas de forma incorreta, o que dificulta a marcação de seus
+          elementos.
+
+.. _elemento-element-chapter-title:
 
 <chapter-title>
 ^^^^^^^^^^^^^^^
 
 Identifica um capítulo de um documento numa referência.
 
-**Exemplo:**
-
-  ..code block::
-
-  <chapter-title>Anjo da morte</chapter-title>
-
-..note:: Representa o capítulo 24 do livro ‘As feiticeiras de East End’.
-
-  Aparece em
-  1. article/back/ref-list/ref/element-citation  
+Aparece em
+  :ref:`elemento-element-citation`
 
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+Exemplo:
+
+.. code-block:: xml
+
+    <element-citation>
+        <chapter-title>Anjo da morte</chapter-title>
+    </element-citation>
+
+
+.. note:: Representa o capítulo 24 do livro ‘As feiticeiras de East End’.
+
+.. _elemento-pub-id:
 
 <pub-id>
 ^^^^^^^^
 
-Identifica o tipo de identificador (id) de um documento em uma referência. Deve possuir o atributo @pub-id-type com os seguintes possíveis valores:
+Identifica o tipo de identificador (id) de um documento em uma referência.
+Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
 
-- pmid
-- pcmid
-- doi
- -pii
-- other
-
-**Exemplo:**
-
-  ..code block::
-
-  <pub-id pub-id-type="pmid">15867408</pub-id>
++--------+------------------------------------------------------------------+
+| Valor  | Descrição                                                        |
++========+==================================================================+
+| pmid   |                                                                  |
++--------+------------------------------------------------------------------+
+| pcmid  |                                                                  |
++--------+------------------------------------------------------------------+
+| doi    | Número DOI registrado no Crossref                                |
++--------+------------------------------------------------------------------+
+| pii    |                                                                  |
++--------+------------------------------------------------------------------+
+| other  | qualquer outro identificador                                     |
++--------+------------------------------------------------------------------+
 
 Aparece em
-  1. article/back/ref-list/ref/element-citation
+  :ref:`elemento-element-citation`
   
 
 Atributo Obrigatório 
- 1. pub-id-type
+  ``@pub-id-type``
 
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
 
+Exemplo:
+
+.. code-block:: xml
+
+    <element-citation>
+        <pub-id pub-id-type="pmid">15867408</pub-id>
+    </element-citation>
+
+.. _elemento-date-in-citation:
 
 <date-in-citation>
 ^^^^^^^^^^^^^^^^^^
-Esta tag identifica a data de citação em uma referência. Deve sempre possuir o atributo @content-type com os tipos de data de acesso e data de atualização do documento.
 
-**Exemplo 1:**
-
-  ..code block::
-
-<date-in-citation content-type="access-date">cited 2007 Feb 21</date-in-citation>
-
-**Exemplo 2:**
-
-  ..code block::
-
-<date-in-citation content-type="updated">2006 Jul 20
-</date-in-citation>
+Esta tag identifica a data de citação em uma referência. Deve sempre possuir 
+o atributo ``@content-type`` com os tipos de data de acesso e data de
+atualização do documento.
 
 Aparece em
-  1. article/back/ref-list/ref/element-citation
+  :ref:`elemento-element-citation`
  
 Atributo Obrigatório 
- 1. content-type="access-date"
- 2. content-type="updated" 
+ ``@content-type``
 
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+Exemplo:
+
+.. code-block:: xml
+
+    <element-citation>
+        <date-in-citation content-type="access-date">cited 2007 Feb 21</date-in-citation>
+    </element-citation>
+
+Exemplo:
+
+.. code-block:: xml
+
+    <element-citation>
+        <date-in-citation content-type="updated">2006 Jul 20</date-in-citation>
+    </element-citation>
+
+.. _elemento-comment:
 
 <comment>
 ^^^^^^^^^
 
-Tag pode servir para marcar alguma informações juntamente com uma URL (ver tag <ext-link>)e também para identificar dados que não possuem tagueamento específico em uma referência.
-
-**Exemplo:**
-
-  ..code block::
- 
-  <comment>1 CD-ROM: color, 4 3/4 in.</comment> 
+Tag pode servir para marcar alguma informações juntamente com uma URL 
+(ver tag :ref:`elemento-ext-link`)e também para identificar dados que não
+possuem tagueamento específico em uma referência.
 
 Aparece em
-  1. article/back/ref-list/ref/element-citation
-  
+  :ref:`elemento-element-citation`
 
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+Exemplo:
+
+.. code-block:: xml
+
+    <element-citation>
+        <comment>1 CD-ROM: color, 4 3/4 in.</comment> 
+    </element-citation>
+
+.. _elemento-conf-name
 
 <conf-name>
 ^^^^^^^^^^^
-Identifica o nome de uma conferência, congresso, reunião, palestra, seminário e etc mencionado em uma referência.
-
-**Exemplo:**
-
-  ..code block::
-
-<conf-name>Proceedings of the 23rd International Summer School of Brain Research</conf-name>
+Identifica o nome de uma conferência, congresso, reunião, palestra, seminário e
+etc mencionado em uma referência.
 
 Aparece em
-  1. article/back/ref-list/ref/element-citation
+  :ref:`elemento-element-citation`
   
 Ocorre 
  Zero ou mais vezes
+
+Exemplo:
+
+..code block::
+
+    <element-citation>
+        <conf-name>Proceedings of the 23rd International Summer School of Brain Research</conf-name>
+    </element-citation>
+
+.. _elemento-conf-loc
 
 <conf-loc>
 ^^^^^^^^^^
-Identifica o local, país, cidade, estado, província, e local físico como uma assembléia, anfiteatro e etc de uma conferência, congresso, reunião, palestra, seminário e etc mencionado em uma referência.
-
-**Exemplo:**
-
-  ..code block::
-
-  <conf-loc>Dallas, TX</conf-loc>
+Identifica o local, país, cidade, estado, província, e local físico como uma
+assembléia, anfiteatro e etc de uma conferência, congresso, reunião, palestra,
+seminário e etc mencionado em uma referência.
 
 Aparece em
-  1. article/back/ref-list/ref/element-citation
+  :ref:`elemento-element-citation`
   
 Ocorre 
  Zero ou mais vezes
+
+Exemplo:
+
+..code block::
+
+    <element-citation>
+        <conf-loc>Dallas, TX</conf-loc>
+    </element-citation>
+
+.. _elemento-conf-date
 
 <conf-date>
 ^^^^^^^^^^^
-Trata-se de uma tag para identificar a data de uma conferência, evento e etc. Pode ser composta por um período por exemplo: 2003 Aug 25-29.
-
-**Exemplo:**
-
-  ..code block::
-
-  <conf-date>2002 Jul 28-Aug 2</conf-date>
+Trata-se de uma tag para identificar a data de uma conferência, evento e etc.
+Pode ser composta por um período por exemplo: 2003 Aug 25-29.
 
 Aparece em
-  1. article/back/ref-list/ref/element-citation
+  :ref:`elemento-element-citation`
   
 Ocorre 
  Zero ou mais vezes
 
+Exemplo:
+
+..code block::
+    <element-citation>
+        <conf-date>2002 Jul 28-Aug 2</conf-date>
+    </element-citation>
 
 <patent>
 ^^^^^^^^
@@ -4224,7 +4350,8 @@ Ocorre
  Zero ou uma vez
  
 <glossary>
----------
+----------
+
 Utilizada quando há uma lista de termos e suas respectivas definições. O glossário pode ser apresentado como imagem ou como texto com as identificações de <term>, <def-list> e <def>. O glossário pode estar identificado em: <app>, <back>, e <sec>.
  
 Para composição de @id de **glossário** utiliza-se o seguinte padrão: "d" + o número de ordem do glossário. (Ver Regra de atribuição de @id)
@@ -4382,6 +4509,7 @@ Ocorre
  
 Referências:
 ============
+
 ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR14724: informação e
 documentação: trabalhos acadêmicos: apresentação. Rio de Janeiro: NBR, 2011.
  
