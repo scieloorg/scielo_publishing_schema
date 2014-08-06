@@ -1372,166 +1372,290 @@ Exemplo:
 
 <institution>
 ^^^^^^^^^^^^^
-Nesta tag especifica-se a instituição do autor, a qual pode ser dividida em até três níveis. Estes níveis serão definidos pelo atributo obrigatório @content-type, podendo possuir os seguintes valores:
- 
-- “orgname”: Representando a instituição de nível hierárquico maior mencionado na afiliação;
-- “orgdiv1”: Representando a primeira divisão da instituição mencionada em orgname;
-- “orgdiv2”: Representando a segunda divisão da instituição mencionada em orgname.
- 
-.. note:: No caso de mais divisões mencionadas em afiliações no PDF, identifica-las somente na tag <institution content-type="original">.
- 
-.. code-block:: xml
- 
-<institution content-type="orgname">Universidade de São Paulo</institution>
-<institution content-type="orgdiv1">Faculdade de Filosofia, Letras e Ciências Humanas</institution>
-<institution content-type="orgdiv2">Departamento de Vernáculos</institution>
- 
-Deve-se especificar a afiliação completa como aparece no documento original. Caso o email esteja presente também deve ser marcado; ambas as tags possuem atributo obrigatório @content-type dos tipos: original e/ou email, conforme segue no exemplo:
- 
-.. code-block:: xml
- 
-     <institution content-type="original">Técnica de Cardiopneumologia. Unidade de Fisiopatologia Respiratória, Serviço de Pneumologia, Centro Hospitalar Lisboa Norte, Lisboa, Portugal. <named-content content-type="email">mara@scielo.org</named-content></institution>
 
 Aparece em
- 1. article/front/article-meta/aff
+  :ref:`elemento-aff`
  
 Atributos obrigatórios
- 1. content-type
+  1. content-type
  
 Ocorre
- zero ou mais vezes
+  Zero ou mais vezes
+
+
+Nesta tag especifica-se a instituição do autor, a qual pode ser dividida 
+em até três níveis. Estes níveis serão definidos pelo atributo obrigatório 
+``@content-type``, podendo possuir os seguintes valores:
+
++---------+--------------------------------------------------------------------+ 
+| Valor   | Descrição                                                          |
++=========+====================================================================+
+| orgname | Representando a instituição de nível hierárquico maior mencionado  |
+|         | na afiliação                                                       |
++---------+--------------------------------------------------------------------+ 
+| orgdiv1 | Representando a primeira divisão da instituição mencionada em      |
+|         | orgname                                                            |
++---------+--------------------------------------------------------------------+ 
+| orgdiv2 | Representando a segunda divisão da instituição mencionada em       |
+|         | orgname                                                            |
++---------+--------------------------------------------------------------------+ 
  
+
+.. note:: No caso de mais divisões mencionadas em afiliações no PDF, 
+          identifica-las somente na tag ``<institution content-type="original">``.
+ 
+
+.. code-block:: xml
+ 
+    ...
+    <aff id="aff01">
+        <institution content-type="orgname">
+            Universidade de São Paulo
+        </institution>
+        <institution content-type="orgdiv1">
+            Faculdade de Filosofia, Letras e Ciências Humanas
+        </institution>
+        <institution content-type="orgdiv2">
+            Departamento de Vernáculos
+        </institution>
+        ...
+    </aff>
+    ...
+ 
+
+Deve-se especificar a afiliação completa como aparece no documento 
+original. Caso o email esteja presente também deve ser marcado; ambas as tags 
+possuem atributo obrigatório ``@content-type`` dos tipos: original e/ou email, 
+conforme segue no exemplo:
+
+
+.. code-block:: xml
+
+    <!-- CORRIGIR: O exemplo onde @content-type="email" ocorre na tag <named-content>, e isso não está claro no parágrafo acima. -->
+
+    <institution content-type="original">
+        Técnica de Cardiopneumologia. Unidade de Fisiopatologia Respiratória, Serviço de Pneumologia, Centro Hospitalar Lisboa Norte, Lisboa, Portugal. <named-content content-type="email">mara@scielo.org</named-content>
+    </institution>
+
+ 
+.. _elemento-addr-line:
      
 <addr-line>
 ^^^^^^^^^^^
-Em <addr-line>, especifica-se os dados de endereço da instituição vinculada ao autor, e deve aparecer quando a informação for descrita no artigo dentro de <aff>. Pode conter somente informações de Estado e cidade.
- 
- 
+
 Aparece em
- 1. article/front/journal-meta/aff
+  :ref:`elemento-aff`
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+Em ``<addr-line>``, especifica-se os dados de endereço da instituição 
+vinculada ao autor, e deve aparecer quando a informação for descrita no 
+artigo dentro de :ref:`elemento-aff`. Pode conter somente informações de 
+Estado e cidade.
+ 
+
+.. _elemento-named-content:
  
 <named-content>
 ^^^^^^^^^^^^^^^
  
-Esta tag representa as informações de endereço que aparecem em afiliação e portanto irá dentro da tag de <addr-line> e obrigatoriamente terá o atributo @content-type cujos valores podem ser "city" ou "state", conforme exemplo a seguir:
- 
-.. code-block:: xml
- 
-     <addr-line>
-     <named-content content-type="city">São José do Rio Preto</named-content>
-     <named-content content-type="state">São Paulo</named-content>
-     </addr-line>
- 
-
 Aparece em
- 1. article/front/journal-meta/aff/addr-line
+  :ref:`elemento-addr-line`
  
 Atributos obrigatórios
- 1. content-type
+  1. content-type
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
 
+
+Esta tag representa as informações de endereço que aparecem em afiliação e 
+portanto irá dentro da tag de :ref:`elemento-addr-line` e obrigatoriamente 
+terá o atributo ``@content-type``, podendo possuir os seguintes valores: 
+
+
++---------+------------+ 
+| Valor   | Descrição  |
++=========+============+
+| city    | Cidade     |
++---------+------------+
+| state   | Estado     |
++---------+------------+
+ 
+
+.. code-block:: xml
+    
+    ...
+    <addr-line>
+        <named-content content-type="city">
+            São José do Rio Preto
+        </named-content>
+        <named-content content-type="state">
+            São Paulo
+        </named-content>
+        ...
+    </addr-line>
+    ...
+ 
+
+.. _elemento-country:
 
 <country>
 ^^^^^^^^^
 
-Identifica o país de uma afiliação e representa a única informação que deverá ser especificada fora da tag <addr-line>. 
- 
-A tag pode possuir o atributo @country e nele deve ser atribuído o código do país de acordo com a Norma ISO 3166, com dois caracteres alfabéticos.
-Para consultar ao código do país consulte o link da norma ISO: https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
-**Exemplo:**
-
-.. code-block:: xml
- 
-</addr-line>
-     <country>Brasil</country>
-
-
-**Exemplo com atributo:**
-
-.. code-block:: xml
-
-</addr-line>
-     <country country="BR">Brasil</country>
-
-..note:: Para a nova versão do SPS este atributo passará a ser obrigatório.
-
 Aparece em
- 1. article/front/journal-meta/aff
+  :ref:`elemento-aff`
  
 Ocorre
- Uma vez
+  Uma vez
 
+
+Identifica o país da afiliação.
  
+A tag pode possuir o atributo ``@country`` e nele deve ser atribuído o código 
+do país de acordo com a Norma *ISO 3166*, com dois caracteres alfabéticos.
 
+Para consultar o código do país consulte o link: 
+https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
+
+
+Exemplo:
+
+.. code-block:: xml
+ 
+    ...
+    <aff id="aff01">
+        ...
+        <country>Brasil</country>
+        ...
+    </aff>
+    ...
+
+
+.. code-block:: xml
+
+    ...
+    <aff id="aff01">
+        ...
+        <country country="BR">Brasil</country>
+        ...
+    </aff>
+    ...
+
+
+.. note:: Para a próxima versão do SPS este atributo passará a ser obrigatório.
+
+
+.. _elemento-author-notes:
  
 <author-notes>
 --------------       
-A tag de notas de autor é um elemento de <front> e deve ser utilizada para identificar informações como correspondência, contribuição igualitária, conflitos de interesses, ou seja, notas sobre autor.
+
+Aparece em
+  :ref:`elemento-article-meta`
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+A tag de notas de autor deve ser utilizada para identificar informações como 
+correspondência, contribuição igualitária, conflitos de interesses, 
+ou seja, notas sobre autor.
+
+Exemplo:
  
 .. code-block:: xml
  
-     <author-notes>
-          <corresp id="c01">
+    ...
+    <article-meta>
+        ...
+        <author-notes>
+            <corresp id="c01">
                 <bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@hotmail.com</email>
-          </corresp>
-          <fn fn-type="conflict">
+            </corresp>
+            <fn fn-type="conflict">
                 <p>Conflict of interest: none</p>
-          </fn>     
-     </author-notes>
+            </fn>     
+        </author-notes>
+        ...
+    </article-meta>
+    ...
  
-Aparece em
- 1. article/front/article-meta
  
-Ocorre
- Zero ou mais vezes
- 
+.. _elemento-fn:
+
 <fn>
 ----
-Foot Notes ou notas de rodapé de autores, são notas inseridas em <front> dentro de <author-notes> obrigatoriamente devem ter o atributo @fn-type que podem possuir os seguintes valores:
- 
-- **author** Outro tipo de nota relacionado a autor
-- **con** Informação de contribuição
-- **conflict** Declaração de conflito de Interesse
-- **corresp** Informação de correspondência
-- **current-aff** Afiliação atual do autor
-- **deceased** Pessoa morreu desde que o artigo foi escrito
-- **edited-by** Autor é o editor
-- **equal** Informação de contribuição igualitária
-- **on-leave** Autor está ausente (sabático ou outro)
-- **participating-researchers** Autor foi um pesquisador para o artigo
-- **present-address** Endereço atual do autor
-- **previously-at** Afiliação anterior do autor
-- **study-group-members** Autor foi um membro do grupo de estudos para a pesquisa
-- **other:** especifica aquelas notas diferentes das relacionados acima. É possível também ter este tipo de nota em <fn-group> em <back>.
- 
-.. code-block:: xml
- 
-     <author-notes>
-          <corresp id="c01">
-                <label>*</label>
-                     <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@contato.com</email>
-          </corresp>           
-          <fn fn-type="conflict">
-                <p>Não há conflito de interesse entre os autores do artigo.</p>
-          </fn>
-          <fn fn-type="equal">
-                <p>Todos os autores tiveram contribuição igualitária na criação do artigo.</p>
-          </fn>
-     </author-notes>
- 
+
 Aparece em
- 1. article/front/article-meta/author-notes
+  :ref:`elemento-author-notes`
  
 Atributos obrigatórios
- 1. fn-type
+  1. fn-type
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Notas de rodapé de autores, são notas inseridas em :ref:`elemento-author-notes` 
+obrigatoriamente devem ter o atributo ``@fn-type``, que podem possuir os 
+seguintes valores:
+ 
++---------------------------+--------------------------------------------------+
+| Valor                     | Descrição                                        |
++===========================+==================================================+
+| author                    | Outro tipo de nota relacionado a autor           |
++---------------------------+--------------------------------------------------+
+| con                       | Informação de contribuição                       |
++---------------------------+--------------------------------------------------+
+| conflict                  | Declaração de conflito de Interesse              |
++---------------------------+--------------------------------------------------+
+| corresp                   | Informação de correspondência                    |
++---------------------------+--------------------------------------------------+
+| current-aff               | Afiliação atual do autor                         |
++---------------------------+--------------------------------------------------+
+| deceased                  | Pessoa morreu desde que o artigo foi escrito     |
++---------------------------+--------------------------------------------------+
+| edited-by                 | Autor é o editor                                 |
++---------------------------+--------------------------------------------------+
+| equal                     | Informação de contribuição igualitária           |
++---------------------------+--------------------------------------------------+
+| on-leave                  | Autor está ausente (sabático ou outro)           |
++---------------------------+--------------------------------------------------+
+| participating-researchers | Autor foi um pesquisador para o artigo           |
++---------------------------+--------------------------------------------------+
+| present-address           | Endereço atual do autor                          |
++---------------------------+--------------------------------------------------+
+| previously-at             | Afiliação anterior do autor                      |
++---------------------------+--------------------------------------------------+
+| study-group-members       | Autor foi um membro do grupo de estudos para a   |
+|                           | pesquisa                                         |
++---------------------------+--------------------------------------------------+
+| other                     | Especifica aquelas notas diferentes das          |
+|                           | relacionados acima. É possível também ter este   |
+|                           | tipo de nota em :ref:`elemento-fn-group` em      |
+|                           | ``<back>``                                       |
++---------------------------+--------------------------------------------------+
+ 
+
+.. code-block:: xml
+ 
+    ...
+    <author-notes>
+        <corresp id="c01">
+            <label>*</label>
+            <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@contato.com</email>
+        </corresp>           
+        <fn fn-type="conflict">
+            <p>Não há conflito de interesse entre os autores do artigo.</p>
+        </fn>
+        <fn fn-type="equal">
+            <p>Todos os autores tiveram contribuição igualitária na criação do artigo.</p>
+        </fn>
+    </author-notes>
+    ...
+ 
  
 <corresp>
 ---------
