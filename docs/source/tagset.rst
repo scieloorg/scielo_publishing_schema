@@ -1598,9 +1598,10 @@ Ocorre
   Zero ou mais vezes
 
 
-Notas de rodapé de autores, são notas inseridas em :ref:`elemento-author-notes` 
-obrigatoriamente devem ter o atributo ``@fn-type``, que podem possuir os 
-seguintes valores:
+Notas de rodapé de autores são notas inseridas em :ref:`elemento-author-notes` 
+e que obrigatoriamente possuem o atributo ``@fn-type``. 
+
+Os valores possíveis para o atributo ``@fn-type`` são:
  
 +---------------------------+--------------------------------------------------+
 | Valor                     | Descrição                                        |
@@ -1657,68 +1658,102 @@ seguintes valores:
     ...
  
  
+.. _elemento-corresp:
+
 <corresp>
 ---------
  
-Esta tag representa as informações de correspondência de um dos autores do artigo. Pode ou não possuir um <label> e também o atributo @id. É possível marcar o <email> caso inserido.
+Aparece em
+  :ref:`elemento-author-notes`
  
-Para composição de @id de **correspondência** utiliza-se o seguinte padrão: "c" + o número de ordem da correspondência. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** c01... c10, c11;
+Ocorre
+  Zero ou mais vezes
 
+
+Esta tag representa as informações de correspondência de um dos autores 
+do artigo. Pode ou não possuir um :ref:`elemento-label` e também o atributo 
+``@id``. É possível marcar o ``<email>`` caso inserido.
+ 
+Para composição de ``@id`` utiliza-se o seguinte padrão: "c" + o número de ordem da correspondência. 
+(Ver :ref:`regra-atribuicao-id`)
+ 
+Exemplo:
 
 .. code-block:: xml
  
-<author-notes>
-          <corresp>
-Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@contato.com</email>
-          </corresp>
-</author-notes>
+    ...
+    <author-notes>
+        ...
+        <corresp id="c01">
+            Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@contato.com</email>
+        </corresp>
+        ...
+    </author-notes>
+    ...
  
-.. note:: Esta tag não necessita da inserção de parágrafo <p>.
+.. note:: Esta tag não necessita da inserção de parágrafo ``<p>``.
  
-Aparece em
- 1. article/front/article-meta/author-notes
  
-Ocorre
- Zero ou mais vezes
- 
+.. _elemento-pub-date:
+
 <pub-date>
 ----------
-Para a marcação da data de publicação do artigo/fascículo utiliza-se a tag <pub-date> a qual pode conter os elementos <day>, <month>, <season> e obrigatoriamente <year>. Esta tag deve estar acompanhada do atributo @pub-type.
- 
-A data de publicação pode ser do tipo "epub-ppub" se houver uma versão impressa do fascículo, apenas "epub" para publicação digital ou em ahead-of-print.
- 
-**Exemplo de marcação de data de publicação nas versões impressa e digital:**
- 
-.. code-block:: xml
- 
-     <pub-date pub-type="epub-ppub">
-           <day>17</day>
-           <month>03</month>
-           <year>2014</year>
-     </pub-date>
- 
-Os valores de dia, mês e ano devem ser representados segundo o PDF do artigo/fascículo.
- 
-**Exemplo de marcação de data de publicação na versão digital:**
- 
-.. code-block:: xml
- 
-     <pub-date pub-type="epub">
-          <season>Jan-Feb</season>
-          <year>2014</year>
-          </pub-date>
 
 Aparece em
- 1. article/front/article-meta
+  :ref:`elemento-article-meta`
  
 Atributos obrigatórios
- 1. pub-type='epub' ou pub-type='epub-ppub'
+  1. pub-type='epub' ou pub-type='epub-ppub'
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+Para a marcação da data de publicação do artigo/fascículo utiliza-se a 
+tag ``<pub-date>`` a qual pode conter os elementos :ref:`elemento-day`, 
+:ref:`elemento-month`, :ref:`elemento-season` e obrigatoriamente 
+:ref:`elemento-year`. Esta tag deve estar acompanhada do atributo ``@pub-type``.
  
+A data de publicação pode ser do tipo ``epub-ppub`` se houver uma versão 
+impressa do fascículo, apenas ``epub`` para publicação digital ou em 
+``ahead-of-print``.
+ 
+Exemplo de marcação de data de publicação nas versões impressa e digital:
+ 
+.. code-block:: xml
+ 
+    ...
+    <article-meta>
+        ...
+        <pub-date pub-type="epub-ppub">
+            <day>17</day>
+            <month>03</month>
+            <year>2014</year>
+        </pub-date>
+        ...
+    </article-meta>
+    ...
+
+ 
+Os valores de dia, mês e ano devem ser representados segundo o PDF do 
+artigo/fascículo.
+ 
+Exemplo de marcação de data de publicação na versão digital:
+ 
+.. code-block:: xml
+ 
+    ...
+    <article-meta>
+        ...
+        <pub-date pub-type="epub">
+            <season>Jan-Feb</season>
+            <year>2014</year>
+        </pub-date>
+        ...
+    </article-meta>
+    ...
+ 
+
 <season>
 ^^^^^^^^
 
