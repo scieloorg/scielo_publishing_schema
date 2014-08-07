@@ -1750,173 +1750,216 @@ Exemplo de marcação de data de publicação na versão digital:
     ...
  
 
+.. _elemento-season:
+
 <season>
 ^^^^^^^^
 
-Esta tag pode ser encontrada em <front> (ver <pub-date> e <product>) e em <back> representando informações das estações do ano em um referência.
-
-**Exemplo em <back>:**
-
-  ..code block::
-
-      <season>Outono</season>
-
-**Exemplo em <front>:**
-
-      <season>Nov-Dec</season>
-          
-
-..note:: Para abreviatura dos meses que devem ser inseridos na data de publicação dos fascículos, utilizar siglas em inglês com 3 caracteres, separados por hífen.
-
-Lista de Abreviatura de Meses para inserção:
-
-Jan
-Feb
-Mar
-Apr
-Jun
-Jul
-Aug
-Sep
-Oct
-Nov
-Dec
-
 Aparece em
-  1. article/front/article-meta/pub-date
-  2. article/front/article-meta/product
-  3. article/back/ref-list/ref/element-citation  
+  :ref:`elemento-pub-date`, :ref:`elemento-product`, 
+  :ref:`elemento-element-citation`
 
 Ocorre 
  Zero ou uma vez 
 
+
+Esta tag pode ser encontrada em :ref:`elemento-front` 
+(ver :ref:`elemento-pub-date` e :ref:`elemento-product`) ou em 
+:ref:`elemento-back`, representando informações das estações do ano em um referência.
+
+
+.. code-block:: xml
+
+    ...
+    <back>
+        ...
+        <ref-list>
+            <ref>
+                ...
+                <season>Outono</season>
+                ...
+            </ref>
+        </ref-list>
+        ...
+    </back>
+
+
+.. code-block:: xml
+
+    ...
+    <front>
+        ...
+        <article-meta>
+            ...
+            <pub-date pub-type="epub">
+                <season>Nov-Dec</season>
+                <year>2013</year>
+            </pub-date>
+            ...
+        </article-meta>
+        ...
+    </front>
+    ...
+          
+
+.. note:: Para abreviatura dos meses que devem ser inseridos na data de 
+          publicação dos fascículos, utilizar siglas em inglês com 3 
+          caracteres, separados por hífen. As abreviaturas são: Jan, Feb, Mar,
+          Apr, Jun, Jul, Aug, Sep, Oct, Nov e Dec.
+
+
+.. _elemento-year:
+
 <year>
 ^^^^^^
 
-Identifica ano em referências, pode representar o ano de publicação de um documento, o ano de fabriação de um software, o ano da criação de uma base de dados e assim por diante. Também utilizada em <front> para identificar ano da publicação de um artigo (ver tag <pub-date>) ou de um produto (ver tag <product>).
-
-**Exemplo:**
-
-  ..code block::
-
-  <year>2014</year>
-
 Aparece em
-  1. article/front/article-meta/pub-date
-  2. article/front/article-meta/product
-  3. article/back/ref-list/ref/element-citation  
+  :ref:`elemento-pub-date`, :ref:`elemento-product`, 
+  :ref:`elemento-element-citation`
 
 Ocorre 
- Uma vez <front>
+  1. Uma vez em :ref:`elemento-front`
+  2. Zero ou mais vezes em :ref:`elemento-back`
 
-Ocorre 
- Zero ou mais vezes em <back>
+
+Identifica ano em referências, pode representar o ano de publicação de um 
+documento, o ano de fabriação de um software, o ano da criação de uma 
+base de dados e assim por diante. Também utilizada em :ref:`elemento-front` 
+para identificar ano da publicação de um artigo 
+(ver :ref:`elemento-pub-date`) ou de um produto (ver :ref:`elemento-product`).
+
+
+.. _elemento-month:
 
 <month>
 ^^^^^^^
 
-Identifica o mês em referências, pode representar o mês de publicação de um periódico científico, o mês da realização de um relatório e assim por diante. Também utilizada em <front> para identificar mês da publicação de um artigo (ver tag <pub-date>)ou de um produto (ver tag <product>).
-
-**Exemplo:**
-
-  ..code block::
-
-    <month>Mar</month>
-
 Aparece em
-  1. article/front/article-meta/pub-date
-  2. article/front/article-meta/product
-  3. article/back/ref-list/ref/element-citation
+  :ref:`elemento-pub-date`, :ref:`elemento-product`, 
+  :ref:`elemento-element-citation`
 
 Ocorre 
- Zero ou uma vez <front>
+  1. Zero ou uma vez em :ref:`elemento-front`
+  2. Zero ou mais vezes em :ref:`elemento-back`
 
-Ocorre 
- Zero ou mais vezes em <back>
+Identifica o mês em referências, pode representar o mês de publicação de um 
+periódico científico, o mês da realização de um relatório e assim por diante. 
+Também utilizada em :ref:`elemento-front` para identificar o mês da publicação 
+de um artigo (ver :ref:`elemento-pub-date`) ou de um produto 
+(ver :ref:`elemento-product`).
+
+O valor deve ser um número inteiro de 1-12.
+
+Intervalos de meses, e.g. ``Jan-Mar``, devem ser identificados em :ref:`elemento-season`. 
+
+
+.. _elemento-day:
 
 <day>
 ^^^^^
 
-Identifica o dia em referências, pode representar o dia de publicação de um periódico científico, o dia da realização de um relatório e assim por diante. Também utilizada em <front> para identificar mês da publicação de um artigo (ver tag <pub-date>) ou de um produto (ver tag <product>).
-
-**Exemplo:**
-
-  ..code block::
-
-    <day>26</day>
-
 Aparece em
-  1. article/front/article-meta/pub-date
-  2. article/front/article-meta/product
-  3. article/back/ref-list/ref/element-citation
+  :ref:`elemento-pub-date`, :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
 
 Ocorre 
- Zero ou uma vez <front>
+  1. Zero ou uma vez em :ref:`elemento-front`
+  2. Zero ou mais vezes em ``<back>``
 
-Ocorre 
- Zero ou mais vezes em <back>
+
+Identifica o dia em referências, pode representar o dia de publicação de 
+um periódico científico, o dia da realização de um relatório e assim por 
+diante. Também utilizada em :ref:`elemento-front` para identificar mês da 
+publicação de um artigo (ver :ref:`elemento-pub-date`) ou de um produto 
+(ver :ref:`elemento-product`).
+
+
+.. _elemento-volume:
 
 <volume>
 --------
-Representa o volume de uma publicação. A tag que pode ser apresentada em <front> e <element-citation>.
- 
-.. code-block:: xml
- 
-     <volume>10</volume>
-     <issue>03</issue>
- 
-Caso haja suplemento de volume em <front>, exemplo: v10s1:
- 
-.. code-block:: xml
- 
-     <volume>10</volume>
-     <issue>suppl 1</issue>
- 
+
 Aparece em
- 1. article/front/article-meta
- 2. article/back/ref-list/ref/element-citation
+  :ref:`elemento-article-meta`, :ref:`elemento-element-citation`
  
 Ocorre
- Uma vez em front
+  1. Uma vez em :ref:`elemento-front`
+  2. Zero ou mais vezes em :ref:`elemento-back`
  
-Ocorre
- zero ou mais vezes em back
+
+Representa o volume de uma publicação.
  
+Caso haja suplemento de volume em :ref:`elemento-front`, este deverá ser 
+identificado em :ref:`elemento-issue`. 
+
+Exemplo ``v10s1``:
+ 
+.. code-block:: xml
+ 
+    ...
+    <front>
+        ...
+        <article-meta>
+            ...
+            <volume>10</volume>
+            <issue>suppl 1</issue>
+            ...
+        </article-meta>
+        ...
+    </front>
+    ...
+ 
+ 
+.. _elemento-issue:
+
 <issue>
 -------
  
-Tag que representa número de uma publicação e pode ser apresentada em <front> e <element-citation>.
- 
-.. code-block:: xml
- 
-     <volume>10</volume>
-     <issue>05</issue>
- 
-Em caso de suplemento de número em <front>, exemplo: v10n5s1:
- 
-.. code-block:: xml
- 
-     <volume>10</volume>
-     <issue>5 suppl 1</issue>  
- 
-..note:: Para informações de suplemento em <front> não se deve utilizar a tag <supplement>. Seguir os exemplos mencionados.
- 
-Em caso de ahead-of-print, especificar valores zerados, como segue:
- 
-.. code-block:: xml
- 
-     <volume>00</volume>
-     <issue>00</issue>  
- 
 Aparece em
- 1. article/front/article-meta
- 2. article/back/ref-list/ref/element-citation
+  :ref:`elemento-article-meta`, :ref:`elemento-element-citation`
  
 Ocorre
- Uma vez em front
+  1. Uma vez em :ref:`elemento-front`
+  2. Zero ou mais vezes em :ref:`elemento-back`
+
  
-Ocorre
- Zero ou mais vezes em back
+Em caso de suplemento de número em :ref:`elemento-front`, exemplo: ``v10n5s1``:
+ 
+.. code-block:: xml
+ 
+    ...
+    <front>
+        ...
+        <article-meta>
+            ...
+            <volume>10</volume>
+            <issue>5 suppl 1</issue>
+            ...
+        </article-meta>
+        ...
+    </front>
+    ...
+ 
+Em caso de :term:`ahead-of-print`, especificar valores zerados, como segue:
+ 
+.. code-block:: xml
+ 
+    ...
+    <front>
+        ...
+        <article-meta>
+            ...
+            <volume>00</volume>
+            <issue>00</issue>
+            ...
+        </article-meta>
+        ...
+    </front>
+    ...
+
+.. note:: Para informações de suplemento em :ref:`elemento-front` não se deve 
+          utilizar a tag :ref:`elemento-supplement`.
+ 
  
 <fpage>
 -------
