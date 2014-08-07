@@ -1959,64 +1959,102 @@ Em caso de :term:`ahead-of-print`, especificar valores zerados, como segue:
           utilizar a tag :ref:`elemento-supplement`.
  
  
+.. _elemento-fpage:
+
 <fpage>
 -------
-Designa-se a paginação inicial do artigo. No caso de ahead-of-print, a informação deve ser preenchida com 00.
+
+Aparece em
+  :ref:`elemento-article-meta`,
+  :ref:`elemento-element-citation`
  
+Ocorre
+  Zero ou uma vez
+ 
+
+Designa-se a paginação inicial do artigo. No caso de :term:`ahead-of-print`, 
+a informação deve ser preenchida com ``00``.
+ 
+Exemplo:
+
 .. code-block:: xml
  
-     <fpage>17</fpage>
-     <lpage>21</lpage>
+    ...
+    <article-meta>
+        ...
+        <fpage>17</fpage>
+        <lpage>21</lpage>
+        ...
+    </article-meta>
+    ...
  
-Aparece em
- 1. article/front/article-meta
- 2. article/back/ref-list/ref/element-citation
  
-Ocorre
- Uma vez em front
- 
-Ocorre
- Zero ou mais vezes em back
- 
+.. _elemento-lpage:
+
 <lpage>
 -------
+
+Aparece em
+  :ref:`elemento-article-meta`, 
+  :ref:`elemento-element-citation`
  
-Designa-se a paginação final do artigo. No caso de ahead-of-print, a informação deve ser preenchida com 00.
+Ocorre
+  Zero ou uma vez
+
  
+Designa-se a paginação final do artigo. No caso de :term:`ahead-of-print`, 
+a informação deve ser preenchida com ``00``.
+ 
+Exemplo:
+
 .. code-block:: xml
  
-     <fpage>396</fpage>
-     <lpage>452</lpage>
+    ...
+    <article-meta>
+        ...
+        <fpage>396</fpage>
+        <lpage>452</lpage>
+        ...
+    </article-meta>
+    ...
  
-Aparece em
- 1. article/front/article-meta
- 2. article/back/ref-list/ref/element-citation
- 
-Ocorre
- Uma vez em front
- 
-Ocorre
- Zero ou mais vezes em back
- 
+
+.. _elemento-elocation-id:
+
 <elocation-id>
 --------------
-Está tag irá identificar uma paginação eletrônica, pode ser encontrada também em <element-citation>. Ela só deverá ser usada quando só houver um único número de paginação eletrônica, caso haja o intervalo de páginas deve-se optar pelo uso de <fpage> e <lpage>.
+
+Aparece em
+  :ref:`elemento-article-meta`
+  :ref:`elemento-element-citation`
  
+Ocorre
+  Zero ou uma vez 
+ 
+
+Está tag irá identificar uma paginação eletrônica, pode ser encontrada também 
+em :ref:`elemento-element-citation`. Ela só deverá ser usada quando só houver 
+um único número de paginação eletrônica, caso haja o intervalo de páginas 
+deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.
+ 
+Exemplo:
+
 .. code-block:: xml
  
-<volume>00</volume>
-     <issue>00</issue>
-     <elocation-id>0102961</elocation-id>
+    ...
+    <article-meta>
+        ...
+        <volume>00</volume>
+        <issue>00</issue>
+        <elocation-id>0102961</elocation-id>
+        ...
+    </article-meta>
+    ...
+
+
+.. note:: ``elocation-id`` só deve ser identificado quando não houver informação de 
+          :ref:`elemento-fpage`.
  
-Aparece em
- 1. article/front/article-meta
- 2. article/back/ref-list/ref/element-citation
- 
-Ocorre
- Uma vez em front (senão houver informações de <fpage> e <lpage>)
- 
-Ocorre
- Zero ou mais vezes em back
 
 <product>
 ---------
