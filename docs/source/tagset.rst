@@ -1173,9 +1173,7 @@ Em :ref:`elemento-ref`:
 ^^^^^^
 
 Aparece em
-  :ref:`elemento-contrib`, :ref:`elemento-element-citation`, 
-  :ref:`elemento-person-group`, :ref:`elemento-product`
-
+  :ref:`elemento-contrib`, :ref:`elemento-person-group`
   
 Ocorre
   Zero ou mais vezes
