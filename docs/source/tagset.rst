@@ -2025,14 +2025,14 @@ Exemplo:
 --------------
 
 Aparece em
-  :ref:`elemento-article-meta`
+  :ref:`elemento-article-meta`,
   :ref:`elemento-element-citation`
  
 Ocorre
   Zero ou uma vez 
  
 
-Está tag irá identificar uma paginação eletrônica, pode ser encontrada também 
+Esta tag irá identificar uma paginação eletrônica, pode ser encontrada também 
 em :ref:`elemento-element-citation`. Ela só deverá ser usada quando só houver 
 um único número de paginação eletrônica, caso haja o intervalo de páginas 
 deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.
@@ -2056,121 +2056,204 @@ Exemplo:
           :ref:`elemento-fpage`.
  
 
+.. _elemento-product:
+
 <product>
 ---------
-Em <product> devem ser inseridas as informações do produto resenhado. É importante salientar que está tag só deverá ser utilizada quando o tipo de <article> for @article-type="book-review" ou @article-type="product-review". Para o atributo @product-type, os valores possíveis são: “book”, “software”, “article”, “issue”, “website”, “film” e “hardware”.
- 
- .. code-block:: xml
- 
-<product product-type="book">
-<person-group person-group-type="author">
-<name>
-<surname>ONFRAY</surname>
-<given-names>Michel</given-names>
-</name>
-</person-group>
-<source>La comunidad filosófica: manifiesto por una universidad popular</source>
-<year>2008</year>
-<publisher-name>Gedisa</publisher-name>
-<publisher-loc>Barcelona</publisher-loc>
-<size units="pages">155</size>
-<isbn>9788497842525</isbn>                          <inline-graphic>1234-5678-rctb-45-05-690-gf01.tif</inline-graphic>
-</product>
-<history>
- 
-.. note:: A ordem das tags é importante! A tag <product> deve estar inserida em front antes de <history> ou depois de </fpage>.
-               
+
 Aparece em
- 1. article/front/article-meta
+  :ref:`elemento-article-meta`
  
 Atributos obrigatórios  
- 1. product-type
- 2. person-group-type (na tag <person-group>)
+  1. product-type
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Em ``<product>`` devem ser inseridas as informações do produto resenhado. 
+É importante salientar que esta tag só deverá ser utilizada quando 
+:ref:`elemento-article` possuir o atributo ``@article-type="book-review"`` ou 
+``@article-type="product-review"``.
+
+Os valores possíveis para ``@product-type`` são: 
+
++-----------+------------+
+| Valor     | Descrição  |
++===========+============+
+| book      |            |
++-----------+------------+
+| software  |            |
++-----------+------------+
+| article   |            |
++-----------+------------+
+| issue     |            |
++-----------+------------+
+| website   |            |
++-----------+------------+
+| film      |            |
++-----------+------------+
+| hardware  |            |
++-----------+------------+
+ 
+
+.. code-block:: xml
+
+    ...
+    <article-meta>
+        ...
+        <product product-type="book">
+            <person-group person-group-type="author">
+                <name>
+                    <surname>ONFRAY</surname>
+                    <given-names>Michel</given-names>
+                </name>
+            </person-group>
+            <source>La comunidad filosófica: manifiesto por una universidad popular</source>
+            <year>2008</year>
+            <publisher-name>Gedisa</publisher-name>
+            <publisher-loc>Barcelona</publisher-loc>
+            <size units="pages">155</size>
+            <isbn>9788497842525</isbn>                          
+            <inline-graphic>1234-5678-rctb-45-05-690-gf01.tif</inline-graphic>
+        </product>
+        <history>
+            ...
+        </history>
+        ...
+    </article-meta>
+    ...
+
+ 
+.. note:: A ordem das tags é importante! A tag ``<product>`` deve estar 
+          inserida antes de :ref:`elemento-history` ou depois de 
+          :ref:`elemento-fpage`.
+               
+
+.. _elemento-person-group:
 
 <person-group>
 ^^^^^^^^^^^^^^ 
-Identifica o grupo ou o indivíduo criador/elaborador de um determinado documento. Obrigatoriamente as tags de <collab>, <role>, <name> e <etal/> se existentes devem constar dentro da tag. É necessário inserir o atributo @person-group-type que pode possuir os seguintes valores:
 
-- author
-- compiler
-- director
-- editor
-- inventor
-- translator 
+Aparece em
+  :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
+  
+Atributos obrigatórios 
+  1. person-group-type
 
-**Exemplo:**
+Ocorre 
+  Zero ou mais vezes
+
+
+Identifica o grupo ou o indivíduo criador/elaborador do documento. 
+As tags :ref:`elemento-collab`, :ref:`elemento-role`, 
+:ref:`elemento-name` e :ref:`elemento-etal`, no caso de existirem, devem ser 
+identificadas apenas em ``person-group``. 
+
+Os valores possíveis para o atributo ``@person-group-type`` são:
+
++-----------+------------+
+| Valor     | Descrição  |
++===========+============+
+| author    |            |
++-----------+------------+
+| compiler  |            |
++-----------+------------+
+| director  |            |
++-----------+------------+
+| editor    |            |
++-----------+------------+
+| inventor  |            |
++-----------+------------+
+| translator|            |
++-----------+------------+
+
+Exemplo:
  
 .. code-block:: xml
 
-      <person-group person-group-type="author">
-<name>
-                 <surname>Silva</surname>
-                 <given-names>Jaqueline Figueiredo da</given-names>
-            </name>
-         <collab>Instituto Brasil Leitor</collab>
-       </person-group>
+    ...
+    <ref>
+        <element-citation publication-type="book">
+            <person-group person-group-type="author">
+                <name>
+                    <surname>Silva</surname>
+                    <given-names>Jaqueline Figueiredo da</given-names>
+                </name>
+                <collab>Instituto Brasil Leitor</collab>
+                ...
+            </person-group>
+            ...
+        </element-citation>
+        ...
+    </ref>
+    ...
 
-Aparece em
-  1. article/front/article-meta/product
-  2. article/back/ref-list/ref/element-citation
-  
 
-Atributo Obrigatório 
- 1. person-group-type
-
-Ocorre 
- Zero ou mais vezes
+.. _elemento-etal:
 
 <etal>
 ^^^^^^
-Esta deve deve constar dentro da <person-group> e é usada quando existirem mais de três autores, onde indica-se apenas o primeiro, acrescentando-se a expressão et al. que significa "entre outros". Esta informação aparece primordialmente em referências. 
-
-..note:: Quando a informação aparecer no texto da referência, não é necessário envolver o texto “et al.” com a tag <etal></etal>, basta inserir a tag desta forma <etal/>.
-
-**Exemplo: Quincas Borba, et al.**
-
-  ..code block::
-
-<person-group>
-<name>
-<surname>Borba</surname>
-<given-names>Quincas</given-names>
-</name>
-<etal/>
-</person-group>
-
 
 Aparece em
- 1. article/front/article-meta/product/person-group
- 2. article/back/ref-list/ref/element-citation/person-group
+  :ref:`elemento-person-group`
 
 Ocorre 
- Zero ou uma vez
+  Zero ou uma vez
+
+
+Esta deve deve aparecer apenas em :ref:`elemento-person-group` e é usada 
+quando existirem mais de três autores, onde indica-se apenas o primeiro, 
+acrescentando-se a expressão et al. que significa "entre outros". 
+
+Esta informação aparece primordialmente em referências. 
+
+.. note:: Quando a informação aparecer no texto da referência, não é 
+          necessário envolver o texto “et al.” com a tag <etal></etal>, 
+          basta inserir a tag na forma ``<etal/>``.
+
+
+Exemplo:
+
+.. code-block:: xml
+
+    ...
+    <ref>
+        <element-citation publication-type="book">
+            <person-group person-group-type="author">
+                <name>
+                    <surname>Borba</surname>
+                    <given-names>Quincas</given-names>
+                </name>
+                <etal/>
+                ...
+            </person-group>
+            ...
+        </element-citation>
+        ...
+    </ref>
+    ...
+
+
+.. _elemento-size:
 
 <size>
 ^^^^^^
- 
-Identifica a quantidade total de páginas de um documento mencionado numa referência. Deve ser utilizada com o atributo @units com o tipo "page".
-
-**Exemplo:**
- 
-.. code-block:: xml
-
-     <size units="pages">359</size>
 
 Aparece em
-  1. article/front/article-meta/product
-  2. article/back/ref-list/ref/element-citation
-  
+  :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
 
-Atributo Obrigatório 
- 1. units="page"
+Atributos obrigatórios
+  1. units="pages"
 
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+ 
+Identifica a quantidade total de páginas de um documento mencionado numa 
+referência. Deve ser utilizada com o atributo ``@units="pages"``.
+
 
 <page-range>
 ^^^^^^^^^^^^
