@@ -462,7 +462,7 @@ Exemplo da tag completa versão PMC 3.0:
 =======
 
 Aparece em
-  1. article
+  :ref:`elemento-article`
  
 Ocorre
   Uma vez
@@ -481,7 +481,7 @@ de correspondência, notas de autor, informações de resenhas de livros.
 --------------
 
 Aparece em
-  1. article/front
+  :ref:`elemento-front`
  
 Ocorre
   Uma vez
@@ -499,7 +499,7 @@ Em ``<journal-meta>`` faz-se a identificação dos metadados do periódico.
 ^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/journal-meta
+  :ref:`elemento-journal-meta`
  
 Atributos obrigatórios
   1. journal-id-type='nlm-ta' ou journal-id-type='publisher-id'
@@ -520,8 +520,8 @@ utiliza-se ``@journal-id-type="nlm-ta"``:
     </journal-id>
  
 
-..note:: Para verificar se o periódico está indexado no Medline 
-         consulte o link http://www.ncbi.nlm.nih.gov/pubmed/advanced
+.. note:: Para verificar se o periódico está indexado no Medline 
+          consulte o link http://www.ncbi.nlm.nih.gov/pubmed/advanced
 
 
 Para o uso do acrônimo do periódico no SciELO, 
@@ -540,7 +540,7 @@ utiliza-se ``@journal-id-type="publisher-id"``:
 ^^^^^^^^^^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/journal-meta
+  :ref:`elemento-journal-meta`
  
 Ocorre
   Uma vez
@@ -568,7 +568,7 @@ Exemplo:
 ^^^^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/journal-meta/journal-title-group
+  :ref:`elemento-journal-title-group`
  
 Ocorre
   Uma vez
@@ -595,7 +595,7 @@ Exemplo:
 ^^^^^^^^^^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/journal-meta/journal-title-group
+  :ref:`elemento-journal-title-group`
  
 Atributo obrigatório
   1. abbrev-type="publisher"
@@ -626,8 +626,7 @@ Exemplo:
 ^^^^^^
 
 Aparece em
-  1. article/front/journal-meta
-  2. article/back/ref-list/ref/element-citation
+  :ref:`elemento-journal-meta`, :ref:`elemento-element-citation`
  
 Atributos obrigatórios em ``<front>``
   1. pub-type='ppub' ou pub-type='epub'
@@ -676,7 +675,7 @@ conforme o exemplo:
 ^^^^^^^^^^^
 
 Aparece em
-  1. article/front/journal-meta
+  :ref:`elemento-journal-meta`
  
 Ocorre
   Uma vez
@@ -709,7 +708,7 @@ Exemplo:
 --------------
 
 Aparece em
-  1. article/front
+  :ref:`elemento-front`
  
 Ocorre
   Uma vez
@@ -728,7 +727,7 @@ de uso e contagem de elementos.
 ^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/article-meta
+  :ref:`elemento-article-meta`
  
 Atributos obrigatórios
   1. pub-id-type='doi'
@@ -761,7 +760,7 @@ Exemplo:
 --------------------
 
 Aparece em
-  1. article/front/article-meta
+  :ref:`elemento-article-meta`
  
 Ocorre
   Uma vez
@@ -778,7 +777,7 @@ ou por tipologia do documento.
 ^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/article-meta/article-categories
+  :ref:`elemento-article-categories`
  
 Atributos obrigatórios
   1. subj-group-type="heading"
@@ -841,7 +840,7 @@ Para ahead-of-print:
 -------------
 
 Aparece em
-  1. article/front/article-meta
+  :ref:`elemento-article-meta`
  
 Ocorre
   Uma vez
@@ -858,8 +857,7 @@ do artigo. Nele são identificados :ref:`elemento-article-title` e
 ^^^^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/article-meta/title-group
-  2. article/back/ref-list/ref/element-citation
+  :ref:`elemento-title-group`, :ref:`elemento-element-citation`
  
 Ocorre
   Uma vez
@@ -910,7 +908,7 @@ Exemplo:
 ^^^^^^^^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/article-meta/title-group
+  :ref:`elemento-title-group`
  
 Atributos obrigatórios
   1. xml:lang
@@ -930,7 +928,7 @@ e deve ser utilizado para especificar o idioma traduzido do título.
 ^^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/article-meta/title-group/trans-title-group
+  :ref:`elemento-trans-title-group`
  
 Ocorre 
   Uma ou mais vezes
@@ -968,7 +966,7 @@ Exemplo:
 ---------------
 
 Aparece em
-  1. article/front/article-meta
+  :ref:`elemento-article-meta`
  
 Ocorre
   Uma vez
@@ -990,7 +988,7 @@ elementos de ``<contrib-group>`` são: :ref:`elemento-contrib`,
 ^^^^^^^^^
 
 Aparece em
-  1. article/front/article-meta/contrib-group
+  :ref:`elemento-contrib-group`
  
 Atributos obrigatórios
   1. contrib-type
@@ -1052,9 +1050,8 @@ Exemplo:
 ^^^^^^^^
 
 Aparece em
-  1. article/front/article-meta/contrib-group/contrib
-  2. article/front/article-meta/product/person-group
-  3. article/back/ref-list/ref/element-citation
+  :ref:`elemento-contrib`, :ref:`elemento-person-group`, 
+  :ref:`elemento-element-citation`
  
 Ocorre
   Zero ou mais vezes
@@ -1073,8 +1070,7 @@ do trabalho). Pode ser identificada em :ref:`elemento-contrib`,
 ^^^^^^^^^^^^^^
 
 Aparece em
-  1. article/front/article-meta/contrib-group
-  2. article/front/article-meta/contrib-group/contrib
+  :ref:`elemento-contrib-group`, :ref:`elemento-contrib`
  
 Ocorre
   Zero ou mais vezes
