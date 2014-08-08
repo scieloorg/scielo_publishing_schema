@@ -4167,7 +4167,7 @@ Exemplo:
 ^^^^
 
 Aparece em
-  :ref:`elemento-author-notes`
+  :ref:`elemento-author-notes`,
   :ref:`elemento-fn-group`
 
 Atributos obrigatórios
