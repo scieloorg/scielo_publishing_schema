@@ -2251,221 +2251,279 @@ Atributos obrigatórios
 Ocorre 
   Zero ou mais vezes
  
+
 Identifica a quantidade total de páginas de um documento mencionado numa 
 referência. Deve ser utilizada com o atributo ``@units="pages"``.
 
 
+.. _elemento-page-range:
+
 <page-range>
 ^^^^^^^^^^^^
-Identifica um grupo de páginas mencionados numa referência.
-
-**Exemplo:**
-
-  ..code block::
-
-<fpage>300</fpage>
-<lpage>420</lpage>
-<page-range>300-301, 305, 407-420</page-range>
-
-..note:: A inserção do grupo de páginas deve ser inserido posteriormente as informações da primeira página do grupo <fpage> e de última página do grupo <lpage>
 
 Aparece em
-   1. article/front/article-meta/product
-   2. article/back/ref-list/ref/element-citation 
+  :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
   
 Ocorre 
- Zero ou uma vez
+  Zero ou uma vez
+
+
+Identifica um grupo de páginas mencionados numa referência.
+
+Exemplo:
+
+.. code-block:: xml
+
+    ...
+    <ref>
+        <element-citation publication-type="book">
+            ...
+            <fpage>300</fpage>
+            <lpage>420</lpage>
+            <page-range>300-301, 305, 407-420</page-range>
+            ...
+        </element-citation>
+        ...
+    </ref>
+    ...
+
+.. note:: A inserção do grupo de páginas deve ser inserido posteriormente as 
+          informações da primeira página do grupo :ref:`elemento-fpage` e de 
+          última página do grupo :ref:`elemento-lpage`. (CORRIGIR! Não entendi nada!)
+
+
+.. _elemento-isbn:
 
 <isbn>
 ^^^^^^
-Identifica O “International Standard Book Number” de um livro e é identificado numa referência ou produto.
-
-**Exemplo:**
-
-  ..code block::
-
-    <isbn>853251622X</isbn>
 
 Aparece em
-  1. article/front/article-meta/product
-  2. article/back/ref-list/ref/element-citation
+  :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
 
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Identifica o :term:`ISBN` de um livro e é identificado numa referência ou produto.
+
+
+.. _elemento-source:
 
 <source>
 ^^^^^^^^
 
-Identifica o título da fonte principal de uma referência ou de um produto. O atributo @xml:lang não deve ser utilizado.
-
-**Exemplo:**
-
-  ..code block::
-
-    <source>A insustentável leveza do ser</source>
-
-**Exemplo:**
-
-  ..code block::
-
-   <source>Arch Neurol</source>
-
-
 Aparece em
-  1. article/front/article-meta/product
-  2. article/back/ref-list/ref/element-citation  
+  :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
 
 Ocorre 
- Uma vez se houver <ref> e <product>
+  Zero ou mais vezes
+
+
+Identifica o título da fonte principal de uma referência ou de um produto. 
+O atributo ``@xml:lang`` não deve ser utilizado.
+
+
+.. _elemento-edition:
 
 <edition>
 ^^^^^^^^^
-Representa a edição de um documento de uma referência, também pode identificar a versão de um software ou base de dados.
-
-**Exemplo 1: 2º edição de um livro**
-
-  ..code block::
-
-  <edition>2º ed<edition>
-
-**Exemplo 2: Versão de software**
-
-  ..code block::
- 
-  <edition>1.0 version<edition
 
 Aparece em
-  1. article/front/article-meta/product
-  2. article/back/ref-list/ref/element-citation
+  :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
   
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+Representa a edição de um documento de uma referência, também pode 
+identificar a versão de um software ou base de dados.
+
+
+.. _elemento-publisher-name:
 
 <publisher-name>
 ^^^^^^^^^^^^^^^^
-Representa o nome da casa publicadora ou editora numa referência.
-
-**Exemplo:**
-
-  ..code block::
-
-  <publisher-name>Rocco</publisher-name>
 
 Aparece em
-  1. article/front/article-meta/product
-  2. article/back/ref-list/ref/element-citation
-  
+  :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
   
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Representa o nome da casa publicadora ou editora numa referência.
+
+
+.. _elemento-publisher-loc:
 
 <publisher-loc>
 ^^^^^^^^^^^^^^^
-Identifica o local de uma casa publicadora ou editora numa referência.
-
-**Exemplo:**
-
-  ..code block::
-
-  <publisher-loc>Rio de Janeiro, Ipanema</publisher-loc>
 
 Aparece em
-  1. article/front/article-meta/product
-  2. article/back/ref-list/ref/element-citation
+  :ref:`elemento-product`,
+  :ref:`elemento-element-citation`
   
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Identifica o local de uma casa publicadora ou editora numa referência.
+
+
+.. _elemento-history:
 
 <history>
 ---------
-O histórico agrupa as datas em que o artigo foi recebido, aceito e/ou revisado. Contém obrigatoriamente as tags <date>.
- 
+
 Aparece em
- 1. article/front/article-meta
+  :ref:`elemento-article-meta`
  
 Ocorre
- Zero ou uma vez
+  Zero ou uma vez
+
+
+Agrupa as datas em que o artigo foi recebido, aceito ou revisado. Contém 
+obrigatoriamente tags :ref:`elemento-date`.
+ 
+
+.. _elemento-date:
  
 <date>
 ^^^^^^
-Em <date> deve constar obrigatoriamente a tag <year>. Usa-se o atributo @date-type para especificar o tipo do recebimento (received), aceito (accepted) e revisado (rev-recd).
 
-
-.. code-block:: xml
- 
-<history>
-     <date date-type="received">
-      <day>15</day>
-      <month>03</month>
-      <year>2013</year>
-    </date>
-    <date date-type="rev-recd">
-      <day>06</day>
-      <month>11</month>
-      <year>2013</year>
-     </date>  
-    <date date-type="accepted">
-      <day>12</day>
-      <month>05</month>
-      <year>2014</year>
-     </date>  
-</history>
- 
 Aparece em
- 1. article/front/article-meta/history
+  :ref:`elemento-history`
  
 Atributos obrigatórios
- 1. date-type="received" ou date-type="accepted" ou date-type="rev-recd"
- 
-Ocorre (se houver <history>)
- Uma ou mais vezes 
- 
-<permissions>
-------------
-A permissão é um conjunto de condições sob as quais o conteúdo dos artigos pode ser usado, acessados e distribuídos é uma tag obrigatória de <front> e contém a tag de <license>.
- 
-Aparece em
- 1. article/front/article-meta
+  1. date-type="received" ou date-type="accepted" ou date-type="rev-recd"
  
 Ocorre
- Uma vez
+  Uma ou mais vezes 
+
+
+Em ``<date>`` deve constar obrigatoriamente a tag :ref:`elemento-year`. 
+Usa-se o atributo ``@date-type`` para especificar o tipo do recebimento.
+
+Os valores possíveis para o atributo ``@date-type`` são:
+
++------------+-------------+
+| Valores    | Descrição   |
++============+=============+
+| received   |             |
++------------+-------------+
+| accepted   |             |
++------------+-------------+
+| rev-recd   |             |
++------------+-------------+
+
+.. code-block:: xml
+
+    ...
+    <article-meta>
+        ...
+        <history>
+            <date date-type="received">
+                <day>15</day>
+                <month>03</month>
+                <year>2013</year>
+            </date>
+            <date date-type="rev-recd">
+                <day>06</day>
+                <month>11</month>
+                <year>2013</year>
+            </date>  
+            <date date-type="accepted">
+                <day>12</day>
+                <month>05</month>
+                <year>2014</year>
+            </date>  
+        </history>
+        ...
+    </article-meta>
+    ...
  
+ 
+.. _elemento-permissions:
+
+<permissions>
+-------------
+
+Aparece em
+  :ref:`elemento-article-meta`
+ 
+Ocorre
+  Uma vez
+
+
+A permissão é um conjunto de condições sob as quais o conteúdo do artigo 
+pode ser usado, acessado e distribuído.
+ 
+ 
+.. _elemento-license:
+
 <license>
 ^^^^^^^^^
-Esta informação é obrigatória e está contida em <permissions>, possui também a tag <license-p>, informando o texto da licença adotada. Possui atributo @license-type e @xlink:href obrigatórios.
+
+Aparece em
+  :ref:`elemento-permissions`
  
-Para @license-type é obrigatório o valor “open-access”. Pode ser adotado os seguintes tipos de licença:"CC-BY-NC" (v3.0 e v4.0)", "CC-BY" (v3.0 e v4.0). Cada licença regula o uso, distribuição e adaptação da obra. Para mais informações consultar: http://creativecommons.org/
+Atributos obrigatórios
+  1. license-type="open-access"
+  2. xlink:href
  
-Para @xlink:href deve ser inserido a URL da licença adotada pelo periódico. As aceitas são as versões vigentes, 3.0 e 4.0.
+Ocorre
+  Uma vez
+
+
+Define a licença de uso adotada pelo artigo, por meio de referência à URL onde 
+o texto da licença está disponível.
+
+Cada tipo de licença define regras que regulam o uso, distribuição e adaptação 
+da obra. Para mais informações consultar: http://creativecommons.org/
+
+
+Os valores possíveis para ``xlink:href`` são:
+
++-------------------------------------------------+----------------------+
+| Valor                                           | Descrição            |
++=================================================+======================+
+| http://creativecommons.org/licenses/by/4.0/     | CC-BY versão 4.0     |
++-------------------------------------------------+----------------------+
+| http://creativecommons.org/licenses/by/3.0/     | CC-BY versão 3.0     |
++-------------------------------------------------+----------------------+
+| http://creativecommons.org/licenses/by-nc/4.0/  | CC-BY-NC versão 4.0  |
++-------------------------------------------------+----------------------+
+| http://creativecommons.org/licenses/by-nc/3.0/  | CC-BY-NC versão 3.0  |
++-------------------------------------------------+----------------------+
+
+
+Além da referência à URL, o texto da licença deve ser adicionado na tag
+``license-p``.
  
-Valores possíveis para @xlink:href:
- 
-http://creativecommons.org/licenses/by/4.0/
-http://creativecommons.org/licenses/by/3.0/
-http://creativecommons.org/licenses/by-nc/4.0/
-http://creativecommons.org/licenses/by-nc/3.0/
- 
-*Exemplo:*
+Exemplo:
  
 .. code-block:: xml
  
- <permissions>
-     <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">
-     <license-p>Esta obra está licenciado sob uma Licença Creative Commons Atribuição-NãoComercial 4.0 Internacional.</license-p>
-     </license>
- </permissions>
+    ...
+    <article-meta>
+        ...
+        <permissions>
+            ...
+            <license license-type="open-access"
+                     xlink:href="http://creativecommons.org/licenses/by/4.0/">
+                <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+            </license>
+        </permissions>
+        ...
+    </article-meta>
+    ...
  
-.. note:: O texto de <license-p> deve ser inserido na língua principal do artigo.
+.. note:: O texto de ``<license-p>`` deve ser inserido na língua principal do artigo.
  
-Aparece em
- 1. article/front/article-meta/permissions
- 
-Atributos obrigatórios
- 1. license-type="open-access"
- 2. xlink:href
- 
-Ocorre
- Uma vez
  
 <copyright>
 ^^^^^^^^^^
