@@ -2411,7 +2411,7 @@ Usa-se o atributo ``@date-type`` para especificar o tipo do recebimento.
 Os valores possíveis para o atributo ``@date-type`` são:
 
 +------------+-------------+
-| Valores    | Descrição   |
+| Valor      | Descrição   |
 +============+=============+
 | received   |             |
 +------------+-------------+
@@ -2486,7 +2486,7 @@ Cada tipo de licença define regras que regulam o uso, distribuição e adaptaç
 da obra. Para mais informações consultar: http://creativecommons.org/
 
 
-Os valores possíveis para ``xlink:href`` são:
+Os valores possíveis para ``@xlink:href`` são:
 
 +-------------------------------------------------+----------------------+
 | Valor                                           | Descrição            |
@@ -2502,7 +2502,7 @@ Os valores possíveis para ``xlink:href`` são:
 
 
 Além da referência à URL, o texto da licença deve ser adicionado na tag
-``license-p``.
+``<license-p>``.
  
 Exemplo:
  
