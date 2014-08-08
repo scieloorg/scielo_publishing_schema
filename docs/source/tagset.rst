@@ -4048,7 +4048,7 @@ Exemplo:
     <element-citation>
         <conf-date>2002 Jul 28-Aug 2</conf-date>
     </element-citation>
-
+ 
 <patent>
 ^^^^^^^^
 Tag utilizada para identificar um número de patente. Deve possuir o atributo @country e nele deve ser atribuído o código do país de acordo com a Norma ISO 3166, com dois caracteres alfabéticos.
