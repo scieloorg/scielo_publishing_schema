@@ -342,14 +342,19 @@ Atributos obrigatórios
   1. dtd-version
   2. article-type
   3. xml:lang
+  4. xmlns:xlink="http://www.w3.org/1999/xlink"
  
 Ocorre
   Uma vez
  
 
 A tag ``<article>`` representa o elemento raiz do XML, e deve conter 
-obrigatoriamente os atributos ``@dtd-version``, ``@article-type`` e 
-``@xml:lang``. 
+obrigatoriamente os atributos ``@dtd-version``, ``@article-type``, ``@xml:lang`` e
+``@xmlns:xlink="http://www.w3.org/1999/xlink"``.
+
+O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e 
+deve ser utilizado apenas quando equações MathML forem identificadas no 
+documento.
 
 Para ``@dtd-version`` utilizar os valores 1.0 ou 3.0 conforme a :term:`DTD`, 
 explicitada em :ref:`xml-doctype`. Para ``@article-type`` define-se a tipologia 
@@ -2525,281 +2530,373 @@ Exemplo:
 .. note:: O texto de ``<license-p>`` deve ser inserido na língua principal do artigo.
  
  
+.. _elemento-copyright:
+
 <copyright>
-^^^^^^^^^^
-É possível além de <license> acrescentar outras informações de direitos autorais através de duas tags, são elas:
- 
-<copyright-statement> para identificar a instituição a quem pertence os direitos, normalmente a informação descrita aqui vem junto com o símbolo de “copyright”.
- 
-<copyright-year> para identificar o ano do direito autoral.
- 
-*Exemplo:*
- 
-.. code-block:: xml
- 
-     <permissions>
-          <copyright-statement>&#x00A9; 2013 Elsevier Editora Ltda.</copyright-statement>
-          <copyright-year>2013</copyright-year>
- 
-     <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/3.0/">
-     <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License, which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
-     </license>
-</permissions>
- 
-Aparece em
- 1. article/front/article-meta/permissions
- 
-Ocorre
- Zero ou uma vez
- 
-<abstract>
----------
-Tag que identifica o resumo do artigo e não deve conter informação de atributo @xml:lang. Os resumos apresentados nos artigos publicados no SciELO normalmente apresentam-se em dois formatos:
- 
-**estruturado**: Quando possui seções (Ex.: Introdução, Objetivos, Métodos e Resultado). Cada grupo apresentado no resumo será identificado como seção e cada seção terá seu título.
- 
-*Exemplo:*
- 
-.. code-block:: xml
- 
-     <abstract>
-      <sec>
-        <title>Objetivo</title>
-          <p>Verificar a sensibilidade e especificidade das curvas de fluxo-volume na detecção de obstrução da via aérea central (OVAC), e se os critérios qualitativos e quantitativos da curva se relacionam com a localização, o tipo e o grau de obstrução.</p>
-       </sec>
-       <sec>
-        <title>Métodos</title>
-           <p>Durante quatro meses foram selecionados, consecutivamente, indivíduos com indicação para broncoscopia. Todos efetuaram avaliação clínica, preenchimento de escala de dispneia, curva de fluxo-volume e broncoscopia num intervalo de uma semana. Quatro revisores classificaram a morfologia da curva sem conhecimento dos
-dados quantitativos, clínicos e broncoscopicos. Um quinto revisor averiguou os critérios morfológicos e quantitativos.</p>
-       </sec>        
-     </abstract>
-     
-**simples**: Quando apresenta de forma sucinta os principais pontos do texto sem a divisão por seções. Veja exemplo a seguir:
- 
-*Exemplo:*
- 
-.. code-block:: xml
- 
-     <abstract>
-          <p>Verificar a sensibilidade e especificidade das curvas de fluxo-volume na detecção de obstrução da via aérea central (OVAC), e se os critérios qualitativos e quantitativos da curva se relacionam com a localização, o tipo e o grau de obstrução. Métodos: Durante quatro meses foram selecionados, consecutivamente, indivíduos com indicação para broncoscopia. Todos efetuaram avaliação clínica, preenchimento de escala de dispneia, curva de fluxo-volume e broncoscopia num intervalo de uma semana. Quatro revisores classificaram a morfologia da curva sem conhecimento dos
-dados quantitativos, clínicos e broncoscopicos. Um quinto revisor averiguou os critérios morfológicos e quantitativos.</p>
-     </abstract>
-     
-Aparece em
- 1. article/front/article-meta
- 
-Ocorre
- Zero ou mais vezes
- 
-<trans-abstract>
-----------------
- 
-Esta tag irá conter o resumo traduzido do artigo, podendo também possuir os formatos simples ou estruturado, deve ser inserida abaixo da tag de abstract e obrigatoriamente deve conter o atributo @xml:lang.
- 
-.. code-block:: xml
- 
-<trans-abstract xml:lang="en">
-     <sec>
-        <title>Objective:</title>
-          <p>To assess the sensitivity and specificity of flow-volume curves in detecting central airway obstruction (CAO), and to determine whether their quantitative and qualitative criteria are associated with the location, type and degree of obstruction.</p>
-       </sec>
-       <sec>
-        <title>Methods:</title>
-           <p>Over a four-month period, we consecutively evaluated patients with bronchoscopy indicated. Over a one-week period, all patients underwent clinical evaluation, flow-volume curve, bronchoscopy, and completed a dyspnea scale. Four reviewers, blinded to quantitative and clinical data, and bronchoscopy results, classified the morphology of the curves. A fifth reviewer determined the morphological criteria, as well as the quantitative criteria.</p>
-       </sec>        
-     </trans-abstract>
- 
-.. code-block:: xml
- 
-<trans-abstract xml:lang="en">
-     <p>To assess the sensitivity and specificity of flow-volume curves in detecting central airway obstruction (CAO), and to determine whether their quantitative and qualitative criteria are associated with the location, type and degree of obstruction.Over a four-month period, we consecutively evaluated patients with bronchoscopy indicated. Over a one-week period, all patients underwent clinical evaluation, flow-volume curve, bronchoscopy, and completed a dyspnea scale. Four reviewers, blinded to quantitative and clinical data, and bronchoscopy results, classified the morphology of the curves. A fifth reviewer determined the morphological criteria, as well as the quantitative criteria.</p>        
-</trans-abstract>
- 
-Aparece em
- 1. article/front/article-meta
- 
-Atributos obrigatórios
- 1. xml:lang
- 
-Ocorre
- Zero ou mais vezes
- 
-<kwd-group>
------------
-Identifica o grupo por língua de palavras-chave descritas no artigo, terá sempre o atributo de @xml:lang atribuído.
- 
-.. code-block:: xml
- 
-     <kwd-group xml:lang="pt">
-          <kwd>Broncoscopia</kwd>
-     </kwd-group>
- 
-Aparece em
- 1. article/front/article-meta
- 
-Atributos obrigatórios
- 1. xml:lang
- 
-Ocorre
- Zero ou mais vezes
- 
-<kwd>   
-^^^^^
-Esta tag é inserida obrigatoriamente dentro da tag <kwd-group> e identifica cada palavra-chave individualmente <kwd>.
- 
-.. code-block:: xml
- 
-<kwd-group xml:lang="pt">
-     <kwd>Broncoscopia</kwd>
-<kwd>Curvas de fluxo-volume expiratório máximo</kwd>
-<kwd>sensibilidade e especificidade</kwd>
-<kwd>Neoplasias pulmonares</kwd>    
-</kwd-group>
-<kwd-group xml:lang="en">
-     <kwd>Bronchoscopy</kwd>
-<kwd>Maximal expiratory flow-volume curves</kwd>
-<kwd>Sensitivity and specificity</kwd>
-<kwd>Lung neoplasms</kwd>
-</kwd-group>
- 
-Aparece em
- 1. article/front/article-meta/kwd-group
- 
-Atributos obrigatórios
- 1. xml:lang
- 
-Ocorre (Quando houver <kwd-group>)
- Uma ou mais vezes
- 
-<funding-group>
---------------
- 
-Somente quando há número de contrato explicitado no artigo, os dados de financiamento devem ser especificados com <funding-group> sempre dentro de <front>. Obrigatoriamente esta tag deve ser inserida acima da tag de <counts>.
- 
-.. code-block:: xml
- 
-     <funding-group>           
-       Tags de financiamento...
-    </funding-group>
- 
-A informação de financiamento pode ocorrer em:
-- *notas de rodapé <fn>*
-- *agradecimentos <ack>*
- 
-.. note::<funding-group> deve ser inserido logo após as palavras-chave.
- 
-Aparece em
- 1. article/front/article-meta
- 
-Ocorre
- Zero ou uma vez
- 
-<award-group>
-^^^^^^^^^^^^^
-Um artigo pode ter diversos financiadores. Cada grupo de dados de financiamento será identificado pela tag <award-group>.
- 
+^^^^^^^^^^^
 
 Aparece em
- 1. article/front/article-meta/funding-group
+  :ref:`elemento-permissions`
  
 Ocorre
- Zero ou mais vezes
+  Zero ou uma vez
+
+
+É possível além de :ref:`elemento-license` acrescentar outras informações 
+de direitos autorais através de duas tags, são elas:
+ 
+* ``<copyright-statement>`` para identificar a instituição a quem pertence 
+  os direitos. Normalmente a informação descrita aqui vem junto com o 
+  símbolo de "copyright".
+* ``<copyright-year>`` para identificar o ano do direito autoral.
+ 
+Exemplo:
+ 
+.. code-block:: xml
+ 
+    ...
+    <article-meta>
+        ...
+        <permissions>
+            <copyright-statement>&#x00A9; 2013 Elsevier Editora Ltda.</copyright-statement>
+            <copyright-year>2013</copyright-year>
+            <license license-type="open-access" 
+                     xlink:href="http://creativecommons.org/licenses/by/4.0/">
+                <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License, which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+            </license>
+        </permissions>
+        ...
+    </article-meta>
+    ...
+ 
+ 
+.. _elemento-abstract:
+
+<abstract>
+----------
+
+Aparece em
+  :ref:`elemento-article-meta`
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+Tag que identifica o resumo do artigo e não deve conter informação de 
+atributo ``@xml:lang``. Embora em via de regra esse elemento ocorra 
+zero ou mais vezes, ele se faz obrigatório quando ``<article>`` for declarado
+com o atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
+
+Os resumos apresentados nos artigos publicados na SciELO normalmente 
+apresentam-se em dois formatos:
+ 
+* Estruturado: Quando possui seções 
+  (Ex.: Introdução, Objetivos, Métodos e Resultado). Cada grupo apresentado 
+  no resumo será identificado como seção e cada seção terá seu título.
+ 
+  Exemplo:
+   
+  .. code-block:: xml
+
+      ...
+      <article-meta>
+          ...
+          <abstract>
+              <sec>
+                  <title>Objetivo</title>
+                  <p>Verificar a sensibilidade e especificidade das curvas de fluxo-volume na detecção de obstrução da via aérea central (OVAC), e se os critérios qualitativos e quantitativos da curva se relacionam com a localização, o tipo e o grau de obstrução.</p>
+              </sec>
+              <sec>
+                  <title>Métodos</title>
+                  <p>Durante quatro meses foram selecionados, consecutivamente, indivíduos com indicação para broncoscopia. Todos efetuaram avaliação clínica, preenchimento de escala de dispneia, curva de fluxo-volume e broncoscopia num intervalo de uma semana. Quatro revisores classificaram a morfologia da curva sem conhecimento dos dados quantitativos, clínicos e broncoscopicos. Um quinto revisor averiguou os critérios morfológicos e quantitativos.</p>
+              </sec>        
+          </abstract>
+          ...
+      </article-meta>
+      ...
+
+* Simples: Quando apresenta de forma sucinta os principais pontos do 
+  texto sem a divisão por seções. 
+ 
+  Exemplo:
+ 
+  .. code-block:: xml
+   
+      ...
+      <article-meta>
+          ...
+          <abstract>
+              <p>Verificar a sensibilidade e especificidade das curvas de fluxo-volume na detecção de obstrução da via aérea central (OVAC), e se os critérios qualitativos e quantitativos da curva se relacionam com a localização, o tipo e o grau de obstrução. Métodos: Durante quatro meses foram selecionados, consecutivamente, indivíduos com indicação para broncoscopia. Todos efetuaram avaliação clínica, preenchimento de escala de dispneia, curva de fluxo-volume e broncoscopia num intervalo de uma semana. Quatro revisores classificaram a morfologia da curva sem conhecimento dos dados quantitativos, clínicos e broncoscopicos. Um quinto revisor averiguou os critérios morfológicos e quantitativos.</p>
+          </abstract>
+          ...
+      </article-meta>
+      ...
+     
+ 
+.. _elemento-trans-abstract:
+
+<trans-abstract>
+----------------
+
+Aparece em
+  :ref:`elemento-article-meta`
+ 
+Atributos obrigatórios
+  1. xml:lang
+ 
+Ocorre
+  Zero ou mais vezes
+ 
+Esta tag deve conter o resumo traduzido do artigo, podendo apresentar os 
+formatos simples ou estruturado, da mesma maneira que o elemento :ref:`elemento-abstract`. 
+Deve ser inserida imediatamente após :ref:`elemento-abstract` e obrigatoriamente 
+deve conter o atributo ``@xml:lang``.
+ 
+ 
+.. _elemento-kwd-group:
+
+<kwd-group>
+-----------
+
+Aparece em
+  :ref:`elemento-article-meta`
+ 
+Atributos obrigatórios
+  1. xml:lang
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+Identifica o grupo de palavras-chave do artigo por idioma. Obrigatoriamente deve 
+conter o atributo ``@xml:lang``.
+ 
+.. code-block:: xml
+ 
+    ...
+    <article-meta>
+        ...
+        <kwd-group xml:lang="pt">
+            <kwd>Broncoscopia</kwd>
+        </kwd-group>
+        ...
+    </article-meta>
+    ...
+ 
+ 
+.. _elemento-kwd:
+
+<kwd>   
+^^^^^
+
+Aparece em
+  :ref:`elemento-kwd-group`
+ 
+Atributos obrigatórios
+  1. xml:lang
+ 
+Ocorre
+  Uma ou mais vezes
+
+
+Esta tag é inserida obrigatoriamente dentro da tag :ref:`elemento-kwd-group` e 
+identifica cada palavra-chave individualmente.
+ 
+Exemplo:
+
+.. code-block:: xml
+ 
+    ...
+    <article-meta>
+        ...
+        <kwd-group xml:lang="pt">
+            <kwd>Broncoscopia</kwd>
+            <kwd>Curvas de fluxo-volume expiratório máximo</kwd>
+            <kwd>sensibilidade e especificidade</kwd>
+            <kwd>Neoplasias pulmonares</kwd>    
+        </kwd-group>
+        <kwd-group xml:lang="en">
+            <kwd>Bronchoscopy</kwd>
+            <kwd>Maximal expiratory flow-volume curves</kwd>
+            <kwd>Sensitivity and specificity</kwd>
+            <kwd>Lung neoplasms</kwd>
+        </kwd-group>
+        ...
+    </article-meta>
+    ...
+ 
+ 
+.. _elemento-funding-group:
+
+<funding-group>
+---------------
+ 
+Aparece em
+  :ref:`elemento-article-meta`
+ 
+Ocorre
+  Zero ou uma vez
+
+
+Somente quando há número de contrato explicitado no artigo. As informações de 
+financiamento podem aparecer nas tags :ref:`elemento-fn` ou :ref:`elemento-ack`.
+ 
+.. note:: ``<funding-group>`` deve ser inserida entre as tags 
+          :ref:`elemento-kwd-group` e :ref:`elemento-counts`.
+ 
+ 
+.. _elemento-award-group:
+
+<award-group>
+^^^^^^^^^^^^^
+
+Aparece em
+  :ref:`elemento-funding-group`
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+Um artigo pode ter diversos financiadores. Cada grupo de dados de 
+financiamento será identificado pela tag ``<award-group>``.
+ 
+
+.. _elemento-funding-source:
  
 <funding-source>
 ^^^^^^^^^^^^^^^^
-Esta tag deve ficar dentro de <award-group> e nela será especificado o órgão e/ou instituição financiadora:
- 
-.. code-block:: xml
- 
-     <funding-group>           
-          <award-group>
-                <funding-source>CNPq</funding-source>
-                <award-id>1685X6-7</award-id>
-          </award-group>
- </funding-group>
- 
+
 Aparece em
- 1. article/front/article-meta/funding-group/award-group
+  :ref:`elemento-award-group`
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
+especificado o órgão e/ou instituição financiadora:
+ 
+Exemplo:
+
+.. code-block:: xml
+ 
+    ...
+    <article-meta>
+        ...
+        <funding-group>           
+            <award-group>
+                <funding-source>CNPq</funding-source>
+                <award-id>1685X6-7</award-id>
+            </award-group>
+        </funding-group>
+        ...
+    </article-meta>
+    ...
+ 
+
+.. _elemento-award-id:
  
 <award-id>
 ^^^^^^^^^^
-Esta tag deve ficar dentro de <award-group> e nela será especificado
-o número de contrato estipulado pela instituição financiadora.
+
+Aparece em
+  :ref:`elemento-award-group`
  
+Ocorre
+  Zero ou mais vezes
+
+
+Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
+especificado o número de contrato estipulado pela instituição financiadora.
+ 
+Exemplo:
+
 .. code-block:: xml
  
-     Quando houver para uma instituição mais de um número de contrato:
- 
-.. code-block:: xml
- 
-     <funding-group>           
-          <award-group>
-                <funding-source>CNPQ</funding-source>
+    ...
+    <article-meta>
+        ...
+        <funding-group>           
+            <award-group>
+                <funding-source>CNPq</funding-source>
                 <award-id>00001</award-id>
-          </award-group>
-     <award-group>
-                <funding-source>CNPQ</funding-source>
+            </award-group>
+            <award-group>
+                <funding-source>CNPq</funding-source>
                 <award-id>00002</award-id>
-          </award-group>
-          <award-group>
+            </award-group>
+            <award-group>
                 <funding-source>FAPESP</funding-source>
                 <award-id>0000X</award-id>
-          </award-group>
-     </funding-group>
+            </award-group>
+        </funding-group>
+        ...
+    </article-meta>
+    ...
      
-.. note:: Nunca insira dois ou mais números de contrato de uma mesma instituição em um único <award-group>, cada número deverá pertencer a seu próprio grupo <award-group>.
+.. note:: Nunca insira mais de um número de contrato em um único 
+          :ref:`elemento-award-group`, mesmo quando for de uma mesma instituição. 
  
+ 
+.. _elemento-funding-statement:
+
+<funding-statement>
+^^^^^^^^^^^^^^^^^^^
+
 Aparece em
- 1. article/front/article-meta/funding-group/award-group
+  :ref:`elemento-funding-group`
  
 Ocorre
- Zero ou mais vezes
+  Zero ou uma vez
+
+
+Representa os dados de financiamento exatamente como apresentado na nota de rodapé.
+
+Está tag só deverá ser inserida quando as informações de financiamento forem 
+apresentadas em notas de rodapé (:ref:`elemento-fn`). 
  
-<funding-statement>
-^^^^^^^^^^^^^^^^^^
- 
-Está tag só deverá ser inserida quando as informações de financiamento forem apresentadas em notas de rodapé. Representa os dados de financiamento exatamente como foi apresentado na nota de rodapé.
- 
-*Exemplo informações de financiamento em nota de rodapé <fn>:*
+Exemplo:
  
 .. code-block:: xml
+    
+    <front>
+        ...
+        <article-meta>
+            ...
+            <kwd-group>
+                ...
+            </kwd-group>
+            <funding-group>           
+                <award-group>
+                    <funding-source>Brazilian Ministry of Health/Secretariat of Health Surveillance/Department of STD, AIDS and Viral Hepatitis</funding-source>
+                    <award-id>234/07</award-id>
+                </award-group>
+                <funding-statement>This study was supported by the Brazilian Ministry of Health/Secretariat of Health Surveillance/Department of STD, AIDS and Viral Hepatitis, through the Project of International Technical Cooperation AD/BRA/03/H34 between the Brazilian Government and the United Nations Office on Drugs and Crime (Process CSV 234/07).</funding-statement>
+            </funding-group>    
+            ...
+        </article-meta>
+        ...
+    </front>
+    ...
+    <back>
+        ...
+        <fn-group>
+            <fn id="fn01" fn-type="financial-disclosure">
+                <p>This study was supported by the Brazilian Ministry of Health/Secretariat of Health Surveillance/Department of STD, AIDS and Viral Hepatitis, through the Project of International Technical Cooperation AD/BRA/03/H34 between the Brazilian Government and the United Nations Office on Drugs and Crime (Process CSV 234/07).</p>
+            </fn>
+        </fn-group>
+        ...
+    </back>
  
-     <front>
-     <...>
-     </kwd-group>
-     <funding-group>           
-          <award-group>
-                <funding-source>CNPQ</funding-source>
-                <award-id>00001</award-id>
-          </award-group>
-     <award-group>
-                <funding-source>CNPQ</funding-source>
-                <award-id>00002</award-id>
-          </award-group>
-     <funding-statement>Dados de financiamento como foi apresentado na nota de rodapé</funding-statement>
-     </funding-group>    
-     <...>
-     <back>
-     <...>
-     <fn-group>
-          <fn fn-type="financial-disclosure">
-                <p>CNPQ contract 00001 e 00002</p>
-          </fn>
-     </fn-group>
-     </back>
+
+.. note:: CORRIGIR: Revisar essas notas! ********
+          No caso da nota de rodapé com informação de financiamento, sempre 
+          mantê-la dentro de ``<back>`` em :ref:`elemento-fn-group` com o 
+          tipo ``@fn-type="financial-disclosure"`` e em <front>.
  
-.. note:: No caso da nota de rodapé com informação de financiamento, sempre mantê-la dentro de <back> em <fn-group> com o tipo @fn-type "financial-disclosure" e em <front>.
+.. note:: Notas SEM NÚMERO DE CONTRATO, ficam apenas em ``<back>`` mas com 
+          tipo ``@fn-type="supported-by"``.
  
-.. note:: Notas SEM NÚMERO DE CONTRATO, ficam apenas em <back> mas com tipo @fn-type="supported-by".
- 
-Aparece em
- 1. article/front/article-meta/funding-group
- 
-Ocorre
- Zero ou uma vez
  
 <counts>
 --------
