@@ -4002,20 +4002,27 @@ Ocorre
 <back>
 ======
 
-O ``<back>`` é a parte final do documento que compreende lista de referências e demais
-dados referentes a pesquisa como: notas de rodapé, agradecimentos, apêndice,
-material suplementar, anexos e glossário.
- 
 Aparece em
   :ref:`elemento-article`
 
 Ocorre
   Zero ou uma vez
+
+O ``<back>`` é a parte final do documento que compreende lista de referências e demais
+dados referentes a pesquisa como: notas de rodapé, agradecimentos, apêndice,
+material suplementar, anexos e glossário.
  
 .. _elemento-ack:
 
 <ack>
 -----
+
+Aparece em
+  :ref:`elemento-back`
+
+Ocorre
+  Zero ou mais vezes
+
 A seção de agradecimentos quando aparecer no documento deve ser marcada dentro
 de :ref:`back`.
  
@@ -4026,24 +4033,20 @@ em :ref:`elemento-front`.
 Todo o conteúdo de agradecimentos deverá ser identificado com a tag ``<ack>``, 
 caso haja o título "Agradecimentos" ou "Acknowledgment" identifique-o com a tag
 :ref:`elemento-title`. Em ``<ack>`` é possível especificar um ou mais parágrafos
-:ref:`elemento-p`. 
- 
-Aparece em
-  :ref:`elemento-back`
-
-Ocorre
-  Zero ou mais vezes
+:ref:`elemento-p`.
 
 Exemplo:
  
 .. code-block:: xml
 
+    ...
     <back>
         <ack>
             <title>Agradecimentos</title>
             <p>Texto de agradecimentos, pode ou não conter dados de financiamento</p>
         </ack>
     </back>
+    ...
 
 .. note:: Não inserir a tag :ref:`elemento-sec` para identificação da seção
           agradecimentos.
@@ -4053,30 +4056,22 @@ Exemplo:
 <ref-list>
 ----------
 
- O conjunto de referências biliográficas de um artigo é representado pela tag
- ``<ref-list>``. Esse elemento deve conter, obrigatóriamente, três tags: 
- :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
- :ref:`elemento-element-citation`.
-
 Aparece em
   :ref:`elemento-element-back`
 
 Ocorre
   Zero ou mais vezes
 
+  O conjunto de referências biliográficas de um artigo é representado pela tag
+  ``<ref-list>``. Esse elemento deve conter, obrigatóriamente, três tags: 
+  :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
+  :ref:`elemento-element-citation`.
+
 .. _elemento-ref:
 
 <ref>
 -----
 
-Existem diversos tipos de referências e normas para apresentá-las num documento 
-textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e 
-:term:`OTHER`). Independente da norma usada, a representação dos elementos
-essenciais em xml de uma referência devem ser identificados corretamente.
- 
-Para composição de ``@id`` de referências utiliza-se o seguinte padrão:
-"B" + o número de ordem das referências. (Ver :ref:`regra-atribuicao-id`)
- 
 Aparece em
   :ref:`elemento-ref-list`
 
@@ -4086,17 +4081,27 @@ Atributo Obrigatório
 Ocorre
   (quando houver :ref:`elemento-ref-list`)
   Uma ou mais vezes
+
+Existem diversos tipos de referências e normas para apresentá-las num documento 
+textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e 
+:term:`OTHER`). Independente da norma usada, a representação dos elementos
+essenciais em xml de uma referência devem ser identificados corretamente.
  
+Para composição de ``@id`` de referências utiliza-se o seguinte padrão:
+"B" + o número de ordem das referências. (Ver :ref:`regra-atribuicao-id`) 
+
 Exemplo:
 
 .. code-block:: xml
  
+    ...
     <ref-list>
         <ref id="B01">
             <mixed-citation>referência inteira sem marcação</mixed-citation>
             <element-citation publication-type=“tipo da referência”>elementos marcados um a um</element-citation>
         </ref>
     </ref-list>
+    ...
   
 .. _elemento-mixed-citation:
 
@@ -4164,6 +4169,7 @@ Exemplos:
 
     <!-- Journal Sample -->
 
+    ...
     <ref-list>
         <ref id="B01">
             <label>1</label>
@@ -4197,10 +4203,13 @@ Exemplos:
             </element-citation>
         </ref>
     <ref-list> 
+    ...
+
 .. code-block:: xml
 
   <!-- Book Sample --> 
 
+    ...
     <ref-list>
         <ref id="B02">
             <label>2</label>
@@ -4225,11 +4234,13 @@ Exemplos:
             </element-citation>
         </ref>
      </ref-list>
+     ...
 
 .. code-block:: xml
  
     <!-- Book Chapter Sample --> 
 
+    ...
     <ref-list>
         <ref id="B03">
             <label>3</label>
@@ -4253,11 +4264,13 @@ Exemplos:
             </element-citation>
        </ref>
     </ref-list>
+    ...
  
 .. code-block:: xml
  
     <!-- Webpage Sample -->
 
+    ...
     <ref-list>
         <ref id="B04">
             <label>4</label>
@@ -4278,6 +4291,7 @@ Exemplos:
             </element-citation>
         </ref>
     </ref-list> 
+    ...
 
 .. note:: Quando a referência apresentar URL com texto (Disponível em: ou 
           Available from:) identificar conforme o exemplo acima.
@@ -4285,6 +4299,8 @@ Exemplos:
 .. code-block:: xml
 
     <!-- Report Sample -->
+
+    ...
     <ref-list>
         <ref id="B05">
               <label>5</label>
@@ -4303,12 +4319,13 @@ Exemplos:
               </element-citation>
         </ref>
     </ref-list> 
-*Para confproc (proceedings):*
+    ...
  
 .. code-block:: xml
  
     <!-- Confproc (proceedings) Sample -->
 
+    ...
     <ref-list>
         <ref id="B06">
             <label>6</label>
@@ -4336,11 +4353,13 @@ Exemplos:
             </element-citation>
         </ref>
     </ref-list> 
+    ...
 
 .. code-block:: xml
 
     <!-- Thesis Sample -->
  
+    ...
     <ref-list>
       <ref id="B07">
             <label>7</label>
@@ -4360,11 +4379,13 @@ Exemplos:
             </element-citation>
         </ref>
     </ref-list>
+    ...
 
 .. code-block:: xml
  
     <!-- Patent Sample -->
 
+    ...
     <ref-list>
         <ref id="B08">
             <label>8</label>
@@ -4386,11 +4407,13 @@ Exemplos:
             </element-citation>
         </ref>
     </ref-list>
+    ...
 
 .. code-block:: xml
  
     <!-- Software Sample -->
 
+    ...
     <ref-list>     
         <ref id="B09">
             <label>9</label>
@@ -4415,11 +4438,13 @@ Exemplos:
             </element-citation>
         </ref>
     <ref-list>
+    ...
 
 .. code-block:: xml
  
     <!-- Database Sample -->
 
+    ...
     <ref-list>
         <ref id="B10">
             <label>10</label>
@@ -4433,6 +4458,7 @@ Exemplos:
             </element-citation>
         </ref>
     </ref-list>
+    ...
  
 .. note:: Deve-se levar em consideração que muitas vezes as referências são
           contruídas de forma incorreta, o que dificulta a marcação de seus
@@ -4443,22 +4469,23 @@ Exemplos:
 <chapter-title>
 ^^^^^^^^^^^^^^^
 
-Identifica um capítulo de um documento numa referência.
-
 Aparece em
   :ref:`elemento-element-citation`
 
 Ocorre 
   Zero ou mais vezes
 
+Identifica um capítulo de um documento numa referência.
+
 Exemplo:
 
 .. code-block:: xml
-
+    
+    ...
     <element-citation>
         <chapter-title>Anjo da morte</chapter-title>
     </element-citation>
-
+    ...
 
 .. note:: Representa o capítulo 24 do livro ‘As feiticeiras de East End’.
 
@@ -4466,6 +4493,16 @@ Exemplo:
 
 <pub-id>
 ^^^^^^^^
+
+Aparece em
+  :ref:`elemento-element-citation`
+  
+
+Atributo Obrigatório 
+  ``@pub-id-type``
+
+Ocorre 
+  Zero ou mais vezes
 
 Identifica o tipo de identificador (id) de um documento em uma referência.
 Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
@@ -4484,32 +4521,20 @@ Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
 | other  | qualquer outro identificador                                     |
 +--------+------------------------------------------------------------------+
 
-Aparece em
-  :ref:`elemento-element-citation`
-  
-
-Atributo Obrigatório 
-  ``@pub-id-type``
-
-Ocorre 
-  Zero ou mais vezes
-
 Exemplo:
 
 .. code-block:: xml
 
+    ...
     <element-citation>
         <pub-id pub-id-type="pmid">15867408</pub-id>
     </element-citation>
+    ...
 
 .. _elemento-date-in-citation:
 
 <date-in-citation>
 ^^^^^^^^^^^^^^^^^^
-
-Esta tag identifica a data de citação em uma referência. Deve sempre possuir 
-o atributo ``@content-type`` com os tipos de data de acesso e data de
-atualização do documento.
 
 Aparece em
   :ref:`elemento-element-citation`
@@ -4520,30 +4545,34 @@ Atributo Obrigatório
 Ocorre 
   Zero ou mais vezes
 
-Exemplo:
+Esta tag identifica a data de citação em uma referência. Deve sempre possuir 
+o atributo ``@content-type`` com os tipos de data de acesso e data de
+atualização do documento.
+
+Exemplo 1:
 
 .. code-block:: xml
 
+    ...
     <element-citation>
         <date-in-citation content-type="access-date">cited 2007 Feb 21</date-in-citation>
     </element-citation>
+    ...
 
-Exemplo:
+Exemplo 2:
 
 .. code-block:: xml
 
+    ...
     <element-citation>
         <date-in-citation content-type="updated">2006 Jul 20</date-in-citation>
     </element-citation>
+    ...
 
 .. _elemento-comment:
 
 <comment>
 ^^^^^^^^^
-
-Tag pode servir para marcar alguma informações juntamente com uma URL 
-(ver tag :ref:`elemento-ext-link`)e também para identificar dados que não
-possuem tagueamento específico em uma referência.
 
 Aparece em
   :ref:`elemento-element-citation`
@@ -4551,20 +4580,24 @@ Aparece em
 Ocorre 
   Zero ou mais vezes
 
+Tag pode servir para marcar alguma informações juntamente com uma URL 
+(ver tag :ref:`elemento-ext-link`)e também para identificar dados que não
+possuem tagueamento específico em uma referência.
+
 Exemplo:
 
 .. code-block:: xml
 
+    ...
     <element-citation>
         <comment>1 CD-ROM: color, 4 3/4 in.</comment> 
     </element-citation>
+    ...
 
 .. _elemento-conf-name
 
 <conf-name>
 ^^^^^^^^^^^
-Identifica o nome de uma conferência, congresso, reunião, palestra, seminário e
-etc mencionado em uma referência.
 
 Aparece em
   :ref:`elemento-element-citation`
@@ -4572,146 +4605,215 @@ Aparece em
 Ocorre 
  Zero ou mais vezes
 
+Identifica o nome de uma conferência, congresso, reunião, palestra, seminário e
+etc mencionado em uma referência.
+
 Exemplo:
 
-..code block::
+.. code-block:: xml
 
+    ...
     <element-citation>
         <conf-name>Proceedings of the 23rd International Summer School of Brain Research</conf-name>
     </element-citation>
+    ...
 
 .. _elemento-conf-loc
 
 <conf-loc>
 ^^^^^^^^^^
-Identifica o local, país, cidade, estado, província, e local físico como uma
-assembléia, anfiteatro e etc de uma conferência, congresso, reunião, palestra,
-seminário e etc mencionado em uma referência.
 
 Aparece em
   :ref:`elemento-element-citation`
   
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+Identifica o local, país, cidade, estado, província, e local físico como uma
+assembléia, anfiteatro e etc de uma conferência, congresso, reunião, palestra,
+seminário e etc mencionado em uma referência.
 
 Exemplo:
 
-..code block::
+.. code-block:: xml
 
+    ...
     <element-citation>
         <conf-loc>Dallas, TX</conf-loc>
     </element-citation>
+    ...
 
 .. _elemento-conf-date
 
 <conf-date>
 ^^^^^^^^^^^
-Trata-se de uma tag para identificar a data de uma conferência, evento e etc.
-Pode ser composta por um período por exemplo: 2003 Aug 25-29.
 
 Aparece em
   :ref:`elemento-element-citation`
   
 Ocorre 
- Zero ou mais vezes
+  Zero ou mais vezes
+
+Trata-se de uma tag para identificar a data de uma conferência, evento e etc.
+Pode ser composta por um período por exemplo: 2003 Aug 25-29.
 
 Exemplo:
 
-..code block::
+.. code-block:: xml
+
+    ...
     <element-citation>
         <conf-date>2002 Jul 28-Aug 2</conf-date>
     </element-citation>
+    ...
+
+.. _elemento-patent
 
 <patent>
 ^^^^^^^^
-Tag utilizada para identificar um número de patente. Deve possuir o atributo @country e nele deve ser atribuído o código do país de acordo com a Norma ISO 3166, com dois caracteres alfabéticos.
-
-Para consultar ao código do país consulte o link da norma ISO: https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
-
-**Exemplo de patente americana:**
-
-  ..code block::
-
-    <patent country="US">US 6,980,855</patent>
 
 Aparece em
-  1. article/back/ref-list/ref/element-citation
+  :ref:`elemento-element-citation`
   
 Atributo Obrigatório 
-  1. country
+  ``@country``
 
 Ocorre 
  Zero ou uma vez
 
+Tag utilizada para identificar um número de patente. Deve possuir o atributo 
+``@country`` e nele deve ser atribuído o código do país de acordo com a 
+Norma ISO 3166, com dois caracteres alfabéticos.
+
+Para consultar ao código do país consulte o link da norma ISO: https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
+
+Exemplo de patente americana:
+
+.. code-block:: xml
+
+    ...
+    <element-citation>
+        <patent country="US">US 6,980,855</patent>
+    </element-citation>
+    ...
+
+.. _elemento-fn-group
+
 <fn-group>
 ----------
-A tag de grupo de notas é um elemento de <back> e deve conter todo o grupo de notas de rodapé mencionadas no documento que não representem notas de autor, as quais deverão ser identificadas em <author-notes>. Pode possuir uma ou mais notas <fn>.
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-<fn-group>
-          <fn fn-type="supported-by" id="fn01">
-                <label>*</label>
-                     <p>Vivamus sodales fermentum lorem, consectetur mollis lacus sollicitudin quis</p>
-          </fn>
-<fn fn-type="presented-at" id="fn02">
-                <label>*</label>
-                     <p>Donec et urna sed orci volutpat sollicitudin. Vestibulum quis tempor lacus. Nunc cursus, mi sed auctor pellentesque, orci tellus tincidunt arcu, eu imperdiet augue ligula eget justo.</p>
-          </fn>
-</fn-group>
- 
+
 Aparece em
- 1. article/back
+ :ref:`elemento-back`
+
 Ocorre
  Zero ou uma vez
- 
-<fn>
-----
-Nota de rodapé representa um complemento ou um comentário explicativo do que está sendo citado no texto
- 
-As notas que devem ser consideradas para entrar como nota de rodapé de <back>, são quaisquer notas que não fazem nenhum tipo de referência aos **autores**, as quais deverão ser identificadas em <author-notes>.
- 
-Notas em <back> devem estar dentro de um grupo de notas de rodapé: <fn-group>. Os atributos de <fn> são: @fn-type e @id, esta última deve ser única para cada nota.
- 
-Para composição de @id de **notas** utiliza-se o seguinte padrão: "fn" + o número de ordem das notas. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** fn01... fn10, fn11;
- 
-Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, *, e etc) marque com a tag <label>. Essa tag de <label> não pode estar dentro de <p>.
 
-**Exemplo:**
+A tag de grupo de notas é um elemento de :ref:`elemento-back e deve conter todo
+o grupo de notas de rodapé mencionadas no documento que não representem notas de
+autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode
+possuir uma ou mais notas :ref:`elemento-fn`.
+ 
+Exemplo:
  
 .. code-block:: xml
- 
-     <fn-group>
-          <fn fn-type="supported-by" id="fn01">
+
+    ...
+    <back>
+        ...
+        <fn-group>
+            <fn fn-type="supported-by" id="fn01">
                 <label>*</label>
-                     <p>A pesquisa do artigo foi apoiada pelo SEBRAE.</p>
-          </fn>
-     </fn-group>
+                <p>Vivamus sodales fermentum lorem, consectetur mollis lacus sollicitudin quis</p>
+            </fn>
+            <fn fn-type="presented-at" id="fn02">
+                <label>*</label>
+                <p>Donec et urna sed orci volutpat sollicitudin. Vestibulum quis tempor lacus. Nunc cursus, mi sed auctor pellentesque, orci tellus tincidunt arcu, eu imperdiet augue ligula eget justo.</p>
+            </fn>
+        </fn-group>
+        ...
+    </back>
+    ...
  
-É possível ter quantas notas forem necessárias dentro da tag de grupo de notas <fn-group>.
+.. _elemento-fn
+
+<fn>
+^^^^
+
+Aparece em
+  :ref:`elemento-author-notes`,
+  :ref:`elemento-fn-group`
+
+Atributos obrigatórios
+  ``@fn-type``
  
-**Exemplo:**
+Corrigir:: Verificar as definições abaixo referente a ocorrencias do fn.
+
+Ocorre em front
+  Zero ou mais vezes
+
+Ocorre em back (quando houver <fn-group>)
+  Uma ou mais vezes
+
+Nota de rodapé representa um complemento ou um comentário explicativo do que 
+está sendo citado no texto.
+ 
+As notas que devem ser consideradas para entrar como nota de rodapé de
+:ref:`elemento-back`, são quaisquer notas que não fazem nenhum tipo de
+referência aos autores, as quais deverão ser identificadas em
+:ref:`elemento-author-notes`.
+ 
+Notas em :ref:`elemento-back` devem estar dentro de um grupo de notas de rodapé,
+:ref:`elemento-reffn-group`. Os atributos de :ref:`elemento-fn` são: ``@fn-type``
+e ``@id``, esta última deve ser única para cada nota.
+ 
+Para composição de ``@id`` de **notas** utiliza-se o seguinte padrão: "fn" + o 
+número de ordem das notas. (Ver Regra de atribuição de :ref:`regra-atribuicao-id`)
+ 
+Exemplo: 
+
+  fn01... fn10, fn11;
+ 
+Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, *, e etc)
+marque com a tag :ref:`elemento-label`. Essa tag de :ref:`elemento-label` não
+pode estar dentro de :ref:`elemento-p`.
+
+Exemplo:
  
 .. code-block:: xml
  
-     <fn-group>
-          <fn fn-type="financial-disclosure" id="fn01">
-                <label>1</label>
-                     <p>Declaração de financiamento: sim</p>
-          </fn>
-          <fn fn-type="presented-at" id="fn02">
-                <label>**</label>
-                     <p>Artigo foi apresentado na XVIII Conferência Internacional de Biblioteconomia 2014</p>
-          </fn>
-     </fn-group>
+    ...
+    <fn-group>
+        <fn fn-type="supported-by" id="fn01">
+            <label>*</label>
+            <p>A pesquisa do artigo foi apoiada pelo SEBRAE.</p>
+        </fn>
+    </fn-group>
+    ...
  
-Também é possível ver notas de rodapé mais simples sem etiqueta <label> ou identificação @id ou ambos.
+É possível ter quantas notas forem necessárias dentro da tag de grupo de notas 
+:ref:`elemento-fn-group`.
  
-**Exemplo:**
+Exemplo:
+ 
+.. code-block:: xml
+
+    ... 
+   <fn-group>
+      <fn fn-type="financial-disclosure" id="fn01">
+          <label>1</label>
+          <p>Declaração de financiamento: sim</p>
+      </fn>
+      <fn fn-type="presented-at" id="fn02">
+          <label>**</label>
+          <p>Artigo foi apresentado na XVIII Conferência Internacional de Biblioteconomia 2014</p>
+      </fn>
+   </fn-group>
+    ...
+
+Também é possível ver notas de rodapé mais simples sem etiqueta 
+:ref:`elemento-label` ou identificação ``@id`` ou ambos.
+ 
+Exemplo:
  
 .. code-block:: xml
  
@@ -4721,206 +4823,251 @@ Também é possível ver notas de rodapé mais simples sem etiqueta <label> ou i
           </fn>
      </fn-group>
  
-Os tipos de <fn> são:
+Os tipos permitirdos para o atributo ``@fn-type`` são:
  
-- **abbr:** representa abreviaturas de termos e nomes próprios utilizadas ao longo do texto. Caso esteja falando de abreviaturas de nomes dos autores, inserir nota em <author-notes> em <front>.
-- **com:** representa nota de algum tipo de comunicado relevante para a realização do artigo.
-- **financial-disclosure:** declaração de financiamento ou negação e aceitação de recursos recebidos em apoio à pesquisa em que um artigo é baseado. Serve também para informações de financiamento que possuem um número de contrato ou que só informam se "sim" ou "não" houve financiamento.
-- **supported-by:** indica que a pesquisa sobre a qual o artigo é baseado foi apoiada por alguma entidade, instituição ou pessoa física. Considerar neste tipo, informações de financiamento que não possuem números de contrato.
-- **presented-at:** indica que o artigo foi apresentado em algum evento científico.
-- **supplementary-material:** indica ou descreve o material suplementar do artigo.
-- **other:** especifica aquelas notas diferentes das relacionados acima. É possível também ter este tipo de nota em <author-notes> em <front>.
- 
-**Exemplos:**
++-------------------------+--------------------------------------------------+
+| Valor                   | Descrição                                        |
++=========================+==================================================+
+| abbr                    | representa abreviaturas de termos e nomes        |
+|                         | próprios utilizadas ao longo do texto. Caso      |
+|                         | esteja falando de abreviaturas de nomes dos      |
+|                         | autores, inserir nota em                         |
+|                         | :ref:`elemento-author-notes` em                  |
+|                         | :ref:`elemento-front`                            |
++-------------------------+--------------------------------------------------+
+| com                     | representa nota de algum tipo de comunicado      |
+|                         | relevante para a realização do artigo            |
++-------------------------+--------------------------------------------------+
+| financial-disclosure    | declaração de financiamento ou negação e         |
+|                         | aceitação de recursos recebidos em apoio às      |
+|                         | pesquisa em que um artigo é baseado. Serve também|
+|                         | para informações de financiamento que possuem    |
+|                         | um número de contrato ou que só informam se "sim"|
+|                         | ou "não" houve financiamento                     |
++-------------------------+--------------------------------------------------+
+| supported-by            | indica que a pesquisa sobre a qual o artigo é    |
+|                         | baseado foi apoiada por alguma entidade,         |
+|                         | instituição ou pessoa física. Considerar neste   |
+|                         | tipo, informações de financiamento que não       |
+|                         | possuem números de contrato                      |
++-------------------------+--------------------------------------------------+
+| presented-at            | indica que o artigo foi apresentado em algum     |
+|                         | evento científico                                |
++-------------------------+--------------------------------------------------+
+| supplementary-material  | indica ou descreve o material suplementar do     |
+|                         | artigo                                           |
++-------------------------+--------------------------------------------------+
+| other                   | especifica aquelas notas diferentes das          |
+|                         | relacionados acima. É possível também ter este   |
+|                         | tipo de nota em :ref:-`elemento-author-notes` em |
+|                         | :ref:`elemento-front                             |
++-------------------------+--------------------------------------------------+
+
+Exemplos:
  
 .. code-block:: xml
- 
-     <fn-group>
-          <fn fn-type="presented-at">
-                <label>1</label>
-                     <p>Artigo apresentado na primeira conferência SciELO 15 anos, realizada dia 25 de outubro de 2013.</p>
-          </fn>
-          <fn fn-type="financial-disclosure">
-                <label>2</label>
-                     <p>Trabalho foi financiado pelo CNPq / Contract: 012345X.</p>
-          </fn>
-          <fn fn-type="supported-by">
-                <label>*</label>
-                     <p>Este artigo teve apoio e parceria da Instituição, SciELO - Scientific Eletronic Library Online e da FAP/UNIFESP.</p>
-          </fn>
-     </fn-group>
- 
-Aparece em
- 1. article/front/article-meta/author-notes
- 2. article/back/fn-group 
 
-Atributos obrigatórios
- 1. fn-type
- 
-Ocorre em front
- Zero ou mais vezes
+    ... 
+    <fn-group>
+        <fn fn-type="presented-at">
+            <label>1</label>
+            <p>Artigo apresentado na primeira conferência SciELO 15 anos, realizada dia 25 de outubro de 2013.</p>
+        </fn>
+        <fn fn-type="financial-disclosure">
+            <label>2</label>
+            <p>Trabalho foi financiado pelo CNPq / Contract: 012345X.</p>
+        </fn>
+        <fn fn-type="supported-by">
+            <label>*</label>
+            <p>Este artigo teve apoio e parceria da Instituição, SciELO - Scientific Eletronic Library Online e da FAP/UNIFESP.</p>
+        </fn>
+    </fn-group>
+    ...
 
-Ocorre em back (quando houver <fn-group>)
- Uma ou mais vezes
- 
+.. _elemento-app-group
+
 <app-group>
 -----------
-Utilizado para indicar a presença de um apêndice ao documento. Para a marcação básica de um apêndice devemos levar em consideração duas tags importantes, a de grupo de apêndice <app-group> e de apêndice propriamente dito <app>. Obrigatoriamente deve ser inserido uma informação de etiqueta <label> em <app>.
 
-Para composição de @id de **apêndice** utiliza-se o seguinte padrão: "app" + o número de ordem do apêndice. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** app01... app10, app11;
- 
-**Exemplo de Apêndice com texto:**
- 
-.. code-block:: xml
- 
-     <app-group>
-     <app>
-          <label>Apêndice</label>
-     <p>Vivamus fermentum elit et pellentesque iaculis. Curabitur egestas rhoncus purus quis iaculis. Sed laoreet id leo eu tristique. Etiam hendrerit nibh in tincidunt mattis. Sed et volutpat nulla, eget semper tellus. Nullam imperdiet fringilla diam, nec mollis elit sagittis a. Nam euismod sagittis posuere.</p>
-     </app>
-     </app-group>
-
-
-**Exemplo de Apêndice com imagem (Pode ser imagem de figura, tabela, quadro, equação e etc):**
- 
-.. code-block:: xml
- 
-     <app-group>
-     <app id="app01">               
-     <label>Appendix 1</label>
-          <title>Questionnaire for SciELO</title>    
-     <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>         
-     </app>
-     </app-group>
- 
-**Exemplo de Apêndice com link externo (ext-link do tipo uri):**
- 
-.. code-block:: xml
- 
-     <app-group>
-     <app>                
-     <label>Appendix 1</label>
-      <p>Para mais informações <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">clique aqui</ext-link> para verificar o pdf.</p>                  
-     </app>
-     </app-group>
- 
-**Exemplo de Apêndice com tabela:**
- 
-.. code-block:: xml
- 
-     <app-group>
-     <app id="app01">
-     <label>Appendix</label>        
-          <table-wrap>
-                <label>Table 1</label>
-                     <caption>
-                     <title>Título da tabela</title>
-                     </caption>
-           <table frame="hsides" rules="all">
-                <colgroup width="XX%">
-                <col/>
-                <col/>
-                <col/>
-                </colgroup>
-                <thead>
-                <tr>
-                     <th style="background-color:#e5e5e5">xxxxx</th>
-                     <th style="background-color:#e5e5e5">xxxxx</th>
-                     <th style="background-color:#e5e5e5">xxxxxx</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                     <td align="center">xxxxx</td>
-                     <td align="center">xxxx</td>
-                     <td align="center">xxxx</td>
-                </tr>
-           </tbody>
-                </table>
-          </table-wrap>             
-     </app>
-     </app-group>
- 
-**Exemplo de Apêndice misto (figura mais tabela)**
- 
-.. code-block:: xml
- 
-     <app-group>
-     <app id="app01">               
-     <label>Appendix 1</label>
-          <title>Questionnaire for SciELO</title>    
-     <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>         
-     </app>
-     <app id="app02">
-<label>Appendix 2</label>      
-     <table-wrap>
-          <label>Supplementary Table S1</label>
-                <caption>
-                     <title>Título da tabela</title>
-                </caption>
-          <table frame="hsides" rules="all">
-                <colgroup width="XX%">
-                <col/>
-                <col/>
-                <col/>
-                </colgroup>
-                <thead>
-                <tr>
-                     <th style="background-color:#e5e5e5">xxxxx</th>
-                     <th style="background-color:#e5e5e5">xxxxx</th>
-                     <th style="background-color:#e5e5e5">xxxxxx</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                     <td align="center">xxxxx</td>
-                     <td align="center">xxxx</td>
-                     <td align="center">xxxx</td>
-                </tr>
-           </tbody>
-          </table>
-          </table-wrap>        
-     </app>
-     </app-group>
- 
-**Exemplo de Apêndice misto (texto mais figura)**
- 
-.. code-block:: xml
- 
-<app-group>
-     <app id="app01">               
-          <label>Appendix 1</label>
-      <title>Questionnaire for student inclusion</title>    
-     <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>
-    </app>     
-    <app id="app02">
-<label>Appendix 2</label>
-          <p>Pellentesque sollicitudin, purus nec ultricies tristique, purus nisi imperdiet enim, nec mollis augue odio sit amet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus ipsum non nisi faucibus suscipit. Cras ut venenatis tellus.</p>       
-     </app>
-</app-group>
- 
-**Exemplo de Apêndice com vídeo:**
-.. code-block:: xml
- 
-     <app-group>
-          <app>
-           <label>suplemento eletrônico</label>
-          <supplementary-material id="suppl01">
-          <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
-          </supplementary-material>
-          </app>
-     </app-group>
- 
 Aparece em
- 1. article/back
+  :ref:`elemento-back`
 
-Atributos obrigatório para <app>
- 1. id
+Atributos obrigatório 
+ ``@id``
  
 Ocorre
  Zero ou uma vez
+
+Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
+básica de um apêndice devemos levar em consideração duas tags importantes, a de
+grupo de apêndice :ref:`elemento-app-group` e de apêndice propriamente dito
+:ref:`elemento-app. Obrigatoriamente deve ser inserido uma informação de
+etiqueta :ref:`elemento-label` em :ref:`elemento-app`.
+
+Para composição de @id de **apêndice** utiliza-se o seguinte padrão: "app" + o
+número de ordem do apêndice. (Ver Regra de atribuição de :ref:`regra-atribuicao-id`)
+ 
+Exemplo:
+  
+  app01... app10, app11;
+ 
+Exemplo de Apêndice com texto:
+ 
+.. code-block:: xml
+ 
+    ...
+    <app-group>
+          <app>
+              <label>Apêndice</label>
+              <p>Vivamus fermentum elit et pellentesque iaculis. Curabitur egestas rhoncus purus quis iaculis. Sed laoreet id leo eu tristique. Etiam hendrerit nibh in tincidunt mattis. Sed et volutpat nulla, eget semper tellus. Nullam imperdiet fringilla diam, nec mollis elit sagittis a. Nam euismod sagittis posuere.</p>
+          </app>
+    </app-group>
+    ...
+
+
+Exemplo de Apêndice com imagem (Pode ser imagem de figura, tabela, quadro, equação e etc):
+ 
+.. code-block:: xml
+ 
+    ...
+    <app-group>
+        <app id="app01">               
+              <label>Appendix 1</label>
+              <title>Questionnaire for SciELO</title>    
+              <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>         
+        </app>
+    </app-group>
+    ...
+
+Exemplo de Apêndice com link externo (ext-link do tipo uri):
+ 
+.. code-block:: xml
+ 
+     <app-group>
+        <app>                
+            <label>Appendix 1</label>
+            <p>Para mais informações <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">clique aqui</ext-link> para verificar o pdf.</p>
+        </app>
+     </app-group>
+ 
+Exemplo de Apêndice com tabela:
+ 
+.. code-block:: xml
+ 
+    ...
+    <app-group>
+      <app id="app01">
+      <label>Appendix</label>        
+            <table-wrap>
+              <label>Table 1</label>
+              <caption>
+                  <title>Título da tabela</title>
+              </caption>
+              <table frame="hsides" rules="all">
+                  <colgroup width="XX%">
+                      <col/>
+                      <col/>
+                      <col/>
+                  </colgroup>
+                  <thead>
+                      <tr>
+                           <th style="background-color:#e5e5e5">xxxxx</th>
+                           <th style="background-color:#e5e5e5">xxxxx</th>
+                           <th style="background-color:#e5e5e5">xxxxxx</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                           <td align="center">xxxxx</td>
+                           <td align="center">xxxx</td>
+                           <td align="center">xxxx</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </table-wrap>             
+      </app>
+    </app-group>
+    ...
+
+Exemplo de Apêndice misto (figura mais tabela)
+ 
+.. code-block:: xml
+
+    ... 
+    <app-group>
+        <app id="app01">               
+            <label>Appendix 1</label>
+            <title>Questionnaire for SciELO</title>    
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>         
+        </app>
+        <app id="app02">
+            <label>Appendix 2</label>      
+            <table-wrap>
+                <label>Supplementary Table S1</label>
+                <caption>
+                    <title>Título da tabela</title>
+                </caption>
+                <table frame="hsides" rules="all">
+                    <colgroup width="XX%">
+                        <col/>
+                        <col/>
+                        <col/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th style="background-color:#e5e5e5">xxxxx</th>
+                            <th style="background-color:#e5e5e5">xxxxx</th>
+                            <th style="background-color:#e5e5e5">xxxxxx</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="center">xxxxx</td>
+                            <td align="center">xxxx</td>
+                            <td align="center">xxxx</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table-wrap>        
+        </app>
+    </app-group>
+    ...
+ 
+Exemplo de Apêndice misto (texto mais figura):
+ 
+.. code-block:: xml
+ 
+    ...
+    <app-group>
+        <app id="app01">               
+            <label>Appendix 1</label>
+            <title>Questionnaire for student inclusion</title>    
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>
+        </app>     
+        <app id="app02">
+            <label>Appendix 2</label>
+            <p>Pellentesque sollicitudin, purus nec ultricies tristique, purus nisi imperdiet enim, nec mollis augue odio sit amet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus ipsum non nisi faucibus suscipit. Cras ut venenatis tellus.</p>       
+        </app>
+    </app-group>
+    ...
+ 
+Exemplo de Apêndice com vídeo:
+
+.. code-block:: xml
+ 
+    ...
+    <app-group>
+          <app>
+              <label>suplemento eletrônico</label>
+              <supplementary-material id="suppl01">
+              <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
+              </supplementary-material>
+          </app>
+    </app-group>
+    ...
+ 
+
+ .. _elemento-glossary
  
 <glossary>
 ----------
