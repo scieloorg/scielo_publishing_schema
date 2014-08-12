@@ -376,7 +376,7 @@ de artigos, os valores que podem ser utilizados são:
 |                    | como comentário, comentário editorial, ponto de vista,   |
 |                    | etc.                                                     |
 +--------------------+----------------------------------------------------------+
-| brief-communication| comunicação breve - compreende breves relatos de         |
+| brief-report       | comunicação breve - compreende breves relatos de         |
 |                    | experiências, trabalhos ou projetos de investigação      |
 |                    | em andamento.                                            |
 +--------------------+----------------------------------------------------------+
