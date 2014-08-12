@@ -2976,129 +2976,197 @@ Ocorre
 O corpo textual do artigo pode ser constituído por seções. 
 Cada uma delas possui um elemento :ref:`elemento-title` seguido de um ou mais 
 :ref:`elemento-p`.
- 
-Quando seus títulos forem:
-- **cases:** relatos/estudos de caso
-- **conclusions:** conclusões/considerações finais/Final Remarkes
-- **discussion:** discussões
-- **intro:** introdução/sinopse
-- **materials:** materiais
-- **methods:** metodologia/método
-- **results:** resultados
-- **supplementary-material:** material suplementar
- 
-Terá que ser inserido um atributo @sec-type com o valor correspondente.
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-     <sec sec-type="intro">
-     <title>Introduction</title>
-     <p>Central airway obstruction (CAO) is a pathological process that leads to airflow limitation at the level of the glottis, subglottis, trachea, and main bronchi. Correct diagnosis and treatment of CAO is an area of interest and concern for health professionals,given that this disease has the potential to cause
-significant morbidity and mortality.</p>
-     </sec>
- 
-No caso de seções combinadas, ou seja, quando o título for composto por mais de um desses itens, o valor do atributo @sec-type deverá corresponder a cada um respectivamente, separados pelo caractere  `|` (pipe).
+
+:term:`Seções de primeiro nível` podem ser qualificadas de acordo com seu tipo por 
+meio do atributo ``@sec-type``, cujos valores possíveis são:
+
++------------------------+------------------------------------------------+
+| Valor                  | Descrição                                      |
++========================+================================================+
+| cases                  | relatos/estudos de caso                        |
++------------------------+------------------------------------------------+
+| conclusions            | conclusões/considerações finais/Final Remarkes |
++------------------------+------------------------------------------------+
+| discussion             | discussões                                     |
++------------------------+------------------------------------------------+
+| intro                  | introdução/sinopse                             |
++------------------------+------------------------------------------------+
+| materials              | materiais                                      |
++------------------------+------------------------------------------------+
+| methods                | metodologia/método                             |
++------------------------+------------------------------------------------+
+| results                | resultados                                     |
++------------------------+------------------------------------------------+
+| supplementary-material | material suplementar                           |
++------------------------+------------------------------------------------+
+
  
 Exemplo:
  
 .. code-block:: xml
  
-     <sec sec-type="materials|methods">
-     <title>Materials and Methods</title>
-       <p>Between November of 2009 and April of 2010, we conducted a prospective, observational, cross-sectional study. The target population consisted of patients for whom bronchoscopy was clinically indicated. The patients were consecutively selected for the sample on the...</p>
-</sec>
+    ...
+    <body>
+        ...
+        <sec sec-type="intro">
+            <title>Introduction</title>
+            <p>Central airway obstruction (CAO) is a pathological process that leads to airflow limitation at the level of the glottis, subglottis, trachea, and main bronchi. Correct diagnosis and treatment of CAO is an area of interest and concern for health professionals,given that this disease has the potential to cause significant morbidity and mortality.</p>
+            ...
+        </sec>
+        ...
+    </body>
+    ...
  
-Estas seções podem ser composta por uma ou mais **subseções**, neste caso, cada subseção deverá ser marcada com tag <sec> dentro da seção maior.
+
+No caso de seções combinadas, ou seja, quando o título for composto por mais 
+de um desses itens, o valor do atributo ``@sec-type`` deverá corresponder a 
+cada um respectivamente, separados pelo caractere ``|``.
  
-**Exemplo:**
- 
-.. code-block:: xml
- 
-     <sec sec-type="methods">
-          <title>Methodology</title>
-                <sec>
-                     <title>Methodology in Science</title>
-                        <p>Each patient underwent a brief physical
-examination, and the degree of dyspnea was determined by the Medical Research Council (MRC) 5-point scale.</p>
-     </sec>
-</sec>
- 
-No caso da seção não possuir nenhum tipo padrão pode-se inserir a tag sem o atributo @sec-type. Exemplo:
+Exemplo:
  
 .. code-block:: xml
  
-<sec>
-          <title>Biologia Marinha</title>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra lacinia orci at adipiscing.</p>
-     <sec>
+    ...
+    <body>
+        ...
+        <sec sec-type="materials|methods">
+            <title>Materials and Methods</title>
+            <p>Between November of 2009 and April of 2010, we conducted a prospective, observational, cross-sectional study. The target population consisted of patients for whom bronchoscopy was clinically indicated. The patients were consecutively selected for the sample on the...</p>
+            ...
+        </sec>
+        ...
+    </body>
+    ...
+
  
-Pode possuir um @id para criar referência cruzada <xref> com informações do texto.
+As seções podem ser compostas por uma ou mais :term:`subseções`, neste caso, 
+cada :term:`subseção` deverá ser marcada com tag ``<sec>`` dentro da seção maior.
  
-**Exemplo:**
+Exemplo:
+ 
+.. code-block:: xml
+
+    ...
+    <body>
+        ...
+        <sec sec-type="methods">
+            <title>Methodology</title>
+            <sec>
+                <title>Methodology in Science</title>
+                <p>Each patient underwent a brief physical examination, and the degree of dyspnea was determined by the Medical Research Council (MRC) 5-point scale.</p>
+                ...
+            </sec>
+        </sec>
+        ...
+    </body>
+    ...
+
+ 
+No caso da seção não possuir nenhum tipo padrão pode-se inserir a tag sem o 
+atributo ``@sec-type``. 
+
+Exemplo:
  
 .. code-block:: xml
  
-     <sec sec-type="methods" id=”sec01”>
+    ...
+    <body>
+        ...
+        <sec>
+            <title>Biologia Marinha</title>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra lacinia orci at adipiscing.</p>
+            ...
+        <sec>
+        ...
+    </body>
+    ...
+
  
-Para composição de @id de **seçao** utiliza-se o seguinte padrão: "sec" + o número de ordem da seção. (Ver Regra de atribuição de @id)
+Pode possuir o atributo ``@id`` para criar referência cruzada 
+:ref:`elemento-xref` com informações do texto.
  
-**Exemplo:** sec01... sec10, sec11;
+Exemplo:
  
+.. code-block:: xml
+
+    ...
+    <body>
+        ...
+        <sec sec-type="methods" id=”sec01”>
+            <title>Methodology</title>
+            <p>Each patient underwent a brief physical examination, and the degree of dyspnea was determined by the Medical Research Council (MRC) 5-point scale.</p>
+            ...
+        </sec>
+        ...
+    </body>
+    ...
+ 
+Para a composição do atributo ``@id``, utiliza-se o seguinte padrão: 
+``sec`` + o número de ordem da seção. (Ver :ref:`regra-atribuicao-id`)
+ 
+ 
+.. _disp-formula:
      
 <disp-formula>
 --------------
-Tag para identificar equações em parágrafos no texto, podem ser apresentadas como imagem ou codificadas e serão identificadas pela tag <disp-formula>. Se a equação for capturada como imagem, deve-se incluir o nome do arquivo em <graphic>:
- 
-Para composição de @id de **equações** utiliza-se o seguinte padrão: "e" + o número de ordem da equação. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** e01... e10, e11;
- 
-.. code-block:: xml
- 
-     <p>was the reference electrode.
-The Eh measurements were recalculated to the standard hydrogen potential (Standard Hydrogen Electrode - SHE), using the following <xref ref-type="disp-formula" rid="e01">equation 1</xref>
-(in mV):</p>
-     <disp-formula id="e01">
-      <graphic xlink:href="1234-5678-rctb-45-05-0110-e01.tif"/>
-     </disp-formula>
- 
-**Exemplo**: para codificar  σˆ2*
- 
-.. code-block:: xml
- 
-     <xref ref-type="disp-formula" rid="e07">Equation 3</xref>
-     <disp-formula>
-     <mml:math id="e03">
-      <mml:mrow>
-       <mml:msup>
-         <mml:mover accent="true">
-         <mml:mi>σ</mml:mi>
-           <mml:mo>ˆ</mml:mo>
-       </mml:mover>
-       <mml:mn>2</mml:mn>
-       </mml:msup>
-        </mml:mrow>
-        </mml:math>
-     </disp-formula>
- 
+
 Aparece em
- 1. article/body
- 2. article/body/p
- 3. article/body/sec/p  
- 4. article/body/p/table-wrap/thead/tr/th
- 5. article/body/p/table-wrap/tbody/tr/td
- 6. article/body/sec/tile/p/table-wrap/thead/tr/th
- 7. article/body/sec/tile/p/table-wrap/tbody/tr/td
- 8. article/back/app-group/app
- 9. article/back/app-group/app/supplementary-material
+  :ref:`elemento-body`,
+  :ref:`elemento-p`,
+  ``<th>``,
+  ``<td>``,
+  :ref:`elemento-app`,
+  :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
- 1. @id
+  1. id
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+Tag para identificar equações em parágrafos no texto, podem ser 
+apresentadas como imagem ou codificadas e serão identificadas pela tag 
+``<disp-formula>``. Se a equação for capturada como imagem, deve-se incluir o 
+nome do arquivo em :ref:`elemento-graphic`:
+ 
+Para composição de ``@id`` utiliza-se o seguinte padrão: ``e`` + o número de 
+ordem da equação. (Ver :ref:`regra-atribuicao-id`)
+ 
+Exemplo:
+
+.. code-block:: xml
+ 
+    ...        
+    <p>The Eh measurements were recalculated to the standard hydrogen potential (Standard Hydrogen Electrode - SHE), using the following <xref ref-type="disp-formula" rid="e01">equation 1</xref>(in mV):</p>
+    <disp-formula id="e01">
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-e01.tif"/>
+    </disp-formula>
+    ...
+ 
+Exemplo:
+ 
+.. code-block:: xml
+ 
+    <!-- codificar: σˆ2 -->
+
+    ... 
+    <xref ref-type="disp-formula" rid="e07">Equation 3</xref>
+    <disp-formula>
+        <mml:math id="e03">
+            <mml:mrow>
+                <mml:msup>
+                    <mml:mover accent="true">
+                        <mml:mi>σ</mml:mi>
+                        <mml:mo>ˆ</mml:mo>
+                    </mml:mover>
+                    <mml:mn>2</mml:mn>
+                </mml:msup>
+            </mml:mrow>
+        </mml:math>
+    </disp-formula>
+    ...
+ 
  
 <inline-graphic>
 ----------------
