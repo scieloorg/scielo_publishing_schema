@@ -2898,51 +2898,84 @@ Exemplo:
           tipo ``@fn-type="supported-by"``.
  
  
+.. _elemento-counts:
+
 <counts>
 --------
-Na elaboração do XML alguns dados são importantes para determinar a quantidade de elementos presentes no artigo, por isso utiliza-se a tag <counts> para contabilizar o número exato de tabelas, figuras, referências, equações e páginas presentes no arquivo. Esta tag deve ser inserida como último item de <article-meta>.
- 
-.. code-block:: xml
- 
-     <counts>
-          <fig-count count="**número de figuras no artigo**"/>
-          <table-count count="**número de tabelas no artigo**"/>
-          <equation-count count="**número de equações do artigo**"/>
-          <ref-count count="**número de referências no artigo**"/>      
-          <page-count count="**número de páginas do artigo**"/>
-   </counts>
- 
-.. note:: A sequência das tags de “count” deve ser exatamente a mencionada nos exemplos citados, sua ordem é mandatória.
- 
-.. code-block:: xml
- 
-     <counts>
-          <fig-count count="5"/>
-<table-count count="3"/>
-<equation-count count="10"/>
-<ref-count count="26"/>
-<page-count count="6"/>
-  </counts>
- 
+
 Aparece em
- 1. article/front/article-meta
+  :ref:`elemento-article-meta`
  
 Ocorre
- Uma vez
+  Uma vez
+
+
+Na elaboração do XML alguns dados são importantes para determinar a 
+quantidade de elementos presentes no artigo, por isso utiliza-se a tag 
+``<counts>`` para contabilizar o número exato de tabelas, figuras, 
+referências, equações e páginas presentes no arquivo. Esta tag deve ser 
+inserida como último item de :ref:`elemento-article-meta`.
  
+Os elementos que identificam os totais são:
+
+* ``<fig-count>``: Total de figuras no artigo
+* ``<table-count>``: Total de tabelas no artigo
+* ``<equation-count>``: Total de equações do artigo
+* ``<ref-count>``: Total de referências no artigo
+* ``<page-count>``: Total de páginas do artigo
+ 
+Exemplo:
+
+.. code-block:: xml
+ 
+    ...
+    <article-meta>
+        ...
+        <counts>
+            <fig-count count="5"/>
+            <table-count count="3"/>
+            <equation-count count="10"/>
+            <ref-count count="26"/>
+            <page-count count="6"/>
+        </counts>
+    </article-meta>
+    ...
+ 
+.. note:: A ordem dos elementos é importante.
+.. note:: No caso de o documento não apresentar alguns dos elementos contabilizados,
+          o valor dos respectivos atributos ``@count`` deve ser ``0``. e.g.
+          ``<equation-count count="0"/>``.
+
+ 
+.. _elemento-body:
+
 <body>
 ======
+
+Aparece em
+  :ref:`elemento-article`
+
+Ocorre
+  Uma vez
+
+
 O body compreende o conteúdo e desenvolvimento do artigo.
  
-Aparece em
- 1. article/body
-Ocorre
- Uma vez
  
+.. _elemento-sec:
+
 <sec>
 -----
+Aparece em
+  :ref:`elemento-body`
+
+Ocorre
+  Zero ou mais vezes
+
  
-O corpo textual do artigo pode ser constituído por seções. Cada uma delas possui um elemento <title> seguido de um ou mais <p>.
+O corpo textual do artigo pode ser constituído por seções. 
+Cada uma delas possui um elemento :ref:`elemento-title` seguido de um ou mais 
+:ref:`elemento-p`.
  
 Quando seus títulos forem:
 - **cases:** relatos/estudos de caso
@@ -3013,11 +3046,6 @@ Para composição de @id de **seçao** utiliza-se o seguinte padrão: "sec" + o 
  
 **Exemplo:** sec01... sec10, sec11;
  
-Aparece em
- 1. body
-
-Ocorre
- Zero ou mais vezes
      
 <disp-formula>
 --------------
