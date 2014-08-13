@@ -306,7 +306,7 @@ Sendo:
 * ISSN: Se houver mais de um, dar preferência ao impresso.
 * Acrônimo: Sigla do periódico na SciELO
 * Volume: Volume do fascículo
-* Número: Número e/ou suplemento do fascículo (tratar como “n” e “s”)
+* Número: Número e/ou suplemento do fascículo (tratar como "n" e "s")
 * Paginação: Manter a informação da primeira página contendo no mínimo 4 dígitos
 * Nome da imagem: Prefixo com uma numeração sequencial 
   (ver :ref:`regra-atribuicao-id`)
@@ -317,7 +317,7 @@ Exemplo:
  
 
 .. note:: Cada item deve ser separado por um hifén e obrigatoriamente deve-se 
-          manter visível a extensão da imagem após o “ponto”, optando 
+          manter visível a extensão da imagem após o "ponto", optando 
           preferencialmente por imagens em formato *tif*.
  
 
@@ -2215,7 +2215,7 @@ acrescentando-se a expressão et al. que significa "entre outros".
 Esta informação aparece primordialmente em referências. 
 
 .. note:: Quando a informação aparecer no texto da referência, não é 
-          necessário envolver o texto “et al.” com a tag <etal></etal>, 
+          necessário envolver o texto "et al." com a tag <etal></etal>, 
           basta inserir a tag na forma ``<etal/>``.
 
 
@@ -3092,7 +3092,7 @@ Exemplo:
     ...
     <body>
         ...
-        <sec sec-type="methods" id=”sec01”>
+        <sec sec-type="methods" id="sec01">
             <title>Methodology</title>
             <p>Each patient underwent a brief physical examination, and the degree of dyspnea was determined by the Medical Research Council (MRC) 5-point scale.</p>
             ...
@@ -3167,125 +3167,137 @@ Exemplo:
     </disp-formula>
     ...
  
+
+.. _elemento-inline-graphic:
  
 <inline-graphic>
 ----------------
  
-Também representa uma tag para identificar equações que estejam posicionadas em linha, ou seja, em meio a um parágrafo.
+Aparece em
+  :ref:`elemento-product`, 
+  :ref:`elemento-body`,
+  :ref:`elemento-p`,
+  :ref:`elemento-sec`,
+  ``th``,
+  ``td``
  
-Para composição de @id de **equações** utiliza-se o seguinte padrão: "e" + o número de ordem da equação. (Ver Regra de atribuição de @id)
+Ocorre
+  Zero ou mais vezes
+
+
+Também representa uma tag para identificar equações que estejam 
+posicionadas em linha, ou seja, em meio a um parágrafo.
  
-**Exemplo:** e01... e10, e11;
+Para composição de ``@id`` utiliza-se o seguinte padrão: 
+``e`` + o número de ordem da equação. (Ver :ref:`regra-atribuicao-id`)
  
+Exemplo:
+
 .. code-block:: xml
  
-**Exemplo:**
- 
-<p>We also used an enrichment factor for surface
-waters (EF<sub>w</sub>) based on the equation:<inline-graphic xlink:href="1234-5678-rctb-45-05-0110-e01.tif"/>. The EF<sub>s</sub> and EF<sub>w</sub> quantified the concentration of the element of interest (C<sub>i</sub>) in the sample, in relation to the (natural) geochemical background.</p>
- 
-No caso de equações codificadas, deve-se observar as orientações de codificação recomendada pela W3C em linguagem MathML (http://www.w3.org/TR/MathML3/), sendo o elemento base <mml:math>.
+    ...
+    <p>We also used an enrichment factor for surface waters (EF<sub>w</sub>) based on the equation:<inline-graphic xlink:href="1234-5678-rctb-45-05-0110-e01.tif"/>. The EF<sub>s</sub> and EF<sub>w</sub> quantified the concentration of the element of interest (C<sub>i</sub>) in the sample, in relation to the (natural) geochemical background.</p>
+    ...
+
+No caso de equações codificadas, deve-se observar as orientações de 
+codificação recomendada pela :term:`W3C` em linguagem :term:`MathML` 
+(http://www.w3.org/TR/MathML3/), sendo o elemento base ``<mml:math>``.
  
 **Exemplo**: para codificar  σˆ2*
  
 .. code-block:: xml
  
-     <inline-formula>
-     <mml:math>
-      <mml:mrow>
-       <mml:msup>
-         <mml:mover accent="true">
-         <mml:mi>σ</mml:mi>
-           <mml:mo>ˆ</mml:mo>
-       </mml:mover>
-       <mml:mn>2</mml:mn>
-       </mml:msup>
-        </mml:mrow>
+    <!-- codificar: σˆ2 -->
+
+    ... 
+    <inline-formula>
+        <mml:math id="e03">
+            <mml:mrow>
+                <mml:msup>
+                    <mml:mover accent="true">
+                        <mml:mi>σ</mml:mi>
+                        <mml:mo>ˆ</mml:mo>
+                    </mml:mover>
+                    <mml:mn>2</mml:mn>
+                </mml:msup>
+            </mml:mrow>
         </mml:math>
-     </inline-formula>
+    </inline-formula>
+    ...
  
-Aparece em
- 1. article/article-meta/product
- 2. article/body
- 3. article/body/p
- 4. article/body/sec  
- 5. article/body/table-wrap/thead/tr/th
- 6. article/body/table-wrap/tbody/tr/td
- 7. article/back/app-group/app/table-wrap/thead/tr/th
- 8. article/back/app-group/app/table-wrap/tbody/tr/td
  
-Ocorre
- Zero ou mais vezes
- 
+.. _elemento-table-wrap:
+
 <table-wrap>
 ^^^^^^^^^^^^
-É utilizada para especificar uma tabela, incluindo <label>, <caption> e <table-wrap-foot>. 
- 
-Para composição de @id de **tabela** utiliza-se o seguinte padrão: "t" + o número de ordem da tabela. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** t01... t10, t11;
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-     <table-wrap id="t01">
- 
+
 Aparece em
- 1. article/body/p
- 2. article/body/sec/p  
- 3. article/back/app-group/app
- 4. article/back/app-group/app/glossary
- 5. article/back/app-group/app/supplementary-material
- 6. article/back/glossary
- 
+  :ref:`elemento-app`,
+  :ref:`elemento-app-group`,
+  :ref:`elemento-body`,
+  :ref:`elemento-glossary`,
+  :ref:`elemento-p`,
+  :ref:`elemento-sec`,
+  :ref:`elemento-supplementary-material`,
+  :ref:`elemento-table-wrap-group`
 
 Atributos obrigatórios
- 1. id
+  1. id
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+
+É utilizada para especificar todas as partes de uma única tabela, incluindo 
+:ref:`elemento-label`, :ref:`elemento-caption` ou :ref:`elemento-table-wrap-foot`. 
  
+Para composição do atributo ``@id`` utiliza-se o seguinte padrão: 
+``t`` + o número de ordem da tabela. (Ver :ref:`regra-atribuicao-id`)
+ 
+ 
+.. _elemento-table-wrap-foot:
+
 <table-wrap-foot>
 ^^^^^^^^^^^^^^^^^
-Em <table-wrap-foot> é possível fazer a identificação de nota de rodapé de tabela(<fn>). A tag <fn> deve apresentar o atributo de @id com a seguinte estrutura:
+
+Aparece em
+  :ref:`elemento-table-wrap`
+
+Ocorre
+  Zero ou mais vezes
+
+
+Em ``<table-wrap-foot>`` é possível fazer a identificação de nota de rodapé de 
+tabela por meio de tags ``<fn>``, que devem apresentar obrigatoriamente o 
+atributo ``@id``.
  
-Para composição de @id de **nota de rodapé de table** utiliza-se o seguinte padrão: "TFN" + o número de ordem da nota de rodapé de table. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** TFN01... TFN10,TFNf11;
+Para composição do atributo ``@id`` do elemento ``<fn>``, utiliza-se o seguinte 
+padrão: ``TFN`` + o número de ordem da nota de rodapé de table. 
+(Ver :ref:`regra-atribuicao-id`)
  
 A nota de rodapé poderá ser relacionada com alguma informação no corpo da tabela.
  
-**Exemplo**:
+Exemplo:
  
 .. code-block:: xml
  
-     <table-wrap id="t01">
-     <label>Table 1</label>
-     <caption>
-     <title>Título da tabela.</title>
-     </caption>
-     <table>
-     <...>
-     </table>
-     <table-wrap-foot>
-     <fn id="TFN01">
-     <label>*</label>
-     <p>text</p>
-     </fn>
-     </table-wrap-foot>
-     </table-wrap>
- 
-Aparece em
- 1. article/body/p/table-wrap
- 2. article/body/sec/p/table-wrap
- 3. article/back/app-group/app/table-wrap
- 4. article/back/app-group/app/glossary/table-wrap
- 5. article/back/glossary/table-wrap
- 6. article/back/app-group/app/supplementary-material/table-wrap
-
-Ocorre
-Zero ou mais vezes
+    ...
+    <table-wrap id="t01">
+        <label>Table 1</label>
+        <caption>
+            <title>Título da tabela.</title>
+        </caption>
+        <table>
+            ...
+        </table>
+        <table-wrap-foot>
+            <fn id="TFN01">
+                <label>*</label>
+                <p>text</p>
+            </fn>
+        </table-wrap-foot>
+    </table-wrap>
+    ...
  
 <table>
 ^^^^^^^
@@ -3486,28 +3498,57 @@ Aparece em
 Ocorre
  Zero ou mais vezes
  
+
+.. _elemento-supplementary-material:
+
 <supplementary-material>
 ------------------------
-O material suplementar é um documento que não faz parte do texto do artigo, mas que serviu como apoio para sua elaboração.
-Em <supplementary-material> é possível especificar tabelas, figuras, dados brutos de planilha, banco de dados de genomas, quiz, equações, links, diálogos, listas, licenças e objetos multimídia como áudio e vídeo.
+
+Aparece em
+  :ref:`elemento-article-meta`,
+  :ref:`elemento-p`,
+  :ref:`elemento-inline-supplementary-material`,
+  :ref:`elemento-app`
+
+Atributos obrigatórios
+  1. id
+  2. xlink:href
+  3. mimetype
+  4. mime-subtype
  
-Para composição de @id de **suplemento** utiliza-se o seguinte padrão: "suppl" + o número de ordem do suplemento. (Ver Regra de atribuição de @id)
+Ocorre
+  Zero ou mais vezes
+
+
+O material suplementar é um documento que não faz parte do texto do artigo, 
+mas que serviu como apoio para sua elaboração.
+Em ``<supplementary-material>`` é possível especificar tabelas, figuras, 
+dados brutos de planilha, banco de dados de genomas, quiz, equações, links, 
+diálogos, listas, licenças e objetos multimídia como áudio e vídeo.
  
-**Exemplo:** suppl01... suppl10, suppl11;
+Para composição do atributo ``@id`` utiliza-se o seguinte padrão: 
+``suppl`` + o número de ordem do suplemento. (Ver :ref:`regra-atribuicao-id`)
  
-O material suplementar pode estar em <front>, dentro de <article-meta>, em <body> como seção ou entre parágrafos e em <back> só poderá ser identificado caso esteja especificado dentro do grupo de apêndices <app-group>.
+O material suplementar pode estar em :ref:`elemento-front`, dentro de 
+:ref:`elemento-article-meta`, em :ref:`elemento-body` como seção ou entre 
+parágrafos ou em :ref:`elemento-back`, onde só poderá ser identificado caso 
+esteja especificado dentro do grupo de apêndices <app-group> (CORRIGIR: <app-group> não consta no SPS como possível pai do elemento atual).
  
-Seus atributos mais frequentes são:
+Seus atributos obrigatórios são:
  
-- **@id:** utilizado como um identificador único no documento e ganha maior importância quando há mais que um material suplementar e/ou quando o material suplementar é referenciado no corpo do texto. Nesse caso é necessário relacionar a chamada no texto com o "id" do material suplementar.
-- **@mimetype:** utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
-- **@mime-subtype:** utilizado para especificar o formato da mídia.
+* ``@id``: Utilizado como um identificador único no documento e ganha maior importância quando há mais que um material suplementar e/ou quando o material suplementar é referenciado no corpo do texto. Nesse caso é necessário relacionar a chamada no texto com o "id" do material suplementar.
+* ``@mimetype``: Utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
+* ``@mime-subtype``: Utilizado para especificar o formato da mídia.
  
-**Exemplo:**
+Exemplo:
  
 .. code-block:: xml
  
-     <supplementary-material xlink:href="0000-0000-abcd-01-12-0001-suppl01.mp3" mime-subtype="mpeg" mimetype="audio">
+    ...
+    <supplementary-material id="suppl01" 
+                            xlink:href="0000-0000-abcd-01-12-0001-suppl01.mp3" 
+                            mimetype="audio"
+                            mime-subtype="mpeg">
  
 - **@xlink:href:** utilizado para indicar do nome completo do arquivo, tais como: pdf, vídeo, zip etc.
  
@@ -3558,87 +3599,86 @@ were used to verify the association between categorical variables. The normality
 
 <p>Devido a esse elevado percentual de dados omissos, possivelmente não influenciaram no resultado final do <inline-supplementary-material xlink:href="0103-507X-rbti-26-02-0130-s01.pdf" mimetype="application" mime-subtype="pdf">Material Suplementar</inline-supplementary-material></p>
  
+ 
+.. _elemento-disp-quote:
+
+<disp-quote>
+------------
+
 Aparece em
- 1. article/front/article-meta
- 2. article/body/p
- 3. article/body/sec/p
- 4. article/body/p/inline-supplementary-material
- 3. article/body/sec/p/inline-supplementary-material
- 4. article/back/app-group/app
-
-Atributos obrigatórios
- 1. id
- 2. xlink:href
- 3. mimetype
- 4. mime-subtype
-
+  :ref:`elemento-p`
  
 Ocorre
   Zero ou mais vezes
+
+
+Quando há no texto uma citação de outra fonte utiliza-se a tag 
+``<disp-quote>``. Geralmente essa informação é apresentada com algum 
+recuo, possui mais de três linhas e fonte de tamanho diferente, tendo essa 
+informação já destacada a identificação deve ser:
  
-<disp-quote>
-------------
-Quando há no texto uma citação de outra fonte utiliza-se a tag <disp-quote>. Geralmente essa informação é apresentada com algum recuo, possui mais de três linhas e fonte de tamanho diferente, tendo essa informação já destacada a identificação deve ser:
- 
-**Exemplo:**
+Exemplo:
  
 .. code-block:: xml
  
-     <p> Mauris ac magna fermentum, pharetra tellus aliquam, tempor felis. </p>
-     <disp-quote>
-                <p>"Sed luctus quam a felis sagittis lacinia. Etiam auctor tincidunt nibh, sit amet convallis urna convallis nec. Nullam venenatis dapibus dapibus. Vivamus et arcu blandit, laoreet tellus eget, sodales sapien. Etiam fringilla turpis enim, sit amet porta velit faucibus eu."</p>
-     </disp-quote>
-     <p>Donec dapibus lacus urna, eu fringilla quam tempus eu.</p>
+    <!-- CORRIGIR: Exemplo não reflete a espec. -->
+
+    <p>Mauris ac magna fermentum, pharetra tellus aliquam, tempor felis.</p>
+    <disp-quote>
+        <p>"Sed luctus quam a felis sagittis lacinia. Etiam auctor tincidunt nibh, sit amet convallis urna convallis nec. Nullam venenatis dapibus dapibus. Vivamus et arcu blandit, laoreet tellus eget, sodales sapien. Etiam fringilla turpis enim, sit amet porta velit faucibus eu."</p>
+    </disp-quote>
+    <p>Donec dapibus lacus urna, eu fringilla quam tempus eu.</p>
  
-A tag <disp-quote> também é utilizada para epígrafes, citações em blocos e extratos dentro do texto.
+A tag ``<disp-quote>`` também é utilizada para epígrafes, citações em blocos 
+e extratos dentro do texto.
  
-Aparece em
- 1. article/body/p
- 2. article/body/sec/p
  
-Ocorre
- Zero ou mais vezes
- 
+.. _elemento-ext-link:
+
 <ext-link>
 ----------
-Utilizado para especificar links de URLs. Ao fazer a identificação da URL com <ext-link>, o link abrirá em uma nova aba.
+
+Aparece em
+  :ref:`elemento-p`,
+  :ref:`elemento-element-citation`, 
+  :ref:`elemento-comment`,
+
+Atributos obrigatórios
+  1. ext-link-type="uri"
+  2. xlink:href
  
-**Atributos**
- 
-@ext-link-type
-@xlink:href     
- 
-Para o atributo @ext-link-type utilizar o valor “uri”.
- 
-Em @xlink:href deve ser inserido a URL do arquivo referenciado (http://…)e entre a tag.
- 
-**Exemplo:**
+Ocorre
+  Zero ou mais vezes
+
+Utilizado para especificar referências a recursos disponíveis na internet.
+
+Exemplo:
  
 .. code-block:: xml
  
-     <p>Neque porro quisquam est <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link> qui dolorem ipsum quia</p>
+    ...
+    <p>Neque porro quisquam est <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link> qui dolorem ipsum quia</p>
+    ...
  
-.. note:: O prefixo "http://" deve estar sempre presente no xlink:href.
+.. note:: O prefixo ``http://`` deve estar sempre presente no ``@xlink:href``.
  
-Aparece em
- 1. article/body/p
- 2. article/body/sec/p
- 3. article/back/ref-list/ref/element-citation
- 4. article/back/ref-list/ref/element-citation/comment
- 5. article/back/app-group/app/p
+ 
+.. _elemento-list:
 
-Atributos obrigatórios
- 1. ext-link-type="uri"
- 2. xlink:href
- 
-Ocorre
- Zero ou mais vezes
- 
 <list>
 ------
-Para uma sequência de dois ou mais itens em lista, possuindo ou não uma determinada ordenação, usa-se a tag <list>.
+
+Aparece em
+  :ref:`elemento-p`
+
+Ocorre
+  Zero ou mais vezes
+
+
+Para uma sequência de dois ou mais itens em lista, possuindo ou não uma 
+determinada ordenação, usa-se a tag ``<list>``.
  
-<list> deve apresentar as seguintes tags:
+``<list>`` deve apresentar as seguintes tags:
  
 - list-item (1 ou mais)
 - label     (0 ou 1)    
@@ -3657,7 +3697,9 @@ Opcional - se constar no PDF, identificar.
 **<title>**
 Opcional - se constar no PDF, identificar.
  
-.. note:: Somente uma das tags citadas acima (<label> e <title>) podem ser utilizadas dentro de uma lista (tag <list>), não se pode usar as duas tags ao mesmo tempo.
+.. note:: Somente uma das tags citadas acima (<label> e <title>) podem ser 
+          utilizadas dentro de uma lista (tag <list>), não se pode usar as 
+          duas tags ao mesmo tempo.
  
 **@list-type:** indica o tipo de lista apresentada.
  
@@ -3686,17 +3728,18 @@ Lista Númerica
  
 .. code-block:: xml
  
-<list list-type=“order”>
- <title>Lista Númerica</title>
-  <list-item>
-    <p>Nullam gravida tellus eget condimentum egestas.</p>
-  </list-item>
-  <list-item>
-<p>Curabitur luctus lorem ac feugiat pretium.</p>
-  </list-item>
-  <list-item>
-<p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-  </list-item>
+    <list list-type="order">
+        <title>Lista Númerica</title>
+        <list-item>
+            <p>Nullam gravida tellus eget condimentum egestas.</p>
+        </list-item>
+        <list-item>
+            <p>Curabitur luctus lorem ac feugiat pretium.</p>
+        </list-item>
+        <list-item>
+            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+        </list-item>
+    </list>
  
 Tipo ícone com "marcadores":
  
@@ -3710,16 +3753,17 @@ Exemplo no XML:
  
 .. code-block:: xml
  
-<list list-type=“bullet”>
-  <list-item>
-    <p>Nullam gravida tellus eget condimentum egestas.</p>
-  </list-item>
-  <list-item>
-<p>Curabitur luctus lorem ac feugiat pretium.</p>
-  </list-item>
-  <list-item>
-<p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-  </list-item>
+    <list list-type="bullet">
+        <list-item>
+            <p>Nullam gravida tellus eget condimentum egestas.</p>
+        </list-item>
+        <list-item>
+            <p>Curabitur luctus lorem ac feugiat pretium.</p>
+        </list-item>
+        <list-item>
+            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+        </list-item>
+    </list>
  
 Tipo caracter alfabético minúsculo:
  
@@ -3734,17 +3778,18 @@ Exemplo no XML:
  
 .. code-block:: xml
  
-<list list-type=“alpha-lower”>
- <label>Lista 3</label>
-  <list-item>
-    <p>Nullam gravida tellus eget condimentum egestas.</p>
-  </list-item>
-  <list-item>
-<p>Curabitur luctus lorem ac feugiat pretium.</p>
-  </list-item>
-  <list-item>
-<p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-  </list-item>
+    <list list-type="alpha-lower">
+        <label>Lista 3</label>
+        <list-item>
+            <p>Nullam gravida tellus eget condimentum egestas.</p>
+        </list-item>
+        <list-item>
+            <p>Curabitur luctus lorem ac feugiat pretium.</p>
+        </list-item>
+        <list-item>
+            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+        </list-item>
+    </list>
  
 Tipo caracter alfabético maiúsculo:
  
@@ -3758,16 +3803,17 @@ C Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
  
 .. code-block:: xml
  
-<list list-type=“alpha-upper”>
-  <list-item>
-    <p>Nullam gravida tellus eget condimentum egestas.</p>
-  </list-item>
-  <list-item>
-<p>Curabitur luctus lorem ac feugiat pretium.</p>
-  </list-item>
-  <list-item>
-<p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-  </list-item>
+    <list list-type="alpha-upper">
+        <list-item>
+            <p>Nullam gravida tellus eget condimentum egestas.</p>
+        </list-item>
+        <list-item>
+            <p>Curabitur luctus lorem ac feugiat pretium.</p>
+        </list-item>
+        <list-item>
+            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+        </list-item>
+    </list>
  
 Tipo número romano minúsculo:
  
@@ -3781,16 +3827,17 @@ iii Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
  
 .. code-block:: xml
  
-<list list-type=“roman-lower”>
-  <list-item>
-    <p>Nullam gravida tellus eget condimentum egestas.</p>
-  </list-item>
-  <list-item>
-<p>Curabitur luctus lorem ac feugiat pretium.</p>
-  </list-item>
-  <list-item>
-<p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-  </list-item>
+    <list list-type="roman-lower">
+        <list-item>
+            <p>Nullam gravida tellus eget condimentum egestas.</p>
+        </list-item>
+        <list-item>
+            <p>Curabitur luctus lorem ac feugiat pretium.</p>
+        </list-item>
+        <list-item>
+            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+        </list-item>
+    </list>
  
 Tipo número romano maiúsculo:
  
@@ -3804,16 +3851,17 @@ III Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
  
 .. code-block:: xml
  
-<list list-type=“alpha-upper”>
-  <list-item>
-    <p>Nullam gravida tellus eget condimentum egestas.</p>
-  </list-item>
-  <list-item>
-<p>Curabitur luctus lorem ac feugiat pretium.</p>
-  </list-item>
-  <list-item>
-<p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-  </list-item>
+    <list list-type="alpha-upper">
+        <list-item>
+            <p>Nullam gravida tellus eget condimentum egestas.</p>
+        </list-item>
+        <list-item>
+            <p>Curabitur luctus lorem ac feugiat pretium.</p>
+        </list-item>
+        <list-item>
+            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+        </list-item>
+    </list>
  
 Tipo sem prefixo:
  
@@ -3824,152 +3872,198 @@ Curabitur luctus lorem ac feugiat pretium.
 Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
  
 **Exemplo no XML:**
- 
-<list list-type=“simple”>
-  <list-item>
-    <p>Nullam gravida tellus eget condimentum egestas.</p>
-  </list-item>
-  <list-item>
-<p>Curabitur luctus lorem ac feugiat pretium.</p>
-  </list-item>
-  <list-item>
-<p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-  </list-item>
- 
-Aparece em
- 1. article/body/p
- 2. article/body/sec/p
 
-Ocorre
- Zero ou mais vezes
+.. code-block:: xml
  
+    <list list-type="simple">
+        <list-item>
+            <p>Nullam gravida tellus eget condimentum egestas.</p>
+        </list-item>
+        <list-item>
+            <p>Curabitur luctus lorem ac feugiat pretium.</p>
+        </list-item>
+        <list-item>
+            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+        </list-item>
+    </list>
+ 
+ 
+.. _elemento-caption:
+
 <caption>
 ---------
  
-Tag que representa uma descrição textual visível de uma tabela, figura ou objeto similar.
- 
-Obrigatoriamente dentro de <caption> deve-se conter a tag de <title> com a descrição textual da legenda dos objetos mencionados.
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-<fig id="f03">
- <label>Figura 3</label>
-     <caption>
-<title>Percentual de atividade mitocondrial (método MTT) das células dos diferentes grupos experimentais em relação às células do grupo controle</title>
-</caption>
-     <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
-</fig>
- 
 Aparece em
- 1. article/body/p/disp-formula
- 2. article/body/p/fig
- 3. article/body/p/table-wrap
- 4. article/body/p/media
- 5. article/body/p/supplementary-material
- 6. article/body/sec/p/disp-formula
- 7. article/body/sec/p/fig
- 8. article/body/sec/p/table-wrap
- 9. article/body/sec/p/media
- 10. article/body/sec/p/supplementary-material
- 11. article/back/app-group/app
- 12. article/back/app-group/app/fig
- 13. article/back/app-group/app/table-wrap
- 14. article/back/app-group/supplementary-material
+  :ref:`elemento-disp-formula`,
+  :ref:`elemento-fig`, 
+  :ref:`elemento-table-wrap`,
+  :ref:`elemento-media`,
+  :ref:`elemento-supplementary-material`,
+  :ref:`elemento-disp-formula`,
+  :ref:`elemento-app`
 
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
 
+
+Tag que representa uma descrição textual visível de uma tabela, figura ou 
+objeto similar.
+ 
+Obrigatoriamente dentro de ``<caption>`` deve-se conter a tag de ``<title>`` 
+com a descrição textual da legenda dos objetos mencionados.
+ 
+Exemplo:
+ 
+.. code-block:: xml
+ 
+    ...
+    <fig id="f03">
+        <label>Figura 3</label>
+        <caption>
+            <title>Percentual de atividade mitocondrial (método MTT) das células dos diferentes grupos experimentais em relação às células do grupo controle</title>
+        </caption>
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
+    </fig>
+    ...
+ 
+
+.. _elemento-fig:
 
 <fig>
--------
-As figuras de um artigo são identificadas por meio da tag <fig>. Com essa tag é possível especificar label, caption, graphic, links, e objetos multimídia como vídeo, áudio e filme.
+-----
+
+Aparece em
+  :ref:`elemento-p`,
+  :ref:`elemento-app`,
+  :ref:`elemento-supplementary-material`
+
+Atributos obrigatórios
+  1. id
  
-As imagens podem ter ou não legendas. Para imagens sem legendas é necessário marcá-la como <fig> e identificá-la com a tag <graphic>.
+Ocorre
+  Zero ou mais vezes
+
+
+As figuras de um artigo são identificadas por meio da tag ``<fig>``. 
+Com essa tag é possível especificar label, caption, graphic, links, e objetos 
+multimídia como vídeo, áudio e filme.
  
-**Exemplo:**
+As imagens podem ter ou não legendas. Para imagens sem legendas é necessário 
+marcá-la como ``<fig>`` e identificá-la com a tag ``<graphic>``.
  
-.. code-block:: xml
- 
-     <fig id="f01">
-     <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
-     </fig>
- 
-A tag <graphic> é utilizada para identificar alguns tipos de arquivos. Seus atributos são:
- 
-- **@xlink:href:** utilizado para especificar um endereço ou links externos. Portanto o @xlink:href deve conter nomes de imagens/arquivos e também o nome completo de uma URL.
- 
-Para figuras com legendas a marcação deve envolver toda a informação de imagem, inclusive sua descrição, com a tag <fig>. Dentro de <fig> serão identificados o rótulo da figura <label> e mais a tag de <caption> com a tag <title> com o título da figura.
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-     <fig id="f01">
- <label>Fig. 1</label>
-     <caption><title>título da imagem</title></caption>
-     <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
-     </fig>
- 
-Essa tag pode ter os seguintes atributos: @fig-type, @id, @xml:lang. Os atributos mais frequentes são:
- 
-- **@fig-type:** utilizado para especificar o tipo de imagem. Os tipos podem ser muitos como: Graphic, Cartoon, Chart, Diagram, Drawing, Exihibit, Illustration, Map etc. Contudo o tipo só será definido caso o label da figura apresente um tipo diferente de "fig." "figure".
- 
-**Exemplo:**
+Exemplo:
  
 .. code-block:: xml
  
-     <fig fig-type="map" id="f01">
-     <label>Map 1</label>
-     <caption>
-      <title>Título do Mapa<title>
-     </caption>
+    ...
+    <fig id="f01">
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
+    </fig>
+    ...
+ 
+A tag :ref:`elemento-graphic` é utilizada para identificar alguns tipos de 
+arquivos. Seus atributos são:
+ 
+* **@xlink:href:** utilizado para especificar um endereço ou links externos. 
+  Portanto o @xlink:href deve conter nomes de imagens/arquivos e também o 
+  nome completo de uma URL.
+ 
+Para figuras com legendas a marcação deve envolver toda a informação de 
+imagem, inclusive sua descrição, com a tag ``<fig>``. Dentro de ``<fig>`` 
+serão identificados o rótulo da figura :ref:`elemento-label` e mais a tag de 
+:ref:`elemento-caption` com a tag :ref:`elemento-title` com o título da figura.
+ 
+Exemplo:
+ 
+.. code-block:: xml
+ 
+    ...
+    <fig id="f01">
+        <label>Fig. 1</label>
+        <caption>
+            <title>título da imagem</title>
+        </caption>
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
+    </fig>
+    ...
+ 
+Essa tag pode ter os seguintes atributos: ``@fig-type``, ``@id``, ``@xml:lang``. 
+Os atributos mais frequentes são:
+ 
+* **@fig-type:** utilizado para especificar o tipo de imagem. Os tipos 
+  podem ser muitos como: Graphic, Cartoon, Chart, Diagram, Drawing, Exihibit, 
+  Illustration, Map etc. Contudo o tipo só será definido caso o label da 
+  figura apresente um tipo diferente de "fig." "figure".
+ 
+Exemplo:
+ 
+.. code-block:: xml
+ 
+    ...
+    <fig fig-type="map" id="f01">
+        <label>Map 1</label>
+        <caption>
+            <title>Título do Mapa<title>
+        </caption>
+    </fig>
+    ...
  
 Se a figura não possuir um tipo específico, deve-se manter a tag sem o atributo.
  
-**Exemplo:**
+Exemplo:
  
 .. code-block:: xml
  
-     <fig id="f01">
-     <label>Fig 1</label>
-     <caption>
-          <title>Título da Figura<title>
-     </caption>
+    ...
+    <fig id="f01">
+        <label>Fig 1</label>
+        <caption>
+            <title>Título da Figura<title>
+        </caption>
+    </fig>
+    ...
  
-- **@id:** identificador da tag. É possível fazer referência cruzada no documento; esse atributo deve ter valor único no arquivo e é possível fazer link relacionado a um "rid".
+* **@id:** identificador da tag. É possível fazer referência cruzada no 
+  documento; esse atributo deve ter valor único no arquivo e é possível 
+  fazer link relacionado a um "rid".
  
-Para composição de @id de **figuras** utiliza-se o seguinte padrão: "f" + o número de ordem da figura. (Ver Regra de atribuição de @id)
+Para composição do atributo ``@id`` utiliza-se o seguinte padrão: 
+``f`` + o número de ordem da figura. (Ver :ref:`regra-atribuicao-id`)
  
-**Exemplo:** f01... f10, f11;
- 
+Exemplo:
+
 .. code-block:: xml
  
-     <fig id="f01">
-     <label>FIGURE 1</label>
-          <caption>
-                <title>Título da figura</title>
-          </caption>
-      <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
-     </fig>
+    ...
+    <fig id="f01">
+        <label>FIGURE 1</label>
+        <caption>
+            <title>Título da figura</title>
+        </caption>
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
+    </fig>
+
+ 
+.. _elemento-media:
+
+<media>
+-------
 
 Aparece em
- 1. article/body/p
- 2. article/body/sec/p
- 3. article/back/app-group/app  
- 4. article/back/app-group/app/supplementary-material
+  :ref:`elemento-p`,
+  :ref:`elemento-fig`,
+  :ref:`elemento-app`,
 
 Atributos obrigatórios
- 1. id
+  1. mime-subtype
+  2. xlink:href
  
 Ocorre
- Zero ou mais vezes
- 
-<media>
------
-A tag <media> é utilizada para especificar arquivos multimídia como:
- 
+  Zero ou mais vezes
+
+
+A tag ``<media>`` é utilizada para especificar arquivos multimídia como:
+
 - vídeo
 - áudio
 - filmes
@@ -3977,121 +4071,135 @@ A tag <media> é utilizada para especificar arquivos multimídia como:
  
 Atributos
  
-- @id
-Para composição do @id de **media** utiliza-se o seguinte padrão:
-"m" + o número de ordem da media:
- 
+- ``@id``
+Para composição do ``@id`` de ``<media>`` utiliza-se o seguinte padrão:
+``m`` + o número de ordem da media:
 
 **Exemplo:** m01... m10, m11;
 
 - **@mimetype:** utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
 
 - **@mime-subtype:** utilizado para especificar o formato da mídia.
- 
-**Exemplo:**
+
+Exemplo:
  
 .. code-block:: xml
  
-<media mimetype="video"  mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
+    <media mimetype="video" 
+           mime-subtype="mp4" 
+           xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
  
+
 - @mimetype
     utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
  
-**Exemplo:**
+Exemplo:
  
 .. code-block:: xml
  
-<media mimetype="video" mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
+    <media mimetype="video" 
+           mime-subtype="mp4" 
+           xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
  
+
 - **@xlink:href:** indica o link de um arquivo multimídia.
  
-**Exemplo:**
+Exemplo:
  
 .. code-block:: xml
  
-     <media mimetype="video"  mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
+    <media mimetype="video"  
+           mime-subtype="mp4" 
+           xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
  
-**Exemplo:**
+
+Exemplo:
  
 *Em parágrafo:*
  
 .. code-block:: xml
  
-<p>Within the limitations of this study, it may be concluded that remaining tooth wall thickness did not influence the fatigue resistance of molars restored with CAD/CAM ceramic inlays
-<media mimetype="video"  mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/></p>
+    <p>Within the limitations of this study, it may be concluded that remaining tooth wall thickness did not influence the fatigue resistance of molars restored with CAD/CAM ceramic inlays <media mimetype="video"  mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/></p>
  
+
 *Em figuras:*
  
 .. code-block:: xml
  
-<p>
- <fig id="f01">
-     <label>Figure 1</label>
-     <caption><title>descrição da fig.<title></caption>
-          <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
-      </fig>
-</p>
+    <p>
+        <fig id="f01">
+            <label>Figure 1</label>
+            <caption>
+                <title>descrição da fig.<title>
+            </caption>
+            <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
+        </fig>
+    </p>
  
-*Em <sec> do tipo material suplementar:*
+
+*Em ``<sec>`` do tipo material suplementar:*
  
 .. code-block:: xml
  
-<sec sec-type="supplementary-material">
-   <title>Supplementary Material</title>
-     <supplementary-material id="m1">
-       <caption>
-         <title>legenda</title>
-       </caption>
-       <media mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-m01.pdf"/>
-    </supplementary-material>
-</sec>
+    <sec sec-type="supplementary-material">
+        <title>Supplementary Material</title>
+        <supplementary-material id="m1">
+            <caption>
+                <title>legenda</title>
+            </caption>
+            <media mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-m01.pdf"/>
+        </supplementary-material>
+    </sec>
  
-Aparece em
- 1. article/body/p
- 2. article/body/sec/p
- 3. article/body/p/fig
- 4. article/body/sec/p/fig
- 5. article/back/app-group/app  
- 6. article/back/app-group/app/fig
+ 
+.. _elemento-sig-block:
 
-Atributos obrigatórios
- 1. mime-subtype
- 2. xlink:href
- 
-Ocorre
- Zero ou mais vezes
- 
 <sig-block>
 -----------
-Tag que identifica um bloco de assinatura(s), normalmente utilizada em documentos do tipo editorial. A tag de <sig-block> deve obrigatoriamente conter a tag <sig>. É possível formatar o texto do bloco de assinatura com negrito <bold> ou itálico <italic>. Para as quebras de linhas deve-se usar a tag <break/>, ou <p> como mostram os exemplos a seguir:
- 
-.. code-block:: xml
- 
-**Exemplo 1:**
- 
-<sig-block>
-<sig>
-<bold>Harry Weasley</bold><break/>
-<italic>Editor Chefe</italic><break/>
-Profeta Diário<break/>
-</sig>
-</sig-block>
-.. code-block:: xml
- 
-**Exemplo 2:**
- 
-<sig-block>
-<sig>
-<p><bold>Harry Weasley</bold></p>
-<p><italic>Editor Chefe<italic></p>
-<p>Profeta Diário</p>
-</sig>
-</sig-block>
- 
+
 Aparece em
- 1. article/body
+  :ref:`elemento-body`
+
 Ocorre
- Zero ou uma vez
+  Zero ou uma vez
+
+
+Tag que identifica um bloco de assinatura(s), normalmente utilizada em 
+documentos do tipo editorial. A tag de ``<sig-block>`` deve obrigatoriamente 
+conter a tag ``<sig>``. É possível formatar o texto do bloco de assinatura 
+com negrito ``<bold>`` ou itálico ``<italic>``. Para as quebras de linhas 
+deve-se usar a tag ``<break/>``, ou ``<p>`` como mostram os exemplos a seguir:
+
+Exemplo 1:
+ 
+.. code-block:: xml
+ 
+    ...
+    <sig-block>
+        <sig>
+            <bold>Harry Weasley</bold>
+            <break/>
+            <italic>Editor Chefe</italic>
+            <break/>
+            Profeta Diário
+            <break/>
+        </sig>
+    </sig-block>
+    ...
+
+
+**Exemplo 2:**
+
+.. code-block:: xml
+ 
+    <sig-block>
+        <sig>
+            <p><bold>Harry Weasley</bold></p>
+            <p><italic>Editor Chefe<italic></p>
+            <p>Profeta Diário</p>
+        </sig>
+    </sig-block>
+ 
  
 .. _elemento-back:
 
@@ -4108,6 +4216,7 @@ O ``<back>`` é a parte final do documento que compreende lista de referências 
 dados referentes a pesquisa como: notas de rodapé, agradecimentos, apêndice,
 material suplementar, anexos e glossário.
  
+
 .. _elemento-ack:
 
 <ack>
@@ -4147,6 +4256,7 @@ Exemplo:
 .. note:: Não inserir a tag :ref:`elemento-sec` para identificação da seção
           agradecimentos.
 
+
 .. _elemento-ref-list:
 
 <ref-list>
@@ -4162,6 +4272,7 @@ Ocorre
   ``<ref-list>``. Esse elemento deve conter, obrigatóriamente, três tags: 
   :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
   :ref:`elemento-element-citation`.
+
 
 .. _elemento-ref:
 
@@ -4194,11 +4305,12 @@ Exemplo:
     <ref-list>
         <ref id="B01">
             <mixed-citation>referência inteira sem marcação</mixed-citation>
-            <element-citation publication-type=“tipo da referência”>elementos marcados um a um</element-citation>
+            <element-citation publication-type="tipo da referência">elementos marcados um a um</element-citation>
         </ref>
     </ref-list>
     ...
   
+
 .. _elemento-mixed-citation:
 
 <mixed-citation>
@@ -4207,6 +4319,7 @@ Exemplo:
 Tag utilizada para identificar uma referência bibliográfica conforme consta no
 PDF;
  
+
 .. _elemento-element-citation:
 
 <element-citation>
@@ -4560,6 +4673,7 @@ Exemplos:
           contruídas de forma incorreta, o que dificulta a marcação de seus
           elementos.
 
+
 .. _elemento-element-chapter-title:
 
 <chapter-title>
@@ -4584,6 +4698,7 @@ Exemplo:
     ...
 
 .. note:: Representa o capítulo 24 do livro ‘As feiticeiras de East End’.
+
 
 .. _elemento-pub-id:
 
@@ -4627,6 +4742,7 @@ Exemplo:
     </element-citation>
     ...
 
+
 .. _elemento-date-in-citation:
 
 <date-in-citation>
@@ -4665,6 +4781,7 @@ Exemplo 2:
     </element-citation>
     ...
 
+
 .. _elemento-comment:
 
 <comment>
@@ -4690,7 +4807,8 @@ Exemplo:
     </element-citation>
     ...
 
-.. _elemento-conf-name
+
+.. _elemento-conf-name:
 
 <conf-name>
 ^^^^^^^^^^^
@@ -4714,7 +4832,8 @@ Exemplo:
     </element-citation>
     ...
 
-.. _elemento-conf-loc
+
+.. _elemento-conf-loc:
 
 <conf-loc>
 ^^^^^^^^^^
@@ -4739,7 +4858,8 @@ Exemplo:
     </element-citation>
     ...
 
-.. _elemento-conf-date
+
+.. _elemento-conf-date:
 
 <conf-date>
 ^^^^^^^^^^^
@@ -4763,7 +4883,8 @@ Exemplo:
     </element-citation>
     ...
 
-.. _elemento-patent
+
+.. _elemento-patent:
 
 <patent>
 ^^^^^^^^
@@ -4793,7 +4914,8 @@ Exemplo de patente americana:
     </element-citation>
     ...
 
-.. _elemento-fn-group
+
+.. _elemento-fn-group:
 
 <fn-group>
 ----------
@@ -4830,7 +4952,8 @@ Exemplo:
     </back>
     ...
  
-.. _elemento-fn
+
+.. _elemento-fn:
 
 <fn>
 ^^^^
@@ -4980,7 +5103,8 @@ Exemplos:
     </fn-group>
     ...
 
-.. _elemento-app-group
+
+.. _elemento-app-group:
 
 <app-group>
 -----------
@@ -5163,7 +5287,7 @@ Exemplo de Apêndice com vídeo:
     ...
  
 
- .. _elemento-glossary
+.. _elemento-glossary:
  
 <glossary>
 ----------
