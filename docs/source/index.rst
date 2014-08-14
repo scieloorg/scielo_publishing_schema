@@ -30,11 +30,11 @@ por favor utilizar apenas a lista de discussão
 Notas da versão
 ---------------
 
-Obsolescência(?)
-----------------
+.. toctree::
+   :maxdepth: 1
 
-Mudanças (prazo para adaptações dos colaboradores)
---------------------------------------------------
+   whatsnew-1.1
+
 
 Ferramentas de apoio
 --------------------
@@ -79,6 +79,12 @@ convenções de estilo e formatação.
 
 Lista de elementos
 ------------------
+
+A seguir os elementos do XML que apresentam regras de estilo na 
+especificação :term:`SPS`. Note que esta não é a lista completa dos elementos 
+XML que compõem o :term:`tag set` JATS Publishing versão 1.0 ou PMC versão 3.0, e 
+não elimina a necessidade de consultar suas respectivas documentações.
+
 
 .. toctree::
    :maxdepth: 3
