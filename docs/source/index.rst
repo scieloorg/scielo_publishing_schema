@@ -4,8 +4,28 @@ SciELO Publishing Schema - Guia de uso dos elementos e atributos
 Versão preliminar, Agosto 2014, sujeita a modificações
 
 
-Sobre o SPS (relação com a JATS + estilos SciELO)
--------------------------------------------------
+Introdução
+----------
+
+Este guia de uso descreve o estilo de marcação adotado pelo projeto SciELO para
+a submissão de documentos no formato XML. 
+
+A especificação :term:`SciELO Publishing Schema` — também chamada :term:`SPS` — é composta 
+pela especificação `NISO JATS Journal Publishing DTD <http://jats.nlm.nih.gov/publishing/>`_ 
+na versão 1.0 mais o :term:`Estilo SciELO`, que são regras que especializam aspectos da 
+especificação JATS Publishing. Os usuários deste guia devem possuir conhecimentos 
+prévios sobre :term:`XML` e familiaridade com :term:`DTD`.
+
+Por motivos de compatibilidade com a última versão das recomendações disponibilizadas 
+pelo SciELO, a especificação `NLM Journal Publishing DTD <http://dtd.nlm.nih.gov/publishing/>`_ 
+na versão 3.0 ainda será suportada nesta versão do guia de uso, assim como pelas 
+ferramentas disponibilizadas.
+
+No caso de dúvidas sobre a especificação :term:`SPS`, sobre este guia de uso ou 
+sobre as ferramentas disponibilizadas pelo SciELO para apoiar a marcação em XML, 
+por favor utilizar apenas a lista de discussão 
+`scielo-xml <http://groups.google.com/group/scielo-xml/>`_.
+
 
 Notas da versão
 ---------------
@@ -16,6 +36,24 @@ Obsolescência(?)
 Mudanças (prazo para adaptações dos colaboradores)
 --------------------------------------------------
 
+Ferramentas de apoio
+--------------------
+
+Algumas ferramentas são disponibilizadas e mantidas pelo SciELO, seguindo o modelo 
+:term:`open-source`, para apoiar o processo de marcação dos documentos no 
+formato XML. 
+
+* `Markup <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/markup.html>`_: 
+  Macro para Microsoft Word que apoia o processo de marcação de documentos, 
+  de acordo com a `DTD PMC <http://dtd.nlm.nih.gov/publishing/3.0/>`_.
+* `Stylechecker <http://manager.scielo.org/tools/validators/stylechecker/>`_: 
+  Ferramenta baseada na web que apresenta relatório detalhado sobre a 
+  conformidade de um dado XML em relação à especificação :term:`SPS`.
+* `Packtools <https://github.com/scieloorg/packtools/>`_: Biblioteca 
+  :term:`Python` que agrega funcionalidades e utilitários para a manipulação 
+  de :term:`pacotes SPS` e XMLs :term:`SPS`.
+
+
 Convenções utilizadas neste guia
 --------------------------------
 
@@ -25,9 +63,6 @@ convenções de estilo e formatação.
 .. note:: Estas caixas apresentam informações importantes e diretamente relacionadas ao contexto
           em que estão inseridas.
 
-
-Convenções tipográficas
-^^^^^^^^^^^^^^^^^^^^^^^
 
 *Itálico*
   Utilizado para nomes de arquivos, normas, URLs, referências ativas a elementos do XML 
