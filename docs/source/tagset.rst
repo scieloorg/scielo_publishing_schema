@@ -4970,7 +4970,7 @@ Corrigir:: Verificar as definições abaixo referente a ocorrencias do fn.
 Ocorre em front
   Zero ou mais vezes
 
-Ocorre em back (quando houver <fn-group>)
+Ocorre em back (quando houver :ref:`elemento-fn-group`)
   Uma ou mais vezes
 
 Nota de rodapé representa um complemento ou um comentário explicativo do que 
@@ -4986,7 +4986,7 @@ Notas em :ref:`elemento-back` devem estar dentro de um grupo de notas de rodapé
 e ``@id``, esta última deve ser única para cada nota.
  
 Para composição de ``@id`` de **notas** utiliza-se o seguinte padrão: "fn" + o 
-número de ordem das notas. (Ver Regra de atribuição de :ref:`regra-atribuicao-id`)
+número de ordem das notas. (Ver :ref:`regra-atribuicao-id`)
  
 Exemplo: 
 
@@ -5124,8 +5124,8 @@ grupo de apêndice :ref:`elemento-app-group` e de apêndice propriamente dito
 :ref:`elemento-app. Obrigatoriamente deve ser inserido uma informação de
 etiqueta :ref:`elemento-label` em :ref:`elemento-app`.
 
-Para composição de @id de **apêndice** utiliza-se o seguinte padrão: "app" + o
-número de ordem do apêndice. (Ver Regra de atribuição de :ref:`regra-atribuicao-id`)
+Para composição de ``@id`` de **apêndice** utiliza-se o seguinte padrão: "app" + o
+número de ordem do apêndice. (Ver :ref:`regra-atribuicao-id`)
  
 Exemplo:
   
@@ -5163,12 +5163,14 @@ Exemplo de Apêndice com link externo (ext-link do tipo uri):
  
 .. code-block:: xml
  
-     <app-group>
+    ...
+    <app-group>
         <app>                
             <label>Appendix 1</label>
             <p>Para mais informações <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">clique aqui</ext-link> para verificar o pdf.</p>
         </app>
-     </app-group>
+    </app-group>
+    ...
  
 Exemplo de Apêndice com tabela:
  
@@ -5292,176 +5294,204 @@ Exemplo de Apêndice com vídeo:
 <glossary>
 ----------
 
-Utilizada quando há uma lista de termos e suas respectivas definições. O glossário pode ser apresentado como imagem ou como texto com as identificações de <term>, <def-list> e <def>. O glossário pode estar identificado em: <app>, <back>, e <sec>.
- 
-Para composição de @id de **glossário** utiliza-se o seguinte padrão: "d" + o número de ordem do glossário. (Ver Regra de atribuição de @id)
- 
-**Exemplo:** d01... d10, d11;
- 
-**Exemplo:**
- 
-*Em apêndices:*
- 
-.. code-block:: xml
- 
-     <app-group>
-     <app>
-     <glossary>
-          <title>nome do glossário</title>
-     <def-list id="d01">
-     <def-item>
-     <term> termo </term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     </def-list>
-     </glossary>
-     </app>
- </app-group>
- 
-*Em back:*
- 
-.. code-block:: xml
- 
-     <back>
-     <glossary>
-     <title>nome do glossário</title>
-     <def-list id="d01">
-     <def-item>
-          <term> termo </term>
-          <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     </def-list>
-     </glossary>
-     <ref-list>
-     </back>
- 
-A tag <glossary> possui os seguintes atributos: @content-type, @id, @specific-use e @xml:lang. Porém o atributo mais frequente é o @id.
- 
-- **@id:** identificador da tag. É possível fazer referência cruzada no documento; esse atributo deve ter valor único no arquivo e é possível fazer link relacionado a um "rid".
- Para composição do "ID" de **glossários** utilizar o seguinte **padrão:** "d" + o número de ordem da figura –
- 
- **Exemplo:** d01... d10, d11;
- 
-O glossário pode ser apresentado como imagem, utilizando a tag <graphic>, ou como texto. Veja os exemplos abaixo:
- 
-*Imagem:*
- 
-.. code-block:: xml
- 
-     <back>
-     <glossary>
-     <title>nome do glossário</title>
-     <graphic xlink:href="1234-5678-rctb-45-05-0110-d01.tif"/>
-     </glossary>
-     <ref-list>
-     </back>
- 
-*Texto:*
- 
-.. code-block:: xml
- 
-     <back>
-     <glossary>
-     <title>nome do glossário</title>
-     <def-list id="d01">
-     <def-item>
-     <term> termo </term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     </def-list>
-     </glossary>
-     <ref-list>
-     </back>
- 
-*Glossário com duas listas de definições:*
- 
-.. code-block:: xml
- 
-     <back>
-     <glossary>
-     <title>nome do glossário</title>
-     <glossary>
-     <title>nome do glossário</title>
-     <def-list id="d01">
-     <def-item>
-     <term> termo </term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     </def-list>
-     </glossary>
-     <glossary>
-     <title>nome do glossário</title>
-     <def-list id="d02">
-     <def-item>
-     <term> termo </term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     <def-item>
-     <term>termo</term>
-     <def><p>definição</p></def>
-     </def-item>
-     </def-list>
-     </glossary>
-     </back>
- 
 Aparece em
- 1. article/back
- 1. article/back/app-group/app
+  :ref:`elemento-back`,
+  :ref:`elemento-app`
  
 Ocorre
- Zero ou mais vezes
+  Zero ou mais vezes
+
+Utilizada quando há uma lista de termos e suas respectivas definições.
+O glossário pode ser apresentado como imagem ou como texto com as identificações
+de :ref:`elemento-term`, :ref:`elemento-def-list` e :ref:`elemento-def`. O 
+glossário pode estar identificado em: :ref:`elemento-app`, :ref:`elemento-back`,
+e :ref:`elemento-sec`.
+ 
+Para composição de ``@id`` de glossário utiliza-se o seguinte padrão:
+
+  "d" + o número de ordem do glossário. (Ver :ref:`regra-atribuicao-id`)
+ 
+Exemplo:
+
+  d01... d10, d11;
+ 
+Exemplo em apêndices:
+ 
+.. code-block:: xml
+
+    ... 
+    <app-group>
+        <app>
+            <glossary>
+                <title>nome do glossário</title>
+                  <def-list id="d01">
+                      <def-item>
+                          <term> termo </term>
+                          <def><p>definição</p></def>
+                      </def-item>
+                      <def-item>
+                          <term>termo</term>
+                          <def><p>definição</p></def>
+                      </def-item>
+                      <def-item>
+                          <term>termo</term>
+                          <def><p>definição</p></def>
+                      </def-item>
+                </def-list>
+            </glossary>
+        </app>
+    </app-group>
+    ...
+
+Exemplo em back:
+ 
+.. code-block:: xml
+ 
+    ...
+    <back>
+        <glossary>
+            <title>nome do glossário</title>
+            <def-list id="d01">
+                <def-item>
+                    <term> termo </term>
+                    <def><p>definição</p></def>
+                </def-item>
+                <def-item>
+                    <term>termo</term>
+                    <def><p>definição</p></def>
+                </def-item>
+                <def-item>
+                    <term>termo</term>
+                    <def><p>definição</p></def>
+                </def-item>
+            </def-list>
+        </glossary>
+        <ref-list>
+    </back>
+    ...
+
+A tag :ref:`elemento-glossary` possui os seguintes atributos: 
+``@content-type``, ``@id``, ``@specific-use`` e ``@xml:lang``. Porém o atributo
+mais frequente é o ``@id``.
+ 
+``@id``: identificador da tag. É possível fazer referência cruzada no documento;
+esse atributo deve ter valor único no arquivo e é possível fazer link
+relacionado a um "rid".
+
+Para composição do ``@id`` de glossários utilizar o seguinte padrão:
+
+  "d" + o número de ordem da figura
+ 
+Exemplo: 
+  
+  d01... d10, d11;
+ 
+O glossário pode ser apresentado como imagem, utilizando a tag :ref:`elemento-graphic`,
+ou como texto. Veja os exemplos abaixo:
+ 
+Exemplo com imagem:
+ 
+.. code-block:: xml
+ 
+    ...
+    <back>
+        <glossary>
+            <title>nome do glossário</title>
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-d01.tif"/>
+        </glossary>
+        ...
+        <ref-list/>
+        ...
+    </back>
+    ...
+
+Exemplo com texto:
+ 
+.. code-block:: xml
+ 
+    ...
+    <back>
+        <glossary>
+            <title>nome do glossário</title>
+            <def-list id="d01">
+                <def-item>
+                    <term> termo </term>
+                    <def><p>definição</p></def>
+                </def-item>
+                <def-item>
+                    <term>termo</term>
+                    <def><p>definição</p></def>
+                </def-item>
+                <def-item>
+                    <term>termo</term>
+                    <def><p>definição</p></def>
+                </def-item>
+            </def-list>
+        </glossary>
+        ...
+        <ref-list/>
+        ...
+    </back>
+    ...
+
+Exemplo com duas listas de definições:
+ 
+.. code-block:: xml
+ 
+    <!-- Corrigir -->
+    <back>
+        <glossary>
+            <title>nome do glossário</title>
+            <glossary>
+                <title>nome do glossário</title>
+                <def-list id="d01">
+                    <def-item>
+                        <term> termo </term>
+                        <def><p>definição</p></def>
+                    </def-item>
+                    <def-item>
+                        <term>termo</term>
+                        <def><p>definição</p></def>
+                    </def-item>
+                    <def-item>
+                        <term>termo</term>
+                        <def><p>definição</p></def>
+                    </def-item>
+                </def-list>
+            </glossary>
+            <glossary>
+                <title>nome do glossário</title>
+                <def-list id="d02">
+                    <def-item>
+                        <term> termo </term>
+                        <def><p>definição</p></def>
+                    </def-item>
+                    <def-item>
+                        <term>termo</term>
+                        <def><p>definição</p></def>
+                    </def-item>
+                    <def-item>
+                        <term>termo</term>
+                        <def><p>definição</p></def>
+                    </def-item>
+                </def-list>
+            </glossary>
+        </glossary>
+    </back>
  
 Referências:
 ============
 
-ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR14724: informação e
-documentação: trabalhos acadêmicos: apresentação. Rio de Janeiro: NBR, 2011.
+* ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR14724: informação e documentação: trabalhos acadêmicos: apresentação. Rio de Janeiro: NBR, 2011.
  
-ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6023: informação e
-documentação: referências: elaboração. Rio de Janeiro: NBR, 2002.
+* ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6023: informação e documentação: referências: elaboração. Rio de Janeiro: NBR, 2002.
  
-JATS. Journal Article Tag Suite ANSI/NISO Z39.96-2012. Baltimore, USA: National Information Standards Organization, 2012. Disponível em:<http://jats.niso.org>.
+* JATS. Journal Article Tag Suite ANSI/NISO Z39.96-2012. Baltimore, USA: National Information Standards Organization, 2012. Disponível em:<http://jats.niso.org>.
  
-JATS. Journal Article Tag Suite. Rockville Pike, USA: National Center for Biotechnology Information, 2013. Disponível em: <http://jats​.nlm.nih.gov>.
+* JATS. Journal Article Tag Suite. Rockville Pike, USA: National Center for Biotechnology Information, 2013. Disponível em: <http://jats​.nlm.nih.gov>.
  
-JATS. Journal Publishing Tag Library NISO JATS Version 1.0. Rockville, USA: National Center for Biotechnology Information (NCBI), National Library of Medicine (NLM). 2012. Disponível em: <http://jats.nlm.nih.gov/publishing/tag-library/1.0/>.
+* JATS. Journal Publishing Tag Library NISO JATS Version 1.0. Rockville, USA: National Center for Biotechnology Information (NCBI), National Library of Medicine (NLM). 2012. Disponível em: <http://jats.nlm.nih.gov/publishing/tag-library/1.0/>.
  
-PubMed Central (NCBI). Sample PubMed Central Citations. Rockville Pike, USA: US National Library of Medicine National Institutes of Health. 2008. Disponível em: <http://www.ncbi.nlm.nih.gov/pmc/pmcdoc/tagging-guidelines/citations/v3/toc.html>.
+* PubMed Central (NCBI). Sample PubMed Central Citations. Rockville Pike, USA: US National Library of Medicine National Institutes of Health. 2008. Disponível em: <http://www.ncbi.nlm.nih.gov/pmc/pmcdoc/tagging-guidelines/citations/v3/toc.html>.
  
-PubMed Central (NCBI). Elements: index of elements. Rockville Pike, USA: US National Library of Medicine National Institutes of Health. 2009. Disponível em: <https://www.ncbi.nlm.nih.gov/pmc/pmcdoc/tagging-guidelines/article/tags.html>.
+* PubMed Central (NCBI). Elements: index of elements. Rockville Pike, USA: US National Library of Medicine National Institutes of Health. 2009. Disponível em: <https://www.ncbi.nlm.nih.gov/pmc/pmcdoc/tagging-guidelines/article/tags.html>.
