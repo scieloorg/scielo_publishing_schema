@@ -3671,222 +3671,79 @@ Exemplo:
 Aparece em
   :ref:`elemento-p`
 
+Atributos obrigatórios
+  1. list-type
+
 Ocorre
   Zero ou mais vezes
 
 
-Para uma sequência de dois ou mais itens em lista, possuindo ou não uma 
-determinada ordenação, usa-se a tag ``<list>``.
+Uma lista contendo dois ou mais itens. Pode conter opcionalmente um elemento
+``<title>`` ou um elemento ``<label>``, exclusivamente.
+
+O elemento ``<label>`` deve ser utilizado para identificar a etiqueta que pode 
+acompanhar a lista. São consideradas etiqueta: legenda de equação, figura, 
+referência, etc. 
  
-``<list>`` deve apresentar as seguintes tags:
+O atributo ``@list-type`` especifica o prefixo a ser utilizado no marcador da 
+lista. Os valores possíveis são:
+
++----------------+-------------------------------------------------------------------+
+| Valor          | Descrição                                                         |
++================+===================================================================+
+| order          | Lista ordenada, cujo prefixo utilizado é um número ou letra       |
+|                | dependendo do estilo.                                             |
++----------------+-------------------------------------------------------------------+
+| bullet         | Lista desordenada, cujo prefixo utilizado é um ponto, barra ou    |
+|                | outro símbolo.                                                    |
++----------------+-------------------------------------------------------------------+
+| alpha-lower    | Lista ordenada, cujo prefixo é um caractere alfabético minúsculo. |
++----------------+-------------------------------------------------------------------+
+| alpha-upper    | Lista ordenada, cujo prefixo é um caractere alfabético maiúsculo. |
++----------------+-------------------------------------------------------------------+
+| roman-lower    | Lista ordenada, cujo prefixo é um numeral romano minúsculo.       |
++----------------+-------------------------------------------------------------------+
+| roman-upper    | Lista ordenada, cujo prefixo é um numeral romano maiúsculo.       |
++----------------+-------------------------------------------------------------------+
+| simple         | Lista simples, sem prefixo nos itens.                             |
++----------------+-------------------------------------------------------------------+
  
-- list-item (1 ou mais)
-- label     (0 ou 1)    
-- title     (0 ou 1)
  
-**<list-item>**
-Utilizada para identificar um item de uma lista.
-A tag list-item pode identificar as tags que seguem:
+Exemplo::
  
-- <p> (1 ou mais)
-- <def-list> (0 ou 1)
-- <list> (0 ou 1)
-**<label>**
-Opcional - se constar no PDF, identificar.
+
+  Lista Numérica:
+
+  1. Nullam gravida tellus eget condimentum egestas.
+    1.1. Curabitur luctus lorem ac feugiat pretium.
+  2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
  
-**<title>**
-Opcional - se constar no PDF, identificar.
- 
-.. note:: Somente uma das tags citadas acima (<label> e <title>) podem ser 
-          utilizadas dentro de uma lista (tag <list>), não se pode usar as 
-          duas tags ao mesmo tempo.
- 
-**@list-type:** indica o tipo de lista apresentada.
- 
-**Exemplos:**
- 
-- **order:** lista ordenada, cujo prefixo utilizado é um número;
-- **bullet:**   lista com marcadores, prefixo utilizado é um ícone de "bola";
-- **alpha-lower:** lista ordenada, cujo prefixo é um caractere alfabético minúsculo;
-- **alpha-upper:** lista ordenada, cujo prefixo é um caractere alfabético maiúsculo;
-- **roman-lower:** lista ordenada, cujo prefixo é um numeral romano minúsculo;
-- **roman-upper:** lista ordenada, cujo prefixo é um numeral romano maiúsculo;
-- **simple**: simples ou lista simples, sem prefixo antes de cada item ou com um traço.
- 
-**Exemplos:**
- 
-Tipo ordenada (ordem numérica):
- 
-**Exemplo no texto:**
- 
-Lista Númerica
-1 Nullam gravida tellus eget condimentum egestas.
-2 Curabitur luctus lorem ac feugiat pretium.
-3 Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 
-**Exemplo no XML:**
- 
+Deve ser identificada como:
+
 .. code-block:: xml
  
+    ...
     <list list-type="order">
         <title>Lista Númerica</title>
         <list-item>
             <p>Nullam gravida tellus eget condimentum egestas.</p>
         </list-item>
         <list-item>
-            <p>Curabitur luctus lorem ac feugiat pretium.</p>
+            <list>
+                <list-item>
+                    <p>Curabitur luctus lorem ac feugiat pretium.</p>
+                </list-item>
+            </list>
         </list-item>
         <list-item>
             <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
         </list-item>
     </list>
+    ...
  
-Tipo ícone com "marcadores":
- 
-**Exemplo no texto:**
- 
-Nullam gravida tellus eget condimentum egestas.
-Curabitur luctus lorem ac feugiat pretium.
-Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 
-Exemplo no XML:
- 
-.. code-block:: xml
- 
-    <list list-type="bullet">
-        <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-        </list-item>
-        <list-item>
-            <p>Curabitur luctus lorem ac feugiat pretium.</p>
-        </list-item>
-        <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-        </list-item>
-    </list>
- 
-Tipo caracter alfabético minúsculo:
- 
-**Exemplo no texto:**
- 
-- Lista 3
-a Nullam gravida tellus eget condimentum egestas.
-b Curabitur luctus lorem ac feugiat pretium.
-c Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 
-Exemplo no XML:
- 
-.. code-block:: xml
- 
-    <list list-type="alpha-lower">
-        <label>Lista 3</label>
-        <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-        </list-item>
-        <list-item>
-            <p>Curabitur luctus lorem ac feugiat pretium.</p>
-        </list-item>
-        <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-        </list-item>
-    </list>
- 
-Tipo caracter alfabético maiúsculo:
- 
-**Exemplo no texto:**
- 
-A Nullam gravida tellus eget condimentum egestas.
-B Curabitur luctus lorem ac feugiat pretium.
-C Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 
-**Exemplo no XML:**
- 
-.. code-block:: xml
- 
-    <list list-type="alpha-upper">
-        <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-        </list-item>
-        <list-item>
-            <p>Curabitur luctus lorem ac feugiat pretium.</p>
-        </list-item>
-        <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-        </list-item>
-    </list>
- 
-Tipo número romano minúsculo:
- 
-**Exemplo no texto:**
- 
-i Nullam gravida tellus eget condimentum egestas.
-ii Curabitur luctus lorem ac feugiat pretium.
-iii Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 
-**Exemplo no XML:**
- 
-.. code-block:: xml
- 
-    <list list-type="roman-lower">
-        <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-        </list-item>
-        <list-item>
-            <p>Curabitur luctus lorem ac feugiat pretium.</p>
-        </list-item>
-        <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-        </list-item>
-    </list>
- 
-Tipo número romano maiúsculo:
- 
-**Exemplo no texto:**
- 
-I Nullam gravida tellus eget condimentum egestas.
-II Curabitur luctus lorem ac feugiat pretium.
-III Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 
-**Exemplo no XML:**
- 
-.. code-block:: xml
- 
-    <list list-type="alpha-upper">
-        <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-        </list-item>
-        <list-item>
-            <p>Curabitur luctus lorem ac feugiat pretium.</p>
-        </list-item>
-        <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-        </list-item>
-    </list>
- 
-Tipo sem prefixo:
- 
-**Exemplo no texto:**
- 
-Nullam gravida tellus eget condimentum egestas.
-Curabitur luctus lorem ac feugiat pretium.
-Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 
-**Exemplo no XML:**
+.. note:: Note que o marcador não deve ser identificado como parte do texto no 
+          elemento ``<list-item>``.
 
-.. code-block:: xml
- 
-    <list list-type="simple">
-        <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-        </list-item>
-        <list-item>
-            <p>Curabitur luctus lorem ac feugiat pretium.</p>
-        </list-item>
-        <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-        </list-item>
-    </list>
- 
  
 .. _elemento-caption:
 
