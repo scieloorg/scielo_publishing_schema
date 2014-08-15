@@ -3318,7 +3318,7 @@ das regras:
 * O primeiro nível da estrutura não pode conter o elemento ``<tr>``, i.e. 
   ``//table/tr``.
 * Elemento ``<th>`` apenas como descendente de ``<thead>``.
-* Elemento ``<td>`` apenas como descendente de ``<tbody>`` ou ``<tfoot>``.
+* Elemento ``<td>`` apenas como descendente de ``<tbody>``.
 
 
 Toda a formatação para exibição deve ser realizada conforme descrito no guia 
