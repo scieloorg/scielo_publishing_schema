@@ -3299,205 +3299,31 @@ Exemplo:
     </table-wrap>
     ...
  
+
+.. elemento-table:
+
 <table>
 ^^^^^^^
-A tabela é dividida em cabeçalho/títulos <thead> e corpo/dados da tabela <tbody>.
- 
-São elementos de <table>:
- 
-- **col:** identifica uma coluna (possui atributos);
-- **colgroup:** identifica o total de colunas da tabela (possui atributos);
-- **thead:** identifica o cabeçalho;
-- **tfoot:** identifica a nota de rodapé da tabela;
-- **tbody:** identifica o corpo da tabela;
-- **tr:** identifica uma linha da tabela.
  
 Aparece em
- 1. article/body/p/table-wrap
- 2. article/body/sec/p/trable-wrap
- 3. article/back/app-group/app/table-wrap
- 4. article/back/app-group/app/glossary/table-wrap
- 5. article/back/glossary/table-wrap
- 6. article/back/app-group/app/supplementary-material/table-wrap  
-
-Ocorre (quando houver <table-wrap>)
- Uma vez
- 
-<thead>
-^^^^^^^
-Utilizada para apresentar o cabeçalho/título de uma tabela, pode conter alguns atributos para que a formatação fique de acordo com o PDF. Para fazer a identificação dos dados de cabeçalho deve ser utilizada as tags <tr> e <th>.
- 
-**<tr>**: A tag <tr> é utilizada para fazer a identificaçao de uma linha da tabela. <tr> faz a identificação das tags <td> e <th> onde: <td> especifica os dados da tabela em <tbody> e <th> identifica os dados da tabela em <thead>. Portanto, para cabeçalhos / títulos a estrutura deve ser a seguinte:
- 
-.. code-block:: xml
- 
-     <thead>
-     <tr>
-      <th>dado</th>
-      <th>dado</th>
-      <th>dado</th>
-     </tr>
-     </thead>
- 
-Aparece em
- 1. article/body/p/table-wrap/table
- 2. article/body/sec/p/trable-wrap/table
- 3. article/back/app-group/app/table-wrap/table
- 4. article/back/app-group/app/glossary/table-wrap/table
- 5. article/back/glossary/table-wrap/table
- 6. article/back/app-group/app/supplementary-material/table-wrap/table  
+  :ref:`elemento-table-wrap`
 
 Ocorre
- Zero ou mais vezes
- 
-**<th>**: REESCREVER O <TH>.
- 
-<tbody>
-^^^^^^^
-A tag <tbody> é utilizada para identificar do corpo da tabela. A tag <tr> em <tbody> indica a presença de uma linha.
- 
-Para a especificação de dados em <tr> para o corpo da tabela, é necessário utilizar a tag <td>. Essa tag é utilizada para identificar a células/dados que ficam no corpo da tabela.
- 
-A tag <td> pode conter uma série de informações tais como: email, hr, break, italic, underline, bold, roman, sub, sup, inline-formula, list, mml:math, p, graphic, media, sc, inline-supplementary-material, disp-formula-group, disp-formula, inline-graphic, fn, xref etc.
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-     <tbody>
-     <tr>
-     <td align="center">célula<sup>3</sup></td>
-     <td align="center">célula</td>
-     <td align="center">célula</td>
-     </tr>
-     <tr>
-     <td align="center">célula</td>
-     <td align="center">célula</td>
-     <td align="center">célula</td>
-     </tr>
-     <tr>
-     <td align="center">célula<xref ref-type="table-fn" rid="TFN01">*</xref></td>
-     <td align="center">célula</td>
-     <td align="center">célula</td>
-     </tr>
-     </tbody>
- </table>
-     <table-wrap-foot>
-     <fn id="TFN01">
-     <label>*</label>
-     <p>text</p>
-     </fn>
-     </table-wrap-foot>
- </table-wrap>
- 
-.. note:: as tags <thead>, <tbody>, <tr>, <th> e <td> possuem atributos de estilo os quais podem ser consultados em:
-http://jats.nlm.nih.gov/publishing/tag-library/1.0
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-<table-wrap id="t01">
-    <label>Tabela 1</label>
-         <caption>
-             <title>Correlação de Spearman entre Ideb, PIB, População e Custo-Aluno, referentes ao Sub-Banco de Dados do Nível da Escola com Dados - 2009</title>
-       </caption>
-   <table>
-       <colgroup>
-            <col/>
-            <col/>
-       </colgroup>
-       <thead>
-            <tr>
-                <th align="center">Variável</th>
-                 <th align="center">Ideb
-  2009</th>
-            </tr>
-       </thead>
-       <tbody>
-           <tr>
-              <td align="center">%BPBF</td>
-              <td align="center">-0,54</td>
-          </tr>
-          <tr>
-              <td align="center">População</td>
-              <td align="center">0,08</td>
-          </tr>
-          <tr>
-              <td align="center">PIB p/c 2009</td>
-              <td align="center">0,45</td>
-           </tr>
-          <tr>
-              <td align="center">CA 2009</td>
-              <td align="center">0,54</td>
-          </tr>
-       </tbody>
-   </table>
-   <table-wrap-foot>
-       <fn id="TFN01">
-           <p>Notas: Ideb 2009 = Índice de Desenvolvimento da Educação Básica 2009.</p>
-       </fn>
-   </table-wrap-foot>
-</table-wrap>
- 
-     
-     <table-wrap id="t02">
-          <label>Table 2</label>
-          <caption>
-          <title>Título da tabela.</title>
-           </caption>
-          <table frame="hsides" rules="all">
-                <colgroup width="33%">
-                <col/>
-                <col/>
-                <col/>
-                </colgroup>
-          <thead> dados do cabeçalho da tabela
-                <tr>
-                <th style="background-color:#e5e5e5">xxxxx</th>
-                <th style="background-color:#e5e5e5">xxxxx</th>
-                <th style="background-color:#e5e5e5">xxxxxx</th>
-                </tr>
-          </thead>
-          <tbody>
-                <tr>
-                <td align="center">xxx<xref ref-type="fn" rid="TFN02">(1)</xref></td>
-                <td align="center">xxxx</td>
-                <td align="center">xxxx</td>
-                </tr>
-                <tr>
-                <td align="center">xxxxx</td>
-                <td align="center">xxxx</td>
-                <td align="center">xxxx</td>
-                </tr>
-                <tr>
-                <td align="center">xxxxx</td>
-                <td align="center">xxxx</td>
-                <td align="center">xxxx</td>
-                </tr>
-          </tbody>
-          </table>
-          <table-wrap-foot>
-          <fn id="TFN02">
-          <label>(1)</label>
-          <p>Data are reported as number with percent in parentheses unless otherwise indicated</p>
-          </fn>
-          </table-wrap-foot>
-          </table-wrap></p>
+  Uma vez
 
-..note:: o label da <table-wrap-foot> pode fazer relação com algum símbolo dentro da tabela, que será identificado com xref do tipo "fn" com rid seguindo o da sua nota correspondente (TFN02). 
 
-Aparece em
- 1. article/body/p/table-wrap/table
- 2. article/body/sec/p/table-wrap/table
- 3. article/back/app-group/app/table-wrap/table
- 4. article/back/app-group/app/glossary/table-wrap/table
- 5. article/back/glossary/table-wrap/table 
- 5. article/back/app-group/app/supplementary-material/table-wrap/table 
+Tabela codificada conforme o padrão :term:`NISO JATS table model`, com a adição 
+das regras:
 
-Ocorre
- Zero ou mais vezes
- 
+* O primeiro nível da estrutura não pode conter o elemento ``<tr>``, i.e. 
+  ``//table/tr``.
+* Elemento ``<th>`` apenas como descendente de ``<thead>``.
+* Elemento ``<td>`` apenas como descendente de ``<tbody>`` ou ``<tfoot>``.
+
+
+Toda a formatação para exibição deve ser realizada conforme descrito no guia 
+`Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
+
 
 .. _elemento-supplementary-material:
 
