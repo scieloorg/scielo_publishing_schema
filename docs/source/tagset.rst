@@ -153,7 +153,7 @@ Exemplos:
 .. _elemento-label:
  
 <label>
-^^^^^^^
+-------
 
 Aparece em
   1. article/front/article-meta/aff
@@ -215,8 +215,10 @@ Exemplos:
           <label>Apêndice</label>
  
  
+.. _elemento-p:
+
 <p>
-^^^
+---
  
 Aparece em
   1. article/front/article-meta/abstract
