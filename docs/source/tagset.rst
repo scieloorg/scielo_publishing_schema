@@ -1589,6 +1589,15 @@ Exemplo:
 <fn>
 ----
 
+Representa um complemento ou um comentário explicativo do que está sendo 
+citado no texto, e deve ser identificado de acordo com sua natureza 
+ao referenciar autores ou as demais partes do texto.
+
+.. _elemento-fn-notas-autores:
+
+Notas de autor
+^^^^^^^^^^^^^^
+
 Aparece em
   :ref:`elemento-author-notes`
  
@@ -1658,7 +1667,98 @@ Os valores possíveis para o atributo ``@fn-type`` são:
     </author-notes>
     ...
  
+
+.. _elemento-fn-notas-gerais:
+
+Notas gerais
+^^^^^^^^^^^^
+
+Aparece em
+  :ref:`elemento-fn-group`
+
+Atributos obrigatórios
+  1. fn-type
+
+Ocorre
+  Uma ou mais vezes
+
+
+Representa um complemento ou um comentário explicativo do que está sendo 
+citado no texto.
  
+As notas que devem ser consideradas para entrar como nota de rodapé de
+:ref:`elemento-back`, são quaisquer notas que não fazem nenhum tipo de
+referência aos autores, as quais deverão ser identificadas em
+:ref:`elemento-fn-notas-autores`.
+ 
+Notas em :ref:`elemento-back` devem ser identificadas dentro do grupo 
+:ref:`elemento-fn-group`.
+ 
+Para composição de ``@id`` de **notas** utiliza-se o seguinte padrão: "fn" + o 
+número de ordem das notas. (Ver :ref:`regra-atribuicao-id`)
+ 
+Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, *, e etc)
+marque com a tag :ref:`elemento-label`. A tag :ref:`elemento-label` não
+pode estar dentro de :ref:`elemento-p`.
+
+Os valores possíveis para o atributo ``@fn-type`` são:
+ 
++-------------------------+--------------------------------------------------+
+| Valor                   | Descrição                                        |
++=========================+==================================================+
+| abbr                    | Representa abreviaturas de termos e nomes        |
+|                         | próprios utilizadas ao longo do texto. Caso      |
+|                         | esteja falando de abreviaturas de nomes dos      |
+|                         | autores, inserir nota em                         |
+|                         | :ref:`elemento-author-notes` em                  |
+|                         | :ref:`elemento-front`                            |
++-------------------------+--------------------------------------------------+
+| com                     | Representa nota de algum tipo de comunicado      |
+|                         | relevante para a realização do artigo            |
++-------------------------+--------------------------------------------------+
+| financial-disclosure    | Declaração de financiamento ou negação e         |
+|                         | aceitação de recursos recebidos em apoio às      |
+|                         | pesquisa em que um artigo é baseado. Serve também|
+|                         | para informações de financiamento que possuem    |
+|                         | um número de contrato ou que só informam se "sim"|
+|                         | ou "não" houve financiamento                     |
++-------------------------+--------------------------------------------------+
+| supported-by            | Indica que a pesquisa sobre a qual o artigo é    |
+|                         | baseado foi apoiada por alguma entidade,         |
+|                         | instituição ou pessoa física. Considerar neste   |
+|                         | tipo, informações de financiamento que não       |
+|                         | possuem números de contrato                      |
++-------------------------+--------------------------------------------------+
+| presented-at            | Indica que o artigo foi apresentado em algum     |
+|                         | evento científico                                |
++-------------------------+--------------------------------------------------+
+| supplementary-material  | Indica ou descreve o material suplementar do     |
+|                         | artigo                                           |
++-------------------------+--------------------------------------------------+
+| other                   | Especifica aquelas notas diferentes das          |
+|                         | relacionados acima. É possível também ter este   |
+|                         | tipo de nota em :ref:`elemento-author-notes`     |
++-------------------------+--------------------------------------------------+
+ 
+
+Exemplo:
+ 
+.. code-block:: xml
+
+    ... 
+    <fn-group>
+        <fn fn-type="financial-disclosure" id="fn01">
+            <label>1</label>
+            <p>Declaração de financiamento: sim</p>
+        </fn>
+        <fn fn-type="presented-at" id="fn02">
+            <label>**</label>
+            <p>Artigo foi apresentado na XVIII Conferência Internacional de Biblioteconomia 2014</p>
+        </fn>
+    </fn-group>
+    ...
+ 
+
 .. _elemento-corresp:
 
 <corresp>
@@ -4635,157 +4735,6 @@ Exemplo:
         </fn-group>
         ...
     </back>
-    ...
- 
-
-.. _elemento-fn:
-
-<fn>
-^^^^
-
-Aparece em
-  :ref:`elemento-author-notes`,
-  :ref:`elemento-fn-group`
-
-Atributos obrigatórios
-  ``@fn-type``
- 
-Corrigir:: Verificar as definições abaixo referente a ocorrencias do fn.
-
-Ocorre em front
-  Zero ou mais vezes
-
-Ocorre em back (quando houver :ref:`elemento-fn-group`)
-  Uma ou mais vezes
-
-Nota de rodapé representa um complemento ou um comentário explicativo do que 
-está sendo citado no texto.
- 
-As notas que devem ser consideradas para entrar como nota de rodapé de
-:ref:`elemento-back`, são quaisquer notas que não fazem nenhum tipo de
-referência aos autores, as quais deverão ser identificadas em
-:ref:`elemento-author-notes`.
- 
-Notas em :ref:`elemento-back` devem estar dentro de um grupo de notas de rodapé,
-:ref:`elemento-reffn-group`. Os atributos de :ref:`elemento-fn` são: ``@fn-type``
-e ``@id``, esta última deve ser única para cada nota.
- 
-Para composição de ``@id`` de **notas** utiliza-se o seguinte padrão: "fn" + o 
-número de ordem das notas. (Ver :ref:`regra-atribuicao-id`)
- 
-Exemplo: 
-
-  fn01... fn10, fn11;
- 
-Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, *, e etc)
-marque com a tag :ref:`elemento-label`. Essa tag de :ref:`elemento-label` não
-pode estar dentro de :ref:`elemento-p`.
-
-Exemplo:
- 
-.. code-block:: xml
- 
-    ...
-    <fn-group>
-        <fn fn-type="supported-by" id="fn01">
-            <label>*</label>
-            <p>A pesquisa do artigo foi apoiada pelo SEBRAE.</p>
-        </fn>
-    </fn-group>
-    ...
- 
-É possível ter quantas notas forem necessárias dentro da tag de grupo de notas 
-:ref:`elemento-fn-group`.
- 
-Exemplo:
- 
-.. code-block:: xml
-
-    ... 
-   <fn-group>
-      <fn fn-type="financial-disclosure" id="fn01">
-          <label>1</label>
-          <p>Declaração de financiamento: sim</p>
-      </fn>
-      <fn fn-type="presented-at" id="fn02">
-          <label>**</label>
-          <p>Artigo foi apresentado na XVIII Conferência Internacional de Biblioteconomia 2014</p>
-      </fn>
-   </fn-group>
-    ...
-
-Também é possível ver notas de rodapé mais simples sem etiqueta 
-:ref:`elemento-label` ou identificação ``@id`` ou ambos.
- 
-Exemplo:
- 
-.. code-block:: xml
- 
-     <fn-group>
-          <fn fn-type="other">    
-                <p>Proin feugiat mattis felis eu placerat.</p>
-          </fn>
-     </fn-group>
- 
-Os tipos permitirdos para o atributo ``@fn-type`` são:
- 
-+-------------------------+--------------------------------------------------+
-| Valor                   | Descrição                                        |
-+=========================+==================================================+
-| abbr                    | representa abreviaturas de termos e nomes        |
-|                         | próprios utilizadas ao longo do texto. Caso      |
-|                         | esteja falando de abreviaturas de nomes dos      |
-|                         | autores, inserir nota em                         |
-|                         | :ref:`elemento-author-notes` em                  |
-|                         | :ref:`elemento-front`                            |
-+-------------------------+--------------------------------------------------+
-| com                     | representa nota de algum tipo de comunicado      |
-|                         | relevante para a realização do artigo            |
-+-------------------------+--------------------------------------------------+
-| financial-disclosure    | declaração de financiamento ou negação e         |
-|                         | aceitação de recursos recebidos em apoio às      |
-|                         | pesquisa em que um artigo é baseado. Serve também|
-|                         | para informações de financiamento que possuem    |
-|                         | um número de contrato ou que só informam se "sim"|
-|                         | ou "não" houve financiamento                     |
-+-------------------------+--------------------------------------------------+
-| supported-by            | indica que a pesquisa sobre a qual o artigo é    |
-|                         | baseado foi apoiada por alguma entidade,         |
-|                         | instituição ou pessoa física. Considerar neste   |
-|                         | tipo, informações de financiamento que não       |
-|                         | possuem números de contrato                      |
-+-------------------------+--------------------------------------------------+
-| presented-at            | indica que o artigo foi apresentado em algum     |
-|                         | evento científico                                |
-+-------------------------+--------------------------------------------------+
-| supplementary-material  | indica ou descreve o material suplementar do     |
-|                         | artigo                                           |
-+-------------------------+--------------------------------------------------+
-| other                   | especifica aquelas notas diferentes das          |
-|                         | relacionados acima. É possível também ter este   |
-|                         | tipo de nota em :ref:-`elemento-author-notes` em |
-|                         | :ref:`elemento-front                             |
-+-------------------------+--------------------------------------------------+
-
-Exemplos:
- 
-.. code-block:: xml
-
-    ... 
-    <fn-group>
-        <fn fn-type="presented-at">
-            <label>1</label>
-            <p>Artigo apresentado na primeira conferência SciELO 15 anos, realizada dia 25 de outubro de 2013.</p>
-        </fn>
-        <fn fn-type="financial-disclosure">
-            <label>2</label>
-            <p>Trabalho foi financiado pelo CNPq / Contract: 012345X.</p>
-        </fn>
-        <fn fn-type="supported-by">
-            <label>*</label>
-            <p>Este artigo teve apoio e parceria da Instituição, SciELO - Scientific Eletronic Library Online e da FAP/UNIFESP.</p>
-        </fn>
-    </fn-group>
     ...
 
 
