@@ -93,8 +93,6 @@ Os atributos obrigatórios para ``@xref`` são:
 +------------------------+-----------------------------------------+
 | bibr                   | referência bibliográfica                |
 +------------------------+-----------------------------------------+
-| boxed-text             | caixa de texto                          |
-+------------------------+-----------------------------------------+
 | contrib                | contribuinte                            |
 +------------------------+-----------------------------------------+
 | corresp                | autor correspondente                    |
@@ -105,15 +103,7 @@ Os atributos obrigatórios para ``@xref`` são:
 +------------------------+-----------------------------------------+
 | fn                     | nota de rodapé                          |
 +------------------------+-----------------------------------------+
-| kwd                    | palavra-chave                           |
-+------------------------+-----------------------------------------+
-| list                   | lista                                   |
-+------------------------+-----------------------------------------+
-| other                  | nenhum dos tipos listados               |
-+------------------------+-----------------------------------------+
 | sec                    | seção                                   |
-+------------------------+-----------------------------------------+
-| statement              | declaração                              |
 +------------------------+-----------------------------------------+
 | supplementary-material | material suplementar                    |
 +------------------------+-----------------------------------------+
@@ -599,7 +589,7 @@ Exemplo:
 .. _elemento-abbrev-journal-title:
 
 <abbrev-journal-title>
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 Aparece em
   :ref:`elemento-journal-title-group`
@@ -3331,7 +3321,7 @@ codificação recomendada pela :term:`W3C` em linguagem :term:`MathML`
 .. _elemento-table-wrap:
 
 <table-wrap>
-^^^^^^^^^^^^
+------------
 
 Aparece em
   :ref:`elemento-app`,
