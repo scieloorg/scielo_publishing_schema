@@ -53,6 +53,16 @@ formato XML.
   :term:`Python` que agrega funcionalidades e utilitários para a manipulação 
   de :term:`pacotes SPS` e XMLs :term:`SPS`.
 
+.. _journal-meta-csv:
+
+Metadados dos periódicos
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Adicionalmente, diversos metadados dos periódicos necessários para a identificação de 
+elementos em ``<journal-meta>`` estão disponíveis em uma listagem no formato :term:`csv`, 
+que pode ser baixada `aqui <http://static.scielo.org/sps/titles-tab-utf-8.csv>`_. 
+Esta listagem é atualizada semanalmente, as terças-feiras.
+
 
 Convenções utilizadas neste guia
 --------------------------------

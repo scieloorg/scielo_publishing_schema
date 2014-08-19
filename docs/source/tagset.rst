@@ -466,11 +466,11 @@ Ocorre
   Uma vez
 
 
-No ``<front>`` devem estar apresentados os seguintes dados:
-Metadados do periódico, título, autoria, afiliação, resumo, palavras-chave, 
-DOI, volume, número, suplemento, paginação, indicação da licença Creative 
-Commons, data de publicação, seção de cabeçalho, histórico de datas, dados 
-de correspondência, notas de autor, informações de resenhas de livros.
+Em ``<front>`` devem ser identificados os metadados do periódico, título, 
+autoria, afiliação, resumo, palavras-chave, DOI, volume, número, suplemento, 
+paginação, indicação da licença Creative Commons, data de publicação, 
+seção de cabeçalho, histórico de datas, dados de correspondência, 
+notas de autor, informações de resenhas de livros.
  
 
 .. _elemento-journal-meta:
@@ -487,8 +487,8 @@ Ocorre
 
 Em ``<journal-meta>`` faz-se a identificação dos metadados do periódico.
  
-.. note:: Consulte o link http://static.scielo.org/sps/titles-tab-utf-8.csv para 
-          preencher corretamente os metadados do periódico. 
+.. note:: Consulte o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` 
+          como referência na identificação dos elementos.
 
 
 .. _elemento-journal-id:
@@ -544,20 +544,27 @@ Ocorre
   Uma vez
  
 
-Esta tag irá abranger tags que representam os metadados identificadores da revista.
+Abrange tags que representam os metadados identificadores da revista.
  
 Exemplo:
 
 .. code-block:: xml
  
-    <journal-title-group>
-        <journal-title>
-            Brazilian Journal of Otorhinolaryngology
-        </journal-title>
-        <abbrev-journal-title abbrev-type="publisher">
-            Braz J Otorhinolaryngol.
-        </abbrev-journal-title>
-    </journal-title-group>
+    ...
+    <journal-meta>
+        ...
+        <journal-title-group>
+            <journal-title>
+                Brazilian Journal of Otorhinolaryngology
+            </journal-title>
+            <abbrev-journal-title abbrev-type="publisher">
+                Braz J Otorhinolaryngol.
+            </abbrev-journal-title>
+            ...
+        </journal-title-group>
+        ...
+    </journal-meta>
+    ...
  
 
 .. _elemento-journal-title:
@@ -573,18 +580,27 @@ Ocorre
 
 
 Neste item é incluído o título longo do periódico de acordo com seu registro 
-no ISSN. Pode-se consultar a forma adotada no site da coleção, 
-na homepage do periódico.
+no ISSN. 
+
+.. note:: Consulte o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` 
+          como referência na identificação dos elementos.
  
 Exemplo:
 
 .. code-block:: xml
- 
-    <journal-title-group>
-        <journal-title>
-            Brazilian Journal of Medical and Biological Research
-        </journal-title>
-    </journal-title-group>
+
+    ...
+    <journal-meta>
+        ...
+        <journal-title-group>
+            <journal-title>
+                Brazilian Journal of Medical and Biological Research
+            </journal-title>
+            ...
+        </journal-title-group>
+        ...
+    </journal-meta>
+    ...
  
 
 .. _elemento-abbrev-journal-title:
@@ -603,9 +619,10 @@ Ocorre
  
 
 Nesta tag é incluída a forma abreviada do título do periódico de acordo 
-com seu registro no ISSN. Pode-se consultar a forma adotada no site da 
-coleção, na homepage do periódico. É obrigatório o uso do atributo 
-``@abbrev-type="publisher"``.
+com seu registro no ISSN. 
+
+.. note:: Consulte o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` 
+          como referência na identificação dos elementos.
 
 Exemplo:
  
@@ -637,10 +654,12 @@ O ISSN é um código numérico, único, que identifica uma publicação seriada
 a qual é definida pela norma *ISO 3297:2007*. Normalmente cada tipo de 
 suporte utilizado pelo periódico possui um número específico. 
 
-Pode-se consultar a forma adotada no site da coleção, na homepage do periódico. 
 É possível também encontrar esta informação em :ref:`elemento-back` dentro de 
 :ref:`elemento-element-citation` nas referências, mas não se faz o uso de 
 nenhum atributo neste caso.
+
+.. note:: Consulte o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` 
+          como referência na identificação dos elementos.
 
 Os valores permitidos para o atributo ``@pub-type`` são:
 
@@ -680,8 +699,10 @@ Ocorre
 
 
 O nome da instituição responsável pela publicação do periódico deve ser 
-especificado de acordo com o registro na SciELO. Pode-se consultar a forma 
-adotada no site da coleção, na homepage do periódico.
+especificado de acordo com o registro na SciELO. 
+
+.. note:: Consulte o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` 
+          como referência na identificação dos elementos.
  
 Exemplo:
  
@@ -3059,7 +3080,6 @@ O body compreende o conteúdo e desenvolvimento do artigo.
           a primeira chamada no texto. Para material suplementar, analisar e 
           identificar conforme o PDF.
  
-       
 .. _elemento-sec:
 
 <sec>
