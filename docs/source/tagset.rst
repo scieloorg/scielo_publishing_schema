@@ -3054,7 +3054,12 @@ Ocorre
 
 O body compreende o conteúdo e desenvolvimento do artigo.
  
+.. note:: Informamos que as tabelas, figuras e equações que não estão em 
+          :ref:`elemento-app-group`, devem ser inseridas obrigatoriamente após 
+          a primeira chamada no texto. Para material suplementar, analisar e 
+          identificar conforme o PDF.
  
+       
 .. _elemento-sec:
 
 <sec>
