@@ -43,6 +43,8 @@ As chamadas tags flutuantes podem aparecer em todo o documento, ``<front>``,
 ``<body>`` e ``<back>``.
 
 
+.. _elemento-xref:
+
 <xref>
 ------
 
@@ -2071,7 +2073,7 @@ Em caso de :term:`ahead-of-print`, especificar valores zerados, como segue:
     ...
 
 .. note:: Para informações de suplemento em :ref:`elemento-front` não se deve 
-          utilizar a tag :ref:`elemento-supplement`.
+          utilizar a tag ``<supplement>``.
  
  
 .. _elemento-fpage:
@@ -3088,7 +3090,7 @@ Ocorre
 
  
 O corpo textual do artigo pode ser constituído por seções. 
-Cada uma delas possui um elemento :ref:`elemento-title` seguido de um ou mais 
+Cada uma delas possui um elemento ``<title>`` seguido de um ou mais 
 :ref:`elemento-p`.
 
 :term:`Seções de primeiro nível` podem ser qualificadas de acordo com seu tipo por 
@@ -3229,7 +3231,7 @@ Aparece em
   :ref:`elemento-p`,
   ``<th>``,
   ``<td>``,
-  :ref:`elemento-app`,
+  ``<app>``,
   :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
@@ -3242,7 +3244,7 @@ Ocorre
 Tag para identificar equações em parágrafos no texto, podem ser 
 apresentadas como imagem ou codificadas e serão identificadas pela tag 
 ``<disp-formula>``. Se a equação for capturada como imagem, deve-se incluir o 
-nome do arquivo em :ref:`elemento-graphic`:
+nome do arquivo em ``<graphic>``:
  
 Para composição de ``@id`` utiliza-se o seguinte padrão: ``e`` + o número de 
 ordem da equação. (Ver :ref:`regra-atribuicao-id`)
@@ -3346,14 +3348,14 @@ codificação recomendada pela :term:`W3C` em linguagem :term:`MathML`
 ------------
 
 Aparece em
-  :ref:`elemento-app`,
+  ``<app>``,
   :ref:`elemento-app-group`,
   :ref:`elemento-body`,
   :ref:`elemento-glossary`,
   :ref:`elemento-p`,
   :ref:`elemento-sec`,
   :ref:`elemento-supplementary-material`,
-  :ref:`elemento-table-wrap-group`
+  ``<table-wrap-group>``
 
 Atributos obrigatórios
   1. id
@@ -3447,8 +3449,8 @@ Toda a formatação para exibição deve ser realizada conforme descrito no guia
 Aparece em
   :ref:`elemento-article-meta`,
   :ref:`elemento-p`,
-  :ref:`elemento-inline-supplementary-material`,
-  :ref:`elemento-app`
+  ``<inline-supplementary-material>``,
+  ``<app>``
 
 Atributos obrigatórios
   1. id
@@ -3691,13 +3693,12 @@ Deve ser identificada como:
 ---------
  
 Aparece em
-  :ref:`elemento-disp-formula`,
+  ``<disp-formula>``,
   :ref:`elemento-fig`, 
   :ref:`elemento-table-wrap`,
   :ref:`elemento-media`,
   :ref:`elemento-supplementary-material`,
-  :ref:`elemento-disp-formula`,
-  :ref:`elemento-app`
+  ``<app>``
 
 Ocorre
   Zero ou mais vezes
@@ -3731,7 +3732,7 @@ Exemplo:
 
 Aparece em
   :ref:`elemento-p`,
-  :ref:`elemento-app`,
+  ``<app>``,
   :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
@@ -3758,7 +3759,7 @@ Exemplo:
     </fig>
     ...
  
-A tag :ref:`elemento-graphic` é utilizada para identificar alguns tipos de 
+A tag ``<graphic>`` é utilizada para identificar alguns tipos de 
 arquivos. Seus atributos são:
  
 * **@xlink:href:** utilizado para especificar um endereço ou links externos. 
@@ -3768,7 +3769,7 @@ arquivos. Seus atributos são:
 Para figuras com legendas a marcação deve envolver toda a informação de 
 imagem, inclusive sua descrição, com a tag ``<fig>``. Dentro de ``<fig>`` 
 serão identificados o rótulo da figura :ref:`elemento-label` e mais a tag de 
-:ref:`elemento-caption` com a tag :ref:`elemento-title` com o título da figura.
+:ref:`elemento-caption` com a tag ``<title>`` com o título da figura.
  
 Exemplo:
  
@@ -3849,7 +3850,7 @@ Exemplo:
 Aparece em
   :ref:`elemento-p`,
   :ref:`elemento-fig`,
-  :ref:`elemento-app`,
+  ``<app>``,
 
 Atributos obrigatórios
   1. mime-subtype
@@ -4034,7 +4035,7 @@ em :ref:`elemento-front`.
  
 Todo o conteúdo de agradecimentos deverá ser identificado com a tag ``<ack>``, 
 caso haja o título "Agradecimentos" ou "Acknowledgment" identifique-o com a tag
-:ref:`elemento-title`. Em ``<ack>`` é possível especificar um ou mais parágrafos
+``<title>``. Em ``<ack>`` é possível especificar um ou mais parágrafos
 :ref:`elemento-p`.
 
 Exemplo:
@@ -4060,7 +4061,7 @@ Exemplo:
 ----------
 
 Aparece em
-  :ref:`elemento-element-back`
+  :ref:`elemento-back`
 
 Ocorre
   Zero ou mais vezes
@@ -4723,7 +4724,7 @@ Aparece em
 Ocorre
  Zero ou uma vez
 
-A tag de grupo de notas é um elemento de :ref:`elemento-back e deve conter todo
+A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
 o grupo de notas de rodapé mencionadas no documento que não representem notas de
 autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode
 possuir uma ou mais notas :ref:`elemento-fn`.
@@ -4767,8 +4768,8 @@ Ocorre
 Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
 básica de um apêndice devemos levar em consideração duas tags importantes, a de
 grupo de apêndice :ref:`elemento-app-group` e de apêndice propriamente dito
-:ref:`elemento-app. Obrigatoriamente deve ser inserido uma informação de
-etiqueta :ref:`elemento-label` em :ref:`elemento-app`.
+``<app>``. Obrigatoriamente deve ser inserido uma informação de
+etiqueta :ref:`elemento-label` em ``<app>``.
 
 Para composição de ``@id`` de **apêndice** utiliza-se o seguinte padrão: "app" + o
 número de ordem do apêndice. (Ver :ref:`regra-atribuicao-id`)
@@ -4942,15 +4943,15 @@ Exemplo de Apêndice com vídeo:
 
 Aparece em
   :ref:`elemento-back`,
-  :ref:`elemento-app`
+  ``<app>``
  
 Ocorre
   Zero ou mais vezes
 
 Utilizada quando há uma lista de termos e suas respectivas definições.
 O glossário pode ser apresentado como imagem ou como texto com as identificações
-de :ref:`elemento-term`, :ref:`elemento-def-list` e :ref:`elemento-def`. O 
-glossário pode estar identificado em: :ref:`elemento-app`, :ref:`elemento-back`,
+de ``<term>``, ``<def-list>`` e ``<def>``. O 
+glossário pode estar identificado em: ``<app>``, :ref:`elemento-back`,
 e :ref:`elemento-sec`.
  
 Para composição de ``@id`` de glossário utiliza-se o seguinte padrão:
@@ -5032,7 +5033,7 @@ Exemplo:
   
   d01... d10, d11;
  
-O glossário pode ser apresentado como imagem, utilizando a tag :ref:`elemento-graphic`,
+O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
 ou como texto. Veja os exemplos abaixo:
  
 Exemplo com imagem:
