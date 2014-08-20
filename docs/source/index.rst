@@ -87,6 +87,30 @@ convenções de estilo e formatação.
   do XML.
 
 
+Para cara elemento descrito, há uma lista de definições no formato::
+
+  Aparece em
+    <journal-meta>
+
+  Atributos obrigatórios
+    @journal-id-type
+
+  Ocorre
+    Uma vez
+
+
+Onde:
+
+* **Aparece em**: Apresenta os elementos do XML onde o elemento em foco é comumente 
+  identificado. O fato de um determinado elemento-pai não constar nesta lista não 
+  o exclui automaticamente, e a especificação JATS Publishing deve ser consultada.
+* **Atributos obrigatórios**: Apresenta apenas os atributos onde, no caso da 
+  presença do elemento, devem ser marcados obrigatóriamente. Esta definição pode vir 
+  acompanhada de seus valores, também obrigatórios. Caso não existam atributos 
+  obrigatórios, este item é omitido.
+* **Ocorre**: O número de vezes que o elemento pode ocorrer em um contexto.
+
+
 Lista de elementos
 ------------------
 

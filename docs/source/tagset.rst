@@ -736,8 +736,8 @@ Ocorre
 Contém os metadados do artigo. Seus elementos básicos são :term:`DOI`, seção 
 (de acordo com o sumário do periódico), título(s) do artigo, autor (es) e 
 suas respectivas afiliações e notas, data de publicação, volume, número e 
-paginação do artigo, resumo(s), palavras-chave, histórico, permissão 
-de uso e contagem de elementos.
+paginação do artigo, resumo(s), palavras-chave, histórico, indicação da licença
+de uso Creative Commons e contagem de elementos.
 
  
 .. _elemento-article-id:
@@ -1069,27 +1069,24 @@ Exemplo:
 ^^^^^^^^
 
 Aparece em
-  :ref:`elemento-contrib`, :ref:`elemento-person-group`, 
-  :ref:`elemento-element-citation`
+  :ref:`elemento-contrib`, 
+  :ref:`elemento-person-group` 
  
 Ocorre
   Zero ou mais vezes
 
 
-Utilizado para especificar um grupo de colaboradores (autores, editores, 
-pesquisadores, instituição, laboratório etc que atuaram como colaboradores 
-do trabalho). Pode ser identificada em :ref:`elemento-contrib`, 
-:ref:`elemento-element-citation`, :ref:`elemento-person-group`, 
-:ref:`elemento-product`.
+Utilizada para identificar uma autoria institucional individual ou grupo. 
+
  
- 
-.. _elemento-on-behold-of:
+.. _elemento-on-behalf-of:
 
 <on-behalf-of>
 ^^^^^^^^^^^^^^
 
 Aparece em
-  :ref:`elemento-contrib-group`, :ref:`elemento-contrib`
+  :ref:`elemento-contrib-group`, 
+  :ref:`elemento-contrib`
  
 Ocorre
   Zero ou mais vezes
@@ -1097,8 +1094,8 @@ Ocorre
 
 Utiliza-se quando um autor age como representante de um grupo ou 
 organização. Ou seja, quando o autor diz ter escrito ou editado um trabalho 
-em nome de uma organização. Essa tag pode ser encontrada em: 
-:ref:`elemento-collab`, :ref:`elemento-contrib` e :ref:`elemento-contrib-group`.
+em nome de uma organização. 
+
  
 Exemplo:
 
@@ -1127,9 +1124,12 @@ Exemplo:
 ^^^^^^
 
 Aparece em
-  :ref:`elemento-collab`, :ref:`elemento-contrib`, 
-  :ref:`elemento-contrib-group`, :ref:`elemento-element-citation`, 
-  :ref:`elemento-person-group`, :ref:`elemento-product`
+  :ref:`elemento-collab`, 
+  :ref:`elemento-contrib`, 
+  :ref:`elemento-contrib-group`, 
+  :ref:`elemento-element-citation`, 
+  :ref:`elemento-person-group`, 
+  :ref:`elemento-product`
  
 Ocorre
   Zero ou mais vezes
@@ -1139,8 +1139,6 @@ A tag ``<role>`` (função ou papel) é usada para especificar o cargo
 (ou função) do contribuinte do documento.  
 
 Exemplos:
- 
-Em :ref:`elemento-contrib`:
  
 .. code-block:: xml
  
@@ -1159,8 +1157,6 @@ Em :ref:`elemento-contrib`:
     </contrib>
     ...
  
-
-Em :ref:`elemento-ref`:
  
 .. code-block:: xml
  
