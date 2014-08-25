@@ -331,7 +331,7 @@ Exemplo:
 =========
 
 Aparece em
-  1. /
+  ``/``
  
 Atributos obrigatórios
   1. dtd-version
@@ -1197,10 +1197,8 @@ Ocorre
 
 
 A tag ``<name>`` é utilizada para especificar o nome pessoal do contribuinte 
-autoral e pode ser encontrada em:  
-As tags possíveis em <name> são: :ref:`elemento-surname`, 
-:ref:`elemento-given-names`, :ref:`elemento-prefix`, :ref:`elemento-prefix`,
-:ref:`elemento-suffix`.
+autoral. As tags possíveis em ``<name>`` são: :ref:`elemento-surname`, 
+:ref:`elemento-given-names`, :ref:`elemento-prefix`, :ref:`elemento-suffix`.
  
 
 .. note:: As tags possíveis em ``<name>`` devem seguir obrigatoriamente a 
@@ -1463,7 +1461,7 @@ Ocorre
 Em ``<addr-line>``, especifica-se os dados de endereço da instituição 
 vinculada ao autor, e deve aparecer quando a informação for descrita no 
 artigo dentro de :ref:`elemento-aff`. Pode conter somente informações de 
-Estado e cidade.
+estado e cidade.
  
 
 .. _elemento-named-content:
@@ -1871,7 +1869,8 @@ Exemplo de marcação de data de publicação na versão digital:
 ^^^^^^^^
 
 Aparece em
-  :ref:`elemento-pub-date`, :ref:`elemento-product`, 
+  :ref:`elemento-pub-date`, 
+  :ref:`elemento-product`, 
   :ref:`elemento-element-citation`
 
 Ocorre 
@@ -4194,8 +4193,8 @@ Exemplos:
                 </person-group>
                 <article-title>Título do artigo</article-title>
                 <source>Nome do Periódico</source>
-                <season>Estações do ano (ex.: Inverno)</season>
-                <month>Mês ou intervalo de meses (Ex.: Jan-Mar)</month>
+                <season>Estações do ano (ex.: Inverno) ou intervalo de meses (Ex.: Jan-Mar)</season>
+                <month>Mês</month>
                 <year>ano</year>
                 <volume>volume</volume>
                 <issue>número</issue>
