@@ -3607,7 +3607,7 @@ Exemplo:
 ------
 
 Aparece em
-  :ref:`elemento-p`
+  :ref:`elemento-p`, ``<list-item>``
 
 Atributos obrigatórios
   1. list-type
@@ -3667,7 +3667,7 @@ Deve ser identificada como:
             <p>Nullam gravida tellus eget condimentum egestas.</p>
         </list-item>
         <list-item>
-            <list>
+            <list list-type="order">
                 <list-item>
                     <p>Curabitur luctus lorem ac feugiat pretium.</p>
                 </list-item>
