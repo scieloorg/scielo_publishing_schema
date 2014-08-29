@@ -2803,9 +2803,6 @@ conter o atributo ``@xml:lang``.
 Aparece em
   :ref:`elemento-kwd-group`
  
-Atributos obrigatórios
-  1. xml:lang
- 
 Ocorre
   Uma ou mais vezes
 
@@ -2881,7 +2878,7 @@ Aparece em
   :ref:`elemento-award-group`
  
 Ocorre
-  Zero ou mais vezes
+  Uma vez
 
 
 Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
@@ -2914,7 +2911,7 @@ Aparece em
   :ref:`elemento-award-group`
  
 Ocorre
-  Zero ou mais vezes
+  Uma vez
 
 
 Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
@@ -3029,10 +3026,10 @@ inserida como último item de :ref:`elemento-article-meta`.
  
 Os elementos que identificam os totais são:
 
-* ``<fig-count>``: Total de figuras no artigo
-* ``<table-count>``: Total de tabelas no artigo
-* ``<equation-count>``: Total de equações do artigo
-* ``<ref-count>``: Total de referências no artigo
+* ``<fig-count>``: Total de figuras no documento
+* ``<table-count>``: Total de tabelas no documento
+* ``<equation-count>``: Total de equações do documento
+* ``<ref-count>``: Total de referências no documento
 * ``<page-count>``: Total de páginas do artigo
  
 Exemplo:
