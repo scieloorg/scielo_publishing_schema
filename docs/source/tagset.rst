@@ -117,29 +117,42 @@ Os atributos obrigatórios para ``@xref`` são:
 Exemplos:
  
 .. code-block:: xml
- 
-    <!-- CORRIGIR: Exemplo desconexo e com fragmentos mal formados de XML -->
 
-    <xref ref-type="aff" rid="aff1">1</xref>
-    <aff id="aff01">1</aff>
+     <contrib-group>
+    <contrib contrib-type="author">
+                    <name>
+                        <surname>Lacerda</surname>
+                        <given-names>Marcus VG</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="aff1">1</xref>
+                </contrib-group>
+            <aff id="aff1">
+                <label>1</label>
+                <institution content-type="orgname">Universidade do Estado do Amazonas</institution>
+                <addr-line>
+                    <named-content content-type="city">Manaus</named-content>
+                    <named-content content-type="state">AM</named-content>
+                </addr-line>
+                <country>Brasil</country>
+                <institution content-type="original">Universidade do Estado do Amazonas, Manaus, AM, Brasil</institution>
+            </aff>
      
-    <xref ref-type="birb" rid="B01">1</xref>
-    <ref id="B01">1</ref>
+.. code-block:: xml
 
-    <xref ref-type="fig" rid="f01">figure 1</xref>
-    <fig id="f01">
+     <xref ref-type="bibr" rid="B13">John 2003</xref>
 
-    <xref ref-type="table" rid="t01">table 1</xref>
 
-    <table-wrap id="t01">
-    <xref ref-type="sec" rid="sec01">Seção Metodologia</xref>
-    <sec sec-type="methods" id="sec01">
+.. code-block:: xml
 
-    <xref ref-type="app" rid="app01">Apêndice 1</xref>
-    <app id="app01">
-     
-    <xref ref-type="supplementary-material" rid="suppl01">Material Suplementar A</xref>
-    <supplementary-material id="suppl01">
+     <p>Check in <xref ref-type="fig" rid="f01">Figure</xref>:</p>
+            <p>
+                <fig id="f01">
+                    <caption>
+                        <title>Environmental <italic>in situ</italic> conditions during the study period.</title>
+                    </caption>
+                    <graphic xlink:href="0074-0276-mioc-0074-0276140068-gf01"/>
+                </fig>
+            </p>
  
 
 .. _elemento-label:
@@ -187,17 +200,18 @@ que faz a ligação entre etiquetas.
 Exemplos:
  
 .. code-block:: xml
+ 
 
-    <!-- CORRIGIR: Exemplo desconexo e com fragmentos mal formados de XML -->
-
-    <aff id="aff01">
-        <label>a</label>
-        <corresp id="c01">
+     <aff id="aff01">
+          <label>a</label>
+     
+         <corresp id="c01">
             <label>*</label>
-            <fig id="f01">
+
+<fig id="f01">
           <label>Figure 1</label>
 
-    <table-wrap id="t01">
+<table-wrap id="t01">
           <label>Table 1</label>
  
      <ref id="B01">1</ref>
@@ -895,10 +909,7 @@ Exemplo:
  
     ...
     <title-group>
-        <article-title>
-            The teaching of temporomandibular disorders and  orofacial pain at undergraduate level in Brazilian dental schools
-        </article-title>
-        ...
+        <article-title>The teaching of temporomandibular disorders and  orofacial pain at undergraduate level in Brazilian dental schools</article-title>
     </title-group>
     ...
 
@@ -911,16 +922,9 @@ Exemplo:
  
 .. code-block:: xml
  
-    <!-- CORRIGIR: Impressão de que esse exemplo está relacionado com a nota acima -->
-
-    ...
-    <title-group>
-        <article-title>
-            Correlação entre sintomas e tempo de evolução do câncer do trato aerodigestivo superior com o estádio inicial e avançado <xref ref-type="fn" rid="fn01">*</xref> 
-        </article-title>
-        ...
-    </title-group>.
-    ...
+     <title-group>
+          <article-title>Correlação entre sintomas e tempo de evolução do câncer do trato aerodigestivo superior com o estádio inicial e avançado</article-title>
+     </title-group>.
 
 
 .. _elemento-trans-title-group:
@@ -964,18 +968,12 @@ Exemplo:
  
     ...
     <title-group>
-        <article-title>
-            Between spiritual wellbeing and spiritual distress: possible related factors in elderly patients with cancer
-        </article-title>
+        <article-title>Between spiritual wellbeing and spiritual distress: possible related factors in elderly patients with cancer</article-title>
         <trans-title-group xml:lang="pt">
-            <trans-title>
-                Entre o bem-estar espiritual e a angústia espiritual: possíveis fatores relacionados a idosos com cancro
-            </trans-title>
+            <trans-title>Entre o bem-estar espiritual e a angústia espiritual: possíveis fatores relacionados a idosos com cancro</trans-title>
         </trans-title-group>
         <trans-title-group xml:lang="es">
-            <trans-title>
-                Entre el bienestar espiritual y el sufrimiento espiritual: posibles factores relacionados en ancianos con câncer
-            </trans-title>
+            <trans-title>Entre el bienestar espiritual y el sufrimiento espiritual: posibles factores relacionados en ancianos con câncer</trans-title>
         </trans-title-group>
     </title-group>
     ...
@@ -1042,22 +1040,22 @@ O atributo ``@contrib-type`` pode possuir os valores:
 Exemplo:
  
 .. code-block:: xml
-
-    <!-- CORRIGIR: Trocar por exemplo real -->
-    
-    ...
-    <contrib-group>
-        <contrib contrib-type="author">
-            <name>
-                <surname>Último Sobrenome</surname>
-                <given-names>Prenomes</given-names>
-                <prefix>Qualificadores que antecendem o nome como Prof, Dr.,Marechal, dentre outros</prefix>
-                <suffix>Partículas do nome como Filho, Junior, Neto</suffix>
-            </name>
-            <xref ref-type="aff" rid="aff01">Identificador da afiliação</xref>
-        </contrib>
-        ...
-    </contrib-group>
+ 
+     <contrib contrib-type="author">
+ 
+**Exemplo:**
+ 
+.. code-block:: xml
+ 
+     <contrib-group>
+          <contrib contrib-type="author">
+                <name>
+                     <surname>Freitas</surname>
+                     <given-names>Ismael Forte</given-names>
+                     <suffix>Júnior</suffix>
+                </name>
+                     <xref ref-type="aff" rid="aff01">1</xref>
+     </contrib>
     ...
  
 .. note:: Observar normas para entrada de nomes (*AACR2* - Código de Catalogação 
@@ -1434,17 +1432,13 @@ em até três níveis. Estes níveis serão definidos pelo atributo obrigatório
 
 Deve-se especificar a afiliação completa como aparece no documento 
 original. Caso o email esteja presente também deve ser marcado; ambas as tags 
-possuem atributo obrigatório ``@content-type`` dos tipos: original e/ou email, 
-conforme segue no exemplo:
+possuem atributo obrigatório ``@content-type`` dos tipos: original, email ou country conforme segue no exemplo:
 
 
 .. code-block:: xml
-
-    <!-- CORRIGIR: O exemplo onde @content-type="email" ocorre na tag <named-content>, e isso não está claro no parágrafo acima. -->
-
-    <institution content-type="original">
-        Técnica de Cardiopneumologia. Unidade de Fisiopatologia Respiratória, Serviço de Pneumologia, Centro Hospitalar Lisboa Norte, Lisboa, Portugal. <named-content content-type="email">mara@scielo.org</named-content>
-    </institution>
+ 
+     <institution content-type="original">Técnica de Cardiopneumologia. Unidade de Fisiopatologia Respiratória, Serviço de Pneumologia, Centro Hospitalar Lisboa Norte, Lisboa, Portugal. 
+     <named-content content-type="email">mara@scielo.org</named-content></institution>
 
  
 .. _elemento-addr-line:
@@ -1553,7 +1547,7 @@ Exemplo:
     ...
 
 
-.. note:: Para a próxima versão do SPS este atributo passará a ser obrigatório.
+.. note:: Para a próxima versão do SciELO PS este atributo passará a ser obrigatório.
 
 
 .. _elemento-author-notes:
@@ -3470,7 +3464,7 @@ Para composição do atributo ``@id`` utiliza-se o seguinte padrão:
 O material suplementar pode estar em :ref:`elemento-front`, dentro de 
 :ref:`elemento-article-meta`, em :ref:`elemento-body` como seção ou entre 
 parágrafos ou em :ref:`elemento-back`, onde só poderá ser identificado caso 
-esteja especificado dentro do grupo de apêndices <app-group> (CORRIGIR: <app-group> não consta no SPS como possível pai do elemento atual).
+esteja especificado dentro do grupo de apêndices <app-group> (CORRIGIR: <app-group> não consta no SciELO PS como possível pai do elemento atual).
  
 Seus atributos obrigatórios são:
  
