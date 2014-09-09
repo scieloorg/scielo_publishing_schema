@@ -2803,9 +2803,6 @@ conter o atributo ``@xml:lang``.
 Aparece em
   :ref:`elemento-kwd-group`
  
-Atributos obrigatórios
-  1. xml:lang
- 
 Ocorre
   Uma ou mais vezes
 
@@ -2881,7 +2878,7 @@ Aparece em
   :ref:`elemento-award-group`
  
 Ocorre
-  Zero ou mais vezes
+  Uma vez
 
 
 Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
@@ -2914,7 +2911,7 @@ Aparece em
   :ref:`elemento-award-group`
  
 Ocorre
-  Zero ou mais vezes
+  Uma vez
 
 
 Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
@@ -3029,10 +3026,10 @@ inserida como último item de :ref:`elemento-article-meta`.
  
 Os elementos que identificam os totais são:
 
-* ``<fig-count>``: Total de figuras no artigo
-* ``<table-count>``: Total de tabelas no artigo
-* ``<equation-count>``: Total de equações do artigo
-* ``<ref-count>``: Total de referências no artigo
+* ``<fig-count>``: Total de figuras no documento
+* ``<table-count>``: Total de tabelas no documento
+* ``<equation-count>``: Total de equações do documento
+* ``<ref-count>``: Total de referências no documento
 * ``<page-count>``: Total de páginas do artigo
  
 Exemplo:
@@ -3610,7 +3607,7 @@ Exemplo:
 ------
 
 Aparece em
-  :ref:`elemento-p`
+  :ref:`elemento-p`, ``<list-item>``
 
 Atributos obrigatórios
   1. list-type
@@ -3670,7 +3667,7 @@ Deve ser identificada como:
             <p>Nullam gravida tellus eget condimentum egestas.</p>
         </list-item>
         <list-item>
-            <list>
+            <list list-type="order">
                 <list-item>
                     <p>Curabitur luctus lorem ac feugiat pretium.</p>
                 </list-item>
