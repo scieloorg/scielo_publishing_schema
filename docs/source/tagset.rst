@@ -461,14 +461,14 @@ Exemplo da tag completa versão JATS 1.0:
  
 .. code-block:: xml
  
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" article-type="research-article" xml:lang="en">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.1" article-type="research-article" xml:lang="en">
  
 
 Exemplo da tag completa versão PMC 3.0:
  
 .. code-block:: xml
 
-    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" article-type="research-article" xml:lang="en">
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" specific-use="sps-1.1" article-type="research-article" xml:lang="en">
  
 
 .. _elemento-front:
