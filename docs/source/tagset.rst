@@ -2379,7 +2379,7 @@ Ocorre
   Zero ou uma vez
 
 
-Identifica um grupo de páginas mencionados numa referência.
+Identifica um intervalo de paginação mencionados numa referência.
 
 Exemplo:
 
@@ -2398,9 +2398,8 @@ Exemplo:
     </ref>
     ...
 
-.. note:: A inserção do grupo de páginas deve ser inserido posteriormente as 
-          informações da primeira página do grupo :ref:`elemento-fpage` e de 
-          última página do grupo :ref:`elemento-lpage`. (CORRIGIR! Não entendi nada!)
+.. note:: A inserção do intervalo de paginação deve ser inserido após à
+          informação de última página :ref:`elemento-lpage`.
 
 
 .. _elemento-isbn:
@@ -3312,8 +3311,6 @@ codificação recomendada pela :term:`W3C` em linguagem :term:`MathML`
 **Exemplo**: para codificar  σˆ2*
  
 .. code-block:: xml
- 
-    <!-- codificar: σˆ2 -->
 
     ... 
     <inline-formula>
@@ -3553,16 +3550,23 @@ Exemplo:
  
 .. code-block:: xml
  
-    <!-- CORRIGIR: Exemplo não reflete a espec. -->
-
-    <p>Mauris ac magna fermentum, pharetra tellus aliquam, tempor felis.</p>
-    <disp-quote>
-        <p>"Sed luctus quam a felis sagittis lacinia. Etiam auctor tincidunt nibh, sit amet convallis urna convallis nec. Nullam venenatis dapibus dapibus. Vivamus et arcu blandit, laoreet tellus eget, sodales sapien. Etiam fringilla turpis enim, sit amet porta velit faucibus eu."</p>
-    </disp-quote>
-    <p>Donec dapibus lacus urna, eu fringilla quam tempus eu.</p>
- 
-A tag ``<disp-quote>`` também é utilizada para epígrafes, citações em blocos 
-e extratos dentro do texto.
+     <p>In the face of the failure of the transmission argument Wright would, 
+     apparently, endorse the view that Caution could still provide an adequate 
+     route to an anti-realist account of necessity, as can be gathered from the 
+     following passage:</p>
+            <p>
+                <disp-quote>
+                    <p>We suppose (i) that a priori judgement will play a part 
+                    in the operation of any coherent system of belief, and (ii) 
+                    that non-cognitivism about necessity had probably better 
+                    grant a role for judgements of necessity as co-ordinate to 
+                    (some) a priori judgements. If supposition (i) is wrong, 
+                    then global Caution about necessitated judgements is, after 
+                    all, at the service of the non-cognitivist about necessity</p>
+                </disp-quote>
+            </p>
+            <p>I disagree. In the previous section we saw that showing that 
+            Caution is an incoherent attitude is not an easy matter.</p>
  
  
 .. _elemento-ext-link:
@@ -3752,9 +3756,7 @@ Exemplo:
 A tag ``<graphic>`` é utilizada para identificar alguns tipos de 
 arquivos. Seus atributos são:
  
-* **@xlink:href:** utilizado para especificar um endereço ou links externos. 
-  Portanto o @xlink:href deve conter nomes de imagens/arquivos e também o 
-  nome completo de uma URL.
+* **@xlink:href:** utilizado para especificar o nome completo da imagem referenciada
  
 Para figuras com legendas a marcação deve envolver toda a informação de 
 imagem, inclusive sua descrição, com a tag ``<fig>``. Dentro de ``<fig>`` 
