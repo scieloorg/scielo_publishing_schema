@@ -352,6 +352,7 @@ Atributos obrigatórios
   2. article-type
   3. xml:lang
   4. xmlns:xlink="http://www.w3.org/1999/xlink"
+  5. specific-use="sps-1.1"
  
 Ocorre
   Uma vez
@@ -460,14 +461,14 @@ Exemplo da tag completa versão JATS 1.0:
  
 .. code-block:: xml
  
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" article-type="research-article" xml:lang="en">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.1" article-type="research-article" xml:lang="en">
  
 
 Exemplo da tag completa versão PMC 3.0:
  
 .. code-block:: xml
 
-    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" article-type="research-article" xml:lang="en">
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" specific-use="sps-1.1" article-type="research-article" xml:lang="en">
  
 
 .. _elemento-front:
@@ -1041,21 +1042,18 @@ Exemplo:
  
 .. code-block:: xml
  
-     <contrib contrib-type="author">
- 
-**Exemplo:**
- 
-.. code-block:: xml
- 
-     <contrib-group>
-          <contrib contrib-type="author">
-                <name>
-                     <surname>Freitas</surname>
-                     <given-names>Ismael Forte</given-names>
-                     <suffix>Júnior</suffix>
-                </name>
-                     <xref ref-type="aff" rid="aff01">1</xref>
-     </contrib>
+    ...
+    <contrib-group>
+        <contrib contrib-type="author">
+            <name>
+                <surname>Freitas</surname>
+                <given-names>Ismael Forte</given-names>
+                <suffix>Júnior</suffix>
+            </name>
+            <xref ref-type="aff" rid="aff01">1</xref>
+        </contrib>
+        ...
+    </contrib-group>
     ...
  
 .. note:: Observar normas para entrada de nomes (*AACR2* - Código de Catalogação 
@@ -1354,23 +1352,15 @@ Exemplo:
     ...
     <aff id="aff01">
         <label>1</label>
-        <institution content-type="orgname">
-            Fundação Oswaldo Cruz
-        </institution> 
-        <institution content-type="orgdiv1">
-            Escola Nacional de Saúde Pública Sérgio Arouca
-        </institution>
-        <institution content-type="orgdiv2">
-            Centro de Estudos da Saúde do Trabalhador e Ecologia Humana
-        </institution>   
+        <institution content-type="orgname">Fundação Oswaldo Cruz</institution> 
+        <institution content-type="orgdiv1">Escola Nacional de Saúde Pública Sérgio Arouca</institution>
+        <institution content-type="orgdiv2">Centro de Estudos da Saúde do Trabalhador e Ecologia Humana</institution>   
         <addr-line>
             <named-content content-type="city">Manguinhos</named-content>
             <named-content content-type="state">RJ</named-content>
         </addr-line>
         <country>Brasil</country>
-        <institution content-type="original">
-            Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. <named-content content-type="email">maurosilva@fiocruz.com</named-content>
-        </institution>
+        <institution content-type="original">Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. <named-content content-type="email">maurosilva@fiocruz.com</named-content></institution>
     </aff>
     ...
  
@@ -1787,9 +1777,7 @@ Exemplo:
     ...
     <author-notes>
         ...
-        <corresp id="c01">
-            Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@contato.com</email>
-        </corresp>
+        <corresp id="c01">Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@contato.com</email></corresp>
         ...
     </author-notes>
     ...
