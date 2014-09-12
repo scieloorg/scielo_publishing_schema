@@ -262,40 +262,40 @@ tipo de atributo.
 Regra de atribuição de @id
 ==========================
  
-Para a composição do ``@id``, combine um prefixo com uma numeração sequencial, 
-como segue:
+Para a composição do ``@id``, combine o prefixo do tipo do elemento e um número 
+inteiro, como segue:
  
 
-+------------------------+---------------------------+---------+-----------------------+
-| Elemento XML           | Descrição                 | Prefixo | Exemplo               |
-+========================+===========================+=========+=======================+
-| aff                    | Afiliação                 | aff     | aff01, aff02, ...     |
-+------------------------+---------------------------+---------+-----------------------+
-| app                    | Apêndice                  | app     | app01, app02, ...     |
-+------------------------+---------------------------+---------+-----------------------+
-| corresp                | Correspondência           | c       | c01, c02, ...         |
-+------------------------+---------------------------+---------+-----------------------+
-| disp-formula           | Equações                  | e       | e01, e02, ...         |
-+------------------------+---------------------------+---------+-----------------------+
-| fig                    | Figuras                   | f       | f01, f02, ...         |
-+------------------------+---------------------------+---------+-----------------------+
-| def-list               | Glossário                 | d       | d01, d02, ...         |
-+------------------------+---------------------------+---------+-----------------------+
-| table-wrap-foot/fn     | Notas de rodapé de tabela | TFN     | TFN01, TFN02, ...     |
-+------------------------+---------------------------+---------+-----------------------+
-| author-notes/fn |      | Notas de rodapé do artigo | fn      | fn01, fn02, ...       | 
-| fn-group/fn            |                           |         |                       |
-+------------------------+---------------------------+---------+-----------------------+
-| table-wrap             | Tabela                    | t       | t01, t02, ...         |
-+------------------------+---------------------------+---------+-----------------------+
-| supplementary-material | Suplemento                | suppl   | suppl01, suppl02, ... |
-+------------------------+---------------------------+---------+-----------------------+
-| ref                    | Referência bibliográfica  | B       | B01, B02, ...         |
-+------------------------+---------------------------+---------+-----------------------+
-| media                  | Media                     | m       | m01, m02, ...         |
-+------------------------+---------------------------+---------+-----------------------+
-| sec                    | Seções                    | sec     | sec01, sec02, ...     |
-+------------------------+---------------------------+---------+-----------------------+
++------------------------+---------------------------+---------+---------------------+
+| Elemento XML           | Descrição                 | Prefixo | Exemplo             |
++========================+===========================+=========+=====================+
+| aff                    | Afiliação                 | aff     | aff1, aff2, ...     |
++------------------------+---------------------------+---------+---------------------+
+| app                    | Apêndice                  | app     | app1, app2, ...     |
++------------------------+---------------------------+---------+---------------------+
+| corresp                | Correspondência           | c       | c1, c2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| disp-formula           | Equações                  | e       | e1, e2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| fig                    | Figuras                   | f       | f1, f2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| def-list               | Glossário                 | d       | d1, d2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| table-wrap-foot/fn     | Notas de rodapé de tabela | TFN     | TFN1, TFN2, ...     |
++------------------------+---------------------------+---------+---------------------+
+| author-notes/fn |      | Notas de rodapé do artigo | fn      | fn1, fn2, ...       | 
+| fn-group/fn            |                           |         |                     |
++------------------------+---------------------------+---------+---------------------+
+| table-wrap             | Tabela                    | t       | t1, t2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| supplementary-material | Suplemento                | suppl   | suppl1, suppl2, ... |
++------------------------+---------------------------+---------+---------------------+
+| ref                    | Referência bibliográfica  | B       | B1, B2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| media                  | Media                     | m       | m1, m2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| sec                    | Seções                    | sec     | sec1, sec2, ...     |
++------------------------+---------------------------+---------+---------------------+
 
 
 .. _regra-nomeacao-imagem:
@@ -1316,7 +1316,7 @@ Aparece em
   :ref:`elemento-article-meta`
 
 Atributos obrigatórios
-  1. id
+  1. id (ver :ref:`regra-atribuicao-id`)
  
 Ocorre
   Zero ou mais vezes
@@ -1331,9 +1331,6 @@ seus nomes. Ou seja, por exemplo, identificar preferencialmente
 **Universidade de São Paulo** a USP, ou University of São Paulo, ou 
 Saint Paul University, entre outras possíveis formas. 
 Por isso, quando ocorre no documento de existir mais de uma forma, usar a original.
- 
-Para composição do atributo ``@id``, utiliza-se o seguinte padrão: 
-``aff`` + o número de ordem da afiliação. (Ver :ref:`regra-atribuicao-id`)
  
  
 Exemplo:
@@ -1675,8 +1672,8 @@ referência aos autores, as quais deverão ser identificadas em
 Notas em :ref:`elemento-back` devem ser identificadas dentro do grupo 
 :ref:`elemento-fn-group`.
  
-Para composição de ``@id`` de **notas** utiliza-se o seguinte padrão: "fn" + o 
-número de ordem das notas. (Ver :ref:`regra-atribuicao-id`)
+Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+atributo ``@id``.
  
 Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, *, e etc)
 marque com a tag :ref:`elemento-label`. A tag :ref:`elemento-label` não
@@ -1756,8 +1753,8 @@ Esta tag representa as informações de correspondência de um dos autores
 do artigo. Pode ou não possuir um :ref:`elemento-label` e também o atributo 
 ``@id``. É possível marcar o ``<email>`` caso inserido.
  
-Para composição de ``@id`` utiliza-se o seguinte padrão: "c" + o número de ordem da correspondência. 
-(Ver :ref:`regra-atribuicao-id`)
+Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+atributo ``@id``.
  
 Exemplo:
 
@@ -3183,8 +3180,9 @@ Exemplo:
     </body>
     ...
  
-Para a composição do atributo ``@id``, utiliza-se o seguinte padrão: 
-``sec`` + o número de ordem da seção. (Ver :ref:`regra-atribuicao-id`)
+
+Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+atributo ``@id``.
  
  
 .. _disp-formula:
@@ -3201,7 +3199,7 @@ Aparece em
   :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
-  1. id
+  1. id (ver :ref:`regra-atribuicao-id`)
  
 Ocorre
   Zero ou mais vezes
@@ -3212,8 +3210,6 @@ apresentadas como imagem ou codificadas e serão identificadas pela tag
 ``<disp-formula>``. Se a equação for capturada como imagem, deve-se incluir o 
 nome do arquivo em ``<graphic>``:
  
-Para composição de ``@id`` utiliza-se o seguinte padrão: ``e`` + o número de 
-ordem da equação. (Ver :ref:`regra-atribuicao-id`)
  
 Exemplo:
 
@@ -3270,8 +3266,8 @@ Ocorre
 Também representa uma tag para identificar equações que estejam 
 posicionadas em linha, ou seja, em meio a um parágrafo.
  
-Para composição de ``@id`` utiliza-se o seguinte padrão: 
-``e`` + o número de ordem da equação. (Ver :ref:`regra-atribuicao-id`)
+Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+atributo ``@id``.
  
 Exemplo:
 
@@ -3322,7 +3318,7 @@ Aparece em
   ``<table-wrap-group>``
 
 Atributos obrigatórios
-  1. id
+  1. id (ver :ref:`regra-atribuicao-id`)
  
 Ocorre
   Zero ou mais vezes
@@ -3330,9 +3326,6 @@ Ocorre
 
 É utilizada para especificar todas as partes de uma única tabela, incluindo 
 :ref:`elemento-label`, :ref:`elemento-caption` ou :ref:`elemento-table-wrap-foot`. 
- 
-Para composição do atributo ``@id`` utiliza-se o seguinte padrão: 
-``t`` + o número de ordem da tabela. (Ver :ref:`regra-atribuicao-id`)
  
  
 .. _elemento-table-wrap-foot:
@@ -3351,9 +3344,8 @@ Em ``<table-wrap-foot>`` é possível fazer a identificação de nota de rodapé
 tabela por meio de tags ``<fn>``, que devem apresentar obrigatoriamente o 
 atributo ``@id``.
  
-Para composição do atributo ``@id`` do elemento ``<fn>``, utiliza-se o seguinte 
-padrão: ``TFN`` + o número de ordem da nota de rodapé de table. 
-(Ver :ref:`regra-atribuicao-id`)
+Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+atributo ``@id``.
  
 A nota de rodapé poderá ser relacionada com alguma informação no corpo da tabela.
  
@@ -3417,7 +3409,7 @@ Aparece em
   ``<app>``
 
 Atributos obrigatórios
-  1. id
+  1. id (ver :ref:`regra-atribuicao-id`)
   2. xlink:href
   3. mimetype
   4. mime-subtype
@@ -3432,13 +3424,10 @@ Em ``<supplementary-material>`` é possível especificar tabelas, figuras,
 dados brutos de planilha, banco de dados de genomas, quiz, equações, links, 
 diálogos, listas, licenças e objetos multimídia como áudio e vídeo.
  
-Para composição do atributo ``@id`` utiliza-se o seguinte padrão: 
-``suppl`` + o número de ordem do suplemento. (Ver :ref:`regra-atribuicao-id`)
- 
 O material suplementar pode estar em :ref:`elemento-front`, dentro de 
 :ref:`elemento-article-meta`, em :ref:`elemento-body` como seção ou entre 
 parágrafos ou em :ref:`elemento-back`, onde só poderá ser identificado caso 
-esteja especificado dentro do grupo de apêndices <app-group> (CORRIGIR: <app-group> não consta no SciELO PS como possível pai do elemento atual).
+esteja especificado dentro do grupo de apêndices ``<app-group>``.
  
 Seus atributos obrigatórios são:
  
@@ -3461,8 +3450,10 @@ Exemplo:
 
 **Exemplo de material suplementar em <front>:**
  
-..note:: Esta tag em <front> obrigatoriamente deve ser inserida abaixo das informações de paginação ou antes de <history>.
+.. note:: Esta tag em ``<front>`` obrigatoriamente deve ser inserida abaixo das 
+          informações de paginação ou antes de ``<history>``.
  
+
 .. code-block:: xml
  
      <fpage>237</fpage>
@@ -3473,37 +3464,31 @@ Exemplo:
  
 .. code-block:: xml
  
-     <p>Descriptive analysis and the Pearson chi-squared test
-were used to verify the association between categorical variables. The normality of the distribution of continuous variables was verified by drawing a histogram and plots (<xref ref-type="supplementary-material" rid="suppl01">Supplementary material A</xref>).</p>
-
-<p>
-     <supplementary-material id="suppl01">
-         <label>Fig 1.</label>
-             <caption><title>Supplementary material A</title></caption>
-     <graphic xlink:href="1234-5678-rctb-45-05-0110-suppl01.tif"/>
-     </supplementary-material>
-</p>
- 
-<p>Os níveis de PCR, lactato, S<sub>2</sub> e DB não foram associados com readmissão. Esses dados estão disponíveis na tabela 1S do material eletrônico suplementar. <supplementary-material xlink:href="1234-5678-rctb-45-05-0110-suppl01.pdf"/></p>
- 
-     
+    <p>Descriptive analysis and the Pearson chi-squared test were used to verify the association between categorical variables. The normality of the distribution of continuous variables was verified by drawing a histogram and plots (<xref ref-type="supplementary-material" rid="suppl01">Supplementary material A</xref>).</p>
+    <p>
+        <supplementary-material id="suppl01">
+            <label>Fig 1.</label>
+            <caption><title>Supplementary material A</title></caption>
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-suppl01.tif"/>
+        </supplementary-material>
+    </p>
+    <p>Os níveis de PCR, lactato, S<sub>2</sub> e DB não foram associados com readmissão. Esses dados estão disponíveis na tabela 1S do material eletrônico suplementar. <supplementary-material xlink:href="1234-5678-rctb-45-05-0110-suppl01.pdf"/></p>
+  
  
 **Exemplo de material suplementar em <back>:**
  
 .. code-block:: xml
  
-<app-group>
-     <app>
-<supplementary-material id="suppl01">
-          <label>Fig 1.</label>
-          <caption><title>Material Suplementar</title></caption>
+    <app-group>
+        <app>
+            <supplementary-material id="suppl01">
+                <label>Fig 1.</label>
+                <caption><title>Material Suplementar</title></caption>
                 <graphic xlink:href="1234-5678-rctb-45-05-0110-suppl01.tif"/>
-     </supplementary-material>
-     </app>
-<app-group>
-
-
-<p>Devido a esse elevado percentual de dados omissos, possivelmente não influenciaram no resultado final do <inline-supplementary-material xlink:href="0103-507X-rbti-26-02-0130-s01.pdf" mimetype="application" mime-subtype="pdf">Material Suplementar</inline-supplementary-material></p>
+            </supplementary-material>
+        </app>
+    <app-group>
+    <p>Devido a esse elevado percentual de dados omissos, possivelmente não influenciaram no resultado final do <inline-supplementary-material xlink:href="0103-507X-rbti-26-02-0130-s01.pdf" mimetype="application" mime-subtype="pdf">Material Suplementar</inline-supplementary-material></p>
  
  
 .. _elemento-disp-quote:
@@ -3527,23 +3512,13 @@ Exemplo:
  
 .. code-block:: xml
  
-     <p>In the face of the failure of the transmission argument Wright would, 
-     apparently, endorse the view that Caution could still provide an adequate 
-     route to an anti-realist account of necessity, as can be gathered from the 
-     following passage:</p>
-            <p>
-                <disp-quote>
-                    <p>We suppose (i) that a priori judgement will play a part 
-                    in the operation of any coherent system of belief, and (ii) 
-                    that non-cognitivism about necessity had probably better 
-                    grant a role for judgements of necessity as co-ordinate to 
-                    (some) a priori judgements. If supposition (i) is wrong, 
-                    then global Caution about necessitated judgements is, after 
-                    all, at the service of the non-cognitivist about necessity</p>
-                </disp-quote>
-            </p>
-            <p>I disagree. In the previous section we saw that showing that 
-            Caution is an incoherent attitude is not an easy matter.</p>
+    <p>In the face of the failure of the transmission argument Wright would, apparently, endorse the view that Caution could still provide an adequate route to an anti-realist account of necessity, as can be gathered from the following passage:</p>
+    <p>
+        <disp-quote>
+            <p>We suppose (i) that a priori judgement will play a part in the operation of any coherent system of belief, and (ii) that non-cognitivism about necessity had probably better grant a role for judgements of necessity as co-ordinate to (some) a priori judgements. If supposition (i) is wrong, then global Caution about necessitated judgements is, after all, at the service of the non-cognitivist about necessity</p>
+        </disp-quote>
+    </p>
+    <p>I disagree. In the previous section we saw that showing that Caution is an incoherent attitude is not an easy matter.</p>
  
  
 .. _elemento-ext-link:
@@ -3707,7 +3682,7 @@ Aparece em
   :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
-  1. id
+  1. id (ver :ref:`regra-atribuicao-id`)
  
 Ocorre
   Zero ou mais vezes
@@ -3794,8 +3769,6 @@ Exemplo:
   documento; esse atributo deve ter valor único no arquivo e é possível 
   fazer link relacionado a um "rid".
  
-Para composição do atributo ``@id`` utiliza-se o seguinte padrão: 
-``f`` + o número de ordem da figura. (Ver :ref:`regra-atribuicao-id`)
  
 Exemplo:
 
@@ -4052,20 +4025,18 @@ Ocorre
 Aparece em
   :ref:`elemento-ref-list`
 
-Atributo Obrigatório 
-  ``@id``
+Atributos obrigatórios
+  1. id (ver :ref:`regra-atribuicao-id`)
 
 Ocorre
-  (quando houver :ref:`elemento-ref-list`)
   Uma ou mais vezes
+
 
 Existem diversos tipos de referências e normas para apresentá-las num documento 
 textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e 
 :term:`OTHER`). Independente da norma usada, a representação dos elementos
-essenciais em xml de uma referência devem ser identificados corretamente.
+essenciais em XML de uma referência devem ser identificados corretamente.
  
-Para composição de ``@id`` de referências utiliza-se o seguinte padrão:
-"B" + o número de ordem das referências. (Ver :ref:`regra-atribuicao-id`) 
 
 Exemplo:
 
@@ -4073,10 +4044,34 @@ Exemplo:
  
     ...
     <ref-list>
-        <ref id="B01">
-            <mixed-citation>referência inteira sem marcação</mixed-citation>
-            <element-citation publication-type="tipo da referência">elementos marcados um a um</element-citation>
+        <ref id="B1">
+            <label>1</label>
+            <mixed-citation>. Aires M, Paz AA, Perosa CT. Situação de saúde e grau de dependência de pessoas idosas institucionalizadas. <italic>Rev Gaucha Enferm.</italic> 2009;30(3):192-9.</mixed-citation>
+            <element-citation publication-type="journal">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>Aires</surname>
+                        <given-names>M</given-names>
+                    </name>
+                    <name>
+                        <surname>Paz</surname>
+                        <given-names>AA</given-names>
+                    </name>
+                    <name>
+                        <surname>Perosa</surname>
+                        <given-names>CT</given-names>
+                    </name>
+                </person-group>
+                <article-title xml:lang="pt">Situação de saúde e grau de dependência de pessoas idosas institucionalizadas</article-title>
+                <source>Rev Gaucha Enferm</source>
+                <year>2009</year>
+                <volume>30</volume>
+                <issue>3</issue>
+                <fpage>192</fpage>
+                <lpage>199</lpage>
+            </element-citation>
         </ref>
+        ...
     </ref-list>
     ...
   
@@ -4095,10 +4090,22 @@ PDF;
 <element-citation>
 ^^^^^^^^^^^^^^^^^^
 
+Aparece em
+  :ref:`elemento-ref`
+
+Atributos obrigatórios
+  1. publication-type
+
+Ocorre
+  Uma ou mais vezes
+
+
 A tag ``<element-citation>`` apresenta a identificação detalhada de cada
-referência biliográfica. Essa tag deve apresentar o atributo
-``@publication-type``. O atributo indica o tipo de referência, os valores que
-podem ser utilizados para o atributo ``@publication-type`` são:
+referência bibliográfica, e deve aparecer apenas como filha do elemento 
+:ref:`elemento-ref`. Além disso deve apresentar o atributo ``@publication-type``, 
+que indica o tipo de publicação da referência. 
+
+Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
 
 +-----------+------------------------------------------------------------------+
 | Valor     | Descrição                                                        |
@@ -4129,6 +4136,7 @@ podem ser utilizados para o atributo ``@publication-type`` são:
 +-----------+------------------------------------------------------------------+
 | database  | utilizada para referenciar bases de dados                        |
 +-----------+------------------------------------------------------------------+
+
 
 .. note::
 
@@ -4186,7 +4194,7 @@ Exemplos:
 
 .. code-block:: xml
 
-  <!-- Book Sample --> 
+    <!-- Book Sample --> 
 
     ...
     <ref-list>
@@ -4241,7 +4249,7 @@ Exemplos:
                 <fpage>página inicial da parte</fpage>
                 <lpage>página final da parte</lpage>
             </element-citation>
-       </ref>
+        </ref>
     </ref-list>
     ...
  
@@ -4262,10 +4270,8 @@ Exemplos:
                 <date-in-citation content-type="access-date">data de acesso ao link</date-in-citation>
                 <date-in-citation content-type="updated">data de uptated</date-in-citation>
                 <comment>
-                  Available from:
-                  <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">
-                    www.scielo.org
-                  </ext-link>
+                    Available from:
+                    <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link>
                 </comment>
             </element-citation>
         </ref>
@@ -4282,20 +4288,20 @@ Exemplos:
     ...
     <ref-list>
         <ref id="B05">
-              <label>5</label>
-              <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-              <element-citation publication-type="report">
-                  <person-group person-group-type="author">
-                      <collab>Nome da instituição organizadora</collab>
-                  </person-group>     
-                  <source>Título do Relatório</source>
-                  <publisher-loc>Lugar de publicação, cidade, estado, país e etc</publisher-loc>
-                  <publisher-name>Nome da casa publicadora</publisher-name>
-                  <year>ano do relatório</year>
-                  <month>mês do relatório</month>
-                  <pub-id pub-id-type="other">Report No: XXXXXX</pub-id>
-                  <comment>para outras informações mencionadas que fazem parte do relatório que não tenham tags específicas</comment>
-              </element-citation>
+            <label>5</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="report">
+                <person-group person-group-type="author">
+                    <collab>Nome da instituição organizadora</collab>
+                </person-group>     
+                <source>Título do Relatório</source>
+                <publisher-loc>Lugar de publicação, cidade, estado, país e etc</publisher-loc>
+                <publisher-name>Nome da casa publicadora</publisher-name>
+                <year>ano do relatório</year>
+                <month>mês do relatório</month>
+                <pub-id pub-id-type="other">Report No: XXXXXX</pub-id>
+                <comment>para outras informações mencionadas que fazem parte do relatório que não tenham tags específicas</comment>
+            </element-citation>
         </ref>
     </ref-list> 
     ...
@@ -4340,7 +4346,7 @@ Exemplos:
  
     ...
     <ref-list>
-      <ref id="B07">
+        <ref id="B07">
             <label>7</label>
             <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
             <element-citation publication-type="thesis">
@@ -4732,10 +4738,10 @@ Aparece em
   :ref:`elemento-back`
 
 Atributos obrigatório 
- ``@id``
+  1. id (Ver :ref:`regra-atribuicao-id`)
  
 Ocorre
- Zero ou uma vez
+  Zero ou uma vez
 
 Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
 básica de um apêndice devemos levar em consideração duas tags importantes, a de
@@ -4743,8 +4749,6 @@ grupo de apêndice :ref:`elemento-app-group` e de apêndice propriamente dito
 ``<app>``. Obrigatoriamente deve ser inserido uma informação de
 etiqueta :ref:`elemento-label` em ``<app>``.
 
-Para composição de ``@id`` de **apêndice** utiliza-se o seguinte padrão: "app" + o
-número de ordem do apêndice. (Ver :ref:`regra-atribuicao-id`)
  
 Exemplo:
   
@@ -4920,20 +4924,17 @@ Aparece em
 Ocorre
   Zero ou mais vezes
 
+
 Utilizada quando há uma lista de termos e suas respectivas definições.
 O glossário pode ser apresentado como imagem ou como texto com as identificações
 de ``<term>``, ``<def-list>`` e ``<def>``. O 
 glossário pode estar identificado em: ``<app>``, :ref:`elemento-back`,
 e :ref:`elemento-sec`.
  
-Para composição de ``@id`` de glossário utiliza-se o seguinte padrão:
-
-  "d" + o número de ordem do glossário. (Ver :ref:`regra-atribuicao-id`)
+Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+atributo ``@id``.
  
-Exemplo:
 
-  d01... d10, d11;
- 
 Exemplo em apêndices:
  
 .. code-block:: xml
