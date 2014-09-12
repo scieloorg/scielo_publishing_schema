@@ -4103,10 +4103,22 @@ PDF;
 <element-citation>
 ^^^^^^^^^^^^^^^^^^
 
+Aparece em
+  :ref:`elemento-ref`
+
+Atributos obrigatórios
+  1. publication-type
+
+Ocorre
+  Uma ou mais vezes
+
+
 A tag ``<element-citation>`` apresenta a identificação detalhada de cada
-referência biliográfica. Essa tag deve apresentar o atributo
-``@publication-type``. O atributo indica o tipo de referência, os valores que
-podem ser utilizados para o atributo ``@publication-type`` são:
+referência bibliográfica, e deve aparecer apenas como filha do elemento 
+:ref:`elemento-ref`. Além disso deve apresentar o atributo ``@publication-type``, 
+que indica o tipo de publicação da referência. 
+
+Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
 
 +-----------+------------------------------------------------------------------+
 | Valor     | Descrição                                                        |
@@ -4137,6 +4149,7 @@ podem ser utilizados para o atributo ``@publication-type`` são:
 +-----------+------------------------------------------------------------------+
 | database  | utilizada para referenciar bases de dados                        |
 +-----------+------------------------------------------------------------------+
+
 
 .. note::
 
@@ -4194,7 +4207,7 @@ Exemplos:
 
 .. code-block:: xml
 
-  <!-- Book Sample --> 
+    <!-- Book Sample --> 
 
     ...
     <ref-list>
@@ -4249,7 +4262,7 @@ Exemplos:
                 <fpage>página inicial da parte</fpage>
                 <lpage>página final da parte</lpage>
             </element-citation>
-       </ref>
+        </ref>
     </ref-list>
     ...
  
@@ -4270,10 +4283,8 @@ Exemplos:
                 <date-in-citation content-type="access-date">data de acesso ao link</date-in-citation>
                 <date-in-citation content-type="updated">data de uptated</date-in-citation>
                 <comment>
-                  Available from:
-                  <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">
-                    www.scielo.org
-                  </ext-link>
+                    Available from:
+                    <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link>
                 </comment>
             </element-citation>
         </ref>
@@ -4290,20 +4301,20 @@ Exemplos:
     ...
     <ref-list>
         <ref id="B05">
-              <label>5</label>
-              <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-              <element-citation publication-type="report">
-                  <person-group person-group-type="author">
-                      <collab>Nome da instituição organizadora</collab>
-                  </person-group>     
-                  <source>Título do Relatório</source>
-                  <publisher-loc>Lugar de publicação, cidade, estado, país e etc</publisher-loc>
-                  <publisher-name>Nome da casa publicadora</publisher-name>
-                  <year>ano do relatório</year>
-                  <month>mês do relatório</month>
-                  <pub-id pub-id-type="other">Report No: XXXXXX</pub-id>
-                  <comment>para outras informações mencionadas que fazem parte do relatório que não tenham tags específicas</comment>
-              </element-citation>
+            <label>5</label>
+            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <element-citation publication-type="report">
+                <person-group person-group-type="author">
+                    <collab>Nome da instituição organizadora</collab>
+                </person-group>     
+                <source>Título do Relatório</source>
+                <publisher-loc>Lugar de publicação, cidade, estado, país e etc</publisher-loc>
+                <publisher-name>Nome da casa publicadora</publisher-name>
+                <year>ano do relatório</year>
+                <month>mês do relatório</month>
+                <pub-id pub-id-type="other">Report No: XXXXXX</pub-id>
+                <comment>para outras informações mencionadas que fazem parte do relatório que não tenham tags específicas</comment>
+            </element-citation>
         </ref>
     </ref-list> 
     ...
@@ -4348,7 +4359,7 @@ Exemplos:
  
     ...
     <ref-list>
-      <ref id="B07">
+        <ref id="B07">
             <label>7</label>
             <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
             <element-citation publication-type="thesis">
