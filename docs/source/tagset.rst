@@ -155,6 +155,8 @@ Exemplos:
             </p>
  
 
+ .. note:: Não envolver a tag <xref> em <sup>.
+
 .. _elemento-label:
  
 <label>
@@ -315,17 +317,17 @@ Sendo:
 * ISSN: Se houver mais de um, dar preferência ao impresso.
 * Acrônimo: Sigla do periódico na SciELO
 * Volume: Volume do fascículo
-* Número: Número e/ou suplemento do fascículo (tratar como "n" e "s")
-* Paginação: Manter a informação da primeira página contendo no mínimo 4 dígitos
+* Número: Número ou suplemento do fascículo (tratar como "n" e "s")
+* Paginação: Manter a informação da primeira página
 * Nome da imagem: Prefixo com uma numeração sequencial 
   (ver :ref:`regra-atribuicao-id`)
- 
-Exemplo:
+
+ Exemplo:
  
     *1807-5932-clin-69-05-0308-gf01.tif*
  
 
-.. note:: Cada item deve ser separado por um hifén e obrigatoriamente deve-se 
+.. note:: Cada item deve ser separado por um hífen e obrigatoriamente deve-se 
           manter visível a extensão da imagem após o "ponto", optando 
           preferencialmente por imagens em formato *tif*.
  
@@ -359,8 +361,8 @@ Ocorre
  
 
 A tag ``<article>`` representa o elemento raiz do XML, e deve conter 
-obrigatoriamente os atributos ``@dtd-version``, ``@article-type``, ``@xml:lang`` e
-``@xmlns:xlink="http://www.w3.org/1999/xlink"``.
+obrigatoriamente os atributos ``@dtd-version``, ``@article-type``, ``@xml:lang``, 
+``@xmlns:xlink="http://www.w3.org/1999/xlink"`` e ``@specific-use``.
 
 O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e 
 deve ser utilizado apenas quando equações MathML forem identificadas no 
@@ -373,78 +375,78 @@ de artigos, os valores que podem ser utilizados são:
 +--------------------+----------------------------------------------------------+
 | Valor              | Descrição                                                |
 +====================+==========================================================+
-| research-article   | artigo original - abrange pesquisas, experiências        |
-|                    | clínicas ou cirúrgicas ou outras contribuições originais.|
+|                    | resumo - uma apresentação precisa e resumida de uma      |
+| abstract           | obra sem agregar interpretação ou crítica, acompanhado   |
+|                    | de uma referência bibliográfica da obra original.        |
 +--------------------+----------------------------------------------------------+
-| letter             | cartas - comunicação entre pessoas ou instituições e     |
-|                    | organizações por intercâmbio de cartas                   |
+|                    | exposição ou declaração relevante que pode ou não ter    |
+| announcement       | relação com o artigo publicado.                          |
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
-| article-commentary | comentários - uma nota crítica ou esclarecedora, escrita |
+|                    | comentários - uma nota crítica ou esclarecedora, escrita |
 |                    | para discutir, apoiar ou debater um artigo ou outra      |
-|                    | apresentação anteriormente publicada. Pode ser um artigo,| 
+| article-commentary | apresentação anteriormente publicada. Pode ser um artigo,|
 |                    | carta, editorial, etc. Estas publicações podem aparecer  |
 |                    | como comentário, comentário editorial, ponto de vista,   |
 |                    | etc.                                                     |
 +--------------------+----------------------------------------------------------+
-| brief-report       | comunicação breve - compreende breves relatos de         |
-|                    | experiências, trabalhos ou projetos de investigação      |
-|                    | em andamento.                                            |
+|                    | resenha - análise críticas de livros e outras            |
+| book-review        | monografias.                                             |
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
-| editorial          | editorial - uma declaração de opiniões, crenças e        |
+| brief-report       | comunicação breve sobre resultados de uma pesquisa.      |
+|                    |                                                          |
++--------------------+----------------------------------------------------------+
+|                    | relato, descrição ou estudo de caso - pesquisas especiais|
+| case-report        | que despertam interesse informativo.                     |
+|                    |                                                          |
++--------------------+----------------------------------------------------------+
+|                    | errata - corrige erros apresentados em artigos após      |
+| correction         | sua publicação online/impressa.                          |
+|                    |                                                          |
++--------------------+----------------------------------------------------------+
+|                    | editorial - uma declaração de opiniões, crenças e        |
 |                    | políticas do editor de uma revista, geralmente sobre     |
-|                    | assuntos de significado científico de interesse da       |
+| editorial          | assuntos de significado científico de interesse da       |
 |                    | comunidade científica ou da sociedade.                   |
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
-| in-brief           | press release - comunicação breve de linguagem           |
-|                    | jornalística sobre um artigo ou tema.                    |
+|                    | press release - comunicação breve de linguagem           |
+| in-brief           | jornalística sobre um artigo ou tema.                    |
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
-| case-report        | informe/relato de caso - descrição sumária de casos      |
-|                    | especiais, que, por sua raridade despertam interesse     |
-|                    | informativo para a coletividade.                         |
+|                    | cartas - comunicação entre pessoas ou instituições       |
+| letter             | através de cartas. Geralmente comentando um trabalho     |
+|                    | publicado                                                |
 +--------------------+----------------------------------------------------------+
-| report             | informe/relatório técnico - um informe que dá detalhes   |
-|                    | de uma investigação ou resultado de um problema          |
-|                    | científico. Pode também relatar um artigo científico,    |
-|                    | o estado e posição atual de uma investigação científica  |
-|                    | e o desenvolvimento da mesma.                            |
+|                    | Outro tipo de documento. Pode ser considerado adendo,    |
+| other              | anexo, discussão, artigo de preocupação, introdução entre|
+|                    | outros.                                                  |
 +--------------------+----------------------------------------------------------+
-| note               | nota - relata resultados parciais ou preliminares de     |
-|                    | investigação empírica.                                   |
+|                    | comunicação breve sobre atualização de investigação ou   |
+| rapid-communication| outra notícia.                                           |
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
-| correction         | errata - corrige erros apresentados em artigos após      |
-|                    | sua publicação online/impressa.                          |
+|                    | resposta a carta ou ao comentário, geralmente é usado    |
+| reply              | pelo autor original fazendo outros comentários a respeito|
+|                    | dos comentários anteriores                               |
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
-| obituary           | obituário - anúncio de morte normalmente de              |
-|                    | pesquisadores de notório saber de uma determinada        |
-|                    | área para conhecimento de seus pares.                    |
+|                    | artigo original - abrange pesquisas, experiências        |
+| research-article   | clínicas ou cirúrgicas ou outras contribuições originais.|
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
-| abstract           | resumo - uma apresentação precisa e resumida de uma      |
-|                    | obra sem agregar interpretação ou crítica, acompanhado   |
-|                    | de uma referência bibliográfica da obra original.        |
-+--------------------+----------------------------------------------------------+
-| review-article     | revisão - um artigo que se refere a um material          |
-|                    | já publicado sobre um tema. Pode ser extenso quanto      |
-|                    | à complexidade e ao intervalo de tempo do material       |
-|                    | investigado.                                             |
-+--------------------+----------------------------------------------------------+
-| book-review        | resenha - análise críticas de livros e outras            |
-|                    | monografias.                                             |
-+--------------------+----------------------------------------------------------+
-| product-review     | comentário de produto - Descrição, análise ou avaliação  |
-|                    | de um produto, como um livro.                            |
-+--------------------+----------------------------------------------------------+
-| clinical-trial     | ensaio clínico - ensaio clínico que segue um plano ou    |
-|                    | protocolo pré-definido e registrado.                     |
-+--------------------+----------------------------------------------------------+
-| retraction         | retratação - a retratação de um artigo científico é um   |
-|                    | instrumento para corrigir o registro acadêmico publicado |
+|                    | retratação - a retratação de um artigo científico é um   |
+| retraction         | instrumento para corrigir o registro acadêmico publicado |
 |                    | equivocadamente, por plágio, por exemplo.                |
 +--------------------+----------------------------------------------------------+
-| collection         | coleção - utilizada quando há um conjunto de cartas,     |
-|                    | respostas, resenhas etc. O tipo collection é utilizado   |
-|                    | em "article" do artigo principal e em ``<sub-article>``  |
-|                    | ou ``<response>`` é identificado cada carta, resenha,    | 
-|                    | resposta etc.                                            |
+|                    | são avaliações críticas sistematizadas da literatura     |
+| review-article     | sobre determinado assunto.                               |
+|                    |                                                          |
++--------------------+----------------------------------------------------------+
+|                    | tradução. Utilizado para artigos que apresentam tradução |
+| translation        | de um artigo produzido em idioma diferente.              |
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
 
 
@@ -470,6 +472,8 @@ Exemplo da tag completa versão PMC 3.0:
 
     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" specific-use="sps-1.1" article-type="research-article" xml:lang="en">
  
+
+O atributo ``@specific-use`` identifica a versão do schema SciELO PS.
 
 .. _elemento-front:
 
@@ -530,9 +534,7 @@ utiliza-se ``@journal-id-type="nlm-ta"``:
  
 .. code-block:: xml
  
-    <journal-id journal-id-type="nlm-ta">
-        Mem Inst Oswaldo Cruz
-    </journal-id>
+    <journal-id journal-id-type="nlm-ta">Mem Inst Oswaldo Cruz</journal-id>
  
 
 .. note:: Para verificar se o periódico está indexado no Medline 
@@ -544,9 +546,7 @@ utiliza-se ``@journal-id-type="publisher-id"``:
  
 .. code-block:: xml
  
-    <journal-id journal-id-type="publisher-id">
-        mioc
-    </journal-id>
+    <journal-id journal-id-type="publisher-id">mioc</journal-id>
 
 
 .. _elemento-journal-title-group:
@@ -571,12 +571,8 @@ Exemplo:
     <journal-meta>
         ...
         <journal-title-group>
-            <journal-title>
-                Brazilian Journal of Otorhinolaryngology
-            </journal-title>
-            <abbrev-journal-title abbrev-type="publisher">
-                Braz J Otorhinolaryngol.
-            </abbrev-journal-title>
+            <journal-title>Brazilian Journal of Otorhinolaryngology</journal-title>
+            <abbrev-journal-title abbrev-type="publisher">Braz J Otorhinolaryngol.</abbrev-journal-title>
             ...
         </journal-title-group>
         ...
@@ -610,9 +606,7 @@ Exemplo:
     <journal-meta>
         ...
         <journal-title-group>
-            <journal-title>
-                Brazilian Journal of Medical and Biological Research
-            </journal-title>
+            <journal-title>Brazilian Journal of Medical and Biological Research</journal-title>
             ...
         </journal-title-group>
         ...
@@ -646,9 +640,7 @@ Exemplo:
 .. code-block:: xml
  
     <journal-title-group>  
-        <abbrev-journal-title abbrev-type="publisher">
-            Braz. J. Med. Biol. Res.
-        </abbrev-journal-title>
+        <abbrev-journal-title abbrev-type="publisher">Braz. J. Med. Biol. Res.</abbrev-journal-title>
     </journal-title-group>
  
 
@@ -729,9 +721,7 @@ Exemplo:
     <journal-meta>
         ...
         <publisher>
-            <publisher-name>
-                Instituto Oswaldo Cruz, Ministério da Saúde
-            </publisher-name>
+            <publisher-name>Instituto Oswaldo Cruz, Ministério da Saúde</publisher-name>
         </publisher>
         ...
     </journal-meta>
@@ -782,9 +772,7 @@ Exemplo:
     ...
     <article-meta>
         ...
-        <article-id pub-id-type="doi">
-            10.1590/0074-0276130047
-        </article-id>
+        <article-id pub-id-type="doi">10.1590/0074-0276130047</article-id>
         ...
     </article-meta>
     ...
@@ -1105,11 +1093,14 @@ Exemplo:
     <contrib-group>
         ...
         <contrib>
-            ...
-            <on-behalf-of>
-                Identificação de um grupo ou organização
-            </on-behalf-of>
-            ...
+            <name>
+                <surname>Proietti</surname>
+                <given-names>Fernando Augusto</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff02">II</xref>
+        </contrib>
+        <contrib>
+            <on-behalf-of>Interdisciplinary HTLV Research Group</on-behalf-of>
         </contrib>
         ...
     </contrib-group>
@@ -1217,7 +1208,7 @@ Ocorre
 especificado o último nome do autor. Deve-se observar as regras para 
 identificação de sobrenome de acordo com a norma adotada pelo periódico. 
 A recomendação da SciELO é utilizar a norma *AACR2* Código de Catalogação 
-Anglo Americano e/ou Currículo Lattes dos autores).
+Anglo Americano e/ou Currículo Lattes dos autores.
  
 Exemplo:
 
@@ -1427,7 +1418,9 @@ possuem atributo obrigatório ``@content-type`` dos tipos: original, email ou co
 
 .. code-block:: xml
  
-     <institution content-type="original">Técnica de Cardiopneumologia. Unidade de Fisiopatologia Respiratória, Serviço de Pneumologia, Centro Hospitalar Lisboa Norte, Lisboa, Portugal. 
+     <institution content-type="original">Técnica de Cardiopneumologia. Unidade de
+     Fisiopatologia Respiratória, Serviço de Pneumologia, Centro Hospitalar Lisboa
+     Norte, Lisboa, <named-content content-type="country">Portugal</named-content>. 
      <named-content content-type="email">mara@scielo.org</named-content></institution>
 
  
@@ -1564,9 +1557,7 @@ Exemplo:
     <article-meta>
         ...
         <author-notes>
-            <corresp id="c01">
-                <bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@hotmail.com</email>
-            </corresp>
+            <corresp id="c01"><bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@hotmail.com</email></corresp>
             <fn fn-type="conflict">
                 <p>Conflict of interest: none</p>
             </fn>     
@@ -1613,8 +1604,6 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 | con                       | Informação de contribuição                       |
 +---------------------------+--------------------------------------------------+
 | conflict                  | Declaração de conflito de Interesse              |
-+---------------------------+--------------------------------------------------+
-| corresp                   | Informação de correspondência                    |
 +---------------------------+--------------------------------------------------+
 | current-aff               | Afiliação atual do autor                         |
 +---------------------------+--------------------------------------------------+
@@ -1901,7 +1890,7 @@ Esta tag pode ser encontrada em :ref:`elemento-front`
 .. note:: Para abreviatura dos meses que devem ser inseridos na data de 
           publicação dos fascículos, utilizar siglas em inglês com 3 
           caracteres, separados por hífen. As abreviaturas são: Jan, Feb, Mar,
-          Apr, Jun, Jul, Aug, Sep, Oct, Nov e Dec.
+          Apr, May, Jun, Jul, Aug, Sep, Oct, Nov e Dec.
 
 
 .. _elemento-year:
@@ -2176,23 +2165,20 @@ Em ``<product>`` devem ser inseridas as informações do produto resenhado.
 
 Os valores possíveis para ``@product-type`` são: 
 
-+-----------+------------+
-| Valor     | Descrição  |
-+===========+============+
-| book      |            |
-+-----------+------------+
-| software  |            |
-+-----------+------------+
-| article   |            |
-+-----------+------------+
-| issue     |            |
-+-----------+------------+
-| website   |            |
-+-----------+------------+
-| film      |            |
-+-----------+------------+
-| hardware  |            |
-+-----------+------------+
++-----------+---------------------------------+
+| Valor     | Descrição                       |
++===========+=================================+
+| article   | referência de artigo            |
++-----------+---------------------------------+
+| book      | referência de livro             |
++-----------+---------------------------------+
+| chapter   | referência de capítulo de livro |
++-----------+---------------------------------+
+| other     | outros tipos                    |
++-----------+---------------------------------+
+| software  | referência de software          |
++-----------+---------------------------------+
+
  
 
 .. code-block:: xml
@@ -2251,21 +2237,17 @@ identificadas apenas em ``person-group``.
 
 Os valores possíveis para o atributo ``@person-group-type`` são:
 
-+-----------+------------+
-| Valor     | Descrição  |
-+===========+============+
-| author    |            |
-+-----------+------------+
-| compiler  |            |
-+-----------+------------+
-| director  |            |
-+-----------+------------+
-| editor    |            |
-+-----------+------------+
-| inventor  |            |
-+-----------+------------+
-| translator|            |
-+-----------+------------+
++-----------+---------------+
+| Valor     | Descrição     |
++===========+===============+
+| author    | valor padrão  |
++-----------+---------------+
+| compiler  | compilador    |
++-----------+---------------+
+| editor    | editor        |
++-----------+---------------+
+| translator| tradutor      |
++-----------+---------------+
 
 Exemplo:
  
@@ -2296,6 +2278,7 @@ Exemplo:
 
 Aparece em
   :ref:`elemento-person-group`
+  :ref:`elemento-product`
 
 Ocorre 
   Zero ou uma vez
@@ -2507,15 +2490,15 @@ Usa-se o atributo ``@date-type`` para especificar o tipo do recebimento.
 
 Os valores possíveis para o atributo ``@date-type`` são:
 
-+------------+-------------+
-| Valor      | Descrição   |
-+============+=============+
-| received   |             |
-+------------+-------------+
-| accepted   |             |
-+------------+-------------+
-| rev-recd   |             |
-+------------+-------------+
++------------+------------+
+| Valor      | Descrição  |
++============+============+
+| received   | recebido   |
++------------+------------+
+| accepted   | aceito     |
++------------+------------+
+| rev-recd   | revisado   |
++------------+------------+
 
 .. code-block:: xml
 
@@ -2957,10 +2940,13 @@ Exemplo:
             </kwd-group>
             <funding-group>           
                 <award-group>
-                    <funding-source>Brazilian Ministry of Health/Secretariat of Health Surveillance/Department of STD, AIDS and Viral Hepatitis</funding-source>
-                    <award-id>234/07</award-id>
+                    <funding-source>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</funding-source>
+                    <award-id>04/08142-0</award-id>
                 </award-group>
-                <funding-statement>This study was supported by the Brazilian Ministry of Health/Secretariat of Health Surveillance/Department of STD, AIDS and Viral Hepatitis, through the Project of International Technical Cooperation AD/BRA/03/H34 between the Brazilian Government and the United Nations Office on Drugs and Crime (Process CSV 234/07).</funding-statement>
+                <funding-statement>This study was supported in part by Coordenação 
+                de Aperfeiçoamento de Pessoal de Nível Superior (Capes — Brasília, 
+                Brazil), Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP — 
+                Grant no. 04/08142-0; São Paulo, Brazil)</funding-statement>
             </funding-group>    
             ...
         </article-meta>
@@ -2971,15 +2957,18 @@ Exemplo:
         ...
         <fn-group>
             <fn id="fn01" fn-type="financial-disclosure">
-                <p>This study was supported by the Brazilian Ministry of Health/Secretariat of Health Surveillance/Department of STD, AIDS and Viral Hepatitis, through the Project of International Technical Cooperation AD/BRA/03/H34 between the Brazilian Government and the United Nations Office on Drugs and Crime (Process CSV 234/07).</p>
+                <p>This study was supported in part by Coordenação de Aperfeiçoamento 
+                de Pessoal de Nível Superior (Capes — Brasília, Brazil), Fundação 
+                de Amparo à Pesquisa do Estado de São Paulo (FAPESP — 
+                Grant no. 04/08142-0; São Paulo, Brazil)</p>
             </fn>
         </fn-group>
         ...
     </back>
  
 
-.. note:: CORRIGIR: Revisar essas notas! ********
-          No caso da nota de rodapé com informação de financiamento, sempre 
+.. note:: nota de rodapé com informação de instituição financiadora e número de contrato
+          deve, sempre 
           mantê-la dentro de ``<back>`` em :ref:`elemento-fn-group` com o 
           tipo ``@fn-type="financial-disclosure"`` e em <front>.
  
@@ -3897,7 +3886,10 @@ Exemplo:
  
 .. code-block:: xml
  
-    <p>Within the limitations of this study, it may be concluded that remaining tooth wall thickness did not influence the fatigue resistance of molars restored with CAD/CAM ceramic inlays <media mimetype="video"  mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/></p>
+    <p>Within the limitations of this study, it may be concluded that remaining 
+    tooth wall thickness did not influence the fatigue resistance of 
+    molars restored with CAD/CAM ceramic inlays <media mimetype="video"  
+    mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/></p>
  
 
 *Em figuras:*
