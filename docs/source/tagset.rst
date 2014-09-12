@@ -4060,20 +4060,18 @@ Ocorre
 Aparece em
   :ref:`elemento-ref-list`
 
-Atributo Obrigatório 
-  ``@id``
+Atributos obrigatórios
+  1. id (ver :ref:`regra-atribuicao-id`)
 
 Ocorre
-  (quando houver :ref:`elemento-ref-list`)
   Uma ou mais vezes
+
 
 Existem diversos tipos de referências e normas para apresentá-las num documento 
 textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e 
 :term:`OTHER`). Independente da norma usada, a representação dos elementos
-essenciais em xml de uma referência devem ser identificados corretamente.
+essenciais em XML de uma referência devem ser identificados corretamente.
  
-Para composição de ``@id`` de referências utiliza-se o seguinte padrão:
-"B" + o número de ordem das referências. (Ver :ref:`regra-atribuicao-id`) 
 
 Exemplo:
 
@@ -4081,10 +4079,34 @@ Exemplo:
  
     ...
     <ref-list>
-        <ref id="B01">
-            <mixed-citation>referência inteira sem marcação</mixed-citation>
-            <element-citation publication-type="tipo da referência">elementos marcados um a um</element-citation>
+        <ref id="B1">
+            <label>1</label>
+            <mixed-citation>. Aires M, Paz AA, Perosa CT. Situação de saúde e grau de dependência de pessoas idosas institucionalizadas. <italic>Rev Gaucha Enferm.</italic> 2009;30(3):192-9.</mixed-citation>
+            <element-citation publication-type="journal">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>Aires</surname>
+                        <given-names>M</given-names>
+                    </name>
+                    <name>
+                        <surname>Paz</surname>
+                        <given-names>AA</given-names>
+                    </name>
+                    <name>
+                        <surname>Perosa</surname>
+                        <given-names>CT</given-names>
+                    </name>
+                </person-group>
+                <article-title xml:lang="pt">Situação de saúde e grau de dependência de pessoas idosas institucionalizadas</article-title>
+                <source>Rev Gaucha Enferm</source>
+                <year>2009</year>
+                <volume>30</volume>
+                <issue>3</issue>
+                <fpage>192</fpage>
+                <lpage>199</lpage>
+            </element-citation>
         </ref>
+        ...
     </ref-list>
     ...
   
