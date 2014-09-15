@@ -2973,8 +2973,7 @@ Exemplo:
  
 
 .. note:: nota de rodapé com informação de instituição financiadora e número de contrato
-          deve, sempre 
-          mantê-la dentro de ``<back>`` em :ref:`elemento-fn-group` com o 
+          deve ser identificado dentro de ``<back>`` em :ref:`elemento-fn-group` com o 
           tipo ``@fn-type="financial-disclosure"`` e em <front>.
  
 .. note:: Notas SEM NÚMERO DE CONTRATO, ficam apenas em ``<back>`` mas com 
@@ -3169,30 +3168,6 @@ Exemplo:
     ...
 
  
-Pode possuir o atributo ``@id`` para criar referência cruzada 
-:ref:`elemento-xref` com informações do texto.
- 
-Exemplo:
- 
-.. code-block:: xml
-
-    ...
-    <body>
-        ...
-        <sec sec-type="methods" id="sec01">
-            <title>Methodology</title>
-            <p>Each patient underwent a brief physical examination, and the degree of dyspnea was determined by the Medical Research Council (MRC) 5-point scale.</p>
-            ...
-        </sec>
-        ...
-    </body>
-    ...
- 
-
-Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
-atributo ``@id``.
- 
- 
 .. _elemento-disp-formula:
      
 <disp-formula>
@@ -3323,7 +3298,7 @@ Aparece em
   :ref:`elemento-p`,
   :ref:`elemento-sec`,
   :ref:`elemento-supplementary-material`,
-  ``<table-wrap-group>``
+
 
 Atributos obrigatórios
   1. id (ver :ref:`regra-atribuicao-id`)
@@ -3652,14 +3627,12 @@ Aparece em
   :ref:`elemento-table-wrap`,
   :ref:`elemento-media`,
   :ref:`elemento-supplementary-material`,
-  ``<app>``
 
 Ocorre
   Zero ou mais vezes
 
 
-Tag que representa uma descrição textual visível de uma tabela, figura ou 
-objeto similar.
+Tag que representa uma descrição de tabela, figura ou objeto similar.
  
 Obrigatoriamente dentro de ``<caption>`` deve-se conter a tag de ``<title>`` 
 com a descrição textual da legenda dos objetos mencionados.
@@ -4118,31 +4091,32 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
 +-----------+------------------------------------------------------------------+
 | Valor     | Descrição                                                        |
 +===========+==================================================================+
+| book      | utilizada para referenciar livros. Pode Também representar       |
+|           | somente uma parte ou capítulo de um livro.                       |
++-----------+------------------------------------------------------------------+
+| confproc  | utilizada para referenciar documentos relacionados à eventos     |
+|           | científicos: atas, anais, resultados, proceedings, convenção,    |
+|           | conferência entre outros.                                        |
++-----------+------------------------------------------------------------------+
+| database  | utilizada para referenciar bases de dados.                       |
++-----------+------------------------------------------------------------------+
 | journal   | utilizada para referenciar publicações seriadas, editadas em     |
 |           | unidades sucessivas, com designações numéricas e/ou cronológicas |
-|           | e destinada a ser continuada indefinidamente                     |
+|           | e destinada a ser continuada indefinidamente.                    |
 +-----------+------------------------------------------------------------------+
-| book      | utilizada para referenciar monografia/livro. Pode Também         |
-|           | representar somente uma parte ou capítulo de um livro            |
+| patent    | utilizada para referenciar patentes.                             |
 +-----------+------------------------------------------------------------------+
-| webpage   | utilizada para referencias de um relatório técnico, normalmente  |
-|           | de autoria institucional                                         |
+| report    | utilizada para referencias de um relatório técnico, normalmente  |
+|           | de autoria institucional.                                        |
 +-----------+------------------------------------------------------------------+
-| thesis    | utilizada para referenciar TCC para obtenção de um grau          |
-|           | acadêmico, tais como livre-docência, doutorado, mestrado,        |
-|           | bacharelado, licenciatura, etc                                   |
+| software  | utilizada para referenciar um software em suportes como CDs,     |
+|           | DVD's, suporte online, dispositivos usb e etc.                   |
 +-----------+------------------------------------------------------------------+
-| confproc  | utilizada para referenciar documentos relacionados com eventos   |
-|           | científicos: atas, anais, resultados, proceedings, convenção,    |
-|           | conferência entre outras denominações                            |
+| thesis    | utilizada para referenciar monografias, dissertações ou teses    |
+|           | para obtenção de um grau acadêmico, tais como livre-docência,    |
+|           | doutorado, mestrado, bacharelado, licenciatura, etc.             |
 +-----------+------------------------------------------------------------------+
-| patent    | utilizada para referenciar patentes                              |
-+-----------+------------------------------------------------------------------+
-| software  | utilizada para referenciar um software que pode estar em vários  |
-|           | suportes, como CDs, DVDs, em suporte online, dispositivos usb e  |
-|           | etc                                                              |
-+-----------+------------------------------------------------------------------+
-| database  | utilizada para referenciar bases de dados                        |
+| webpage   | utilizada para identificar informações de web sites e blogs      |
 +-----------+------------------------------------------------------------------+
 
 
@@ -4155,7 +4129,7 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
   * Evitar pontuação dentro da marcação em :ref:`elemento-element-citation`
     (ponto final, vírgula etc);
   * Todas as informaçoes de uma referência devem ser marcadas, caso não exista
-    uma tag específica para uma informação insirir esta em
+    uma tag específica para uma informação inserir esta em
     :ref:`elemento-comment`.
 
 Exemplos:
@@ -4168,64 +4142,63 @@ Exemplos:
     <ref-list>
         <ref id="B01">
             <label>1</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-            <element-citation publication-type="journal">
-                <person-group person-group-type="author">
-                    <name>
-                        <surname>Sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
-                    <name>
-                        <surname>Sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
-                </person-group>
-                <article-title>Título do artigo</article-title>
-                <source>Nome do Periódico</source>
-                <season>Estações do ano (ex.: Inverno) ou intervalo de meses (Ex.: Jan-Mar)</season>
-                <month>Mês</month>
-                <year>ano</year>
-                <volume>volume</volume>
-                <issue>número</issue>
-                <fpage>página inicial</fpage>
-                <lpage>página final</lpage>
-                <issn>número do ISSN na revista</issn>   
-                <pub-id pub-id-type="pmid">somente números</article-id>
-                <pub-id pub-id-type="pcmid">somente números</article-id>
-                <pub-id pub-id-type="doi">somente números</article-id>
-                <pub-id pub-id-type="pii">somente números</article-id>
-                <elocation-id>representa um número de página eletrônica</elocation-id>
-            </element-citation>
+                <mixed-citation>ARRETCHE, M. Federalism and territorial equality: a contradiction in terms? Dados, Rio de Janeiro, v. 5, n. 02, 2010 . Disponível em: &lt;http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso&gt;.</mixed-citation>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>ARRETCHE</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <article-title xml:lang="en">Federalism and territorial equality: a contradiction in terms?</article-title>
+                    <source>Dados</source>
+                    <publisher-loc>Rio de Janeiro</publisher-loc>
+                    <volume>5</volume>
+                    <issue>02</issue>
+                    <year>2010</year>
+                    <ext-link ext-link-type="uri" xlink:href="http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso">http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso</ext-link>
+                    </element-citation>
         </ref>
     <ref-list> 
     ...
 
 .. code-block:: xml
 
-    <!-- Book Sample --> 
+    <!-- Book Chapter Sample --> 
 
     ...
     <ref-list>
         <ref id="B02">
             <label>2</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>    
+            <mixed-citation>7. Calkins BM, Mendeloff AI. The epidemiology of idiopathic inflammatory bowel disease. In: Kirsner JB, Shorter RG, eds. Inflammatory bowel disease, 4th ed. Baltimore: Williams &amp; Wilkins. 1995:31-68.</mixed-citation>
             <element-citation publication-type="book">
-                <person-group person-group-type="author">                  
+                <name>
+                    <surname>Calkins</surname>
+                    <given-names>BM</given-names>
+                </name>
+                <name>
+                    <surname>Mendeloff</surname>
+                    <given-names>AI</given-names>
+                </name>
+                <chapter-title>The epidemiology of idiopathic inflammatory bowel
+                disease.</chapter-title>
+                <person-group person-group-type="editor">
                     <name>
-                        <surname>Sobrenome</surname>
-                        <given-names>Prenomes</given-names>
+                        <surname>Kirsner</surname>
+                        <given-names>JB</given-names>
+                    </name>
+                    <name>
+                        <surname>Shorter</surname>
+                        <given-names>RG</given-names>
                     </name>
                 </person-group>
-                <source>Nome do Livro</source>
-                <edition>edição (inserir informação ed. ou th. e etc conforme no pdf)</edition>
-                <publisher-loc>Lugar de publicação do livro (cidade, estado, país e etc)</publisher-loc>
-                <publisher-name>Nome da editora/Casa publicadora</publisher-name>
-                <year>Ano de publicação da obra</year>
-                <size units="page">quantidade total de páginas do livro</size>
-                <isbn>número do ISBN do livro</isbn>
-                <fpage>100</fpage>
-                <lpage>120</lpage>
-                <page-range>100-101, 105, 107-120</page-range>
+                <source xml:lang="en">Inflammatory bowel disease</source>
+                <edition>4th ed</edition>
+                <publisher-loc>Baltimore</publisher-loc>
+                <publisher-name>Williams &amp; Wilkins</publisher-name>
+                <year>1995</year>
+                <fpage>31</fpage>
+                <lpage>68</lpage>
             </element-citation>
         </ref>
      </ref-list>
@@ -4233,7 +4206,7 @@ Exemplos:
 
 .. code-block:: xml
  
-    <!-- Book Chapter Sample --> 
+    <!-- Book Sample --> 
 
     ...
     <ref-list>
@@ -4264,26 +4237,20 @@ Exemplos:
 .. code-block:: xml
  
     <!-- Webpage Sample -->
-
+    
     ...
-    <ref-list>
-        <ref id="B04">
+    <ref id="B04">
             <label>4</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-            <element-citation publication-type="webpage">
-                <source>Título do documento (pode ser nome do site) [Internet]</source>
-                <publisher-loc>Lugar de publicação</publisher-loc>
-                <publisher-name>Nome da mantenedoura/instituição</publisher-name>
-                <year>ano</year>
-                <date-in-citation content-type="access-date">data de acesso ao link</date-in-citation>
-                <date-in-citation content-type="updated">data de uptated</date-in-citation>
-                <comment>
-                    Available from:
-                    <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link>
-                </comment>
-            </element-citation>
-        </ref>
-    </ref-list> 
+            <mixed-citation>1. COB - Comitê Olímpico Brasileiro. Desafio para o corpo. Disponível em: http://www.cob.org.br/esportes/esporte.asp?id=39. (Acesso em 10 abr 2010)</mixed-citation>
+            <element-citation publication-type="web">
+                <person-group person-group-type="author">
+                    <collab>COB -Comitê Olímpico Brasileiro</collab>
+                </person-group>
+                <source xml:lang="en">Desafio para o corpo</source>
+                <year>2010</year>
+                <comment content-type="cited">Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.cob.org.br/esportes/esporte.asp?id=39">http://www.cob.org.br/esportes/esporte.asp?id=39</ext-link></comment>
+                <date-in-citation content-type="access-date">10 abr 2010</date-in-citation>
+             </element-citation> 
     ...
 
 .. note:: Quando a referência apresentar URL com texto (Disponível em: ou 
@@ -4297,18 +4264,18 @@ Exemplos:
     <ref-list>
         <ref id="B05">
             <label>5</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-            <element-citation publication-type="report">
-                <person-group person-group-type="author">
-                    <collab>Nome da instituição organizadora</collab>
-                </person-group>     
-                <source>Título do Relatório</source>
-                <publisher-loc>Lugar de publicação, cidade, estado, país e etc</publisher-loc>
-                <publisher-name>Nome da casa publicadora</publisher-name>
-                <year>ano do relatório</year>
-                <month>mês do relatório</month>
-                <pub-id pub-id-type="other">Report No: XXXXXX</pub-id>
-                <comment>para outras informações mencionadas que fazem parte do relatório que não tenham tags específicas</comment>
+            <mixed-citation>16. World Health Organization. Control of the leishmaniases. Geneva:
+                    WHO; 2010.(Technical Report Series; 949)</mixed-citation>
+        <element-citation publication-type="reports">
+          <person-group person-group-type="author">
+            <collab>World Health Organization</collab>
+          </person-group>
+          <article-title xml:lang="en">Control of the leishmaniases</article-title>
+          <publisher-loc>Geneva</publisher-loc>
+          <publisher-name>WHO</publisher-name>
+          <year>2010</year>
+          <source xml:lang="en">(Technical Report Series; 949)</source>
+        </element-citation>
             </element-citation>
         </ref>
     </ref-list> 
@@ -4322,28 +4289,21 @@ Exemplos:
     <ref-list>
         <ref id="B06">
             <label>6</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <mixed-citation>World Health Organization (WHO). Ultrasound in schistosomiasis. A pratical guide to the
+            standardized use of ultrasonography for the assessment of schistosomiasis-related morbidity. Second
+            International Workshop. 22 October, 1996, Niamey, Niger.</mixed-citation>
             <element-citation publication-type="confproc">
-                <person-group person-group-type="editor">
-                    <name>
-                        <surname>sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
-                    <name>
-                        <surname>sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
-                </person-group>
-                <source>título do documento usado referente a uma ou mais palestras do evento</source>
-                <conf-name>Nome da conferência</conf-name>
-                <conf-date>Data da conferência, pode ser composta por um período por, ex: 2003 Aug 25-29</conf-date>
-                <conf-loc>Local físico da conferência (ex: anfiteatro, saguão…) mais nome da cidade, estado, país e etc</conf-loc>
-                <publisher-loc>Lugar de publicação do apanhado informacional extraído da conferência</publisher-loc>
-                <publisher-name>Nome da casa publicadora/Editora</publisher-name>
-                <year>ano da composição do apanhado informacional extraído da conferência</year>
-                <size units="page">quantidade total de páginas (se for impresso)</size>
-                <comment>Outras informações da conferência que não tenham tags específicas</comment>
-            </element-citation>
+              <person-group person-group-type="author">
+                <collab>World Health Organization (WHO)</collab>
+              </person-group>
+              <source xml:lang="en">Ultrasound in schistosomiasis. A pratical guide to the standardized use of
+              ultrasonography for the assessment of schistosomiasis-related morbidity</source>
+              <comment>Second International Workshop</comment>
+              <day>22</day>
+              <month>October</month>
+              <publisher-loc>Niamey, Niger</publisher-loc>
+              <year>1996</year>
+              </element-citation>
         </ref>
     </ref-list> 
     ...
@@ -4356,20 +4316,22 @@ Exemplos:
     <ref-list>
         <ref id="B07">
             <label>7</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-            <element-citation publication-type="thesis">
-                <person-group person-group-type="author">
-                    <name>
-                        <surname>sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
-                </person-group>
-                <source>título do trabalho acadêmico</source>
-                <publisher-loc>local da publicação, cidade, estado, país etc</publisher-loc>
-                <publisher-name>nome da casa publicadora (normalmente é a própria faculdade/universidade)</publisher-name>
-                <year>ano de realização do trabalho</year>
-                <size units="page">total de folhas do trabalho</size>
-            </element-citation>
+            <mixed-citation>Milani RM. Análise dos resultados imediatos da operação para
+               revascularização do miocárdio sem pinçamento total da aorta [Dissertação de
+               mestrado]. Curitiba: Universidade Federal do Paraná; 2000.</mixed-citation>
+        <element-citation publication-type="thesis">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Milani</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <source xml:lang="pt">Análise dos resultados imediatos da operação para revascularização do miocárdio sem pinçamento total da aorta</source>
+          <comment>Dissertação de mestrado</comment>
+          <publisher-loc>Curitiba</publisher-loc>
+          <publisher-name>Universidade Federal do Paraná</publisher-name>
+          <year>2000</year>
+        </element-citation>
         </ref>
     </ref-list>
     ...
@@ -4382,21 +4344,16 @@ Exemplos:
     <ref-list>
         <ref id="B08">
             <label>8</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <mixed-citation>EMBRAPA. Medidor digital multissensor de temperatura para solos. BR n. PI 8903105-9, 30 maio 1995.</mixed-citation>
             <element-citation publication-type="patent">
                 <person-group person-group-type="author">
-                    <name>
-                        <surname>sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
-                    <collab>autor institucional</collab>
-                </person-group>     
-                <article-title>título do documento de patente</article-title>
-                <source>identificado o nome do país autorizou a patente. Ex.: United States patent</source>
-                <patent country="XX">XX Número da Patente</patent>
-                <year>ano do documento da patente</year>
-                <month>mês</month>
-                <day>dia</day>
+                    <collab>EMBRAPA</collab>
+                </person-group>
+                <source>Medidor digital multissensor de temperatura para solos</source>
+                <patent country="BR">PI 8903105-9</patent>
+                <day>30</day>
+                <month>05</month>
+                <year>1995</year>
             </element-citation>
         </ref>
     </ref-list>
@@ -4410,24 +4367,16 @@ Exemplos:
     <ref-list>     
         <ref id="B09">
             <label>9</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <mixed-citation>MICROSOFT. Project for Windows 95: project planning software. Version 4.1. [S.l.]: Microsoft Corporation, 1995. 1 CD-ROM.</mixed-citation>
             <element-citation publication-type="software">
                 <person-group person-group-type="editor">
-                    <name>
-                        <surname>sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
-                    <name>
-                        <surname>sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
+                    <collab>MICROSOFT</collab>
                 </person-group>
-                <source>título ou nome do software</source>
-                <edition>Para software a versão pode ser considerada a edição ex: New version 4.0</edition>
-                <publisher-loc>local de publicação/fabricação</publisher-loc>
-                <publisher-name>nome da casa publicadora/distribuidora</publisher-name>
-                <year>ano de criação do software</year>
-                <comment>informações adicionais do software, ex.: informação de suporte: CDs, DVDs, e também especificações de cor, som, dimensões etc</comment>
+                <source>Project for Windows 95: project planning software</source>
+                <edition>Version 4.1</edition>
+                <publisher-name>Microsoft Corporation</publisher-name>
+                <year>1995</year>
+                <comment>1 CD-ROM</comment>
             </element-citation>
         </ref>
     <ref-list>
@@ -4441,13 +4390,15 @@ Exemplos:
     <ref-list>
         <ref id="B10">
             <label>10</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
+            <mixed-citation>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA “ANDRÉ TOSELLO”. Base de Dados Tropical. 1985. Disponível em: <http://www.bdt.fat.org.br/acaro/sp/>. Acesso em: 30 maio 2002.</mixed-citation>
             <element-citation publication-type="database">
-                <source>título da base de dados</source>
-                <publisher-loc>local de publicação/país, cidade e/ou estado de origem da base de dados</publisher-loc>
-                <publisher-name>nome da casa publicadora/mantenedora</publisher-name>
-                <year>ano de criação da base</year>
-                <comment>informações adicionais da base de dados</comment>
+                <person-group person-group-type="author">
+                    <collab>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA “ANDRÉ TOSELLO”</collab>
+                </person-group>
+                <source>Base de Dados Tropical</source>
+                <year>1985</year>
+                <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.bdt.fat.org.br/acaro/sp/">http://www.bdt.fat.org.br/acaro/sp/</ext-link></comment>
+                <date-in-citation content-type="access-date">30 maio 2002</date-in-citation>
             </element-citation>
         </ref>
     </ref-list>
@@ -4502,19 +4453,19 @@ Ocorre
 Identifica o tipo de identificador (id) de um documento em uma referência.
 Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
 
-+--------+------------------------------------------------------------------+
-| Valor  | Descrição                                                        |
-+========+==================================================================+
-| pmid   |                                                                  |
-+--------+------------------------------------------------------------------+
-| pcmid  |                                                                  |
-+--------+------------------------------------------------------------------+
-| doi    | Número DOI registrado no Crossref                                |
-+--------+------------------------------------------------------------------+
-| pii    |                                                                  |
-+--------+------------------------------------------------------------------+
-| other  | qualquer outro identificador                                     |
-+--------+------------------------------------------------------------------+
++--------+----------------------------------------+
+| Valor  | Descrição                              |
++========+========================================+
+| pmid   | PubMed ID                              |
++--------+----------------------------------------+
+| pcmid  | PubMed Central ID                      |
++--------+----------------------------------------+
+| doi    | Número DOI registrado no Crossref      |
++--------+----------------------------------------+
+| pii    | Identificador do editor                |
++--------+----------------------------------------+
+| other  | qualquer outro identificador           |
++--------+----------------------------------------+
 
 Exemplo:
 
@@ -4920,9 +4871,9 @@ Exemplo de Apêndice com vídeo:
     ...
  
 
-.. _elemento-glossary:
+.. _elemento-def-list:
  
-<glossary>
+<def-list>
 ----------
 
 Aparece em
@@ -4943,59 +4894,106 @@ Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do
 atributo ``@id``.
  
 
-Exemplo em apêndices:
+Exemplo em body:
  
 .. code-block:: xml
 
     ... 
-    <app-group>
-        <app>
-            <glossary>
-                <title>nome do glossário</title>
-                  <def-list id="d01">
+                <def-list id="d01">
+                    <title>Glossário</title>
                       <def-item>
-                          <term> termo </term>
-                          <def><p>definição</p></def>
+                          <term>Metabólito</term>
+                          <def><p>É qualquer intermediário ou produto resultante do metabolismo.</p></def>
                       </def-item>
                       <def-item>
-                          <term>termo</term>
-                          <def><p>definição</p></def>
+                          <term>Potência</term>
+                          <def><p>É a dose de uma droga requerida para produzir um efeito específico de dada intensidade, comparada a um padrão de referência</p></def>
                       </def-item>
                       <def-item>
-                          <term>termo</term>
-                          <def><p>definição</p></def>
+                          <term>Relação estrutura-atividade</term>
+                          <def><p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p></def>
                       </def-item>
                 </def-list>
             </glossary>
-        </app>
-    </app-group>
     ...
+
 
 Exemplo em back:
  
 .. code-block:: xml
+
+    ... 
+          <back>
+          <app-group>
+              <app id="d01">
+                 <label>Glossário</label>
+                  <glossary>
+                      <def-list>
+                        <def-item>
+                            <term>Metabólito</term>
+                             <def><p>É qualquer intermediário ou produto resultante do metabolismo.</p></def>
+                        </def-item>
+                        <def-item>
+                            <term>Potência</term>
+                            <def><p>É a dose de uma droga requerida para produzir um efeito específico de dada intensidade, comparada a um padrão de referência</p></def>
+                        </def-item>
+                        <def-item>
+                           <term>Relação estrutura-atividade</term>
+                           <def><p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p></def>
+                        </def-item>
+                      </def-list>
+                    </glossary>
+                </app>
+            </app-group>
+    ...
+
+
+.. note:: Glossário em <back> deve ser inserido em back\app-group\app\glossary.
+Para esse caso, é obrigatório inserir um ID para <app>.
+
+Exemplo sub-glossário:
+ 
+.. code-block:: xml
  
     ...
+    <def-list id="d01">
+        <label>Glossário</label>          
+          <def-item>
+            <term><bold>Angina pectoris (Angina de peito) –</bold></term>
+            <def>
+              <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term><bold>Antagonista</bold></term>
+            <def>
+              <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term><bold>Biodisponibilidade</bold></term>
+            <def>
+              <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
+            </def>
+          </def-item>
+          <def-list>
+            <def-item>
+              <term><bold>D<sub>E</sub>50 –</bold></term>
+              <def>
+                <p>Dose do fármaco necessária para atingir 50% do efeito farmacológico desejado</p>
+              </def>
+            </def-item>
+            <def-item>
+              <term><bold>Depuração</bold></term>
+              <def>
+                <p>Indica a taxa de remoção de uma substância do sangue quando ele atravessa um órgão, por ex., fígado ou rim.</p>
+              </def>
+            </def-item>
+          </def-list>
+        </def-list>
+    </sec>
+    </body>
     <back>
-        <glossary>
-            <title>nome do glossário</title>
-            <def-list id="d01">
-                <def-item>
-                    <term> termo </term>
-                    <def><p>definição</p></def>
-                </def-item>
-                <def-item>
-                    <term>termo</term>
-                    <def><p>definição</p></def>
-                </def-item>
-                <def-item>
-                    <term>termo</term>
-                    <def><p>definição</p></def>
-                </def-item>
-            </def-list>
-        </glossary>
-        <ref-list>
-    </back>
     ...
 
 A tag :ref:`elemento-glossary` possui os seguintes atributos: 
@@ -5007,97 +5005,7 @@ esse atributo deve ter valor único no arquivo e é possível fazer link
 relacionado a um "rid".
  
 O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
-ou como texto. Veja os exemplos abaixo:
- 
-Exemplo com imagem:
- 
-.. code-block:: xml
- 
-    ...
-    <back>
-        <glossary>
-            <title>nome do glossário</title>
-            <graphic xlink:href="1234-5678-rctb-45-05-0110-d01.tif"/>
-        </glossary>
-        ...
-        <ref-list/>
-        ...
-    </back>
-    ...
-
-Exemplo com texto:
- 
-.. code-block:: xml
- 
-    ...
-    <back>
-        <glossary>
-            <title>nome do glossário</title>
-            <def-list id="d01">
-                <def-item>
-                    <term> termo </term>
-                    <def><p>definição</p></def>
-                </def-item>
-                <def-item>
-                    <term>termo</term>
-                    <def><p>definição</p></def>
-                </def-item>
-                <def-item>
-                    <term>termo</term>
-                    <def><p>definição</p></def>
-                </def-item>
-            </def-list>
-        </glossary>
-        ...
-        <ref-list/>
-        ...
-    </back>
-    ...
-
-Exemplo com duas listas de definições:
- 
-.. code-block:: xml
- 
-    <!-- Corrigir -->
-    <back>
-        <glossary>
-            <title>nome do glossário</title>
-            <glossary>
-                <title>nome do glossário</title>
-                <def-list id="d01">
-                    <def-item>
-                        <term> termo </term>
-                        <def><p>definição</p></def>
-                    </def-item>
-                    <def-item>
-                        <term>termo</term>
-                        <def><p>definição</p></def>
-                    </def-item>
-                    <def-item>
-                        <term>termo</term>
-                        <def><p>definição</p></def>
-                    </def-item>
-                </def-list>
-            </glossary>
-            <glossary>
-                <title>nome do glossário</title>
-                <def-list id="d02">
-                    <def-item>
-                        <term> termo </term>
-                        <def><p>definição</p></def>
-                    </def-item>
-                    <def-item>
-                        <term>termo</term>
-                        <def><p>definição</p></def>
-                    </def-item>
-                    <def-item>
-                        <term>termo</term>
-                        <def><p>definição</p></def>
-                    </def-item>
-                </def-list>
-            </glossary>
-        </glossary>
-    </back>
+ou como texto.
  
 
 Referências:
