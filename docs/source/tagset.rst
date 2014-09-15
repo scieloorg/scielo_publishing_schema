@@ -49,19 +49,12 @@ As chamadas tags flutuantes podem aparecer em todo o documento, ``<front>``,
 ------
 
 Aparece em
-  1. article/front/article-meta/title-group/article-title
-  2. article/front/article-meta/trans-title-group/trans-title
-  3. article/front/article-meta/contrib-group/contrib
-  4. article/body/p
-  5. article/body/sec/p
-  6. article/body/p/table-wrap/table/thead/tr/th
-  7. article/body/p/table-wrap/table/tbody/tr/td
-  8. article/body/sec/p/table-wrap/table/thead/tr/th
-  9. article/body/sec/p/table-wrap/table/tbody/tr/td
-  #. article/back/app-group/app/table-wrap/table/thead/tr/th
-  #. article/back/app-group/app/table-wrap/table/tbody/tr/td
-  #. article/back/app-group/app/supplementary-material/table-wrap/table/thead/tr/th
-  #. article/back/app-group/app/supplementary-material/table-wrap/table/tbody/tr/td
+  :ref:`elemento-article-title`,
+  :ref:`elemento-trans-title`,
+  :ref:`elemento-contrib`,
+  :ref:`elemento-p`,
+  ``th``,
+  ``td``
  
 Atributos obrigatórios
   1. rid
@@ -116,16 +109,20 @@ Os atributos obrigatórios para ``@xref`` são:
  
 Exemplos:
  
+
 .. code-block:: xml
 
-     <contrib-group>
-    <contrib contrib-type="author">
-                    <name>
-                        <surname>Lacerda</surname>
-                        <given-names>Marcus VG</given-names>
-                    </name>
-                    <xref ref-type="aff" rid="aff1">1</xref>
-                </contrib-group>
+    ...
+    <article-meta>
+        ...
+        <contrib-group>
+            <contrib contrib-type="author">
+                <name>
+                    <surname>Lacerda</surname>
+                    <given-names>Marcus VG</given-names>
+                </name>
+                <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
             <aff id="aff1">
                 <label>1</label>
                 <institution content-type="orgname">Universidade do Estado do Amazonas</institution>
@@ -136,7 +133,13 @@ Exemplos:
                 <country>Brasil</country>
                 <institution content-type="original">Universidade do Estado do Amazonas, Manaus, AM, Brasil</institution>
             </aff>
+            ...
+        </contrib-group>
+        ...
+    </article-meta>
+    ...
      
+
 .. code-block:: xml
 
      <xref ref-type="bibr" rid="B13">John 2003</xref>
@@ -144,18 +147,19 @@ Exemplos:
 
 .. code-block:: xml
 
-     <p>Check in <xref ref-type="fig" rid="f01">Figure</xref>:</p>
-            <p>
-                <fig id="f01">
-                    <caption>
-                        <title>Environmental <italic>in situ</italic> conditions during the study period.</title>
-                    </caption>
-                    <graphic xlink:href="0074-0276-mioc-0074-0276140068-gf01"/>
-                </fig>
-            </p>
+    <p>Check in <xref ref-type="fig" rid="f01">Figure</xref>:</p>
+    <p>
+        <fig id="f01">
+            <caption>
+                <title>Environmental <italic>in situ</italic> conditions during the study period.</title>
+            </caption>
+            <graphic xlink:href="0074-0276-mioc-0074-0276140068-gf01"/>
+        </fig>
+    </p>
  
 
- .. note:: Não envolver a tag <xref> em <sup>.
+.. note:: Não envolver a tag ``<xref>`` em ``<sup>``.
+
 
 .. _elemento-label:
  
@@ -163,34 +167,20 @@ Exemplos:
 -------
 
 Aparece em
-  1. article/front/article-meta/aff
-  2. article/front/article-meta/author-notes/corresp
-  3. article/front/article-meta/author-notes/fn
-  4. article/body/p/fig
-  5. article/body/p/table-wrap
-  6. article/body/p/disp-formula
-  7. article/body/p/media
-  8. article/body/p/supplementary-material
-  9. article/body/p/list
-  10. article/body/p/list/list-item
-  11. article/body/sec/p/fig
-  12. article/body/sec/p/table-wrap
-  13. article/body/sec/p/disp-formula
-  14. article/body/sec/p/media
-  15. article/body/sec/p/supplementary-material
-  16. article/body/sec/p/list
-  17. article/body/sec/p/list/list-item
-  18. article/back/ref-list/ref
-  19. article/back/app-group/app/glossary
-  20. article/back/glossary
-  21. article/back/app-group/app
-  22. article/back/app-group/app/table-wrap
-  23. article/back/app-group/app/fig  
-  24. article/back/app-group/app/glossary/desf-list
-  25. article/back/glossary/def-list
-  26. article/back/fn-group/fn
-  27. article/back/app-group/app/supplementary-material/table-wrap
-  28. article/back/app-group/app/supplementary-material/fig
+  :ref:`elemento-aff`,
+  :ref:`elemento-corresp`, 
+  :ref:`elemento-fn`,
+  :ref:`elemento-fig`,
+  :ref:`elemento-table-wrap`,
+  :ref:`elemento-disp-formula`,
+  :ref:`elemento-media`,
+  :ref:`elemento-supplementary-material`,
+  :ref:`elemento-list`,
+  ``list-item``,
+  :ref:`elemento-ref`,
+  :ref:`elemento-glossary`,
+  ``app``,
+  ``def-list``
  
 Ocorre
   Zero ou mais vezes
@@ -203,24 +193,50 @@ Exemplos:
  
 .. code-block:: xml
  
+    <aff id="aff01">
+        <label>a</label>
+        ...
+    </aff>
 
-     <aff id="aff01">
-          <label>a</label>
-     
-         <corresp id="c01">
-            <label>*</label>
 
-<fig id="f01">
-          <label>Figure 1</label>
+.. code-block:: xml
 
-<table-wrap id="t01">
-          <label>Table 1</label>
+    <corresp id="c01">
+       <label>*</label>
+       ...
+    </corresp>
+
+
+.. code-block:: xml
+
+    <fig id="f01">
+        <label>Figure 1</label>
+        ...
+    </fig>
+    
+
+.. code-block:: xml
+
+    <table-wrap id="t01">
+        <label>Table 1</label>
+        ...
+    </table-wrap>
  
-     <ref id="B01">1</ref>
-          <label>1</label>
+
+.. code-block:: xml
+
+    <ref id="B01">1</ref>
+        <label>1</label>
+        ...
+    </ref>
  
-      <app>
-          <label>Apêndice</label>
+
+.. code-block:: xml
+
+    <app>
+        <label>Apêndice</label>
+        ...
+    </app>
  
  
 .. _elemento-p:
@@ -229,25 +245,17 @@ Exemplos:
 ---
  
 Aparece em
-  1. article/front/article-meta/abstract
-  2. article/front/article-meta/abstract/sec
-  3. article/front/article-meta/trans-abstract
-  4. article/front/article-meta/trans-abstract/sec
-  5. article/front/article-meta/author-notes/fn
-  6. article/body
-  7. article/body/sec/title  
-  8. article/body/p/table-wrap/table-wrap-foot/fn
-  9. article/body/p/disp-quote
-  10. article/body/p/list/list-item
-  11. article/body/sec/p/table-wrap/table-wrap-foot/fn
-  12. article/body/sec/p/disp-quote
-  13. article/body/sec/p/list/list-item   
-  14. article/body/sig-block/sig
-  15. article/back/ack/title
-  16. article/back/fn-group/fn
-  17. article/back/app-group/app
-  18. article/back/app-group/app/glossary/desf-list/def-item/def  
-  19. article/back/glossary/desf-list/def-item/def
+  :ref:`elemento-abstract`,
+  :ref:`elemento-sec`,
+  :ref:`elemento-trans-abstract`,
+  :ref:`elemento-fn`,
+  :ref:`elemento-body`,
+  ``title``,
+  :ref:`elemento-disp-quote`,
+  ``list-item``,
+  ``sig``,
+  ``app``,
+  ``def``
  
 Ocorre
   Uma ou mais vezes
@@ -622,7 +630,7 @@ Exemplo:
 Aparece em
   :ref:`elemento-journal-title-group`
  
-Atributo obrigatório
+Atributos obrigatórios
   1. abbrev-type="publisher"
  
 Ocorre
@@ -3185,7 +3193,7 @@ Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do
 atributo ``@id``.
  
  
-.. _disp-formula:
+.. _elemento-disp-formula:
      
 <disp-formula>
 --------------
@@ -4485,7 +4493,7 @@ Aparece em
   :ref:`elemento-element-citation`
   
 
-Atributo Obrigatório 
+Atributos obrigatórios 
   ``@pub-id-type``
 
 Ocorre 
@@ -4527,7 +4535,7 @@ Exemplo:
 Aparece em
   :ref:`elemento-element-citation`
  
-Atributo Obrigatório 
+Atributos obrigatórios 
  ``@content-type``
 
 Ocorre 
@@ -4668,11 +4676,11 @@ Exemplo:
 Aparece em
   :ref:`elemento-element-citation`
   
-Atributo Obrigatório 
+Atributos obrigatórios 
   ``@country``
 
 Ocorre 
- Zero ou uma vez
+  Zero ou uma vez
 
 Tag utilizada para identificar um número de patente. Deve possuir o atributo 
 ``@country`` e nele deve ser atribuído o código do país de acordo com a 
@@ -4697,10 +4705,10 @@ Exemplo de patente americana:
 ----------
 
 Aparece em
- :ref:`elemento-back`
+  :ref:`elemento-back`
 
 Ocorre
- Zero ou uma vez
+  Zero ou uma vez
 
 A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
 o grupo de notas de rodapé mencionadas no documento que não representem notas de
@@ -4920,7 +4928,7 @@ Exemplo de Apêndice com vídeo:
 Aparece em
   :ref:`elemento-back`,
   ``<app>``
- 
+
 Ocorre
   Zero ou mais vezes
 
@@ -4997,14 +5005,6 @@ mais frequente é o ``@id``.
 ``@id``: identificador da tag. É possível fazer referência cruzada no documento;
 esse atributo deve ter valor único no arquivo e é possível fazer link
 relacionado a um "rid".
-
-Para composição do ``@id`` de glossários utilizar o seguinte padrão:
-
-  "d" + o número de ordem da figura
- 
-Exemplo: 
-  
-  d01... d10, d11;
  
 O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
 ou como texto. Veja os exemplos abaixo:
@@ -5099,6 +5099,7 @@ Exemplo com duas listas de definições:
         </glossary>
     </back>
  
+
 Referências:
 ============
 
