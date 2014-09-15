@@ -4142,22 +4142,22 @@ Exemplos:
     <ref-list>
         <ref id="B01">
             <label>1</label>
-                <mixed-citation>ARRETCHE, M. Federalism and territorial equality: a contradiction in terms? Dados, Rio de Janeiro, v. 5, n. 02, 2010 . Disponível em: &lt;http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso&gt;.</mixed-citation>
-                <element-citation publication-type="journal">
-                    <person-group person-group-type="author">
-                        <name>
-                            <surname>ARRETCHE</surname>
-                            <given-names>M</given-names>
-                        </name>
-                    </person-group>
-                    <article-title xml:lang="en">Federalism and territorial equality: a contradiction in terms?</article-title>
-                    <source>Dados</source>
-                    <publisher-loc>Rio de Janeiro</publisher-loc>
-                    <volume>5</volume>
-                    <issue>02</issue>
-                    <year>2010</year>
-                    <ext-link ext-link-type="uri" xlink:href="http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso">http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso</ext-link>
-                    </element-citation>
+            <mixed-citation>ARRETCHE, M. Federalism and territorial equality: a contradiction in terms? Dados, Rio de Janeiro, v. 5, n. 02, 2010 . Disponível em: &lt;http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso&gt;.</mixed-citation>
+            <element-citation publication-type="journal">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>ARRETCHE</surname>
+                        <given-names>M</given-names>
+                    </name>
+                </person-group>
+                <article-title xml:lang="en">Federalism and territorial equality: a contradiction in terms?</article-title>
+                <source>Dados</source>
+                <publisher-loc>Rio de Janeiro</publisher-loc>
+                <volume>5</volume>
+                <issue>02</issue>
+                <year>2010</year>
+                <ext-link ext-link-type="uri" xlink:href="http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso">http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso</ext-link>
+            </element-citation>
         </ref>
     <ref-list> 
     ...
@@ -4201,8 +4201,8 @@ Exemplos:
                 <lpage>68</lpage>
             </element-citation>
         </ref>
-     </ref-list>
-     ...
+    </ref-list>
+    ...
 
 .. code-block:: xml
  
@@ -4240,17 +4240,18 @@ Exemplos:
     
     ...
     <ref id="B04">
-            <label>4</label>
-            <mixed-citation>1. COB - Comitê Olímpico Brasileiro. Desafio para o corpo. Disponível em: http://www.cob.org.br/esportes/esporte.asp?id=39. (Acesso em 10 abr 2010)</mixed-citation>
-            <element-citation publication-type="web">
-                <person-group person-group-type="author">
-                    <collab>COB -Comitê Olímpico Brasileiro</collab>
-                </person-group>
-                <source xml:lang="en">Desafio para o corpo</source>
-                <year>2010</year>
-                <comment content-type="cited">Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.cob.org.br/esportes/esporte.asp?id=39">http://www.cob.org.br/esportes/esporte.asp?id=39</ext-link></comment>
-                <date-in-citation content-type="access-date">10 abr 2010</date-in-citation>
-             </element-citation> 
+        <label>4</label>
+        <mixed-citation>1. COB - Comitê Olímpico Brasileiro. Desafio para o corpo. Disponível em: http://www.cob.org.br/esportes/esporte.asp?id=39. (Acesso em 10 abr 2010)</mixed-citation>
+        <element-citation publication-type="web">
+            <person-group person-group-type="author">
+                <collab>COB -Comitê Olímpico Brasileiro</collab>
+            </person-group>
+            <source xml:lang="en">Desafio para o corpo</source>
+            <year>2010</year>
+            <comment content-type="cited">Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.cob.org.br/esportes/esporte.asp?id=39">http://www.cob.org.br/esportes/esporte.asp?id=39</ext-link></comment>
+            <date-in-citation content-type="access-date">10 abr 2010</date-in-citation>
+        </element-citation> 
+    </ref>
     ...
 
 .. note:: Quando a referência apresentar URL com texto (Disponível em: ou 
@@ -4264,18 +4265,16 @@ Exemplos:
     <ref-list>
         <ref id="B05">
             <label>5</label>
-            <mixed-citation>16. World Health Organization. Control of the leishmaniases. Geneva:
-                    WHO; 2010.(Technical Report Series; 949)</mixed-citation>
-        <element-citation publication-type="reports">
-          <person-group person-group-type="author">
-            <collab>World Health Organization</collab>
-          </person-group>
-          <article-title xml:lang="en">Control of the leishmaniases</article-title>
-          <publisher-loc>Geneva</publisher-loc>
-          <publisher-name>WHO</publisher-name>
-          <year>2010</year>
-          <source xml:lang="en">(Technical Report Series; 949)</source>
-        </element-citation>
+            <mixed-citation>16. World Health Organization. Control of the leishmaniases. Geneva: WHO; 2010.(Technical Report Series; 949)</mixed-citation>
+            <element-citation publication-type="reports">
+                <person-group person-group-type="author">
+                    <collab>World Health Organization</collab>
+                </person-group>
+                <article-title xml:lang="en">Control of the leishmaniases</article-title>
+                <publisher-loc>Geneva</publisher-loc>
+                <publisher-name>WHO</publisher-name>
+                <year>2010</year>
+                <source xml:lang="en">(Technical Report Series; 949)</source>
             </element-citation>
         </ref>
     </ref-list> 
@@ -4289,21 +4288,18 @@ Exemplos:
     <ref-list>
         <ref id="B06">
             <label>6</label>
-            <mixed-citation>World Health Organization (WHO). Ultrasound in schistosomiasis. A pratical guide to the
-            standardized use of ultrasonography for the assessment of schistosomiasis-related morbidity. Second
-            International Workshop. 22 October, 1996, Niamey, Niger.</mixed-citation>
+            <mixed-citation>World Health Organization (WHO). Ultrasound in schistosomiasis. A pratical guide to the standardized use of ultrasonography for the assessment of schistosomiasis-related morbidity. Second International Workshop. 22 October, 1996, Niamey, Niger.</mixed-citation>
             <element-citation publication-type="confproc">
-              <person-group person-group-type="author">
-                <collab>World Health Organization (WHO)</collab>
-              </person-group>
-              <source xml:lang="en">Ultrasound in schistosomiasis. A pratical guide to the standardized use of
-              ultrasonography for the assessment of schistosomiasis-related morbidity</source>
-              <comment>Second International Workshop</comment>
-              <day>22</day>
-              <month>October</month>
-              <publisher-loc>Niamey, Niger</publisher-loc>
-              <year>1996</year>
-              </element-citation>
+                <person-group person-group-type="author">
+                    <collab>World Health Organization (WHO)</collab>
+                </person-group>
+                <source xml:lang="en">Ultrasound in schistosomiasis. A pratical guide to the standardized use of ultrasonography for the assessment of schistosomiasis-related morbidity</source>
+                <comment>Second International Workshop</comment>
+                <day>22</day>
+                <month>October</month>
+                <publisher-loc>Niamey, Niger</publisher-loc>
+                <year>1996</year>
+            </element-citation>
         </ref>
     </ref-list> 
     ...
@@ -4316,22 +4312,20 @@ Exemplos:
     <ref-list>
         <ref id="B07">
             <label>7</label>
-            <mixed-citation>Milani RM. Análise dos resultados imediatos da operação para
-               revascularização do miocárdio sem pinçamento total da aorta [Dissertação de
-               mestrado]. Curitiba: Universidade Federal do Paraná; 2000.</mixed-citation>
-        <element-citation publication-type="thesis">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Milani</surname>
-              <given-names>RM</given-names>
-            </name>
-          </person-group>
-          <source xml:lang="pt">Análise dos resultados imediatos da operação para revascularização do miocárdio sem pinçamento total da aorta</source>
-          <comment>Dissertação de mestrado</comment>
-          <publisher-loc>Curitiba</publisher-loc>
-          <publisher-name>Universidade Federal do Paraná</publisher-name>
-          <year>2000</year>
-        </element-citation>
+            <mixed-citation>Milani RM. Análise dos resultados imediatos da operação para revascularização do miocárdio sem pinçamento total da aorta [Dissertação de mestrado]. Curitiba: Universidade Federal do Paraná; 2000.</mixed-citation>
+            <element-citation publication-type="thesis">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>Milani</surname>
+                        <given-names>RM</given-names>
+                    </name>
+                </person-group>
+                <source xml:lang="pt">Análise dos resultados imediatos da operação para revascularização do miocárdio sem pinçamento total da aorta</source>
+                <comment>Dissertação de mestrado</comment>
+                <publisher-loc>Curitiba</publisher-loc>
+                <publisher-name>Universidade Federal do Paraná</publisher-name>
+                <year>2000</year>
+            </element-citation>
         </ref>
     </ref-list>
     ...
@@ -4899,22 +4893,23 @@ Exemplo em body:
 .. code-block:: xml
 
     ... 
-                <def-list id="d01">
-                    <title>Glossário</title>
-                      <def-item>
-                          <term>Metabólito</term>
-                          <def><p>É qualquer intermediário ou produto resultante do metabolismo.</p></def>
-                      </def-item>
-                      <def-item>
-                          <term>Potência</term>
-                          <def><p>É a dose de uma droga requerida para produzir um efeito específico de dada intensidade, comparada a um padrão de referência</p></def>
-                      </def-item>
-                      <def-item>
-                          <term>Relação estrutura-atividade</term>
-                          <def><p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p></def>
-                      </def-item>
-                </def-list>
-            </glossary>
+    <glossary>
+        <def-list id="d01">
+            <title>Glossário</title>
+              <def-item>
+                  <term>Metabólito</term>
+                  <def><p>É qualquer intermediário ou produto resultante do metabolismo.</p></def>
+              </def-item>
+              <def-item>
+                  <term>Potência</term>
+                  <def><p>É a dose de uma droga requerida para produzir um efeito específico de dada intensidade, comparada a um padrão de referência</p></def>
+              </def-item>
+              <def-item>
+                  <term>Relação estrutura-atividade</term>
+                  <def><p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p></def>
+              </def-item>
+        </def-list>
+    </glossary>
     ...
 
 
@@ -4923,28 +4918,30 @@ Exemplo em back:
 .. code-block:: xml
 
     ... 
-          <back>
-          <app-group>
-              <app id="d01">
-                 <label>Glossário</label>
-                  <glossary>
-                      <def-list>
+    <back>
+        <app-group>
+            <app id="d01">
+                <label>Glossário</label>
+                <glossary>
+                    <def-list>
                         <def-item>
                             <term>Metabólito</term>
-                             <def><p>É qualquer intermediário ou produto resultante do metabolismo.</p></def>
+                            <def><p>É qualquer intermediário ou produto resultante do metabolismo.</p></def>
                         </def-item>
                         <def-item>
                             <term>Potência</term>
                             <def><p>É a dose de uma droga requerida para produzir um efeito específico de dada intensidade, comparada a um padrão de referência</p></def>
                         </def-item>
                         <def-item>
-                           <term>Relação estrutura-atividade</term>
-                           <def><p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p></def>
+                            <term>Relação estrutura-atividade</term>
+                            <def><p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p></def>
                         </def-item>
-                      </def-list>
-                    </glossary>
-                </app>
-            </app-group>
+                    </def-list>
+                </glossary>
+            </app>
+        </app-group>
+        ...
+    </back>
     ...
 
 
@@ -4958,43 +4955,41 @@ Exemplo sub-glossário:
     ...
     <def-list id="d01">
         <label>Glossário</label>          
-          <def-item>
+        <def-item>
             <term><bold>Angina pectoris (Angina de peito) –</bold></term>
             <def>
-              <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
+                <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
             </def>
-          </def-item>
-          <def-item>
+        </def-item>
+        <def-item>
             <term><bold>Antagonista</bold></term>
             <def>
-              <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
+                <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
             </def>
-          </def-item>
-          <def-item>
+        </def-item>
+        <def-item>
             <term><bold>Biodisponibilidade</bold></term>
             <def>
-              <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
+                <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
             </def>
-          </def-item>
-          <def-list>
+        </def-item>
+        <def-list>
             <def-item>
-              <term><bold>D<sub>E</sub>50 –</bold></term>
-              <def>
-                <p>Dose do fármaco necessária para atingir 50% do efeito farmacológico desejado</p>
-              </def>
+                <term><bold>D<sub>E</sub>50 –</bold></term>
+                <def>
+                    <p>Dose do fármaco necessária para atingir 50% do efeito farmacológico desejado</p>
+                </def>
             </def-item>
             <def-item>
-              <term><bold>Depuração</bold></term>
-              <def>
-                <p>Indica a taxa de remoção de uma substância do sangue quando ele atravessa um órgão, por ex., fígado ou rim.</p>
-              </def>
+                <term><bold>Depuração</bold></term>
+                <def>
+                    <p>Indica a taxa de remoção de uma substância do sangue quando ele atravessa um órgão, por ex., fígado ou rim.</p>
+                </def>
             </def-item>
-          </def-list>
         </def-list>
-    </sec>
-    </body>
-    <back>
+    </def-list>
     ...
+
 
 A tag :ref:`elemento-glossary` possui os seguintes atributos: 
 ``@content-type``, ``@id``, ``@specific-use`` e ``@xml:lang``. Porém o atributo
