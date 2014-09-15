@@ -178,7 +178,7 @@ Aparece em
   :ref:`elemento-list`,
   ``list-item``,
   :ref:`elemento-ref`,
-  :ref:`elemento-glossary`,
+  ``glossary``,
   ``app``,
   ``def-list``
  
@@ -3294,7 +3294,7 @@ Aparece em
   ``<app>``,
   :ref:`elemento-app-group`,
   :ref:`elemento-body`,
-  :ref:`elemento-glossary`,
+  ``glossary``,
   :ref:`elemento-p`,
   :ref:`elemento-sec`,
   :ref:`elemento-supplementary-material`,
@@ -4991,7 +4991,7 @@ Exemplo sub-glossário:
     ...
 
 
-A tag :ref:`elemento-glossary` possui os seguintes atributos: 
+A tag ``glossary`` possui os seguintes atributos: 
 ``@content-type``, ``@id``, ``@specific-use`` e ``@xml:lang``. Porém o atributo
 mais frequente é o ``@id``.
  

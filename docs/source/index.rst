@@ -10,7 +10,7 @@ Introdução
 Este guia de uso descreve o estilo de marcação adotado pelo projeto SciELO para
 a submissão de documentos no formato XML. 
 
-A especificação :term:`SciELO Publishing Schema` — também chamada :term:`SPS` — é composta 
+A especificação :term:`SciELO Publishing Schema` — também chamada :term:`SciELO PS` — é composta 
 pela especificação `NISO JATS Journal Publishing DTD <http://jats.nlm.nih.gov/publishing/>`_ 
 na versão 1.0 mais o :term:`Estilo SciELO`, que são regras que especializam aspectos da 
 especificação JATS Publishing. Os usuários deste guia devem possuir conhecimentos 
@@ -21,7 +21,7 @@ pelo SciELO, a especificação `NLM Journal Publishing DTD <http://dtd.nlm.nih.g
 na versão 3.0 ainda será suportada nesta versão do guia de uso, assim como pelas 
 ferramentas disponibilizadas.
 
-No caso de dúvidas sobre a especificação :term:`SPS`, sobre este guia de uso ou 
+No caso de dúvidas sobre a especificação :term:`SciELO PS`, sobre este guia de uso ou 
 sobre as ferramentas disponibilizadas pelo SciELO para apoiar a marcação em XML, 
 por favor utilizar apenas a lista de discussão 
 `scielo-xml <http://groups.google.com/group/scielo-xml/>`_.
@@ -48,10 +48,10 @@ formato XML.
   de acordo com a `DTD PMC <http://dtd.nlm.nih.gov/publishing/3.0/>`_.
 * `Stylechecker <http://manager.scielo.org/tools/validators/stylechecker/>`_: 
   Ferramenta baseada na web que apresenta relatório detalhado sobre a 
-  conformidade de um dado XML em relação à especificação :term:`SPS`.
+  conformidade de um dado XML em relação à especificação :term:`SciELO PS`.
 * `Packtools <https://github.com/scieloorg/packtools/>`_: Biblioteca 
   :term:`Python` que agrega funcionalidades e utilitários para a manipulação 
-  de :term:`pacotes SPS` e XMLs :term:`SPS`.
+  de :term:`pacotes SciELO PS` e XMLs :term:`SciELO PS`.
 
 .. _journal-meta-csv:
 
@@ -115,7 +115,7 @@ Lista de elementos
 ------------------
 
 A seguir os elementos do XML que apresentam regras de estilo na 
-especificação :term:`SPS`. Note que esta não é a lista completa dos elementos 
+especificação :term:`SciELO PS`. Note que esta não é a lista completa dos elementos 
 XML que compõem o :term:`tag set` JATS Publishing versão 1.0 ou PMC versão 3.0, e 
 não elimina a necessidade de consultar suas respectivas documentações.
 
