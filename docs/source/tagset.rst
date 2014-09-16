@@ -3168,6 +3168,8 @@ Exemplo:
     ...
 
  
+.. note :: Não inserir a tag <label> para <sec>.
+
 .. _elemento-disp-formula:
      
 <disp-formula>
