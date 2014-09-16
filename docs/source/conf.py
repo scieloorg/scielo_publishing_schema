@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'SciELO Publishing Schema'
-copyright = u'2014, SciELO'
+copyright = u''
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -113,7 +113,7 @@ html_theme = 'default'
 #html_title = None
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = None
+html_short_title = u'SciELO PS'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
