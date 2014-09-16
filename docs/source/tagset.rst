@@ -5005,8 +5005,8 @@ O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
 ou como texto.
  
 
-Referências:
-============
+Referências
+===========
 
 * ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR14724: informação e documentação: trabalhos acadêmicos: apresentação. Rio de Janeiro: NBR, 2011.
  

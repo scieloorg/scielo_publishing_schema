@@ -1,7 +1,7 @@
 SciELO Publishing Schema - Guia de uso dos elementos e atributos
 ================================================================
  
-Versão preliminar, Agosto 2014, sujeita a modificações
+Versão |version| - setembro de 2014.
 
 
 Introdução
@@ -124,7 +124,7 @@ não elimina a necessidade de consultar suas respectivas documentações.
    :maxdepth: 3
 
    tagset
-
+   glossary
 
 Indices and tables
 ==================
