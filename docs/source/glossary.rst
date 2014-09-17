@@ -28,6 +28,7 @@ Glossário
      Conjunto de regras que especializam aspectos da especificação 
      :term:`JATS Publishing`. 
    
+
    XML
      *eXtensible Markup Language* - linguagem de marcação, baseada em *SGML*, 
      que define um conjunto de regras para codificar documentos de texto de 
@@ -35,10 +36,15 @@ Glossário
    
  
    open-source
+     Programa de código aberto com código fonte disponível e licenciado com 
+     "uma licença de código aberto no qual o direito autoral fornece o direito 
+     de estudar, modificar e distribuir o programa de forma gratuita para 
+     qualquer um e para qualquer finalidade". (SOFTWARE de Código Aberto, 2014)
    
-   
+
    Python
-     Linguagem de programação.
+     Linguagem de programação utilizada para escrever softwares, scripts de 
+     controle de sistemas operacional, entre outros.
    
    
    Pacotes SciELO PS
@@ -61,4 +67,21 @@ Glossário
 
         Leia mais na `documentação oficial da especificação JATS
         <http://jats.nlm.nih.gov/faq.html#faq5>`_.
+
+   ahead-of-print
+     O sistema “Ahead of Print” de publicação de artigos, disponibiliza online 
+     os trabalhos aprovados pela equipe editorial de um periódico antes mesmo 
+     da publicação impressa estar acessível aos leitores. Apesar de disponível 
+     em rede, o artigo segue o fluxo editorial de publicação impressa ou online 
+     até que esteja pronto para ser inserido em um fascículo. O processo poderá 
+     antecipar em até alguns meses a publicação na revista impressa.
+
+   DOI
+     *Digital Object Identifier* - identificador único de conteúdos digitais.
+
+
+   UTF-8 
+     *8-bit Unicode Transformation Format* – "é um tipo de codificação Unicode 
+     de comprimento variável (...) Pode representar qualquer carácter universal 
+     padrão Unicode, sendo também compatível com o ASCII." (UTF-8, 2014)
 

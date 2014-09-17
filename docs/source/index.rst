@@ -87,7 +87,7 @@ convenções de estilo e formatação.
   do XML.
 
 
-Para cara elemento descrito, há uma lista de definições no formato::
+Para cada elemento descrito, há uma lista de definições no formato::
 
   Aparece em
     <journal-meta>

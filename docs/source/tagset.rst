@@ -3,9 +3,9 @@
 encoding
 ========
 Atributo que especifica a codificação de caracteres usada na elaboração do documento. 
-Para o SciELO, todos os XMLs devem ser codificados em *utf-8*.
+Para o SciELO, todos os XMLs devem ser codificados em :term:`UTF-8`.
  
-Para maiores detalhes leia a especificação do padrão XML 
+Para maiores detalhes leia a especificação do padrão :term:`XML` 
 (`2.8 Prolog and Document Type Declaration <http://www.w3.org/TR/2000/REC-xml-20001006#sec-prolog-dtd>`_).
  
 .. code-block:: xml
@@ -54,7 +54,9 @@ Aparece em
   :ref:`elemento-contrib`,
   :ref:`elemento-p`,
   ``th``,
-  ``td``
+  ``td``,
+  :ref:`elemento-disp-quote`,
+  ``table-fn``
  
 Atributos obrigatórios
   1. rid
@@ -499,7 +501,8 @@ Em ``<front>`` devem ser identificados os metadados do periódico, título,
 autoria, afiliação, resumo, palavras-chave, DOI, volume, número, suplemento, 
 paginação, indicação da licença Creative Commons, data de publicação, 
 seção de cabeçalho, histórico de datas, dados de correspondência, 
-notas de autor, informações de resenhas de livros.
+notas de autor, informações de resenhas de livros, contagem de elementos e 
+dados de financiamento (se houver).
  
 
 .. _elemento-journal-meta:
@@ -752,7 +755,7 @@ Contém os metadados do artigo. Seus elementos básicos são :term:`DOI`, seçã
 (de acordo com o sumário do periódico), título(s) do artigo, autor (es) e 
 suas respectivas afiliações e notas, data de publicação, volume, número e 
 paginação do artigo, resumo(s), palavras-chave, histórico, indicação da licença
-de uso Creative Commons e contagem de elementos.
+de uso Creative Commons e contagem de elementos e dados de financiamento (se houver).
 
  
 .. _elemento-article-id:
@@ -1330,7 +1333,9 @@ Ocorre
   Zero ou mais vezes
 
 
-Considera-se como afiliação o vínculo institucional dos contribuintes do artigo. 
+Considera-se como afiliação o vínculo institucional dos contribuintes do artigo 
+naquele momento. 
+
 Os dados de afiliação são importantes para localizar e mensurar a produção 
 científica por país, estado, cidade, bem como por instituição e seus 
 departamentos. Recomenda-se que os nomes das instituições das afiliações 
@@ -1340,6 +1345,11 @@ seus nomes. Ou seja, por exemplo, identificar preferencialmente
 Saint Paul University, entre outras possíveis formas. 
 Por isso, quando ocorre no documento de existir mais de uma forma, usar a original.
  
+Não configura vínculo institucional quando o dado é apresentado da seguinte 
+forma: Doutor, Mestre ou Especialista em XXX pela Universidade YYY. Seria 
+identificado como afiliação caso o dado esteja como Mestrando(a), Doutorando(a), 
+Pós-Graduando(a) etc, configurando o vínculo com instituição naquele momento 
+específico.
  
 Exemplo:
  
