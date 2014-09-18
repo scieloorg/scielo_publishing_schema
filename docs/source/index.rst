@@ -3,6 +3,10 @@ SciELO Publishing Schema - Guia de uso dos elementos e atributos
  
 Versão |version| - setembro de 2014.
 
+Versões anteriores:
+
+* `Versão 1.0 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.0-branch/>`_.
+
 
 Introdução
 ----------
@@ -29,6 +33,16 @@ por favor utilizar apenas a lista de discussão
 
 Notas da versão
 ---------------
+
+Novas versões serão disponibilizadas em um calendário fixo, a cada seis meses. 
+Versões de correção serão disponibilizadas sob demanda, e serão identificadas 
+no terceiro dígito identificador da versão. e.g.: versão *1.1.1*.
+
+Duas versões são suportadas simultaneamente, a mais recente e a imediatamente
+anterior. Essa medida garante um ciclo de vida de 1 ano para cada versão. Por
+**suportar** entenda manter a documentação, ferramentas de apoio, ingresso no 
+processo de submissão e comunidade de usuários.
+
 
 .. toctree::
    :maxdepth: 1
@@ -87,7 +101,7 @@ convenções de estilo e formatação.
   do XML.
 
 
-Para cara elemento descrito, há uma lista de definições no formato::
+Para cada elemento descrito, há uma lista de definições no formato::
 
   Aparece em
     <journal-meta>

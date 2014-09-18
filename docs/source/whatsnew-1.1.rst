@@ -1,7 +1,7 @@
-O que há de novo na SPS 1.1
+O que há de novo na SciELO PS 1.1
 ===========================
 
-Este artigo explica as alterações da especificação :term:`SPS` versão 1.1 em 
+Este artigo explica as alterações da especificação :term:`SciELO PS` versão 1.1 em 
 relação à sua predecessora, a versão 1.0. 
 
 
@@ -31,4 +31,6 @@ versão anterior.
 * O elemento ``<collab>`` passa a ser permitido como descendente de 
   ``article/back/ref-list/ref/element-citation`` apenas quando filho de 
   ``<person-group>``.
+* O atributo ``@specific-use="sps-1.1"`` tornou-se obrigatório para o elemento
+  ``article``.
 
