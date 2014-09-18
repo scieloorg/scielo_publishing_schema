@@ -1098,8 +1098,6 @@ Exemplo:
 
 .. code-block:: xml
 
-    <!-- CORRIGIR: Dados reais -->
-
     ...
     <contrib-group>
         ...
@@ -4162,7 +4160,7 @@ Exemplos:
                         <given-names>M</given-names>
                     </name>
                 </person-group>
-                <article-title xml:lang="en">Federalism and territorial equality: a contradiction in terms?</article-title>
+                <article-title>Federalism and territorial equality: a contradiction in terms?</article-title>
                 <source>Dados</source>
                 <publisher-loc>Rio de Janeiro</publisher-loc>
                 <volume>5</volume>
@@ -4204,7 +4202,7 @@ Exemplos:
                         <given-names>RG</given-names>
                     </name>
                 </person-group>
-                <source xml:lang="en">Inflammatory bowel disease</source>
+                <source>Inflammatory bowel disease</source>
                 <edition>4th ed</edition>
                 <publisher-loc>Baltimore</publisher-loc>
                 <publisher-name>Williams &amp; Wilkins</publisher-name>
@@ -4258,9 +4256,9 @@ Exemplos:
             <person-group person-group-type="author">
                 <collab>COB -Comitê Olímpico Brasileiro</collab>
             </person-group>
-            <source xml:lang="en">Desafio para o corpo</source>
+            <source>Desafio para o corpo</source>
             <year>2010</year>
-            <comment content-type="cited">Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.cob.org.br/esportes/esporte.asp?id=39">http://www.cob.org.br/esportes/esporte.asp?id=39</ext-link></comment>
+            <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.cob.org.br/esportes/esporte.asp?id=39">http://www.cob.org.br/esportes/esporte.asp?id=39</ext-link></comment>
             <date-in-citation content-type="access-date">10 abr 2010</date-in-citation>
         </element-citation> 
     </ref>
@@ -4282,11 +4280,11 @@ Exemplos:
                 <person-group person-group-type="author">
                     <collab>World Health Organization</collab>
                 </person-group>
-                <article-title xml:lang="en">Control of the leishmaniases</article-title>
+                <article-title>Control of the leishmaniases</article-title>
                 <publisher-loc>Geneva</publisher-loc>
                 <publisher-name>WHO</publisher-name>
                 <year>2010</year>
-                <source xml:lang="en">(Technical Report Series; 949)</source>
+                <comment>(Technical Report Series; 949)</comment>
             </element-citation>
         </ref>
     </ref-list> 
@@ -4305,7 +4303,7 @@ Exemplos:
                 <person-group person-group-type="author">
                     <collab>World Health Organization (WHO)</collab>
                 </person-group>
-                <source xml:lang="en">Ultrasound in schistosomiasis. A pratical guide to the standardized use of ultrasonography for the assessment of schistosomiasis-related morbidity</source>
+                <source>Ultrasound in schistosomiasis. A pratical guide to the standardized use of ultrasonography for the assessment of schistosomiasis-related morbidity</source>
                 <comment>Second International Workshop</comment>
                 <day>22</day>
                 <month>October</month>
@@ -4332,7 +4330,7 @@ Exemplos:
                         <given-names>RM</given-names>
                     </name>
                 </person-group>
-                <source xml:lang="pt">Análise dos resultados imediatos da operação para revascularização do miocárdio sem pinçamento total da aorta</source>
+                <source>Análise dos resultados imediatos da operação para revascularização do miocárdio sem pinçamento total da aorta</source>
                 <comment>Dissertação de mestrado</comment>
                 <publisher-loc>Curitiba</publisher-loc>
                 <publisher-name>Universidade Federal do Paraná</publisher-name>
