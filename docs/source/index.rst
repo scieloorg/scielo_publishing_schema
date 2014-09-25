@@ -1,5 +1,5 @@
-SciELO Publishing Schema - Guia de uso dos elementos e atributos
-================================================================
+SciELO Publishing Schema - Guia de uso dos elementos e atributos para documentos em XML
+=======================================================================================
  
 Versão |version| - setembro de 2014.
 
@@ -17,7 +17,7 @@ a submissão de documentos no formato XML.
 A especificação :term:`SciELO Publishing Schema` — também chamada :term:`SciELO PS` — é composta 
 pela especificação `NISO JATS Journal Publishing DTD <http://jats.nlm.nih.gov/publishing/>`_ 
 na versão 1.0 mais o :term:`Estilo SciELO`, que são regras que especializam aspectos da 
-especificação JATS Publishing. Os usuários deste guia devem possuir conhecimentos 
+especificação :term:`JATS Publishing`. Os usuários deste guia devem possuir conhecimentos 
 prévios sobre :term:`XML` e familiaridade com :term:`DTD`.
 
 Por motivos de compatibilidade com a última versão das recomendações disponibilizadas 
@@ -25,9 +25,9 @@ pelo SciELO, a especificação `NLM Journal Publishing DTD <http://dtd.nlm.nih.g
 na versão 3.0 ainda será suportada nesta versão do guia de uso, assim como pelas 
 ferramentas disponibilizadas.
 
-No caso de dúvidas sobre a especificação :term:`SciELO PS`, sobre este guia de uso ou 
-sobre as ferramentas disponibilizadas pelo SciELO para apoiar a marcação em XML, 
-por favor utilizar apenas a lista de discussão 
+As dúvidas e comentários sobre a especificação :term:`SciELO PS`, sobre este guia 
+de uso ou sobre as ferramentas disponibilizadas pelo SciELO para apoiar a marcação 
+em :term:`XML` são tratadas na lista de discussão 
 `scielo-xml <http://groups.google.com/group/scielo-xml/>`_.
 
 
@@ -75,7 +75,7 @@ Metadados dos periódicos
 Adicionalmente, diversos metadados dos periódicos necessários para a identificação de 
 elementos em ``<journal-meta>`` estão disponíveis em uma listagem no formato :term:`csv`, 
 que pode ser baixada `aqui <http://static.scielo.org/sps/titles-tab-utf-8.csv>`_. 
-Esta listagem é atualizada semanalmente, as terças-feiras.
+Esta listagem é atualizada semanalmente, às terças-feiras.
 
 
 Convenções utilizadas neste guia
@@ -84,7 +84,7 @@ Convenções utilizadas neste guia
 A fim de facilitar a compreensão deste guia, foram utilizadas algumas
 convenções de estilo e formatação.
 
-.. note:: Estas caixas apresentam informações importantes e diretamente relacionadas ao contexto
+.. note:: Estas caixas apresentam informação importante e diretamente relacionada ao contexto
           em que estão inseridas.
 
 
