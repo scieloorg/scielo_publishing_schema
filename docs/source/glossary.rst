@@ -85,3 +85,37 @@ Glossário
      de comprimento variável (...) Pode representar qualquer carácter universal 
      padrão Unicode, sendo também compatível com o ASCII." (UTF-8, 2014)
 
+
+   JATS Publishing
+     **definição pendente**
+
+   ISBN
+     **definição pendente**
+
+   seções de primeiro nível
+     **definição pendente**
+
+   w3c
+     **definição pendente**
+
+   mathml
+     **definição pendente**
+
+   NISO JATS table model
+     **definição pendente**
+
+   ABNT
+     **definição pendente**
+
+   vancouver
+     **definição pendente**
+
+   apa
+     **definição pendente**
+
+   ISO
+     **definição pendente**
+
+   ISO 639-1
+     **definição pendente**
+

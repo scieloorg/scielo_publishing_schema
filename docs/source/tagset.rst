@@ -19,7 +19,7 @@ Para maiores detalhes leia a especificação do padrão :term:`XML`
 ==========
  
 A tag de declaração ``<!DOCTYPE>`` serve para indicar a :term:`DTD` 
-a qual o XML é associado, ou seja, as regras estruturais do documento. 
+à qual o XML é associado, ou seja, as regras estruturais do documento. 
 O SciELO Publishing Schema utiliza como base o padrão *JATS 1.0*. 
  
 Exemplo versão JATS 1.0:
@@ -464,9 +464,9 @@ de artigos, os valores que podem ser utilizados são:
           Não confundir com a seção em que o documento aparece no sumário.
  
 
-Para ``@xml:lang``, utilizar código de duas letras conforme norma *ISO 639-1*. 
+Para ``@xml:lang``, utilizar código de duas letras conforme norma :term:`ISO 639-1`. 
 Para uma lista completa dos códigos disponíveis e mais informações sobre a 
-norma *ISO 639-1*, acesse http://www.mathguide.de/info/tools/languagecode.html.
+norma :term:`ISO 639-1`, acesse http://www.mathguide.de/info/tools/languagecode.html.
  
 
 Exemplo da tag completa versão JATS 1.0:
@@ -3133,8 +3133,8 @@ Exemplo:
     ...
 
  
-As seções podem ser compostas por uma ou mais :term:`subseções`, neste caso, 
-cada :term:`subseção` deverá ser marcada com tag ``<sec>`` dentro da seção maior.
+As seções podem ser compostas por uma ou mais subseções, neste caso, 
+cada subseção deverá ser marcada com tag ``<sec>`` dentro da seção maior.
  
 Exemplo:
  
@@ -4025,7 +4025,7 @@ Ocorre
 
 Existem diversos tipos de referências e normas para apresentá-las num documento 
 textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e 
-:term:`OTHER`). Independente da norma usada, a representação dos elementos
+OTHER). Independente da norma usada, a representação dos elementos
 essenciais em XML de uma referência devem ser identificados corretamente.
  
 
