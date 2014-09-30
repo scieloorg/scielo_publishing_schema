@@ -671,7 +671,7 @@ Ocorre
 
 
 O ISSN é um código numérico, único, que identifica uma publicação seriada 
-a qual é definida pela norma *ISO 3297:2007*. Normalmente cada tipo de 
+a qual é definida pela norma :term:`ISO 3297:2007`. Normalmente cada tipo de 
 suporte utilizado pelo periódico possui um número específico. 
 
 É possível também encontrar esta informação em :ref:`elemento-back` dentro de 

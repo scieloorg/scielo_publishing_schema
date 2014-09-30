@@ -85,10 +85,15 @@ Glossário
      padrão Unicode, sendo também compatível com o ASCII." (UTF-8, 2014).
 
    JATS Publishing
-     **definição pendente**
+     Modelo de artigos, baseado na :term:`JATS`, otimizado para o arquivamento 
+     regularizado e controle do conteúdo.
 
    JATS
-     **definição pendente**
+     *Journal Article Tag Suite* - é a aplicação da norma NISO Z39.96-2012 que 
+     define elementos e atributos para a descrição de metadados e conteúdo 
+     completo de artigos de periódicos. A JATS inclui três modelos de artigos, 
+     ou *Tag Sets*: *Journal Archiving and Interchange*, *Journal Publishing* e 
+     *Article Authoring*.
 
    ISBN
      Criado em 1967 e oficializado como norma internacional em 1972, o 
@@ -110,7 +115,7 @@ Glossário
      *Mathematical Markup Language* - (Linguagem de Marcação Matemática) (MathML) 
      é uma aplicação do :term:`XML` para representar símbolos e fórmulas matemáticas, 
      apontada na integração dela em documentos World Wide Web. 
-     Ela é uma recomendação do grupo de trabalho matemático do :term:`W3C`" (MATHML, 2014).
+     Ela é uma recomendação do grupo de trabalho matemático do :term:`W3C`" [1]_.
 
    NISO JATS table model
      **definição pendente**
@@ -129,7 +134,7 @@ Glossário
      às suas revistas. O grupo ficou conhecido como Grupo de Vancouver. 
      Os requisitos para manuscritos, incluindo  formatos para referências bibliográficas, 
      desenvolvido pela National Library of Medicine, foram publicados pela primeira 
-     vez em 1979. O grupo de expandiu e evoluiu para o International Committte of 
+     vez em 1979. O grupo se expandiu e evoluiu para o International Committte of 
      Medical Journals Editors (ICMJE). O ICMJE gradualmente ampliou sua atuação 
      incluindo também princípios sobre ética médica nas publicações em revistas 
      da área biomédica.
@@ -142,7 +147,7 @@ Glossário
       científicos. A APA publica um manual de estilo que oferece orientação 
       sobre todos os aspectos do processo de escrita, ética de autoria, escolha 
       dos melhores termos para a linguagem dos artigos e orientação sobre 
-      escolha de títulos, figuras, tabelas que facilitam a comunicação 
+      escolha de títulos, figuras e tabelas que facilitam a comunicação 
       científica.
 
    ISO
@@ -150,7 +155,7 @@ Glossário
      e normatização criada em Genebra, Suiça, em 1947. "Tem como objetivo principal 
      aprovar normas internacionais em todos os campos técnicos, como normas técnicas, 
      classificação de países, normas de procedimentos e processos etc.  
-     No Brasil, a ISO é representada pela :term:`ABNT`." (O que é ISO, 2014).
+     No Brasil, a ISO é representada pela :term:`ABNT`." [2]_.
 
    ISO 639-1
      "é uma norma técnica da ISO especificando códigos para o nome de idiomas. 
@@ -161,13 +166,41 @@ Glossário
      os "briocos do mundo, para quais terminologias especializadas tenham sido desenvolvidas". 
      Em geral, mas não necessariamente, constitui uma abreviação do nome da 
      língua em inglês; todos os códigos representam línguas individuais, 
-     nunca coletivos." (ISO, 2014).
+     nunca coletivos." [3]_.
+
+   SGML
+     *Standard Generalized Markup Language* - é uma metalinguagem através da 
+     qual se pode definir linguagens de marcação para documentos, a SGML 
+     providencia uma variedade de sintaxes de marcação que podem ser usadas 
+     por várias aplicações. :term:`HTML` e :term:`XML` são ambas derivadas do SGML.
+
+   HTML
+     *HyperText Markup Language* - (Linguagem de Marcação de Hipertexto) consiste 
+     de uma aplicação específica do :term:`SGML` utilizada para produção de 
+     páginas na web, que permite a criação de documentos que podem ser lidos 
+     em praticamente qualquer tipo de computador e transmitidos pela internet.
+
+   ISSN
+     *International Standard Serial Number* - é um código numérico que constitui 
+     um identificador unívoco para cada título de publicação em série. cujos 
+     componentes não têm um significado especial em si próprios. O sistema ISSN 
+     é definido pela norma :term:`ISO 3297:2007` - Information and Documentation. 
+
+   ISO 3297:2007 
+     Define e promove o uso de um código padrão (ISSN) para a identificação 
+     única de periódicos e outros recursos contínuos. Esta norma também 
+     descreve um mecanismo, de "vinculação ISSN (ISSN-L)", que prevê a 
+     correlação entre as diferentes versões de mídia do mesmo recurso contínuo.
 
 
 Referências bibliográficas
 --------------------------
 
-* MATHML. In: Wikipédia: a enciclopédia livre. Disponível em: < http://http://pt.wikipedia.org/wiki/MathML> Acesso em: 29 de setembro de 2014.
-* O QUE É ISO. Disponível em <http://www.significados.com.br/iso/>. Acesso em: 29 de setembro de 2014.
-* ISO 639. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/ISO_639>. Acesso em: 29 de setembro de 2014.
+.. [1] MATHML. In: Wikipédia: a enciclopédia livre. Disponível em: < http://http://pt.wikipedia.org/wiki/MathML>. Acesso em: 29 de setembro de 2014.
+.. [2] O QUE É ISO. Disponível em <http://www.significados.com.br/iso/>. Acesso em: 29 de setembro de 2014.
+.. [3] ISO 639. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/ISO_639>. Acesso em: 29 de setembro de 2014.
+.. [4] Norma Vancouver. Disponível em: <http://www.icmje.org>. Acceso em: 29 de setembro de 2014.
+.. [5] Norma APA. Disponível em: <http://www.apa.org/>. Acesso em: 29 de setembro de 2014.
+.. [6] JATS. Disponível em: <http://jats.nlm.nih.gov/>. Acesso em: 30 de setembro de 2014.
+.. [7] Journal Publishing Tag Set. Disponível em: <http://jats.nlm.nih.gov/publishing/>. Acesso em: 30 de setembro de 2014.
 
