@@ -203,4 +203,9 @@ Referências bibliográficas
 .. [5] Norma APA. Disponível em: <http://www.apa.org/>. Acesso em: 29 de setembro de 2014.
 .. [6] JATS. Disponível em: <http://jats.nlm.nih.gov/>. Acesso em: 30 de setembro de 2014.
 .. [7] Journal Publishing Tag Set. Disponível em: <http://jats.nlm.nih.gov/publishing/>. Acesso em: 30 de setembro de 2014.
+.. [8] ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6024: informação e documentação: numeração progressiva das seções de um documento esrito: apresentação. Rio de Janeiro: NBR, 2003.
+.. [9] LICENÇAS Cretive Commons. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/Licen%C3%A7as_Creative_Commons>. Acesso em: 17 de setembro de 2014.
+.. [10] SciELO. Orientação para publicar artigos em Ahead of Print (AOP) no SciELO. Disponível em: <http://www.scielo.org/php/level.php?lang=pt&component=56&item=60>. Acesso e: 17 de setembro de 2014.
+.. [11] SOFTWARE de Código Aberto. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/Software_de_c%C3%B3digo_aberto>. Acesso em: 17 de setembro de 2014.
+.. [12] UTF-8. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/UTF-8>. Acesso em: 17 de setembro de 2014.
 
