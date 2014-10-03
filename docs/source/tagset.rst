@@ -3398,7 +3398,6 @@ Toda a formatação para exibição deve ser realizada conforme descrito no guia
 Aparece em
   :ref:`elemento-article-meta`,
   :ref:`elemento-p`,
-  ``<inline-supplementary-material>``,
   ``<app>``
 
 Atributos obrigatórios
@@ -3427,62 +3426,68 @@ Seus atributos obrigatórios são:
 * ``@id``: Utilizado como um identificador único no documento e ganha maior importância quando há mais que um material suplementar e/ou quando o material suplementar é referenciado no corpo do texto. Nesse caso é necessário relacionar a chamada no texto com o "id" do material suplementar.
 * ``@mimetype``: Utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
 * ``@mime-subtype``: Utilizado para especificar o formato da mídia.
- 
-Exemplo:
- 
-.. code-block:: xml
- 
-    ...
-    <supplementary-material id="suppl01" 
-                            xlink:href="0000-0000-abcd-01-12-0001-suppl01.mp3" 
-                            mimetype="audio"
-                            mime-subtype="mpeg">
- 
-- **@xlink:href:** utilizado para indicar do nome completo do arquivo, tais como: pdf, vídeo, zip etc.
- 
-
-**Exemplo de material suplementar em <front>:**
- 
-.. note:: Esta tag em ``<front>`` obrigatoriamente deve ser inserida abaixo das 
-          informações de paginação ou antes de ``<history>``.
+**@xlink:href:** utilizado para indicar do nome completo do arquivo, tais como: pdf, vídeo, zip etc.
  
 
 .. code-block:: xml
- 
-     <fpage>237</fpage>
-     <lpage>259</lpage>
-     <supplementary-material mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-suppl01.pdf"/>
- 
-**Exemplo de material suplementar em <body>:**
- 
-.. code-block:: xml
- 
-    <p>Descriptive analysis and the Pearson chi-squared test were used to verify the association between categorical variables. The normality of the distribution of continuous variables was verified by drawing a histogram and plots (<xref ref-type="supplementary-material" rid="suppl01">Supplementary material A</xref>).</p>
-    <p>
-        <supplementary-material id="suppl01">
-            <label>Fig 1.</label>
-            <caption><title>Supplementary material A</title></caption>
-            <graphic xlink:href="1234-5678-rctb-45-05-0110-suppl01.tif"/>
-        </supplementary-material>
-    </p>
-    <p>Os níveis de PCR, lactato, S<sub>2</sub> e DB não foram associados com readmissão. Esses dados estão disponíveis na tabela 1S do material eletrônico suplementar. <supplementary-material xlink:href="1234-5678-rctb-45-05-0110-suppl01.pdf"/></p>
-  
- 
-**Exemplo de material suplementar em <back>:**
- 
-.. code-block:: xml
- 
-    <app-group>
+
+ ...
+
+<article-meta>
+
+ ...
+
+<fpage>237</fpage>
+<lpage>259</lpage>
+<supplementary-material mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-suppl01.pdf"/>
+...
+</front>
+<body>
+
+ ...
+
+<p>
+ <supplementary-material id="suppl02" mimetype="image" mime-subtype="tiff" xlink:href="11234-5678-rctb-45-05-0110-suppl01.tif">
+        <label>Fig 1.</label>
+        <caption>
+    <title>Supplementary material A</title>
+  </caption>
+</supplementary-material>
+</p>
+
+ ...
+
+
+<p> 
+<supplementary-material id="suppl03" mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-suppl01.pdf"/>
+</p>
+
+ ...
+
+<back>
+<app-group>
         <app>
-            <supplementary-material id="suppl01">
-                <label>Fig 1.</label>
-                <caption><title>Material Suplementar</title></caption>
-                <graphic xlink:href="1234-5678-rctb-45-05-0110-suppl01.tif"/>
-            </supplementary-material>
+      <label>S-1</label>
+            <supplementary-material id="suppl04" mimetype="image" mime-subtype="tiff" xlink:href="11234-5678-rctb-45-05-0110-suppl01.tif">
+          <label>Fig 1.</label>
+            <caption>
+          <title>Supplementary material A</title>
+                        </caption>
+      </supplementary-material>
         </app>
+
+  <app>
+      <label>S-2</label>
+            <supplementary-material id="suppl05" mimetype="image" mime-subtype="tiff" xlink:href="11234-5678-rctb-45-05-0110-suppl02.tif"/>
+        </app>
+
     <app-group>
-    <p>Devido a esse elevado percentual de dados omissos, possivelmente não influenciaram no resultado final do <inline-supplementary-material xlink:href="0103-507X-rbti-26-02-0130-s01.pdf" mimetype="application" mime-subtype="pdf">Material Suplementar</inline-supplementary-material></p>
- 
+ ...
+
+
+ .. note:: Esta tag em ``<front>`` obrigatoriamente deve ser inserida abaixo das 
+          informações de paginação ou antes de ``<history>``.
+
  
 .. _elemento-disp-quote:
 
@@ -4152,7 +4157,7 @@ Exemplos:
     <ref-list>
         <ref id="B01">
             <label>1</label>
-            <mixed-citation>ARRETCHE, M. Federalism and territorial equality: a contradiction in terms? Dados, Rio de Janeiro, v. 5, n. 02, 2010 . Disponível em: &lt;http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso&gt;.</mixed-citation>
+            <mixed-citation>ARRETCHE, M. Federalism and territorial equality: a contradiction in terms? Dados, Rio de Janeiro, v. 5, n. 02, 2010 . Disponível em: &lt;http://socialsciences.scielo.org.</mixed-citation>
             <element-citation publication-type="journal">
                 <person-group person-group-type="author">
                     <name>
@@ -4166,7 +4171,7 @@ Exemplos:
                 <volume>5</volume>
                 <issue>02</issue>
                 <year>2010</year>
-                <ext-link ext-link-type="uri" xlink:href="http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso">http://socialsciences.scielo.org/scielo.php?script=sci_arttext&amp;pid=S0011-52582010000100002&amp;lng=pt&amp;nrm=iso</ext-link>
+                <ext-link ext-link-type="uri" xlink:href="http://socialsciences.scielo.org">http://socialsciences.scielo.org</ext-link>
             </element-citation>
         </ref>
     <ref-list> 
@@ -4182,6 +4187,7 @@ Exemplos:
             <label>2</label>
             <mixed-citation>7. Calkins BM, Mendeloff AI. The epidemiology of idiopathic inflammatory bowel disease. In: Kirsner JB, Shorter RG, eds. Inflammatory bowel disease, 4th ed. Baltimore: Williams &amp; Wilkins. 1995:31-68.</mixed-citation>
             <element-citation publication-type="book">
+              <person-group person-group-type="author">
                 <name>
                     <surname>Calkins</surname>
                     <given-names>BM</given-names>
@@ -4190,6 +4196,7 @@ Exemplos:
                     <surname>Mendeloff</surname>
                     <given-names>AI</given-names>
                 </name>
+              </person-group>
                 <chapter-title>The epidemiology of idiopathic inflammatory bowel
                 disease.</chapter-title>
                 <person-group person-group-type="editor">
@@ -4222,24 +4229,24 @@ Exemplos:
     <ref-list>
         <ref id="B03">
             <label>3</label>
-            <mixed-citation>Referência conforme aparece no artigo</mixed-citation>
-            <element-citation publication-type="book">
-                <person-group person-group-type="author">
-                    <name>
-                        <surname>Sobrenome</surname>
-                        <given-names>Prenomes</given-names>
-                    </name>
-                    <etal/>
-                </person-group>
-                <source>Nome do livro</source>
-                <edition>edição (inserir informação ed. ou th. e etc conforme no pdf)</edition>
-                <publisher-loc>Lugar de publicação do livro (cidade, estado, país e etc)</publisher-loc>
-                <publisher-name>Nome da editora/Casa publicadora</publisher-name>
-                <year>ano de publicação da obra</year>
-                <chapter-title>Parte do livro ou capítulo</chapter-title>
-                <fpage>página inicial da parte</fpage>
-                <lpage>página final da parte</lpage>
-            </element-citation>
+            <mixed-citation>LÉVY, Pierre. As tecnologias da inteligência: o 
+            futuro do pensamento na era da informática. Edição especial. Rio de 
+            Janeiro: Editora 34. 2001. 208 p.</mixed-citation>
+        <element-citation publication-type="book">
+            <person-group person-group-type="author">
+                <name>
+                    <surname>LÉVY</surname>
+                    <given-names>Pierre</given-names>
+                </name>               
+            </person-group>
+            <source>As tecnologias da inteligência: o futuro do pensamento na 
+            era da informática</source>
+            <edition>edição especial</edition>
+            <publisher-loc>Rio de Janeiro</publisher-loc>
+            <publisher-name>Editora 34</publisher-name>
+            <year>2001</year>            
+            <size units="pages">208</size>            
+        </element-citation>
         </ref>
     </ref-list>
     ...
