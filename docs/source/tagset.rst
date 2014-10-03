@@ -3477,7 +3477,7 @@ Seus atributos obrigatórios são:
                 <label>S-2</label>
                 <supplementary-material id="suppl05" mimetype="image" mime-subtype="tiff" xlink:href="11234-5678-rctb-45-05-0110-suppl02.tif"/>
             </app>
-        <app-group>
+        </app-group>
         ...
     </back>
     ...
