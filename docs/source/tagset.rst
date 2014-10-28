@@ -375,7 +375,7 @@ obrigatoriamente os atributos ``@dtd-version``, ``@article-type``, ``@xml:lang``
 ``@xmlns:xlink="http://www.w3.org/1999/xlink"`` e ``@specific-use``.
 
 O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e 
-deve ser utilizado apenas quando equações MathML forem identificadas no 
+deve ser utilizado quando equações :term:`MathML` forem identificadas no 
 documento.
 
 Para ``@dtd-version`` utilizar os valores 1.0 ou 3.0 conforme a :term:`DTD`, 
