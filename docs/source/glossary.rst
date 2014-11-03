@@ -196,16 +196,16 @@ Glossário
 Referências bibliográficas
 --------------------------
 
-.. [1] MATHML. In: Wikipédia: a enciclopédia livre. Disponível em: < http://http://pt.wikipedia.org/wiki/MathML>. Acesso em: 29 de setembro de 2014.
-.. [2] O QUE É ISO. Disponível em <http://www.significados.com.br/iso/>. Acesso em: 29 de setembro de 2014.
-.. [3] ISO 639. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/ISO_639>. Acesso em: 29 de setembro de 2014.
-.. [4] Norma Vancouver. Disponível em: <http://www.icmje.org>. Acceso em: 29 de setembro de 2014.
-.. [5] Norma APA. Disponível em: <http://www.apa.org/>. Acesso em: 29 de setembro de 2014.
-.. [6] JATS. Disponível em: <http://jats.nlm.nih.gov/>. Acesso em: 30 de setembro de 2014.
-.. [7] Journal Publishing Tag Set. Disponível em: <http://jats.nlm.nih.gov/publishing/>. Acesso em: 30 de setembro de 2014.
-.. [8] ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6024: informação e documentação: numeração progressiva das seções de um documento esrito: apresentação. Rio de Janeiro: NBR, 2003.
-.. [9] LICENÇAS Cretive Commons. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/Licen%C3%A7as_Creative_Commons>. Acesso em: 17 de setembro de 2014.
-.. [10] SciELO. Orientação para publicar artigos em Ahead of Print (AOP) no SciELO. Disponível em: <http://www.scielo.org/php/level.php?lang=pt&component=56&item=60>. Acesso e: 17 de setembro de 2014.
-.. [11] SOFTWARE de Código Aberto. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/Software_de_c%C3%B3digo_aberto>. Acesso em: 17 de setembro de 2014.
-.. [12] UTF-8. In: Wikipédia: a enciclopédia livre. Disponível em: <http://pt.wikipedia.org/wiki/UTF-8>. Acesso em: 17 de setembro de 2014.
+.. [1] MathML. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/MathML>. Acesso em: 29 set. 2014.
+.. [2] O QUE é ISO. In: Significados.com.br.  [S.l.: s.n.], [20--]. Disponível em: <http://www.significados.com.br/iso/>. Acesso em: 29 set. 2014.
+.. [3] ISO 639. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/ISO_639>. Acesso em: 29 set. 2014.
+.. [4] INTERNATIONAL COMMITTEE OF MEDICAL JOURNAL EDITORS. Norma Vancouver. [S.l.], [20--?]. Disponível em: <http://www.icmje.org/>. Acesso em: 29 set. 2014.
+.. [5] AMERICAN PSYCHOLOGICAL ASSOCIATION. Norma APA. Washington, [20--?]. Disponível  em: <http://www.apa.org/>. Acesso em: 29 set. 2014.
+.. [6] US NATIONAL LIBRARY OF MEDICINE. Journal Article Tag Suite. Bethesdam, [20--]. Disponível em: <http://jats.nlm.nih.gov/>. Acesso em: 30 set. 2014.
+.. [7] US NATIONAL LIBRARY OF MEDICINE. Journal Publishing Tag Set. Bethesdam, [20--]. Disponível em: <http://jats.nlm.nih.gov/publishing/>. Acesso em: 30 set. 2014.
+.. [8] ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6024: informação e documentação: numeração progressiva das seções de um documento esrito: apresentação. Rio de Janeiro, 2003.
+.. [9] LICENÇAS Cretive Commons. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/Licen%C3%A7as_Creative_Commons>. Acesso em: 17 set. 2014.
+.. [10] SCIENTIFIC ELECTRONIC LIBRARY ONLINE. Orientação para publicar artigos em Ahead of Print (AOP) no SciELO. São Paulo, 2014. Disponível em: <http://www.scielo.org/php/level.php?lang=pt&component=56&item=60>. Acesso em: 17 set. 2014.
+.. [11] SOFTWARE de Código Aberto. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/Software_de_c%C3%B3digo_aberto>. Acesso em: 17 set. 2014.
+.. [12] UTF-8. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/UTF-8>. Acesso em: 17 set. 2014.
 
