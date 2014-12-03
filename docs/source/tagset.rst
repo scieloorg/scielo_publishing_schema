@@ -1385,18 +1385,20 @@ Nesta tag especifica-se a instituição do autor, a qual pode ser dividida
 em até três níveis. Estes níveis serão definidos pelo atributo obrigatório 
 ``@content-type``, podendo possuir os seguintes valores:
 
-+---------+--------------------------------------------------------------------+ 
-| Valor   | Descrição                                                          |
-+=========+====================================================================+
-| orgname | Representando a instituição de nível hierárquico maior mencionado  |
-|         | na afiliação                                                       |
-+---------+--------------------------------------------------------------------+ 
-| orgdiv1 | Representando a primeira divisão da instituição mencionada em      |
-|         | orgname                                                            |
-+---------+--------------------------------------------------------------------+ 
-| orgdiv2 | Representando a segunda divisão da instituição mencionada em       |
-|         | orgname                                                            |
-+---------+--------------------------------------------------------------------+ 
++------------+--------------------------------------------------------------------+ 
+| Valor      | Descrição                                                          |
++============+====================================================================+
+| orgname    | Representando a instituição de nível hierárquico maior mencionado  |
+|            | na afiliação.                                                      |
++------------+--------------------------------------------------------------------+ 
+| orgdiv1    | Representando a primeira divisão da instituição mencionada em      |
+|            | orgname.                                                           |
++------------+--------------------------------------------------------------------+ 
+| orgdiv2    | Representando a segunda divisão da instituição mencionada em       |
+|            | orgname.                                                           |
++------------+--------------------------------------------------------------------+ 
+| normalized | Nome da instituição na forma normalizada pela SciELO.              |     
++------------+--------------------------------------------------------------------+ 
  
 
 .. note:: No caso de mais divisões mencionadas em afiliações no PDF, 
@@ -1688,7 +1690,7 @@ Notas em :ref:`elemento-back` devem ser identificadas dentro do grupo
 Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
 atributo ``@id``.
  
-Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, *, e etc)
+Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, ``*``, e etc)
 marque com a tag :ref:`elemento-label`. A tag :ref:`elemento-label` não
 pode estar dentro de :ref:`elemento-p`.
 
@@ -3849,6 +3851,7 @@ A tag ``<media>`` é utilizada para especificar arquivos multimídia como:
 Atributos
  
 - ``@id``
+
 Para composição do ``@id`` de ``<media>`` utiliza-se o seguinte padrão:
 ``m`` + o número de ordem da media:
 
@@ -4009,7 +4012,7 @@ Ocorre
   Zero ou mais vezes
 
 A seção de agradecimentos quando aparecer no documento deve ser marcada dentro
-de :ref:`back`.
+de :ref:`elemento-back`.
  
 É em agradecimentos que frequentemente os dados de financiamento da pesquisa são 
 indicados, como descrito em :ref:`elemento-funding-group`
@@ -4147,32 +4150,38 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
 +-----------+------------------------------------------------------------------+
 | Valor     | Descrição                                                        |
 +===========+==================================================================+
-| book      | utilizada para referenciar livros. Pode Também representar       |
+| book      | Utilizada para referenciar livros. Pode Também representar       |
 |           | somente uma parte ou capítulo de um livro.                       |
 +-----------+------------------------------------------------------------------+
-| confproc  | utilizada para referenciar documentos relacionados à eventos     |
+| confproc  | Utilizada para referenciar documentos relacionados à eventos     |
 |           | científicos: atas, anais, resultados, proceedings, convenção,    |
 |           | conferência entre outros.                                        |
 +-----------+------------------------------------------------------------------+
-| database  | utilizada para referenciar bases de dados.                       |
+| database  | Utilizada para referenciar bases de dados.                       |
 +-----------+------------------------------------------------------------------+
-| journal   | utilizada para referenciar publicações seriadas, editadas em     |
+| journal   | Utilizada para referenciar publicações seriadas, editadas em     |
 |           | unidades sucessivas, com designações numéricas e/ou cronológicas |
 |           | e destinada a ser continuada indefinidamente.                    |
 +-----------+------------------------------------------------------------------+
-| patent    | utilizada para referenciar patentes.                             |
+| patent    | Utilizada para referenciar patentes.                             |
 +-----------+------------------------------------------------------------------+
-| report    | utilizada para referencias de um relatório técnico, normalmente  |
+| report    | Utilizada para referencias de um relatório técnico, normalmente  |
 |           | de autoria institucional.                                        |
 +-----------+------------------------------------------------------------------+
-| software  | utilizada para referenciar um software em suportes como CDs,     |
+| software  | Utilizada para referenciar um software em suportes como CDs,     |
 |           | DVD's, suporte online, dispositivos usb e etc.                   |
 +-----------+------------------------------------------------------------------+
-| thesis    | utilizada para referenciar monografias, dissertações ou teses    |
+| thesis    | Utilizada para referenciar monografias, dissertações ou teses    |
 |           | para obtenção de um grau acadêmico, tais como livre-docência,    |
 |           | doutorado, mestrado, bacharelado, licenciatura, etc.             |
 +-----------+------------------------------------------------------------------+
-| webpage   | utilizada para identificar informações de web sites e blogs      |
+| webpage   | Utilizada para identificar informações de web sites e blogs      |
++-----------+------------------------------------------------------------------+
+| legal-doc | Utilizada para referenciar normas jurídicas.                     |
++-----------+------------------------------------------------------------------+
+| newspaper | Utilizada para referenciar artigos de jornal.                    |
++-----------+------------------------------------------------------------------+ 
+| other     | Utilizada para referenciar tipos não previstos pelo SciELO PS.   |
 +-----------+------------------------------------------------------------------+
 
 
@@ -5004,7 +5013,7 @@ Exemplo em back:
 
 
 .. note:: Glossário em <back> deve ser inserido em back\app-group\app\glossary.
-Para esse caso, é obrigatório inserir um ID para <app>.
+          Para esse caso, é obrigatório inserir um ID para <app>.
 
 Exemplo sub-glossário:
  
