@@ -1,5 +1,5 @@
 O que há de novo na SciELO PS 1.1
-===========================
+=================================
 
 Este artigo explica as alterações da especificação :term:`SciELO PS` versão 1.1 em 
 relação à sua predecessora, a versão 1.0. 
@@ -33,4 +33,5 @@ versão anterior.
   ``<person-group>``.
 * O atributo ``@specific-use="sps-1.1"`` tornou-se obrigatório para o elemento
   ``article``.
-
+* Adicionados os tipos de referência *legal-doc*, *newspaper* e *other*.
+* O atributo ``//institution/@content-type="normalized"`` passa a ser permitido.
