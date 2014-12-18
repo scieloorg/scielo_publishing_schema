@@ -4403,7 +4403,7 @@ Exemplos:
                 <source>Ultrasound in schistosomiasis. A pratical guide to the standardized use of ultrasonography for the assessment of schistosomiasis-related morbidity</source>
                 <comment>Second International Workshop</comment>
                 <day>22</day>
-                <month>October</month>
+                <month>10</month>
                 <publisher-loc>Niamey, Niger</publisher-loc>
                 <year>1996</year>
             </element-citation>
