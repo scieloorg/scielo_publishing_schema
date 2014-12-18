@@ -3684,7 +3684,7 @@ Aparece em
   :ref:`elemento-fig`, 
   :ref:`elemento-table-wrap`,
   :ref:`elemento-media`,
-  :ref:`elemento-supplementary-material`,
+  :ref:`elemento-supplementary-material`
 
 Ocorre
   Zero ou mais vezes
@@ -4235,7 +4235,7 @@ Exemplos:
     <ref-list>
         <ref id="B02">
             <label>2</label>
-            <mixed-citation>7. Calkins BM, Mendeloff AI. The epidemiology of idiopathic inflammatory bowel disease. In: Kirsner JB, Shorter RG, eds. Inflammatory bowel disease, 4th ed. Baltimore: Williams &amp; Wilkins. 1995:31-68.</mixed-citation>
+            <mixed-citation>Calkins BM, Mendeloff AI. The epidemiology of idiopathic inflammatory bowel disease. In: Kirsner JB, Shorter RG, eds. Inflammatory bowel disease, 4th ed. Baltimore: Williams &amp; Wilkins. 1995:31-68.</mixed-citation>
             <element-citation publication-type="book">
               <person-group person-group-type="author">
                 <name>
@@ -4308,8 +4308,8 @@ Exemplos:
     ...
     <ref id="B04">
         <label>4</label>
-        <mixed-citation>1. COB - Comitê Olímpico Brasileiro. Desafio para o corpo. Disponível em: http://www.cob.org.br/esportes/esporte.asp?id=39. (Acesso em 10 abr 2010)</mixed-citation>
-        <element-citation publication-type="web">
+        <mixed-citation>COB - Comitê Olímpico Brasileiro. Desafio para o corpo. Disponível em: http://www.cob.org.br/esportes/esporte.asp?id=39. (Acesso em 10 abr 2010)</mixed-citation>
+        <element-citation publication-type="webpage">
             <person-group person-group-type="author">
                 <collab>COB -Comitê Olímpico Brasileiro</collab>
             </person-group>
@@ -4332,8 +4332,8 @@ Exemplos:
     <ref-list>
         <ref id="B05">
             <label>5</label>
-            <mixed-citation>16. World Health Organization. Control of the leishmaniases. Geneva: WHO; 2010.(Technical Report Series; 949)</mixed-citation>
-            <element-citation publication-type="reports">
+            <mixed-citation>World Health Organization. Control of the leishmaniases. Geneva: WHO; 2010.(Technical Report Series; 949)</mixed-citation>
+            <element-citation publication-type="report">
                 <person-group person-group-type="author">
                     <collab>World Health Organization</collab>
                 </person-group>
@@ -4347,6 +4347,46 @@ Exemplos:
     </ref-list> 
     ...
  
+.. code-block:: xml
+
+    <!-- Report Sample -->
+
+    ...
+    <ref-list>
+        <ref id="B1">
+            <mixed-citation>Water HP, Boshuizen HC, Perenboom RJ. Health expectancy of the Dutch population. Bilthoven (Netherlands): National Institute of Public Health and Environmental Protection (NL); 1995. 21 p. Report No.: 431501009</mixed-citation>
+            <element-citation publication-type="report">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>Water</surname>
+                        <given-names>HP</given-names>
+                    </name>
+                    <name>
+                        <surname>Boshuizen</surname>
+                        <given-names>HC</given-names>
+                    </name>
+                    <name>
+                        <surname>Perenboom</surname>
+                        <given-names>RJ</given-names>
+                    </name>
+                </person-group>
+                <source>Health expectancy of the Dutch population</source>
+                <publisher-loc>Bilthoven (Netherlands)</publisher-loc>
+                <publisher-name>National Institute of Public Health and Environmental Protection (NL)</publisher-name>
+                <year>1995</year>
+                <size units="pages">21</size>
+                <pub-id pub-id-type="other">Report No.: 431501009</pub-id>
+            </element-citation>
+        </ref>
+    </ref-list>
+    ...
+
+.. note:: Para referências que apresentam informações de coleção ou série 
+          exemplo, "Technical Report Series; 949" deve ser identificado com a 
+          tag ``<comment>``. Não confundir com referência bibliográfica do 
+          tipo "report" que apresenta número de relatório (Report No.: 431501009), 
+          para esses casos, identificar com a tag ``<pub-id pub-id-type="other">``.
+
 .. code-block:: xml
  
     <!-- Confproc (proceedings) Sample -->
@@ -4464,7 +4504,7 @@ Exemplos:
         </ref>
     </ref-list>
     ...
- 
+
 .. note:: Deve-se levar em consideração que muitas vezes as referências são
           contruídas de forma incorreta, o que dificulta a marcação de seus
           elementos.
