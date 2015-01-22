@@ -1504,6 +1504,9 @@ terá o atributo ``@content-type``, podendo possuir os seguintes valores:
 
 Aparece em
   :ref:`elemento-aff`
+
+Atributos obrigatórios
+  1. country
  
 Ocorre
   Uma vez
@@ -1511,24 +1514,14 @@ Ocorre
 
 Identifica o país da afiliação.
  
-A tag pode possuir o atributo ``@country`` e nele deve ser atribuído o código 
-do país de acordo com a Norma *ISO 3166*, com dois caracteres alfabéticos.
+A tag deve possuir o atributo ``@country`` e nele deve ser atribuído o código 
+do país de acordo com a Norma *ISO 3166*, de dois caracteres alfabéticos.
 
 Para consultar o código do país consulte o link: 
 https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
 
 
 Exemplo:
-
-.. code-block:: xml
- 
-    ...
-    <aff id="aff01">
-        ...
-        <country>Brasil</country>
-        ...
-    </aff>
-    ...
 
 
 .. code-block:: xml
@@ -1540,9 +1533,6 @@ Exemplo:
         ...
     </aff>
     ...
-
-
-.. note:: Para a próxima versão do SciELO PS este atributo passará a ser obrigatório.
 
 
 .. _elemento-author-notes:
