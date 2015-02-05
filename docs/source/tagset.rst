@@ -29,12 +29,6 @@ Exemplo versão JATS 1.0:
     <!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "JATS-journalpublishing1.dtd">
  
 
-Exemplo versão PMC 3.0 (suporte por tempo indeterminado):
- 
-.. code-block:: xml
- 
-    <!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "journalpublishing3.dtd">
-
  
 Tags Flutuantes
 ===============
@@ -267,10 +261,10 @@ Esta tag identifica parágrafos. Deve ser inserida no documento sem nenhum
 tipo de atributo.
 
 
-.. _regra-atribuicao-id:
+.. _sugestao-atribuicao-id:
 
-Regra de atribuição de @id
-==========================
+Sugestão de atribuição de @id
+=============================
  
 Para a composição do ``@id``, combine o prefixo do tipo do elemento e um número 
 inteiro, como segue:
@@ -306,6 +300,8 @@ inteiro, como segue:
 +------------------------+---------------------------+---------+---------------------+
 | sec                    | Seções                    | sec     | sec1, sec2, ...     |
 +------------------------+---------------------------+---------+---------------------+
+| sub-article            | sub-artigo                | S       | S1, S2, ...         |
++------------------------+---------------------------+---------+---------------------+
 
 
 .. _regra-nomeacao-imagem:
@@ -330,7 +326,7 @@ Sendo:
 * Número: Número ou suplemento do fascículo (tratar como "n" e "s")
 * Paginação: Manter a informação da primeira página
 * Nome da imagem: Prefixo com uma numeração sequencial 
-  (ver :ref:`regra-atribuicao-id`)
+  (ver :ref:`sugestao-atribuicao-id`)
 
  Exemplo:
  
@@ -476,12 +472,6 @@ Exemplo da tag completa versão JATS 1.0:
      <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.1" article-type="research-article" xml:lang="en">
  
 
-Exemplo da tag completa versão PMC 3.0:
- 
-.. code-block:: xml
-
-    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="3.0" specific-use="sps-1.1" article-type="research-article" xml:lang="en">
- 
 
 O atributo ``@specific-use`` identifica a versão do schema SciELO PS.
 
@@ -1322,7 +1312,7 @@ Aparece em
   :ref:`elemento-article-meta`
 
 Atributos obrigatórios
-  1. id (ver :ref:`regra-atribuicao-id`)
+  1. id (ver :ref:`sugestao-atribuicao-id`)
  
 Ocorre
   Zero ou mais vezes
@@ -1631,6 +1621,10 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 |                           | tipo de nota em :ref:`elemento-fn-group` em      |
 |                           | ``<back>``                                       |
 +---------------------------+--------------------------------------------------+
+| presented-at              | Trabalho apresentado em Conferência, Colóquio etc|
++---------------------------+--------------------------------------------------+
+| presented-by              | Informação de trabalho apresentado pelo autor    |
++---------------------------+--------------------------------------------------+
  
 
 .. code-block:: xml
@@ -1677,7 +1671,7 @@ referência aos autores, as quais deverão ser identificadas em
 Notas em :ref:`elemento-back` devem ser identificadas dentro do grupo 
 :ref:`elemento-fn-group`.
  
-Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
 atributo ``@id``.
  
 Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, ``*``, e etc)
@@ -1758,7 +1752,7 @@ Esta tag representa as informações de correspondência de um dos autores
 do artigo. Pode ou não possuir um :ref:`elemento-label` e também o atributo 
 ``@id``. É possível marcar o ``<email>`` caso inserido.
  
-Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
 atributo ``@id``.
  
 Exemplo:
@@ -2844,7 +2838,7 @@ Aparece em
   :ref:`elemento-award-group`
  
 Ocorre
-  Uma vez
+  Uma ou mais vezes
 
 
 Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
@@ -2877,7 +2871,7 @@ Aparece em
   :ref:`elemento-award-group`
  
 Ocorre
-  Uma vez
+  Uma ou mais vezes
 
 
 Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
@@ -3181,7 +3175,7 @@ Aparece em
   :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
-  1. id (ver :ref:`regra-atribuicao-id`)
+  1. id (ver :ref:`sugestao-atribuicao-id`)
  
 Ocorre
   Zero ou mais vezes
@@ -3248,7 +3242,7 @@ Ocorre
 Também representa uma tag para identificar equações que estejam 
 posicionadas em linha, ou seja, em meio a um parágrafo.
  
-Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
 atributo ``@id``.
  
 Exemplo:
@@ -3300,7 +3294,7 @@ Aparece em
 
 
 Atributos obrigatórios
-  1. id (ver :ref:`regra-atribuicao-id`)
+  1. id (ver :ref:`sugestao-atribuicao-id`)
  
 Ocorre
   Zero ou mais vezes
@@ -3326,7 +3320,7 @@ Em ``<table-wrap-foot>`` é possível fazer a identificação de nota de rodapé
 tabela por meio de tags ``<fn>``, que devem apresentar obrigatoriamente o 
 atributo ``@id``.
  
-Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
 atributo ``@id``.
  
 A nota de rodapé poderá ser relacionada com alguma informação no corpo da tabela.
@@ -3390,7 +3384,7 @@ Aparece em
   ``<app>``
 
 Atributos obrigatórios
-  1. id (ver :ref:`regra-atribuicao-id`)
+  1. id (ver :ref:`sugestao-atribuicao-id`)
   2. xlink:href
   3. mimetype
   4. mime-subtype
@@ -3711,7 +3705,7 @@ Aparece em
   :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
-  1. id (ver :ref:`regra-atribuicao-id`)
+  1. id (ver :ref:`sugestao-atribuicao-id`)
  
 Ocorre
   Zero ou mais vezes
@@ -3941,7 +3935,7 @@ Tag que identifica um bloco de assinatura(s), normalmente utilizada em
 documentos do tipo editorial. A tag de ``<sig-block>`` deve obrigatoriamente 
 conter a tag ``<sig>``. É possível formatar o texto do bloco de assinatura 
 com negrito ``<bold>`` ou itálico ``<italic>``. Para as quebras de linhas 
-deve-se usar a tag ``<break/>``, ou ``<p>`` como mostram os exemplos a seguir:
+deve-se usar a tag ``<break/>`` como mostram os exemplos a seguir:
 
 Exemplo 1:
  
@@ -3967,9 +3961,9 @@ Exemplo 1:
  
     <sig-block>
         <sig>
-            <p><bold>Harry Weasley</bold></p>
-            <p><italic>Editor Chefe<italic></p>
-            <p>Profeta Diário</p>
+            <bold>Harry Weasley</bold>
+            <italic>Editor Chefe<italic>
+            Profeta Diário
         </sig>
     </sig-block>
  
@@ -4056,7 +4050,7 @@ Aparece em
   :ref:`elemento-ref-list`
 
 Atributos obrigatórios
-  1. id (ver :ref:`regra-atribuicao-id`)
+  1. id (ver :ref:`sugestao-atribuicao-id`)
 
 Ocorre
   Uma ou mais vezes
@@ -4788,8 +4782,9 @@ Aparece em
   :ref:`elemento-back`
 
 Atributos obrigatório 
-  1. id (Ver :ref:`regra-atribuicao-id`)
- 
+  1. id (Ver :ref:`sugestao-atribuicao-id`)
+  <!-- aqui como faremos para dividir o <app-group> do <app>?--!>
+
 Ocorre
   Zero ou uma vez
 
@@ -4810,7 +4805,7 @@ Exemplo de Apêndice com texto:
  
     ...
     <app-group>
-          <app>
+          <app id="app01">
               <label>Apêndice</label>
               <p>Vivamus fermentum elit et pellentesque iaculis. Curabitur egestas rhoncus purus quis iaculis. Sed laoreet id leo eu tristique. Etiam hendrerit nibh in tincidunt mattis. Sed et volutpat nulla, eget semper tellus. Nullam imperdiet fringilla diam, nec mollis elit sagittis a. Nam euismod sagittis posuere.</p>
           </app>
@@ -4838,7 +4833,7 @@ Exemplo de Apêndice com link externo (ext-link do tipo uri):
  
     ...
     <app-group>
-        <app>                
+        <app id="app01">                
             <label>Appendix 1</label>
             <p>Para mais informações <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">clique aqui</ext-link> para verificar o pdf.</p>
         </app>
@@ -4952,7 +4947,7 @@ Exemplo de Apêndice com vídeo:
  
     ...
     <app-group>
-          <app>
+          <app id="app01">
               <label>suplemento eletrônico</label>
               <supplementary-material id="suppl01">
               <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
@@ -4981,7 +4976,7 @@ de ``<term>``, ``<def-list>`` e ``<def>``. O
 glossário pode estar identificado em: ``<app>``, :ref:`elemento-back`,
 e :ref:`elemento-sec`.
  
-Consulte a :ref:`regra-atribuicao-id` para instruções sobre a composição do 
+Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
 atributo ``@id``.
  
 
@@ -5098,7 +5093,271 @@ relacionado a um "rid".
  
 O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
 ou como texto.
+
+
+.. _elemento-sub-article:
  
+<sub-article>
+-------------
+
+Aparece em
+  :ref:`elemento-article`,
+  ``<sub-article>``
+
+
+Atributos obrigatórios
+  1. article-type
+  2. id (Ver :ref:`sugestao-atribuicao-id`)
+  3. xml:lang
+
+Ocorre
+  Zero ou mais vezes
+
+
+Tag utilizada para identificar artigos que estão dentro de outro artigo. 
+Geralmente os sub-artigos herdam os metadados do artigo pai e, para isso, é 
+necessário inserir uma tag ``<front-stub>``
+
+Para verificar os possíveis valores de ``@article-type`` em ``<sub-article>`` veja o quadro abaixo:
+
++--------------------+----------------------------------------------------------+
+| Valor              | Descrição                                                |
++====================+==========================================================+
+|                    | resumo - uma apresentação precisa e resumida de uma      |
+| abstract           | obra sem agregar interpretação ou crítica, acompanhado   |
+|                    | de uma referência bibliográfica da obra original.        |
++--------------------+----------------------------------------------------------+
+|                    | cartas - comunicação entre pessoas ou instituições       |
+| letter             | através de cartas. Geralmente comentando um trabalho     |
+|                    | publicado                                                |
++--------------------+----------------------------------------------------------+
+|                    | resposta a carta ou ao comentário, geralmente é usado    |
+| reply              | pelo autor original fazendo outros comentários a respeito|
+|                    | dos comentários anteriores                               |
++--------------------+----------------------------------------------------------+
+|                    | tradução. Utilizado para artigos que apresentam tradução |
+| translation        | de um artigo produzido em idioma diferente.              |
+|                    |                                                          |
++--------------------+----------------------------------------------------------+
+
+Para ``@xml:lang``, utilizar código de duas letras conforme norma :term:`ISO 639-1`. 
+Para uma lista completa dos códigos disponíveis e mais informações sobre a 
+norma :term:`ISO 639-1`, acesse http://www.mathguide.de/info/tools/languagecode.html.
+ 
+
+Exemplo da tag completa:
+ 
+.. code-block:: xml
+ 
+    ...
+    <sub-article article-type="translation" xml:lang="en" id="S1">
+        ...
+    </sub-article
+    ...
+
+
+.. note:: Geralmente a tag ``<sub-article>`` é utilizada para identificar 
+          arquivos traduzidos ou conjunto de cartas, resumos, teses etc.
+ 
+
+.. _elemento-front-stub:
+
+<front-stub>
+------------
+
+Aparece em
+  :ref:`elemento-sub-article`, 
+  ``<response>``.
+
+
+Tags obrigatórias
+  ``<subject>``
+  ``<article-title>``
+
+
+Ocorre
+
+Uma vez
+
+
+Tag utilizada em ``<sub-article>`` a qual herda os metadados do xml principal, 
+portanto não inserir as tags ``<journal-meta>`` e ``<article-meta>``. 
+Nessa tag deve ser inserido apenas as informações que são diferentes das que 
+constam no artigo principal, ou seja, não é necessário inserir informações como 
+``<volume>``, ``<issue>``, ``<fpage>`` ``<lpage>`` e ``<elocation-id>``, 
+``<pub-date>``, ``<permissions>``, ``<funding-group>``, ``<history>``.
+
+
+Exemplo da tag completa:
+
+.. code-block:: xml
+ 
+    ...
+    <sub-article article-type="translation" xml:lang="en" id="S1">
+        <front-stub>
+            <subj-group subj-group-type="heading">
+                <subject>Letter to the Editor</subject>
+            </subj-group>
+        </front-stub>
+        ...
+    </sub-article>
+    ...
+
+
+.. note:: Para arquivos traduzidos inserir em ``<front-stub>`` apenas os dados 
+          traduzidos, ou seja, se há afiliação traduzida, identificar autores e 
+          afiliações traduzidas na tag ``front-stub``, caso contrário, não 
+          identificar autores e afiliações.
+
+
+.. _elemento-response:
+
+<response>
+----------
+
+Aparece em
+  :ref:`elemento-article`,
+  :ref:`elemento-sub-article`
+
+
+Atributos obrigatórios
+  1. response-type
+  2. id
+  3. xml:lang
+
+
+Utilizada para apresentar uma resposta ao artigo principal, por exemplo, resposta 
+de uma carta ou apresenta opnião contrária de um artigo publicado.
+Para esse elemento, recomendamos utilizar também a tag :ref:`elemento-front-stub`.
+
+Para ``@response-type``, os valores que podem ser utilizados são:
+
++------------------------+-----------------------------------------+
+| Valor                  | Descrição                               |
++========================+=========================================+
+| addendum               | Adendo - Informação adicional           |
++------------------------+-----------------------------------------+
+| discussion             | Discussão relacionado a um número       |
+|                        | específico                              |
++------------------------+-----------------------------------------+
+| reply                  | resposta a um artigo relacionado        |
++------------------------+-----------------------------------------+
+
+Exemplo da tag completa:
+
+.. code-block:: xml
+ 
+    ...
+    <response response-type="reply" xml:lang="en" id="R1">
+        <front-stub>
+            <subj-group subj-group-type="heading">
+                <subject>Reply</subject>
+            </subj-group>
+        </front-stub>
+    </response>
+    ...
+
+
+
+.. _elemento-verse-group:
+
+<verse-group>
+-------------
+
+Aparece em
+  ``<app>``, 
+  ``<app-group>``, 
+  ``<body>``, 
+  ``<boxed-text>``, 
+  ``<disp-quote>``, 
+  ``<p>``, 
+  ``<ref-list>``, 
+  ``<sec>``, 
+  ``<supplementary-material>``, 
+  ``<verse-group>``
+
+Ocorre
+  Zero ou mais vezes
+
+
+Elemento utilizado para apresentar poemas, versos ou músicas. Nesse elemento 
+também pode ser inserido a tag ``<attrib>`` para identificação do autor.
+
+
+Exemplo verse-group:
+
+.. code-block:: xml
+ 
+    ...
+    <verse-group>
+        <verse-line>E, num fiel regresso</verse-line>
+        <verse-line>Ao que já era bruma,</verse-line>
+        <verse-line>Sonolento me apresso</verse-line>
+        <verse-line>Para coisa nenhuma.</verse-line>
+        <attrib>Fernando Pessoa</attrib>
+    </verse-group>
+    ...
+
+
+.. _elemento-boxed-text:
+
+<boxed-text>
+------------
+
+Aparece em:
+  ``<app>``, 
+  ``<app-group>``, 
+  ``<body>``, 
+  ``<boxed-text>``, 
+  ``<glossary>``, 
+  ``<p>``, 
+  ``<ref-list>``, 
+  ``<sec>``
+
+Ocorre:
+  Zero ou mais vezes
+
+
+Atributos obrigatórios
+  1. id
+
+
+É utilizado para identificação de um texto ou objeto que faz parte do artigo, mas não do corpo do texto.
+É possível apresentar um texto com seções, figura, tabela etc.
+
+
+Exemplo com seções:
+
+.. code-block:: xml
+ 
+    ...
+    <boxed-text id="bx1">
+        <sec>
+            <title>Box 1 Use of antidepressants and suicidality in young individuals</title>
+            <p>In 2004, the FDA made the decision to include a black box warning about the risk of suicidality associated with antidepressant use among individuals under 25 years of age<xref ref-type="bibr" rid="B26">26</xref>.</p>
+            <p>Based on the fact that for the treatment of depressive disorders the number needed to treat (NNT) in this age group is at least 10 and the number needed to harm (number needed to harm, NNH) is 112, it was concluded that the benefits associated with the use of antidepressants outweigh the potential risks.</p>
+            <p>In summary, the use of selective serotonin reuptake inhibitors (SSRIs) in children and adolescents should be cautious, observing the emergence of suicidal thoughts or behavior, and unexpected changes in behavior, such as insomnia, agitation, and social withdrawal.</p>
+        </sec>
+    </boxed-text>
+    ...
+
+
+Exemplo com figura:
+
+.. code-block:: xml
+
+    ... 
+    <boxed-text id="bx1">
+        <fig id="f12">
+            <label>Figure</label>
+            <caption>
+                <title>Diagnostic algorithm for depressive episodes in children and adolescents</title>
+            </caption>
+            <graphic xlink:href="1516-4446-rbp-1516-4446-2012-S0022-gf01"/>
+        </fig>
+    </boxed-text>
+    ...
+
 
 Referências
 ===========
