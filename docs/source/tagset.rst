@@ -63,7 +63,7 @@ Ocorre
 Tag de Referência Cruzada usada para relacionar e/ou fazer link com alguma 
 informação no texto. 
  
-Os atributos obrigatórios para ``@xref`` são:
+Os atributos obrigatórios para ``xref`` são:
  
 * ``@rid``: representa "a referência ao id" e é utilizado para fazer a ligação 
   de elementos que possuem ``@id`` no arquivo. É imprescindível que haja um 
