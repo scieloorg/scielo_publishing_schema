@@ -126,7 +126,7 @@ Exemplos:
                     <named-content content-type="city">Manaus</named-content>
                     <named-content content-type="state">AM</named-content>
                 </addr-line>
-                <country>Brasil</country>
+                <country country="BR">Brasil</country>
                 <institution content-type="original">Universidade do Estado do Amazonas, Manaus, AM, Brasil</institution>
             </aff>
             ...
@@ -360,7 +360,7 @@ Atributos obrigatórios
   2. article-type
   3. xml:lang
   4. xmlns:xlink="http://www.w3.org/1999/xlink"
-  5. specific-use="sps-1.1"
+  5. specific-use="sps-1.2"
  
 Ocorre
   Uma vez
@@ -469,7 +469,7 @@ Exemplo da tag completa versão JATS 1.0:
  
 .. code-block:: xml
  
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.1" article-type="research-article" xml:lang="en">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.2" article-type="research-article" xml:lang="en">
  
 
 
@@ -525,16 +525,17 @@ Atributos obrigatórios
   1. journal-id-type='nlm-ta' ou journal-id-type='publisher-id'
  
 Ocorre
-  Uma vez
+  Uma vez ou mais
 
 
 Especifica o título padronizado do periódico.
  
 Para o uso do título do periódico no Pubmed, 
-utiliza-se ``@journal-id-type="nlm-ta"``:
+utiliza-se os elementos ``<journal-id @journal-id-type="publisher-id">`` e ``<journal-id @journal-id-type="nlm-ta">``:
  
 .. code-block:: xml
- 
+    
+    <journal-id journal-id-type="publisher-id">mioc</journal-id>
     <journal-id journal-id-type="nlm-ta">Mem Inst Oswaldo Cruz</journal-id>
  
 
@@ -542,12 +543,14 @@ utiliza-se ``@journal-id-type="nlm-ta"``:
           consulte o link http://www.ncbi.nlm.nih.gov/pubmed/advanced
 
 
-Para o uso do acrônimo do periódico no SciELO, 
-utiliza-se ``@journal-id-type="publisher-id"``:
+Periódicos que não estão indexados no Medline, utiliza-se apenas ``@journal-id-type="publisher-id"``:
  
 .. code-block:: xml
  
-    <journal-id journal-id-type="publisher-id">mioc</journal-id>
+    <journal-id journal-id-type="publisher-id">hcsm</journal-id>
+
+
+..note:: O uso de ``<journal-id journal-id-type="publisher-id">`` é obrigatório.
 
 
 .. _elemento-journal-title-group:
@@ -917,6 +920,8 @@ Exemplo:
      </title-group>.
 
 
+..note:: Se o título da seção for o título do artigo (exemplo de alguns editoriais, erratas, cartas ao editor). Repetir a informação no front e marcá-la com as tags de título. 
+
 .. _elemento-trans-title-group:
  
 <trans-title-group>
@@ -1048,7 +1053,8 @@ Exemplo:
 .. note:: Observar normas para entrada de nomes (*AACR2* - Código de Catalogação 
           Anglo Americano e/ou Currículo Lattes dos autores, avaliar formas 
           de entrada autorizadas).
- 
+
+.. note:: Para artigos que apresentam assinatura, como editoriais, apresentação etc. repetir autores de <sig-block> em front/contrib caso não exista informação de autor.
 
 .. _elemento-collab:
  
@@ -1350,7 +1356,7 @@ Exemplo:
             <named-content content-type="city">Manguinhos</named-content>
             <named-content content-type="state">RJ</named-content>
         </addr-line>
-        <country>Brasil</country>
+        <country country="BR">Brasil</country>
         <institution content-type="original">Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. <named-content content-type="email">maurosilva@fiocruz.com</named-content></institution>
     </aff>
     ...
@@ -1811,8 +1817,7 @@ Exemplo de marcação de data de publicação nas versões impressa e digital:
     ...
 
  
-Os valores de dia, mês e ano devem ser representados segundo o PDF do 
-artigo/fascículo.
+Os valores de dia, mês e ano devem ser representados segundo a data de publicação do fascículo, geralmente apresentado no sumário do número.
  
 Exemplo de marcação de data de publicação na versão digital:
  
@@ -2657,6 +2662,7 @@ Tag que identifica o resumo do artigo e não deve conter informação de
 atributo ``@xml:lang``. Embora em via de regra esse elemento ocorra 
 zero ou mais vezes, ele se faz obrigatório quando ``<article>`` for declarado
 com o atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
+Em ``<abstract>`` deve ser inserido uma informação de etiqueta :ref:`elemento-title`.
 
 Os resumos apresentados nos artigos publicados na SciELO normalmente 
 apresentam-se em dois formatos:
@@ -2673,6 +2679,7 @@ apresentam-se em dois formatos:
       <article-meta>
           ...
           <abstract>
+            <title>Resumo</title>
               <sec>
                   <title>Objetivo</title>
                   <p>Verificar a sensibilidade e especificidade das curvas de fluxo-volume na detecção de obstrução da via aérea central (OVAC), e se os critérios qualitativos e quantitativos da curva se relacionam com a localização, o tipo e o grau de obstrução.</p>
@@ -2697,12 +2704,13 @@ apresentam-se em dois formatos:
       <article-meta>
           ...
           <abstract>
+            <title>Resumo</title>
               <p>Verificar a sensibilidade e especificidade das curvas de fluxo-volume na detecção de obstrução da via aérea central (OVAC), e se os critérios qualitativos e quantitativos da curva se relacionam com a localização, o tipo e o grau de obstrução. Métodos: Durante quatro meses foram selecionados, consecutivamente, indivíduos com indicação para broncoscopia. Todos efetuaram avaliação clínica, preenchimento de escala de dispneia, curva de fluxo-volume e broncoscopia num intervalo de uma semana. Quatro revisores classificaram a morfologia da curva sem conhecimento dos dados quantitativos, clínicos e broncoscopicos. Um quinto revisor averiguou os critérios morfológicos e quantitativos.</p>
           </abstract>
           ...
       </article-meta>
       ...
-     
+
  
 .. _elemento-trans-abstract:
 
@@ -2722,8 +2730,50 @@ Esta tag deve conter o resumo traduzido do artigo, podendo apresentar os
 formatos simples ou estruturado, da mesma maneira que o elemento :ref:`elemento-abstract`. 
 Deve ser inserida imediatamente após :ref:`elemento-abstract` e obrigatoriamente 
 deve conter o atributo ``@xml:lang``.
+
+Em ``<trans-abstract>`` deve ser inserido uma informação de etiqueta :ref:`elemento-title`.
  
+ Exemplo:
+   
+  .. code-block:: xml
+
+      ...
+      <article-meta>
+          ...
+          <trans-abstract>
+            <title>Abstract</title>
+              <sec>
+          <title>Objective</title>
+          <p>To analyze the association between socioeconomic situation, clinical characteristics referred and the family history of cardiovascular disease, with the Self-perceived health of young adults education and their implications for clinical characteristics observed.</p>
+        </sec>
+        <sec>
+          <title>Method</title>
+          <p>Analytical study conducted with 501 young adults who are students in countryside city in the Brazilian Northeast. We used binary logistic regression.</p>
+        </sec>        
+          </abstract>
+          ...
+      </article-meta>
+      ...
+
+* Simples: Quando apresenta de forma sucinta os principais pontos do 
+  texto sem a divisão por seções. 
  
+  Exemplo:
+ 
+  .. code-block:: xml
+   
+      ...
+      <article-meta>
+          ...
+          <trans-abstract>
+            <title>Abstract</title>
+              <p>In this paper we discuss the tutoring model adopted by the Public Institutions of Higher Education that integrate the Open University of Brazil (Universidade Aberta do Brasil - UAB) program. The starting point is the research and the actions developed by the authors in the past decade that are directly related to distance education in Brazil. The focus is on the classroom tutors who are responsible for assisting students in the presential center where they have support and who are selected through published notes in the virtual notice board of the institutions that offer higher education courses in a distinct mode of classroom teaching.</p>
+          </abstract>
+          ...
+      </article-meta>
+      ...
+
+
 .. _elemento-kwd-group:
 
 <kwd-group>
@@ -2741,13 +2791,15 @@ Ocorre
 
 Identifica o grupo de palavras-chave do artigo por idioma. Obrigatoriamente deve 
 conter o atributo ``@xml:lang``.
- 
+Em ``<kwd-group>`` deve ser inserido uma informação de etiqueta :ref:`elemento-title`. 
+
 .. code-block:: xml
  
     ...
     <article-meta>
         ...
         <kwd-group xml:lang="pt">
+          <title>Palavra-chave</title>
             <kwd>Broncoscopia</kwd>
         </kwd-group>
         ...
@@ -2861,6 +2913,25 @@ Exemplo:
     </article-meta>
     ...
  
+ Existem casos em que há mais que uma instituição financiadora para um único número de contrato.
+
+ Exemplo:
+
+ .. code-block:: xml
+
+    ...
+    <article-meta>
+       ...
+       <funding-group>
+          <award-group>
+             <funding-source>CNPq</funding-source>
+             <funding-source>FAPESP</funding-source>
+             <award-id>#09/06953-4</award-id>
+          </award-group>
+       </funding-group>
+       ...
+    </article-meta>
+    ...
 
 .. _elemento-award-id:
  
@@ -2888,9 +2959,6 @@ Exemplo:
             <award-group>
                 <funding-source>CNPq</funding-source>
                 <award-id>00001</award-id>
-            </award-group>
-            <award-group>
-                <funding-source>CNPq</funding-source>
                 <award-id>00002</award-id>
             </award-group>
             <award-group>
@@ -2902,8 +2970,6 @@ Exemplo:
     </article-meta>
     ...
      
-.. note:: Nunca insira mais de um número de contrato em um único 
-          :ref:`elemento-award-group`, mesmo quando for de uma mesma instituição. 
  
  
 .. _elemento-funding-statement:
@@ -3159,6 +3225,24 @@ Exemplo:
     ...
 
  
+ Para Seções que apresentam número, identificar o dado dentro da tag <title>.
+ Exemplo:
+
+ .. code-block:: xml
+
+    ...
+    <body>
+       ...
+       <sec sec-type="intro">
+          <title>1. Introdução</title>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non sollicitudin nulla.</p>
+          ...
+       </sec>
+       ...
+    </body>
+    ...
+
+
 .. note :: Não inserir a tag <label> para <sec>.
 
 .. _elemento-disp-formula:
@@ -3807,6 +3891,9 @@ Exemplo:
     </fig>
 
  
+ .. note:: Para figuras que apresentam informação de fonte, capturar o dado junto da imagem.
+
+
 .. _elemento-media:
 
 <media>
@@ -4040,6 +4127,18 @@ Ocorre
   :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
   :ref:`elemento-element-citation`.
 
+Em ``<ref-list>`` deve ser inserido uma informação de etiqueta :ref:`elemento-title`.
+
+Exemplo:
+ 
+.. code-block:: xml
+
+    ...
+    <ref-list>
+       <title>Referência Bibliográfica</title>
+       <ref>
+    ...
+
 
 .. _elemento-ref:
 
@@ -4068,6 +4167,7 @@ Exemplo:
  
     ...
     <ref-list>
+      <title></title>
         <ref id="B1">
             <label>1</label>
             <mixed-citation>. Aires M, Paz AA, Perosa CT. Situação de saúde e grau de dependência de pessoas idosas institucionalizadas. <italic>Rev Gaucha Enferm.</italic> 2009;30(3):192-9.</mixed-citation>
@@ -4086,7 +4186,7 @@ Exemplo:
                         <given-names>CT</given-names>
                     </name>
                 </person-group>
-                <article-title xml:lang="pt">Situação de saúde e grau de dependência de pessoas idosas institucionalizadas</article-title>
+                <article-title>Situação de saúde e grau de dependência de pessoas idosas institucionalizadas</article-title>
                 <source>Rev Gaucha Enferm</source>
                 <year>2009</year>
                 <volume>30</volume>
@@ -4489,10 +4589,32 @@ Exemplos:
     </ref-list>
     ...
 
+
+.. code-block:: xml
+ 
+    <!-- incomplete -->
+
+    ...
+    <ref-list>
+        <ref id="B11">
+            <label>11</label>
+            <mixed-citation>BANCO CENTRAL DO BRASIL. Disponível em: www.bcb.gov.br</mixed-citation>
+            <element-citation publication-type="webpage" specific-use="incomplete">
+                <person-group person-group-type="author">
+                    <collab>BANCO CENTRAL DO BRASIL</collab>
+                </person-group>
+                <comment>Disponível em: 
+                <ext-link ext-link-type="uri" xlink:href="http://www.bcb.gov.br"www.bcb.gov.br</ext-link></comment>
+            </element-citation>
+        </ref>
+    </ref-list>
+    ...
+
+
 .. note:: Deve-se levar em consideração que muitas vezes as referências são
           contruídas de forma incorreta, o que dificulta a marcação de seus
           elementos.
-
+          No caso de referências que não apresentam informações como data de publicação ou título, a referência deve ser considerada como "incomplete".
 
 .. _elemento-element-chapter-title:
 
@@ -4733,6 +4855,7 @@ Exemplo de patente americana:
         <patent country="US">US 6,980,855</patent>
     </element-citation>
     ...
+
 
 
 .. _elemento-fn-group:
@@ -5094,6 +5217,8 @@ relacionado a um "rid".
 O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
 ou como texto.
 
+..note:: Não inserir pontuação nos elementos ``<term>`` ou ``<def>``.
+
 
 .. _elemento-sub-article:
  
@@ -5131,9 +5256,9 @@ Para verificar os possíveis valores de ``@article-type`` em ``<sub-article>`` v
 | letter             | através de cartas. Geralmente comentando um trabalho     |
 |                    | publicado                                                |
 +--------------------+----------------------------------------------------------+
-|                    | resposta a carta ou ao comentário, geralmente é usado    |
-| reply              | pelo autor original fazendo outros comentários a respeito|
-|                    | dos comentários anteriores                               |
+|                    | resposta- resposta a uma carta ou a um comentário, que   |
+| reply              | não está diretamente relacionado ao artigo principal.    |
+|                    |                                                          |
 +--------------------+----------------------------------------------------------+
 |                    | tradução. Utilizado para artigos que apresentam tradução |
 | translation        | de um artigo produzido em idioma diferente.              |
@@ -5152,7 +5277,7 @@ Exemplo da tag completa:
     ...
     <sub-article article-type="translation" xml:lang="en" id="S1">
         ...
-    </sub-article
+    </sub-article>
     ...
 
 
@@ -5205,9 +5330,8 @@ Exemplo da tag completa:
 
 
 .. note:: Para arquivos traduzidos inserir em ``<front-stub>`` apenas os dados 
-          traduzidos, ou seja, se há afiliação traduzida, identificar autores e 
-          afiliações traduzidas na tag ``front-stub``, caso contrário, não 
-          identificar autores e afiliações.
+          traduzidos, ou seja, se há afiliação traduzida identificar autores e 
+          afiliações, caso contrário, não identificar nenhum dado de autor e afiliação.
 
 
 .. _elemento-response:
@@ -5226,8 +5350,12 @@ Atributos obrigatórios
   3. xml:lang
 
 
-Utilizada para apresentar uma resposta ao artigo principal, por exemplo, resposta 
-de uma carta ou apresenta opnião contrária de um artigo publicado.
+Ocorre
+
+Zero ou mais vezes
+
+
+Utilizada para apresentar uma resposta ao artigo principal que está diretamente relacionado ao artigo principal, por exemplo, resposta de uma carta ou apresenta opinião contrária de um artigo publicado.
 Para esse elemento, recomendamos utilizar também a tag :ref:`elemento-front-stub`.
 
 Para ``@response-type``, os valores que podem ser utilizados são:
@@ -5240,7 +5368,7 @@ Para ``@response-type``, os valores que podem ser utilizados são:
 | discussion             | Discussão relacionado a um número       |
 |                        | específico                              |
 +------------------------+-----------------------------------------+
-| reply                  | resposta a um artigo relacionado        |
+| reply                  | resposta a um artigo                    |
 +------------------------+-----------------------------------------+
 
 Exemplo da tag completa:
@@ -5249,12 +5377,6 @@ Exemplo da tag completa:
  
     ...
     <response response-type="reply" xml:lang="en" id="R1">
-        <front-stub>
-            <subj-group subj-group-type="heading">
-                <subject>Reply</subject>
-            </subj-group>
-        </front-stub>
-    </response>
     ...
 
 
@@ -5336,7 +5458,6 @@ Exemplo com seções:
             <title>Box 1 Use of antidepressants and suicidality in young individuals</title>
             <p>In 2004, the FDA made the decision to include a black box warning about the risk of suicidality associated with antidepressant use among individuals under 25 years of age<xref ref-type="bibr" rid="B26">26</xref>.</p>
             <p>Based on the fact that for the treatment of depressive disorders the number needed to treat (NNT) in this age group is at least 10 and the number needed to harm (number needed to harm, NNH) is 112, it was concluded that the benefits associated with the use of antidepressants outweigh the potential risks.</p>
-            <p>In summary, the use of selective serotonin reuptake inhibitors (SSRIs) in children and adolescents should be cautious, observing the emergence of suicidal thoughts or behavior, and unexpected changes in behavior, such as insomnia, agitation, and social withdrawal.</p>
         </sec>
     </boxed-text>
     ...
@@ -5357,6 +5478,161 @@ Exemplo com figura:
         </fig>
     </boxed-text>
     ...
+
+
+.. _elemento-related-article:
+
+<related-article>
+-----------------
+
+Aparece em
+
+``<article-meta>``
+``<front-stub>``
+
+
+Atributos Obrigatórios
+
+1. related-article-type
+2. id
+
+
+Ocorre
+
+Zero ou mais vezes
+
+
+Elemento utilizado para indicar um artigo relacionado publicado ou não separadamente.
+Essa tag deve ser inserida para artigos como: Erratas, Press Releases ou em resposta de artigo comentado.
+
+
+Errata:
+
+Como regra, arquivos do tipo errata devem apresentar o valor "correction" no atributo @article-type; o texto do elemento //subj-group[@subj-group-type="heading"]/subject deve refletir o sumário do fascículo e no elemento <article-title> deve apresentar o título do documento que sofreu alteração e a palavra Erratum antes.
+Além disso, o elemento ``<related-article>`` deve, obrigatoriamente, aparecer no arquivo .xml. Veja:
+
+
+.. code-block:: xml
+
+    exemplo
+
+    ...
+    <article specific-use="sps-1.2" dtd-version="1.0" article-type="correction" xml:lang="en">
+       ...
+        <article-meta>
+        <article-id pub-id-type="doi">10.1590/abd1806-4841.20142998e</article-id>
+        <article-categories>
+           <subj-group subj-group-type="heading">
+              <subject>Erratum</subject>
+             ...
+         <title-group>
+        <article-title>Erratum - Update on cutaneous tuberculosis</article-title>
+        ...
+        </license>
+      </permissions>
+      <related-article related-article-type="corrected-article" id="ra1" xlink:href="10.1590/abd1806-4841.20142998" ext-link-type="doi"/>
+      <counts>
+      ...
+
+..note:: inserir ``<related-article>`` abaixo das informações de ``<permissions>`` ou acima de ``<counts>``.
+
+Para Errata o elemento ``<related-article>`` obrigatoriamente deve apresentar os seguintes atributos: @related-article;
+@id; @xlink:href e @ext-link-type="doi". Sendo que em @related-article o valor deverá ser "corrected-article".
+
+No documento a ser corrigido, inserir uma nota de rodapé conforme o exemplo:
+
+.. code-block:: xml
+...
+<back>
+  ...
+  <fn-group>
+    <fn fn-type="other">
+      <label>Erratum</label>
+      <p>Texto da errata</p>
+    </fn>
+  </fn-group>
+  ...
+</back>
+...
+
+
+Press Release de artigo:
+
+Arquivos do tipo Press Release (relacionados à um artigo) devem apresentar o valor "in-brief" em @article-type e em //subj-group[@subj-group-type="heading"]/subject considerar "Press Release". Em volume e número considerar o mesmo do artigo relacionado ao Press Release, porém acrescentar em ``<issue>`` a informação "pr".
+A tag ``<related-article>`` apresentará atributos e valores diferentes para esse tipo de arquivo. Veja:
+
+.. code-block:: xml
+   ...
+   <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.2" article-type="in-brief" xml:lang="en">
+    ...
+    <article-meta>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Press Release</subject>
+          ...
+      </pub-date>
+      <volume>21</volume>
+      <issue>2 pr</issue>
+      ...
+      </permissions>
+      <related-article related-article-type="article-reference" id="pr01" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="10.1590/S0104-59702014000200002" ext-link-type="doi"/>
+      <counts>
+      ...
+
+ Para Press Release o elemento ``<related-article>`` obrigatoriamente deve apresentar os seguintes atributos: @related-article;
+@id; @xlink:href e @ext-link-type="doi". Sendo que em @related-article o valor deverá ser "article-reference".
+
+
+No artigo relacionado ao Press Release, inserir o seguinte elemento:
+
+.. code-block:: xml
+   
+   ...
+   </permissions>
+   <related-article related-article-type="press-release" id="pr05" specific-use="processing-only"/>
+   <abstract>
+      ...
+
+ No artigo relacionado o elemento ``<related-article>`` obrigatoriamente deve apresentar os seguintes atributos: @related-article; @id; specific-use=". Sendo que em @related-article o valor deverá ser "press-release".
+
+O Press Release de fascículo não apresenta o elemento ``<related-article>``. Considerar apenas o valor "in-brief" para @article-type, em ``<subject>`` inserir "Press Release" e no elemento ``<issue>`` adicionar a informação "pr". Veja:
+
+
+.. code-block:: xml
+   ...
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" article-type="in-brief" specific-use="sps-1.2" xml:lang="pt">
+       ...
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Press Release</subject>
+          ...
+      </pub-date>
+      <volume>18</volume>
+      <issue>50 pr</issue>
+      ...
+
+
+Artigo Comentado
+
+Artigos que apresentam resposta que está diretamente relacionado ao artigo principal devem apresentar um elemento ``<related-article>. Para isso, no artigo principal o @article-type deve ser "article-commentary".
+Em <response>, inserir o elemento ``<related-article>``.
+Exemplo:
+
+.. code-block:: xml
+   ...
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" specific-use="sps-1.2" dtd-version="1.0" article-type="article-commentary" xml:lang="en">
+   ...
+  </back>
+  <response response-type="reply" id="r01">
+  ...
+  <related-article related-article-type="commentary-article" id="r01" vol="109" page="87-92"/>
+  <counts>
+  ...
+
+Para artigo relacionado, o elemento ``<related-article>`` deve apresentar os seguintes atributos: @related-article-type com o valor "commentary-article"; @id; @vol e @page com a informação do intervalo de paginação do documento.
+
+
+Acessibilidade 
 
 
 Referências
