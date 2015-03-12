@@ -80,7 +80,7 @@ Os atributos obrigatórios para ``xref`` são:
 +------------------------+-----------------------------------------+
 | app                    | apêndice                                |
 +------------------------+-----------------------------------------+
-| author-notes           | notas de autor (ou relacionado a autor) |
+| autho.. notes           | notas de autor (ou relacionado a autor) |
 +------------------------+-----------------------------------------+
 | bibr                   | referência bibliográfica                |
 +------------------------+-----------------------------------------+
@@ -287,7 +287,7 @@ inteiro, como segue:
 +------------------------+---------------------------+---------+---------------------+
 | table-wrap-foot/fn     | Notas de rodapé de tabela | TFN     | TFN1, TFN2, ...     |
 +------------------------+---------------------------+---------+---------------------+
-| author-notes/fn |      | Notas de rodapé do artigo | fn      | fn1, fn2, ...       | 
+| autho.. notes/fn |      | Notas de rodapé do artigo | fn      | fn1, fn2, ...       | 
 | fn-group/fn            |                           |         |                     |
 +------------------------+---------------------------+---------+---------------------+
 | table-wrap             | Tabela                    | t       | t1, t2, ...         |
@@ -522,35 +522,46 @@ Aparece em
   :ref:`elemento-journal-meta`
  
 Atributos obrigatórios
-  1. journal-id-type='nlm-ta' ou journal-id-type='publisher-id'
+  1. journal-id-type='publisher-id'
  
 Ocorre
-  Uma vez ou mais
+  Uma ou mais vezes
 
 
 Especifica o título padronizado do periódico.
+
+Os valores permitidos para o atributo ``@journal-id-type`` são:
+
++---------------+-----------------------------------------+
+| Valor         | Descrição                               |
++===============+=========================================+
+| publisher-id  | Acrônimo do periódoco na coleção SciELO |
++---------------+-----------------------------------------+
+| nlm-ta        | Título abreviado no :term:`PubMed`      |
++---------------+-----------------------------------------+
  
-Para o uso do título do periódico no Pubmed, 
-utiliza-se os elementos ``<journal-id @journal-id-type="publisher-id">`` e ``<journal-id @journal-id-type="nlm-ta">``:
+Artigos de periódicos indexados no :term:`PubMed`, devem apresentar adicionalmente 
+o título abreviado do periódico no :term:`PubMed` por meio do elemento 
+``<journal-id @journal-id-type="nlm-ta">``, conforme o exemplo:
  
+
 .. code-block:: xml
-    
-    <journal-id journal-id-type="publisher-id">mioc</journal-id>
-    <journal-id journal-id-type="nlm-ta">Mem Inst Oswaldo Cruz</journal-id>
- 
+   
+    ...
+    <journal-meta>
+        ...
+        <journal-id journal-id-type="publisher-id">mioc</journal-id>
+        <journal-id journal-id-type="nlm-ta">Mem Inst Oswaldo Cruz</journal-id>
+        ...
+    </journal-meta>
+    ...
 
-.. note:: Para verificar se o periódico está indexado no Medline 
-          consulte o link http://www.ncbi.nlm.nih.gov/pubmed/advanced
-
-
-Periódicos que não estão indexados no Medline, utiliza-se apenas ``@journal-id-type="publisher-id"``:
- 
-.. code-block:: xml
- 
-    <journal-id journal-id-type="publisher-id">hcsm</journal-id>
+Para verificar se o periódico está indexado no :term:`PubMed` consulte o link 
+http://www.ncbi.nlm.nih.gov/pubmed/advanced
 
 
-..note:: O uso de ``<journal-id journal-id-type="publisher-id">`` é obrigatório.
+.. note:: Consulte o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` 
+          como referência na identificação dos elementos.
 
 
 .. _elemento-journal-title-group:
@@ -915,12 +926,17 @@ Exemplo:
  
 .. code-block:: xml
  
-     <title-group>
-          <article-title>Correlação entre sintomas e tempo de evolução do câncer do trato aerodigestivo superior com o estádio inicial e avançado</article-title>
-     </title-group>.
+    ...
+    <title-group>
+        <article-title>Correlação entre sintomas e tempo de evolução do câncer do trato aerodigestivo superior com o estádio inicial e avançado</article-title>
+    </title-group>
+    ...
 
 
-..note:: Se o título da seção for o título do artigo (exemplo de alguns editoriais, erratas, cartas ao editor). Repetir a informação no front e marcá-la com as tags de título. 
+.. note:: Se o título da seção for igual ao título do artigo (exemplo de alguns 
+          editoriais, erratas, cartas ao editor), repetir a informação no front 
+          e marcá-la com as tags de título. 
+
 
 .. _elemento-trans-title-group:
  
@@ -1531,9 +1547,9 @@ Exemplo:
     ...
 
 
-.. _elemento-author-notes:
+.. _elemento-autho.. notes:
  
-<author-notes>
+<autho.. notes>
 --------------       
 
 Aparece em
@@ -1554,12 +1570,12 @@ Exemplo:
     ...
     <article-meta>
         ...
-        <author-notes>
+        <autho.. notes>
             <corresp id="c01"><bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@hotmail.com</email></corresp>
             <fn fn-type="conflict">
                 <p>Conflict of interest: none</p>
             </fn>     
-        </author-notes>
+        </autho.. notes>
         ...
     </article-meta>
     ...
@@ -1580,7 +1596,7 @@ Notas de autor
 ^^^^^^^^^^^^^^
 
 Aparece em
-  :ref:`elemento-author-notes`
+  :ref:`elemento-autho.. notes`
  
 Atributos obrigatórios
   1. fn-type
@@ -1589,7 +1605,7 @@ Ocorre
   Zero ou mais vezes
 
 
-Notas de rodapé de autores são notas inseridas em :ref:`elemento-author-notes` 
+Notas de rodapé de autores são notas inseridas em :ref:`elemento-autho.. notes` 
 e que obrigatoriamente possuem o atributo ``@fn-type``. 
 
 Os valores possíveis para o atributo ``@fn-type`` são:
@@ -1636,7 +1652,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 .. code-block:: xml
  
     ...
-    <author-notes>
+    <autho.. notes>
         <corresp id="c01">
             <label>*</label>
             <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@contato.com</email>
@@ -1647,7 +1663,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
         <fn fn-type="equal">
             <p>Todos os autores tiveram contribuição igualitária na criação do artigo.</p>
         </fn>
-    </author-notes>
+    </autho.. notes>
     ...
  
 
@@ -1693,7 +1709,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 |                         | próprios utilizadas ao longo do texto. Caso      |
 |                         | esteja falando de abreviaturas de nomes dos      |
 |                         | autores, inserir nota em                         |
-|                         | :ref:`elemento-author-notes` em                  |
+|                         | :ref:`elemento-autho.. notes` em                  |
 |                         | :ref:`elemento-front`                            |
 +-------------------------+--------------------------------------------------+
 | com                     | Representa nota de algum tipo de comunicado      |
@@ -1720,7 +1736,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 +-------------------------+--------------------------------------------------+
 | other                   | Especifica aquelas notas diferentes das          |
 |                         | relacionados acima. É possível também ter este   |
-|                         | tipo de nota em :ref:`elemento-author-notes`     |
+|                         | tipo de nota em :ref:`elemento-autho.. notes`     |
 +-------------------------+--------------------------------------------------+
  
 
@@ -1748,7 +1764,7 @@ Exemplo:
 ---------
  
 Aparece em
-  :ref:`elemento-author-notes`
+  :ref:`elemento-autho.. notes`
  
 Ocorre
   Zero ou mais vezes
@@ -1766,11 +1782,11 @@ Exemplo:
 .. code-block:: xml
  
     ...
-    <author-notes>
+    <autho.. notes>
         ...
         <corresp id="c01">Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@contato.com</email></corresp>
         ...
-    </author-notes>
+    </autho.. notes>
     ...
  
 .. note:: Esta tag não necessita da inserção de parágrafo ``<p>``.
@@ -2662,7 +2678,7 @@ Tag que identifica o resumo do artigo e não deve conter informação de
 atributo ``@xml:lang``. Embora em via de regra esse elemento ocorra 
 zero ou mais vezes, ele se faz obrigatório quando ``<article>`` for declarado
 com o atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
-Em ``<abstract>`` deve ser inserido uma informação de etiqueta :ref:`elemento-title`.
+Em ``<abstract>`` deve ser inserida uma informação de etiqueta :ref:`elemento-title`.
 
 Os resumos apresentados nos artigos publicados na SciELO normalmente 
 apresentam-se em dois formatos:
@@ -2731,47 +2747,49 @@ formatos simples ou estruturado, da mesma maneira que o elemento :ref:`elemento-
 Deve ser inserida imediatamente após :ref:`elemento-abstract` e obrigatoriamente 
 deve conter o atributo ``@xml:lang``.
 
-Em ``<trans-abstract>`` deve ser inserido uma informação de etiqueta :ref:`elemento-title`.
+Em ``<trans-abstract>`` deve ser inserida uma informação de etiqueta :ref:`elemento-title`.
  
  Exemplo:
    
-  .. code-block:: xml
-
-      ...
-      <article-meta>
-          ...
-          <trans-abstract>
+.. code-block:: xml
+    
+    ...
+    <article-meta>
+        ...
+        <trans-abstract xml:lang="en">
             <title>Abstract</title>
-              <sec>
-          <title>Objective</title>
-          <p>To analyze the association between socioeconomic situation, clinical characteristics referred and the family history of cardiovascular disease, with the Self-perceived health of young adults education and their implications for clinical characteristics observed.</p>
-        </sec>
-        <sec>
-          <title>Method</title>
-          <p>Analytical study conducted with 501 young adults who are students in countryside city in the Brazilian Northeast. We used binary logistic regression.</p>
-        </sec>        
-          </abstract>
-          ...
-      </article-meta>
-      ...
+            <sec>
+                <title>Objective</title>
+                <p>To analyze the association between socioeconomic situation, clinical characteristics referred and the family history of cardiovascular disease, with the Self-perceived health of young adults education and their implications for clinical characteristics observed.</p>
+            </sec>
+            <sec>
+                <title>Method</title>
+                <p>Analytical study conducted with 501 young adults who are students in countryside city in the Brazilian Northeast. We used binary logistic regression.</p>
+            </sec>        
+        </trans-abstract>
+        ...
+    </article-meta>
+    ...
+
 
 * Simples: Quando apresenta de forma sucinta os principais pontos do 
   texto sem a divisão por seções. 
  
   Exemplo:
  
-  .. code-block:: xml
+
+.. code-block:: xml
    
-      ...
-      <article-meta>
-          ...
-          <trans-abstract>
+    ...
+    <article-meta>
+        ...
+        <trans-abstract xml:lang="en">
             <title>Abstract</title>
-              <p>In this paper we discuss the tutoring model adopted by the Public Institutions of Higher Education that integrate the Open University of Brazil (Universidade Aberta do Brasil - UAB) program. The starting point is the research and the actions developed by the authors in the past decade that are directly related to distance education in Brazil. The focus is on the classroom tutors who are responsible for assisting students in the presential center where they have support and who are selected through published notes in the virtual notice board of the institutions that offer higher education courses in a distinct mode of classroom teaching.</p>
-          </abstract>
-          ...
-      </article-meta>
-      ...
+            <p>In this paper we discuss the tutoring model adopted by the Public Institutions of Higher Education that integrate the Open University of Brazil (Universidade Aberta do Brasil - UAB) program. The starting point is the research and the actions developed by the authors in the past decade that are directly related to distance education in Brazil. The focus is on the classroom tutors who are responsible for assisting students in the presential center where they have support and who are selected through publishe.. notes in the virtual notice board of the institutions that offer higher education courses in a distinct mode of classroom teaching.</p>
+        </trans-abstract>
+        ...
+    </article-meta>
+    ...
 
 
 .. _elemento-kwd-group:
@@ -2791,7 +2809,7 @@ Ocorre
 
 Identifica o grupo de palavras-chave do artigo por idioma. Obrigatoriamente deve 
 conter o atributo ``@xml:lang``.
-Em ``<kwd-group>`` deve ser inserido uma informação de etiqueta :ref:`elemento-title`. 
+Em ``<kwd-group>`` deve ser inserida uma informação de etiqueta :ref:`elemento-title`. 
 
 .. code-block:: xml
  
@@ -2799,7 +2817,7 @@ Em ``<kwd-group>`` deve ser inserido uma informação de etiqueta :ref:`elemento
     <article-meta>
         ...
         <kwd-group xml:lang="pt">
-          <title>Palavra-chave</title>
+            <title>Palavra-chave</title>
             <kwd>Broncoscopia</kwd>
         </kwd-group>
         ...
@@ -2913,11 +2931,12 @@ Exemplo:
     </article-meta>
     ...
  
- Existem casos em que há mais que uma instituição financiadora para um único número de contrato.
 
- Exemplo:
+Existem casos em que há mais que uma instituição financiadora para um único número de contrato.
 
- .. code-block:: xml
+Exemplo:
+
+.. code-block:: xml
 
     ...
     <article-meta>
@@ -3225,25 +3244,26 @@ Exemplo:
     ...
 
  
- Para Seções que apresentam número, identificar o dado dentro da tag <title>.
- Exemplo:
+Para seções que apresentam marcador de numeração, identificar o dado dentro da tag <title>.
+Exemplo:
 
- .. code-block:: xml
+.. code-block:: xml
 
     ...
     <body>
-       ...
-       <sec sec-type="intro">
-          <title>1. Introdução</title>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non sollicitudin nulla.</p>
-          ...
-       </sec>
-       ...
+        ...
+        <sec sec-type="intro">
+            <title>1. Introdução</title>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non sollicitudin nulla.</p>
+            ...
+        </sec>
+        ...
     </body>
     ...
 
 
-.. note :: Não inserir a tag <label> para <sec>.
+.. note:: Não inserir a tag <label> para <sec>.
+
 
 .. _elemento-disp-formula:
      
@@ -4127,7 +4147,7 @@ Ocorre
   :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
   :ref:`elemento-element-citation`.
 
-Em ``<ref-list>`` deve ser inserido uma informação de etiqueta :ref:`elemento-title`.
+Em ``<ref-list>`` deve ser inserida uma informação de etiqueta :ref:`elemento-title`.
 
 Exemplo:
  
@@ -4135,8 +4155,12 @@ Exemplo:
 
     ...
     <ref-list>
-       <title>Referência Bibliográfica</title>
-       <ref>
+        <title>Referência Bibliográfica</title>
+        <ref id="B1">
+            ...
+        </ref>
+        ...
+    </ref-list>
     ...
 
 
@@ -4167,7 +4191,7 @@ Exemplo:
  
     ...
     <ref-list>
-      <title></title>
+        <title></title>
         <ref id="B1">
             <label>1</label>
             <mixed-citation>. Aires M, Paz AA, Perosa CT. Situação de saúde e grau de dependência de pessoas idosas institucionalizadas. <italic>Rev Gaucha Enferm.</italic> 2009;30(3):192-9.</mixed-citation>
@@ -4663,9 +4687,9 @@ Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
 +--------+----------------------------------------+
 | Valor  | Descrição                              |
 +========+========================================+
-| pmid   | PubMed ID                              |
+| pmid   | :term:`PubMed` ID                              |
 +--------+----------------------------------------+
-| pcmid  | PubMed Central ID                      |
+| pcmid  | :term:`PubMed` Central ID                      |
 +--------+----------------------------------------+
 | doi    | Número DOI registrado no Crossref      |
 +--------+----------------------------------------+
@@ -4871,7 +4895,7 @@ Ocorre
 
 A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
 o grupo de notas de rodapé mencionadas no documento que não representem notas de
-autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode
+autor, as quais deverão ser identificadas em :ref:`elemento-autho.. notes`. Pode
 possuir uma ou mais notas :ref:`elemento-fn`.
  
 Exemplo:
@@ -4914,7 +4938,7 @@ Ocorre
 Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
 básica de um apêndice devemos levar em consideração duas tags importantes, a de
 grupo de apêndice :ref:`elemento-app-group` e de apêndice propriamente dito
-``<app>``. Obrigatoriamente deve ser inserido uma informação de
+``<app>``. Obrigatoriamente deve ser inserida uma informação de
 etiqueta :ref:`elemento-label` em ``<app>``.
 
  
@@ -5217,7 +5241,7 @@ relacionado a um "rid".
 O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
 ou como texto.
 
-..note:: Não inserir pontuação nos elementos ``<term>`` ou ``<def>``.
+.. note:: Não inserir pontuação nos elementos ``<term>`` ou ``<def>``.
 
 
 .. _elemento-sub-article:
@@ -5351,8 +5375,7 @@ Atributos obrigatórios
 
 
 Ocorre
-
-Zero ou mais vezes
+  Zero ou mais vezes
 
 
 Utilizada para apresentar uma resposta ao artigo principal que está diretamente relacionado ao artigo principal, por exemplo, resposta de uma carta ou apresenta opinião contrária de um artigo publicado.
@@ -5486,101 +5509,160 @@ Exemplo com figura:
 -----------------
 
 Aparece em
-
-``<article-meta>``
-``<front-stub>``
+  :ref:`elemento-article-meta`,
+  :ref:`elemento-front-stub`
 
 
 Atributos Obrigatórios
-
-1. related-article-type
-2. id
-
+  1. related-article-type
+  2. id
 
 Ocorre
-
-Zero ou mais vezes
+  Zero ou mais vezes
 
 
 Elemento utilizado para indicar um artigo relacionado publicado ou não separadamente.
 Essa tag deve ser inserida para artigos como: Erratas, Press Releases ou em resposta de artigo comentado.
 
+Os valores possíveis para o atributo ``@related-article-type`` são:
 
-Errata:
++------------------------+-------------------------------------------+
+| Valor                  | Descrição                                 |
++========================+===========================================+
+| corrected-article      | Utilizado em errata para indicar o artigo |
+|                        | objeto da correção.                       |
++------------------------+-------------------------------------------+
+| press-release          |                                           |
++------------------------+-------------------------------------------+
+| commentary-article     |                                           |
++------------------------+-------------------------------------------+
+| article-reference      |                                           |
++------------------------+-------------------------------------------+
 
-Como regra, arquivos do tipo errata devem apresentar o valor "correction" no atributo @article-type; o texto do elemento //subj-group[@subj-group-type="heading"]/subject deve refletir o sumário do fascículo e no elemento <article-title> deve apresentar o título do documento que sofreu alteração e a palavra Erratum antes.
+
+Errata
+^^^^^^
+
+Como regra, arquivos do tipo errata devem apresentar o valor "correction" no 
+atributo ``@article-type``. O texto do elemento ``//subj-group[@subj-group-type="heading"]/subject`` 
+deve refletir o sumário do fascículo e no elemento <article-title> deve apresentar 
+o título do documento que sofreu alteração e a palavra Erratum antes.
 Além disso, o elemento ``<related-article>`` deve, obrigatoriamente, aparecer no arquivo .xml. Veja:
 
 
 .. code-block:: xml
 
-    exemplo
-
     ...
-    <article specific-use="sps-1.2" dtd-version="1.0" article-type="correction" xml:lang="en">
-       ...
-        <article-meta>
-        <article-id pub-id-type="doi">10.1590/abd1806-4841.20142998e</article-id>
-        <article-categories>
-           <subj-group subj-group-type="heading">
-              <subject>Erratum</subject>
-             ...
-         <title-group>
-        <article-title>Erratum - Update on cutaneous tuberculosis</article-title>
+    <article article-type="correction" 
+             specific-use="sps-1.2" 
+             dtd-version="1.0" 
+             xml:lang="en"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+        <front>
+            <article-meta>
+                <article-id pub-id-type="doi">10.1590/abd1806-4841.20142998e</article-id>
+                <article-categories>
+                    <subj-group subj-group-type="heading">
+                        <subject>Erratum</subject>
+                    </subj-group>
+                    ...
+                </article-categories>
+                <title-group>
+                    <article-title>Erratum - Update on cutaneous tuberculosis</article-title>
+                </title-group>
+                ...
+                <permissions>
+                    ...
+                </permissions>
+                <related-article related-article-type="corrected-article" 
+                                 id="ra1" 
+                                 xlink:href="10.1590/abd1806-4841.20142998" 
+                                 ext-link-type="doi"/>
+                <counts>
+                    ...
+                </counts>
+                ...
+            </article-meta>
+            ...
+        </front>
         ...
-        </license>
-      </permissions>
-      <related-article related-article-type="corrected-article" id="ra1" xlink:href="10.1590/abd1806-4841.20142998" ext-link-type="doi"/>
-      <counts>
-      ...
+    </article>
 
-..note:: inserir ``<related-article>`` abaixo das informações de ``<permissions>`` ou acima de ``<counts>``.
 
-Para Errata o elemento ``<related-article>`` obrigatoriamente deve apresentar os seguintes atributos: @related-article;
-@id; @xlink:href e @ext-link-type="doi". Sendo que em @related-article o valor deverá ser "corrected-article".
+.. note:: Inserir ``<related-article>`` abaixo das informações de ``<permissions>`` 
+          ou acima de ``<counts>``.
+
+
+Para Errata o elemento ``<related-article>`` obrigatoriamente deve apresentar os 
+seguintes atributos: ``@related-article-type``; ``@id``; ``@xlink:href`` e 
+``@ext-link-type="doi"``. 
+Sendo que em ``@related-article-type`` o valor deverá ser "corrected-article".
 
 No documento a ser corrigido, inserir uma nota de rodapé conforme o exemplo:
 
 .. code-block:: xml
-...
-<back>
-  ...
-  <fn-group>
-    <fn fn-type="other">
-      <label>Erratum</label>
-      <p>Texto da errata</p>
-    </fn>
-  </fn-group>
-  ...
-</back>
-...
+
+    ...
+    <back>
+        ...
+        <fn-group>
+            <fn fn-type="other">
+                <label>Erratum</label>
+                <p>Texto da errata</p>
+            </fn>
+        </fn-group>
+        ...
+    </back>
+    ...
 
 
-Press Release de artigo:
+Press Release de artigo
+^^^^^^^^^^^^^^^^^^^^^^^
 
-Arquivos do tipo Press Release (relacionados à um artigo) devem apresentar o valor "in-brief" em @article-type e em //subj-group[@subj-group-type="heading"]/subject considerar "Press Release". Em volume e número considerar o mesmo do artigo relacionado ao Press Release, porém acrescentar em ``<issue>`` a informação "pr".
+Arquivos do tipo Press Release (relacionados à um artigo) devem apresentar o valor 
+"in-brief" em ``@article-type`` e em ``//subj-group[@subj-group-type="heading"]/subject`` 
+considerar "Press Release". Em volume e número considerar o mesmo do artigo 
+relacionado ao Press Release, porém acrescentar em ``<issue>`` a informação "pr".
 A tag ``<related-article>`` apresentará atributos e valores diferentes para esse tipo de arquivo. Veja:
 
 .. code-block:: xml
-   ...
-   <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.2" article-type="in-brief" xml:lang="en">
-    ...
-    <article-meta>
-      <article-categories>
-        <subj-group subj-group-type="heading">
-          <subject>Press Release</subject>
-          ...
-      </pub-date>
-      <volume>21</volume>
-      <issue>2 pr</issue>
-      ...
-      </permissions>
-      <related-article related-article-type="article-reference" id="pr01" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="10.1590/S0104-59702014000200002" ext-link-type="doi"/>
-      <counts>
-      ...
 
- Para Press Release o elemento ``<related-article>`` obrigatoriamente deve apresentar os seguintes atributos: @related-article;
-@id; @xlink:href e @ext-link-type="doi". Sendo que em @related-article o valor deverá ser "article-reference".
+    <article article-type="in-brief" 
+             xmlns:xlink="http://www.w3.org/1999/xlink" 
+             dtd-version="1.0" 
+             specific-use="sps-1.2" 
+             xml:lang="en">
+        <front>
+            <article-meta>
+                <article-categories>
+                    <subj-group subj-group-type="heading">
+                        <subject>Press Release</subject>
+                    </subj-group>
+                </article-categories>
+                <volume>21</volume>
+                <issue>2 pr</issue>
+                ...
+                <permissions>
+                    ...
+                </permissions>
+                <related-article related-article-type="article-reference" 
+                                 id="pr01" 
+                                 xlink:href="10.1590/S0104-59702014000200002" 
+                                 ext-link-type="doi"/>
+                <counts>
+                    ...
+                </counts>
+                ...
+            </article-meta>
+            ...
+        </front>
+        ...
+    </article>
+
+Para Press Release o elemento ``<related-article>`` obrigatoriamente deve 
+apresentar os seguintes atributos: ``@related-article-type``; ``@id``; ``@xlink:href`` 
+e ``@ext-link-type="doi"``. Sendo que em ``@related-article-type`` o valor 
+deverá ser ``"article-reference"``.
 
 
 No artigo relacionado ao Press Release, inserir o seguinte elemento:
@@ -5593,7 +5675,7 @@ No artigo relacionado ao Press Release, inserir o seguinte elemento:
    <abstract>
       ...
 
- No artigo relacionado o elemento ``<related-article>`` obrigatoriamente deve apresentar os seguintes atributos: @related-article; @id; specific-use=". Sendo que em @related-article o valor deverá ser "press-release".
+No artigo relacionado o elemento ``<related-article>`` obrigatoriamente deve apresentar os seguintes atributos: @related-article; @id; specific-use=". Sendo que em @related-article o valor deverá ser "press-release".
 
 O Press Release de fascículo não apresenta o elemento ``<related-article>``. Considerar apenas o valor "in-brief" para @article-type, em ``<subject>`` inserir "Press Release" e no elemento ``<issue>`` adicionar a informação "pr". Veja:
 
@@ -5619,6 +5701,7 @@ Em <response>, inserir o elemento ``<related-article>``.
 Exemplo:
 
 .. code-block:: xml
+
    ...
 <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" specific-use="sps-1.2" dtd-version="1.0" article-type="article-commentary" xml:lang="en">
    ...
