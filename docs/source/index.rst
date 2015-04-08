@@ -145,6 +145,17 @@ não elimina a necessidade de consultar suas respectivas documentações.
    tagset
    glossary
 
+
+Documentação narrativa
+----------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   narr/pressrelease
+   narr/errata
+
+
 Indices and tables
 ==================
 
