@@ -80,7 +80,7 @@ Os atributos obrigatórios para ``xref`` são:
 +------------------------+-----------------------------------------+
 | app                    | apêndice                                |
 +------------------------+-----------------------------------------+
-| autho.. notes           | notas de autor (ou relacionado a autor) |
+| author-notes           | notas de autor (ou relacionado a autor) |
 +------------------------+-----------------------------------------+
 | bibr                   | referência bibliográfica                |
 +------------------------+-----------------------------------------+
@@ -287,7 +287,7 @@ inteiro, como segue:
 +------------------------+---------------------------+---------+---------------------+
 | table-wrap-foot/fn     | Notas de rodapé de tabela | TFN     | TFN1, TFN2, ...     |
 +------------------------+---------------------------+---------+---------------------+
-| autho.. notes/fn |      | Notas de rodapé do artigo | fn      | fn1, fn2, ...       | 
+| author-notes/fn |      | Notas de rodapé do artigo | fn      | fn1, fn2, ...       | 
 | fn-group/fn            |                           |         |                     |
 +------------------------+---------------------------+---------+---------------------+
 | table-wrap             | Tabela                    | t       | t1, t2, ...         |
@@ -1547,9 +1547,9 @@ Exemplo:
     ...
 
 
-.. _elemento-autho.. notes:
+.. _elemento-author-notes:
  
-<autho.. notes>
+<author-notes>
 --------------       
 
 Aparece em
@@ -1570,12 +1570,12 @@ Exemplo:
     ...
     <article-meta>
         ...
-        <autho.. notes>
+        <author-notes>
             <corresp id="c01"><bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@hotmail.com</email></corresp>
             <fn fn-type="conflict">
                 <p>Conflict of interest: none</p>
             </fn>     
-        </autho.. notes>
+        </author-notes>
         ...
     </article-meta>
     ...
@@ -1596,7 +1596,7 @@ Notas de autor
 ^^^^^^^^^^^^^^
 
 Aparece em
-  :ref:`elemento-autho.. notes`
+  :ref:`elemento-author-notes`
  
 Atributos obrigatórios
   1. fn-type
@@ -1605,7 +1605,7 @@ Ocorre
   Zero ou mais vezes
 
 
-Notas de rodapé de autores são notas inseridas em :ref:`elemento-autho.. notes` 
+Notas de rodapé de autores são notas inseridas em :ref:`elemento-author-notes` 
 e que obrigatoriamente possuem o atributo ``@fn-type``. 
 
 Os valores possíveis para o atributo ``@fn-type`` são:
@@ -1652,7 +1652,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 .. code-block:: xml
  
     ...
-    <autho.. notes>
+    <author-notes>
         <corresp id="c01">
             <label>*</label>
             <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@contato.com</email>
@@ -1663,7 +1663,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
         <fn fn-type="equal">
             <p>Todos os autores tiveram contribuição igualitária na criação do artigo.</p>
         </fn>
-    </autho.. notes>
+    </author-notes>
     ...
  
 
@@ -1709,7 +1709,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 |                         | próprios utilizadas ao longo do texto. Caso      |
 |                         | esteja falando de abreviaturas de nomes dos      |
 |                         | autores, inserir nota em                         |
-|                         | :ref:`elemento-autho.. notes` em                  |
+|                         | :ref:`elemento-author-notes` em                  |
 |                         | :ref:`elemento-front`                            |
 +-------------------------+--------------------------------------------------+
 | com                     | Representa nota de algum tipo de comunicado      |
@@ -1736,7 +1736,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 +-------------------------+--------------------------------------------------+
 | other                   | Especifica aquelas notas diferentes das          |
 |                         | relacionados acima. É possível também ter este   |
-|                         | tipo de nota em :ref:`elemento-autho.. notes`     |
+|                         | tipo de nota em :ref:`elemento-author-notes`     |
 +-------------------------+--------------------------------------------------+
  
 
@@ -1764,7 +1764,7 @@ Exemplo:
 ---------
  
 Aparece em
-  :ref:`elemento-autho.. notes`
+  :ref:`elemento-author-notes`
  
 Ocorre
   Zero ou mais vezes
@@ -1782,11 +1782,11 @@ Exemplo:
 .. code-block:: xml
  
     ...
-    <autho.. notes>
+    <author-notes>
         ...
         <corresp id="c01">Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@contato.com</email></corresp>
         ...
-    </autho.. notes>
+    </author-notes>
     ...
  
 .. note:: Esta tag não necessita da inserção de parágrafo ``<p>``.
@@ -4895,7 +4895,7 @@ Ocorre
 
 A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
 o grupo de notas de rodapé mencionadas no documento que não representem notas de
-autor, as quais deverão ser identificadas em :ref:`elemento-autho.. notes`. Pode
+autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode
 possuir uma ou mais notas :ref:`elemento-fn`.
  
 Exemplo:
