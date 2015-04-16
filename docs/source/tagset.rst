@@ -3914,6 +3914,59 @@ Exemplo:
  .. note:: Para figuras que apresentam informação de fonte, capturar o dado junto da imagem.
 
 
+.. _elemento-attrib:
+
+<attrib>
+--------
+
+Aparece em
+  :ref:`elemento-boxed-text`
+  :ref:`elemento-fig`
+  :ref:`elemento-graphic`
+  :ref:`elemento-media`
+  :ref:`elemento-supplementary-material`
+  :ref:`elemento-table-wrap`
+  :ref:`elemento-verse-group`
+
+Ocorre
+
+  Zero ou mais vezes
+
+
+Elemento utilizado para identificar a descrição da fonte, nome do autor de poesias, material de direitos autorais, ou outras informações, agradecimentos. Geralmente utilizado para especificação de fonte de imagens e para identificar o autor de uma poesia ou verso.
+
+
+Exemplo em figura:
+ 
+.. code-block:: xml
+     ...
+    <fig id="f02" fig-type="other">
+      <label>Figure 2</label>
+        <caption>
+          <title>Produtividade das variantes lexicais para a questão 132 do QSL segundo a região administrativa</title>
+        </caption>
+        <graphic xlink:href="0103-507X-rbti-26-02-0130-g02.tif"/>
+        <attrib>Fonte: Banco de dados do ALiB (2013).</attrib>
+    </fig>
+
+.. note:: em figuras o elemento ``<attrib>`` deve ser inserido abaixo de ``<graphic>``.
+
+
+Exemplo em versos:
+
+.. code-block:: xml
+     ...
+      <verse-group>
+        <verse-line>Porque quando te não vejo, deixastes de existir.</verse-line>
+        <verse-line>E se se tem saudades do que não existe,</verse-line>
+        <verse-line>Sinto-a em relação a cousa nenhuma;</verse-line>
+        <verse-line>Não é do navio, é de nós, que sentimos saudade.</verse-line>
+        <attrib>(Alberto Caeiro, O guardador de rebanhos e outros poemas).</attrib>
+      </verse-group>
+     ...
+
+
+
 .. _elemento-media:
 
 <media>
@@ -4305,6 +4358,22 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
     uma tag específica para uma informação inserir esta em
     :ref:`elemento-comment`.
 
+
+.. IMPORTANT::
+
+  É esperado que as referências do tipo "journal" apresentem pelo menos 3 elementos:
+
+  * ``<article-title>``
+  * ``<source>``
+  * ``<year>``
+
+  Caso a referência não apresente um desses elementos, esta deve ser classificada com o atributo:
+
+    @specific-use="display-only"
+
+ O atributo @specific-use com o valor "display-only" informa que a referência bibliográfica estará disponível apenas para apresentação, ou seja, não há dados o suficiente para utilizar em indicadores bibliográficos.
+
+
 Exemplos:
  
 .. code-block:: xml
@@ -4334,6 +4403,41 @@ Exemplos:
         </ref>
     <ref-list> 
     ...
+
+.. code-block:: xml
+
+    <!-- Journal Sample incomplete -->
+
+    ...
+    <ref-list>
+        <ref id="B3" specific-use="display-only">
+            <mixed-citation>BICUDO,S.D.;;AZEVEDO,H.C.MAIA S.M. et al. Avanços na criopreservação do sêmen ovino visando sua aplicação em programas de inseminação artificial e em biotecnologias com embriões.Acta Sci. Vet., v.35, p.787-798,2007.</mixed-citation>
+            <element-citation publication-type="journal" specific-use="display-only">
+              <person-group person-group-type="author">
+                <name>
+                  <surname>BICUDO</surname>
+                  <given-names>S.D.</given-names>
+                </name>
+                <name>
+                  <surname>AZEVEDO</surname>
+                  <given-names>H.C.</given-names>
+                </name>
+                <name>
+                  <surname>MAIA</surname>
+                  <given-names>S.M.</given-names>
+                </name>
+                <etal/>
+              </person-group>
+              <article-title>Avanços na criopreservação do sêmen ovino visando sua aplicação em programas de inseminação artificial e em biotecnologias com embriões</article-title>
+              <source>Acta Sci. Vet.</source>
+              <volume>35</volume>
+              <fpage>787</fpage>
+              <lpage>798</lpage>
+            </element-citation>
+        </ref>
+    <ref-list> 
+    ...
+
 
 .. code-block:: xml
 
@@ -4608,27 +4712,6 @@ Exemplos:
                 <year>1985</year>
                 <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.bdt.fat.org.br/acaro/sp/">http://www.bdt.fat.org.br/acaro/sp/</ext-link></comment>
                 <date-in-citation content-type="access-date">30 maio 2002</date-in-citation>
-            </element-citation>
-        </ref>
-    </ref-list>
-    ...
-
-
-.. code-block:: xml
- 
-    <!-- incomplete -->
-
-    ...
-    <ref-list>
-        <ref id="B11">
-            <label>11</label>
-            <mixed-citation>BANCO CENTRAL DO BRASIL. Disponível em: www.bcb.gov.br</mixed-citation>
-            <element-citation publication-type="webpage" specific-use="incomplete">
-                <person-group person-group-type="author">
-                    <collab>BANCO CENTRAL DO BRASIL</collab>
-                </person-group>
-                <comment>Disponível em: 
-                <ext-link ext-link-type="uri" xlink:href="http://www.bcb.gov.br"www.bcb.gov.br</ext-link></comment>
             </element-citation>
         </ref>
     </ref-list>
@@ -5399,7 +5482,12 @@ Exemplo da tag completa:
 .. code-block:: xml
  
     ...
-    <response response-type="reply" xml:lang="en" id="R1">
+    <article>
+      ...
+      <response response-type="reply" xml:lang="en" id="R1">
+          ...
+      </response>
+    </article>
     ...
 
 
@@ -5497,7 +5585,7 @@ Exemplo com figura:
             <caption>
                 <title>Diagnostic algorithm for depressive episodes in children and adolescents</title>
             </caption>
-            <graphic xlink:href="1516-4446-rbp-1516-4446-2012-S0022-gf01"/>
+            <graphic xlink:href="1516-4446-rbp-1516-4446-2012-S0022-gf01.jpg"/>
         </fig>
     </boxed-text>
     ...
