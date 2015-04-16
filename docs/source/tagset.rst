@@ -4359,7 +4359,7 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
     :ref:`elemento-comment`.
 
 
-.. IMPORTANT::
+.. important::
 
   É esperado que as referências do tipo "journal" apresentem pelo menos 3 elementos:
 

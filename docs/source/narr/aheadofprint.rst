@@ -37,6 +37,6 @@ Para arquivos Ahead Of Print, a data de publicação deve ser apenas "epub" e co
 	</article>
 
 
-..note::
+.. note::
 	Em AOP considerar sempre a tag ``<month>`` para indicação de mês. Nunca inserir ``<season>``.
 
