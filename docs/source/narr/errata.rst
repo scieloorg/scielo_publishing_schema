@@ -73,3 +73,5 @@ No documento a ser corrigido, inserir uma nota de rodapé conforme o exemplo:
     </back>
     ...
 
+.. note:: Para mais informações, verificar o "Guia para o registro e publicação de errata, retratações e manifestações de preocupação" em: 
+.. _a link: http://www.scielo.org/php/level.php?lang=pt&component=56&item=53

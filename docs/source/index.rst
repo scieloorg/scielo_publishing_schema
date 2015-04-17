@@ -154,6 +154,7 @@ Documentação narrativa
 
    narr/pressrelease
    narr/errata
+   narr/aheadofprint
 
 
 Indices and tables
