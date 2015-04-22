@@ -1437,16 +1437,14 @@ em até três níveis. Estes níveis serão definidos pelo atributo obrigatório
  
 
 Deve-se especificar a afiliação completa como aparece no documento 
-original. Caso o email esteja presente também deve ser marcado; ambas as tags 
-possuem atributo obrigatório ``@content-type`` dos tipos: original, email ou country conforme segue no exemplo:
+original. 
 
 
 .. code-block:: xml
  
      <institution content-type="original">Técnica de Cardiopneumologia. Unidade de
      Fisiopatologia Respiratória, Serviço de Pneumologia, Centro Hospitalar Lisboa
-     Norte, Lisboa, <named-content content-type="country">Portugal</named-content>. 
-     <named-content content-type="email">mara@scielo.org</named-content></institution>
+     Norte, Lisboa, Portugal. mara@scielo.org</institution>
 
  
 .. _elemento-addr-line:
@@ -1760,7 +1758,7 @@ Exemplo:
     </fn-group>
     ...
  
-.. _elemento-fn-table-wrap-foot:
+.. _elemento-table-wrap-foot:
 
 Nota de Tabela
 ^^^^^^^^^^^^^^
@@ -1787,7 +1785,7 @@ Exemplo:
     <table-wrap id="t05">
       ... 
       <table-wrap-foot>
-        <fn id="tfn01t05">
+        <fn id="TFN1">
           <label>*</label>
           <p>All diagnoses at admission (sepsis, cardiovascular, respiratory, neurological, gastrointestinal, and emergency surgery) were grouped except for elective surgery.</p>
         </fn>
@@ -2623,17 +2621,19 @@ da obra. Para mais informações consultar: http://creativecommons.org/
 
 Os valores possíveis para ``@xlink:href`` são:
 
-+-------------------------------------------------+----------------------+
-| Valor                                           | Descrição            |
-+=================================================+======================+
-| http://creativecommons.org/licenses/by/4.0/     | CC-BY versão 4.0     |
-+-------------------------------------------------+----------------------+
-| http://creativecommons.org/licenses/by/3.0/     | CC-BY versão 3.0     |
-+-------------------------------------------------+----------------------+
-| http://creativecommons.org/licenses/by-nc/4.0/  | CC-BY-NC versão 4.0  |
-+-------------------------------------------------+----------------------+
-| http://creativecommons.org/licenses/by-nc/3.0/  | CC-BY-NC versão 3.0  |
-+-------------------------------------------------+----------------------+
++-----------------------------------------------------+------------------------+
+| Valor                                               | Descrição              |
++=====================================================+========================+
+| http://creativecommons.org/licenses/by/4.0/         | CC-BY versão 4.0       |
++-----------------------------------------------------+------------------------+
+| http://creativecommons.org/licenses/by/3.0/         | CC-BY versão 3.0       |
++-----------------------------------------------------+------------------------+
+| http://creativecommons.org/licenses/by-nc/4.0/      | CC-BY-NC versão 4.0    |
++-----------------------------------------------------+------------------------+
+| http://creativecommons.org/licenses/by-nc/3.0/      | CC-BY-NC versão 3.0    |
++-----------------------------------------------------+------------------------+
+| https://creativecommons.org/licenses/by-nc-nd/3.0/  | CC-BY-NC-ND versão 3.0 |
++-----------------------------------------------------+------------------------+
 
 
 Além da referência à URL, o texto da licença deve ser adicionado na tag
@@ -2716,7 +2716,7 @@ Tag que identifica o resumo do artigo e não deve conter informação de
 atributo ``@xml:lang``. Embora em via de regra esse elemento ocorra 
 zero ou mais vezes, ele se faz obrigatório quando ``<article>`` for declarado
 com o atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
-Em ``<abstract>`` deve ser inserida uma informação de etiqueta :ref:`elemento-title`.
+Em ``<abstract>`` deve ser inserido um elemento :ref:`elemento-title` para especificar o título do resumo.
 
 Os resumos apresentados nos artigos publicados na SciELO normalmente 
 apresentam-se em dois formatos:
