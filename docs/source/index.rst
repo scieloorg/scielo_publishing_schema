@@ -152,7 +152,7 @@ Documentação narrativa
 .. toctree::
    :maxdepth: 2
 
-   narr/pressrelease
+   narr/artigo-comentado
    narr/errata
    narr/aheadofprint
 
