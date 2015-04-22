@@ -3,9 +3,9 @@ Errata
 
 Como regra, arquivos do tipo errata devem apresentar o valor "correction" no 
 atributo ``@article-type``. O texto do elemento ``//subj-group[@subj-group-type="heading"]/subject`` 
-deve refletir o sumário do fascículo e no elemento <article-title> inserir como título "Errata" ou 
+deve refletir o sumário do fascículo e no elemento :ref:`elemento-article-title` inserir como título "Errata" ou 
 "Erratum", de acordo com o que está especificado no PDF.
-Além disso, o elemento ``<related-article>`` deve, obrigatoriamente, aparecer no arquivo .xml. Veja:
+Além disso, o elemento :ref:`elemento-related-article` deve, obrigatoriamente, aparecer no arquivo .xml. Veja:
 
 
 .. code-block:: xml
@@ -51,7 +51,7 @@ Além disso, o elemento ``<related-article>`` deve, obrigatoriamente, aparecer n
           ou acima de ``<counts>``.
 
 
-Para Errata o elemento ``<related-article>`` obrigatoriamente deve apresentar os 
+Para Errata o elemento :ref:`elemento-related-article` obrigatoriamente deve apresentar os 
 seguintes atributos: ``@related-article-type``; ``@id``; ``@xlink:href`` e 
 ``@ext-link-type="doi"``. 
 Sendo que em ``@related-article-type`` o valor deverá ser "corrected-article".
@@ -73,3 +73,5 @@ No documento a ser corrigido, inserir uma nota de rodapé conforme o exemplo:
     </back>
     ...
 
+.. note:: Para mais informações, verificar o "Guia para o registro e publicação de errata, retratações e manifestações de preocupação" em: 
+    http://www.scielo.org/php/level.php?lang=pt&component=56&item=53
