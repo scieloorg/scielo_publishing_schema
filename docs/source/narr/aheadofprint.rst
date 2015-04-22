@@ -18,8 +18,7 @@ Esse tipo de documento não apresenta volume, número e paginação, portanto co
 	 ...
 	</article>
 
-Para arquivos Ahead Of Print, a data de publicação deve ser apenas "epub" e com os todos os elementos preenchidos: ``<day>``, 
-``<month>`` e ``<year>``.
+Para arquivos Ahead Of Print, a data de publicação deve ser apenas "epub" e com os todos os elementos preenchidos: :ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`.
 
 .. code-block:: xml
 
@@ -38,5 +37,5 @@ Para arquivos Ahead Of Print, a data de publicação deve ser apenas "epub" e co
 
 
 ..note::
-	Em AOP considerar sempre a tag ``<month>`` para indicação de mês. Nunca inserir ``<season>``.
+	Em AOP considerar sempre a tag :ref:`elemento-month` para indicação de mês. Nunca inserir :ref:`elemento-season`.
 

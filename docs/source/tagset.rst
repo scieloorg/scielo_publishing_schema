@@ -174,9 +174,9 @@ Aparece em
   :ref:`elemento-list`,
   ``list-item``,
   :ref:`elemento-ref`,
-  ``glossary``,
-  ``app``,
-  ``def-list``
+  :ref:`elemento-glossary`,
+  ``<app>``,
+  :ref:`elemento-def-list`
  
 Ocorre
   Zero ou mais vezes
@@ -250,7 +250,7 @@ Aparece em
   :ref:`elemento-disp-quote`,
   ``list-item``,
   ``sig``,
-  ``app``,
+  ``<app>``,
   ``def``
  
 Ocorre
@@ -366,7 +366,7 @@ Ocorre
   Uma vez
  
 
-A tag ``<article>`` representa o elemento raiz do XML, e deve conter 
+A tag :ref:`elemento-article` representa o elemento raiz do XML, e deve conter 
 obrigatoriamente os atributos ``@dtd-version``, ``@article-type``, ``@xml:lang``, 
 ``@xmlns:xlink="http://www.w3.org/1999/xlink"`` e ``@specific-use``.
 
@@ -1547,6 +1547,8 @@ Exemplo:
     </aff>
     ...
 
+.. note:: O uso desse elemento, ``<country>``, é obrigatório 
+
 
 .. _elemento-author-notes:
  
@@ -1773,7 +1775,7 @@ Atributos obrigatórios
 Ocorre
   Uma ou mais vezes
 
-Notas de rodapé de tabelas são notas inseridas em :ref:`elemento-table-wrap-foot` e que obrigatóriamente possuem o atributo @id.
+Notas de rodapé de tabelas são notas inseridas em :ref:`elemento-table-wrap-foot` e que obrigatoriamente possuem o atributo @id.
 Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do atributo ``@id``.
 
 
@@ -3427,7 +3429,7 @@ Aparece em
   ``<app>``,
   :ref:`elemento-app-group`,
   :ref:`elemento-body`,
-  ``glossary``,
+  :ref:`glossary`,
   :ref:`elemento-p`,
   :ref:`elemento-sec`,
   :ref:`elemento-supplementary-material`,
@@ -3542,7 +3544,7 @@ diálogos, listas, licenças e objetos multimídia como áudio e vídeo.
 O material suplementar pode estar em :ref:`elemento-front`, dentro de 
 :ref:`elemento-article-meta`, em :ref:`elemento-body` como seção ou entre 
 parágrafos ou em :ref:`elemento-back`, onde só poderá ser identificado caso 
-esteja especificado dentro do grupo de apêndices ``<app-group>``.
+esteja especificado dentro do grupo de apêndices :ref:`elemento-app-group`.
  
 Seus atributos obrigatórios são:
  
@@ -3958,7 +3960,7 @@ Exemplo:
 Aparece em
   :ref:`elemento-boxed-text`
   :ref:`elemento-fig`
-  :ref:`elemento-graphic`
+  ``<graphic>``
   :ref:`elemento-media`
   :ref:`elemento-supplementary-material`
   :ref:`elemento-table-wrap`
@@ -3969,7 +3971,7 @@ Ocorre
   Zero ou mais vezes
 
 
-Elemento utilizado para identificar a descrição da fonte, nome do autor de poesias, material de direitos autorais, ou outras informações, agradecimentos. Geralmente utilizado para especificação de fonte de imagens e para identificar o autor de uma poesia ou verso.
+Elemento utilizado para identificar a descrição da fonte, nome de autor de poesias, agradecimentos, material de direitos autorais, ou outras informações. Geralmente utilizado para especificação de fonte de imagens e para identificar o autor de uma poesia ou verso.
 
 
 Exemplo em figura:
@@ -3985,7 +3987,7 @@ Exemplo em figura:
         <attrib>Fonte: Banco de dados do ALiB (2013).</attrib>
     </fig>
 
-.. note:: em figuras o elemento ``<attrib>`` deve ser inserido abaixo de ``<graphic>``.
+.. note:: em figuras o elemento :ref:`elemento-attrib` deve ser inserido abaixo de ``<graphic>``.
 
 
 Exemplo em versos:
@@ -4232,7 +4234,7 @@ Ocorre
   Zero ou mais vezes
 
   O conjunto de referências biliográficas de um artigo é representado pela tag
-  ``<ref-list>``. Esse elemento deve conter, obrigatóriamente, três tags: 
+  ``<ref-list>``. Esse elemento deve conter, obrigatoriamente, três tags: 
   :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
   :ref:`elemento-element-citation`.
 
@@ -4395,19 +4397,21 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
     :ref:`elemento-comment`.
 
 
-.. IMPORTANT::
-  É esperado que as referências do tipo "journal" apresentem pelo menos 3 elementos:
+.. important::
+  É esperado que as referências do tipo "journal" apresentem pelo menos 4 elementos:
 
-  * ``<surname>``
-  * ``<article-title>``
-  * ``<source>``
-  * ``<year>``
+  * :ref:`elemento-surname`
+  * :ref:`elemento-article-title`
+  * :ref:`elemento-source`
+  * :ref:`elemento-year`
 
   Caso a referência não apresente um desses elementos, esta deve ser classificada com o atributo:
 
     @specific-use="display-only"
 
  O atributo @specific-use com o valor "display-only" informa que a referência bibliográfica estará disponível apenas para apresentação, ou seja, não há dados o suficiente para utilizar em indicadores bibliográficos.
+
+ Obs.: Esse atributo deve ser inserido no elemento <element-citation>.
 
 
 Exemplos:
@@ -4446,7 +4450,7 @@ Exemplos:
 
     ...
     <ref-list>
-        <ref id="B3" specific-use="display-only">
+        <ref id="B3">
             <mixed-citation>BICUDO,S.D.;;AZEVEDO,H.C.MAIA S.M. et al. Avanços na criopreservação do sêmen ovino visando sua aplicação em programas de inseminação artificial e em biotecnologias com embriões.Acta Sci. Vet., v.35, p.787-798,2007.</mixed-citation>
             <element-citation publication-type="journal" specific-use="display-only">
               <person-group person-group-type="author">
@@ -4658,6 +4662,37 @@ Exemplos:
         </ref>
     </ref-list> 
     ...
+
+
+  .. code-block:: xml
+ 
+    <!-- Confproc (proceedings) Sample -->
+    
+    ...
+    <ref id="B42">
+        <label>42</label>
+        <mixed-citation>Kornilaki, E., & Nunes, T. (1997). What do young children understand about division? In Proceedings of the 21th Annual International Conference of Psychology of Mathematics Education. Lahti, Finland: University of Helsinki.
+        </mixed-citation>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kornilaki</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Nunes</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <source>What do young children understand about division?</source>
+          <conf-name>Proceedings of the 21th Annual International Conference of Psychology of Mathematics Education</conf-name>
+          <conf-loc>Lahti, Finland</conf-loc>
+          <publisher-name>University of Helsinki</publisher-name>
+        </element-citation>
+      </ref>
+      ...
+
 
 .. code-block:: xml
 
@@ -5238,7 +5273,7 @@ Ocorre
 
 Utilizada quando há uma lista de termos e suas respectivas definições.
 O glossário pode ser apresentado como imagem ou como texto com as identificações
-de ``<term>``, ``<def-list>`` e ``<def>``. O 
+de ``<term>``, :ref:`elemento-def-list` e ``<def>``. O 
 glossário pode estar identificado em: ``<app>``, :ref:`elemento-back`,
 e :ref:`elemento-sec`.
  
@@ -5349,7 +5384,7 @@ Exemplo sub-glossário:
     ...
 
 
-A tag ``glossary`` possui os seguintes atributos: 
+A tag :ref:`elemento-glossary` possui os seguintes atributos: 
 ``@content-type``, ``@id``, ``@specific-use`` e ``@xml:lang``. Porém o atributo
 mais frequente é o ``@id``.
  
@@ -5435,7 +5470,7 @@ Exemplo da tag completa:
 
 Aparece em
   :ref:`elemento-sub-article`, 
-  ``<response>``.
+  :ref:`elemento-response`.
 
 
 Tags obrigatórias
@@ -5535,15 +5570,15 @@ Exemplo da tag completa:
 
 Aparece em
   ``<app>``, 
-  ``<app-group>``, 
-  ``<body>``, 
-  ``<boxed-text>``, 
-  ``<disp-quote>``, 
-  ``<p>``, 
-  ``<ref-list>``, 
-  ``<sec>``, 
-  ``<supplementary-material>``, 
-  ``<verse-group>``
+  :ref:`elemento-app-group`, 
+  :ref:`elemento-body`, 
+  :ref:`elemento-boxed-text`, 
+  :ref:`elemento-disp-quote`, 
+  :ref:`elemento-p`, 
+  :ref:`elemento-ref-list`, 
+  :ref:`elemento-sec`, 
+  :ref:`elemento-supplementary-material`, 
+  :ref:`elemento-verse-group`
 
 Ocorre
   Zero ou mais vezes
@@ -5575,13 +5610,13 @@ Exemplo verse-group:
 
 Aparece em:
   ``<app>``, 
-  ``<app-group>``, 
-  ``<body>``, 
-  ``<boxed-text>``, 
-  ``<glossary>``, 
-  ``<p>``, 
-  ``<ref-list>``, 
-  ``<sec>``
+  :ref:`elemento-app-group`, 
+  :ref:`elemento-body`, 
+  :ref:`elemento-boxed-text`, 
+  :ref:`elemento-glossary`, 
+  :ref:`elemento-p`, 
+  :ref:`elemento-ref-list`, 
+  :ref:`elemento-sec`
 
 Ocorre:
   Zero ou mais vezes
@@ -5646,7 +5681,7 @@ Ocorre
 
 
 Elemento utilizado para indicar um artigo relacionado publicado ou não separadamente.
-Essa tag deve ser inserida para artigos como: Erratas, Press Releases ou em resposta de artigo comentado.
+Essa tag deve ser inserida para artigos como: Erratas ou resposta de artigo comentado.
 
 Os valores possíveis para o atributo ``@related-article-type`` são:
 
@@ -5656,36 +5691,11 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 | corrected-article      | Utilizado em errata para indicar o artigo |
 |                        | objeto da correção.                       |
 +------------------------+-------------------------------------------+
-| press-release          |                                           |
-+------------------------+-------------------------------------------+
-| commentary-article     |                                           |
-+------------------------+-------------------------------------------+
-| article-reference      |                                           |
+| article-commentary     |Utilizado em comentário ou editorial para  |
+|                        |citar o artigo que está sendo comentado.   |
 +------------------------+-------------------------------------------+
 
 
-Artigo Comentado
-
-Artigos que apresentam resposta que está diretamente relacionado ao artigo principal devem apresentar um elemento ``<related-article>. Para isso, no artigo principal o @article-type deve ser "article-commentary".
-Em <response>, inserir o elemento ``<related-article>``.
-Exemplo:
-
-.. code-block:: xml
-
-   ...
-   <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" specific-use="sps-1.2" dtd-version="1.0" article-type="article-commentary" xml:lang="en">
-   ...
-  </back>
-  <response response-type="reply" id="r01">
-  ...
-  <related-article related-article-type="commentary-article" id="r01" vol="109" page="87-92"/>
-  <counts>
-  ...
-
-Para artigo relacionado, o elemento ``<related-article>`` deve apresentar os seguintes atributos: @related-article-type com o valor "commentary-article"; @id; @vol e @page com a informação do intervalo de paginação do documento.
-
-
-Acessibilidade 
 
 
 Referências
