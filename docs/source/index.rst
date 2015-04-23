@@ -152,6 +152,7 @@ Documentação narrativa
 .. toctree::
    :maxdepth: 2
 
+   narr/caracteres
    narr/artigo-comentado
    narr/errata
    narr/aheadofprint
