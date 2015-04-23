@@ -52,6 +52,7 @@ processo de submissão e comunidade de usuários.
 .. toctree::
    :maxdepth: 1
 
+   whatsnew-1.2
    whatsnew-1.1
 
 
