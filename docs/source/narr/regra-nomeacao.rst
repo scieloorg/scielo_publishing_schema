@@ -119,38 +119,46 @@ Casos Especiais
 ---------------
 
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
+|                       |                                                                            |                                            |
 |    Tipo de Arquivo    |     Regra de Nomeação                                                      |             Exemplo                        |
 |                       |     (.xml, .pdf e img)                                                     |                                            |
 +=======================+============================================================================+============================================+
+|                       |                                                                            |                                            |
 |                       | ISSN-acronimo-vol-nº-**s+nºde ordem**-paginação (.xml)                     | 0066-782X-abc-101-06-**s1**-0001.xml       |
 | Suplemento de Número  | ISSN-acronimo-vol-nº-**s+nºde ordem**-paginação-nome da imagem (extensão)  | 0066-782X-abc-101-06-**s1**-0001-gf01.tif  |
 |                       | ISSN-acronimo-vol-nº-**s+nºde ordem**-paginação (.pdf)                     | 0066-782X-abc-101-06-**s1**-0001.pdf       |
 |                       |                                                                            |                                            |
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
+|                       |                                                                            |                                            |
 |                       | ISSN-acronimo-vol-**s+nºde ordem**-nº-paginação (.xml)                     | 0066-782X-rlpf-13-**s1**-0012.xml          |
 | Suplemento de volume  | ISSN-acronimo-vol-**s+nºde ordem**-paginação-nome da imagem (extensão)     | 0066-782X-rlpf-13-**s1**-0012-gf02.tif     |
 |                       | ISSN-acronimo-vol-**s+nºde ordem**-nº-paginação (.pdf)                     | 0066-782X-rlpf-13-**s1**-0012.pdf          |
 |                       |                                                                            |                                            |
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
+|                       |                                                                            |                                            |
 |                       | ISSN-acronimo-**nº**-paginação (.xml)                                      | 0101-4358-er-**55**-00189.xml              |
 | Fascículo sem volume  | ISSN-acronimo-**nº**-paginação-nome da imagem (extensão)                   | 0101-4358-er-**55**-00189-gf1.jpg          |
 |                       | ISSN-acronimo-**nº**-paginação (.pdf)                                      | 0101-4358-er-**55**-00189.pdf              |
 |                       |                                                                            |                                            |
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
+|                       |                                                                            |                                            |
 |                       | ISSN-acronimo-vol-**spe**-paginação (.xml)                                 | 1984-0292-fractal-26-**spe**-0645.xml      |
 | Volume especial       | ISSN-acronimo-vol-**spe**-paginação-nome da imagem (extensão)              | 1984-0292-fractal-26-**spe**-0645-gf01.tif |
 |                       | ISSN-acronimo-vol-**spe**-paginação (.pdf)                                 | 1984-0292-fractal-26-**spe**-0645.pdf      |
 |                       |                                                                            |                                            |
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
+|                       |                                                                            |                                            |
 |                       | ISSN-acronimo-nº-**spe**-paginação (.xml)                                  | 0101-4358-er-04-**spe**-00015.xml          |
 | Número especial       | ISSN-acronimo-nº-**spe**-paginação-nome da imagem (extensão)               | 0101-4358-er-04-**spe**-00015-gf1.png      |
 |                       | ISSN-acronimo-nº-**spe**-paginação (.pdf)                                  | 0101-4358-er-04-**spe**-00015.pdf          |
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-| Material Suplementar  | ISSN-acronimo-vol-nº-paginação-**suppl + nº de ordem**                     | 1983-3083-refuem-24-03-0316-**suppl01**.pdf|
 |                       |                                                                            |                                            |
+| Arquivo com           | ISSN-acronimo-vol-nº-paginação-**suppl + nº de ordem**                     | 1983-3083-refuem-24-03-0316-**suppl01**.pdf|
+| Material Suplementar  |                                                                            |                                            |
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-| Apêndice              | ISSN-acronimo-vol-nº-paginação-**app + nº de ordem**                       | 1983-3083-refuem-24-03-0316-**app01**.pdf  |
 |                       |                                                                            |                                            |
+| Arquivo com           | ISSN-acronimo-vol-nº-paginação-**app + nº de ordem**                       | 1983-3083-refuem-24-03-0316-**app01**.pdf  |
+| Apêndice              |                                                                            |                                            |
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
 
 
