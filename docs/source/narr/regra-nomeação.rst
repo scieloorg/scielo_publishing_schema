@@ -8,13 +8,12 @@ Todos os arquivos, incluindo xml, pdf e imagens referentes ao fascículo em ques
 
 Para Fascículo:
 
-  ISSN-acrônimo-volume-número
-
+    ISSN-acrônimo-volume-número
 
 
 Para Ahead Of Print considerar:
 
-  ISSN-acronimo-lote
+    ISSN-acronimo-lote
 
 
 O lote é composto pelo número do pacote (01, 02...12,13 etc) + os 2 dígitos finais do ano corrente. Veja:
@@ -32,7 +31,6 @@ Para Fascículo:
 
     **ISSN**-**acrônimo**-**volume**-**número**-**paginação**
 
-
 Exemplo:
 
     *0037-8682-rsbmt-48-01-00033.xml*
@@ -42,7 +40,6 @@ Exemplo:
 Para Ahead-Of-Print:
 
     **ISSN**-**acrônimo**-**NúmerodeDoiSemoPrefixo**
-
 
 Exemplo:
 
@@ -61,7 +58,7 @@ Para Fascículo:
 
     **ISSN**-**acrônimo**-**volume**-**número**-**paginação**-**nomedaimagem.extensãodaimagem**
  
- Exemplo:
+Exemplo:
 
     *1807-5932-clin-69-05-0308-gf01.tif*
 
@@ -77,10 +74,9 @@ Exemplo:
 
 Imagens traduzidas:
 
-  **ISSN**-**acrônimo**-**volume**-**número**-**paginação**-**nomedaimagem**-**idioma**.**extensãodaimagem**
+    **ISSN**-**acrônimo**-**volume**-**número**-**paginação**-**nomedaimagem**-**idioma**.**extensãodaimagem**
 
-
-  Exemplo:
+Exemplo:
 
     *0104-1169-rlae-23-01-00001-gf01-es.tif*
 
@@ -95,27 +91,27 @@ Para Fascículo:
 
     **ISSN**-**acrônimo**-**volume**-**número**-**paginação**
 
-  Exemplo:
+Exemplo:
 
     *0102-0935-abmvz-67-01-00037.pdf*
 
 
 Para Ahead Of Print:
 
-  **ISSN**-**acrônimo**-**NúmeroeDoiSemoPrefixo**
+    **ISSN**-**acrônimo**-**NúmeroeDoiSemoPrefixo**
 
-  Exemplo:
+Exemplo:
 
-   *1414-431X-bjmbr-1414-431X20154155.pdf*
+    *1414-431X-bjmbr-1414-431X20154155.pdf*
 
 
 PDFs traduzidos:
 
-  **ISSN**-**acrônimo**-**volume**-**número**-**paginação**-**idioma**
+    **ISSN**-**acrônimo**-**volume**-**número**-**paginação**-**idioma**
 
 Exemplo:
 
-  *0104-1169-rlae-23-01-00003-es.pdf*
+    *0104-1169-rlae-23-01-00003-es.pdf*
 
 
 
@@ -163,21 +159,21 @@ Casos Especiais
           preferencialmente por imagens em formato *tif*.
 
 
-.. importante:: 
-+-------------------------------------------------------------------------------+
-|* ISSN: *            | Se houver mais de um, dar preferência ao impresso.      |
-+---------------------+---------------------------------------------------------+
-|* Acrônimo: *        | Sigla do periódico na SciELO                            |
-+---------------------+---------------------------------------------------------+
-|* Volume: *          | Volume do fascículo                                     |
-+---------------------+---------------------------------------------------------+
-|* Número: *          | Número ou suplemento do fascículo                       |
-+---------------------+---------------------------------------------------------+
-|* Paginação: *       | Manter a informação da primeira página                  |
-+---------------------+---------------------------------------------------------+
-|* Nome da imagem: *  | Prefixo com uma numeração sequencial                    |
-|                     | (ver :ref:`sugestao-atribuicao-id`)                     |
-+---------------------+---------------------------------------------------------+
-|* Extensão: *        | As extensões aceitas pelo SciELO são: .tif, .jpg, .jpeg,| 
-|                     | .gif, .png ou eps.                                      |
-+---------------------+---------------------------------------------------------+
+.. important:: 
+    +---------------------+---------------------------------------------------------+
+    | *ISSN:*             | Se houver mais de um, dar preferência ao impresso.      |
+    +---------------------+---------------------------------------------------------+
+    | *Acrônimo:*         | Sigla do periódico na SciELO                            |
+    +---------------------+---------------------------------------------------------+
+    | *Volume:*           | Volume do fascículo                                     |
+    +---------------------+---------------------------------------------------------+
+    | *Número:*           | Número ou suplemento do fascículo                       |
+    +---------------------+---------------------------------------------------------+
+    | *Paginação:*        | Manter a informação da primeira página                  |
+    +---------------------+---------------------------------------------------------+
+    | *Nome da imagem:*   | Prefixo com uma numeração sequencial                    |
+    |                     | (ver :ref:`sugestao-atribuicao-id`)                     |
+    +---------------------+---------------------------------------------------------+
+    | *Extensão:*         | As extensões aceitas pelo SciELO são: .tif, .jpg, .jpeg,| 
+    |                     | .gif, .png ou eps.                                      |
+    +---------------------+---------------------------------------------------------+
