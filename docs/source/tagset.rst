@@ -207,7 +207,7 @@ Aparece em
   :ref:`elemento-list`,
   ``list-item``,
   :ref:`elemento-ref`,
-  :ref:`elemento-glossary`,
+  ``glossary``,
   ``<app>``,
   :ref:`elemento-def-list`
  
@@ -1749,7 +1749,8 @@ Exemplo:
     </fn-group>
     ...
  
-.. _elemento-table-wrap-foot:
+
+.. _elemento-fn-notas-tabela:
 
 Nota de Tabela
 ^^^^^^^^^^^^^^
@@ -2709,7 +2710,7 @@ Tag que identifica o resumo do artigo e não deve conter informação de
 atributo ``@xml:lang``. Embora em via de regra esse elemento ocorra 
 zero ou mais vezes, ele se faz obrigatório quando ``<article>`` for declarado
 com o atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
-Em ``<abstract>`` deve ser inserido um elemento :ref:`elemento-title` para especificar o título do resumo.
+Em ``<abstract>`` deve ser inserido um elemento ``title`` para especificar o título do resumo.
 
 Os resumos apresentados nos artigos publicados na SciELO normalmente 
 apresentam-se em dois formatos:
@@ -2778,7 +2779,7 @@ formatos simples ou estruturado, da mesma maneira que o elemento :ref:`elemento-
 Deve ser inserida imediatamente após :ref:`elemento-abstract` e obrigatoriamente 
 deve conter o atributo ``@xml:lang``.
 
-Em ``<trans-abstract>`` deve ser inserida uma informação de etiqueta :ref:`elemento-title`.
+Em ``<trans-abstract>`` deve ser inserida uma informação de etiqueta ``title``.
  
  Exemplo:
    
@@ -2840,7 +2841,7 @@ Ocorre
 
 Identifica o grupo de palavras-chave do artigo por idioma. Obrigatoriamente deve 
 conter o atributo ``@xml:lang``.
-Em ``<kwd-group>`` deve ser inserida uma informação de etiqueta :ref:`elemento-title`. 
+Em ``<kwd-group>`` deve ser inserida uma informação de etiqueta ``title``. 
 
 .. code-block:: xml
  
@@ -3970,7 +3971,8 @@ Elemento utilizado para identificar a descrição da fonte, nome de autor de poe
 Exemplo em figura:
  
 .. code-block:: xml
-     ...
+
+    ...
     <fig id="f02" fig-type="other">
       <label>Figure 2</label>
         <caption>
@@ -3986,16 +3988,16 @@ Exemplo em figura:
 Exemplo em versos:
 
 .. code-block:: xml
-     ...
-      <verse-group>
+
+    ...
+    <verse-group>
         <verse-line>Porque quando te não vejo, deixastes de existir.</verse-line>
         <verse-line>E se se tem saudades do que não existe,</verse-line>
         <verse-line>Sinto-a em relação a cousa nenhuma;</verse-line>
         <verse-line>Não é do navio, é de nós, que sentimos saudade.</verse-line>
         <attrib>(Alberto Caeiro, O guardador de rebanhos e outros poemas).</attrib>
-      </verse-group>
-     ...
-
+    </verse-group>
+    ...
 
 
 .. _elemento-media:
@@ -4234,7 +4236,7 @@ Ocorre
   :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
   :ref:`elemento-element-citation`.
 
-Em ``<ref-list>`` deve ser inserida uma informação de etiqueta :ref:`elemento-title`.
+Em ``<ref-list>`` deve ser inserida uma informação de etiqueta ``title``.
 
 Exemplo:
  
@@ -4837,9 +4839,9 @@ Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
 +--------+----------------------------------------+
 | Valor  | Descrição                              |
 +========+========================================+
-| pmid   | :term:`PubMed` ID                              |
+| pmid   | :term:`PubMed` ID                      |
 +--------+----------------------------------------+
-| pcmid  | :term:`PubMed` Central ID                      |
+| pcmid  | :term:`PubMed` Central ID              |
 +--------+----------------------------------------+
 | doi    | Número DOI registrado no Crossref      |
 +--------+----------------------------------------+
@@ -5381,7 +5383,7 @@ Exemplo sub-glossário:
     ...
 
 
-A tag :ref:`elemento-glossary` possui os seguintes atributos: 
+A tag ``glossary`` possui os seguintes atributos: 
 ``@content-type``, ``@id``, ``@specific-use`` e ``@xml:lang``. Porém o atributo
 mais frequente é o ``@id``.
  
@@ -5610,7 +5612,7 @@ Aparece em:
   ``app-group``, 
   :ref:`elemento-body`, 
   :ref:`elemento-boxed-text`, 
-  :ref:`elemento-glossary`, 
+  ``glossary``, 
   :ref:`elemento-p`, 
   :ref:`elemento-ref-list`, 
   :ref:`elemento-sec`
