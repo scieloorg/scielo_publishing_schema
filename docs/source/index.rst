@@ -131,6 +131,19 @@ Onde:
 * **Ocorre**: O número de vezes que o elemento pode ocorrer em um contexto.
 
 
+Documentação narrativa
+----------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   narr/caracteres
+   narr/regra-nomeação
+   narr/artigo-comentado
+   narr/errata
+   narr/aheadofprint
+
+
 Lista de elementos
 ------------------
 
@@ -139,24 +152,11 @@ especificação :term:`SciELO PS`. Note que esta não é a lista completa dos el
 XML que compõem o :term:`tag set` JATS Publishing versão 1.0 ou PMC versão 3.0, e 
 não elimina a necessidade de consultar suas respectivas documentações.
 
-
 .. toctree::
    :maxdepth: 3
 
    tagset
    glossary
-
-
-Documentação narrativa
-----------------------
-
-.. toctree::
-   :maxdepth: 2
-
-   narr/caracteres
-   narr/artigo-comentado
-   narr/errata
-   narr/aheadofprint
 
 
 Indices and tables
