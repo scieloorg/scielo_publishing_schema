@@ -122,6 +122,7 @@ Exemplos:
             <aff id="aff1">
                 <label>1</label>
                 <institution content-type="orgname">Universidade do Estado do Amazonas</institution>
+                <institution content-type="normalized">Universidade do Estado do Amazonas</institution>
                 <addr-line>
                     <named-content content-type="city">Manaus</named-content>
                     <named-content content-type="state">AM</named-content>
@@ -153,8 +154,40 @@ Exemplos:
         </fig>
     </p>
  
-
 .. note:: Não envolver a tag ``<xref>`` em ``<sup>``.
+
+
+Para casos em que não há label explícito para relacionar o autor à afiliação, deve ser inserido em :ref:`elemento-contrib` um elemento ``<xref>`` "fechado". Veja:
+
+
+.. code-block:: xml
+    
+  ...
+  <article-meta>
+    ...
+    <contrib-group>
+      <contrib contrib-type="author">
+        <name>
+            <surname>Broering</surname>
+            <given-names>Laurent Wiliam</given-names>
+        </name>
+        <xref ref-type="aff" rid="aff1"/>
+      </contrib>
+    </contrib-group>
+    <aff id="aff1">
+      <institution content-type="normalized">Fundação Getúlio Vargas</institution>
+      <institution content-type="orgname">Fundação Getúlio Vargas</institution>
+      <institution content-type="orgdiv1">EAESP</institution>
+      <addr-line>
+        <named-content content-type="city">São Paulo</named-content>
+        <named-content content-type="state">SP</named-content>
+      </addr-line>
+      <country country="BR">Brazil</country>
+      <institution content-type="original">Fundação Getúlio Vargas - FGV-EAESP, Av. 9 de Julho, 2029, Bela Vista, 01313-902, São Paulo, SP, Brazil.</institution>
+    </aff>
+  ...
+
+.. note:: Não inserir label caso não exista no PDF.
 
 
 .. _elemento-label:
@@ -246,7 +279,6 @@ Aparece em
   :ref:`elemento-trans-abstract`,
   :ref:`elemento-fn`,
   :ref:`elemento-body`,
-  ``title``,
   :ref:`elemento-disp-quote`,
   ``list-item``,
   ``sig``,
@@ -302,49 +334,6 @@ inteiro, como segue:
 +------------------------+---------------------------+---------+---------------------+
 | sub-article            | sub-artigo                | S       | S1, S2, ...         |
 +------------------------+---------------------------+---------+---------------------+
-
-
-.. _regra-nomeacao-imagem:
-
-Regra de nomeação de imagens
-============================
- 
-Para imagens (que podem ser figuras, equações, apêndices e etc) utilizar a 
-seguinte estrutura de nomeação tanto nas imagens dentro do XML quanto para 
-as imagens da pasta do pacote do fascículo ou lote de :term:`ahead-of-print`.
- 
-Para fascículo: 
-
-    **ISSN**-**acrônimo**-**volume**-**número**-**paginação**-**nomedaimagem.extensãodaimagem**
- 
-
-Sendo:
- 
-* ISSN: Se houver mais de um, dar preferência ao impresso.
-* Acrônimo: Sigla do periódico na SciELO
-* Volume: Volume do fascículo
-* Número: Número ou suplemento do fascículo (tratar como "n" e "s")
-* Paginação: Manter a informação da primeira página
-* Nome da imagem: Prefixo com uma numeração sequencial 
-  (ver :ref:`sugestao-atribuicao-id`)
-
- Exemplo:
- 
-    *1807-5932-clin-69-05-0308-gf01.tif*
- 
-
-.. note:: Cada item deve ser separado por um hífen e obrigatoriamente deve-se 
-          manter visível a extensão da imagem após o "ponto", optando 
-          preferencialmente por imagens em formato *tif*.
- 
-
-Para ahead-of-print:
- 
-    **ISSN**-**acrônimo**-**númerodedoisemoprefixo.extensãodaimagem**
- 
-Exemplo:
- 
-    *0074-0276-mioc-00740276130057-gf01.tif*
 
 
 .. _elemento-article:
@@ -2634,6 +2623,8 @@ Os valores possíveis para ``@xlink:href`` são:
 +-----------------------------------------------------+------------------------+
 | https://creativecommons.org/licenses/by-nc-nd/3.0/  | CC-BY-NC-ND versão 3.0 |
 +-----------------------------------------------------+------------------------+
+| https://creativecommons.org/licenses/by-nc-nd/4.0/  | CC-BY-NC-ND versão 4.0 |
++-----------------------------------------------------+------------------------+
 
 
 Além da referência à URL, o texto da licença deve ser adicionado na tag
@@ -3158,7 +3149,7 @@ Ocorre
 O body compreende o conteúdo e desenvolvimento do artigo.
  
 .. note:: Informamos que as tabelas, figuras e equações que não estão em 
-          :ref:`elemento-app-group`, devem ser inseridas obrigatoriamente após 
+          ``app-group``, devem ser inseridas obrigatoriamente após 
           a primeira chamada no texto. Para material suplementar, analisar e 
           identificar conforme o PDF.
  
@@ -3426,8 +3417,8 @@ codificação recomendada pela :term:`W3C` em linguagem :term:`MathML`
 ------------
 
 Aparece em
-  ``<app>``,
-  :ref:`elemento-app-group`,
+  :ref:`elemento-app`,
+  ``app-group``,
   :ref:`elemento-body`,
   :ref:`glossary`,
   :ref:`elemento-p`,
@@ -3544,7 +3535,7 @@ diálogos, listas, licenças e objetos multimídia como áudio e vídeo.
 O material suplementar pode estar em :ref:`elemento-front`, dentro de 
 :ref:`elemento-article-meta`, em :ref:`elemento-body` como seção ou entre 
 parágrafos ou em :ref:`elemento-back`, onde só poderá ser identificado caso 
-esteja especificado dentro do grupo de apêndices :ref:`elemento-app-group`.
+esteja especificado dentro do grupo de apêndices ``app-group``.
  
 Seus atributos obrigatórios são:
  
@@ -5074,24 +5065,23 @@ Exemplo:
     ...
 
 
-.. _elemento-app-group:
+.. _elemento-app:
 
-<app-group>
------------
+<app>
+-----
 
 Aparece em
   :ref:`elemento-back`
 
 Atributos obrigatório 
   1. id (Ver :ref:`sugestao-atribuicao-id`)
-  <!-- aqui como faremos para dividir o <app-group> do <app>?--!>
-
+ 
 Ocorre
   Zero ou uma vez
 
 Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
 básica de um apêndice devemos levar em consideração duas tags importantes, a de
-grupo de apêndice :ref:`elemento-app-group` e de apêndice propriamente dito
+grupo de apêndice ``app-group`` e de apêndice propriamente dito
 ``<app>``. Obrigatoriamente deve ser inserida uma informação de
 etiqueta :ref:`elemento-label` em ``<app>``.
 
@@ -5257,6 +5247,8 @@ Exemplo de Apêndice com vídeo:
     </app-group>
     ...
  
+.. note:: Obrigatoriamente o elemento :ref:`elemento-app` deve estar inserido em ``<app-group>``.,
+
 
 .. _elemento-def-list:
  
@@ -5569,8 +5561,8 @@ Exemplo da tag completa:
 -------------
 
 Aparece em
-  ``<app>``, 
-  :ref:`elemento-app-group`, 
+  :ref:`elemento-app`, 
+  ``app-group``, 
   :ref:`elemento-body`, 
   :ref:`elemento-boxed-text`, 
   :ref:`elemento-disp-quote`, 
@@ -5609,8 +5601,8 @@ Exemplo verse-group:
 ------------
 
 Aparece em:
-  ``<app>``, 
-  :ref:`elemento-app-group`, 
+  :ref:`elemento-app`, 
+  ``app-group``, 
   :ref:`elemento-body`, 
   :ref:`elemento-boxed-text`, 
   :ref:`elemento-glossary`, 
