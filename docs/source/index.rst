@@ -1,10 +1,7 @@
 SciELO Publishing Schema - Guia de uso dos elementos e atributos para documentos em XML
 =======================================================================================
  
-Versão |version| - março de 2015 (previsão).
-
-.. warning:: Esta é uma versão em desenvolvimento e não deve ser utilizada como 
-             referência para a produção de documentos em XML. 
+Versão |version| - abril de 2015.
 
 
 Versões anteriores:
@@ -138,7 +135,7 @@ Documentação narrativa
    :maxdepth: 2
 
    narr/caracteres
-   narr/regra-nomeação
+   narr/regra-nomeacao
    narr/artigo-comentado
    narr/errata
    narr/aheadofprint
