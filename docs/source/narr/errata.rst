@@ -56,7 +56,7 @@ seguintes atributos: ``@related-article-type``; ``@id``; ``@xlink:href`` e
 ``@ext-link-type="doi"``. 
 Sendo que em ``@related-article-type`` o valor deverá ser "corrected-article".
 
-No documento a ser corrigido, inserir uma nota de rodapé conforme o exemplo:
+No artigo a que a errata se refere, inserir uma nota de rodapé conforme o exemplo:
 
 .. code-block:: xml
 
@@ -72,6 +72,10 @@ No documento a ser corrigido, inserir uma nota de rodapé conforme o exemplo:
         ...
     </back>
     ...
+
+
+É possível a publicação de Erratas na modalidade Ahead Of Print, estas seguem as mesmas regras já definidas, com a diferença de que em :ref:`elemento-article-title` além da inserção da palavra Errata, Erratum, Corrigendum e etc conforme PDF, deve-se inserir dois ponto e título do artigo que possui a informação incorreta. O padrão do documento em si deve seguir as instruções de Ahead Of Print.
+
 
 .. note:: Para mais informações, verificar o "Guia para o registro e publicação de errata, retratações e manifestações de preocupação" em: 
     http://www.scielo.org/php/level.php?lang=pt&component=56&item=53

@@ -862,7 +862,10 @@ Para ahead-of-print:
     ...
  
 
- ..note:: Para documentos como editoriais, erratas, cartas ao editor etc que não apresentam título, mas apenas a seção, é preciso repetir o título da seção no front e marcá-lo com as tags de título.
+.. note:: Para documentos como editoriais, erratas, cartas ao editor etc que não 
+          apresentam título, mas apenas a seção, é preciso repetir o título da 
+          seção no front e marcá-lo com as tags de título.
+
 
 .. _elemento-title-group:
 
