@@ -2883,12 +2883,14 @@ Exemplo:
     <article-meta>
         ...
         <kwd-group xml:lang="pt">
+            <title>Palavras-chave</title>
             <kwd>Broncoscopia</kwd>
             <kwd>Curvas de fluxo-volume expiratório máximo</kwd>
             <kwd>sensibilidade e especificidade</kwd>
             <kwd>Neoplasias pulmonares</kwd>    
         </kwd-group>
         <kwd-group xml:lang="en">
+            <title>Keywords</title>
             <kwd>Bronchoscopy</kwd>
             <kwd>Maximal expiratory flow-volume curves</kwd>
             <kwd>Sensitivity and specificity</kwd>
