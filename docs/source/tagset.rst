@@ -48,9 +48,9 @@ Aparece em
   :ref:`elemento-contrib`,
   :ref:`elemento-p`,
   ``th``,
-  ``td``,
-  :ref:`elemento-disp-quote`,
-  ``table-fn``
+  ``td``.
+  ``verse-line``,
+  :ref:`elemento-attrib`.
  
 Atributos obrigatórios
   1. rid
@@ -210,7 +210,8 @@ Aparece em
   ``glossary``,
   ``<app>``,
   :ref:`elemento-def-list`
- 
+  :ref:`elemento-verse-group`
+
 Ocorre
   Zero ou mais vezes
 
@@ -309,30 +310,34 @@ inteiro, como segue:
 +------------------------+---------------------------+---------+---------------------+
 | app                    | Apêndice                  | app     | app1, app2, ...     |
 +------------------------+---------------------------+---------+---------------------+
+| author-notes/fn |      | Notas de rodapé do artigo | fn      | fn1, fn2, ...       | 
+| fn-group/fn            |                           |         |                     |
++------------------------+---------------------------+---------+---------------------+
+| boxed-text             | Caixa de texto            | bx      | bx1, bx2, ...       |
++------------------------+---------------------------+---------+---------------------+
 | corresp                | Correspondência           | c       | c1, c2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| def-list               | Lista de Definições       | d       | d1, d2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 | disp-formula           | Equações                  | e       | e1, e2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 | fig                    | Figuras                   | f       | f1, f2, ...         |
 +------------------------+---------------------------+---------+---------------------+
-| def-list               | Glossário                 | d       | d1, d2, ...         |
-+------------------------+---------------------------+---------+---------------------+
-| table-wrap-foot/fn     | Notas de rodapé de tabela | TFN     | TFN1, TFN2, ...     |
-+------------------------+---------------------------+---------+---------------------+
-| author-notes/fn |      | Notas de rodapé do artigo | fn      | fn1, fn2, ...       | 
-| fn-group/fn            |                           |         |                     |
-+------------------------+---------------------------+---------+---------------------+
-| table-wrap             | Tabela                    | t       | t1, t2, ...         |
-+------------------------+---------------------------+---------+---------------------+
-| supplementary-material | Suplemento                | suppl   | suppl1, suppl2, ... |
-+------------------------+---------------------------+---------+---------------------+
-| ref                    | Referência bibliográfica  | B       | B1, B2, ...         |
+| glossary               | Glossário                 | gl      | gl1, gl2, ...       |
 +------------------------+---------------------------+---------+---------------------+
 | media                  | Media                     | m       | m1, m2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| ref                    | Referência bibliográfica  | B       | B1, B2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 | sec                    | Seções                    | sec     | sec1, sec2, ...     |
 +------------------------+---------------------------+---------+---------------------+
 | sub-article            | sub-artigo                | S       | S1, S2, ...         |
++------------------------+---------------------------+---------+---------------------+
+| supplementary-material | Suplemento                | suppl   | suppl1, suppl2, ... |
++------------------------+---------------------------+---------+---------------------+
+| table-wrap-foot/fn     | Notas de rodapé de tabela | TFN     | TFN1, TFN2, ...     |
++------------------------+---------------------------+---------+---------------------+
+| table-wrap             | Tabela                    | t       | t1, t2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 
 
@@ -890,16 +895,20 @@ do artigo. Nele são identificados :ref:`elemento-article-title` e
 ^^^^^^^^^^^^^^^
 
 Aparece em
-  :ref:`elemento-title-group`, :ref:`elemento-element-citation`
+  :ref:`elemento-title-group`, 
+  :ref:`elemento-element-citation`
  
 Ocorre
-  Uma vez
+  zero ou uma vez
 
 
 Esta tag pode ser utilizada para especificar o título do artigo em si 
 em :ref:`elemento-article-meta`, ou para especificar um título de documento 
 nas referências em :ref:`elemento-element-citation`. Em ambos os casos, o 
 atributo ``@xml:lang`` não deve ser utilizado.
+
+.. note:: O elemento ``<article-title>`` é obrigatório em :ref:`elemento-title-group`, .
+
  
 Exemplo:
  
@@ -3380,11 +3389,9 @@ Ocorre
   Zero ou mais vezes
 
 
-Também representa uma tag para identificar equações que estejam 
-posicionadas em linha, ou seja, em meio a um parágrafo.
+Elemento utilizado para identificar equações em imagem que estejam posicionadas em linha, ou seja, em meio a um parágrafo.
  
-Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
-atributo ``@id``.
+Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do atributo ``@id``.
  
 Exemplo:
 
@@ -3394,9 +3401,26 @@ Exemplo:
     <p>We also used an enrichment factor for surface waters (EF<sub>w</sub>) based on the equation:<inline-graphic xlink:href="1234-5678-rctb-45-05-0110-e01.tif"/>. The EF<sub>s</sub> and EF<sub>w</sub> quantified the concentration of the element of interest (C<sub>i</sub>) in the sample, in relation to the (natural) geochemical background.</p>
     ...
 
-No caso de equações codificadas, deve-se observar as orientações de 
-codificação recomendada pela :term:`W3C` em linguagem :term:`MathML` 
-(http://www.w3.org/TR/MathML3/), sendo o elemento base ``<mml:math>``.
+
+.. _elemento-inline-formula:
+ 
+<inline-formula>
+----------------
+ 
+Aparece em
+  :ref:`elemento-product`, 
+  :ref:`elemento-body`,
+  :ref:`elemento-p`,
+  :ref:`elemento-sec`,
+  ``th``,
+  ``td``
+ 
+Ocorre
+  Zero ou mais vezes
+
+
+Elemento utilizado para identificar equações codificadas em linha. Nesse caso, a codificação pode ser feita de acordo com :term:`W3C` em linguagem :term:`MathML` 
+(http://www.w3.org/TR/MathML3/), sendo o elemento base ``<mml:math>`` ou com outros tipos de codificação, exemplo: caracteres ASCII, TeX ou LaTeX.
  
 **Exemplo**: para codificar  σˆ2*
  
@@ -3428,7 +3452,7 @@ Aparece em
   :ref:`elemento-app`,
   ``app-group``,
   :ref:`elemento-body`,
-  :ref:`glossary`,
+  :ref:`elemento-glossary`,
   :ref:`elemento-p`,
   :ref:`elemento-sec`,
   :ref:`elemento-supplementary-material`,
@@ -3948,9 +3972,7 @@ Exemplo:
     </fig>
 
  
- .. note:: Para figuras que apresentam informação de fonte, capturar o dado junto da imagem.
-
-
+ 
 .. _elemento-attrib:
 
 <attrib>
@@ -4018,6 +4040,7 @@ Aparece em
 Atributos obrigatórios
   1. mime-subtype
   2. xlink:href
+  3. mime-type
  
 Ocorre
   Zero ou mais vezes
@@ -4569,7 +4592,6 @@ Exemplos:
                 <collab>COB -Comitê Olímpico Brasileiro</collab>
             </person-group>
             <source>Desafio para o corpo</source>
-            <year>2010</year>
             <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.cob.org.br/esportes/esporte.asp?id=39">http://www.cob.org.br/esportes/esporte.asp?id=39</ext-link></comment>
             <date-in-citation content-type="access-date">10 abr 2010</date-in-citation>
         </element-citation> 
@@ -4579,6 +4601,29 @@ Exemplos:
 .. note:: Quando a referência apresentar URL com texto (Disponível em: ou 
           Available from:) identificar conforme o exemplo acima.
  
+.. code-block:: xml
+
+<!-- Webpage Sample 2 -->
+  
+  <ref id="B21">
+        <label>21</label>
+        <mixed-citation>Fugh-Berman A. PharmedOUT [Internet]. Washington: Georgetown University, Department of Physiology and Biophysics; c2006 [cited 2007 Mar 23]. Available from: http://www.pharmedout.org/.</mixed-citation>
+    <element-citation publication-type="webpage"> 
+      <person-group person-group-type="author">
+        <name>
+          <surname>Fugh-Berman</surname>
+          <given-names>A</given-names>
+        </name>
+      </person-group>
+      <source>PharmedOUT [Internet]</source>
+      <publisher-loc>Washington</publisher-loc>
+      <publisher-name>Georgetown University, Department of Physiology and Biophysics</publisher-name>
+      <year>c2006</year>
+      <date-in-citation>cited 2007 Mar 23</date-in-citation>
+      <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.pharmedout.org">http://www.pharmedout.org</ext-link></comment>
+      </element-citation>
+  </ref>
+
 .. code-block:: xml
 
     <!-- Report Sample -->
@@ -5268,18 +5313,31 @@ Exemplo de Apêndice com vídeo:
 ----------
 
 Aparece em
-  :ref:`elemento-back`,
   ``<app>``
+  :ref:`elemento-app-group`
+  :ref:`elemento-body`
+  :ref:`elemento-boxed-text`
+  ``<def-list>``
+  :ref:`elemento-glossary`
+  ``<list-item>``
+  :ref:`elemento-p`
+  :ref:`elemento-ref-list`
+  :ref:`elemento-sec`
+
 
 Ocorre
   Zero ou mais vezes
 
 
+
 Utilizada quando há uma lista de termos e suas respectivas definições.
-O glossário pode ser apresentado como imagem ou como texto com as identificações
-de ``<term>``, :ref:`elemento-def-list` e ``<def>``. O 
-glossário pode estar identificado em: ``<app>``, :ref:`elemento-back`,
-e :ref:`elemento-sec`.
+A lista de definições deve ser apresentada como texto e apresenta os seguintes elementos:
+
+:ref:`elemento-title`, ``<term-head>``, ``<def-head>``, ``<def-item>`` e ``<def-list>``.
+
+Em ``<def-item>`` utilizar os seguintes elementos:
+<term>  - Utilizado para identificar a palavra, frase, equação etc que está sendo definido ou descrito.
+<def> - Descrição, explicação da palavra ou frase identificada em <term>. Nesse elemento deve ser inserido, obrigatoriamente, o elemento <p>.
  
 Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
 atributo ``@id``.
@@ -5289,103 +5347,198 @@ Exemplo em body:
  
 .. code-block:: xml
 
-    ... 
-    <glossary>
-        <def-list id="d01">
-            <title>Glossário</title>
-              <def-item>
-                  <term>Metabólito</term>
-                  <def><p>É qualquer intermediário ou produto resultante do metabolismo.</p></def>
-              </def-item>
-              <def-item>
-                  <term>Potência</term>
-                  <def><p>É a dose de uma droga requerida para produzir um efeito específico de dada intensidade, comparada a um padrão de referência</p></def>
-              </def-item>
-              <def-item>
-                  <term>Relação estrutura-atividade</term>
-                  <def><p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p></def>
-              </def-item>
-        </def-list>
-    </glossary>
+  <body>
+    <def-list id="d1">
+      <def-item>
+        <term>Angina pectoris (Angina de peito)</term>
+        <def>
+          <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
+        </def>
+      </def-item>
+      <def-item>
+        <term>Antagonista</term>
+        <def>
+            <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
+        </def>
+      </def-item>
+      <def-item>
+        <term>Biodisponibilidade</term>
+          <def>
+            <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
+          </def>
+      </def-item>
+    </def-list>
+  </body>
+
+
+Exemplo sublista de definições:
+ 
+.. code-block:: xml
+ 
     ...
+    <def-list id="d2">
+      <label>Glossário</label>          
+      <def-item>
+        <term>I</term>
+        <def>
+          <p>moment of inertia</p>
+        </def>
+      </def-item>
+      <def-item>
+        <term>V</term>
+        <def>
+          <p>shear force</p>
+        </def>
+      </def-item>
+        <def-list>
+          <def-item>
+            <term>D<sub>E</sub>50</term>
+            <def>
+              <p>Dose do fármaco necessária para atingir 50% do efeito farmacológico desejado</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>Depuração</term>
+            <def>
+              <p>Indica a taxa de remoção de uma substância do sangue quando ele atravessa um órgão, por ex., fígado ou rim.</p>
+            </def>
+          </def-item>
+        </def-list>
+    </def-list>
+    ...
+
+
+.. _elemento-glossary:
+ 
+<glossary>
+----------
+
+Aparece em:
+
+``<app>``,
+:ref:`elemento-back`,
+:ref:`elemento-boxed-text,
+``<glossary>``
+
+Ocorre:
+
+Zero ou mais vezes
+
+
+Elemento ``<glossary>`` é utilizado com a finalidade de descrever um glossário para documento. O conteúdo desse elemento geralmente é uma lista de definições, apresentando elementos de ``<def-list>``. Nesse caso, utilizar as regras de :ref:`elemento-def-list`.
+
+Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do atributo ``@id``.
 
 
 Exemplo em back:
  
 .. code-block:: xml
 
-    ... 
-    <back>
-        <app-group>
-            <app id="d01">
-                <label>Glossário</label>
-                <glossary>
-                    <def-list>
-                        <def-item>
-                            <term>Metabólito</term>
-                            <def><p>É qualquer intermediário ou produto resultante do metabolismo.</p></def>
-                        </def-item>
-                        <def-item>
-                            <term>Potência</term>
-                            <def><p>É a dose de uma droga requerida para produzir um efeito específico de dada intensidade, comparada a um padrão de referência</p></def>
-                        </def-item>
-                        <def-item>
-                            <term>Relação estrutura-atividade</term>
-                            <def><p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p></def>
-                        </def-item>
-                    </def-list>
-                </glossary>
-            </app>
-        </app-group>
-        ...
-    </back>
-    ...
+  <back>
+    <glossary id="gl1">
+      <label>Glossário</label>
+      <def-list>
+        <def-item>
+          <term>PEL</term>
+          <def>
+            <p>Passivo Externo Líquido</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PEL1</term>
+          <def>
+            <p>Passivo Externo Líquido1</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PEL2</term>
+          <def>
+            <p>Passivo Externo Líquido2</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DCCA</term>
+          <def>
+            <p>déficit acumulado na conta corrente do balanço de pagamentos</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+  </back>
 
 
-.. note:: Glossário em <back> deve ser inserido em back\app-group\app\glossary.
-          Para esse caso, é obrigatório inserir um ID para <app>.
-
-Exemplo sub-glossário:
+Exemplo em apêndice:
  
 .. code-block:: xml
+
+  <back>
+    <app-group>
+      <app>
+      <label>Glossário</label>
+        <glossary id="gl2">
+          <def-list>
+            <def-item>
+              <term>Metabólito</term>
+              <def>
+                <p>É qualquer intermediário ou produto resultante do metabolismo.</p>
+              </def>
+            </def-item>
+            <def-item>
+              <term>Potência</term>
+              <def>
+                <p>É a dose de uma droga requerida para produzir um efeito específico de dada intensidade, comparada a um padrão de referência</p>
+              </def>
+            </def-item>
+            <def-item>
+              <term>Relação estrutura-atividade</term>
+              <def>
+                <p>É a relação entre estrutura química e atividade farmacológica para uma série de composto</p>
+              </def>
+            </def-item>
+          </def-list>
+        </glossary>
+      </app>
+    </app-group>
+  </back>
+
+
+Exemplo em boxed-text:
  
-    ...
-    <def-list id="d01">
-        <label>Glossário</label>          
+.. code-block:: xml
+
+  ...
+  <boxed-text id="bx2">
+    <sec>
+      <title>Box 1. De Humanis corporis fabrica libri septem, or the <italic>Fabrica</italic>, and others.</title>
+      <p><italic>De humani corporis fabrica libri septem,  </italic> the <italic>Fabrica</italic>,1<sup>st  </sup>edition, came to light in 1543, by the printer Johannes Oporinus, from Basel. It is one of the most influential books on human anatomy, and considered one of the great scientific and artistic oeuvre of mankind. The <italic>Fabrica</italic> is illustrated with detailed illustrations, printed with woodcut engravings, in Venice, with the identity of the artist is uncertain.</p>
+      <p>The <italic>Fabrica,</italic> 2<sup>nd</sup> edition, released in 1555, dedicated to Charles V, is considered more sumptuous than the 1<sup>st  </sup>one. There are also corrections, decrease of redundancies, as well as inclusion of physiological experiments, by means of nervous section, e.g., section of the recurrent nerve, with consequent laryngeal paralysis.</p>
+      <p><italic>De Humani corporis fabrica librorum Epitome</italic>, the <italic>Epitome</italic>, printed in 1543, was intended by Vesalius to be a very brief descriptive book, being a remarkable condensation of the 1<sup>st</sup> edition of the main book. It has 6 chapters, the 5<sup>th</sup> concerned with "The brain and the nervous system".  </p>
+    </sec>
+    <glossary>
+      <def-list id="d1">
+        <title>Nomenclature</title>
         <def-item>
-            <term><bold>Angina pectoris (Angina de peito) –</bold></term>
-            <def>
-                <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
-            </def>
+          <term>u</term>
+          <def>
+            <p>time domain vertical displacement</p>
+          </def>
         </def-item>
         <def-item>
-            <term><bold>Antagonista</bold></term>
-            <def>
-                <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
-            </def>
+          <term>û</term>
+          <def>
+            <p>frequency domain vertical displacement</p>
+          </def>
         </def-item>
         <def-item>
-            <term><bold>Biodisponibilidade</bold></term>
-            <def>
-                <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
-            </def>
+          <term>E</term>
+          <def>
+            <p>Young´s Modulus</p>
+          </def>
         </def-item>
-        <def-list>
-            <def-item>
-                <term><bold>D<sub>E</sub>50 –</bold></term>
-                <def>
-                    <p>Dose do fármaco necessária para atingir 50% do efeito farmacológico desejado</p>
-                </def>
-            </def-item>
-            <def-item>
-                <term><bold>Depuração</bold></term>
-                <def>
-                    <p>Indica a taxa de remoção de uma substância do sangue quando ele atravessa um órgão, por ex., fígado ou rim.</p>
-                </def>
-            </def-item>
-        </def-list>
-    </def-list>
-    ...
+      </def-list>
+    </glossary>
+  </boxed-text>
+ ...
 
 
 A tag ``glossary`` possui os seguintes atributos: 
@@ -5589,7 +5742,7 @@ Ocorre
 
 
 Elemento utilizado para apresentar poemas, versos ou músicas. Nesse elemento 
-também pode ser inserido a tag :ref:`elemento-attrib` para identificação do autor.
+também pode ser inserido a tag :ref:`elemento-attrib` para identificação do autor e :ref:`elemento-label` para identificação do título do poema, verso etc.
 
 
 Exemplo verse-group:
@@ -5598,6 +5751,7 @@ Exemplo verse-group:
  
     ...
     <verse-group>
+      <label>Porque é que um sono agita</label>
         <verse-line>E, num fiel regresso</verse-line>
         <verse-line>Ao que já era bruma,</verse-line>
         <verse-line>Sonolento me apresso</verse-line>
@@ -5695,7 +5849,7 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 | corrected-article      | Utilizado em errata para indicar o artigo |
 |                        | objeto da correção.                       |
 +------------------------+-------------------------------------------+
-| article-commentary     |Utilizado em comentário ou editorial para  |
+| commentary-article     |Utilizado em comentário ou editorial para  |
 |                        |citar o artigo que está sendo comentado.   |
 +------------------------+-------------------------------------------+
 
