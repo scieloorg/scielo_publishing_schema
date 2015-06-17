@@ -2630,21 +2630,27 @@ da obra. Para mais informações consultar: http://creativecommons.org/
 
 Os valores possíveis para ``@xlink:href`` são:
 
-+-----------------------------------------------------+------------------------+
-| Valor                                               | Descrição              |
-+=====================================================+========================+
-| http://creativecommons.org/licenses/by/4.0/         | CC-BY versão 4.0       |
-+-----------------------------------------------------+------------------------+
-| http://creativecommons.org/licenses/by/3.0/         | CC-BY versão 3.0       |
-+-----------------------------------------------------+------------------------+
-| http://creativecommons.org/licenses/by-nc/4.0/      | CC-BY-NC versão 4.0    |
-+-----------------------------------------------------+------------------------+
-| http://creativecommons.org/licenses/by-nc/3.0/      | CC-BY-NC versão 3.0    |
-+-----------------------------------------------------+------------------------+
-| https://creativecommons.org/licenses/by-nc-nd/3.0/  | CC-BY-NC-ND versão 3.0 |
-+-----------------------------------------------------+------------------------+
-| https://creativecommons.org/licenses/by-nc-nd/4.0/  | CC-BY-NC-ND versão 4.0 |
-+-----------------------------------------------------+------------------------+
++--------------------------------------------------------+-------------------------+
+| Valor                                                  | Descrição               |
++========================================================+=========================+
+| http://creativecommons.org/licenses/by/4.0/            | CC-BY versão 4.0        |
++--------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by/3.0/            | CC-BY versão 3.0        |
++--------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by-nc/4.0/         | CC-BY-NC versão 4.0     |
++--------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by-nc/3.0/         | CC-BY-NC versão 3.0     |
++--------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc-nd/3.0/     | CC-BY-NC-ND versão 3.0  |
++--------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc-nd/4.0/     | CC-BY-NC-ND versão 4.0  |
++--------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by/3.0/igo/       | BY/IGO versão 3.0       |
++--------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc/3.0/igo/    | BY-NC/IGO versão 3.0    |
++--------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc-nd/3.0/igo/ | BY-NC-ND/IGO versão 3.0 |
++--------------------------------------------------------+-------------------------+
 
 
 Além da referência à URL, o texto da licença deve ser adicionado na tag
