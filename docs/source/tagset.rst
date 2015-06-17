@@ -33,8 +33,8 @@ Exemplo versão JATS 1.0:
 Tags Flutuantes
 ===============
 
-As chamadas tags flutuantes podem aparecer em todo o documento, ``<front>``, 
-``<body>`` e ``<back>``.
+As chamadas tags flutuantes podem aparecer em todo o documento, :ref:`elemento-front`, 
+:ref:`elemento-body` e :ref:`elemento-back`.
 
 
 .. _elemento-xref:
@@ -208,7 +208,7 @@ Aparece em
   ``list-item``,
   :ref:`elemento-ref`,
   ``glossary``,
-  ``<app>``,
+  :ref:`elemento-app`,
   :ref:`elemento-def-list`
   :ref:`elemento-verse-group`
 
@@ -276,15 +276,18 @@ Exemplos:
  
 Aparece em
   :ref:`elemento-abstract`,
-  :ref:`elemento-sec`,
-  :ref:`elemento-trans-abstract`,
-  :ref:`elemento-fn`,
+  :ref:`elemento-ack`,
+  :ref:`elemento-app`,
   :ref:`elemento-body`,
+  :ref:`elemento-boxed-text`,
+  ``<def>``,
   :ref:`elemento-disp-quote`,
-  ``list-item``,
-  ``sig``,
-  ``<app>``,
-  ``def``
+  :ref:`elemento-fn`,
+  ``<list-item>``,
+  :ref:`elemento-ref-list`,
+  :ref:`elemento-sec`,
+  :ref:`elemento-trans-abstract`
+
  
 Ocorre
   Uma ou mais vezes
@@ -661,7 +664,7 @@ Exemplo:
 Aparece em
   :ref:`elemento-journal-meta`, :ref:`elemento-element-citation`
  
-Atributos obrigatórios em ``<front>``
+Atributos obrigatórios em :ref:`elemento-front`
   1. pub-type='ppub' ou pub-type='epub'
  
 Ocorre
@@ -1032,8 +1035,8 @@ Ocorre
 
 Em ``<contrib>`` especifica-se o indivíduo ou instituição que contribuiu para 
 o artigo. Pode ser anônimo ou ter um ou vários autores, inclusive autores 
-institucionais. Tags como ``<name>``, ``<collab>``, ``<on-behalf-of>``, 
-``<xref>``, ``<role>`` e ``<anonymous>`` podem ser encontradas neste elemento. 
+institucionais. Tags como :ref:`elemento-name`, :ref:`elemento-collab`, :ref:`elemento-on-behalf-of`, 
+:ref:`elemento-xref`, :ref:`elemento-role` e ``<anonymous>`` podem ser encontradas neste elemento. 
  
 O atributo ``@contrib-type`` pode possuir os valores:
 
@@ -1645,7 +1648,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 | other                     | Especifica aquelas notas diferentes das          |
 |                           | relacionados acima. É possível também ter este   |
 |                           | tipo de nota em :ref:`elemento-fn-group` em      |
-|                           | ``<back>``                                       |
+|                           | :ref:`elemento-back`                                       |
 +---------------------------+--------------------------------------------------+
 | presented-at              | Trabalho apresentado em Conferência, Colóquio etc|
 +---------------------------+--------------------------------------------------+
@@ -1829,7 +1832,7 @@ Exemplo:
     </author-notes>
     ...
  
-.. note:: Esta tag não necessita da inserção de parágrafo ``<p>``.
+.. note:: Esta tag não necessita da inserção de parágrafo :ref:`elemento-p`.
  
  
 .. _elemento-pub-date:
@@ -2006,7 +2009,7 @@ Aparece em
 
 Ocorre 
   1. Zero ou uma vez em :ref:`elemento-front`
-  2. Zero ou mais vezes em ``<back>``
+  2. Zero ou mais vezes em :ref:`elemento-back`
 
 
 Identifica o dia em referências, pode representar o dia de publicação de 
@@ -2485,8 +2488,9 @@ identificar a versão de um software ou base de dados.
 ^^^^^^^^^^^^^^^^
 
 Aparece em
-  :ref:`elemento-product`,
-  :ref:`elemento-element-citation`
+  :ref:`elemento-product`, 
+  :ref:`elemento-element-citation`, 
+  :ref:`elemento-publisher`
   
 Ocorre 
   Zero ou mais vezes
@@ -2501,14 +2505,15 @@ Representa o nome da casa publicadora ou editora numa referência.
 ^^^^^^^^^^^^^^^
 
 Aparece em
-  :ref:`elemento-product`,
-  :ref:`elemento-element-citation`
+  :ref:`elemento-product`, 
+  :ref:`elemento-element-citation`, 
+  :ref:`elemento-publisher-loc`
   
 Ocorre 
   Zero ou mais vezes
 
 
-Identifica o local de uma casa publicadora ou editora numa referência.
+Identifica o local de uma casa publicadora ou editora.
 
 
 .. _elemento-history:
@@ -2720,7 +2725,7 @@ Ocorre
 
 Tag que identifica o resumo do artigo e não deve conter informação de 
 atributo ``@xml:lang``. Embora em via de regra esse elemento ocorra 
-zero ou mais vezes, ele se faz obrigatório quando ``<article>`` for declarado
+zero ou mais vezes, ele se faz obrigatório quando :ref:`elemento-article` for declarado
 com o atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
 Em ``<abstract>`` deve ser inserido um elemento ``title`` para especificar o título do resumo.
 
@@ -3095,10 +3100,10 @@ Exemplo:
  
 
 .. note:: nota de rodapé com informação de instituição financiadora e número de contrato
-          deve ser identificado dentro de ``<back>`` em :ref:`elemento-fn-group` com o 
-          tipo ``@fn-type="financial-disclosure"`` e em <front>.
+          deve ser identificado dentro de :ref:`elemento-back` em :ref:`elemento-fn-group` com o 
+          tipo ``@fn-type="financial-disclosure"`` e em :ref:`elemento-front`.
  
-.. note:: Notas SEM NÚMERO DE CONTRATO, ficam apenas em ``<back>`` mas com 
+.. note:: Notas SEM NÚMERO DE CONTRATO, ficam apenas em :ref:`elemento-back` mas com 
           tipo ``@fn-type="supported-by"``.
  
  
@@ -3321,7 +3326,7 @@ Aparece em
   :ref:`elemento-p`,
   ``<th>``,
   ``<td>``,
-  ``<app>``,
+  :ref:`elemento-app`,
   :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
@@ -3482,7 +3487,7 @@ Ocorre
 
 
 Em ``<table-wrap-foot>`` é possível fazer a identificação de nota de rodapé de 
-tabela por meio de tags ``<fn>``, que devem apresentar obrigatoriamente o 
+tabela por meio de tags :ref:`elemento-fn`, que devem apresentar obrigatoriamente o 
 atributo ``@id``.
  
 Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
@@ -3546,7 +3551,7 @@ Toda a formatação para exibição deve ser realizada conforme descrito no guia
 Aparece em
   :ref:`elemento-article-meta`,
   :ref:`elemento-p`,
-  ``<app>``
+  :ref:`elemento-app`
 
 Atributos obrigatórios
   1. id (ver :ref:`sugestao-atribuicao-id`)
@@ -3631,8 +3636,8 @@ Seus atributos obrigatórios são:
     ...
 
 
-.. note:: Esta tag em ``<front>`` obrigatoriamente deve ser inserida abaixo das 
-          informações de paginação ou antes de ``<history>``.
+.. note:: Esta tag em :ref:`elemento-front` obrigatoriamente deve ser inserida abaixo das 
+          informações de paginação ou antes de :ref:`elemento-history`.
 
 
 .. _elemento-inline-supplementary-material:
@@ -3643,7 +3648,7 @@ Seus atributos obrigatórios são:
 Aparece em
   :ref:`elemento-article-meta`, 
   :ref:`elemento-p`, 
-  ``<app>``
+  :ref:`elemento-app`
  
 Atributos obrigatórios
   1. xlink:href
@@ -3747,7 +3752,7 @@ Exemplo:
 ------
 
 Aparece em
-  :ref:`elemento-p`, ``<list-item>``
+  :ref:`elemento-p`, ``<list-item>``, :ref:`elemento-disp-quote`
 
 Atributos obrigatórios
   1. list-type
@@ -3829,7 +3834,7 @@ Deve ser identificada como:
 ---------
  
 Aparece em
-  ``<disp-formula>``,
+  :ref:`elemento-disp-formula`,
   :ref:`elemento-fig`, 
   :ref:`elemento-table-wrap`,
   :ref:`elemento-media`,
@@ -3866,7 +3871,7 @@ Exemplo:
 
 Aparece em
   :ref:`elemento-p`,
-  ``<app>``,
+  :ref:`elemento-app`,
   :ref:`elemento-supplementary-material`
 
 Atributos obrigatórios
@@ -4035,7 +4040,7 @@ Exemplo em versos:
 Aparece em
   :ref:`elemento-p`,
   :ref:`elemento-fig`,
-  ``<app>``,
+  :ref:`elemento-app`,
 
 Atributos obrigatórios
   1. mime-subtype
@@ -4125,7 +4130,7 @@ Exemplo:
     </p>
  
 
-*Em ``<sec>`` do tipo material suplementar:*
+*Em :ref:`elemento-sec` do tipo material suplementar:*
  
 .. code-block:: xml
  
@@ -5313,11 +5318,11 @@ Exemplo de Apêndice com vídeo:
 ----------
 
 Aparece em
-  ``<app>``
-  :ref:`elemento-app-group`
+  :ref:`elemento-app`
+  ``app-group``
   :ref:`elemento-body`
   :ref:`elemento-boxed-text`
-  ``<def-list>``
+  ``<def-list>`` 
   :ref:`elemento-glossary`
   ``<list-item>``
   :ref:`elemento-p`
@@ -5333,11 +5338,15 @@ Ocorre
 Utilizada quando há uma lista de termos e suas respectivas definições.
 A lista de definições deve ser apresentada como texto e apresenta os seguintes elementos:
 
-:ref:`elemento-title`, ``<term-head>``, ``<def-head>``, ``<def-item>`` e ``<def-list>``.
+:ref:`elemento-title`, ``<term-head>``, ``<def-head>``, ``<def-item>``, ``<def-list>``.
+
 
 Em ``<def-item>`` utilizar os seguintes elementos:
-<term>  - Utilizado para identificar a palavra, frase, equação etc que está sendo definido ou descrito.
-<def> - Descrição, explicação da palavra ou frase identificada em <term>. Nesse elemento deve ser inserido, obrigatoriamente, o elemento <p>.
+
+- <term> : Utilizado para identificar a palavra, frase, equação etc que está sendo definido ou descrito.
+
+- <def> : Descrição, explicação da palavra ou frase identificada em <term>. Nesse elemento deve ser inserido, obrigatoriamente, o elemento :ref:`elemento-p`.
+
  
 Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
 atributo ``@id``.
@@ -5413,11 +5422,11 @@ Exemplo sublista de definições:
 <glossary>
 ----------
 
-Aparece em:
+Aparece em
 
-``<app>``,
+:ref:`elemento-app`,
 :ref:`elemento-back`,
-:ref:`elemento-boxed-text,
+:ref:`elemento-boxed-text`,
 ``<glossary>``
 
 Ocorre:
@@ -5541,13 +5550,8 @@ Exemplo em boxed-text:
  ...
 
 
-A tag ``glossary`` possui os seguintes atributos: 
-``@content-type``, ``@id``, ``@specific-use`` e ``@xml:lang``. Porém o atributo
-mais frequente é o ``@id``.
- 
-``@id``: identificador da tag. É possível fazer referência cruzada no documento;
-esse atributo deve ter valor único no arquivo e é possível fazer link
-relacionado a um "rid".
+No elemento ``glossary`` pode ser inserido o atributo ``@id``.  
+Consulte a Sugestão de atribuição de @id para instruções sobre a composição do atributo @id.
  
 O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
 ou como texto.
@@ -5576,7 +5580,7 @@ Ocorre
 
 Tag utilizada para identificar artigos que estão dentro de outro artigo. 
 Geralmente os sub-artigos herdam os metadados do artigo pai e, para isso, é 
-necessário inserir uma tag ``<front-stub>``
+necessário inserir uma tag :ref:`elemento-front-stub`
 
 Para verificar os possíveis valores de ``@article-type`` em ``<sub-article>`` veja o quadro abaixo:
 
@@ -5632,7 +5636,7 @@ Aparece em
 
 Tags obrigatórias
   ``<subject>``
-  ``<article-title>``
+  :ref:`elemento-article-title`
 
 
 Ocorre
@@ -5640,12 +5644,12 @@ Ocorre
 Uma vez
 
 
-Tag utilizada em ``<sub-article>`` a qual herda os metadados do xml principal, 
-portanto não inserir as tags ``<journal-meta>`` e ``<article-meta>``. 
+Tag utilizada em :ref:`elemento-sub-article` a qual herda os metadados do xml principal, 
+portanto não inserir as tags :ref:`elemento-journal-meta` e :ref:`elemento-article-meta`. 
 Nessa tag deve ser inserido apenas as informações que são diferentes das que 
 constam no artigo principal, ou seja, não é necessário inserir informações como 
-``<volume>``, ``<issue>``, ``<fpage>`` ``<lpage>`` e ``<elocation-id>``, 
-``<pub-date>``, ``<permissions>``, ``<funding-group>``, ``<history>``.
+:ref:`elemento-volume`, :ref:`elemento-issue`, :ref:`elemento-fpage` :ref:`elemento-lpage` e :ref:`elemento-elocation-id`, 
+:ref:`elemento-pub-date`, :ref:`elemento-permissions`, :ref:`elemento-funding-group`, :ref:`elemento-history`.
 
 
 Exemplo da tag completa:
@@ -5771,17 +5775,18 @@ Aparece em:
   ``app-group``, 
   :ref:`elemento-body`, 
   :ref:`elemento-boxed-text`, 
-  ``glossary``, 
+  :ref:`glossary`, 
   :ref:`elemento-p`, 
   :ref:`elemento-ref-list`, 
   :ref:`elemento-sec`
 
-Ocorre:
-  Zero ou mais vezes
-
 
 Atributos obrigatórios
   1. id
+
+
+Ocorre:
+  Zero ou mais vezes
 
 
 É utilizado para identificação de um texto ou objeto que faz parte do artigo, mas não do corpo do texto.
