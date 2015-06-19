@@ -1,3 +1,5 @@
+.. _ahead-of-print:
+
 Ahead Of Print
 ==============
 
