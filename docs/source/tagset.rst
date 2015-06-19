@@ -827,7 +827,7 @@ por assunto. É obrigatória a presença de uma e somente uma ocorrência do
 elemento ``<subj-group>`` com o atributo ``@subj-group-type="heading"``. 
 Em ``<subject>`` atribui-se a seção em que o artigo foi classificado 
 (consultar o sumário para melhor identificação) e para :term:`ahead-of-print` 
-deve ser adotado sempre a seção ``Articles``.
+deve ser adotado sempre a seção ``Articles``. Ver exemplo de :ref:`ahead-of-print`
  
  
 Exemplos:
@@ -5798,7 +5798,8 @@ Ocorre
 
 
 Elemento utilizado para indicar um artigo relacionado publicado ou não separadamente.
-Essa tag deve ser inserida para artigos como: Erratas ou resposta de artigo comentado.
+Essa tag deve ser inserida para artigos como: :ref:`errata` ou resposta de 
+:ref:`artigo-comentado`.
 
 Os valores possíveis para o atributo ``@related-article-type`` são:
 
@@ -5811,7 +5812,6 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 | commentary-article     | Utilizado em comentário ou editorial para |
 |                        | citar o artigo que está sendo comentado.  |
 +------------------------+-------------------------------------------+
-
 
 
 

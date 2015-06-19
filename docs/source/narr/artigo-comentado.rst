@@ -1,3 +1,5 @@
+.. _artigo-comentado:
+
 Artigo Comentado
 ================
 
