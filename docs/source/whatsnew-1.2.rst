@@ -19,6 +19,13 @@ relação à sua predecessora, a versão 1.1.
   regra se aplica principalmente para os elementos ``abstract``, ``trans-abstract``,
   ``ref-list`` e ``kwd-group``.
 
+.. versionchanged:: 1.2.1
+
+* Adicionado suporte a licenças ``IGO``.
+* A idéia de classificar referências como completas ou incompletas, por meio do 
+  atributo ``@specific-use="display-only"``, se mostrou equivocada e a regra foi 
+  removida.
+
 
 Quebra de compatibilidade
 -------------------------
@@ -38,6 +45,11 @@ versão anterior.
 * E-mail e país, quando presente no texto original da afiliação, não devem ser 
   identificados utilizando ``//aff//named-content``.
 * Elemento ``p`` não deve ser utilizado como filho do elemento ``sig``.
+
+.. versionchanged:: 1.2.1
+
+* Tornou-se obrigatório o preenchimento do atributo ``//media/@mime-type``
+  [`#62 <https://github.com/scieloorg/scielo_publishing_schema/issues/62>`_].
 
 
 Documentação
@@ -62,4 +74,13 @@ especificação.
 * Adicionada seção para documentação narrativa, onde serão disponibilizadas 
   recomendações específicas ao processo de produção dos documentos e outras 
   práticas.
+
+.. versionchanged:: 1.2.1
+
+* Diversas melhorias e correções nos tópicos e exemplos 
+  [`#105 <https://github.com/scieloorg/scielo_publishing_schema/issues/105>`_],
+  [`#108 <https://github.com/scieloorg/scielo_publishing_schema/issues/108>`_],
+  [`#95 <https://github.com/scieloorg/scielo_publishing_schema/issues/95>`_],
+  [`#63 <https://github.com/scieloorg/scielo_publishing_schema/issues/63>`_],
+  [`#100 <https://github.com/scieloorg/scielo_publishing_schema/issues/100>`_].
 
