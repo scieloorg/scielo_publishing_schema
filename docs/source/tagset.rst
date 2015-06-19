@@ -1648,7 +1648,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 | other                     | Especifica aquelas notas diferentes das          |
 |                           | relacionados acima. É possível também ter este   |
 |                           | tipo de nota em :ref:`elemento-fn-group` em      |
-|                           | :ref:`elemento-back`                                       |
+|                           | :ref:`elemento-back`                             |
 +---------------------------+--------------------------------------------------+
 | presented-at              | Trabalho apresentado em Conferência, Colóquio etc|
 +---------------------------+--------------------------------------------------+
@@ -4563,26 +4563,26 @@ Exemplos:
  
 .. code-block:: xml
 
-<!-- Webpage Sample 2 -->
+    <!-- Webpage Sample 2 -->
   
-  <ref id="B21">
+    <ref id="B21">
         <label>21</label>
         <mixed-citation>Fugh-Berman A. PharmedOUT [Internet]. Washington: Georgetown University, Department of Physiology and Biophysics; c2006 [cited 2007 Mar 23]. Available from: http://www.pharmedout.org/.</mixed-citation>
-    <element-citation publication-type="webpage"> 
-      <person-group person-group-type="author">
-        <name>
-          <surname>Fugh-Berman</surname>
-          <given-names>A</given-names>
-        </name>
-      </person-group>
-      <source>PharmedOUT [Internet]</source>
-      <publisher-loc>Washington</publisher-loc>
-      <publisher-name>Georgetown University, Department of Physiology and Biophysics</publisher-name>
-      <year>c2006</year>
-      <date-in-citation>cited 2007 Mar 23</date-in-citation>
-      <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.pharmedout.org">http://www.pharmedout.org</ext-link></comment>
-      </element-citation>
-  </ref>
+        <element-citation publication-type="webpage"> 
+            <person-group person-group-type="author">
+                <name>
+                    <surname>Fugh-Berman</surname>
+                    <given-names>A</given-names>
+                </name>
+            </person-group>
+            <source>PharmedOUT [Internet]</source>
+            <publisher-loc>Washington</publisher-loc>
+            <publisher-name>Georgetown University, Department of Physiology and Biophysics</publisher-name>
+            <year>c2006</year>
+            <date-in-citation>cited 2007 Mar 23</date-in-citation>
+            <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.pharmedout.org">http://www.pharmedout.org</ext-link></comment>
+        </element-citation>
+    </ref>
 
 .. code-block:: xml
 
@@ -5293,7 +5293,7 @@ Ocorre
 Utilizada quando há uma lista de termos e suas respectivas definições.
 A lista de definições deve ser apresentada como texto e apresenta os seguintes elementos:
 
-:ref:`elemento-title`, ``<term-head>``, ``<def-head>``, ``<def-item>``, ``<def-list>``.
+``<title>``, ``<term-head>``, ``<def-head>``, ``<def-item>``, ``<def-list>``.
 
 
 Em ``<def-item>`` utilizar os seguintes elementos:
@@ -5378,15 +5378,14 @@ Exemplo sublista de definições:
 ----------
 
 Aparece em
+  :ref:`elemento-app`,
+  :ref:`elemento-back`,
+  :ref:`elemento-boxed-text`,
+  ``<glossary>``
 
-:ref:`elemento-app`,
-:ref:`elemento-back`,
-:ref:`elemento-boxed-text`,
-``<glossary>``
 
-Ocorre:
-
-Zero ou mais vezes
+Ocorre
+  Zero ou mais vezes
 
 
 Elemento ``<glossary>`` é utilizado com a finalidade de descrever um glossário para documento. O conteúdo desse elemento geralmente é uma lista de definições, apresentando elementos de ``<def-list>``. Nesse caso, utilizar as regras de :ref:`elemento-def-list`.
@@ -5725,7 +5724,7 @@ Exemplo verse-group:
 <boxed-text>
 ------------
 
-Aparece em:
+Aparece em
   :ref:`elemento-app`, 
   ``app-group``, 
   :ref:`elemento-body`, 
@@ -5740,7 +5739,7 @@ Atributos obrigatórios
   1. id
 
 
-Ocorre:
+Ocorre
   Zero ou mais vezes
 
 
@@ -5790,7 +5789,7 @@ Aparece em
   :ref:`elemento-front-stub`
 
 
-Atributos Obrigatórios
+Atributos obrigatórios
   1. related-article-type
   2. id
 
@@ -5809,8 +5808,8 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 | corrected-article      | Utilizado em errata para indicar o artigo |
 |                        | objeto da correção.                       |
 +------------------------+-------------------------------------------+
-| commentary-article     |Utilizado em comentário ou editorial para  |
-|                        |citar o artigo que está sendo comentado.   |
+| commentary-article     | Utilizado em comentário ou editorial para |
+|                        | citar o artigo que está sendo comentado.  |
 +------------------------+-------------------------------------------+
 
 
