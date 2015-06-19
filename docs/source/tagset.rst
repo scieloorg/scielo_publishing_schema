@@ -4434,23 +4434,6 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
     :ref:`elemento-comment`.
 
 
-.. important::
-  É esperado que as referências do tipo "journal" apresentem pelo menos 4 elementos:
-
-  * :ref:`elemento-surname`
-  * :ref:`elemento-article-title`
-  * :ref:`elemento-source`
-  * :ref:`elemento-year`
-
-  Caso a referência não apresente um desses elementos, esta deve ser classificada com o atributo:
-
-    @specific-use="display-only"
-
- O atributo @specific-use com o valor "display-only" informa que a referência bibliográfica estará disponível apenas para apresentação, ou seja, não há dados o suficiente para utilizar em indicadores bibliográficos.
-
- Obs.: Esse atributo deve ser inserido no elemento <element-citation>.
-
-
 Exemplos:
  
 .. code-block:: xml
@@ -4476,40 +4459,6 @@ Exemplos:
                 <issue>02</issue>
                 <year>2010</year>
                 <ext-link ext-link-type="uri" xlink:href="http://socialsciences.scielo.org">http://socialsciences.scielo.org</ext-link>
-            </element-citation>
-        </ref>
-    <ref-list> 
-    ...
-
-.. code-block:: xml
-
-    <!-- Journal Sample incomplete -->
-
-    ...
-    <ref-list>
-        <ref id="B3">
-            <mixed-citation>BICUDO,S.D.;;AZEVEDO,H.C.MAIA S.M. et al. Avanços na criopreservação do sêmen ovino visando sua aplicação em programas de inseminação artificial e em biotecnologias com embriões.Acta Sci. Vet., v.35, p.787-798,2007.</mixed-citation>
-            <element-citation publication-type="journal" specific-use="display-only">
-              <person-group person-group-type="author">
-                <name>
-                  <surname>BICUDO</surname>
-                  <given-names>S.D.</given-names>
-                </name>
-                <name>
-                  <surname>AZEVEDO</surname>
-                  <given-names>H.C.</given-names>
-                </name>
-                <name>
-                  <surname>MAIA</surname>
-                  <given-names>S.M.</given-names>
-                </name>
-                <etal/>
-              </person-group>
-              <article-title>Avanços na criopreservação do sêmen ovino visando sua aplicação em programas de inseminação artificial e em biotecnologias com embriões</article-title>
-              <source>Acta Sci. Vet.</source>
-              <volume>35</volume>
-              <fpage>787</fpage>
-              <lpage>798</lpage>
             </element-citation>
         </ref>
     <ref-list> 
