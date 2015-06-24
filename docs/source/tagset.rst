@@ -4425,8 +4425,6 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
 
   * Nunca manter uma informação toda com formatação <italic>, <bold>, etc,
     dentro de alguma tag;
-  * Todas as referências devem conter informação de fonte principal
-    :ref:`elemento-source`;
   * Evitar pontuação dentro da marcação em :ref:`elemento-element-citation`
     (ponto final, vírgula etc);
   * Todas as informaçoes de uma referência devem ser marcadas, caso não exista
