@@ -4187,20 +4187,7 @@ Exemplo 1:
     ...
 
 
-**Exemplo 2:**
-
-.. code-block:: xml
- 
-    <sig-block>
-        <sig>
-            <bold>Harry Weasley</bold>
-            <italic>Editor Chefe<italic>
-            Profeta Diário
-        </sig>
-    </sig-block>
- 
-
-.. note:: Para arquivos que apresentam apenas uma assinatura ao final do documento, é preciso repetir os nomes que constam na assinatura em front\contrib e marcá-los como autores.
+.. note:: Para arquivos que apresentam apenas uma assinatura ao final do documento, é preciso repetir os nomes que constam na assinatura em front/contrib e marcá-los como autores.
 
  
 .. _elemento-back:
