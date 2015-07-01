@@ -4169,7 +4169,7 @@ conter a tag ``<sig>``. É possível formatar o texto do bloco de assinatura
 com negrito ``<bold>`` ou itálico ``<italic>``. Para as quebras de linhas 
 deve-se usar a tag ``<break/>`` como mostram os exemplos a seguir:
 
-Exemplo 1:
+Exemplo:
  
 .. code-block:: xml
  
