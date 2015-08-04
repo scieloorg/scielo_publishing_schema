@@ -2939,8 +2939,7 @@ Ocorre
 Somente quando há número de contrato explicitado no artigo. As informações de 
 financiamento podem aparecer nas tags :ref:`elemento-fn` ou :ref:`elemento-ack`.
  
-.. note:: ``<funding-group>`` deve ser inserida entre as tags 
-          :ref:`elemento-kwd-group` e :ref:`elemento-counts`.
+.. note:: ``<funding-group>`` deve ser inserido antes de :ref:`elemento-counts`.
  
  
 .. _elemento-award-group:
