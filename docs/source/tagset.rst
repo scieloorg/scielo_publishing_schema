@@ -2865,7 +2865,7 @@ Ocorre
   Zero ou mais vezes
 
 
-Identifica o grupo de palavras-chave do artigo por idioma. Obrigatoriamente deve 
+Identifica o grupo de palavras-chave do artigo por idioma. Deve 
 conter o atributo ``@xml:lang``.
 Em ``<kwd-group>`` deve ser inserida uma informação de etiqueta ``title``. 
 
@@ -3645,7 +3645,7 @@ Seus atributos obrigatórios são:
     ...
 
 
-.. note:: Esta tag em :ref:`elemento-front` obrigatoriamente deve ser inserida abaixo das 
+.. note:: Esta tag em :ref:`elemento-front` deve ser inserida abaixo das 
           informações de paginação ou antes de :ref:`elemento-history`.
 
 
@@ -5104,7 +5104,7 @@ Ocorre
 Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
 básica de um apêndice devemos levar em consideração duas tags importantes, a de
 grupo de apêndice ``app-group`` e de apêndice propriamente dito
-``<app>``. Obrigatoriamente deve ser inserida uma informação de
+``<app>``. Deve ser inserida uma informação de
 etiqueta :ref:`elemento-label` em ``<app>``.
 
  
