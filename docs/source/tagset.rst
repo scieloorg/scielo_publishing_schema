@@ -1069,11 +1069,12 @@ Exemplo:
     </contrib-group>
     ...
  
-.. note:: Observar normas para entrada de nomes (*AACR2* - Código de Catalogação 
-          Anglo Americano e/ou Currículo Lattes dos autores, avaliar formas 
-          de entrada autorizadas).
-
-.. note:: Para artigos que apresentam assinatura, como editoriais, apresentação etc. repetir autores de <sig-block> em front/contrib caso não exista informação de autor.
+.. note:: 
+  * Observar normas para entrada de nomes (*AACR2* - Código de Catalogação
+  Anglo Americano e/ou Currículo Lattes dos autores, avaliar formas de entrada autorizadas).
+  * Para artigos que apresentam assinatura, como editoriais, apresentação etc. 
+  repetir autores de <sig-block> em front/contrib caso não exista informação de autor.
+  * Em ``contrib`` o :ref:`elemento-name` ocorre Zero ou Uma vez.
 
 .. _elemento-collab:
  
@@ -2333,6 +2334,7 @@ Exemplo:
     </ref>
     ...
 
+.. note:: Em ``person-group`` o elemento :ref:`elemento-name` ocorre Zero ou Mais vezes
 
 .. _elemento-etal:
 
