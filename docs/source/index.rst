@@ -22,11 +22,6 @@ na versão 1.0 mais o :term:`Estilo SciELO`, que são regras que especializam as
 especificação :term:`JATS Publishing`. Os usuários deste guia devem possuir conhecimentos 
 prévios sobre :term:`XML` e familiaridade com :term:`DTD`.
 
-Por motivos de compatibilidade com a última versão das recomendações disponibilizadas 
-pelo SciELO, a especificação `NLM Journal Publishing DTD <http://dtd.nlm.nih.gov/publishing/>`_ 
-na versão 3.0 ainda será suportada nesta versão do guia de uso, assim como pelas 
-ferramentas disponibilizadas.
-
 As dúvidas e comentários sobre a especificação :term:`SciELO PS`, sobre este guia 
 de uso ou sobre as ferramentas disponibilizadas pelo SciELO para apoiar a marcação 
 em :term:`XML` são tratadas na lista de discussão 

@@ -84,6 +84,8 @@ Os atributos obrigatórios para ``xref`` são:
 +------------------------+-----------------------------------------+
 | bibr                   | referência bibliográfica                |
 +------------------------+-----------------------------------------+
+|boxed-text              | Caixa de Texto
++------------------------+-----------------------------------------+
 | contrib                | contribuinte                            |
 +------------------------+-----------------------------------------+
 | corresp                | autor correspondente                    |
@@ -211,6 +213,7 @@ Aparece em
   :ref:`elemento-app`,
   :ref:`elemento-def-list`
   :ref:`elemento-verse-group`
+  :ref:`elemento-boxed-text`
 
 Ocorre
   Zero ou mais vezes
@@ -371,21 +374,13 @@ O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e
 deve ser utilizado quando equações :term:`MathML` forem identificadas no 
 documento.
 
-Para ``@dtd-version`` utilizar os valores 1.0 ou 3.0 conforme a :term:`DTD`, 
+Para ``@dtd-version`` utilizar o valor 1.0 conforme a :term:`DTD`, 
 explicitada em :ref:`xml-doctype`. Para ``@article-type`` define-se a tipologia 
 de artigos, os valores que podem ser utilizados são:
  
 +--------------------+----------------------------------------------------------+
 | Valor              | Descrição                                                |
 +====================+==========================================================+
-|                    | resumo - uma apresentação precisa e resumida de uma      |
-| abstract           | obra sem agregar interpretação ou crítica, acompanhado   |
-|                    | de uma referência bibliográfica da obra original.        |
-+--------------------+----------------------------------------------------------+
-|                    | exposição ou declaração relevante que pode ou não ter    |
-| announcement       | relação com o artigo publicado.                          |
-|                    |                                                          |
-+--------------------+----------------------------------------------------------+
 |                    | comentários - uma nota crítica ou esclarecedora, escrita |
 |                    | para discutir, apoiar ou debater um artigo ou outra      |
 | article-commentary | apresentação anteriormente publicada. Pode ser um artigo,|
@@ -651,9 +646,11 @@ Exemplo:
  
 .. code-block:: xml
  
+    ...
     <journal-title-group>  
         <abbrev-journal-title abbrev-type="publisher">Braz. J. Med. Biol. Res.</abbrev-journal-title>
     </journal-title-group>
+    ...
  
 
 .. _elemento-issn:
@@ -973,7 +970,7 @@ Aparece em
   :ref:`elemento-trans-title-group`
  
 Ocorre 
-  Uma ou mais vezes
+  Uma vez
 
 
 Marca o título traduzido, dentro da tag :ref:`elemento-trans-title-group`.
@@ -1085,6 +1082,7 @@ Exemplo:
 
 Aparece em
   :ref:`elemento-contrib`
+  :ref:`elemento-person-group`
  
 Ocorre
   Zero ou mais vezes
@@ -1338,6 +1336,8 @@ Exemplo:
 
 Aparece em
   :ref:`elemento-article-meta`
+  :ref:`elemento-contrib-group`
+  :ref:`elemento-front-stub`
 
 Atributos obrigatórios
   1. id (ver :ref:`sugestao-atribuicao-id`)
@@ -1417,6 +1417,9 @@ em até três níveis. Estes níveis serão definidos pelo atributo obrigatório
 |            | orgname.                                                           |
 +------------+--------------------------------------------------------------------+ 
 | normalized | Nome da instituição na forma normalizada pela SciELO.              |     
++------------+--------------------------------------------------------------------+
+| original   | Utilizado para identificar a afiliação completa, conforme consta   |
+|            | no PDF                                                             |
 +------------+--------------------------------------------------------------------+ 
  
 
@@ -1867,8 +1870,7 @@ Exemplo de marcação de data de publicação nas versões impressa e digital:
     <article-meta>
         ...
         <pub-date pub-type="epub-ppub">
-            <day>17</day>
-            <month>03</month>
+            <season>Jan-Feb</season>
             <year>2014</year>
         </pub-date>
         ...
@@ -1886,7 +1888,8 @@ Exemplo de marcação de data de publicação na versão digital:
     <article-meta>
         ...
         <pub-date pub-type="epub">
-            <season>Jan-Feb</season>
+          <day>17</day>
+            <month>03</month>
             <year>2014</year>
         </pub-date>
         ...
@@ -1909,7 +1912,7 @@ Ocorre
 
 
 Esta tag pode ser encontrada em :ref:`elemento-front` 
-(ver :ref:`elemento-pub-date` e :ref:`elemento-product`) ou em 
+(ver :ref:`elemento-pub-date` e :ref:`elemento-product`), para identificação de intervalo de meses do ano ou em 
 :ref:`elemento-back`, representando informações das estações do ano em um referência.
 
 
@@ -2507,7 +2510,7 @@ Representa o nome da casa publicadora ou editora numa referência.
 Aparece em
   :ref:`elemento-product`, 
   :ref:`elemento-element-citation`, 
-  :ref:`elemento-publisher-loc`
+  :ref:`elemento-publisher`
   
 Ocorre 
   Zero ou mais vezes
@@ -3107,7 +3110,7 @@ Exemplo:
 
 .. note:: nota de rodapé com informação de instituição financiadora e número de contrato
           deve ser identificado dentro de :ref:`elemento-back` em :ref:`elemento-fn-group` com o 
-          tipo ``@fn-type="financial-disclosure"`` e em :ref:`elemento-front`.
+          tipo ``@fn-type="financial-disclosure"``.
  
 .. note:: Notas SEM NÚMERO DE CONTRATO, ficam apenas em :ref:`elemento-back` mas com 
           tipo ``@fn-type="supported-by"``.
@@ -3879,6 +3882,8 @@ Aparece em
   :ref:`elemento-p`,
   :ref:`elemento-app`,
   :ref:`elemento-supplementary-material`
+  :ref:`elemento-fig`
+  :ref:`elemento-glossary`
 
 Atributos obrigatórios
   1. id (ver :ref:`sugestao-atribuicao-id`)
@@ -5073,7 +5078,7 @@ Exemplo:
                 <p>Vivamus sodales fermentum lorem, consectetur mollis lacus sollicitudin quis</p>
             </fn>
             <fn fn-type="presented-at" id="fn02">
-                <label>*</label>
+                <label>**</label>
                 <p>Donec et urna sed orci volutpat sollicitudin. Vestibulum quis tempor lacus. Nunc cursus, mi sed auctor pellentesque, orci tellus tincidunt arcu, eu imperdiet augue ligula eget justo.</p>
             </fn>
         </fn-group>
