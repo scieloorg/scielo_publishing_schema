@@ -2952,7 +2952,7 @@ Aparece em
   :ref:`elemento-funding-group`
  
 Ocorre
-  Zero ou mais vezes
+  Uma ou mais vezes
 
 
 Um artigo pode ter diversos financiadores. Cada grupo de dados de 
