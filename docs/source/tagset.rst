@@ -4174,7 +4174,7 @@ conter a tag ``<sig>``. É possível formatar o texto do bloco de assinatura
 com negrito ``<bold>`` ou itálico ``<italic>``. Para as quebras de linhas 
 deve-se usar a tag ``<break/>`` como mostram os exemplos a seguir:
 
-Exemplo 1:
+Exemplo:
  
 .. code-block:: xml
  
@@ -4192,20 +4192,7 @@ Exemplo 1:
     ...
 
 
-**Exemplo 2:**
-
-.. code-block:: xml
- 
-    <sig-block>
-        <sig>
-            <bold>Harry Weasley</bold>
-            <italic>Editor Chefe<italic>
-            Profeta Diário
-        </sig>
-    </sig-block>
- 
-
-.. note:: Para arquivos que apresentam apenas uma assinatura ao final do documento, é preciso repetir os nomes que constam na assinatura em front\contrib e marcá-los como autores.
+.. note:: Para arquivos que apresentam apenas uma assinatura ao final do documento, é preciso repetir os nomes que constam na assinatura em front/contrib e marcá-los como autores.
 
  
 .. _elemento-back:
@@ -4430,8 +4417,6 @@ Os valores que podem ser utilizados para o atributo ``@publication-type`` são:
 
   * Nunca manter uma informação toda com formatação <italic>, <bold>, etc,
     dentro de alguma tag;
-  * Todas as referências devem conter informação de fonte principal
-    :ref:`elemento-source`;
   * Evitar pontuação dentro da marcação em :ref:`elemento-element-citation`
     (ponto final, vírgula etc);
   * Todas as informaçoes de uma referência devem ser marcadas, caso não exista
