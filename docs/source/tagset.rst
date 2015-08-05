@@ -84,7 +84,7 @@ Os atributos obrigatórios para ``xref`` são:
 +------------------------+-----------------------------------------+
 | bibr                   | referência bibliográfica                |
 +------------------------+-----------------------------------------+
-|boxed-text              | Caixa de Texto
+|boxed-text              | Caixa de Texto                          |
 +------------------------+-----------------------------------------+
 | contrib                | contribuinte                            |
 +------------------------+-----------------------------------------+
@@ -1071,10 +1071,11 @@ Exemplo:
  
 .. note:: 
   * Observar normas para entrada de nomes (*AACR2* - Código de Catalogação
-  Anglo Americano e/ou Currículo Lattes dos autores, avaliar formas de entrada autorizadas).
+    Anglo Americano e/ou Currículo Lattes dos autores, avaliar formas de entrada autorizadas).
   * Para artigos que apresentam assinatura, como editoriais, apresentação etc. 
-  repetir autores de <sig-block> em front/contrib caso não exista informação de autor.
+    repetir autores de <sig-block> em front/contrib caso não exista informação de autor.
   * Em ``contrib`` o :ref:`elemento-name` ocorre Zero ou Uma vez.
+
 
 .. _elemento-collab:
  
@@ -1737,7 +1738,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 |                         | baseado foi apoiada por alguma entidade,         |
 |                         | instituição ou pessoa física. Considerar neste   |
 |                         | tipo, informações de financiamento que não       |
-|                         | possuem números de contrato                      |
+|                         | possuem número de contrato                       |
 +-------------------------+--------------------------------------------------+
 | presented-at            | Indica que o artigo foi apresentado em algum     |
 |                         | evento científico                                |
@@ -1854,13 +1855,13 @@ Ocorre
   Uma vez
 
 
-Para a marcação da data de publicação do artigo/fascículo utiliza-se a 
+Para a marcação da data de publicação do artigo/número utiliza-se a 
 tag ``<pub-date>`` a qual pode conter os elementos :ref:`elemento-day`, 
 :ref:`elemento-month`, :ref:`elemento-season` e obrigatoriamente 
 :ref:`elemento-year`. Esta tag deve estar acompanhada do atributo ``@pub-type``.
  
 A data de publicação pode ser do tipo ``epub-ppub`` se houver uma versão 
-impressa do fascículo, apenas ``epub`` para publicação digital ou em 
+impressa do número, apenas ``epub`` para publicação digital ou em 
 ``ahead-of-print``.
  
 Exemplo de marcação de data de publicação nas versões impressa e digital:
@@ -1879,7 +1880,8 @@ Exemplo de marcação de data de publicação nas versões impressa e digital:
     ...
 
  
-Os valores de dia, mês e ano devem ser representados segundo a data de publicação do fascículo, geralmente apresentado no sumário do número.
+Os valores de dia, mês e ano devem ser representados segundo a data de 
+publicação do número, que geralmente consta no sumário.
  
 Exemplo de marcação de data de publicação na versão digital:
  
@@ -1952,7 +1954,7 @@ Esta tag pode ser encontrada em :ref:`elemento-front`
           
 
 .. note:: Para abreviatura dos meses que devem ser inseridos na data de 
-          publicação dos fascículos, utilizar siglas em inglês com 3 
+          publicação dos números, utilizar siglas em inglês com 3 
           caracteres, separados por hífen. As abreviaturas são: Jan, Feb, Mar,
           Apr, May, Jun, Jul, Aug, Sep, Oct, Nov e Dec.
 
@@ -2993,7 +2995,8 @@ Exemplo:
     ...
  
 
-Existem casos em que há mais que uma instituição financiadora para um único número de contrato.
+Existem casos em que há mais que uma instituição financiadora para um único 
+número de contrato.
 
 Exemplo:
 

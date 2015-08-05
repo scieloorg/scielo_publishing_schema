@@ -5,7 +5,7 @@ Errata
 
 Como regra, arquivos do tipo errata devem apresentar o valor "correction" no 
 atributo ``@article-type``. O texto do elemento ``//subj-group[@subj-group-type="heading"]/subject`` 
-deve refletir o sumário do fascículo e no elemento :ref:`elemento-article-title` inserir como título "Errata" ou 
+deve refletir o sumário do número e no elemento :ref:`elemento-article-title` inserir como título "Errata" ou 
 "Erratum", de acordo com o que está especificado no PDF.
 Além disso, o elemento :ref:`elemento-related-article` deve, obrigatoriamente, aparecer no arquivo .xml. Veja:
 
