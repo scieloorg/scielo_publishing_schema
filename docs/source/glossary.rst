@@ -74,7 +74,7 @@ Glossário
      da publicação impressa estar acessível aos leitores. Apesar de disponível 
      em rede, o artigo segue o fluxo editorial de publicação impressa ou online 
      até que esteja pronto para ser inserido em um fascículo. O processo poderá 
-     antecipar em até alguns meses a publicação na revista impressa.
+     antecipar em até alguns meses a publicação impressa.
 
    DOI
      *Digital Object Identifier* - identificador único de conteúdos digitais.
@@ -131,12 +131,12 @@ Glossário
    Vancouver
      Guia e orientação criado em 1978 por um grupo de editores da área médica 
      em Vancouver, British Columbia, para a normalização dos manuscritos submetidos 
-     às suas revistas. O grupo ficou conhecido como Grupo de Vancouver. 
+     aos periódicos. O grupo ficou conhecido como Grupo de Vancouver. 
      Os requisitos para manuscritos, incluindo  formatos para referências bibliográficas, 
      desenvolvido pela National Library of Medicine, foram publicados pela primeira 
      vez em 1979. O grupo se expandiu e evoluiu para o International Committte of 
      Medical Journals Editors (ICMJE). O ICMJE gradualmente ampliou sua atuação 
-     incluindo também princípios sobre ética médica nas publicações em revistas 
+     incluindo também princípios sobre ética médica nas publicações em periódicos 
      da área biomédica.
 
    APA

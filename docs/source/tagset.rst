@@ -404,7 +404,7 @@ de artigos, os valores que podem ser utilizados são:
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
 |                    | editorial - uma declaração de opiniões, crenças e        |
-|                    | políticas do editor de uma revista, geralmente sobre     |
+|                    | políticas do editor do periódico, geralmente sobre       |
 | editorial          | assuntos de significado científico de interesse da       |
 |                    | comunidade científica ou da sociedade.                   |
 |                    |                                                          |
@@ -568,7 +568,7 @@ Ocorre
   Uma vez
  
 
-Abrange tags que representam os metadados identificadores da revista.
+Abrange tags que representam os metadados identificadores do periódico.
  
 Exemplo:
 
