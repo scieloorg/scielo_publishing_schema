@@ -139,10 +139,10 @@ Documentação narrativa
 Lista de elementos
 ------------------
 
-A seguir os elementos do XML que apresentam regras de estilo na 
-especificação :term:`SciELO PS`. Note que esta não é a lista completa dos elementos 
-XML que compõem o :term:`tag set` JATS Publishing versão 1.0 ou PMC versão 3.0, e 
-não elimina a necessidade de consultar suas respectivas documentações.
+A seguir os elementos do XML que apresentam regras de estilo na especificação 
+:term:`SciELO PS`. Note que esta não é a lista completa dos elementos XML que 
+compõem o :term:`tag set` JATS Publishing versão 1.0, e não elimina a 
+necessidade de consultar sua documentação.
 
 .. toctree::
    :maxdepth: 3
