@@ -73,7 +73,7 @@ Glossário
      os trabalhos aprovados pela equipe editorial de um periódico antes mesmo 
      da publicação impressa estar acessível aos leitores. Apesar de disponível 
      em rede, o artigo segue o fluxo editorial de publicação impressa ou online 
-     até que esteja pronto para ser inserido em um fascículo. O processo poderá 
+     até que esteja pronto para ser inserido em um número. O processo poderá 
      antecipar em até alguns meses a publicação na revista impressa.
 
    DOI

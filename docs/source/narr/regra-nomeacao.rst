@@ -4,9 +4,9 @@ Regra de Nomeação de Arquivos
 Nomeação de Pasta para Envio
 ----------------------------
 
-Todos os arquivos, incluindo xml, pdf e imagens referentes ao fascículo em questão devem estar na mesma pasta nomeada conforme padrão abaixo:
+Todos os arquivos, incluindo xml, pdf e imagens referentes ao número em questão devem estar na mesma pasta nomeada conforme padrão abaixo:
 
-Para Fascículo:
+Para Número:
 
     ISSN-acrônimo-volume-número
 
@@ -27,7 +27,7 @@ Arquivo XML
 
 Para a nomeação de arquivos .xml utilizar a seguinte estrutura determinada pelo SciELO PS:
 
-Para Fascículo:
+Para Número:
 
     **ISSN**-**acrônimo**-**volume**-**número**-**paginação**
 
@@ -52,9 +52,9 @@ Imagens
  
 Em imagens (que podem ser figuras, tabelas, equações, apêndices e etc) utilizar a 
 seguinte estrutura de nomeação tanto nas imagens dentro do XML quanto para 
-as imagens da pasta do pacote do fascículo ou lote de :term:`ahead-of-print`.
+as imagens da pasta do pacote do número ou lote de :term:`ahead-of-print`.
  
-Para Fascículo: 
+Para Número: 
 
     **ISSN**-**acrônimo**-**volume**-**número**-**paginação**-**nomedaimagem.extensãodaimagem**
  
@@ -87,7 +87,7 @@ PDF
 
 Os PDFs também devem seguir a estrutura de nomeação de arquivos determinada pelo SciELO. Veja:
 
-Para Fascículo:
+Para Número:
 
     **ISSN**-**acrônimo**-**volume**-**número**-**paginação**
 
@@ -142,7 +142,7 @@ Casos Especiais
 |                       |                                                                            |                                            |
 |                       | ISSN-acronimo-**nº**-paginação (.xml)                                      | 0101-4358-er-**55**-00189.xml              |
 |                       |                                                                            |                                            |
-| Fascículo sem volume  | ISSN-acronimo-**nº**-paginação-nome da imagem (extensão)                   | 0101-4358-er-**55**-00189-gf1.jpg          |
+| Número sem volume     | ISSN-acronimo-**nº**-paginação-nome da imagem (extensão)                   | 0101-4358-er-**55**-00189-gf1.jpg          |
 |                       |                                                                            |                                            |
 |                       | ISSN-acronimo-**nº**-paginação (.pdf)                                      | 0101-4358-er-**55**-00189.pdf              |
 |                       |                                                                            |                                            |
@@ -183,9 +183,9 @@ Casos Especiais
     +---------------------+---------------------------------------------------------+
     | *Acrônimo:*         | Sigla do periódico na SciELO                            |
     +---------------------+---------------------------------------------------------+
-    | *Volume:*           | Volume do fascículo                                     |
+    | *Volume:*           | Volume do número                                        |
     +---------------------+---------------------------------------------------------+
-    | *Número:*           | Número ou suplemento do fascículo                       |
+    | *Número:*           | Número ou suplemento do número                          |
     +---------------------+---------------------------------------------------------+
     | *Paginação:*        | Manter a informação da primeira página                  |
     +---------------------+---------------------------------------------------------+
