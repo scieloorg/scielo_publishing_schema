@@ -135,6 +135,8 @@ Documentação narrativa
    narr/errata
    narr/aheadofprint
 
+   faq
+
 
 Lista de elementos
 ------------------
