@@ -3137,6 +3137,7 @@ quantidade de elementos presentes no artigo, por isso utiliza-se a tag
 ``<counts>`` para contabilizar o número exato de tabelas, figuras, 
 referências, equações e páginas presentes no arquivo. Esta tag deve ser 
 inserida como último item de :ref:`elemento-article-meta`.
+
  
 Os elementos que identificam os totais são:
 
@@ -3164,10 +3165,12 @@ Exemplo:
     ...
  
 .. note:: A ordem dos elementos é importante.
-.. note:: No caso de o documento não apresentar alguns dos elementos contabilizados,
+          No caso de o documento não apresentar alguns dos elementos contabilizados,
           o valor dos respectivos atributos ``@count`` deve ser ``0``. e.g.
           ``<equation-count count="0"/>``.
 
+.. note:: No caso de haver :ref:`elemento-article` e :ref:`elemento-sub-article`, 
+          deve-se contabilizar o total de elementos em ambos.
  
 .. _elemento-body:
 
