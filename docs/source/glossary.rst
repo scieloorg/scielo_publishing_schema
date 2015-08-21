@@ -78,7 +78,11 @@ Glossário
 
    DOI
      *Digital Object Identifier* - identificador único de conteúdos digitais.
-
+     
+   Documento
+     Um documento quando mencionado no SciELO PS, compõe toda a estrutura 
+     descrita em um arquivo XML.
+     
    UTF-8 
      *8-bit Unicode Transformation Format* – "é um tipo de codificação Unicode 
      de comprimento variável (...) Pode representar qualquer carácter universal 
