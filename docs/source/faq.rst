@@ -8,7 +8,7 @@ Como identificar menção a um Ensaio Clínico?
 
 O Ensaio Clínico é um estudo em voluntários humanos com o objetivo de responder 
 a questões específicas de saúde. O registro de ensaio clínico deve ser 
-identificado pelo elemento :ref:`_elemento-ext-link`. Veja:
+identificado pelo elemento :ref:`elemento-ext-link`. Veja:
 
 .. code-block:: xml
 
@@ -17,7 +17,7 @@ identificado pelo elemento :ref:`_elemento-ext-link`. Veja:
    ...
 
 
-Para identificação de Ensaio Clínico o elemento :ref:`_elemento-ext-link` deve 
+Para identificação de Ensaio Clínico o elemento :ref:`elemento-ext-link` deve 
 apresentar o valor "ClinicalTrial" no atributo @ext-link-type e no atributo 
 @xlink:href="" inserir a URL do registro de Ensaio Clínico.
 
@@ -30,7 +30,7 @@ Como identificar as subseções de um documento?
 ----------------------------------------------
 
 Artigos que apresentam subseções, devem ser identificados no documento pelo 
-elemento :ref:`_elemento-subj-group`. Veja:
+elemento :ref:`elemento-subj-group`. Veja:
 
 .. code-block:: xml
 
