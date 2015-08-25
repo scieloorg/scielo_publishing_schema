@@ -1381,8 +1381,8 @@ Exemplo:
             <named-content content-type="state">RJ</named-content>
         </addr-line>
         <country country="BR">Brasil</country>
-        <email>maurosilva@fiocruz.com</email>
-        <institution content-type="original">Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. maurosilva@fiocruz.com </institution>
+        <email>maurosilva@foo.com</email>
+        <institution content-type="original">Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. maurosilva@foo.com </institution>
     </aff>
     ...
  
@@ -1556,7 +1556,46 @@ Exemplo:
     </aff>
     ...
 
-.. note:: O uso desse elemento, ``<country>``, é obrigatório 
+.. note:: O uso desse elemento, ``<country>``, é obrigatório
+
+
+.. _elemento-email:
+
+<email>
+^^^^^^^
+
+Aparece em
+  :ref:`elemento-aff`, :ref:`elemento-corresp`
+  
+Ocorre
+  Zero ou mais vezes
+
+
+Tag utilizada para identificar endereços de email.
+
+
+Exemplos:
+
+.. code-block:: xml
+
+    ...
+    <aff id="aff01">
+        ...
+        <email>ciaocomestai@foo.com</email>
+        ...
+    </aff>
+    ...
+   
+
+.. code-block:: xml
+
+    ...
+    <corresp id="c01">
+        <label>*</label>
+        <italic>E-mail:</italic>
+        <email>allorafaciamocosi@foo.com</email>
+    </corresp>
+    ...
 
 
 .. _elemento-author-notes:
@@ -1583,7 +1622,7 @@ Exemplo:
     <article-meta>
         ...
         <author-notes>
-            <corresp id="c01"><bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@hotmail.com</email></corresp>
+            <corresp id="c01"><bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@foo.com</email></corresp>
             <fn fn-type="conflict">
                 <p>Conflict of interest: none</p>
             </fn>     
@@ -1667,7 +1706,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
     <author-notes>
         <corresp id="c01">
             <label>*</label>
-            <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@contato.com</email>
+            <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@foo.com</email>
         </corresp>           
         <fn fn-type="conflict">
             <p>Não há conflito de interesse entre os autores do artigo.</p>
@@ -1832,7 +1871,7 @@ Exemplo:
     ...
     <author-notes>
         ...
-        <corresp id="c01">Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@contato.com</email></corresp>
+        <corresp id="c01">Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@foo.com</email></corresp>
         ...
     </author-notes>
     ...
