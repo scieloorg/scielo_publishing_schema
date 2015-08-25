@@ -64,6 +64,12 @@ formato XML.
 * `Packtools <https://github.com/scieloorg/packtools/>`_: Biblioteca 
   :term:`Python` que agrega funcionalidades e utilitários para a manipulação 
   de :term:`pacotes SciELO PS` e XMLs :term:`SciELO PS`.
+* `Package Maker <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>`_:
+  Ferramenta para a geração de :term:`pacotes SciELO PS` e PMC (Windows apenas).
+  Adicionalmente, relatórios detalhados sobre a estrutura e a validade de alguns 
+  metadados dos documentos XML também são gerados como subproduto da geração dos 
+  pacotes.
+
 
 .. _journal-meta-csv:
 
@@ -134,6 +140,8 @@ Documentação narrativa
    narr/artigo-comentado
    narr/errata
    narr/aheadofprint
+
+   faq
 
 
 Lista de elementos

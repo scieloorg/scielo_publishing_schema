@@ -19,7 +19,7 @@ Para maiores detalhes leia a especificação do padrão :term:`XML`
 ==========
  
 A tag de declaração ``<!DOCTYPE>`` serve para indicar a :term:`DTD` 
-à qual o XML é associado, ou seja, as regras estruturais do documento. 
+à qual o XML é associado, ou seja, as regras estruturais do :term:`documento`. 
 O SciELO Publishing Schema utiliza como base o padrão *JATS 1.0*. 
  
 Exemplo versão JATS 1.0:
@@ -33,7 +33,7 @@ Exemplo versão JATS 1.0:
 Tags Flutuantes
 ===============
 
-As chamadas tags flutuantes podem aparecer em todo o documento, :ref:`elemento-front`, 
+As chamadas tags flutuantes podem aparecer em todo o :term:`documento`, :ref:`elemento-front`, 
 :ref:`elemento-body` e :ref:`elemento-back`.
 
 
@@ -296,7 +296,7 @@ Ocorre
   Uma ou mais vezes
  
 
-Esta tag identifica parágrafos. Deve ser inserida no documento sem nenhum 
+Esta tag identifica parágrafos. Deve ser inserida no :term:`documento` sem nenhum 
 tipo de atributo.
 
 
@@ -372,7 +372,7 @@ obrigatoriamente os atributos ``@dtd-version``, ``@article-type``, ``@xml:lang``
 
 O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e 
 deve ser utilizado quando equações :term:`MathML` forem identificadas no 
-documento.
+:term:`documento`.
 
 Para ``@dtd-version`` utilizar o valor 1.0 conforme a :term:`DTD`, 
 explicitada em :ref:`xml-doctype`. Para ``@article-type`` define-se a tipologia 
@@ -819,7 +819,7 @@ Ocorre
   Uma vez
  
 
-Designa a seção do documento e serve para organizar documentos em grupos 
+Designa a seção do :term:`documento` e serve para organizar documentos em grupos 
 por assunto. É obrigatória a presença de uma e somente uma ocorrência do
 elemento ``<subj-group>`` com o atributo ``@subj-group-type="heading"``. 
 Em ``<subject>`` atribui-se a seção em que o artigo foi classificado 
@@ -2141,6 +2141,27 @@ Exemplo:
     </article-meta>
     ...
  
+
+Essa tag também pode ser utilizada com o atributo ``@seq`` para números 
+onde mais de um artigo inicia-se na mesma página. Uma sequência alfanumérica 
+deve ser utilizada para diferenciar um artigo dos outros na mesma página. 
+Por exemplo, o primeiro artigo que começar na página 82 pode receber
+a sequência "82a"; a letra sequencial seria "a" seguido de "b" para um segundo 
+artigo etc. 
+
+Exemplo:
+
+.. code-block:: xml
+
+    ...
+    <article-meta>
+        ...
+        <fpage seq="a">82</fpage>
+        <lpage>82</lpage>
+        ...
+    </article-meta>
+    ...
+
  
 .. _elemento-lpage:
 
@@ -2400,7 +2421,7 @@ Ocorre
   Zero ou mais vezes
  
 
-Identifica a quantidade total de páginas de um documento mencionado numa 
+Identifica a quantidade total de páginas de um :term:`documento` mencionado numa 
 referência. Deve ser utilizada com o atributo ``@units="pages"``.
 
 
@@ -3137,10 +3158,11 @@ quantidade de elementos presentes no artigo, por isso utiliza-se a tag
 ``<counts>`` para contabilizar o número exato de tabelas, figuras, 
 referências, equações e páginas presentes no arquivo. Esta tag deve ser 
 inserida como último item de :ref:`elemento-article-meta`.
+
  
 Os elementos que identificam os totais são:
 
-* ``<fig-count>``: Total de figuras no documento
+* ``<fig-count>``: Total de figuras no :term:`documento`
 * ``<table-count>``: Total de tabelas no documento
 * ``<equation-count>``: Total de equações do documento
 * ``<ref-count>``: Total de referências no documento
@@ -3164,10 +3186,12 @@ Exemplo:
     ...
  
 .. note:: A ordem dos elementos é importante.
-.. note:: No caso de o documento não apresentar alguns dos elementos contabilizados,
+          No caso de o :term:`documento` não apresentar alguns dos elementos contabilizados,
           o valor dos respectivos atributos ``@count`` deve ser ``0``. e.g.
           ``<equation-count count="0"/>``.
 
+.. note:: No caso de haver :ref:`elemento-article` e :ref:`elemento-sub-article`, 
+          deve-se contabilizar o total de elementos em ambos.
  
 .. _elemento-body:
 
@@ -3589,7 +3613,7 @@ esteja especificado dentro do grupo de apêndices ``app-group``.
  
 Seus atributos obrigatórios são:
  
-* ``@id``: Utilizado como um identificador único no documento e ganha maior 
+* ``@id``: Utilizado como um identificador único no :term:`documento` e ganha maior 
   importância quando há mais que um material suplementar e/ou quando o material 
   suplementar é referenciado no corpo do texto. Nesse caso é necessário relacionar 
   a chamada no texto com o "id" do material suplementar.
@@ -3974,7 +3998,7 @@ Exemplo:
     ...
  
 * **@id:** identificador da tag. É possível fazer referência cruzada no 
-  documento; esse atributo deve ter valor único no arquivo e é possível 
+  :term:`documento`; esse atributo deve ter valor único no arquivo e é possível 
   fazer link relacionado a um "rid".
  
  
@@ -4210,7 +4234,7 @@ Aparece em
 Ocorre
   Zero ou uma vez
 
-O ``<back>`` é a parte final do documento que compreende lista de referências e demais
+O ``<back>`` é a parte final do :term:`documento` que compreende lista de referências e demais
 dados referentes a pesquisa como: notas de rodapé, agradecimentos, apêndice,
 material suplementar, anexos e glossário.
  
@@ -4837,7 +4861,7 @@ Atributos obrigatórios
 Ocorre 
   Zero ou mais vezes
 
-Identifica o tipo de identificador (id) de um documento em uma referência.
+Identifica o tipo de identificador (id) de um :term:`documento` em uma referência.
 Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
 
 +--------+----------------------------------------+
@@ -5050,7 +5074,7 @@ Ocorre
   Zero ou uma vez
 
 A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
-o grupo de notas de rodapé mencionadas no documento que não representem notas de
+o grupo de notas de rodapé mencionadas no :term:`documento` que não representem notas de
 autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode
 possuir uma ou mais notas :ref:`elemento-fn`.
  
