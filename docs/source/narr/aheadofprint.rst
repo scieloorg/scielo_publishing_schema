@@ -4,7 +4,7 @@ Ahead Of Print
 ==============
 
 Todos os arquivos Ahead Of Print (AOP) devem apresentar o valor "research-article" em ``@article-type`` e em ``//subj-group[@subj-group-type="heading"]/subject`` considerar "Articles". 
-Esse tipo de documento não apresenta volume, número e paginação, portanto considerar "00" para esses elementos. Como segue o exemplo abaixo:
+Esse tipo de documento não apresenta volume, número e paginação, portanto os elementos :ref:`elemento-volume` e :ref:`elemento-issue` não devem ser utilizados. Considerar "00" somente para páginação como segue o exemplo abaixo:
 
 .. code-block:: xml
 	
@@ -12,8 +12,7 @@ Esse tipo de documento não apresenta volume, número e paginação, portanto co
 	 ...
 	 	<article-meta>
 			</pub-date>
-				<volume>00</volume>
-				<issue>00</issue>
+				...
 				<fpage>000</fpage>
 				<lpage>000</lpage>
 		</article-meta>

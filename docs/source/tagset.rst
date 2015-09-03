@@ -2073,7 +2073,7 @@ Aparece em
   :ref:`elemento-article-meta`, :ref:`elemento-element-citation`
  
 Ocorre
-  1. Uma vez em :ref:`elemento-front`
+  1. Zero ou uma vez em :ref:`elemento-front`
   2. Zero ou mais vezes em :ref:`elemento-back`
  
 
@@ -2109,7 +2109,7 @@ Aparece em
   :ref:`elemento-article-meta`, :ref:`elemento-element-citation`
  
 Ocorre
-  1. Uma vez em :ref:`elemento-front`
+  1. Zero ou uma vez em :ref:`elemento-front`
   2. Zero ou mais vezes em :ref:`elemento-back`
 
  
@@ -2130,23 +2130,6 @@ Em caso de suplemento de número em :ref:`elemento-front`, exemplo: ``v10n5s1``:
     </front>
     ...
  
-Em caso de :term:`ahead-of-print`, especificar valores zerados, como segue:
- 
-.. code-block:: xml
- 
-    ...
-    <front>
-        ...
-        <article-meta>
-            ...
-            <volume>00</volume>
-            <issue>00</issue>
-            ...
-        </article-meta>
-        ...
-    </front>
-    ...
-
 .. note:: Para informações de suplemento em :ref:`elemento-front` não se deve 
           utilizar a tag ``<supplement>``.
  
