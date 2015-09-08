@@ -3594,7 +3594,7 @@ Exemplo:
     ...
  
 
-.. elemento-table:
+.. _elemento-table:
 
 <table>
 ^^^^^^^
@@ -3618,6 +3618,81 @@ das regras:
 Toda a formatação para exibição deve ser realizada conforme descrito no guia 
 `Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
 
+
+.. _elemento-table-traduzida:
+
+Legenda Traduzida
+^^^^^^^^^^^^^^^^^
+
+Tabelas com legendas traduzidas, com mais de 1 label e caption, devem ser 
+identificadas pelo elemento ``<table-wrap-group>`` o qual deve envolver os 
+elementos ``<table-wrap>`` de cada idioma veja:
+
+**Exemplo de tabela codificada:**
+
+.. code-block:: xml
+ 
+    ...
+    <table-wrap-group id="t01">
+        <table-wrap xml:lang="pt">
+            <label>Tabela 1</label>
+            <caption>
+                <title>Caracterização química em óxidos do rejeito.</title>
+            </caption>
+        </table-wrap>
+        <table-wrap xml:lang="en">
+            <label>Table 1</label>
+            <caption>
+                <title>Chemical characterization of the oxides of the tailing</title>
+            </caption>
+            <table frame="hsides" rules="groups">
+                <thead>
+                    <tr>
+                        <th>Variável</th>
+                        <th>Resultados (N=880)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">Gênero</td>
+                        <td align="center"/>
+                    </tr>
+                    <tr>
+                        <td align="center">Masculino</td>
+                        <td align="center">411 (46,7)</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Feminino</td>
+                        <td align="center">469 (53,3)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+    </table-wrap-group>
+    ...
+
+
+**Exemplo de Tabela como imagem:**
+
+.. code-block:: xml
+ 
+    ...
+    <table-wrap-group id="t03">
+        <table-wrap xml:lang="pt">
+            <label>Tabela 3</label>
+            <caption>
+                <title>Análise multivariada dos fatores de risco associados à readmissão - modelo 2</title>
+            </caption>
+        </table-wrap>
+        <table-wrap id="en">
+            <label>Table 3</label>
+            <caption>
+                <title>Multivariate analysis of risk factors associated with readmission - Model 2</title>
+            </caption>
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-gt031.tif"/>
+        </table-wrap>
+    </table-wrap-group>
+    ...
 
 .. _elemento-supplementary-material:
 
@@ -3922,8 +3997,7 @@ Ocorre
 
 Tag que representa uma descrição de tabela, figura ou objeto similar.
  
-Obrigatoriamente dentro de ``<caption>`` deve-se conter a tag de ``<title>`` 
-com a descrição textual da legenda dos objetos mencionados.
+O elemento ``<caption>`` deve envolver a tag ``<title>`` com a descrição textual da legenda dos objetos mencionados.
  
 Exemplo:
  
@@ -3948,9 +4022,9 @@ Exemplo:
 Aparece em
   :ref:`elemento-p`,
   :ref:`elemento-app`,
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-fig`
-  :ref:`elemento-glossary`
+  :ref:`elemento-supplementary-material`,
+  :ref:`elemento-fig`,
+  :ref:`elemento-glossary`.
 
 Atributos obrigatórios
   1. id (ver :ref:`sugestao-atribuicao-id`)
@@ -3984,7 +4058,7 @@ arquivos. Seus atributos são:
 Para figuras com legendas a marcação deve envolver toda a informação de 
 imagem, inclusive sua descrição, com a tag ``<fig>``. Dentro de ``<fig>`` 
 serão identificados o rótulo da figura :ref:`elemento-label` e mais a tag de 
-:ref:`elemento-caption` com a tag ``<title>`` com o título da figura.
+:ref:`elemento-caption` com a tag :ref:`elemento-p` com o título da figura.
  
 Exemplo:
  
@@ -4054,8 +4128,37 @@ Exemplo:
         <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
     </fig>
 
- 
- 
+
+.. _elemento-fig-traduzido:
+
+Legendas Traduzidas
+^^^^^^^^^^^^^^^^^^^
+
+Figuras que apresentam legendas traduzidas, com mais de 1 label e caption, 
+devem ser identificadas pelo elemento ``<fig-group>`` o qual deve envolver os 
+elementos ``<fig>`` de cada idioma. Veja:
+
+.. code-block:: xml
+
+    ...
+    <fig-group id="f1">
+        <fig xml:lang="pt">
+            <label>Figura 1</label>
+            <caption>
+                <title>Caracterização química em óxidos do rejeito.</title>
+            </caption>
+        </fig>
+        <fig xml:lang="en">
+            <label>Figure 1</label>
+            <caption>
+                <title>Chemical characterization of the oxides of the tailing.</title>
+            </caption>
+        </fig>
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf05.tif"/>
+    </fig-group>
+    ...
+
+
 .. _elemento-attrib:
 
 <attrib>
@@ -4858,6 +4961,7 @@ Exemplos:
           contruídas de forma incorreta, o que dificulta a marcação de seus
           elementos.
           No caso de referências que não apresentam informações como data de publicação ou título, a referência deve ser considerada como "incomplete".
+
 
 .. _elemento-element-chapter-title:
 
