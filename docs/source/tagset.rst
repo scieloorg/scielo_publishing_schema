@@ -2240,8 +2240,8 @@ Exemplo:
     ...
     <article-meta>
         ...
-        <volume>00</volume>
-        <issue>00</issue>
+        <volume>10</volume>
+        <issue>2</issue>
         <elocation-id>0102961</elocation-id>
         ...
     </article-meta>
