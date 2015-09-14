@@ -4940,12 +4940,6 @@ Exemplos:
     ...
 
 
-.. note:: Deve-se levar em consideração que muitas vezes as referências são
-          contruídas de forma incorreta, o que dificulta a marcação de seus
-          elementos.
-          No caso de referências que não apresentam informações como data de publicação ou título, a referência deve ser considerada como "incomplete".
-
-
 .. _elemento-element-chapter-title:
 
 <chapter-title>
