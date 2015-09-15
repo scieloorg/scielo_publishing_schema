@@ -360,7 +360,7 @@ Atributos obrigatórios
   2. article-type
   3. xml:lang
   4. xmlns:xlink="http://www.w3.org/1999/xlink"
-  5. specific-use="sps-1.2"
+  5. specific-use="sps-1.3"
  
 Ocorre
   Uma vez
@@ -461,7 +461,7 @@ Exemplo da tag completa versão JATS 1.0:
  
 .. code-block:: xml
  
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.2" article-type="research-article" xml:lang="en">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.3" article-type="research-article" xml:lang="en">
  
 
 
