@@ -34,7 +34,7 @@ Tags Flutuantes
 ===============
 
 As chamadas tags flutuantes podem aparecer em todo o :term:`documento`, :ref:`elemento-front`, 
-:ref:`elemento-body` e :ref:`elemento-back`.
+:ref:`elemento-body`, :ref:`elemento-back` e :ref:`elemento-front-stub`.
 
 
 .. _elemento-xref:
