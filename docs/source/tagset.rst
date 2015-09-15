@@ -3886,7 +3886,7 @@ Exemplo:
 ------
 
 Aparece em
-  :ref:`elemento-p`, ``<list-item>``, :ref:`elemento-disp-quote`
+  :ref:`elemento-p`, ``<list-item>``, :ref:`elemento-disp-quote` e :ref:`elemento-boxed-text`
 
 Atributos obrigatórios
   1. list-type
