@@ -5195,8 +5195,9 @@ Ocorre
 
 A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
 o grupo de notas de rodapé mencionadas no :term:`documento` que não representem notas de
-autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode
-possuir uma ou mais notas :ref:`elemento-fn`.
+autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode 
+possuir um único título identificado com a tag ``<title>``  e uma ou mais notas 
+:ref:`elemento-fn`.
  
 Exemplo:
  
@@ -5206,6 +5207,7 @@ Exemplo:
     <back>
         ...
         <fn-group>
+            <title>Notas</title>
             <fn fn-type="supported-by" id="fn01">
                 <label>*</label>
                 <p>Vivamus sodales fermentum lorem, consectetur mollis lacus sollicitudin quis</p>
