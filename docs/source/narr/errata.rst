@@ -67,7 +67,7 @@ No artigo a que a errata se refere, inserir uma nota de rodapé conforme o exemp
         ...
         <fn-group>
             <fn fn-type="other">
-                <label>Erratum</label>
+                <title>Erratum</title>
                 <p>Texto da errata</p>
             </fn>
         </fn-group>
