@@ -80,4 +80,4 @@ No artigo a que a errata se refere, inserir uma nota de rodapé conforme o exemp
 
 
 .. note:: Para mais informações, verificar o "Guia para o registro e publicação de errata, retratações e manifestações de preocupação" em: 
-    http://www.scielo.org/php/level.php?lang=pt&component=56&item=53
+    http://www.scielo.org/php/level.php?lang=pt&component=56&item=65
