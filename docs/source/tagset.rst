@@ -266,7 +266,7 @@ Exemplos:
 
 .. code-block:: xml
 
-    <app>
+    <app id="app01">
         <label>Apêndice</label>
         ...
     </app>
@@ -3751,7 +3751,7 @@ Seus atributos obrigatórios são:
     </body>
     <back>
         <app-group>
-            <app>
+            <app id="app01">
                 <label>S-1</label>
                 <supplementary-material id="suppl04" mimetype="image" mime-subtype="tiff" xlink:href="11234-5678-rctb-45-05-0110-suppl01.tif">
                     <label>Fig 1.</label>
@@ -3760,7 +3760,7 @@ Seus atributos obrigatórios são:
                     </caption>
                 </supplementary-material>
             </app>
-            <app>
+            <app id="app02">
                 <label>S-2</label>
                 <supplementary-material id="suppl05" mimetype="image" mime-subtype="tiff" xlink:href="11234-5678-rctb-45-05-0110-suppl02.tif"/>
             </app>
@@ -5576,7 +5576,7 @@ Exemplo em apêndice:
 
   <back>
     <app-group>
-      <app>
+      <app id="app01">
       <label>Glossário</label>
         <glossary id="gl2">
           <def-list>
