@@ -55,8 +55,19 @@ Além disso, o elemento :ref:`elemento-related-article` deve, obrigatoriamente, 
 
 Para Errata o elemento :ref:`elemento-related-article` obrigatoriamente deve apresentar os 
 seguintes atributos: ``@related-article-type``; ``@id``; ``@xlink:href`` e 
-``@ext-link-type="doi"``. 
-Sendo que em ``@related-article-type`` o valor deverá ser "corrected-article".
+``@ext-link-type``. 
+
+Os valores possíveis para o atributo ``@ext-link-type``:
+
+
+* doi
+* scielo-pid
+* scielo-aid
+
+
+Em ``@related-article-type`` o valor deverá ser "corrected-article".
+
+
 
 No artigo a que a errata se refere, inserir uma nota de rodapé conforme o exemplo:
 
