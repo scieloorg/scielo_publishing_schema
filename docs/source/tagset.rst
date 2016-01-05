@@ -4615,7 +4615,7 @@ Exemplos:
                 <person-group person-group-type="author">
                     <collab>World Health Organization</collab>
                 </person-group>
-                <article-title>Control of the leishmaniases</article-title>
+                <source>Control of the leishmaniases</source>
                 <publisher-loc>Geneva</publisher-loc>
                 <publisher-name>WHO</publisher-name>
                 <year>2010</year>
