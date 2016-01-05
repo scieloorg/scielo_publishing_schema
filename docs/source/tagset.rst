@@ -34,7 +34,7 @@ Tags Flutuantes
 ===============
 
 As chamadas tags flutuantes podem aparecer em todo o :term:`documento`, :ref:`elemento-front`, 
-:ref:`elemento-body` e :ref:`elemento-back`.
+:ref:`elemento-body`, :ref:`elemento-back` e :ref:`elemento-front-stub`.
 
 
 .. _elemento-xref:
@@ -360,7 +360,7 @@ Atributos obrigatórios
   2. article-type
   3. xml:lang
   4. xmlns:xlink="http://www.w3.org/1999/xlink"
-  5. specific-use="sps-1.2"
+  5. specific-use="sps-1.3"
  
 Ocorre
   Uma vez
@@ -461,7 +461,7 @@ Exemplo da tag completa versão JATS 1.0:
  
 .. code-block:: xml
  
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.2" article-type="research-article" xml:lang="en">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.3" article-type="research-article" xml:lang="en">
  
 
 
@@ -1381,8 +1381,8 @@ Exemplo:
             <named-content content-type="state">RJ</named-content>
         </addr-line>
         <country country="BR">Brasil</country>
-        <email>maurosilva@fiocruz.com</email>
-        <institution content-type="original">Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. maurosilva@fiocruz.com </institution>
+        <email>maurosilva@foo.com</email>
+        <institution content-type="original">Prof. da Fundação Oswaldo Cruz; da Escola Nacional de Saúde Pública Sérgio Arouca, do Centro de Estudos da Saúde do Trabalhador e Ecologia Humana. RJ - Manguinhos / Brasil. maurosilva@foo.com </institution>
     </aff>
     ...
  
@@ -1556,7 +1556,46 @@ Exemplo:
     </aff>
     ...
 
-.. note:: O uso desse elemento, ``<country>``, é obrigatório 
+.. note:: O uso desse elemento, ``<country>``, é obrigatório
+
+
+.. _elemento-email:
+
+<email>
+^^^^^^^
+
+Aparece em
+  :ref:`elemento-aff`, :ref:`elemento-corresp`
+  
+Ocorre
+  Zero ou mais vezes
+
+
+Tag utilizada para identificar endereços de email.
+
+
+Exemplos:
+
+.. code-block:: xml
+
+    ...
+    <aff id="aff01">
+        ...
+        <email>ciaocomestai@foo.com</email>
+        ...
+    </aff>
+    ...
+   
+
+.. code-block:: xml
+
+    ...
+    <corresp id="c01">
+        <label>*</label>
+        <italic>E-mail:</italic>
+        <email>allorafaciamocosi@foo.com</email>
+    </corresp>
+    ...
 
 
 .. _elemento-author-notes:
@@ -1583,7 +1622,7 @@ Exemplo:
     <article-meta>
         ...
         <author-notes>
-            <corresp id="c01"><bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@hotmail.com</email></corresp>
+            <corresp id="c01"><bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@foo.com</email></corresp>
             <fn fn-type="conflict">
                 <p>Conflict of interest: none</p>
             </fn>     
@@ -1667,7 +1706,7 @@ Os valores possíveis para o atributo ``@fn-type`` são:
     <author-notes>
         <corresp id="c01">
             <label>*</label>
-            <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@contato.com</email>
+            <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@foo.com</email>
         </corresp>           
         <fn fn-type="conflict">
             <p>Não há conflito de interesse entre os autores do artigo.</p>
@@ -1832,7 +1871,7 @@ Exemplo:
     ...
     <author-notes>
         ...
-        <corresp id="c01">Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@contato.com</email></corresp>
+        <corresp id="c01">Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - São Paulo, Brasil. E-mail: <email>contato@foo.com</email></corresp>
         ...
     </author-notes>
     ...
@@ -2034,7 +2073,7 @@ Aparece em
   :ref:`elemento-article-meta`, :ref:`elemento-element-citation`
  
 Ocorre
-  1. Uma vez em :ref:`elemento-front`
+  1. Zero ou uma vez em :ref:`elemento-front`
   2. Zero ou mais vezes em :ref:`elemento-back`
  
 
@@ -2070,7 +2109,7 @@ Aparece em
   :ref:`elemento-article-meta`, :ref:`elemento-element-citation`
  
 Ocorre
-  1. Uma vez em :ref:`elemento-front`
+  1. Zero ou uma vez em :ref:`elemento-front`
   2. Zero ou mais vezes em :ref:`elemento-back`
 
  
@@ -2091,23 +2130,6 @@ Em caso de suplemento de número em :ref:`elemento-front`, exemplo: ``v10n5s1``:
     </front>
     ...
  
-Em caso de :term:`ahead-of-print`, especificar valores zerados, como segue:
- 
-.. code-block:: xml
- 
-    ...
-    <front>
-        ...
-        <article-meta>
-            ...
-            <volume>00</volume>
-            <issue>00</issue>
-            ...
-        </article-meta>
-        ...
-    </front>
-    ...
-
 .. note:: Para informações de suplemento em :ref:`elemento-front` não se deve 
           utilizar a tag ``<supplement>``.
  
@@ -2218,8 +2240,8 @@ Exemplo:
     ...
     <article-meta>
         ...
-        <volume>00</volume>
-        <issue>00</issue>
+        <volume>10</volume>
+        <issue>2</issue>
         <elocation-id>0102961</elocation-id>
         ...
     </article-meta>
@@ -3555,7 +3577,7 @@ Exemplo:
     ...
  
 
-.. elemento-table:
+.. _elemento-table:
 
 <table>
 ^^^^^^^
@@ -3579,6 +3601,81 @@ das regras:
 Toda a formatação para exibição deve ser realizada conforme descrito no guia 
 `Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
 
+
+.. _elemento-table-traduzida:
+
+Legenda Traduzida
+^^^^^^^^^^^^^^^^^
+
+Tabelas com legendas traduzidas, com mais de 1 label e caption, devem ser 
+identificadas pelo elemento ``<table-wrap-group>`` o qual deve envolver os 
+elementos ``<table-wrap>`` de cada idioma veja:
+
+**Exemplo de tabela codificada:**
+
+.. code-block:: xml
+ 
+    ...
+    <table-wrap-group id="t01">
+        <table-wrap xml:lang="pt">
+            <label>Tabela 1</label>
+            <caption>
+                <title>Caracterização química em óxidos do rejeito.</title>
+            </caption>
+        </table-wrap>
+        <table-wrap xml:lang="en">
+            <label>Table 1</label>
+            <caption>
+                <title>Chemical characterization of the oxides of the tailing</title>
+            </caption>
+            <table frame="hsides" rules="groups">
+                <thead>
+                    <tr>
+                        <th>Variável</th>
+                        <th>Resultados (N=880)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">Gênero</td>
+                        <td align="center"/>
+                    </tr>
+                    <tr>
+                        <td align="center">Masculino</td>
+                        <td align="center">411 (46,7)</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Feminino</td>
+                        <td align="center">469 (53,3)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+    </table-wrap-group>
+    ...
+
+
+**Exemplo de Tabela como imagem:**
+
+.. code-block:: xml
+ 
+    ...
+    <table-wrap-group id="t03">
+        <table-wrap xml:lang="pt">
+            <label>Tabela 3</label>
+            <caption>
+                <title>Análise multivariada dos fatores de risco associados à readmissão - modelo 2</title>
+            </caption>
+        </table-wrap>
+        <table-wrap id="en">
+            <label>Table 3</label>
+            <caption>
+                <title>Multivariate analysis of risk factors associated with readmission - Model 2</title>
+            </caption>
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-gt031.tif"/>
+        </table-wrap>
+    </table-wrap-group>
+    ...
 
 .. _elemento-supplementary-material:
 
@@ -3789,7 +3886,7 @@ Exemplo:
 ------
 
 Aparece em
-  :ref:`elemento-p`, ``<list-item>``, :ref:`elemento-disp-quote`
+  :ref:`elemento-p`, ``<list-item>``, :ref:`elemento-disp-quote` e :ref:`elemento-boxed-text`
 
 Atributos obrigatórios
   1. list-type
@@ -3883,8 +3980,7 @@ Ocorre
 
 Tag que representa uma descrição de tabela, figura ou objeto similar.
  
-Obrigatoriamente dentro de ``<caption>`` deve-se conter a tag de ``<title>`` 
-com a descrição textual da legenda dos objetos mencionados.
+O elemento ``<caption>`` deve envolver a tag ``<title>`` com a descrição textual da legenda dos objetos mencionados.
  
 Exemplo:
  
@@ -3909,9 +4005,9 @@ Exemplo:
 Aparece em
   :ref:`elemento-p`,
   :ref:`elemento-app`,
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-fig`
-  :ref:`elemento-glossary`
+  :ref:`elemento-supplementary-material`,
+  :ref:`elemento-fig`,
+  :ref:`elemento-glossary`.
 
 Atributos obrigatórios
   1. id (ver :ref:`sugestao-atribuicao-id`)
@@ -3945,7 +4041,7 @@ arquivos. Seus atributos são:
 Para figuras com legendas a marcação deve envolver toda a informação de 
 imagem, inclusive sua descrição, com a tag ``<fig>``. Dentro de ``<fig>`` 
 serão identificados o rótulo da figura :ref:`elemento-label` e mais a tag de 
-:ref:`elemento-caption` com a tag ``<title>`` com o título da figura.
+:ref:`elemento-caption` com a tag :ref:`elemento-p` com o título da figura.
  
 Exemplo:
  
@@ -4015,8 +4111,37 @@ Exemplo:
         <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
     </fig>
 
- 
- 
+
+.. _elemento-fig-traduzido:
+
+Legendas Traduzidas
+^^^^^^^^^^^^^^^^^^^
+
+Figuras que apresentam legendas traduzidas, com mais de 1 label e caption, 
+devem ser identificadas pelo elemento ``<fig-group>`` o qual deve envolver os 
+elementos ``<fig>`` de cada idioma. Veja:
+
+.. code-block:: xml
+
+    ...
+    <fig-group id="f1">
+        <fig xml:lang="pt">
+            <label>Figura 1</label>
+            <caption>
+                <title>Caracterização química em óxidos do rejeito.</title>
+            </caption>
+        </fig>
+        <fig xml:lang="en">
+            <label>Figure 1</label>
+            <caption>
+                <title>Chemical characterization of the oxides of the tailing.</title>
+            </caption>
+        </fig>
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf05.tif"/>
+    </fig-group>
+    ...
+
+
 .. _elemento-attrib:
 
 <attrib>
@@ -4815,11 +4940,6 @@ Exemplos:
     ...
 
 
-.. note:: Deve-se levar em consideração que muitas vezes as referências são
-          contruídas de forma incorreta, o que dificulta a marcação de seus
-          elementos.
-          No caso de referências que não apresentam informações como data de publicação ou título, a referência deve ser considerada como "incomplete".
-
 .. _elemento-element-chapter-title:
 
 <chapter-title>
@@ -5075,8 +5195,9 @@ Ocorre
 
 A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
 o grupo de notas de rodapé mencionadas no :term:`documento` que não representem notas de
-autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode
-possuir uma ou mais notas :ref:`elemento-fn`.
+autor, as quais deverão ser identificadas em :ref:`elemento-author-notes`. Pode 
+possuir um único título identificado com a tag ``<title>``  e uma ou mais notas 
+:ref:`elemento-fn`.
  
 Exemplo:
  
@@ -5086,6 +5207,7 @@ Exemplo:
     <back>
         ...
         <fn-group>
+            <title>Notas</title>
             <fn fn-type="supported-by" id="fn01">
                 <label>*</label>
                 <p>Vivamus sodales fermentum lorem, consectetur mollis lacus sollicitudin quis</p>

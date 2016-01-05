@@ -1,11 +1,12 @@
 SciELO Publishing Schema - Guia de uso dos elementos e atributos para documentos em XML
 =======================================================================================
  
-Versão |version| - abril de 2015.
+Versão |version| - setembro de 2015.
 
 
 Versões anteriores:
 
+* `Versão 1.2 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.2-branch/>`_ (suportada).
 * `Versão 1.1 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.1-branch/>`_.
 * `Versão 1.0 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.0-branch/>`_.
 
@@ -44,6 +45,7 @@ processo de submissão e comunidade de usuários.
 .. toctree::
    :maxdepth: 1
 
+   whatsnew-1.3
    whatsnew-1.2
    whatsnew-1.1
 
