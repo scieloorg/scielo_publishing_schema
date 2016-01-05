@@ -2156,6 +2156,7 @@ Em caso de número especial em :ref:`elemento-front`, exemplo: ``v10nspe``:
 Aparece em
   :ref:`elemento-article-meta`,
   :ref:`elemento-element-citation`
+  :ref:`elemento-front-stub`
  
 Ocorre
   Zero ou uma vez
@@ -2207,6 +2208,7 @@ Exemplo:
 Aparece em
   :ref:`elemento-article-meta`, 
   :ref:`elemento-element-citation`
+  :ref:`elemento-front-stub`
  
 Ocorre
   Zero ou uma vez
@@ -5738,26 +5740,28 @@ Exemplo da tag completa:
 ------------
 
 Aparece em
-  :ref:`elemento-sub-article`, 
-  :ref:`elemento-response`.
+    :ref:`elemento-sub-article`,
+    :ref:`elemento-response`.
 
 
 Tags obrigatórias
-  ``<subject>``
-  :ref:`elemento-article-title`
+    ``<subject>``
+    :ref:`elemento-article-title`
 
 
 Ocorre
-
-Uma vez
+    Uma vez
 
 
 Tag utilizada em :ref:`elemento-sub-article` a qual herda os metadados do xml principal, 
 portanto não inserir as tags :ref:`elemento-journal-meta` e :ref:`elemento-article-meta`. 
 Nessa tag deve ser inserido apenas as informações que são diferentes das que 
 constam no artigo principal, ou seja, não é necessário inserir informações como 
-:ref:`elemento-volume`, :ref:`elemento-issue`, :ref:`elemento-fpage` :ref:`elemento-lpage` e :ref:`elemento-elocation-id`, 
-:ref:`elemento-pub-date`, :ref:`elemento-permissions`, :ref:`elemento-funding-group`, :ref:`elemento-history`.
+:ref:`elemento-volume`, :ref:`elemento-issue`, :ref:`elemento-pub-date`, 
+:ref:`elemento-funding-group` e :ref:`elemento-history`.
+
+
+Versões em outros idiomas podem apresentar elementos de numeração de página diferentes do documento no idioma original. Nesses casos os elementos :ref:`elemento-fpage` :ref:`elemento-lpage` e :ref:`elemento-elocation-id` devem ser identificados em :ref:`elemento-front-stub`.
 
 
 Exemplo da tag completa:
