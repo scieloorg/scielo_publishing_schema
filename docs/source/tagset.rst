@@ -5234,7 +5234,7 @@ Atributos obrigatório
   1. id (Ver :ref:`sugestao-atribuicao-id`)
  
 Ocorre
-  Zero ou uma vez
+  Zero ou mais vezes
 
 Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
 básica de um apêndice devemos levar em consideração duas tags importantes, a de
