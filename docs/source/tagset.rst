@@ -3172,7 +3172,7 @@ Aparece em
   :ref:`elemento-article-meta`
  
 Ocorre
-  Uma vez
+  Zero ou uma vez
 
 
 Na elaboração do XML alguns dados são importantes para determinar a 
