@@ -5791,10 +5791,9 @@ Exemplo da tag completa:
     ...
 
 
-.. note:: Para arquivos traduzidos inserir em ``<front-stub>`` apenas os dados 
-          traduzidos, ou seja, se há afiliação traduzida identificar autores e 
-          afiliações, caso contrário, não identificar nenhum dado de autor e afiliação.
-
+.. note:: Para :ref:`elemento-sub-article` do tipo ``@translation``, inserir em ``<front-stub>`` 
+          apenas os dados traduzidos. Para afiliação, manter os dados apenas em ``<institution content-type="original">``.
+          
 
 .. _elemento-response:
 
