@@ -5191,7 +5191,7 @@ Aparece em
   :ref:`elemento-back`
 
 Ocorre
-  Zero ou uma vez
+  Zero ou mais vezes
 
 A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
 o grupo de notas de rodapé mencionadas no :term:`documento` que não representem notas de
