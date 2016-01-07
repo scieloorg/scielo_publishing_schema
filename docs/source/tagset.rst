@@ -2129,9 +2129,23 @@ Em caso de suplemento de número em :ref:`elemento-front`, exemplo: ``v10n5s1``:
         ...
     </front>
     ...
+
+Em caso de número especial em :ref:`elemento-front`, exemplo: ``v10nspe``:
  
-.. note:: Para informações de suplemento em :ref:`elemento-front` não se deve 
-          utilizar a tag ``<supplement>``.
+.. code-block:: xml
+ 
+    ...
+    <front>
+        ...
+        <article-meta>
+            ...
+            <volume>10</volume>
+            <issue>spe</issue>
+            ...
+        </article-meta>
+        ...
+    </front>
+    ...
  
  
 .. _elemento-fpage:
@@ -2142,6 +2156,7 @@ Em caso de suplemento de número em :ref:`elemento-front`, exemplo: ``v10n5s1``:
 Aparece em
   :ref:`elemento-article-meta`,
   :ref:`elemento-element-citation`
+  :ref:`elemento-front-stub`
  
 Ocorre
   Zero ou uma vez
@@ -2193,6 +2208,7 @@ Exemplo:
 Aparece em
   :ref:`elemento-article-meta`, 
   :ref:`elemento-element-citation`
+  :ref:`elemento-front-stub`
  
 Ocorre
   Zero ou uma vez
@@ -2645,16 +2661,52 @@ Os valores possíveis para o atributo ``@date-type`` são:
 -------------
 
 Aparece em
-  :ref:`elemento-article-meta`
+  :ref:`elemento-article-meta`, 
+  :ref:`elemento-boxed-text`, 
+  :ref:`elemento-disp-quote`, 
+  :ref:`elemento-fig`,
+  ``<graphic>``, 
+  :ref:`elemento-media`, 
+  :ref:`elemento-supplementary-material`, 
+  :ref:`elemento-table-wrap`, 
+  :ref:`elemento-verse-group`.
+
  
 Ocorre
-  Uma vez
+  Uma vez em :ref:`elemento-article-meta`
+
+  Zero ou mais vezes nos demais elementos
+
 
 
 A permissão é um conjunto de condições sob as quais o conteúdo do artigo 
 pode ser usado, acessado e distribuído.
- 
- 
+
+
+Tabela - :ref:`elemento-permissions` aparece em:
+
++---------------------------+---------------------------+---------------------------------------------------------+
+| Objeto do Documento       | Elementos que podem       | O que a permissão                                       |
+|                           | apresentar <permisssions> | envolve                                                 |
++===========================+===========================+=========================================================+
+| Caixa de Texto            | <boxed-text>              | A própria tag                                           |
++---------------------------+---------------------------+---------------------------------------------------------+
+| Citação                   | <disp-quote>              | A própria tag                                           |
++---------------------------+---------------------------+---------------------------------------------------------+
+| Figura                    | <fig>                     | Toda a figura e arquivos relacionados                   |
++---------------------------+---------------------------+---------------------------------------------------------+
+| Gráfico/Imagem            | <graphic>                 | O arquivo da imagem (`@xlink:href`) e sua descrição     |
++---------------------------+---------------------------+---------------------------------------------------------+
+| Mídia                     | <media>                   | O arquivo mídia (`@xlink:href`) e sua descrição         |
++---------------------------+---------------------------+---------------------------------------------------------+
+| Material Suplementar      | <supplementary-material>  | O arquivo suplementar e sua descrição                   |
++---------------------------+---------------------------+---------------------------------------------------------+
+| Tabelas, legendas e notas | <table-wrap>              | A tabela, legenda, label e notas de rodapé de tabela    |
++---------------------------+---------------------------+---------------------------------------------------------+
+| Grupo de Versos           | <verse-group>             | A própria tag                                           |
++---------------------------+---------------------------+---------------------------------------------------------+
+
+  
 .. _elemento-license:
 
 <license>
@@ -2664,11 +2716,12 @@ Aparece em
   :ref:`elemento-permissions`
  
 Atributos obrigatórios
-  1. license-type="open-access"
-  2. xlink:href
+  ``license-type="open-access"``,
+  ``xlink:href``,
+  ``xml:lang``.
  
 Ocorre
-  Uma vez
+  Uma ou mais vezes
 
 
 Define a licença de uso adotada pelo artigo, por meio de referência à URL onde 
@@ -2702,9 +2755,10 @@ Os valores possíveis para ``@xlink:href`` são:
 | https://creativecommons.org/licenses/by-nc-nd/3.0/igo/ | BY-NC-ND/IGO versão 3.0 |
 +--------------------------------------------------------+-------------------------+
 
+Os valores para ``@xml:lang`` deve ser o correspondente à língua usada no texto da licença identificado pelo elemento ``<license-p>``. 
 
-Além da referência à URL, o texto da licença deve ser adicionado na tag
-``<license-p>``.
+Obrigatoriamente deve haver um ``<license-p>`` na língua principal do artigo ou em inglês.
+
  
 Exemplo:
  
@@ -2716,37 +2770,122 @@ Exemplo:
         <permissions>
             ...
             <license license-type="open-access"
-                     xlink:href="http://creativecommons.org/licenses/by/4.0/">
+                     xlink:href="http://creativecommons.org/licenses/by/4.0/"
+                     xml:lang="en">
                 <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+            </license>
+            <license license-type="open-access"
+                     xlink:href="http://creativecommons.org/licenses/by/4.0/"
+                     xml:lang="pt">
+                <license-p>Este artigo está licenciado com uma Licença Creative Commons que permite uso irrestrito, distribuição, e reprodução em qualquer mídia, desde que a obra original seja citada adequadamente.</license-p>
+            </license>
+            <license license-type="open-access"
+                     xlink:href="http://creativecommons.org/licenses/by/4.0/"
+                     xml:lang="es">
+                <license-p>Este es un artículo de acceso abierto distribuido bajo los términos de la licencia Creative Commons Attribution License, que permite el uso ilimitado, distribución y reproducción en cualquier medio, siempre que el artículo original esté debidamente citado.</license-p>
             </license>
         </permissions>
         ...
     </article-meta>
     ...
+  
  
-.. note:: O texto de ``<license-p>`` deve ser inserido na língua principal do artigo.
- 
- 
-.. _elemento-copyright:
+.. _elemento-copyright-holder:
 
-<copyright>
-^^^^^^^^^^^
+<copyright-holder>
+^^^^^^^^^^^^^^^^^^
 
 Aparece em
   :ref:`elemento-permissions`
  
 Ocorre
-  Zero ou uma vez
+  Zero ou mais
 
 
-É possível além de :ref:`elemento-license` acrescentar outras informações 
-de direitos autorais através de duas tags, são elas:
+O `<copyright-holder>` deve ser utilizado quando um trabalho está protegido por direitos autorais.
+Nesse elemento deve ser identificado a pessoa ou instituição que detém os direitos autorais do documento.
+
+Exemplo:
+
+ .. code-block:: xml
+
+    ...
+     <article-meta>
+       ...
+        <permisssions>
+           ...
+            <copyright-holder>SciELO</copyright-holder>
+           ...
+        </permissions>
+        ...
+     </article-meta>
+
+
+.. _elemento-copyright-year:
+
+<copyright-year>
+^^^^^^^^^^^^^^^^^^
+
+Aparece em
+  :ref:`elemento-permissions`
  
-* ``<copyright-statement>`` para identificar a instituição a quem pertence 
-  os direitos. Normalmente a informação descrita aqui vem junto com o 
-  símbolo de "copyright".
-* ``<copyright-year>`` para identificar o ano do direito autoral.
+Ocorre
+  Zero ou mais
+
+
+O `<copyright-year>` deve ser utilizado para identificar o ano do direito autoral. 
+O elemento deve conter quatro dígitos e não deve haver espaço.
+
+Exemplo:
+
+ .. code-block:: xml
+
+    ...
+     <article-meta>
+       ...
+        <permisssions>
+           ...
+            <copyright-year>2014</copyright-holder>
+           ...
+        </permissions>
+        ...
+     </article-meta>
+
+
+
+.. _elemento-copyright-statement:
+
+<copyright-statement>
+^^^^^^^^^^^^^^^^^^^^^
+
+Aparece em
+  :ref:`elemento-permissions`
  
+Ocorre
+  Zero ou mais
+
+
+O `<copyright-statement>`, assim como o :ref:`elemento-license-p` são utilizados para fins de exibição. 
+Esse elemento deve identificar a instituição a quem pertence os direitos. Normalmente a informação descrita aqui vem junto com o símbolo de ©.
+
+Exemplo:
+
+ .. code-block:: xml
+
+    ...
+     <article-meta>
+       ...
+        <permisssions>
+           ...
+            <copyright-statement>Copyright © 2014 SciELO</copyright-statement>
+           ...
+        </permissions>
+        ...
+     </article-meta>
+
+
+Abaixo um exemplo completo do :ref:`elemento-permissions` em :ref:`elemento-article-meta`.
+
 Exemplo:
  
 .. code-block:: xml
@@ -2755,17 +2894,105 @@ Exemplo:
     <article-meta>
         ...
         <permissions>
-            <copyright-statement>&#x00A9; 2013 Elsevier Editora Ltda.</copyright-statement>
-            <copyright-year>2013</copyright-year>
-            <license license-type="open-access" 
-                     xlink:href="http://creativecommons.org/licenses/by/4.0/">
-                <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License, which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+            <copyright-statement>Copyright © 2014 SciELO</copyright-statement>
+            <copyright-year>2014</copyright-year>
+            <copyright-holder>SciELO</copyright-holder>
+            <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/" xml:lang="en">
+                <license-p>The JATS Standard is copyrighted by NISO, but all of the non-normative information found on this repository is in the CC BY-NC 4.0</license-p>
             </license>
         </permissions>
         ...
     </article-meta>
     ...
  
+
+
+**Exemplo de Figura com informação de licenciamento:**
+
+.. code-block:: xml
+    
+    ...
+    <fig id="f01">
+        <label>Fig. 1</label>
+        <caption>
+            <title>título da imagem</title>
+        </caption>
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
+        <permissions>
+            <copyright-statement>Copyright © 2014 SciELO</copyright-statement>
+            <copyright-year>2014</copyright-year>
+            <copyright-holder>SciELO</copyright-holder>
+            <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="en">
+                <license-p>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</license-p>
+            </license>
+        </permissions>
+    </fig>
+    ...
+
+
+** Exemplo de Tabela codificada com informação de licenciamento:**
+
+.. code-block:: xml
+   
+   ...
+   <table-wrap>
+      <label>Table 1</label>
+      <caption>
+         <title>Chemical characterization of the oxides of the tailing</title>
+      </caption>
+      <table frame="hsides" rules="groups">
+         <thead>
+             <tr>
+                <th>Variável</th>
+                <th>Resultados (N=880)</th>
+             </tr>
+          </thead>
+          <tbody>
+             <tr>
+                <td align="center">Gênero</td>
+                <td align="center"/>
+             </tr>
+             <tr>
+                <td align="center">Masculino</td>
+                <td align="center">411 (46,7)</td>
+             </tr>
+             <tr>
+                <td align="center">Feminino</td>
+                <td align="center">469 (53,3)</td>
+             </tr>
+          </tbody>
+      </table>
+      <permissions>
+            <copyright-statement>Copyright © 2014 SciELO</copyright-statement>
+            <copyright-year>2014</copyright-year>
+            <copyright-holder>SciELO</copyright-holder>
+            <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="en">
+                <license-p>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</license-p>
+            </license>
+        </permissions>
+   </table-wrap>
+
+
+** Exemplo de Tabela em imagem com informação de licenciamento:**
+
+.. code-block:: xml
+   
+   ...
+   <table-wrap>
+      <label>Table 3</label>
+      <caption>
+         <title>Multivariate analysis of risk factors associated with readmission - Model 2</title>
+      </caption>
+         <graphic xlink:href="1234-5678-rctb-45-05-0110-gt031.tif"/>
+         <permissions>
+            <copyright-statement>Copyright © 2014 SciELO</copyright-statement>
+            <copyright-year>2014</copyright-year>
+            <copyright-holder>SciELO</copyright-holder>
+            <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="en">
+                <license-p>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</license-p>
+            </license>
+        </permissions>
+   </table-wrap>
  
 .. _elemento-abstract:
 
@@ -3172,7 +3399,7 @@ Aparece em
   :ref:`elemento-article-meta`
  
 Ocorre
-  Uma vez
+  Zero ou uma vez
 
 
 Na elaboração do XML alguns dados são importantes para determinar a 
@@ -5191,7 +5418,7 @@ Aparece em
   :ref:`elemento-back`
 
 Ocorre
-  Zero ou uma vez
+  Zero ou mais vezes
 
 A tag de grupo de notas é um elemento de :ref:`elemento-back` e deve conter todo
 o grupo de notas de rodapé mencionadas no :term:`documento` que não representem notas de
@@ -5234,7 +5461,7 @@ Atributos obrigatório
   1. id (Ver :ref:`sugestao-atribuicao-id`)
  
 Ocorre
-  Zero ou uma vez
+  Zero ou mais vezes
 
 Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
 básica de um apêndice devemos levar em consideração duas tags importantes, a de
@@ -5724,26 +5951,28 @@ Exemplo da tag completa:
 ------------
 
 Aparece em
-  :ref:`elemento-sub-article`, 
-  :ref:`elemento-response`.
+    :ref:`elemento-sub-article`,
+    :ref:`elemento-response`.
 
 
 Tags obrigatórias
-  ``<subject>``
-  :ref:`elemento-article-title`
+    ``<subject>``
+    :ref:`elemento-article-title`
 
 
 Ocorre
-
-Uma vez
+    Uma vez
 
 
 Tag utilizada em :ref:`elemento-sub-article` a qual herda os metadados do xml principal, 
 portanto não inserir as tags :ref:`elemento-journal-meta` e :ref:`elemento-article-meta`. 
 Nessa tag deve ser inserido apenas as informações que são diferentes das que 
 constam no artigo principal, ou seja, não é necessário inserir informações como 
-:ref:`elemento-volume`, :ref:`elemento-issue`, :ref:`elemento-fpage` :ref:`elemento-lpage` e :ref:`elemento-elocation-id`, 
-:ref:`elemento-pub-date`, :ref:`elemento-permissions`, :ref:`elemento-funding-group`, :ref:`elemento-history`.
+:ref:`elemento-volume`, :ref:`elemento-issue`, :ref:`elemento-pub-date`, 
+:ref:`elemento-funding-group` e :ref:`elemento-history`.
+
+
+Versões em outros idiomas podem apresentar elementos de numeração de página diferentes do documento no idioma original. Nesses casos os elementos :ref:`elemento-fpage` :ref:`elemento-lpage` e :ref:`elemento-elocation-id` devem ser identificados em :ref:`elemento-front-stub`.
 
 
 Exemplo da tag completa:
@@ -5762,10 +5991,9 @@ Exemplo da tag completa:
     ...
 
 
-.. note:: Para arquivos traduzidos inserir em ``<front-stub>`` apenas os dados 
-          traduzidos, ou seja, se há afiliação traduzida identificar autores e 
-          afiliações, caso contrário, não identificar nenhum dado de autor e afiliação.
-
+.. note:: Para :ref:`elemento-sub-article` do tipo ``@translation``, inserir em ``<front-stub>`` 
+          apenas os dados traduzidos. Para afiliação, manter os dados apenas em ``<institution content-type="original">``.
+          
 
 .. _elemento-response:
 
