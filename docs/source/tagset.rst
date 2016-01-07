@@ -2755,6 +2755,8 @@ Os valores possíveis para ``@xlink:href`` são:
 | https://creativecommons.org/licenses/by-nc-nd/3.0/igo/ | BY-NC-ND/IGO versão 3.0 |
 +--------------------------------------------------------+-------------------------+
 
+.. note:: Considerar a lista acima apenas para :ref:`elemento-article-meta`.
+
 Os valores para ``@xml:lang`` deve ser o correspondente à língua usada no texto da licença identificado pelo elemento ``<license-p>``. 
 
 Obrigatoriamente deve haver um ``<license-p>`` na língua principal do artigo ou em inglês.
@@ -2865,8 +2867,10 @@ Ocorre
   Zero ou mais
 
 
-O `<copyright-statement>`, assim como o :ref:`elemento-license-p` são utilizados para fins de exibição. 
-Esse elemento deve identificar a instituição a quem pertence os direitos. Normalmente a informação descrita aqui vem junto com o símbolo de ©.
+O ``<copyright-statement>``, assim como o ``<license-p>`` são utilizados para 
+fins de exibição. Esse elemento deve identificar a instituição a quem pertence 
+os direitos. Normalmente a informação descrita aqui vem junto com o símbolo 
+``©``.
 
 Exemplo:
 
@@ -2930,7 +2934,7 @@ Exemplo:
     ...
 
 
-** Exemplo de Tabela codificada com informação de licenciamento:**
+**Exemplo de Tabela codificada com informação de licenciamento:**
 
 .. code-block:: xml
    
@@ -2973,7 +2977,7 @@ Exemplo:
    </table-wrap>
 
 
-** Exemplo de Tabela em imagem com informação de licenciamento:**
+**Exemplo de Tabela em imagem com informação de licenciamento:**
 
 .. code-block:: xml
    
