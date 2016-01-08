@@ -4160,7 +4160,13 @@ Atributos obrigatórios
 Ocorre
   Zero ou mais vezes
 
-Utilizado para especificar referências a recursos disponíveis na internet.
+Utilizado para especificar referências a recursos disponíveis na internet. As 
+únicas restrições quanto à sua utilização são:
+
+* O *scheme* deve ser explícito, i.e., deve começar com ``http://``, ``ftp://``, 
+  ``urn:`` etc.
+* Referências locais, por meio do *scheme* ``file://`` não são permitidas.
+
 
 Exemplo:
  
@@ -4169,8 +4175,6 @@ Exemplo:
     ...
     <p>Neque porro quisquam est <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link> qui dolorem ipsum quia</p>
     ...
- 
-.. note:: O prefixo ``http://`` deve estar sempre presente no ``@xlink:href``.
  
  
 .. _elemento-list:
