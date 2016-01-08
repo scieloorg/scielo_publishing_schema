@@ -2347,8 +2347,7 @@ Ocorre
 
 Em ``<product>`` devem ser inseridas as informações do produto resenhado. 
 É importante salientar que esta tag só deverá ser utilizada quando 
-:ref:`elemento-article` possuir o atributo ``@article-type="book-review"`` ou 
-``@article-type="product-review"``.
+:ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
 
 Os valores possíveis para ``@product-type`` são: 
 
