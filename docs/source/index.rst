@@ -144,6 +144,7 @@ Documentação narrativa
    narr/aheadofprint
 
    faq
+   glossary
 
 
 Lista de elementos
@@ -155,10 +156,10 @@ compõem o :term:`tag set` JATS Publishing versão 1.0, e não elimina a
 necessidade de consultar sua documentação.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
+   :glob:
 
-   tagset
-   glossary
+   tagset/*
 
 
 Indices and tables
