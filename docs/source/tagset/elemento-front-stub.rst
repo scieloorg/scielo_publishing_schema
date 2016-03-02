@@ -25,9 +25,6 @@ constam no artigo principal, ou seja, não é necessário inserir informações 
 :ref:`elemento-funding-group` e :ref:`elemento-history`.
 
 
-Versões em outros idiomas podem apresentar elementos de numeração de página diferentes do documento no idioma original. Nesses casos os elementos :ref:`elemento-fpage` :ref:`elemento-lpage` e :ref:`elemento-elocation-id` devem ser identificados em :ref:`elemento-front-stub`.
-
-
 Exemplo da tag completa:
 
 .. code-block:: xml

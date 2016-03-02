@@ -6,7 +6,6 @@
 Aparece em
   :ref:`elemento-article-meta`, 
   :ref:`elemento-element-citation`
-  :ref:`elemento-front-stub`
  
 Ocorre
   Zero ou uma vez
