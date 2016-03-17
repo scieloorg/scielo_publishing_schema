@@ -53,7 +53,7 @@ Os valores possíveis para ``@product-type`` são:
             <publisher-loc>Barcelona</publisher-loc>
             <size units="pages">155</size>
             <isbn>9788497842525</isbn>                          
-            <inline-graphic>1234-5678-rctb-45-05-690-gf01.tif</inline-graphic>
+            <inline-graphic xlink:href="1234-5678-rctb-45-05-690-gf01.tif"/>
         </product>
         <history>
             ...
