@@ -76,7 +76,7 @@ Exemplo:
  
 
 
-**Exemplo de Figura com o elemento ``<permissions>``:**
+**Exemplo de Figura com o elemento <permissions>:**
 
 .. code-block:: xml
     
@@ -99,7 +99,7 @@ Exemplo:
     ...
 
 
-**Exemplo de Tabela codificada com o elemento ``<permissions>``:**
+**Exemplo de Tabela codificada com o elemento <permissions>:**
 
 .. code-block:: xml
    
@@ -142,7 +142,7 @@ Exemplo:
    </table-wrap>
 
 
-**Exemplo de Tabela em imagem com o elemento ``<permissions>``:**
+**Exemplo de Tabela em imagem com o elemento <permissions>:**
 
 .. code-block:: xml
    
