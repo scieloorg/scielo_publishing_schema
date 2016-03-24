@@ -31,7 +31,6 @@ Tabela - :ref:`elemento-permissions` aparece em:
 +----------------------+--------------------------+---------------------------------------+
 | Objeto do Documento  | Elementos que podem      | O que a permissão envolve             |
 |                      | apresentar <permisssions>|                                       |
-|                      | <permisssions>           |                                       |
 +======================+==========================+=======================================+
 | Caixa de Texto       | <boxed-text>             | A própria tag                         |
 +----------------------+--------------------------+---------------------------------------+
