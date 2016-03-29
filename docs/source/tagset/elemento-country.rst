@@ -35,5 +35,6 @@ Exemplo:
     </aff>
     ...
 
-.. note:: O uso desse elemento, ``<country>``, é obrigatório
+.. note:: Arquivos do tipo "translation" não devem apresentar o elemento ``<country>`` em ``<aff>``.
+O detalhamento da afiliação, no caso de tradução, é feito apenas 1 vez no arquivo de idioma principal.
 
