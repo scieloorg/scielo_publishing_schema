@@ -33,6 +33,18 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 +------------------------+-------------------------------------------+
 
 
+Para Errata o elemento :ref:`elemento-related-article` obrigatoriamente deve apresentar os 
+seguintes atributos: ``@related-article-type``; ``@id``; ``@xlink:href`` e 
+``@ext-link-type``. 
+
+Os valores possíveis para o atributo ``@ext-link-type``:
+
+
+* doi
+* scielo-pid
+* scielo-aid
+
+
 
 Referências
 ===========
