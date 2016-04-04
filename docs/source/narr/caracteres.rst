@@ -32,3 +32,6 @@ caracteres:
 | >         | &gt;     | > como valor de atributo ou texto de elemento no XML.|
 +-----------+----------+------------------------------------------------------+
 
+Verifique no link abaixo a tabela de caracteres Unicode:
+
+<http://unicode-table.com/en/>
