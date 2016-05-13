@@ -1,4 +1,4 @@
-SciELO Publishing Schema - Guia de uso dos elementos e atributos para documentos em XML
+﻿SciELO Publishing Schema - Guia de uso dos elementos e atributos para documentos em XML
 =======================================================================================
  
 Versão |version| - março de 2016.
@@ -33,7 +33,7 @@ em :term:`XML` são tratadas na lista de discussão
 Notas da versão
 ---------------
 
-Novas versões serão disponibilizadas em um calendário fixo, a cada seis meses. 
+Novas versões serão disponibilizadas em um calendário fixo a cada seis meses. 
 Versões de correção serão disponibilizadas sob demanda, e serão identificadas 
 no terceiro dígito identificador da versão. e.g.: versão *1.1.1*.
 
