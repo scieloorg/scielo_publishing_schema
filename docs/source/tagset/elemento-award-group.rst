@@ -3,13 +3,18 @@
 <award-group>
 ^^^^^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-funding-group`
- 
-Ocorre
+
+Ocorre:
+
   Uma ou mais vezes
 
+Identifica um grupo de dados de financiamento referente a um artigo. Pode haver tantos grupos quantos forem os financiadores.
 
-Um artigo pode ter diversos financiadores. Cada grupo de dados de 
-financiamento será identificado pela tag ``<award-group>``.
- 
+Exemplo:
+
+
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

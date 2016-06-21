@@ -3,13 +3,25 @@
 <back>
 ======
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-article`
 
-Ocorre
+Ocorre:
+
   Zero ou uma vez
 
-O ``<back>`` é a parte final do :term:`documento` que compreende lista de referências e demais
-dados referentes a pesquisa como: notas de rodapé, agradecimentos, apêndice,
-material suplementar, anexos e glossário.
- 
+Parte final do :term:`documento` que compreende:
+
+* lista de referências;
+* notas de rodapé;
+* agradecimentos
+* apêndice(s)
+* material suplementar
+* anexos; e
+* glossário.
+
+Exemplo:
+
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

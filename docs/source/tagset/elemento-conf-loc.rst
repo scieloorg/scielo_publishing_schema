@@ -3,15 +3,15 @@
 <conf-loc>
 ^^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-element-citation`
-  
-Ocorre 
+
+Ocorre:
+
   Zero ou mais vezes
 
-Identifica o local, país, cidade, estado, província, e local físico como uma
-assembléia, anfiteatro e etc de uma conferência, congresso, reunião, palestra,
-seminário e etc mencionado em uma referência.
+Identifica a localização geográfica (país, cidade, estado, província) e/ou local físico (assembléia, anfiteatro etc.) de uma conferência, congresso, reunião, palestra, seminário e similares, mencionado em uma referência bibliográfica.
 
 Exemplo:
 
@@ -23,3 +23,5 @@ Exemplo:
     </element-citation>
     ...
 
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

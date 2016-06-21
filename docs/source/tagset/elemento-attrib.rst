@@ -3,7 +3,8 @@
 <attrib>
 --------
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-boxed-text`
   :ref:`elemento-fig`
   ``<graphic>``
@@ -12,16 +13,14 @@ Aparece em
   :ref:`elemento-table-wrap`
   :ref:`elemento-verse-group`
 
-Ocorre
+Ocorre:
 
   Zero ou mais vezes
 
-
-Elemento utilizado para identificar a descrição da fonte, nome de autor de poesias, agradecimentos, material de direitos autorais, ou outras informações. Geralmente utilizado para especificação de fonte de imagens e para identificar o autor de uma poesia ou verso.
-
+Descreve dados da fonte, autoria, agradecimentos, material de direitos autorais e outras informações. Geralmente se utiliza para especificar a fonte de origem de figuras e para identificar o autor de uma poesia ou verso.
 
 Exemplo em figura:
- 
+
 .. code-block:: xml
 
     ...
@@ -51,3 +50,5 @@ Exemplo em versos:
     </verse-group>
     ...
 
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

@@ -3,30 +3,38 @@
 <app>
 -----
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-back`
 
-Atributos obrigatório 
-  1. id (Ver :ref:`sugestao-atribuicao-id`)
- 
-Ocorre
+Atributos obrigatórios:
+
+  1. ``@id`` (Ver :ref:`sugestao-atribuicao-id`)
+
+Ocorre:
+
   Zero ou mais vezes
 
-Utilizado para indicar a presença de um apêndice ao documento. Para a marcação
-básica de um apêndice devemos levar em consideração duas tags importantes, a de
-grupo de apêndice ``app-group`` e de apêndice propriamente dito
-``<app>``. Deve ser inserida uma informação de
-etiqueta :ref:`elemento-label` em ``<app>``.
+Utilizado para indicar um apêndice ao documento. Exige o elemento :ref:`elemento-label` como título do apêndice. O elemento ``app-group`` deve sempre ser usado como agrupador do elemento ``<app>`` mesmo que houver somente uma ocorrência deste último.
 
- 
-Exemplo:
-  
-  app01... app10, app11;
- 
-Exemplo de Apêndice com texto:
- 
+Exemplos:
+
+  * :ref:`elemento-app-exemplo-1`
+  * :ref:`elemento-app-exemplo-2`
+  * :ref:`elemento-app-exemplo-3`
+  * :ref:`elemento-app-exemplo-4`
+  * :ref:`elemento-app-exemplo-5`
+  * :ref:`elemento-app-exemplo-6`
+  * :ref:`elemento-app-exemplo-7`
+
+
+.. _elemento-app-exemplo-1:
+
+Exemplo de apêndice com texto
+-----------------------------
+
 .. code-block:: xml
- 
+
     ...
     <app-group>
           <app id="app01">
@@ -36,42 +44,52 @@ Exemplo de Apêndice com texto:
     </app-group>
     ...
 
+.. _elemento-app-exemplo-2:
 
-Exemplo de Apêndice com imagem (Pode ser imagem de figura, tabela, quadro, equação e etc):
- 
+Exemplo de apêndice com imagem (fotografia, figura, tabela, quadro, equação e etc)
+----------------------------------------------------------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <app-group>
-        <app id="app01">               
+        <app id="app01">
               <label>Appendix 1</label>
-              <title>Questionnaire for SciELO</title>    
-              <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>         
+              <title>Questionnaire for SciELO</title>
+              <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>
         </app>
     </app-group>
     ...
 
-Exemplo de Apêndice com link externo (ext-link do tipo uri):
- 
+
+.. _elemento-app-exemplo-3:
+
+Exemplo de apêndice com link externo (endereço do tipo URI)
+-----------------------------------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <app-group>
-        <app id="app01">                
+        <app id="app01">
             <label>Appendix 1</label>
             <p>Para mais informações <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">clique aqui</ext-link> para verificar o pdf.</p>
         </app>
     </app-group>
     ...
- 
-Exemplo de Apêndice com tabela:
- 
+
+
+.. _elemento-app-exemplo-4:
+
+Exemplo de apêndice com tabela
+------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <app-group>
       <app id="app01">
-      <label>Appendix</label>        
+      <label>Appendix</label>
             <table-wrap>
               <label>Table 1</label>
               <caption>
@@ -98,24 +116,28 @@ Exemplo de Apêndice com tabela:
                       </tr>
                   </tbody>
               </table>
-            </table-wrap>             
+            </table-wrap>
       </app>
     </app-group>
     ...
 
-Exemplo de Apêndice misto (figura mais tabela)
- 
+
+.. _elemento-app-exemplo-5:
+
+Exemplo de apêndice misto (figura mais tabela)
+----------------------------------------------
+
 .. code-block:: xml
 
-    ... 
+    ...
     <app-group>
-        <app id="app01">               
+        <app id="app01">
             <label>Appendix 1</label>
-            <title>Questionnaire for SciELO</title>    
-            <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>         
+            <title>Questionnaire for SciELO</title>
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>
         </app>
         <app id="app02">
-            <label>Appendix 2</label>      
+            <label>Appendix 2</label>
             <table-wrap>
                 <label>Supplementary Table S1</label>
                 <caption>
@@ -142,33 +164,41 @@ Exemplo de Apêndice misto (figura mais tabela)
                         </tr>
                     </tbody>
                 </table>
-            </table-wrap>        
+            </table-wrap>
         </app>
     </app-group>
     ...
- 
-Exemplo de Apêndice misto (texto mais figura):
- 
-.. code-block:: xml
- 
-    ...
-    <app-group>
-        <app id="app01">               
-            <label>Appendix 1</label>
-            <title>Questionnaire for student inclusion</title>    
-            <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>
-        </app>     
-        <app id="app02">
-            <label>Appendix 2</label>
-            <p>Pellentesque sollicitudin, purus nec ultricies tristique, purus nisi imperdiet enim, nec mollis augue odio sit amet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus ipsum non nisi faucibus suscipit. Cras ut venenatis tellus.</p>       
-        </app>
-    </app-group>
-    ...
- 
-Exemplo de Apêndice com vídeo:
+
+
+.. _elemento-app-exemplo-6:
+
+Exemplo de apêndice misto (texto mais figura)
+---------------------------------------------
 
 .. code-block:: xml
- 
+
+    ...
+    <app-group>
+        <app id="app01">
+            <label>Appendix 1</label>
+            <title>Questionnaire for student inclusion</title>
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-app01.tif"/>
+        </app>
+        <app id="app02">
+            <label>Appendix 2</label>
+            <p>Pellentesque sollicitudin, purus nec ultricies tristique, purus nisi imperdiet enim, nec mollis augue odio sit amet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus ipsum non nisi faucibus suscipit. Cras ut venenatis tellus.</p>
+        </app>
+    </app-group>
+    ...
+
+
+.. _elemento-app-exemplo-7:
+
+Exemplo de apêndice com vídeo
+-----------------------------
+
+.. code-block:: xml
+
     ...
     <app-group>
           <app id="app01">
@@ -179,6 +209,6 @@ Exemplo de Apêndice com vídeo:
           </app>
     </app-group>
     ...
- 
-.. note:: Obrigatoriamente o elemento :ref:`elemento-app` deve estar inserido em ``<app-group>``.,
 
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
