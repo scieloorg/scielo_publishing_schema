@@ -3,23 +3,24 @@
 <license>
 ^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-permissions`
- 
-Atributos obrigatórios
-  ``license-type="open-access"``,
-  ``xlink:href``,
-  ``xml:lang``.
- 
-Ocorre
+
+Atributos obrigatórios:
+
+  1. ``@license-type="open-access"``
+  2. ``@xlink:href``
+  3. ``@xml:lang``
+
+Ocorre:
+
   Uma ou mais vezes
 
 
-Define a licença de uso adotada pelo artigo, por meio de referência à URL onde 
-o texto da licença está disponível.
+Indica a licença de uso (:term:`Creative Commons`) adotada pelo artigo, por meio de referência à URL onde o texto da licença encontra-se disponível.
 
-Cada tipo de licença define regras que regulam o uso, distribuição e adaptação 
-da obra. Para mais informações consultar: http://creativecommons.org/
+Cada tipo de licença define regras que regulam uso, distribuição e adaptação da obra. Mais informações podem ser consultadas no site `Creative Commons <http://creativecommons.org/>`_.
 
 
 Os valores possíveis para ``@xlink:href`` são:
@@ -46,17 +47,17 @@ Os valores possíveis para ``@xlink:href`` são:
 | https://creativecommons.org/licenses/by-nc-nd/3.0/igo/ | BY-NC-ND/IGO versão 3.0 |
 +--------------------------------------------------------+-------------------------+
 
-.. note:: Considerar a lista acima apenas para :ref:`elemento-article-meta`.
+.. note:: Considera-se a lista acima apenas para :ref:`elemento-article-meta`.
 
-Os valores para ``@xml:lang`` deve ser o correspondente à língua usada no texto da licença identificado pelo elemento ``<license-p>``. 
+O valor para ``@xml:lang`` deve ser o correspondente ao idioma do texto da licença, identificado pelo elemento ``<license-p>``.
 
-Obrigatoriamente deve haver um ``<license-p>`` na língua principal do artigo ou em inglês.
+Obrigatoriamente, deve haver um ``<license-p>`` no idioma original do artigo ou em inglês.
 
- 
+
 Exemplo:
- 
+
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
@@ -81,4 +82,6 @@ Exemplo:
         ...
     </article-meta>
     ...
-  
+
+
+    .. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

@@ -3,21 +3,22 @@
 <copyright-statement>
 ^^^^^^^^^^^^^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-permissions`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais
 
 
-O ``<copyright-statement>``, assim como o ``<license-p>`` são utilizados para 
-fins de exibição. Esse elemento deve identificar a instituição a quem pertence 
-os direitos. Normalmente a informação descrita aqui vem junto com o símbolo 
-``©``.
+Descreve pessoa ou instituição detentora dos direitos autorais, normalmente em conjunto com o símbolo ``©`` e ano.
+
+``<copyright-statement>`` e ``<license-p>`` são geralmente utilizados para exibição dessa informação.
 
 Exemplo:
 
- .. code-block:: xml
+.. code-block:: xml
 
     ...
      <article-meta>
@@ -31,3 +32,4 @@ Exemplo:
      </article-meta>
 
 
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

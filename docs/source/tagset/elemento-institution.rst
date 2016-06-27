@@ -3,45 +3,45 @@
 <institution>
 ^^^^^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-aff`
- 
-Atributos obrigatórios
-  1. content-type
- 
-Ocorre
+
+Atributos obrigatórios:
+
+  1. ``@content-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Nesta tag especifica-se a instituição do autor, a qual pode ser dividida 
-em até três níveis. Estes níveis serão definidos pelo atributo obrigatório 
-``@content-type``, podendo possuir os seguintes valores:
+Neste elemento identifica-se a instituição do autor, a qual pode ser dividida em até três níveis, definidos pelo atributo obrigatório ``@content-type``, cujos valores possíveis são:
 
-+------------+--------------------------------------------------------------------+ 
++------------+--------------------------------------------------------------------+
 | Valor      | Descrição                                                          |
 +============+====================================================================+
-| orgname    | Representando a instituição de nível hierárquico maior mencionado  |
+| orgname    | Representa a instituição de primeiro nível hierárquico mencionado  |
 |            | na afiliação.                                                      |
-+------------+--------------------------------------------------------------------+ 
-| orgdiv1    | Representando a primeira divisão da instituição mencionada em      |
-|            | orgname.                                                           |
-+------------+--------------------------------------------------------------------+ 
-| orgdiv2    | Representando a segunda divisão da instituição mencionada em       |
-|            | orgname.                                                           |
-+------------+--------------------------------------------------------------------+ 
-| normalized | Nome da instituição na forma normalizada pela SciELO.              |     
 +------------+--------------------------------------------------------------------+
-| original   | Utilizado para identificar a afiliação completa, conforme consta   |
-|            | no PDF                                                             |
-+------------+--------------------------------------------------------------------+ 
- 
+| orgdiv1    | Representa o segundo nível hierárquico da instituição mencionada   |
+|            | em orgname.                                                        |
++------------+--------------------------------------------------------------------+
+| orgdiv2    | Representa o terceiro nível hierárquico da instituição mencionada  |
+|            | em orgname.                                                        |
++------------+--------------------------------------------------------------------+
+| normalized | Nome da instituição na forma normalizada pela SciELO.              |
++------------+--------------------------------------------------------------------+
+| original   | Identificar a afiliação completa conforme consta no texto do artigo|
++------------+--------------------------------------------------------------------+
 
-.. note:: No caso de mais divisões mencionadas em afiliações no PDF, 
-          identifica-las somente na tag ``<institution content-type="original">``.
- 
+
+.. note:: Divisões abaixo do terceiro nível hierárquico da institução são identificadas somente no elemento ``<institution content-type="original">``.
+
+Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <aff id="aff01">
         <institution content-type="orgname">
@@ -56,15 +56,18 @@ em até três níveis. Estes níveis serão definidos pelo atributo obrigatório
         ...
     </aff>
     ...
- 
 
-Deve-se especificar a afiliação completa como aparece no documento 
-original. 
 
+Deve-se especificar a afiliação completa como aparece no documento original.
+
+Exemplo:
 
 .. code-block:: xml
- 
+
      <institution content-type="original">Técnica de Cardiopneumologia. Unidade de
      Fisiopatologia Respiratória, Serviço de Pneumologia, Centro Hospitalar Lisboa
      Norte, Lisboa, Portugal. mara@scielo.org</institution>
 
+
+
+.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}

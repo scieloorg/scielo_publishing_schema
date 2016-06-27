@@ -3,17 +3,19 @@
 <given-names>
 ^^^^^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-name`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Identifica o prenome do autor, ou seja, todos os nomes que não o sobrenome.
- 
+Identifica o prenome do autor, ou seja, todos os nomes exceto pelo sobrenome.
+
 .. code-block:: xml
- 
+
     ...
     <name>
         <surname>Santos</surname>
@@ -21,4 +23,6 @@ Identifica o prenome do autor, ou seja, todos os nomes que não o sobrenome.
         ...
     </name>
     ...
- 
+
+
+.. {"reviewed_on": "20160625", "by": "gandhalf_thewhite@hotmail.com"}

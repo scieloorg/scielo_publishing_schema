@@ -1,21 +1,21 @@
 .. _elemento-journal-title:
- 
+
 <journal-title>
 ^^^^^^^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-journal-title-group`
- 
-Ocorre
+
+Ocorre:
+
   Uma vez
 
 
-Neste item é incluído o título longo do periódico de acordo com seu registro 
-no ISSN. 
+Contém o título longo do periódico de acordo com seu registro no :term:`ISSN`.
 
-.. note:: Consulte o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` 
-          como referência na identificação dos elementos.
- 
+.. note:: Sugere-se consultar o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` como referência na identificação dos elementos.
+
 Exemplo:
 
 .. code-block:: xml
@@ -30,4 +30,6 @@ Exemplo:
         ...
     </journal-meta>
     ...
- 
+
+
+.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}

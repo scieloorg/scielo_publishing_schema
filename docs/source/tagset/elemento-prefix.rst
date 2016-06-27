@@ -3,17 +3,17 @@
 <prefix>
 ^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-name`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Especifica o qualificador que precede o prenome do autor. Geralmente é 
-utilizado para identificar qualificadores como "Prof. Dr.", "Dr.", "Sr",
-"Presidente", "Embaixador" dentre outros.
- 
+Especifica um qualificador que precede o prenome do autor. Geralmente, é usado para indicar qualificadores, por exemplo, "Prof. Dr.", "Dr.", "Sr.", "Presidente", "Embaixador", entre outros.
+
 Exemplo:
 
 .. code-block:: xml
@@ -25,5 +25,7 @@ Exemplo:
         <prefix>Prof.</prefix>
         ...
     </name>
-    ... 
- 
+    ...
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

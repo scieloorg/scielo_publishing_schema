@@ -3,22 +3,23 @@
 <kwd-group>
 -----------
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-article-meta`
- 
-Atributos obrigatórios
-  1. xml:lang
- 
-Ocorre
+
+Atributos obrigatórios:
+
+  1. ``@xml:lang``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Identifica o grupo de palavras-chave do artigo por idioma. Deve 
-conter o atributo ``@xml:lang``.
-Em ``<kwd-group>`` deve ser inserida uma informação de etiqueta ``title``. 
+Identifica o grupo de palavras-chave do artigo por idioma. Contém, obrigatoriamente, o atributo ``@xml:lang``. ``<kwd-group>`` deve ter ainda um título identificando o grupo por meio do elemento ``title``.
 
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
@@ -29,4 +30,6 @@ Em ``<kwd-group>`` deve ser inserida uma informação de etiqueta ``title``.
         ...
     </article-meta>
     ...
- 
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

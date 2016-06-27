@@ -3,23 +3,22 @@
 <elocation-id>
 --------------
 
-Aparece em
-  :ref:`elemento-article-meta`,
-  :ref:`elemento-element-citation`
- 
-Ocorre
-  Zero ou uma vez 
- 
+Aparece em:
 
-Esta tag irá identificar uma paginação eletrônica, pode ser encontrada também 
-em :ref:`elemento-element-citation`. Ela só deverá ser usada quando só houver 
-um único número de paginação eletrônica, caso haja o intervalo de páginas 
-deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.
- 
+  :ref:`elemento-article-meta`
+  :ref:`elemento-element-citation`
+
+Ocorre:
+
+  Zero ou uma vez
+
+
+Identifica uma paginação eletrônica. Pode ocorrer também em :ref:`elemento-element-citation`. Entretanto, só deverá ser utilizado quando houver um único número de paginação eletrônica. Para um intervalo de páginas, deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.
+
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
@@ -31,6 +30,7 @@ Exemplo:
     ...
 
 
-.. note:: ``elocation-id`` só deve ser identificado quando não houver informação de 
-          :ref:`elemento-fpage`.
- 
+.. note:: ``<elocation-id>`` só deve ser utilizado quando não houver informação de :ref:`elemento-fpage`.
+
+
+.. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}

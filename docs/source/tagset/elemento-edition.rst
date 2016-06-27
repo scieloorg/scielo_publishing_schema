@@ -3,13 +3,18 @@
 <edition>
 ^^^^^^^^^
 
-Aparece em
-  :ref:`elemento-product`,
+Aparece em:
+
+  :ref:`elemento-product`
   :ref:`elemento-element-citation`
-  
-Ocorre 
+
+Ocorre:
+
   Zero ou mais vezes
 
-Representa a edição de um documento de uma referência, também pode 
-identificar a versão de um software ou base de dados.
+Identifica o número da edição de um documento em uma referência (``<element-citation>``). Pode também conter a versão de um software ou base de dados (``<product>``).
 
+Exemplo:
+
+
+.. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}

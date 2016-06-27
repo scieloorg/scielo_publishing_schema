@@ -1,25 +1,24 @@
 .. _elemento-person-group:
 
 <person-group>
-^^^^^^^^^^^^^^ 
+^^^^^^^^^^^^^^
 
-Aparece em
-  :ref:`elemento-product`,
+Aparece em:
+
+  :ref:`elemento-product`
   :ref:`elemento-element-citation`
-  
-Atributos obrigatórios 
-  1. person-group-type
 
-Ocorre 
+Atributos obrigatórios:
+
+  1. ``@person-group-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
+Identifica grupo ou indivíduo criador/elaborador do :term:`documento`. Caso existam, os elementos :ref:`elemento-collab`, :ref:`elemento-role`, :ref:`elemento-name` e :ref:`elemento-etal`, somente devem ser identificadas em ``person-group``.
 
-Identifica o grupo ou o indivíduo criador/elaborador do documento. 
-As tags :ref:`elemento-collab`, :ref:`elemento-role`, 
-:ref:`elemento-name` e :ref:`elemento-etal`, no caso de existirem, devem ser 
-identificadas apenas em ``person-group``. 
-
-Os valores possíveis para o atributo ``@person-group-type`` são:
+Os valores possíveis para ``@person-group-type`` são:
 
 +-----------+---------------+
 | Valor     | Descrição     |
@@ -34,7 +33,7 @@ Os valores possíveis para o atributo ``@person-group-type`` são:
 +-----------+---------------+
 
 Exemplo:
- 
+
 .. code-block:: xml
 
     ...
@@ -54,4 +53,7 @@ Exemplo:
     </ref>
     ...
 
-.. note:: Em ``person-group`` o elemento :ref:`elemento-name` ocorre Zero ou Mais vezes
+.. note:: Em ``person-group`` o elemento :ref:`elemento-name` ocorre zero ou mais vezes.
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
