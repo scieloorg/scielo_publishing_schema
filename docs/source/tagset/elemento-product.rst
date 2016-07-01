@@ -3,21 +3,22 @@
 <product>
 ---------
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-article-meta`
- 
-Atributos obrigatórios  
-  1. product-type
- 
-Ocorre
+
+Atributos obrigatórios:
+
+  1. ``@product-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Em ``<product>`` devem ser inseridas as informações do produto resenhado. 
-É importante salientar que esta tag só deverá ser utilizada quando 
-:ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
+``<product>`` contém informações do produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
 
-Os valores possíveis para ``@product-type`` são: 
+Os valores possíveis para ``@product-type`` são:
 
 +-----------+---------------------------------+
 | Valor     | Descrição                       |
@@ -28,12 +29,11 @@ Os valores possíveis para ``@product-type`` são:
 +-----------+---------------------------------+
 | chapter   | referência de capítulo de livro |
 +-----------+---------------------------------+
-| other     | outros tipos                    |
-+-----------+---------------------------------+
 | software  | referência de software          |
 +-----------+---------------------------------+
+| other     | outros tipos                    |
++-----------+---------------------------------+
 
- 
 
 .. code-block:: xml
 
@@ -52,7 +52,7 @@ Os valores possíveis para ``@product-type`` são:
             <publisher-name>Gedisa</publisher-name>
             <publisher-loc>Barcelona</publisher-loc>
             <size units="pages">155</size>
-            <isbn>9788497842525</isbn>                          
+            <isbn>9788497842525</isbn>
             <inline-graphic xlink:href="1234-5678-rctb-45-05-690-gf01.tif"/>
         </product>
         <history>
@@ -62,8 +62,8 @@ Os valores possíveis para ``@product-type`` são:
     </article-meta>
     ...
 
- 
-.. note:: A ordem das tags é importante! A tag ``<product>`` deve estar 
-          inserida antes de :ref:`elemento-history` ou depois de 
-          :ref:`elemento-fpage`.
-               
+
+.. note:: A ordem dos elementos é importante! ``<product>`` deve ser inserido antes de :ref:`elemento-history` ou depois de :ref:`elemento-fpage`.
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

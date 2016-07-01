@@ -3,21 +3,22 @@
 <fpage>
 -------
 
-Aparece em
-  :ref:`elemento-article-meta`,
-  :ref:`elemento-element-citation`
- 
-Ocorre
-  Zero ou uma vez
- 
+Aparece em:
 
-Designa-se a paginação inicial do artigo. No caso de :term:`ahead-of-print`, 
-a informação deve ser preenchida com ``00``.
- 
+  :ref:`elemento-article-meta`
+  :ref:`elemento-element-citation`
+
+Ocorre:
+
+  Zero ou uma vez
+
+
+Indica a paginação inicial do artigo. No caso de :term:`ahead-of-print`, deve ser preenchido com ``00``.
+
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
@@ -26,14 +27,9 @@ Exemplo:
         ...
     </article-meta>
     ...
- 
 
-Essa tag também pode ser utilizada com o atributo ``@seq`` para números 
-onde mais de um artigo inicia-se na mesma página. Uma sequência alfanumérica 
-deve ser utilizada para diferenciar um artigo dos outros na mesma página. 
-Por exemplo, o primeiro artigo que começar na página 82 pode receber
-a sequência "82a"; a letra sequencial seria "a" seguido de "b" para um segundo 
-artigo etc. 
+
+Este elemento também pode ser utilizada com o atributo ``@seq`` para números onde mais de um artigo inicia-se na mesma página. Uma sequência alfanumérica deve diferenciar um artigo dos outros na mesma página. Por exemplo, o primeiro artigo que começar na página 82 pode receber a sequência "82a"; a letra sequencial seria "a" seguido de "b" para um segundo artigo e assim por diante.
 
 Exemplo:
 
@@ -48,3 +44,5 @@ Exemplo:
     </article-meta>
     ...
 
+
+.. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}

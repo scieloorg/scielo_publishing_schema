@@ -1,34 +1,35 @@
 .. _elemento-named-content:
- 
+
 <named-content>
 ^^^^^^^^^^^^^^^
- 
-Aparece em
+
+Aparece em:
+
   :ref:`elemento-addr-line`
- 
-Atributos obrigatórios
-  1. content-type
- 
-Ocorre
+
+Atributos obrigatórios:
+
+  1. ``@content-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Esta tag representa as informações de endereço que aparecem em afiliação e 
-portanto irá dentro da tag de :ref:`elemento-addr-line` e obrigatoriamente 
-terá o atributo ``@content-type``, podendo possuir os seguintes valores: 
+Representa as informações de endereço na afiliação, sendo portanto, parte de :ref:`elemento-addr-line`. Tem, obrigatoriamente, o atributo ``@content-type`` cujos valores possíveis são:
 
-
-+---------+------------+ 
++---------+------------+
 | Valor   | Descrição  |
 +=========+============+
 | city    | Cidade     |
 +---------+------------+
 | state   | Estado     |
 +---------+------------+
- 
+
+Exemplo:
 
 .. code-block:: xml
-    
+
     ...
     <addr-line>
         <named-content content-type="city">
@@ -40,4 +41,6 @@ terá o atributo ``@content-type``, podendo possuir os seguintes valores:
         ...
     </addr-line>
     ...
- 
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

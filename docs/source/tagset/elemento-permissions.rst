@@ -3,28 +3,25 @@
 <permissions>
 -------------
 
-Aparece em
-  :ref:`elemento-article-meta`, 
-  :ref:`elemento-boxed-text`, 
-  :ref:`elemento-disp-quote`, 
-  :ref:`elemento-fig`,
-  ``<graphic>``, 
-  :ref:`elemento-media`, 
-  :ref:`elemento-supplementary-material`, 
-  :ref:`elemento-table-wrap`, 
-  :ref:`elemento-verse-group`.
+Aparece em:
 
- 
-Ocorre
-  Uma vez em :ref:`elemento-article-meta`
-
-  Zero ou mais vezes nos demais elementos
+  :ref:`elemento-article-meta`
+  :ref:`elemento-boxed-text`
+  :ref:`elemento-disp-quote`
+  :ref:`elemento-fig`
+  ``<graphic>``
+  :ref:`elemento-media`
+  :ref:`elemento-supplementary-material`
+  :ref:`elemento-table-wrap`
+  :ref:`elemento-verse-group`
 
 
+Ocorre:
 
-A permissão é um conjunto de condições sob as quais o conteúdo do artigo 
-pode ser usado, acessado e distribuído.
+  1. Uma vez em :ref:`elemento-article-meta`
+  2. Zero ou mais vezes nos demais elementos
 
+A permissão é um conjunto de condições sob as quais o conteúdo do artigo pode ser usado, acessado e distribuído.
 
 Tabela - :ref:`elemento-permissions` aparece em:
 
@@ -32,9 +29,9 @@ Tabela - :ref:`elemento-permissions` aparece em:
 | Objeto do Documento  | Elementos que podem      | O que a permissão envolve             |
 |                      | apresentar <permisssions>|                                       |
 +======================+==========================+=======================================+
-| Caixa de Texto       | <boxed-text>             | A própria tag                         |
+| Caixa de Texto       | <boxed-text>             | O próprio elemento                    |
 +----------------------+--------------------------+---------------------------------------+
-| Citação              | <disp-quote>             | A própria tag                         |
+| Citação              | <disp-quote>             | O próprio elemento                    |
 +----------------------+--------------------------+---------------------------------------+
 | Figura               | <fig>                    | Toda a figura e arquivos relacionados |
 +----------------------+--------------------------+---------------------------------------+
@@ -49,16 +46,16 @@ Tabela - :ref:`elemento-permissions` aparece em:
 | Tabelas, legendas e  | <table-wrap>             | A tabela, rótulo, legenda e           |
 | notas                |                          | notas de rodapé de tabela             |
 +----------------------+--------------------------+---------------------------------------+
-| Grupo de Versos      | <verse-group>            | A própria tag                         |
+| Grupo de Versos      | <verse-group>            | O próprio elemento                    |
 +----------------------+--------------------------+---------------------------------------+
 
 
-Abaixo um exemplo completo do :ref:`elemento-permissions` em :ref:`elemento-article-meta`.
+Exemplos:
 
-Exemplo:
- 
+1. em :ref:`elemento-article-meta`:
+
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
@@ -73,13 +70,12 @@ Exemplo:
         ...
     </article-meta>
     ...
- 
 
 
-**Exemplo de Figura com o elemento <permissions>:**
+2. em ``<fig>``:
 
 .. code-block:: xml
-    
+
     ...
     <fig id="f01">
         <label>Fig. 1</label>
@@ -99,10 +95,10 @@ Exemplo:
     ...
 
 
-**Exemplo de Tabela codificada com o elemento <permissions>:**
+3. em ``<table-wrap>``:
 
 .. code-block:: xml
-   
+
    ...
    <table-wrap>
       <label>Table 1</label>
@@ -138,14 +134,14 @@ Exemplo:
             <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="en">
                 <license-p>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</license-p>
             </license>
-        </permissions>
+      </permissions>
    </table-wrap>
 
 
-**Exemplo de Tabela em imagem com o elemento <permissions>:**
+4. referente imagem dentro de ``<table-wrap>``:
 
 .. code-block:: xml
-   
+
    ...
    <table-wrap>
       <label>Table 3</label>
@@ -160,5 +156,8 @@ Exemplo:
             <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="en">
                 <license-p>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</license-p>
             </license>
-        </permissions>
+         </permissions>
    </table-wrap>
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

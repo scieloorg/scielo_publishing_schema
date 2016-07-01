@@ -3,23 +3,21 @@
 <etal>
 ^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-person-group`
   :ref:`elemento-product`
 
-Ocorre 
+Ocorre:
+
   Zero ou uma vez
 
 
-Esta deve deve aparecer apenas em :ref:`elemento-person-group` e é usada 
-quando existirem mais de três autores, onde indica-se apenas o primeiro, 
-acrescentando-se a expressão et al. que significa "entre outros". 
+Elemento utilizado com a finalidade de indicar contribuidores não identificados, sendo que somente se indica o primeiro, acrescentando-se a expressão ``et al.``, que significa "entre outros".
 
-Esta informação aparece primordialmente em referências. 
+Esta informação aparece primordialmente em referências.
 
-.. note:: Quando a informação aparecer no texto da referência, não é 
-          necessário envolver o texto "et al." com a tag <etal></etal>, 
-          basta inserir a tag na forma ``<etal/>``.
+.. note:: Quando a informação aparecer no texto da referência, não é necessário incluir o texto ``"et al."`` no elemento ``<etal>``, bastando inserí-lo na forma ``<etal/>``.
 
 
 Exemplo:
@@ -43,3 +41,5 @@ Exemplo:
     </ref>
     ...
 
+
+.. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}

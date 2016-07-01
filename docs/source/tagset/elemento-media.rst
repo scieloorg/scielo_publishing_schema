@@ -3,88 +3,59 @@
 <media>
 -------
 
-Aparece em
-  :ref:`elemento-p`,
-  :ref:`elemento-fig`,
-  :ref:`elemento-app`,
+Aparece em:
 
-Atributos obrigatórios
-  1. mime-subtype
-  2. xlink:href
-  3. mime-type
- 
-Ocorre
+  :ref:`elemento-p`
+  :ref:`elemento-fig`
+  :ref:`elemento-app`
+
+Atributos obrigatórios:
+
+  1. ``@mime-subtype``
+  2. ``@xlink:href``
+  3. ``@mime-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-A tag ``<media>`` é utilizada para especificar arquivos multimídia como:
+``<media>`` é usado para especificar arquivos multimídia como, por exemplo:
 
-- vídeo
-- áudio
-- filmes
-- animações
- 
-Atributos
- 
-- ``@id``
+- vídeos;
+- áudios;
+- filmes;
+- animações.
 
-Para composição do ``@id`` de ``<media>`` utiliza-se o seguinte padrão:
-``m`` + o número de ordem da media:
+Para composição do atributo ``@id`` em ``<media>`` utiliza-se o padrão: ``m`` + número de ordem da mídia. Por exemplo, m01... m10, m11.
 
-**Exemplo:** m01... m10, m11;
+``@mimetype`` é usado para especificar o tipo de mídia, por exemplo, "vídeo" ou "aplicação". ``@mime-subtype`` é usado para especificar o formato da mídia.
 
-- **@mimetype:** utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
+Exemplos:
 
-- **@mime-subtype:** utilizado para especificar o formato da mídia.
+1. forma geral:
 
-Exemplo:
- 
 .. code-block:: xml
- 
-    <media mimetype="video" 
-           mime-subtype="mp4" 
+
+    <media mimetype="video"
+           mime-subtype="mp4"
            xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
- 
 
-- @mimetype
-    utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
- 
-Exemplo:
- 
-.. code-block:: xml
- 
-    <media mimetype="video" 
-           mime-subtype="mp4" 
-           xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
- 
 
-- **@xlink:href:** indica o link de um arquivo multimídia.
- 
-Exemplo:
- 
-.. code-block:: xml
- 
-    <media mimetype="video"  
-           mime-subtype="mp4" 
-           xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
- 
+2. Em parágrafo:
 
-Exemplo:
- 
-*Em parágrafo:*
- 
 .. code-block:: xml
- 
-    <p>Within the limitations of this study, it may be concluded that remaining 
-    tooth wall thickness did not influence the fatigue resistance of 
-    molars restored with CAD/CAM ceramic inlays <media mimetype="video"  
+
+    <p>Within the limitations of this study, it may be concluded that remaining
+    tooth wall thickness did not influence the fatigue resistance of
+    molars restored with CAD/CAM ceramic inlays <media mimetype="video"
     mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/></p>
- 
 
-*Em figuras:*
- 
+
+3. Em figura:
+
 .. code-block:: xml
- 
+
     <p>
         <fig id="f01">
             <label>Figure 1</label>
@@ -94,12 +65,12 @@ Exemplo:
             <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
         </fig>
     </p>
- 
 
-*Em :ref:`elemento-sec` do tipo material suplementar:*
- 
+
+4. Em :ref:`elemento-sec` do tipo material suplementar:
+
 .. code-block:: xml
- 
+
     <sec sec-type="supplementary-material">
         <title>Supplementary Material</title>
         <supplementary-material id="m1">
@@ -109,4 +80,6 @@ Exemplo:
             <media mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-m01.pdf"/>
         </supplementary-material>
     </sec>
- 
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

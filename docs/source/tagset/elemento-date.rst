@@ -1,20 +1,22 @@
 .. _elemento-date:
- 
+
 <date>
 ^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-history`
- 
-Atributos obrigatórios
-  1. date-type="received" ou date-type="accepted" ou date-type="rev-recd"
- 
-Ocorre
-  Uma ou mais vezes 
+
+Atributos obrigatórios:
+
+  1. ``@date-type``
+
+Ocorre:
+
+  Uma ou mais vezes
 
 
-Em ``<date>`` deve constar obrigatoriamente a tag :ref:`elemento-year`. 
-Usa-se o atributo ``@date-type`` para especificar o tipo do recebimento.
+``<date>`` deve conter obrigatoriamente o elemento :ref:`elemento-year`. Usa-se o atributo ``@date-type`` para especificar o tipo da ação envolvida.
 
 Os valores possíveis para o atributo ``@date-type`` são:
 
@@ -27,6 +29,8 @@ Os valores possíveis para o atributo ``@date-type`` são:
 +------------+------------+
 | rev-recd   | revisado   |
 +------------+------------+
+
+Exemplo:
 
 .. code-block:: xml
 
@@ -43,14 +47,16 @@ Os valores possíveis para o atributo ``@date-type`` são:
                 <day>06</day>
                 <month>11</month>
                 <year>2013</year>
-            </date>  
+            </date>
             <date date-type="accepted">
                 <day>12</day>
                 <month>05</month>
                 <year>2014</year>
-            </date>  
+            </date>
         </history>
         ...
     </article-meta>
     ...
- 
+
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

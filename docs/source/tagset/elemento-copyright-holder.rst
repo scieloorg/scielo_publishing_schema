@@ -3,19 +3,20 @@
 <copyright-holder>
 ^^^^^^^^^^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-permissions`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais
 
 
-O `<copyright-holder>` deve ser utilizado quando um trabalho está protegido por direitos autorais.
-Nesse elemento deve ser identificado a pessoa ou instituição que detém os direitos autorais do documento.
+Elemento utilizado quando um artigo está protegido por direitos autorais, sendo identificada a pessoa ou instituição detentora destes.
 
 Exemplo:
 
- .. code-block:: xml
+.. code-block:: xml
 
     ...
      <article-meta>
@@ -28,3 +29,5 @@ Exemplo:
         ...
      </article-meta>
 
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

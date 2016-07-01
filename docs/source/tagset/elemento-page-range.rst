@@ -3,15 +3,16 @@
 <page-range>
 ^^^^^^^^^^^^
 
-Aparece em
-  :ref:`elemento-product`,
+Aparece em:
+
+  :ref:`elemento-product`
   :ref:`elemento-element-citation`
-  
-Ocorre 
+
+Ocorre:
+
   Zero ou uma vez
 
-
-Identifica um intervalo de paginação mencionados numa referência.
+Identifica um intervalo de paginação mencionado em uma referência.
 
 Exemplo:
 
@@ -30,6 +31,7 @@ Exemplo:
     </ref>
     ...
 
-.. note:: A inserção do intervalo de paginação deve ser inserido após à
-          informação de última página :ref:`elemento-lpage`.
+.. note:: A inserção do intervalo de paginação deve ocorrer após a informação de última página (:ref:`elemento-lpage`).
 
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
