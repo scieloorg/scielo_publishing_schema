@@ -1,22 +1,16 @@
 Codificação e caracteres especiais
 ==================================
 
-A especificação SciELO PS exige que os documentos :term:`XML` estejam codificados 
-em :term:`UTF-8`, e que declarem esta codificação na :term:`Declaração do XML`::
+A especificação :term:`SciELO PS` exige que os documentos :term:`XML` estejam codificados em :term:`UTF-8`, e que tenham indicada esta codificação na :term:`Declaração do XML`.
 
-  <?xml version="1.0" encoding="utf-8"?>
+   ``<?xml version="1.0" encoding="utf-8"?>``
 
 
-Caracteres especiais devem ser inseridos ou diretamente no documento ou por meio 
-de referências numéricas em hexadecimal. Por exemplo, o caractere sigma maiúsculo 
-deverá ser representado por ``Σ`` ou ``&#x03A3``.
+Caracteres especiais, quando utilizados, devem ser inseridos diretamente no documento ou por meio de referências numéricas em notação hexadecimal. Por exemplo, o caractere sigma maiúsculo deve ser representado por ``Σ`` ou ``&#x03A3;``.
 
-Não é permitido o uso de referências à caracteres de uso privado da tabela 
-Unicode. Estes são os caracteres cujas referências estão contidas no 
-intervalo ``xE000 – xF8FF``.
+Não é permitido o uso de referências a caracteres de uso privado da tabela :term:`Unicode` contidas no intervalo ``xE000 – xF8FF``.
 
-Entidades XML também são aceitas e devem ser utilizadas para representar os
-caracteres:
+Entidades :term:`XML` também são aceitas e devem ser utilizadas para representar os caracteres desejados:
 
 +-----------+----------+------------------------------------------------------+
 | Caractere | Entidade | Descrição                                            |
@@ -32,6 +26,7 @@ caracteres:
 | >         | &gt;     | > como valor de atributo ou texto de elemento no XML.|
 +-----------+----------+------------------------------------------------------+
 
-Verifique no link abaixo a tabela de caracteres Unicode:
+Maiores informações encontram-se disponívels na `tabela Unicode <http://unicode-table.com/en/>`_.
 
-<http://unicode-table.com/en/>
+
+.. {"reviewed_on": "20160630", "by": "gandhalf_thewhite@hotmail.com"}

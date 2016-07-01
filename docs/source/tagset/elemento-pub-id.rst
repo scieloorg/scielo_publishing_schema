@@ -3,18 +3,20 @@
 <pub-id>
 ^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-element-citation`
-  
 
-Atributos obrigatórios 
-  ``@pub-id-type``
 
-Ocorre 
+Atributos obrigatórios:
+
+  1. ``@pub-id-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
-Identifica o tipo de identificador (id) de um :term:`documento` em uma referência.
-Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
+Especifica o identificador de uma publicação em uma referência bibliográfica. O atributo ``@pub-id-type`` é mandatório e explicita o tipo do identificador, autoridade ou organização responsável pela atribuição deste. Os valores possíveis são:
 
 +--------+----------------------------------------+
 | Valor  | Descrição                              |
@@ -23,7 +25,7 @@ Deve possuir o atributo ``@pub-id-type`` com os seguintes possíveis valores:
 +--------+----------------------------------------+
 | pcmid  | :term:`PubMed` Central ID              |
 +--------+----------------------------------------+
-| doi    | Número DOI registrado no Crossref      |
+| doi    | Número DOI registrado no CrossRef      |
 +--------+----------------------------------------+
 | pii    | Identificador do editor                |
 +--------+----------------------------------------+
@@ -40,3 +42,5 @@ Exemplo:
     </element-citation>
     ...
 
+
+.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}

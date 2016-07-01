@@ -3,20 +3,21 @@
 <suffix>
 ^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-name`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Especifica sufixos do nome como as partículas "Neto", "Júnior", "Jr.", 
-"Filho", "Sobrinho" etc.
- 
+Especifica sufixos de nome de autor, como por exemplo, "Neto", "Júnior", "Jr.", "Filho", "Sobrinho" etc.
+
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <name>
         <surname>Santos</surname>
@@ -26,3 +27,5 @@ Exemplo:
     </name>
     ...
 
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

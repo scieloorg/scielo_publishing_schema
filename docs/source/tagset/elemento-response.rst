@@ -3,41 +3,46 @@
 <response>
 ----------
 
-Aparece em
-  :ref:`elemento-article`,
+Aparece em:
+
+  :ref:`elemento-article`
   :ref:`elemento-sub-article`
 
 
-Atributos obrigatórios
-  1. response-type
-  2. id
-  3. xml:lang
+Atributos obrigatórios:
+
+  1. ``@response-type``
+  2. ``@id``
+  3. ``@xml:lang``
 
 
-Ocorre
+Ocorre:
+
   Zero ou mais vezes
 
 
-Utilizada para apresentar uma resposta ao artigo principal que está diretamente relacionado ao artigo principal, por exemplo, resposta de uma carta ou apresenta opinião contrária de um artigo publicado.
-Para esse elemento, recomendamos utilizar também a tag :ref:`elemento-front-stub`.
+Utilizado para apresentar uma resposta diretamente relacionada ao artigo principal, por exemplo, resposta de uma carta ou opinião contrária de um artigo publicado.
 
-Para ``@response-type``, os valores que podem ser utilizados são:
+Para esse elemento recomenda-se utilizar também o elemento :ref:`elemento-front-stub`.
+
+Para ``@response-type`` os valores possíveis são:
 
 +------------------------+-----------------------------------------+
 | Valor                  | Descrição                               |
 +========================+=========================================+
 | addendum               | Adendo - Informação adicional           |
 +------------------------+-----------------------------------------+
-| discussion             | Discussão relacionado a um número       |
+| discussion             | Discussão relacionada a um número       |
 |                        | específico                              |
 +------------------------+-----------------------------------------+
-| reply                  | resposta a um artigo                    |
+| reply                  | Resposta a um artigo                    |
 +------------------------+-----------------------------------------+
+
 
 Exemplo da tag completa:
 
 .. code-block:: xml
- 
+
     ...
     <article>
       ...
@@ -48,3 +53,4 @@ Exemplo da tag completa:
     ...
 
 
+.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}
