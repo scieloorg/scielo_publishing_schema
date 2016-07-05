@@ -8,6 +8,10 @@ Glossário
 
 
    AACR2
+     O Código de Catalogação Anglo Americano - AACR2, é um sistema classificatório amplamente aceito, uma norma internacional que subsidia o tratamento da informação.
+
+
+   Artigo
      **termo sugerido**
 
 

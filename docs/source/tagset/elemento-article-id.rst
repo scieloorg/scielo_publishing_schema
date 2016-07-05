@@ -9,14 +9,14 @@ Aparece em:
 
 Atributos obrigatórios:
 
-  1. ``@pub-id-type='doi'``
+  1. ``@pub-id-type``
 
 Ocorre:
 
   Uma ou mais vezes
 
 
-Identificador único para cada artigo, sendo no caso da *SciELO* definido como o :term:`DOI`.
+Identificador único para cada artigo, sendo no caso da *SciELO Brasil* definido obrigatoriamente com o valor :term:`DOI`.
 
 Exemplo:
 

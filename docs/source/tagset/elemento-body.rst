@@ -7,7 +7,7 @@ Aparece em:
 
   :ref:`elemento-article`
   :ref:`elemento-sub-article`
-  :ref:`response`
+  :ref:`elemento-response`
 
 Ocorre:
 

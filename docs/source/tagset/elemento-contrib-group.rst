@@ -13,8 +13,6 @@ Ocorre:
 
 Contém o grupo de elementos relativos à contribuição na elaboração do artigo. Os contribuintes mais frequentes são os autores pessoais, instituições e grupos de pesquisa.
 
-O elemento pode ou não conter a afiliação, sendo obrigatória quando o atributo tipo de contribuição (``@contrib-type``) for ``author``, sejam estes autores institucionais ou não.
-
 Os principais elementos de ``<contrib-group>`` são:
 
 * :ref:`elemento-contrib`;
@@ -29,7 +27,7 @@ Exemplo:
 
     ...
     <contrib-group>
-        <contrib>
+        <contrib contrib-type="author">
             <contrib-id contrib-id-type="orcid">0000-0001-8528-2091</contrib-id>
             <contrib-id contrib-id-type="scopus">24771926600</contrib-id>
             <name>
@@ -38,7 +36,7 @@ Exemplo:
             </name>
             ...
         </contrib>
-        <contrib>
+        <contrib contrib-type="author">
             <contrib-id contrib-id-type="lattes">4760273612238540</contrib-id>
             <name>
                 <surname>Meneghini</surname>
