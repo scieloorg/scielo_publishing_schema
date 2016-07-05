@@ -37,7 +37,7 @@ Exemplo:
     </aff>
     ...
 
-.. note:: Artigos do tipo "translation" não devem apresentar o elemento ``<country>`` em ``<aff>``. No caso de tradução, o detalhamento da          afiliação é feito apenas uma vez e no arquivo de idioma principal.
+.. note:: Artigos do tipo "translation" não devem apresentar o elemento ``<country>`` em ``<aff>``. No caso de tradução, o detalhamento da afiliação é feito apenas uma vez e no arquivo de idioma principal.
 
 
 .. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

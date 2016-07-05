@@ -13,9 +13,7 @@ Ocorre:
   Zero ou uma vez
 
 
-Elemento utilizado com a finalidade de indicar contribuidores não identificados, sendo que somente se indica o primeiro, acrescentando-se a expressão ``et al.``, que significa "entre outros".
-
-Esta informação aparece primordialmente em referências.
+Elemento utilizado com a finalidade de indicar contribuidores não identificados. Esta informação aparece primordialmente em referências.
 
 .. note:: Quando a informação aparecer no texto da referência, não é necessário incluir o texto ``"et al."`` no elemento ``<etal>``, bastando inserí-lo na forma ``<etal/>``.
 

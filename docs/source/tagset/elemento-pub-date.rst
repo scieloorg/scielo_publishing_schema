@@ -9,16 +9,16 @@ Aparece em:
 
 Atributos obrigatórios:
 
-  1. ``@pub-type='epub'`` ou ``@pub-type='epub-ppub'``
+  1. ``@pub-type``
 
 Ocorre:
 
   Uma vez
 
 
-A data de publicação do artigo/número utiliza o elemento ``<pub-date>``, o qual pode conter os elementos :ref:`elemento-day`, :ref:`elemento-month`, :ref:`elemento-season` e, obrigatoriamente, :ref:`elemento-year` que deve estar acompanhada do atributo ``@pub-type``.
+A data de publicação do artigo/número utiliza o elemento ``<pub-date>``, o qual pode conter os elementos :ref:`elemento-day`, :ref:`elemento-month`, :ref:`elemento-season` e, obrigatoriamente, :ref:`elemento-year`.
 
-``@pub-type`` pode ser ``epub-ppub`` se houver uma versão impressa do número ou apenas ``epub`` para publicação digital ou em ``ahead-of-print``.
+``<pub-date>`` deve estar acompanhada do atributo ``@pub-type``, que pode ser ``epub-ppub`` se houver uma versão impressa do número ou apenas ``epub`` para publicação digital ou em :term:`ahead-of-print`.
 
 Exemplo de marcação de data de publicação nas versões impressa e digital:
 

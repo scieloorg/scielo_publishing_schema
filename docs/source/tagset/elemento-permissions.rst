@@ -23,7 +23,7 @@ Ocorre:
 
 A permissão é um conjunto de condições sob as quais o conteúdo do artigo pode ser usado, acessado e distribuído.
 
-Tabela - :ref:`elemento-permissions` aparece em:
+A tabela abaixo demonstra o tipo de objeto no texto, que elementos apresentam :ref:`elemento-permissions` e qual o tipo de permissão envolvida nestes.
 
 +----------------------+--------------------------+---------------------------------------+
 | Objeto do Documento  | Elementos que podem      | O que a permissão envolve             |
@@ -52,6 +52,14 @@ Tabela - :ref:`elemento-permissions` aparece em:
 
 Exemplos:
 
+  * :ref:`elemento-permissions-exemplo-1`
+  * :ref:`elemento-permissions-exemplo-2`
+  * :ref:`elemento-permissions-exemplo-3`
+  * :ref:`elemento-permissions-exemplo-4`
+
+
+.. _elemento-permissions-exemplo-1:
+
 1. em :ref:`elemento-article-meta`:
 
 .. code-block:: xml
@@ -71,6 +79,8 @@ Exemplos:
     </article-meta>
     ...
 
+
+.. _elemento-permissions-exemplo-2:
 
 2. em ``<fig>``:
 
@@ -94,6 +104,8 @@ Exemplos:
     </fig>
     ...
 
+
+.. _elemento-permissions-exemplo-3:
 
 3. em ``<table-wrap>``:
 
@@ -137,6 +149,8 @@ Exemplos:
       </permissions>
    </table-wrap>
 
+
+.. _elemento-permissions-exemplo-4:
 
 4. referente imagem dentro de ``<table-wrap>``:
 

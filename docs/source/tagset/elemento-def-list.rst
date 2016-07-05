@@ -49,29 +49,30 @@ Exemplos:
 
 .. code-block:: xml
 
-  <body>
-    <def-list id="d1">
-      <def-item>
-        <term>Angina pectoris (Angina de peito)</term>
-        <def>
-          <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
-        </def>
-      </def-item>
-      <def-item>
-        <term>Antagonista</term>
-        <def>
-            <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
-        </def>
-      </def-item>
-      <def-item>
-        <term>Biodisponibilidade</term>
-          <def>
-            <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
-          </def>
-      </def-item>
-    </def-list>
-  </body>
-
+    ...
+    <body>
+       <def-list id="d1">
+         <def-item>
+           <term>Angina pectoris (Angina de peito)</term>
+           <def>
+             <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
+           </def>
+         </def-item>
+         <def-item>
+           <term>Antagonista</term>
+           <def>
+               <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
+           </def>
+         </def-item>
+         <def-item>
+           <term>Biodisponibilidade</term>
+             <def>
+               <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
+             </def>
+         </def-item>
+       </def-list>
+     </body>
+     ...
 
 2. em sublista de definições:
 

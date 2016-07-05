@@ -22,7 +22,7 @@ Exemplo:
     ...
     <contrib-group>
         ...
-        <contrib>
+        <contrib contrib-type="author">
             <name>
                 <surname>Proietti</surname>
                 <given-names>Fernando Augusto</given-names>

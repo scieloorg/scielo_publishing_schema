@@ -8,6 +8,8 @@ Aparece em:
   :ref:`elemento-pub-date`
   :ref:`elemento-product`
   :ref:`elemento-element-citation`
+  :ref:`elemento-date-in-citation`
+  :ref:`elemento-history`
 
 Ocorre :
 
@@ -15,9 +17,17 @@ Ocorre :
   2. Zero ou mais vezes em :ref:`elemento-back`
 
 
-Identifica o dia - com dois dígitos numéricos no intervalo de 1 a 31 (inclusive) - em referências. Pode representar o dia de publicação de  um periódico científico, o dia da realização de um relatório e assim por  diante. Também utilizado em :ref:`elemento-front` para identificar o dia da  publicação de um artigo (ver :ref:`elemento-pub-date`) ou de um produto  (ver :ref:`elemento-product`).
+Identifica o dia de acesso ao conteúdo web relativo a uma referência, podendo ser utilizado para compor a data de publicação e/ou a data de histórico.
+
+o elemento contém valor de até 2 dígitos, sendo aceito zero não significativo à esquerda.
 
 Exemplo:
+
+.. code-block:: xml
+
+    ...
+    <day>12</day>
+    ...
 
 
 .. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

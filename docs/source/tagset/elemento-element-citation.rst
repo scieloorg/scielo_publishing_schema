@@ -62,7 +62,7 @@ Os valores possíveis para o atributo ``@publication-type`` são:
 .. note::
 
   * Nunca incluir informação com formatação ``inline`` (``<italic>``, ``<bold>`` etc.) dentro de um elemento;
-  * Evitar pontuação (ponto final, vírgula etc) dentro de :ref:`elemento-element-citation`;
+  * Nunca utilizar pontuação (ponto final, vírgula etc) dentro de :ref:`elemento-element-citation`;
   * Todas as informações de uma referência devem ser marcadas. Caso não exista um elemento específico para determinada informação, esta deve ser inserida em :ref:`elemento-comment`.
 
 

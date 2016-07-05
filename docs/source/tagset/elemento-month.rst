@@ -20,7 +20,7 @@ Identifica o mês em referências, podendo representar:
 * o mês da realização de um relatório;
 * o mês de publicação de um artigo (ver :ref:`elemento-pub-date`) ou de um produto (ver :ref:`elemento-product`) quando utilizada em :ref:`elemento-front`.
 
-Os valores possíveis são números inteiros no intervalo de 1 a 12.
+Os valores possíveis são números inteiros de até 2 dígitos, no intervalo de 1 a 12, sendo aceito zero não significativo à esquerda.
 
 Intervalos de meses, por exemplo, ``Jan-Mar``, devem ser identificados em :ref:`elemento-season`.
 
