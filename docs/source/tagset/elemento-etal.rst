@@ -15,7 +15,7 @@ Ocorre:
 
 Elemento utilizado com a finalidade de indicar contribuidores não identificados. Esta informação aparece primordialmente em referências.
 
-.. note:: Quando a informação aparecer no texto da referência, não é necessário incluir o texto ``"et al."`` no elemento ``<etal>``, bastando inserí-lo na forma ``<etal/>``.
+.. note:: Quando a informação aparecer no texto da referência, não é necessário incluir o texto ``"et al."`` no elemento ``<etal/>``, uma vez que é um elemento vazio.
 
 
 Exemplo:

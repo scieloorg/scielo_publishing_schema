@@ -3,26 +3,26 @@
 <ref>
 -----
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-ref-list`
 
-Atributos obrigatórios
-  1. id (ver :ref:`sugestao-atribuicao-id`)
+Atributos obrigatórios:
 
-Ocorre
+  1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
+
+Ocorre:
+
   Uma ou mais vezes
 
 
-Existem diversos tipos de referências e normas para apresentá-las num documento 
-textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e 
-OTHER). Independente da norma usada, a representação dos elementos
-essenciais em XML de uma referência devem ser identificados corretamente.
- 
+Há diversos tipos de referências e normas para apresentá-las num documento textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e ``OTHER``). Independente da norma utilizada, a representação dos elementos essenciais de uma referência em XML devem ser identificados corretamente.
+
 
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <ref-list>
         <title></title>
@@ -56,4 +56,5 @@ Exemplo:
         ...
     </ref-list>
     ...
-  
+
+.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}

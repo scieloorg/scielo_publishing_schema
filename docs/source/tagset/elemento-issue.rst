@@ -14,11 +14,11 @@ Ocorre:
   2. Zero ou mais vezes em :ref:`elemento-back`
 
 
-Identifica o número de um fascículo (ou suplemento de número), seja este parte de um volume ou de um número especial.
+Identifica o fascículo (ou suplemento deste), seja como parte de um volume ou de fascículo especial.
 
 Exemplos:
 
-1. Em caso de suplemento de número em :ref:`elemento-front`, por exemplo, ``v10n5s1``:
+1. Em caso de suplemento de fascículo em :ref:`elemento-front`, por exemplo, ``v10n5s1``:
 
 .. code-block:: xml
 
@@ -35,7 +35,7 @@ Exemplos:
     </front>
     ...
 
-2. Em caso de número especial em :ref:`elemento-front`, por exemplo, ``v10nspe``:
+2. Em caso de fascículo especial em :ref:`elemento-front`, por exemplo, ``v10nspe``:
 
 .. code-block:: xml
 

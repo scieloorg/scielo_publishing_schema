@@ -84,4 +84,4 @@ Exemplo:
     ...
 
 
-    .. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

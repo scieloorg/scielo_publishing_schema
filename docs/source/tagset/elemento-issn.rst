@@ -19,7 +19,7 @@ Ocorre:
 
 :term:`ISSN` é um código numérico, único, que identifica uma publicação seriada definida pela norma :term:`ISO 3297:2007`.
 
-Normalmente, cada tipo de suporte utilizado pelo periódico implica em um número específico.
+Normalmente, cada tipo de suporte utilizado pelo periódico implica em um código ISSN específico.
 
 Também se pode encontrar esta informação em :ref:`elemento-back` dentro de :ref:`elemento-element-citation` nas referências, mas não se faz uso de  nenhum atributo neste caso.
 

@@ -4,13 +4,14 @@
 ^^^^^^^^^^^^^^^^
 
 Aparece em:
-
+   :ref:`elemento-ref`
 
 
 Ocorre:
+   Uma vez.
 
 
-Elemento que identifica uma referência bibliográfica no :term:`documento`.
+Elemento que identifica uma referência bibliográfica formatada no :term:`documento`, preservando espaços em branco e pontuação.
 
 
 Exemplo:

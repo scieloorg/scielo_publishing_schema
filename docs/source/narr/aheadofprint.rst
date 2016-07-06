@@ -3,14 +3,14 @@
 Ahead Of Print
 ==============
 
-Todos os arquivos Ahead Of Print (AOP) devem apresentar o valor 
-"research-article" em ``@article-type`` e em ``//subj-group[@subj-group-type="heading"]/subject`` 
-considerar "Articles". Esse tipo de documento não apresenta volume, número e 
-paginação, portanto os elementos :ref:`elemento-volume` e :ref:`elemento-issue` 
-não devem ser utilizados. Considerar "00" somente para páginação como segue o exemplo abaixo:
+Todos os arquivos *Ahead Of Print* (AOP) devem apresentar o valor ``research-article`` em ``@article-type`` e em ``//subj-group[@subj-group-type="heading"]/subject`` conter o valor ``Articles``.
+
+Esse tipo de :term:`documento` não apresenta volume, número, nem paginação, portanto, os elementos :ref:`elemento-volume` e :ref:`elemento-issue` não devem ser utilizados e deve-se considerar o valor "00" para paginação.
+
+Exemplo:
 
 .. code-block:: xml
-	
+
     <article>
         ...
         <article-meta>
@@ -24,9 +24,9 @@ não devem ser utilizados. Considerar "00" somente para páginação como segue 
     </article>
 
 
-Para arquivos Ahead Of Print, a data de publicação deve ser apenas "epub" e com 
-os todos os elementos preenchidos: :ref:`elemento-day`, :ref:`elemento-month` e 
-:ref:`elemento-year`.
+Para estes arquivos, a data de publicação deve ter o atributo ``@pub-type`` apenas como ``epub`` e com todos os sub-elementos (:ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`) preenchidos.
+
+Exemplo:
 
 .. code-block:: xml
 
@@ -46,6 +46,7 @@ os todos os elementos preenchidos: :ref:`elemento-day`, :ref:`elemento-month` e
     </article>
 
 
-.. note::
-	Em AOP considerar sempre a tag :ref:`elemento-month` para indicação de mês. Nunca inserir :ref:`elemento-season`.
+.. note:: Em AOP considerar sempre o elemento :ref:`elemento-month` para indicação de mês. Nunca se deve inserir o elemento :ref:`elemento-season`.
 
+
+.. {"reviewed_on": "20160630", "by": "gandhalf_thewhite@hotmail.com"}

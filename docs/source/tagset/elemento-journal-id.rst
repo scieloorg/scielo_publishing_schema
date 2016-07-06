@@ -9,14 +9,14 @@ Aparece em:
 
 Atributos obrigatórios:
 
-  1. ``@journal-id-type='publisher-id'``
+  1. ``@journal-id-type``
 
 Ocorre:
 
   Uma ou mais vezes
 
 
-Especifica o título padronizado do periódico.
+Contém o identificador único do periódico indexado em uma base de dados ou instituição publicadora.
 
 Os valores permitidos para ``@journal-id-type`` são:
 

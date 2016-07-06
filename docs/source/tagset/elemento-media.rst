@@ -27,8 +27,6 @@ Ocorre:
 - filmes;
 - animações.
 
-Para composição do atributo ``@id`` em ``<media>`` utiliza-se o padrão: ``m`` + número de ordem da mídia. Por exemplo, m01... m10, m11.
-
 ``@mimetype`` é usado para especificar o tipo de mídia, por exemplo, "vídeo" ou "aplicação". ``@mime-subtype`` é usado para especificar o formato da mídia.
 
 Exemplos:

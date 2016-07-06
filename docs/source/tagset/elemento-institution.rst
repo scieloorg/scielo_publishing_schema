@@ -24,11 +24,11 @@ Neste elemento identifica-se a instituição do autor, a qual pode ser dividida 
 | orgname    | Representa a instituição de primeiro nível hierárquico mencionado  |
 |            | na afiliação.                                                      |
 +------------+--------------------------------------------------------------------+
-| orgdiv1    | Representa o segundo nível hierárquico da instituição mencionada   |
-|            | em orgname.                                                        |
+| orgdiv1    | Representa, hierarquicamente, a primeira divisão da instituição    |
+|            | mencionada.                                                        |
 +------------+--------------------------------------------------------------------+
-| orgdiv2    | Representa o terceiro nível hierárquico da instituição mencionada  |
-|            | em orgname.                                                        |
+| orgdiv2    | Representa, hierarquicamente, a segunda divisão da instituição     |
+|            | mencionada.                                                        |
 +------------+--------------------------------------------------------------------+
 | normalized | Nome da instituição na forma normalizada pela SciELO.              |
 +------------+--------------------------------------------------------------------+
