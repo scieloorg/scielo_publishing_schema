@@ -11,7 +11,7 @@ Aparece em:
 
 Atributos obrigatórios:
 
-  1. ``@ext-link-type="uri"``
+  1. ``@ext-link-type``
   2. ``@xlink:href``
 
 Ocorre:
@@ -23,6 +23,7 @@ Especifica referências a recursos disponíveis na internet. As únicas restriç
 * O *scheme* deve ser explícito, ou seja, deve começar com ``http://``, ``ftp://``,   ``urn:`` etc;
 * Referências locais, por meio do *scheme* ``file://`` não são permitidas.
 
+.. note:: O valor ``uri`` é obrigatório para o atributo ``@ext-link-type``.
 
 Exemplo:
 
