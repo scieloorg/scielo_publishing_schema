@@ -85,7 +85,7 @@ Exemplo:
                   </aff>
              </contrib-group>
              <author-notes>
-                  <corresp id="c1">Correspondence to: Ana de Lourdes Sá de Lira Universidade Estadual do Piauí, Faculdade de Odontologia Rua Senador Joaquim Pires 2076 - Ininga CEP: 64049-590 Teresina, PI, Brasil Phone: +55 86 999595004 E-mail: <email>anadelourdessl@hotmail.com</email>
+                  <corresp id="c1">Correspondence to: Ana de Lourdes Sá de Lira Universidade Estadual do Piauí, Faculdade de Odontologia Rua Senador Joaquim Pires 2076 - Ininga CEP: 64049-590 Teresina, PI, Brasil Phone: +55 00 000000000 E-mail: <email>foobar@foobar.com</email>
                   </corresp>
              </author-notes>
              <pub-date pub-type="epub-ppub">
