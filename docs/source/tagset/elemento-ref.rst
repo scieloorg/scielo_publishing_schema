@@ -16,7 +16,7 @@ Ocorre:
   Uma ou mais vezes
 
 
-Há diversos tipos de referências e normas para apresentá-las num documento textual (:term:`ABNT`, :term:`Vancouver`, :term:`APA`, :term:`ISO` e ``OTHER``). Independente da norma utilizada, a representação dos elementos essenciais de uma referência em XML devem ser identificados corretamente.
+O elemento é exclusivo para identificar referências em qualquer norma, e descreve livros, revistas, conferências etc.
 
 
 Exemplo:
@@ -25,7 +25,7 @@ Exemplo:
 
     ...
     <ref-list>
-        <title></title>
+        <title>Referências</title>
         <ref id="B1">
             <label>1</label>
             <mixed-citation>. Aires M, Paz AA, Perosa CT. Situação de saúde e grau de dependência de pessoas idosas institucionalizadas. <italic>Rev Gaucha Enferm.</italic> 2009;30(3):192-9.</mixed-citation>

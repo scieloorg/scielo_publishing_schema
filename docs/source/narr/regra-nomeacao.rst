@@ -50,7 +50,11 @@ Exemplo:
 Imagens
 -------
 
+<<<<<<< HEAD
 Em imagens (que podem ser figuras, tabelas, equações, apêndices e etc), utilizar a seguinte estrutura de nomeação tanto para as que se encontram dentro do XML quanto para as da pasta do pacote do número ou lote de :term:`ahead-of-print`.
+=======
+Em imagens (que podem ser figuras, tabelas, equações, apêndices etc), utilizar a seguinte estrutura de nomeação tanto para as que se encontram dentro do XML quanto para as da pasta do pacote do número ou lote de :term:`ahead-of-print`.
+>>>>>>> pack-3
 
 Para Número:
 

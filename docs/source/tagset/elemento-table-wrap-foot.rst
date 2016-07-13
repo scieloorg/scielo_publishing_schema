@@ -3,26 +3,25 @@
 <table-wrap-foot>
 ^^^^^^^^^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-table-wrap`
 
-Ocorre
+Ocorre:
+
   Zero ou mais vezes
 
 
-Em ``<table-wrap-foot>`` é possível fazer a identificação de nota de rodapé de 
-tabela por meio de tags :ref:`elemento-fn`, que devem apresentar obrigatoriamente o 
-atributo ``@id``.
- 
-Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
-atributo ``@id``.
- 
+``<table-wrap-foot>`` permite identificar uma nota de rodapé de tabela por meio de elementos do tipo :ref:`elemento-fn`, os quais devem, obrigatoriamente, apresentar o atributo ``@id``.
+
+O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``.
+
 A nota de rodapé poderá ser relacionada com alguma informação no corpo da tabela.
- 
+
 Exemplo:
- 
+
 .. code-block:: xml
- 
+
     ...
     <table-wrap id="t01">
         <label>Table 1</label>
@@ -40,4 +39,6 @@ Exemplo:
         </table-wrap-foot>
     </table-wrap>
     ...
- 
+
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

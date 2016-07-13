@@ -2,10 +2,9 @@
 
 Sugestão de atribuição de @id
 =============================
- 
-Para a composição do ``@id``, combine o prefixo do tipo do elemento e um número 
-inteiro, como segue:
- 
+
+Para a composição do ``@id``, deve-se combinar o prefixo do tipo de elemento com um número inteiro, como segue:
+
 
 +------------------------+---------------------------+---------+---------------------+
 | Elemento XML           | Descrição                 | Prefixo | Exemplo             |
@@ -14,7 +13,7 @@ inteiro, como segue:
 +------------------------+---------------------------+---------+---------------------+
 | app                    | Apêndice                  | app     | app1, app2, ...     |
 +------------------------+---------------------------+---------+---------------------+
-| author-notes/fn |      | Notas de rodapé do artigo | fn      | fn1, fn2, ...       | 
+| author-notes/fn |      | Nota de rodapé do artigo  | fn      | fn1, fn2, ...       |
 | fn-group/fn            |                           |         |                     |
 +------------------------+---------------------------+---------+---------------------+
 | boxed-text             | Caixa de texto            | bx      | bx1, bx2, ...       |
@@ -23,24 +22,26 @@ inteiro, como segue:
 +------------------------+---------------------------+---------+---------------------+
 | def-list               | Lista de Definições       | d       | d1, d2, ...         |
 +------------------------+---------------------------+---------+---------------------+
-| disp-formula           | Equações                  | e       | e1, e2, ...         |
+| disp-formula           | Equação                   | e       | e1, e2, ...         |
 +------------------------+---------------------------+---------+---------------------+
-| fig                    | Figuras                   | f       | f1, f2, ...         |
+| fig                    | Figura                    | f       | f1, f2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 | glossary               | Glossário                 | gl      | gl1, gl2, ...       |
 +------------------------+---------------------------+---------+---------------------+
-| media                  | Media                     | m       | m1, m2, ...         |
+| media                  | Mídia                     | m       | m1, m2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 | ref                    | Referência bibliográfica  | B       | B1, B2, ...         |
 +------------------------+---------------------------+---------+---------------------+
-| sec                    | Seções                    | sec     | sec1, sec2, ...     |
+| sec                    | Seção                     | sec     | sec1, sec2, ...     |
 +------------------------+---------------------------+---------+---------------------+
-| sub-article            | sub-artigo                | S       | S1, S2, ...         |
+| sub-article            | Sub-artigo                | S       | S1, S2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 | supplementary-material | Suplemento                | suppl   | suppl1, suppl2, ... |
 +------------------------+---------------------------+---------+---------------------+
-| table-wrap-foot/fn     | Notas de rodapé de tabela | TFN     | TFN1, TFN2, ...     |
+| table-wrap-foot/fn     | Nota de rodapé de tabela  | TFN     | TFN1, TFN2, ...     |
 +------------------------+---------------------------+---------+---------------------+
 | table-wrap             | Tabela                    | t       | t1, t2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

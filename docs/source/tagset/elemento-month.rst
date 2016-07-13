@@ -8,9 +8,15 @@ Aparece em:
   :ref:`elemento-pub-date`
   :ref:`elemento-product`
   :ref:`elemento-element-citation`
+  :ref:`elemento-date`
 
 Ocorre :
 
+<<<<<<< HEAD
+Ocorre :
+
+=======
+>>>>>>> pack-3
   1. Zero ou uma vez em :ref:`elemento-front`
   2. Zero ou mais vezes em :ref:`elemento-back`
 

@@ -11,8 +11,12 @@ Glossário
      O Código de Catalogação Anglo Americano - AACR2, é um sistema classificatório amplamente aceito, uma norma internacional que subsidia o tratamento da informação.
 
 
+   AOP
+     Veja :term:`ahead-of-print`.
+
+
    Artigo
-     **termo sugerido**
+     Forma reduzida comum de *artigo científico*. Refere-se a :term:`documento` produzido a partir de estudos, investigações, experimentos, práticas e teorias - de cunho científico -, como forma de disseminar a informação e os avanços ocorridos nas diversas áreas do conhecimento. Um artigo clássico possui vários elementos (título, autor, afiliação, palavras-chave, resumo, textos de introdução, desenvolvimento e conclusões da pesquisa ou estudo realizado, referências bibliográficas, apêndices).
 
 
    Creative Commons

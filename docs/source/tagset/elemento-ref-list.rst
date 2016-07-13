@@ -3,21 +3,20 @@
 <ref-list>
 ----------
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-back`
 
-Ocorre
+Ocorre:
+
   Zero ou mais vezes
 
-  O conjunto de referências biliográficas de um artigo é representado pela tag
-  ``<ref-list>``. Esse elemento deve conter, obrigatoriamente, três tags: 
-  :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e
-  :ref:`elemento-element-citation`.
+Representa o conjunto de referências bibliográficas de um artigo e deve conter, obrigatoriamente, três elementos: :ref:`elemento-ref`, :ref:`elemento-mixed-citation` e :ref:`elemento-element-citation`.
 
-Em ``<ref-list>`` deve ser inserida uma informação de etiqueta ``title``.
+Em ``<ref-list>`` deve ser inserido um rótulo sob ``<title>`` identificando aquela seção de texto.
 
 Exemplo:
- 
+
 .. code-block:: xml
 
     ...
@@ -30,3 +29,4 @@ Exemplo:
     </ref-list>
     ...
 
+.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}

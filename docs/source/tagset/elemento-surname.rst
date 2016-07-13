@@ -1,25 +1,23 @@
 .. _elemento-surname:
- 
+
 <surname>
 ^^^^^^^^^
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-name`
- 
-Ocorre
+
+Ocorre:
+
   Uma ou mais vezes
 
 
-É utilizada para especificar sobrenome de autores. Aqui deve ser 
-especificado o último nome do autor. Deve-se observar as regras para 
-identificação de sobrenome de acordo com a norma adotada pelo periódico. 
-A recomendação da SciELO é utilizar a norma *AACR2* Código de Catalogação 
-Anglo Americano e/ou Currículo Lattes dos autores.
- 
+Especifica o sobrenome do autor. Deve-se identificar o sobrenome de acordo com a norma adotada pelo periódico. A recomendação da :term:`Metodologia SciELO` é utilizar a norma :term:`AACR2` (Código de Catalogação Anglo Americano) e/ou :term:`Currículo Lattes` dos autores.
+
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <name>
         <surname>Almeida</surname>
@@ -27,4 +25,6 @@ Exemplo:
         ...
     </name>
     ...
- 
+
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

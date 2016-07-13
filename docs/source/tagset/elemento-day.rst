@@ -9,7 +9,7 @@ Aparece em:
   :ref:`elemento-product`
   :ref:`elemento-element-citation`
   :ref:`elemento-date-in-citation`
-  :ref:`elemento-history`
+  :ref:`elemento-date`
 
 Ocorre :
 

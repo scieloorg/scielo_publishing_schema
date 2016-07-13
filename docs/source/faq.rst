@@ -3,12 +3,12 @@
 Perguntas frequentes
 ====================
 
-Como identificar menção a um Ensaio Clínico?
---------------------------------------------
+Como identificar uma menção a um Ensaio Clínico?
+------------------------------------------------
 
-O Ensaio Clínico é um estudo em voluntários humanos com o objetivo de responder 
-a questões específicas de saúde. O registro de ensaio clínico deve ser 
-identificado pelo elemento :ref:`elemento-ext-link`. Veja:
+O Ensaio Clínico é um estudo em voluntários humanos com o objetivo de responder a questões específicas de saúde. O registro de um ensaio clínico deve ser identificado pelo elemento :ref:`elemento-ext-link`.
+
+Exemplo:
 
 .. code-block:: xml
 
@@ -17,20 +17,22 @@ identificado pelo elemento :ref:`elemento-ext-link`. Veja:
    ...
 
 
-Para identificação de Ensaio Clínico o elemento :ref:`elemento-ext-link` deve 
-apresentar o valor "ClinicalTrial" no atributo @ext-link-type e no atributo 
-@xlink:href="" inserir a URL do registro de Ensaio Clínico.
+Para identificação de Ensaio Clínico, o elemento :ref:`elemento-ext-link` deve apresentar o valor ``ClinicalTrial`` no atributo ``@ext-link-type`` e ter preenchida URL do registro de Ensaio Clínico no atributo ``@xlink:href``.
 
+Mais informações sobre Ensaios Clínicos podem ser adquiridas nos sites abaixo listados:
 
-Para saber mais sobre Ensaio Clínico, clique no link abaixo:
-O que é Ensaio Clínico?
+* `Registro Brasileiro de Ensaios Clínicos <http://www.ensaiosclinicos.gov.br/>`_;
+* `Sociedade Brasileira de Profissionais em Pesquisa Clínica <http://www.sbppc.org.br/portal/index.php>`_;
+* `Clinical Trials.Gov <https://clinicaltrials.gov/>`_;
+* `NLM's MedlinePlus - Clinical Trials information <https://www.nlm.nih.gov/medlineplus/clinicaltrials.html>`_.
 
 
 Como identificar as subseções de um documento?
 ----------------------------------------------
 
-Artigos que apresentam subseções, devem ser identificados no documento pelo 
-elemento :ref:`elemento-subj-group`. Veja:
+Artigos que apresentam subseções, devem ser identificados no :term:`documento` pelo elemento :ref:`elemento-subj-group`.
+
+Exemplo:
 
 .. code-block:: xml
 
@@ -45,7 +47,7 @@ elemento :ref:`elemento-subj-group`. Veja:
 	</article-categories>
 	...
 
-.. note:: Apenas a seção maior apresenta o atributo @subj-group-type com o valor 
-          "heading". Esse valor deve aparecer 1 vez no documento .xml.
+.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor "heading" e que deve aparecer somente uma vez no documento *XML*.
 
 
+.. {"reviewed_on": "20160630", "by": "gandhalf_thewhite@hotmail.com"}

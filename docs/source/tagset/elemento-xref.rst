@@ -3,36 +3,34 @@
 <xref>
 ------
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-article-title`,
   :ref:`elemento-trans-title`,
   :ref:`elemento-contrib`,
   :ref:`elemento-p`,
-  ``th``,
-  ``td``.
-  ``verse-line``,
+  ``<th>``,
+  ``<td>``.
+  ``<verse-line>``,
   :ref:`elemento-attrib`.
- 
-Atributos obrigatórios
-  1. rid
-  2. ref-type
- 
-Ocorre
+
+Atributos obrigatórios:
+
+  1. ``@rid``
+  2. ``@ref-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Tag de Referência Cruzada usada para relacionar e/ou fazer link com alguma 
-informação no texto. 
- 
+Elemento de referência cruzada usado para relacionar e/ou fazer ligação com alguma informação no texto.
+
 Os atributos obrigatórios para ``xref`` são:
- 
-* ``@rid``: representa "a referência ao id" e é utilizado para fazer a ligação 
-  de elementos que possuem ``@id`` no arquivo. É imprescindível que haja um 
-  ``@id`` para cada ``@rid`` e ambos deverão ter o valor idêntico para 
-  sua relação.
-* ``@ref-type``: especifica o tipo de referência cruzada. Os valores para 
-  este atributo podem ser:
- 
+
+* ``@rid``: contém o identificador do artigo referenciado, perfazendo assim o link entre a origem (``@rid``) e o destino (``@id``) no texto.
+* ``@ref-type``: especifica o tipo de referência cruzada, cujos valores são:
+
 
 +------------------------+-----------------------------------------+
 | Valor                  | Descrição                               |
@@ -45,7 +43,7 @@ Os atributos obrigatórios para ``xref`` são:
 +------------------------+-----------------------------------------+
 | bibr                   | referência bibliográfica                |
 +------------------------+-----------------------------------------+
-|boxed-text              | Caixa de Texto                          |
+|boxed-text              | caixa de texto                          |
 +------------------------+-----------------------------------------+
 | contrib                | contribuinte                            |
 +------------------------+-----------------------------------------+
@@ -53,7 +51,7 @@ Os atributos obrigatórios para ``xref`` são:
 +------------------------+-----------------------------------------+
 | disp-formula           | fórmula                                 |
 +------------------------+-----------------------------------------+
-| fig                    | figura ou grupos de figuras             |
+| fig                    | figura ou grupo de figuras              |
 +------------------------+-----------------------------------------+
 | fn                     | nota de rodapé                          |
 +------------------------+-----------------------------------------+
@@ -65,9 +63,10 @@ Os atributos obrigatórios para ``xref`` são:
 +------------------------+-----------------------------------------+
 | table-fn               | nota de rodapé de tabelas               |
 +------------------------+-----------------------------------------+
- 
+
+
 Exemplos:
- 
+
 
 .. code-block:: xml
 
@@ -98,7 +97,7 @@ Exemplos:
         ...
     </article-meta>
     ...
-     
+
 
 .. code-block:: xml
 
@@ -116,15 +115,19 @@ Exemplos:
             <graphic xlink:href="0074-0276-mioc-0074-0276140068-gf01"/>
         </fig>
     </p>
- 
+
+
 .. note:: Não envolver a tag ``<xref>`` em ``<sup>``.
 
 
-Para casos em que não há label explícito para relacionar o autor à afiliação, deve ser inserido em :ref:`elemento-contrib` um elemento ``<xref>`` "fechado". Veja:
+Para casos em que não há rótulo (``<label>``) explícito relacionando o autor à afiliação, deve ser inserido em :ref:`elemento-contrib` um elemento ``<xref>`` "fechado".
+
+
+Exemplo:
 
 
 .. code-block:: xml
-    
+
   ...
   <article-meta>
     ...
@@ -150,5 +153,7 @@ Para casos em que não há label explícito para relacionar o autor à afiliaç�
     </aff>
   ...
 
-.. note:: Não inserir label caso não exista no PDF.
+.. note:: Não inserir rótulo (``<label>``) caso não exista no :term:`documento`.
 
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

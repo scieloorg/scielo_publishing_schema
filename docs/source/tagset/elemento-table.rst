@@ -2,25 +2,24 @@
 
 <table>
 -------
- 
-Aparece em
+
+Aparece em:
+
   :ref:`elemento-table-wrap`
 
-Ocorre
+Ocorre:
+
   Uma vez
 
 
-Tabela codificada conforme o padrão :term:`NISO JATS table model`, com a adição 
-das regras:
+Elemento que identifica uma tabela codificada conforme o padrão :term:`NISO JATS table model`, com a adição das regras:
 
-* O primeiro nível da estrutura não pode conter o elemento ``<tr>``, i.e. 
-  ``//table/tr``.
+* O primeiro nível da estrutura não pode conter o elemento ``<tr>``, ex.: ``//table/tr``.
 * Elemento ``<th>`` apenas como descendente de ``<thead>``.
 * Elemento ``<td>`` apenas como descendente de ``<tbody>``.
 
 
-Toda a formatação para exibição deve ser realizada conforme descrito no guia 
-`Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
+Toda a formatação para exibição deve ser realizada conforme descrito no guia `Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
 
 
 .. _elemento-table-traduzida:
@@ -28,14 +27,14 @@ Toda a formatação para exibição deve ser realizada conforme descrito no guia
 Legenda Traduzida
 ^^^^^^^^^^^^^^^^^
 
-Tabelas com legendas traduzidas, com mais de 1 label e caption, devem ser 
-identificadas pelo elemento ``<table-wrap-group>`` o qual deve envolver os 
-elementos ``<table-wrap>`` de cada idioma veja:
+Tabelas com legendas traduzidas, com mais de um rótulo (``<label>``) e legenda (``<caption>``), devem ser identificadas pelo elemento ``<table-wrap-group>``, o qual deve conter os elementos ``<table-wrap>`` para cada idioma.
 
-**Exemplo de tabela codificada:**
+Exemplos:
+
+1. Exemplo de tabela codificada:
 
 .. code-block:: xml
- 
+
     ...
     <table-wrap-group id="t01">
         <table-wrap xml:lang="pt">
@@ -76,10 +75,10 @@ elementos ``<table-wrap>`` de cada idioma veja:
     ...
 
 
-**Exemplo de Tabela como imagem:**
+2. Exemplo de tabela como imagem:
 
 .. code-block:: xml
- 
+
     ...
     <table-wrap-group id="t03">
         <table-wrap xml:lang="pt">
@@ -97,3 +96,6 @@ elementos ``<table-wrap>`` de cada idioma veja:
         </table-wrap>
     </table-wrap-group>
     ...
+
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

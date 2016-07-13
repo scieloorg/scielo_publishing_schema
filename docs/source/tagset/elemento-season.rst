@@ -3,19 +3,22 @@
 <season>
 ^^^^^^^^
 
-Aparece em
-  :ref:`elemento-pub-date`, 
-  :ref:`elemento-product`, 
+Aparece em:
+
+  :ref:`elemento-pub-date`
+  :ref:`elemento-product`
   :ref:`elemento-element-citation`
 
-Ocorre 
- Zero ou uma vez 
+Ocorre:
+
+  Zero ou uma vez
 
 
-Esta tag pode ser encontrada em :ref:`elemento-front` 
-(ver :ref:`elemento-pub-date` e :ref:`elemento-product`), para identificação de intervalo de meses do ano ou em 
-:ref:`elemento-back`, representando informações das estações do ano em um referência.
+Este elemento pode ser encontrado em :ref:`elemento-front` (ver :ref:`elemento-pub-date` e :ref:`elemento-product`) para identificação de intervalo de meses do ano ou em :ref:`elemento-back`, representando informações das estações do ano em um referência.
 
+Exemplos:
+
+1. como estações do ano:
 
 .. code-block:: xml
 
@@ -32,6 +35,7 @@ Esta tag pode ser encontrada em :ref:`elemento-front`
         ...
     </back>
 
+2. como intervalo de meses:
 
 .. code-block:: xml
 
@@ -49,10 +53,9 @@ Esta tag pode ser encontrada em :ref:`elemento-front`
         ...
     </front>
     ...
-          
 
-.. note:: Para abreviatura dos meses que devem ser inseridos na data de 
-          publicação dos números, utilizar siglas em inglês com 3 
-          caracteres, separados por hífen. As abreviaturas são: Jan, Feb, Mar,
-          Apr, May, Jun, Jul, Aug, Sep, Oct, Nov e Dec.
 
+.. note:: Para abreviatura dos meses em um intervalo, deve-se utilizar a abreviatura dos mesmos em inglês, com 3 caracteres, separados por hífen. As abreviaturas são: ``Jan``, ``Feb``, ``Mar``, ``Apr``, ``May``, ``Jun``, ``Jul``, ``Aug``, ``Sep``, ``Oct``, ``Nov`` e ``Dec``.
+
+
+.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}
