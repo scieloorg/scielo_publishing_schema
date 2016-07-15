@@ -1,7 +1,7 @@
 .. _elemento-article-meta:
 
 <article-meta>
---------------
+==============
 
 Aparece em:
 

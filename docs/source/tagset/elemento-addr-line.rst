@@ -1,7 +1,7 @@
 .. _elemento-addr-line:
 
 <addr-line>
-^^^^^^^^^^^
+===========
 
 Aparece em:
 

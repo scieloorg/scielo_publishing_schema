@@ -1,7 +1,7 @@
 .. _elemento-award-group:
 
 <award-group>
-^^^^^^^^^^^^^
+=============
 
 Aparece em:
 

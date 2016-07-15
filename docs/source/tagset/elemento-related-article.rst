@@ -1,7 +1,7 @@
 .. _elemento-related-article:
 
 <related-article>
------------------
+=================
 
 Aparece em:
 

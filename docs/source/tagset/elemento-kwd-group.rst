@@ -1,7 +1,7 @@
 .. _elemento-kwd-group:
 
 <kwd-group>
------------
+===========
 
 Aparece em:
 

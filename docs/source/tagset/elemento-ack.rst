@@ -1,7 +1,7 @@
 .. _elemento-ack:
 
 <ack>
------
+=====
 
 Aparece em:
 

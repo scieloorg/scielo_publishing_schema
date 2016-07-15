@@ -1,7 +1,7 @@
 .. _elemento-element-chapter-title:
 
 <chapter-title>
-^^^^^^^^^^^^^^^
+===============
 
 Aparece em:
 

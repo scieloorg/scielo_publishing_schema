@@ -1,7 +1,7 @@
 .. _elemento-table-wrap-foot:
 
 <table-wrap-foot>
-^^^^^^^^^^^^^^^^^
+=================
 
 Aparece em:
 

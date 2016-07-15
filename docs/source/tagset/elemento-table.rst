@@ -1,7 +1,7 @@
 .. _elemento-table:
 
 <table>
--------
+=======
 
 Aparece em:
 
@@ -25,7 +25,7 @@ Toda a formatação para exibição deve ser realizada conforme descrito no guia
 .. _elemento-table-traduzida:
 
 Legenda Traduzida
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Tabelas com legendas traduzidas, com mais de um rótulo (``<label>``) e legenda (``<caption>``), devem ser identificadas pelo elemento ``<table-wrap-group>``, o qual deve conter os elementos ``<table-wrap>`` para cada idioma.
 

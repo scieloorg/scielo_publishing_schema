@@ -1,7 +1,7 @@
 .. _elemento-table-wrap:
 
 <table-wrap>
-------------
+============
 
 Aparece em:
 

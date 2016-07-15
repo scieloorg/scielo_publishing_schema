@@ -1,7 +1,7 @@
 .. _elemento-title-group:
 
 <title-group>
--------------
+=============
 
 Aparece em:
 

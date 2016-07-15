@@ -1,7 +1,7 @@
 .. _elemento-role:
 
 <role>
-^^^^^^
+======
 
 Aparece em:
 

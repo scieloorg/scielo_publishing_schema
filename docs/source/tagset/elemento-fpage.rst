@@ -1,7 +1,7 @@
 .. _elemento-fpage:
 
 <fpage>
--------
+=======
 
 Aparece em:
 

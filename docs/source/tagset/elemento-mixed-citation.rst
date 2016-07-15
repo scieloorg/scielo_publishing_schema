@@ -1,7 +1,7 @@
 .. _elemento-mixed-citation:
 
 <mixed-citation>
-^^^^^^^^^^^^^^^^
+================
 
 Aparece em:
    :ref:`elemento-ref`

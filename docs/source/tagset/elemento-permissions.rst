@@ -1,7 +1,7 @@
 .. _elemento-permissions:
 
 <permissions>
--------------
+=============
 
 Aparece em:
 

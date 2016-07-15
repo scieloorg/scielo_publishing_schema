@@ -1,7 +1,7 @@
 .. _elemento-inline-formula:
 
 <inline-formula>
-----------------
+================
 
 Aparece em:
 

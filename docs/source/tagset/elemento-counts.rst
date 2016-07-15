@@ -1,7 +1,7 @@
 .. _elemento-counts:
 
 <counts>
---------
+========
 
 Aparece em:
 

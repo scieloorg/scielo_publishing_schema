@@ -1,7 +1,7 @@
 .. _elemento-element-citation:
 
 <element-citation>
-^^^^^^^^^^^^^^^^^^
+==================
 
 Aparece em:
 

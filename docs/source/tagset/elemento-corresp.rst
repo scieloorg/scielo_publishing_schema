@@ -1,7 +1,7 @@
 .. _elemento-corresp:
 
 <corresp>
----------
+=========
 
 Aparece em:
 

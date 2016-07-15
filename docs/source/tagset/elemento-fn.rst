@@ -1,7 +1,7 @@
 .. _elemento-fn:
 
 <fn>
-----
+====
 
 Representa um complemento ou um comentário explicativo do que está sendo citado no texto e deve ser identificado de acordo com sua natureza ao referenciar autores ou demais partes do texto.
 
@@ -9,7 +9,7 @@ Representa um complemento ou um comentário explicativo do que está sendo citad
 .. _elemento-fn-notas-autores:
 
 Notas de autor
-^^^^^^^^^^^^^^
+--------------
 
 Aparece em:
 
@@ -89,7 +89,7 @@ Exemplo:
 .. _elemento-fn-notas-gerais:
 
 Notas gerais
-^^^^^^^^^^^^
+------------
 
 Aparece em:
 
@@ -176,7 +176,7 @@ Exemplo:
 .. _elemento-fn-notas-tabela:
 
 Nota de Tabela
-^^^^^^^^^^^^^^
+--------------
 
 Aparece em:
 

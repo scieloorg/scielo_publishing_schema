@@ -1,7 +1,7 @@
 .. _elemento-page-range:
 
 <page-range>
-^^^^^^^^^^^^
+============
 
 Aparece em:
 

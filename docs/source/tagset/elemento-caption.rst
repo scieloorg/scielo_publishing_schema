@@ -1,7 +1,7 @@
 .. _elemento-caption:
 
 <caption>
----------
+=========
 
 Aparece em:
 

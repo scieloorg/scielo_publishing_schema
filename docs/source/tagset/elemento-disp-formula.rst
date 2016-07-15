@@ -1,7 +1,7 @@
 .. _elemento-disp-formula:
 
 <disp-formula>
---------------
+==============
 
 Aparece em:
 

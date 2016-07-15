@@ -1,7 +1,7 @@
 .. _elemento-etal:
 
 <etal>
-^^^^^^
+======
 
 Aparece em:
 

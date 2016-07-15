@@ -1,7 +1,7 @@
 .. _elemento-season:
 
 <season>
-^^^^^^^^
+========
 
 Aparece em:
 

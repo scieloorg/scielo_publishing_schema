@@ -1,7 +1,7 @@
 .. _elemento-edition:
 
 <edition>
-^^^^^^^^^
+=========
 
 Aparece em:
 

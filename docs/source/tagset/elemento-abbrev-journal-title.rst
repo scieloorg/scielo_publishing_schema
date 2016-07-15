@@ -1,7 +1,7 @@
 .. _elemento-abbrev-journal-title:
 
 <abbrev-journal-title>
-^^^^^^^^^^^^^^^^^^^^^^
+======================
 
 Aparece em:
 

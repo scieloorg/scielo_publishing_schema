@@ -1,7 +1,7 @@
 .. _elemento-trans-abstract:
 
 <trans-abstract>
-----------------
+================
 
 Aparece em:
 

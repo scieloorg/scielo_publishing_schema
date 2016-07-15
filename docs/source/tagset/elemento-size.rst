@@ -1,7 +1,7 @@
 .. _elemento-size:
 
 <size>
-^^^^^^
+======
 
 Aparece em:
 

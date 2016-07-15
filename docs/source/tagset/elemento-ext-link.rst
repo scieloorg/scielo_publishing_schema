@@ -1,7 +1,7 @@
 .. _elemento-ext-link:
 
 <ext-link>
-----------
+==========
 
 Aparece em:
 

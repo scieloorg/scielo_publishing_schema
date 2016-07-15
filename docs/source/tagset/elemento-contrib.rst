@@ -1,7 +1,7 @@
 .. _elemento-contrib:
 
 <contrib>
-^^^^^^^^^
+=========
 
 Aparece em:
 

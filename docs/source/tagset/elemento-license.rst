@@ -1,7 +1,7 @@
 .. _elemento-license:
 
 <license>
-^^^^^^^^^
+=========
 
 Aparece em:
 
