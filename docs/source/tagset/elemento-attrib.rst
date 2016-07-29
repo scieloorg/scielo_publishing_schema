@@ -1,7 +1,7 @@
 .. _elemento-attrib:
 
 <attrib>
-========
+--------
 
 Aparece em:
 
@@ -17,7 +17,7 @@ Ocorre:
 
   Zero ou mais vezes
 
-Descreve dados da fonte, autoria, agradecimentos, material de direitos autorais e outras informações. Geralmente se utiliza para especificar a fonte de origem de figuras e para identificar o autor de uma poesia ou verso.
+Utilizado para creditar o autor ou o licenciador de ativos ou conteúdos que requerem tal atribuição.
 
 Exemplo em figura:
 
@@ -51,4 +51,4 @@ Exemplo em versos:
     ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

@@ -1,7 +1,7 @@
 .. _elemento-edition:
 
 <edition>
-=========
+^^^^^^^^^
 
 Aparece em:
 
@@ -12,7 +12,7 @@ Ocorre:
 
   Zero ou mais vezes
 
-Identifica o número da edição de um documento em uma referência, mas também pode indicar a versão de um software ou base de dados.
+Identifica a edição de um documento em uma referência, mas também pode indicar a versão de um software ou base de dados.
 
 Exemplo 1:
 
@@ -35,7 +35,7 @@ Exemplo 2:
 .. code-block:: xml
 
    ...
-   <element-citation>
+   <element-citation publication-type="book">
       ...
       <publisher-name>Springer</publisher-name>
       <edition>2nd</edition>
@@ -63,4 +63,4 @@ Exemplo 3:
    </element-citation>
 
 
-.. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

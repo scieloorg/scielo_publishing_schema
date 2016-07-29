@@ -1,7 +1,7 @@
 .. _elemento-def-list:
 
 <def-list>
-==========
+----------
 
 Aparece em:
 
@@ -18,7 +18,7 @@ Aparece em:
 
 Atributos obrigatórios:
 
-  1. ``@id``
+  1. ``@id`` (Ver :ref:`sugestao-atribuicao-id`)
 
 
 Ocorre:
@@ -38,7 +38,7 @@ Descreve uma lista de termos e suas respectivas definições, que deve ser apres
 Em ``<def-item>`` usam-se os seguintes sub-elementos:
 
 * ``<term>``: Identifica a palavra, frase, equação etc., que está sendo definida ou descrita.
-* ``<def>``: Descrição, explicação da palavra ou frase em ``<term>``. Nesse contexto deve-se, obrigatoriamente, inserir o elemento :ref:`elemento-p`.
+* ``<def>``: Descreve, explica a palavra ou frase em ``<term>``. Nesse contexto deve-se, obrigatoriamente, inserir o elemento :ref:`elemento-p`.
 
 
 O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``.
@@ -74,7 +74,7 @@ Exemplos:
      </body>
      ...
 
-2. em sublista de definições:
+2. sublista de definições:
 
 .. code-block:: xml
 
@@ -110,4 +110,5 @@ Exemplos:
     </def-list>
     ...
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

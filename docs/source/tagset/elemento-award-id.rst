@@ -1,7 +1,7 @@
 .. _elemento-award-id:
 
 <award-id>
-==========
+^^^^^^^^^^
 
 Aparece em:
 
@@ -11,7 +11,8 @@ Ocorre:
 
   Uma ou mais vezes
 
-Especifica o número do contrato firmado com a instituição financiadora. O nome da instituição é declarado no elemento :ref:`elemento-funding-source`
+Especifica o número do contrato firmado com a instituição financiadora.
+
 
 Exemplo:
 
@@ -35,4 +36,4 @@ Exemplo:
     </article-meta>
     ...
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

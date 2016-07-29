@@ -4,7 +4,7 @@ Regras de Nomeação de Arquivos
 Nomeação de Pasta para Envio
 ----------------------------
 
-Todos os arquivos, incluindo *XML*, *PDF* e imagens referentes ao número em questão devem estar na mesma pasta nomeada conforme o padrão abaixo:
+Todos os arquivos de um pacote, incluindo *XML*, *PDF*, imagens, mídias e material suplementar, caso existam, devem estar na mesma pasta nomeada conforme o padrão abaixo:
 
 Para Número:
 
@@ -190,4 +190,4 @@ Casos Especiais
     +---------------------+---------------------------------------------------------+
 
 
-.. {"reviewed_on": "20160630", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

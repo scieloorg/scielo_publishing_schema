@@ -1,7 +1,7 @@
 .. _elemento-etal:
 
 <etal>
-======
+^^^^^^
 
 Aparece em:
 
@@ -15,7 +15,7 @@ Ocorre:
 
 Elemento utilizado com a finalidade de indicar contribuidores não identificados. Esta informação aparece primordialmente em referências.
 
-.. note:: Quando a informação aparecer no texto da referência, não é necessário incluir o texto ``"et al."`` no elemento ``<etal/>``, uma vez que é um elemento vazio.
+.. note:: Quando a informação aparecer em referência bibliográfica, não é necessário incluir o texto ``"et al."`` no elemento ``<etal/>``, uma vez que é vazio.
 
 
 Exemplo:
@@ -40,4 +40,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

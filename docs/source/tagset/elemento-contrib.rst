@@ -1,7 +1,7 @@
 .. _elemento-contrib:
 
 <contrib>
-=========
+^^^^^^^^^
 
 Aparece em:
 
@@ -55,7 +55,7 @@ Exemplo:
 .. note::
   * Utilizar *AACR2* - *Código de Catalogação Anglo Americano* e/ou *Currículo Lattes* dos autores e avaliar formas de entrada autorizadas para nomes.
   * Para artigos que apresentam assinatura, - como editoriais, apresentação etc., repetir autores de ``<sig-block>`` em ``front/contrib`` caso não exista tal informação.
-  * Em ``contrib`` o elemento :ref:`elemento-name` pode ou não ocorrer.
+  * Em caso de autorias institucionais ou de grupos o elemento não é requerido.
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

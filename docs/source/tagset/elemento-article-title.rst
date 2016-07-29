@@ -1,7 +1,7 @@
 .. _elemento-article-title:
 
 <article-title>
-===============
+^^^^^^^^^^^^^^^
 
 Aparece em:
 
@@ -12,7 +12,7 @@ Ocorre:
 
   zero ou uma vez
 
-Utilizado para identificar o título do artigo em :ref:`elemento-article-meta` ou para especificar um título de documento nas referências em :ref:`elemento-element-citation`. Em ambos casos, o atributo ``@xml:lang`` não deve ser utilizado.
+Utilizado para identificar o título do artigo em :ref:`elemento-title-group` ou para especificar um título de documento nas referências em :ref:`elemento-element-citation`. Em ambos casos, o atributo ``@xml:lang`` não deve ser utilizado.
 
 .. note:: ``<article-title>`` é obrigatório em :ref:`elemento-title-group`.
 
@@ -33,14 +33,14 @@ Exemplo 2:
 
 .. code-block:: xml
 
-    ...
-    <title-group>
-        <article-title>Correlação entre sintomas e tempo de evolução do câncer do trato aerodigestivo superior com o estádio inicial e avançado</article-title>
-    </title-group>
-    ...
+    <element-citation publication-type="journal">
+         ...
+       <article-title>Framing processes and social movements: an overview and assessment</article-title>
+         ...
+    </element-citation>
 
 
-.. note:: Se o título da seção e o título do artigo forem iguais - como ocorre em alguns editoriais, erratas, cartas ao editor etc -, deve-se repetir a          informação no :ref:`elemento-front` e marcá-la com os elementos de título.
+.. note:: Caso haja coincidência entre os títulos da seção e do artigo, a informação será marcada tanto em :ref:`elemento-article-categories` como em ``<article-title>``.
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

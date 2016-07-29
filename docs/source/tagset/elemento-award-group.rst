@@ -1,7 +1,7 @@
 .. _elemento-award-group:
 
 <award-group>
-=============
+^^^^^^^^^^^^^
 
 Aparece em:
 
@@ -12,6 +12,8 @@ Ocorre:
   Uma ou mais vezes
 
 Identifica um grupo de dados de financiamento referente a um artigo. Pode haver tantos grupos quantos forem os financiadores.
+
+.. note:: O grupo de dados deve, obrigatoriamente, possuir o número de contrato e a instituição financiadora.
 
 Exemplo:
 
@@ -25,4 +27,4 @@ Exemplo:
    ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

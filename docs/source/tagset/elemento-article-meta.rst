@@ -1,7 +1,7 @@
 .. _elemento-article-meta:
 
 <article-meta>
-==============
+--------------
 
 Aparece em:
 
@@ -24,10 +24,10 @@ Contém os metadados do artigo, cujos elementos básicos são:
 * número ``*``;
 * paginação do artigo ``*``;
 * resumo(s) ``*``;
-* palavras-chave;
+* palavras-chave ``*``;
 * histórico ``*``;
 * indicação da licença de uso :term:`Creative Commons`;
-* contagem de elementos; e
+* contagem de elementos ``*``; e
 * dados de financiamento  ``*``.
 
 .. note:: Os itens identificados com asterisco devem ser inseridos no :term:`documento` somente se aplicável.
@@ -36,4 +36,4 @@ Contém os metadados do artigo, cujos elementos básicos são:
 Exemplo:
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

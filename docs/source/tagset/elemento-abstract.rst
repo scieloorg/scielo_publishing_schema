@@ -1,7 +1,7 @@
 .. _elemento-abstract:
 
 <abstract>
-==========
+----------
 
 Aparece em:
 
@@ -18,7 +18,7 @@ Elemento que identifica o resumo de um artigo. Não deve conter o atributo ``@xm
 
 Os resumos dos artigos publicados na *SciELO* normalmente se apresentam em dois formatos:
 
-* Estruturado: Possui grupos de textos organizados em seções identificadas com um título (Introdução, Objetivos, Métodos e Resultados).
+* Estruturado: Possui grupos de textos organizados em seções identificadas com um título (Por exemplo: Introdução, Objetivos, Métodos e Resultados).
 
   Exemplo:
 
@@ -59,4 +59,4 @@ Os resumos dos artigos publicados na *SciELO* normalmente se apresentam em dois 
       </article-meta>
       ...
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

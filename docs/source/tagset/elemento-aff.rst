@@ -1,7 +1,7 @@
 .. _elemento-aff:
 
 <aff>
-=====
+-----
 
 Aparece em:
 
@@ -17,7 +17,7 @@ Ocorre:
 
   Zero ou mais vezes
 
-Considera-se como afiliação o vínculo institucional dos contribuintes do artigo naquele momento.
+Considera-se como afiliação o vínculo institucional dos contribuintes do artigo naquele momento, seja pelo título em processo de outorga, por exemplo, *Mestrando(a)*, *Doutorando(a)*, *Pós-Graduando(a)* etc, como também pessoas vinculadas diretamente à instituição, como por exemplo, *Professor na Universidade X*, *Médico na instituição Y, Enfermeira no Hospital Z etc.
 
 Dados de afiliação são importantes para localizar e mensurar a produção científica por país, estado, cidade, bem como por instituição e seus departamentos.
 
@@ -25,13 +25,9 @@ Recomenda-se especificar os nomes das instituições nas afiliações em sua for
 
 Ex. *Universidade de São Paulo*.
 
-Outras formas possíveis, mas não recomendadas, são: *USP* (sigla), *University of São Paulo*, *Saint Paul University* etc.
-
 Quando ocorrer mais de uma forma, deve-se utilizar sempre o nome original.
 
 Não configura vínculo institucional quando refere-se a título outorgado. Ex.: Doutor, Mestre ou Especialista em (área) pela Universidade (nome).
-
-Considera-se como afiliação o título em processo de outorga, ou seja: Mestrando(a), Doutorando(a), Pós-Graduando(a) etc, no momento de criação do documento.
 
 Exemplo:
 
@@ -54,4 +50,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160617", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

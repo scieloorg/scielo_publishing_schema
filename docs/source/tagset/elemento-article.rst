@@ -102,7 +102,7 @@ Para tipo de documento (``@article-type``) os valores possíveis são:
 +--------------------+----------------------------------------------------------+
 
 
-.. note:: O atributo tipo de documento não deve ser confundido com a seção em que o :term:`documento` aparece no sumário (:ref:`elemento-subj-group`).
+.. note:: O atributo tipo de documento não deve ser confundido com a seção em que o :term:`documento` aparece no sumário.
 
 
 O idioma do texto (``@xml:lang``) é descrito pela norma :term:`ISO 639-1` como um código de dois caracteres alfabéticos em caixa baixa, cujo conteúdo encontra-se disponível no `site <http://www.mathguide.de/info/tools/languagecode.html>`_.
@@ -113,11 +113,11 @@ Exemplo (tag completa da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1
 
 .. code-block:: xml
 
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.3" article-type="research-article" xml:lang="en">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.0" article-type="research-article" xml:lang="en">
 
            ...
 
 	 </article>
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

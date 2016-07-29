@@ -1,7 +1,7 @@
 .. _elemento-app:
 
 <app>
-=====
+-----
 
 Aparece em:
 
@@ -15,7 +15,7 @@ Ocorre:
 
   Zero ou mais vezes
 
-Utilizado para indicar um apêndice ao documento. Exige o elemento :ref:`elemento-label` como título do apêndice. O elemento ``<app-group>`` deve sempre ser usado como agrupador do elemento ``<app>`` mesmo que houver somente uma ocorrência deste último.
+Utilizado para indicar um apêndice ao documento. Exige o elemento :ref:`elemento-label` como título do apêndice. O elemento ``<app-group>`` deve sempre ser usado como agrupador do elemento ``<app>`` mesmo se houver somente uma ocorrência deste último.
 
 Exemplos:
 
@@ -202,7 +202,7 @@ Exemplo de apêndice com vídeo
     ...
     <app-group>
           <app id="app01">
-              <label>suplemento eletrônico</label>
+              <label>Apêndice 1</label>
               <supplementary-material id="suppl01">
               <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
               </supplementary-material>
@@ -211,4 +211,4 @@ Exemplo de apêndice com vídeo
     ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

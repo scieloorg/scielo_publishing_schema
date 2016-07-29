@@ -1,7 +1,7 @@
 .. _elemento-contrib-id:
 
 <contrib-id>
-============
+^^^^^^^^^^^^
 
 Aparece em:
 
@@ -17,7 +17,7 @@ Ocorre:
 
 Determina um identificador digital a um pesquisador.
 
-O atributo ``@contrib-id-type`` é o tipo de identificador e possui os valores:
+O atributo ``@contrib-id-type`` possui os seguintes valores:
 
 +------------+-------------------------------------------------------+
 |  Valor     | Descrição                                             |
@@ -66,4 +66,4 @@ Exemplo:
 
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

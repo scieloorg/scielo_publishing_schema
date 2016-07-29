@@ -1,7 +1,7 @@
 .. _elemento-counts:
 
 <counts>
-========
+--------
 
 Aparece em:
 
@@ -38,7 +38,7 @@ Exemplo:
     </article-meta>
     ...
 
-.. note:: A ordem dos elementos é importante. Caso o :term:`documento` não  apresente algum dos elementos contabilizados, o valor do respectivo atributo ``@count`` deve ser ``0``. Ex.: ``<equation-count count="0"/>``. No caso de haver :ref:`elemento-article` e :ref:`elemento-sub-article`, deve-se contabilizar o total de elementos em ambos.
+.. note:: A ordem dos elementos é importante. Caso o :term:`documento` não  apresente algum dos elementos contabilizados, o valor do respectivo atributo ``@count`` deve ser ``0``. Ex.: ``<equation-count count="0"/>``. No caso de haver :ref:`elemento-sub-article` e/ou :ref:`elemento-response`, deve-se contabilizar o total de elementos em ambos.
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

@@ -3,9 +3,9 @@
 Errata
 ======
 
-Como regra, arquivos do tipo *errata* devem apresentar o valor ``correction`` no atributo ``@article-type``. O texto do elemento ``//subj-group[@subj-group-type="heading"]/subject`` deve refletir o sumário do número, e no elemento :ref:`elemento-article-title` deve figurar como título ``Errata`` ou ``Erratum``, de acordo com o que está especificado no PDF.
+Como regra, arquivos do tipo *errata* devem apresentar o valor ``correction`` no atributo ``@article-type``. O texto do elemento ``//subj-group[@subj-group-type="heading"]/subject`` deve conter a seção apresentada no sumário do número e, no elemento :ref:`elemento-article-title` deve figurar como título ``Errata`` ou ``Erratum``, de acordo com o que está especificado no *PDF*.
 
-O elemento :ref:`elemento-related-article`  é utilizado para referenciar o artigo que se deseja retificar.
+O elemento :ref:`elemento-related-article` é utilizado para referenciar o artigo que se deseja retificar.
 
 Exemplo:
 
@@ -81,9 +81,9 @@ Exemplo:
     ...
 
 
-É possível a publicação de *Erratas* na modalidade :ref:`ahead-of-print` seguindo-se as regras anteriormente definidas. A única diferença é que em :ref:`elemento-article-title`, além da inserção da palavra ``Errata``, ``Erratum``, ``Corrigendum`` etc., (conforme PDF), deve-se inserir dois pontos e o título do artigo que possui a informação incorreta. O padrão do documento em si deve seguir as instruções de ``Ahead Of Print``.
+É possível a publicação de *Erratas* na modalidade :ref:`ahead-of-print` seguindo-se as regras anteriormente definidas. A única diferença é que em :ref:`elemento-article-title`, além da inserção da palavra ``Errata``, ``Erratum``, ``Corrigendum`` etc., (conforme PDF), deve-se inserir dois pontos e o título do artigo a ser corrigido. O padrão do documento em si deve seguir as instruções de :term:`ahead-of-print`.
 
 .. note:: Mais informações podem ser encontradas no "Guia para o registro e publicação de errata, retratações e manifestações de preocupação" disponível `nesse endereço <http://www.scielo.org/php/level.php?lang=pt&component=56&item=65>`_.
 
 
-.. {"reviewed_on": "20160630", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

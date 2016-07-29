@@ -48,25 +48,20 @@ Ferramentas de apoio
 
 Algumas ferramentas são disponibilizadas e mantidas pela *SciELO* seguindo o modelo *open source*, para apoiar o processo de marcação de documentos em formato *XML*.
 
-* `Markup <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/markup.html>`_:
-
-  Coleção de macros para :term:`Microsoft Word` para marcação de documentos  conforme a :term:`SciELO PS`.
-
-
-* `Stylechecker <http://manager.scielo.org/tools/validators/stylechecker/>`_:
-
-  Ferramenta online para verificar se determinado XML está em conformidade   com a especificação :term:`SciELO PS`. Disponível a partir do :term:`SciELO  Manager`.
+ `Markup <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/markup.html>`_:
+     Coleção de macros para :term:`Microsoft Word` para marcação de documentos conforme a :term:`SciELO PS`.
 
 
-* `Packtools <https://github.com/scieloorg/packtools/>`_:
-
-  Biblioteca escrita em :term:`Python` com funcionalidades e utilitários para  manipulação de pacotes e XMLs da :term:`SciELO PS`.
-
-
-* `Package Maker <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>`_:
+ `Stylechecker <http://manager.scielo.org/tools/validators/stylechecker/>`_:
+     Ferramenta online para verificar se determinado *XML* está em conformidade com a especificação :term:`SciELO PS`. Disponível a partir do :term:`SciELO  Manager`.
 
 
-  Ferramenta para geração de :term:`Pacotes SciELO PS` e :term:`PMC`. Adicionalmente, fornece relatórios detalhados sobre a estrutura e a validade de alguns metadados de documentos *XML* como subproduto do processo de  geração.
+ `Packtools <https://github.com/scieloorg/packtools/>`_:
+     Biblioteca escrita em :term:`Python` com funcionalidades e utilitários para manipulação de pacotes e XMLs da :term:`SciELO PS`.
+
+
+ `Package Maker <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>`_:
+     Ferramenta para geração de :term:`Pacotes SciELO PS` e :term:`PMC`. Adicionalmente, fornece relatórios detalhados sobre a estrutura e a validade de alguns metadados de documentos *XML* como subproduto do processo de geração.
 
 .. _journal-meta-csv:
 
@@ -152,7 +147,7 @@ Documentação narrativa
 Lista de elementos
 ------------------
 
-Esta lista compreende apenas os elementos XML do :term:`Estilo SciELO PS`. A lista completa dos elementos XML que compõem o :term:`tag set` da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_ deve ser consultada se necessário.
+Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A lista completa dos elementos *XML* que compõem o :term:`tag set` da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_ deve ser consultada se necessário.
 
 .. toctree::
    :maxdepth: 1
@@ -176,4 +171,4 @@ Esta lista compreende apenas os elementos XML do :term:`Estilo SciELO PS`. A lis
 * :ref:`modindex`
 * :ref:`search`
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

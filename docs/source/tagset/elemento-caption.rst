@@ -1,7 +1,7 @@
 .. _elemento-caption:
 
 <caption>
-=========
+---------
 
 Aparece em:
 
@@ -15,7 +15,7 @@ Ocorre:
 
   Zero ou mais vezes
 
-Descreve uma legenda para vários tipos de objeto. ``<caption>`` encerra o elemento ``<title>`` para conter o texto descritivo de uma tabela, figura, mídia, fórmula ou objeto similar.
+Descreve uma legenda para vários tipos de objeto. ``<caption>`` envolve o elemento ``<title>`` para conter o texto descritivo de uma tabela, figura, mídia, fórmula ou objeto similar.
 
 Exemplo:
 
@@ -32,4 +32,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

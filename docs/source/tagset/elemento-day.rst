@@ -1,7 +1,7 @@
 .. _elemento-day:
 
 <day>
-=====
+^^^^^
 
 Aparece em:
 
@@ -13,8 +13,8 @@ Aparece em:
 
 Ocorre :
 
-  1. Zero ou uma vez em :ref:`elemento-front`
-  2. Zero ou mais vezes em :ref:`elemento-back`
+  1. Zero ou uma vez nos elementos de :ref:`elemento-front`
+  2. Zero ou mais vezes nos elementos de :ref:`elemento-back`
 
 
 Identifica o dia de acesso ao conteúdo web relativo a uma referência, podendo ser utilizado para compor a data de publicação e/ou a data de histórico.
@@ -30,4 +30,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

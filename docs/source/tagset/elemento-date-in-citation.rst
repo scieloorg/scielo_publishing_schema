@@ -1,7 +1,7 @@
 .. _elemento-date-in-citation:
 
 <date-in-citation>
-==================
+^^^^^^^^^^^^^^^^^^
 
 Aparece em:
 
@@ -15,7 +15,10 @@ Ocorre:
 
   Zero ou mais vezes
 
-Indica a data de citação em uma referência. O atributo ``@content-type`` é obrigatório e deve conter um valor que qualifica a data de acesso e a data de atualização do :term:`documento`.
+Indica a data de citação em uma referência. O atributo ``@content-type`` é obrigatório e deve conter um valor que qualifica a data de acesso ou a data de atualização do :term:`documento`, cujos valores possíveis são:
+
+* ``update``;
+* ``access-date``.
 
 Exemplo 1:
 
@@ -38,4 +41,4 @@ Exemplo 2:
     ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

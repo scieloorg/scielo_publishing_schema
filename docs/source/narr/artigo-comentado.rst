@@ -3,7 +3,7 @@
 Artigo Comentado
 ================
 
-Artigos que apresentam um comentário diretamente relacionada ao artigo principal devem apresentar um elemento :ref:`elemento-related-article` inserido em :ref:`elemento-response`. Para isso, no artigo principal o atributo ``@article-type`` deve ter como valor ``article-commentary``.
+Artigos que apresentam um comentário diretamente relacionado ao artigo principal devem apresentar um elemento :ref:`elemento-related-article` inserido em :ref:`elemento-response`. Para isso, no artigo principal o atributo ``@article-type`` deve ter como valor ``article-commentary``.
 
 Exemplo:
 
@@ -29,4 +29,4 @@ Exemplo:
 Para artigo relacionado, o elemento :ref:`elemento-related-article` deve conter os seguintes atributos: ``@related-article-type`` com o valor ``commentary-article``; ``@id``; ``@vol`` e ``@page`` com a informação do intervalo de paginação do documento.
 
 
-.. {"reviewed_on": "20160630", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

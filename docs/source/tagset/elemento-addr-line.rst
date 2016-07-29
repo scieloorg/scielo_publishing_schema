@@ -1,7 +1,7 @@
 .. _elemento-addr-line:
 
 <addr-line>
-===========
+^^^^^^^^^^^
 
 Aparece em:
 
@@ -11,7 +11,7 @@ Ocorre:
 
   Zero ou mais vezes
 
-Identifica os dados referente ao endereço da instituição vinculada ao autor. Eventualmente pode conter somente informações de estado e cidade.
+Identifica a cidade e o estado da instituição vinculada ao autor, caso exista.
 
 Exemplo:
 
@@ -25,4 +25,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

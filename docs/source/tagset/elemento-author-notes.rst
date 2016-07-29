@@ -1,7 +1,7 @@
 .. _elemento-author-notes:
 
 <author-notes>
-==============
+--------------
 
 Aparece em:
 
@@ -12,7 +12,8 @@ Ocorre:
   Zero ou mais vezes
 
 
-Identifica informações como: correspondência, contribuição igualitária, conflitos de interesse etc, ou seja, notas sobre o autor.
+Identifica notas relacionadas ao autor, tais como: correspondência, contribuição igualitária etc.
+
 
 Exemplo:
 
@@ -32,4 +33,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
