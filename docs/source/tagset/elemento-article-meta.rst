@@ -33,7 +33,4 @@ Contém os metadados do artigo, cujos elementos básicos são:
 .. note:: Os itens identificados com asterisco devem ser inseridos no :term:`documento` somente se aplicável.
 
 
-Exemplo:
-
-
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
