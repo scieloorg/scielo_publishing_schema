@@ -1,7 +1,7 @@
 .. _elemento-funding-source:
 
 <funding-source>
-================
+^^^^^^^^^^^^^^^^
 
 Aparece em:
 

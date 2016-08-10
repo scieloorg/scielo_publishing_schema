@@ -1,7 +1,7 @@
 .. _elemento-kwd:
 
 <kwd>
-=====
+^^^^^
 
 Aparece em:
 

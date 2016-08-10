@@ -1,7 +1,7 @@
 .. _elemento-copyright-holder:
 
 <copyright-holder>
-==================
+^^^^^^^^^^^^^^^^^^
 
 Aparece em:
 

@@ -1,7 +1,7 @@
 .. _elemento-verse-group:
 
 <verse-group>
-=============
+-------------
 
 Aparece em:
 

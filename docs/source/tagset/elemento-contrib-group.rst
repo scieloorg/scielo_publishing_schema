@@ -1,7 +1,7 @@
 .. _elemento-contrib-group:
 
 <contrib-group>
-===============
+---------------
 
 Aparece em:
 

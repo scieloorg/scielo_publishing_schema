@@ -1,7 +1,7 @@
 .. _elemento-product:
 
 <product>
-=========
+---------
 
 Aparece em:
 

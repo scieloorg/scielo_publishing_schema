@@ -1,7 +1,7 @@
 .. _elemento-issn:
 
 <issn>
-======
+^^^^^^
 
 Aparece em:
 

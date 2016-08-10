@@ -1,7 +1,7 @@
 .. _elemento-boxed-text:
 
 <boxed-text>
-============
+------------
 
 Aparece em:
 

@@ -1,7 +1,7 @@
 .. _elemento-funding-statement:
 
 <funding-statement>
-===================
+^^^^^^^^^^^^^^^^^^^
 
 Aparece em:
 

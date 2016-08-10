@@ -1,7 +1,7 @@
 .. _elemento-element-citation:
 
 <element-citation>
-==================
+^^^^^^^^^^^^^^^^^^
 
 Aparece em:
 
@@ -432,10 +432,10 @@ Exemplos:
     <ref-list>
         <ref id="B10">
             <label>10</label>
-            <mixed-citation>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA &quot;ANDRÉ TOSELLO&quot;. Base de Dados Tropical. 1985. Disponível em: &lt;http://www.bdt.fat.org.br/acaro/sp/&gt;. Acesso em: 30 maio 2002.</mixed-citation>
+            <mixed-citation>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA "ANDRÉ TOSELLO". Base de Dados Tropical. 1985. Disponível em: &lt;http://www.bdt.fat.org.br/acaro/sp/&gt;. Acesso em: 30 maio 2002.</mixed-citation>
             <element-citation publication-type="database">
                 <person-group person-group-type="author">
-                    <collab>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA “ANDRÉ TOSELLO”</collab>
+                    <collab>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA "ANDRÉ TOSELLO"</collab>
                 </person-group>
                 <source>Base de Dados Tropical</source>
                 <year>1985</year>

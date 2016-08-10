@@ -1,7 +1,7 @@
 .. _elemento-issue:
 
 <issue>
-=======
+-------
 
 Aparece em:
 

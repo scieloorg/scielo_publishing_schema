@@ -1,7 +1,7 @@
 .. _elemento-suffix:
 
 <suffix>
-========
+^^^^^^^^
 
 Aparece em:
 

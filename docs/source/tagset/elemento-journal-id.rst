@@ -1,7 +1,7 @@
 .. _elemento-journal-id:
 
 <journal-id>
-============
+^^^^^^^^^^^^
 
 Aparece em:
 
@@ -16,7 +16,9 @@ Ocorre:
   Uma ou mais vezes
 
 
-Contém o identificador único do periódico indexado em uma base de dados ou instituição publicadora.
+Contém o identificador único do periódico indexado em uma base de dados ou instituição publicadora. Minimamente, o acrônimo do periódico deve ser identificado por meio do valor ``publisher-id``.
+
+É obrigatório ter ao menos uma ocorrência de ``<journal-id>`` com o valor ``publisher-id`` no atributo ``@journal-id-type``. Nesta ocorrência deve ser identificado o acrônimo do periódico.
 
 Os valores permitidos para ``@journal-id-type`` são:
 
@@ -49,4 +51,4 @@ Pode-se consultar o `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/advanced>`_ para
 .. note:: Sugere-se consultar o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` como referência na identificação dos elementos.
 
 
-.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

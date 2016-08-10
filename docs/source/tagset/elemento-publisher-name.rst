@@ -1,7 +1,7 @@
 .. _elemento-publisher-name:
 
 <publisher-name>
-================
+^^^^^^^^^^^^^^^^
 
 Aparece em:
 
@@ -14,7 +14,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-Representa o nome da casa publicadora ou editora numa referência.
+Representa o nome da casa publicadora ou editora.
 
 Exemplos:
 
@@ -42,4 +42,4 @@ Exemplos:
     ...
 
 
-.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

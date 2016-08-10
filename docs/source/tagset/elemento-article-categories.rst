@@ -1,7 +1,7 @@
 .. _elemento-article-categories:
 
 <article-categories>
-====================
+--------------------
 
 Aparece em:
 

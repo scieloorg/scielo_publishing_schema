@@ -22,13 +22,13 @@ O atributo ``@contrib-id-type`` possui os seguintes valores:
 +------------+-------------------------------------------------------+
 |  Valor     | Descrição                                             |
 +============+=======================================================+
-|  lattes    | Identifica um pesquisador no *Currículo Lattes*.      |
+| lattes     | Identifica um pesquisador no *Currículo Lattes*.      |
 +------------+-------------------------------------------------------+
-|  orcid     | Identifica um pesquisador na *ORCID Organization*.    |
+| orcid      | Identifica um pesquisador na *ORCID Organization*.    |
 +------------+-------------------------------------------------------+
 | researchid | Identifica um pesquisador na *Thomson Reuters*.       |
 +------------+-------------------------------------------------------+
-|  scopus    | Identifica um pesquisador no sistema da *Scopus*.     |
+| scopus     | Identifica um pesquisador no sistema da *Scopus*.     |
 +------------+-------------------------------------------------------+
 
 
@@ -59,6 +59,7 @@ Exemplo:
     </contrib-group>
     ...
 
+
 .. note:: ``<contrib-id>`` não pode conter dados do tipo URI (URL), **não sendo aceitos** os exemplos:
 
           * ``<contrib-id contrib-id-type="lattes">http://lattes.cnpq.br/4760273612238540</contrib-id>``
@@ -66,4 +67,4 @@ Exemplo:
 
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

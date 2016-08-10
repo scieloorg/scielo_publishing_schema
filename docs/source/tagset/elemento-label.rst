@@ -1,7 +1,7 @@
 .. _elemento-label:
 
 <label>
-=======
+-------
 
 Aparece em:
 

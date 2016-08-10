@@ -1,7 +1,7 @@
 .. _elemento-xref:
 
 <xref>
-======
+------
 
 Aparece em:
 
@@ -28,7 +28,7 @@ Elemento de referência cruzada usado para relacionar e/ou fazer ligação com a
 
 Os atributos obrigatórios para ``xref`` são:
 
-* ``@rid``: contém o identificador do artigo referenciado, perfazendo assim o link entre a origem (``@rid``) e o destino (``@id``) no texto.
+* ``@rid``: contém o identificador do elemento do artigo referenciado, perfazendo assim o link entre a origem (``@rid``) e o destino (``@id``) no texto.
 * ``@ref-type``: especifica o tipo de referência cruzada, cujos valores são:
 
 
@@ -43,7 +43,7 @@ Os atributos obrigatórios para ``xref`` são:
 +------------------------+-----------------------------------------+
 | bibr                   | referência bibliográfica                |
 +------------------------+-----------------------------------------+
-| boxed-text              | caixa de texto                         |
+| boxed-text             | caixa de texto                          |
 +------------------------+-----------------------------------------+
 | contrib                | contribuinte                            |
 +------------------------+-----------------------------------------+
@@ -156,4 +156,4 @@ Exemplo:
 .. note:: Não inserir rótulo (``<label>``) caso não exista no :term:`documento`.
 
 
-.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

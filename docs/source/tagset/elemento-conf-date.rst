@@ -1,7 +1,7 @@
 .. _elemento-conf-date:
 
 <conf-date>
-===========
+^^^^^^^^^^^
 
 Aparece em:
 

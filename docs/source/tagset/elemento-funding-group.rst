@@ -1,7 +1,7 @@
 .. _elemento-funding-group:
 
 <funding-group>
-===============
+---------------
 
 Aparece em:
 

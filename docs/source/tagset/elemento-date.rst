@@ -1,7 +1,7 @@
 .. _elemento-date:
 
 <date>
-======
+^^^^^^
 
 Aparece em:
 

@@ -1,7 +1,7 @@
 .. _elemento-publisher:
 
 <publisher>
-===========
+^^^^^^^^^^^
 
 Aparece em:
 
@@ -12,7 +12,7 @@ Ocorre:
   Uma vez
 
 
-Contém o nome da instituição responsável pela publicação do periódico conforme registro na SciELO.
+Contém o nome da casa publicadora (ou editora) do periódico conforme registro na SciELO.
 
 .. note:: O :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` deve ser consultado como referência na identificação dos elementos.
 

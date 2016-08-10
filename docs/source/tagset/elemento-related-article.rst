@@ -1,7 +1,7 @@
 .. _elemento-related-article:
 
 <related-article>
-=================
+-----------------
 
 Aparece em:
 
@@ -34,16 +34,4 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 +------------------------+-------------------------------------------+
 
 
-Para *Errata* o elemento :ref:`elemento-related-article` deve, obrigatoriamente, apresentar os seguintes atributos: ``@related-article-type``; ``@id``; ``@xlink:href`` e ``@ext-link-type``.
-
-Os valores possíveis para ``@ext-link-type`` são:
-
-* doi
-* scielo-pid
-* scielo-aid
-
-Exemplo:
-
-
-
-.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

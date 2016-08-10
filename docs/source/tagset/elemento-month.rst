@@ -1,7 +1,7 @@
 .. _elemento-month:
 
 <month>
-=======
+^^^^^^^
 
 Aparece em:
 
@@ -10,11 +10,10 @@ Aparece em:
   :ref:`elemento-element-citation`
   :ref:`elemento-date`
 
-Ocorre:
+Ocorre :
 
   1. Zero ou uma vez em :ref:`elemento-front`
   2. Zero ou mais vezes em :ref:`elemento-back`
-
 
 Identifica o mês em referências, podendo representar:
 
@@ -69,5 +68,6 @@ Exemplos:
         <size units="page">84 p</size>
    </element-citation>
    ...
+
 
 .. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

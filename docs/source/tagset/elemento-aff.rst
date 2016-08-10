@@ -17,7 +17,7 @@ Ocorre:
 
   Zero ou mais vezes
 
-Considera-se como afiliação o vínculo institucional dos contribuintes do artigo naquele momento, seja pelo título em processo de outorga, por exemplo, *Mestrando(a)*, *Doutorando(a)*, *Pós-Graduando(a)* etc, como também pessoas vinculadas diretamente à instituição, como por exemplo, *Professor na Universidade X*, *Médico na instituição Y, Enfermeira no Hospital Z etc.
+Considera-se como afiliação o vínculo institucional dos contribuintes do artigo naquele momento, seja pelo título em processo de outorga, por exemplo, *Mestrando(a)*, *Doutorando(a)*, *Pós-Graduando(a)* etc, como também pessoas vinculadas diretamente à instituição, como por exemplo, *Professor na Universidade X*, *Médico na instituição Y*, *Enfermeira no Hospital Z* etc.
 
 Dados de afiliação são importantes para localizar e mensurar a produção científica por país, estado, cidade, bem como por instituição e seus departamentos.
 
@@ -50,4 +50,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

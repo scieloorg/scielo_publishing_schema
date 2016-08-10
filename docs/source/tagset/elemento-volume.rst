@@ -1,7 +1,7 @@
 .. _elemento-volume:
 
 <volume>
-========
+--------
 
 Aparece em:
 
@@ -16,7 +16,9 @@ Ocorre:
 
 Representa o volume de uma publicação.
 
-Caso haja suplemento de volume em :ref:`elemento-front`, este deve ser identificado em :ref:`elemento-issue`.
+Caso haja suplemento de volume, este deve ser identificado em :ref:`elemento-issue` em :ref:`elemento-front`.
+
+.. note:: ``<volume>`` deve ocorrer depois de :ref:`elemento-pub-date` ou antes de :ref:`elemento-issue`.
 
 
 Exemplo ``v10s1``:
@@ -37,4 +39,4 @@ Exemplo ``v10s1``:
     ...
 
 
-.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

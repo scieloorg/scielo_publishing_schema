@@ -1,7 +1,7 @@
 .. _elemento-subj-group:
 
 <subj-group>
-============
+^^^^^^^^^^^^
 
 Aparece em:
 

@@ -1,7 +1,7 @@
 .. _elemento-isbn:
 
 <isbn>
-======
+^^^^^^
 
 Aparece em:
 
@@ -13,7 +13,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-Contém o :term:`ISBN` de um livro e é identificado em uma referência ou produto.
+Identifica o :term:`ISBN` em uma referência bibliográfica ou produto.
 
 Exemplo:
 
@@ -36,4 +36,4 @@ Exemplo:
    </element-citation>
 
 
-.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

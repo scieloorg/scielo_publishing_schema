@@ -1,8 +1,7 @@
 .. _elemento-sec:
 
 <sec>
-=====
-
+-----
 Aparece em:
 
   :ref:`elemento-body`

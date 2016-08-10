@@ -1,7 +1,7 @@
 .. _elemento-response:
 
 <response>
-==========
+----------
 
 Aparece em:
 

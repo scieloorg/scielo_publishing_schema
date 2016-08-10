@@ -1,7 +1,7 @@
 .. _elemento-trans-abstract:
 
 <trans-abstract>
-================
+----------------
 
 Aparece em:
 
@@ -16,9 +16,11 @@ Ocorre:
 
   Zero ou mais vezes
 
-Contém o resumo traduzido do artigo, podendo apresentar os formatos simples ou estruturado, do mesmo modo que o elemento :ref:`elemento-abstract`. Se existente, deve ser inserida imediatamente após :ref:`elemento-abstract` e, obrigatoriamente, conter o atributo ``@xml:lang``.
+Contém o resumo traduzido do artigo, podendo apresentar os formatos simples ou estruturado, do mesmo modo que o elemento :ref:`elemento-abstract`. Se existente, deve ser inserido imediatamente após :ref:`elemento-abstract` e, obrigatoriamente, conter o atributo ``@xml:lang``.
 
 Em ``<trans-abstract>`` deve ser inserida uma informação de rótulo no elemento ``<title>``.
+
+.. note:: Caso o artigo tenha versão(ões) traduzida(s), ``<trans-abstract>`` não deve ser inserido, exceto nos casos em que haja resumos traduzidos diferentes da(s) tradução(ões) disponíveis em :ref:`elemento-sub-article`.
 
 Formato estruturado: Apresenta os principais pontos do texto dividido em seções.
 
@@ -64,4 +66,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

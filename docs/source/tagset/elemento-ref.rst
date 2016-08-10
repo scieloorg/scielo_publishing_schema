@@ -1,7 +1,7 @@
 .. _elemento-ref:
 
 <ref>
-=====
+-----
 
 Aparece em:
 
@@ -16,7 +16,7 @@ Ocorre:
   Uma ou mais vezes
 
 
-O elemento é exclusivo para identificar referências em qualquer norma, e descreve livros, revistas, conferências etc.
+O elemento é exclusivo para identificar referências em qualquer norma, e descreve livros, periódicos, conferências etc.
 
 
 Exemplo:
@@ -57,4 +57,5 @@ Exemplo:
     </ref-list>
     ...
 
-.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}
+
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

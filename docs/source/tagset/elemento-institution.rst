@@ -1,7 +1,7 @@
 .. _elemento-institution:
 
 <institution>
-=============
+^^^^^^^^^^^^^
 
 Aparece em:
 
@@ -16,7 +16,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-Neste elemento identifica-se a instituição do autor, a qual pode ser dividida em até três níveis, definidos pelo atributo obrigatório ``@content-type``, cujos valores possíveis são:
+Neste elemento identifica-se a instituição de afiliação do autor, a qual pode ser dividida em até três níveis, definidos pelo atributo obrigatório ``@content-type``, cujos valores possíveis são:
 
 +------------+--------------------------------------------------------------------+
 | Valor      | Descrição                                                          |
@@ -32,7 +32,7 @@ Neste elemento identifica-se a instituição do autor, a qual pode ser dividida 
 +------------+--------------------------------------------------------------------+
 | normalized | Nome da instituição na forma normalizada pela SciELO.              |
 +------------+--------------------------------------------------------------------+
-| original   | Identificar a afiliação completa conforme consta no texto do artigo|
+| original   | Identifica a afiliação completa conforme consta no texto do artigo |
 +------------+--------------------------------------------------------------------+
 
 
@@ -70,4 +70,4 @@ Exemplo:
 
 
 
-.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

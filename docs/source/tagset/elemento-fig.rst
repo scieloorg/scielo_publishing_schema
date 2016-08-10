@@ -1,7 +1,7 @@
 .. _elemento-fig:
 
 <fig>
-=====
+-----
 
 Aparece em:
 
@@ -104,7 +104,7 @@ Exemplo:
 .. _elemento-fig-traduzido:
 
 Legendas traduzidas
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 Figuras que apresentam legendas traduzidas (com mais de um ``<label>`` e ``<caption>``), devem ser identificadas com o elemento ``<fig-group>``, o qual deve conter os elementos ``<fig>`` para cada idioma utilizando o atributo ``@xml:lang``.
 

@@ -1,7 +1,7 @@
 .. _elemento-disp-quote:
 
 <disp-quote>
-============
+------------
 
 Aparece em:
 

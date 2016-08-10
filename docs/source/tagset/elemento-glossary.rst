@@ -1,7 +1,7 @@
 .. _elemento-glossary:
 
 <glossary>
-==========
+----------
 
 Aparece em:
 

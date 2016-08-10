@@ -1,7 +1,7 @@
 .. _elemento-p:
 
 <p>
-===
+---
 
 Aparece em:
 

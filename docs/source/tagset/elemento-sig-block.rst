@@ -1,7 +1,7 @@
 .. _elemento-sig-block:
 
 <sig-block>
-===========
+-----------
 
 Aparece em:
 

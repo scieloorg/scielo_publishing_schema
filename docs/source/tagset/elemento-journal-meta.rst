@@ -1,7 +1,7 @@
 .. _elemento-journal-meta:
 
 <journal-meta>
-==============
+--------------
 
 Aparece em:
 

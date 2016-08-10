@@ -1,7 +1,7 @@
 .. _elemento-on-behalf-of:
 
 <on-behalf-of>
-==============
+^^^^^^^^^^^^^^
 
 Aparece em:
 

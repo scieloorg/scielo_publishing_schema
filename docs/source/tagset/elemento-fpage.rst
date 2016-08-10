@@ -1,7 +1,7 @@
 .. _elemento-fpage:
 
 <fpage>
-=======
+-------
 
 Aparece em:
 
@@ -29,7 +29,7 @@ Exemplo:
     ...
 
 
-Este elemento também pode ser utilizada com o atributo ``@seq`` para números onde mais de um artigo inicia-se na mesma página. Uma sequência alfanumérica deve diferenciar um artigo dos outros na mesma página. Por exemplo, o primeiro artigo que começar na página 82 pode receber a sequência "82a"; a letra sequencial seria "a" seguido de "b" para um segundo artigo e assim por diante.
+Este elemento também pode ser utilizado com o atributo ``@seq`` para números onde mais de um artigo inicia-se na mesma página. Uma sequência alfanumérica deve diferenciar um artigo dos outros na mesma página. Por exemplo, o primeiro artigo que começar na página 82 pode receber a sequência "82a"; a letra sequencial seria "a" seguido de "b" para um segundo artigo e assim por diante.
 
 Exemplo:
 
@@ -45,4 +45,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

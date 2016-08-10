@@ -1,7 +1,7 @@
 .. _elemento-inline-graphic:
 
 <inline-graphic>
-================
+----------------
 
 Aparece em:
 

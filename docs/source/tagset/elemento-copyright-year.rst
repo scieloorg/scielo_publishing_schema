@@ -1,7 +1,7 @@
 .. _elemento-copyright-year:
 
 <copyright-year>
-================
+^^^^^^^^^^^^^^^^^^
 
 Aparece em:
 

@@ -150,5 +150,4 @@ Exemplo:
    ...
 
 
-
 .. {"reviewed_on": "20160625", "by": "gandhalf_thewhite@hotmail.com"}

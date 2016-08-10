@@ -1,7 +1,7 @@
 .. _elemento-role:
 
 <role>
-======
+^^^^^^
 
 Aparece em:
 
@@ -17,7 +17,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-``<role>`` (função ou papel) é usado para especificar o tipo de responsabilidade (ou função) do contribuinte do :term:`documento`.
+``<role>`` (função ou papel) é usado para especificar o tipo de responsabilidade (ou função) do contribuinte do :term:`artigo`.
 
 Exemplos:
 

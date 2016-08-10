@@ -1,7 +1,7 @@
 .. _elemento-season:
 
 <season>
-========
+^^^^^^^^
 
 Aparece em:
 
@@ -14,7 +14,7 @@ Ocorre:
   Zero ou uma vez
 
 
-Este elemento pode ser encontrado em :ref:`elemento-front` (ver :ref:`elemento-pub-date` e :ref:`elemento-product`) para identificação de intervalo de meses do ano ou em :ref:`elemento-back`, representando informações das estações do ano em um referência.
+Este elemento pode ser encontrado em :ref:`elemento-pub-date` para identificação de intervalo de meses do ano (ver nota informativa) e em :ref:`elemento-element-citation` e :ref:`elemento-product`) para identificação de estação do ano em uma referência bibliográfica.
 
 Exemplos:
 
@@ -58,4 +58,4 @@ Exemplos:
 .. note:: Para abreviatura dos meses em um intervalo, deve-se utilizar a abreviatura dos mesmos em inglês, com 3 caracteres, separados por hífen. As abreviaturas são: ``Jan``, ``Feb``, ``Mar``, ``Apr``, ``May``, ``Jun``, ``Jul``, ``Aug``, ``Sep``, ``Oct``, ``Nov`` e ``Dec``.
 
 
-.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

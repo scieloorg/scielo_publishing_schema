@@ -1,7 +1,7 @@
 .. _elemento-lpage:
 
 <lpage>
-=======
+-------
 
 Aparece em:
 

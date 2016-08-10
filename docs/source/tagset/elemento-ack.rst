@@ -1,7 +1,7 @@
 .. _elemento-ack:
 
 <ack>
-=====
+-----
 
 Aparece em:
 
@@ -13,7 +13,7 @@ Ocorre:
 
 Seção de agradecimentos. Frequentemente indica os dados de financiamento da pesquisa como descrito em :ref:`elemento-funding-group`.
 
-No caso de ter um título (ex. "Agradecimentos" ou "Acknowledgment") identifica-se com o elemento ``<title>`` (`JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_). Também é possível utilizar o elemento :ref:`elemento-p` para identificar os parágrafos do texto.
+No caso de ter um título (ex. "Agradecimentos" ou "Acknowledgment") identifica-se com o elemento ``<title>``. O elemento :ref:`elemento-p` é utilizado para identificar parágrafos do texto.
 
 Exemplo:
 
@@ -30,4 +30,4 @@ Exemplo:
 
 .. note:: Não se deve inserir o elemento :ref:`elemento-sec` para identificar uma seção de agradecimentos.
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}
