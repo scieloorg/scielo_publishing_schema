@@ -24,6 +24,8 @@ Exemplo:
 
     ``0104-5970-hcsm-0315``
 
+.. note:: Nunca usar underline na nomeação de pacotes ou arquivos (XML, PDFs, ativos digitais).
+
 Arquivo XML
 -----------
 
@@ -190,4 +192,4 @@ Casos Especiais
     +---------------------+---------------------------------------------------------+
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

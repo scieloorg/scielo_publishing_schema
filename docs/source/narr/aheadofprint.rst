@@ -3,7 +3,7 @@
 Ahead Of Print
 ==============
 
-Todos os arquivos *Ahead Of Print* (AOP) devem apresentar o valor ``research-article`` em ``@article-type`` e em ``//subj-group[@subj-group-type="heading"]/subject`` inserir o texto ``Articles``.
+Todos os arquivos :term:`ahead of print` (AOP) devem apresentar o valor ``research-article`` em ``@article-type`` e em ``//subj-group[@subj-group-type="heading"]/subject`` inserir o texto ``Articles``.
 
 Esse tipo de :term:`documento` não apresenta volume, número, nem paginação, portanto, os elementos :ref:`elemento-volume` e :ref:`elemento-issue` não devem ser utilizados e deve-se considerar o valor "00" para :ref:`elemento-fpage` e :ref:`elemento-lpage`.
 

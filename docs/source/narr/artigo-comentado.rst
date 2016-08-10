@@ -25,8 +25,9 @@ Exemplo:
      </response>
    </article>
 
+.. note:: ``<related-article>`` deve ser inserido abaixo das informações de ``<permissions>`` ou acima de ``<counts>``.
 
 Para artigo relacionado, o elemento :ref:`elemento-related-article` deve conter os seguintes atributos: ``@related-article-type`` com o valor ``commentary-article``; ``@id``; ``@vol`` e ``@page`` com a informação do intervalo de paginação do documento.
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

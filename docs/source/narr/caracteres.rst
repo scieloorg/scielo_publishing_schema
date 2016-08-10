@@ -28,7 +28,7 @@ Entidades :term:`XML` também são aceitas e devem ser utilizadas para represent
 | >         | &gt;     | > como valor de atributo ou texto de elemento no XML.|
 +-----------+----------+------------------------------------------------------+
 
-Maiores informações encontram-se disponívels na `tabela Unicode <http://unicode-table.com/en/>`_.
+Para maiores informações ver a `tabela Unicode <http://unicode-table.com/en/>`_.
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}
