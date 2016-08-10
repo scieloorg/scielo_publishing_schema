@@ -13,18 +13,16 @@ relação à sua predecessora, a versão 1.1.
   [`#50 <https://github.com/scieloorg/scielo_publishing_schema/issues/50>`_].
 * Adicionado suporte a errata, por meio de ``/article/@article-type="correction"`` 
   [`#45 <https://github.com/scieloorg/scielo_publishing_schema/issues/45>`_].
-* Revisão das restrições sintáticas dos valores dos atributos ``@id`` 
+* Revisão das restrições sintáticas dos valores do atributo ``@id`` 
   [`#15 <https://github.com/scieloorg/scielo_publishing_schema/issues/15>`_].
 * Títulos de seção deverão ser explicitados por meio do elemento ``title``. Essa
-  regra se aplica principalmente para os elementos ``abstract``, ``trans-abstract``,
+  regra se aplica principalmente aos elementos ``abstract``, ``trans-abstract``,
   ``ref-list`` e ``kwd-group``.
 
 .. versionchanged:: 1.2.1
 
 * Adicionado suporte a licenças ``IGO``.
-* A idéia de classificar referências como completas ou incompletas, por meio do 
-  atributo ``@specific-use="display-only"``, se mostrou equivocada e a regra foi 
-  removida.
+* A regra de classificar referências como completas ou incompletas, por meio do atributo ``@specific-use="display-only"``, se mostrou equivocada e foi removida.
 
 
 Quebra de compatibilidade
@@ -69,7 +67,7 @@ especificação.
   ``ref/element-citation[@publication-type="other"]``.
 * Documentação do elemento ``//attrib``.
 * Documentação do elemento ``//front-stub``.
-* Adicionado exemplo de título seção contendo marcador de numeração.
+* Adicionado exemplo de título de seção contendo marcador de numeração.
 * Diversas correções nos exemplos.
 * Adicionada seção para documentação narrativa, onde serão disponibilizadas 
   recomendações específicas ao processo de produção dos documentos e outras 
@@ -84,3 +82,4 @@ especificação.
   [`#63 <https://github.com/scieloorg/scielo_publishing_schema/issues/63>`_],
   [`#100 <https://github.com/scieloorg/scielo_publishing_schema/issues/100>`_].
 
+.. {"reviewed_on": "20160809", "by": "gandhalf_thewhite@hotmail.com"}

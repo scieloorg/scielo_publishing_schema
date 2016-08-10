@@ -46,7 +46,7 @@ Duas versões são suportadas simultaneamente, a atual e a imediatamente anterio
 Ferramentas de apoio
 --------------------
 
-Algumas ferramentas são disponibilizadas e mantidas pela *SciELO* seguindo o modelo *open source*, para apoiar o processo de marcação de documentos em formato *XML*.
+Algumas ferramentas são disponibilizadas e mantidas pela *SciELO* seguindo o modelo :term:`open source`, para apoiar o processo de marcação de documentos em formato *XML*.
 
  `Markup <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/markup.html>`_:
      Coleção de macros para :term:`Microsoft Word` para marcação de documentos conforme a :term:`SciELO PS`.
@@ -171,4 +171,4 @@ Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A l
 * :ref:`modindex`
 * :ref:`search`
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

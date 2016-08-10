@@ -6,7 +6,7 @@ Perguntas frequentes
 Como identificar uma menção a um Ensaio Clínico?
 ------------------------------------------------
 
-O Ensaio Clínico é um estudo em voluntários humanos com o objetivo de responder a questões específicas de saúde. O registro de um ensaio clínico deve ser identificado pelo elemento :ref:`elemento-ext-link`.
+O Ensaio Clínico é um estudo em voluntários humanos com o objetivo de responder a questões específicas de saúde, cujo registro deve ser identificado pelo elemento :ref:`elemento-ext-link`.
 
 Exemplo:
 
@@ -17,9 +17,9 @@ Exemplo:
    ...
 
 
-Para identificação de Ensaio Clínico, o elemento :ref:`elemento-ext-link` deve apresentar o valor ``ClinicalTrial`` no atributo ``@ext-link-type`` e ter preenchida URL do registro de Ensaio Clínico no atributo ``@xlink:href``.
+Para identificação de um Ensaio Clínico, o elemento :ref:`elemento-ext-link` deve apresentar o valor ``ClinicalTrial`` no atributo ``@ext-link-type`` e ter preenchida a URL do registro de Ensaio Clínico no atributo ``@xlink:href``.
 
-Mais informações sobre Ensaios Clínicos podem ser adquiridas nos sites abaixo listados:
+Informações adicionais encontram-se disponíveis nos sites abaixo identificados:
 
 * `Registro Brasileiro de Ensaios Clínicos <http://www.ensaiosclinicos.gov.br/>`_;
 * `Sociedade Brasileira de Profissionais em Pesquisa Clínica <http://www.sbppc.org.br/portal/index.php>`_;
@@ -30,7 +30,7 @@ Mais informações sobre Ensaios Clínicos podem ser adquiridas nos sites abaixo
 Como identificar as subseções de um documento?
 ----------------------------------------------
 
-Artigos que apresentam subseções, devem ser identificados no :term:`documento` pelo elemento :ref:`elemento-subj-group`.
+Artigos que apresentam subseções devem ser identificados no :term:`documento` por meio do elemento :ref:`elemento-subj-group`.
 
 Exemplo:
 
@@ -47,7 +47,7 @@ Exemplo:
 	</article-categories>
 	...
 
-.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor "heading" e que deve aparecer somente uma vez no documento *XML*.
+.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor ``heading`` e que deve aparecer somente uma vez no documento *XML*.
 
 
-.. {"reviewed_on": "20160630", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160719", "by": "gandhalf_thewhite@hotmail.com"}

@@ -23,7 +23,7 @@ versão anterior.
   elementos ``<table-count>``, ``<ref-count>``, ``<fig-count>``, 
   ``<equation-count>`` e ``<page-count>``.
 * A regra para a formação do valor de ``//table-wrap-foot/fn/@id`` não permite
-  mais o sufixo correspondente ao ``<table-wrap>``. i.e.: ``<fn id="TFN01t01">`` 
+  mais o sufixo correspondente ao ``<table-wrap>``. Ex.: ``<fn id="TFN01t01">`` 
   passa a ser ``<fn id="TFN01">``.
 * O elemento ``//aff/country`` tornou-se obrigatório.
 * O atributo ``@xml:lang`` tornou-se obrigatório para o elemento 
@@ -35,3 +35,5 @@ versão anterior.
   ``article``.
 * Adicionados os tipos de referência *legal-doc*, *newspaper* e *other*.
 * O atributo ``//institution/@content-type="normalized"`` passa a ser permitido.
+
+.. {"reviewed_on": "20160809", "by": "gandhalf_thewhite@hotmail.com"}
