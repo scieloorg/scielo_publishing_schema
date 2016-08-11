@@ -1,7 +1,7 @@
 .. _elemento-permissions:
 
 <permissions>
--------------
+=============
 
 Aparece em:
 
@@ -60,7 +60,8 @@ Exemplos:
 
 .. _elemento-permissions-exemplo-1:
 
-1. em :ref:`elemento-article-meta`:
+1. em ``<article-meta>``
+------------------------
 
 .. code-block:: xml
 
@@ -82,7 +83,8 @@ Exemplos:
 
 .. _elemento-permissions-exemplo-2:
 
-2. em ``<fig>``:
+2. em ``<fig>``
+---------------
 
 .. code-block:: xml
 
@@ -107,7 +109,8 @@ Exemplos:
 
 .. _elemento-permissions-exemplo-3:
 
-3. em ``<table-wrap>``:
+3. em ``<table-wrap>``
+----------------------
 
 .. code-block:: xml
 
@@ -152,7 +155,8 @@ Exemplos:
 
 .. _elemento-permissions-exemplo-4:
 
-4. referente imagem dentro de ``<table-wrap>``:
+4. referente imagem dentro de ``<table-wrap>``
+----------------------------------------------
 
 .. code-block:: xml
 
