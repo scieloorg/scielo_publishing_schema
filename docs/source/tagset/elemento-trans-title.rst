@@ -1,7 +1,7 @@
 .. _elemento-trans-title:
 
 <trans-title>
-^^^^^^^^^^^^^
+=============
 
 Aparece em:
 

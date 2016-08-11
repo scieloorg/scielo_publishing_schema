@@ -1,7 +1,7 @@
 .. _elemento-history:
 
 <history>
----------
+=========
 
 Aparece em:
 

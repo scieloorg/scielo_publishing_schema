@@ -1,7 +1,7 @@
 .. _elemento-journal-id:
 
 <journal-id>
-^^^^^^^^^^^^
+============
 
 Aparece em:
 

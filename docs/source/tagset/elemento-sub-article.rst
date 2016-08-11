@@ -1,7 +1,7 @@
 .. _elemento-sub-article:
 
 <sub-article>
--------------
+=============
 
 Aparece em:
 

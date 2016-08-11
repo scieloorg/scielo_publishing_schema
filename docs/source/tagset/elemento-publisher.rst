@@ -1,7 +1,7 @@
 .. _elemento-publisher:
 
 <publisher>
-^^^^^^^^^^^
+===========
 
 Aparece em:
 

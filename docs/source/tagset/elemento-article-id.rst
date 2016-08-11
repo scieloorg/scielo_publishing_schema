@@ -1,7 +1,7 @@
 .. _elemento-article-id:
 
 <article-id>
-^^^^^^^^^^^^
+============
 
 Aparece em:
 

@@ -1,7 +1,7 @@
 .. _elemento-article-title:
 
 <article-title>
-^^^^^^^^^^^^^^^
+===============
 
 Aparece em:
 

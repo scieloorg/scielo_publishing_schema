@@ -1,7 +1,7 @@
 .. _elemento-journal-title:
 
 <journal-title>
-^^^^^^^^^^^^^^^
+===============
 
 Aparece em:
 

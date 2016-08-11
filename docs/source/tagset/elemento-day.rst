@@ -1,7 +1,7 @@
 .. _elemento-day:
 
 <day>
-^^^^^
+=====
 
 Aparece em:
 

@@ -1,7 +1,7 @@
 .. _elemento-award-id:
 
 <award-id>
-^^^^^^^^^^
+==========
 
 Aparece em:
 

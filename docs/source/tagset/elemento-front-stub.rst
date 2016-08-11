@@ -1,7 +1,7 @@
 .. _elemento-front-stub:
 
 <front-stub>
-------------
+============
 
 Aparece em:
 

@@ -1,7 +1,7 @@
 .. _elemento-author-notes:
 
 <author-notes>
---------------
+==============
 
 Aparece em:
 

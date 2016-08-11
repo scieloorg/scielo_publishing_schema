@@ -1,7 +1,7 @@
 .. _elemento-pub-id:
 
 <pub-id>
-^^^^^^^^
+========
 
 Aparece em:
 

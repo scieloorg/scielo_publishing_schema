@@ -1,7 +1,7 @@
 .. _elemento-given-names:
 
 <given-names>
-^^^^^^^^^^^^^
+=============
 
 Aparece em:
 

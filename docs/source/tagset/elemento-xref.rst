@@ -1,7 +1,7 @@
 .. _elemento-xref:
 
 <xref>
-------
+======
 
 Aparece em:
 

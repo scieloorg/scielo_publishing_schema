@@ -1,7 +1,7 @@
 .. _elemento-date-in-citation:
 
 <date-in-citation>
-^^^^^^^^^^^^^^^^^^
+==================
 
 Aparece em:
 

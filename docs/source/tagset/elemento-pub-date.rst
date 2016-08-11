@@ -1,7 +1,7 @@
 .. _elemento-pub-date:
 
 <pub-date>
-----------
+==========
 
 Aparece em:
 

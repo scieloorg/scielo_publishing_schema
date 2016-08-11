@@ -1,7 +1,7 @@
 .. _elemento-element-citation:
 
 <element-citation>
-^^^^^^^^^^^^^^^^^^
+==================
 
 Aparece em:
 
@@ -68,7 +68,25 @@ Os valores possíveis para o atributo ``@publication-type`` são:
 
 Exemplos:
 
-1. Periódico:
+  * :ref:`elemento-element-citation-exemplo-1`
+  * :ref:`elemento-element-citation-exemplo-2`
+  * :ref:`elemento-element-citation-exemplo-3`
+  * :ref:`elemento-element-citation-exemplo-4`
+  * :ref:`elemento-element-citation-exemplo-5`
+  * :ref:`elemento-element-citation-exemplo-6`
+  * :ref:`elemento-element-citation-exemplo-7`
+  * :ref:`elemento-element-citation-exemplo-8`
+  * :ref:`elemento-element-citation-exemplo-9`
+  * :ref:`elemento-element-citation-exemplo-10`
+  * :ref:`elemento-element-citation-exemplo-11`
+  * :ref:`elemento-element-citation-exemplo-12`
+  * :ref:`elemento-element-citation-exemplo-13`
+
+
+.. _elemento-element-citation-exemplo-1:
+
+1. Periódico
+------------
 
 .. code-block:: xml
 
@@ -98,7 +116,11 @@ Exemplos:
     <ref-list>
     ...
 
-2. Capítulo de livro:
+
+.. _elemento-element-citation-exemplo-2:
+
+2. Capítulo de livro
+--------------------
 
 .. code-block:: xml
 
@@ -144,7 +166,11 @@ Exemplos:
     </ref-list>
     ...
 
-3. Livro:
+
+.. _elemento-element-citation-exemplo-3:
+
+3. Livro
+--------
 
 .. code-block:: xml
 
@@ -176,7 +202,11 @@ Exemplos:
     </ref-list>
     ...
 
-4. Página de Internet 1:
+
+.. _elemento-element-citation-exemplo-4:
+
+4. Página de Internet 1
+-----------------------
 
 .. code-block:: xml
 
@@ -199,7 +229,11 @@ Exemplos:
 
 .. note:: Quando a referência apresentar URL com texto ("Disponível em:" ou "Available from:"), identificar conforme o exemplo acima.
 
-5. Página de Internet 2:
+
+.. _elemento-element-citation-exemplo-5:
+
+5. Página de Internet 2
+-----------------------
 
 .. code-block:: xml
 
@@ -224,7 +258,11 @@ Exemplos:
         </element-citation>
     </ref>
 
-6. Relatório 1:
+
+.. _elemento-element-citation-exemplo-6:
+
+6. Relatório 1
+--------------
 
 .. code-block:: xml
 
@@ -249,7 +287,11 @@ Exemplos:
     </ref-list>
     ...
 
-7. Relatório 2:
+
+.. _elemento-element-citation-exemplo-7:
+
+7. Relatório 2
+--------------
 
 .. code-block:: xml
 
@@ -287,7 +329,11 @@ Exemplos:
 
 .. note:: Para referências que apresentam informações de coleção ou série, ex.: "Technical Report Series; 949", identifica-se com o elemento ``<comment>``. Não deve ser confundido com referência bibliográfica do tipo "report", que apresenta número de relatório (Report No.: 431501009). Nesses casos se referencia com o elemento ``<pub-id pub-id-type="other">``.
 
-8. Conferência 1:
+
+.. _elemento-element-citation-exemplo-8:
+
+8. Conferência 1
+----------------
 
 .. code-block:: xml
 
@@ -313,7 +359,11 @@ Exemplos:
     </ref-list>
     ...
 
-9. Conferência 2:
+
+.. _elemento-element-citation-exemplo-9:
+
+9. Conferência 2
+----------------
 
 .. code-block:: xml
 
@@ -344,7 +394,11 @@ Exemplos:
       </ref>
       ...
 
-10. Dissertação:
+
+.. _elemento-element-citation-exemplo-10:
+
+10. Dissertação
+---------------
 
 .. code-block:: xml
 
@@ -372,7 +426,11 @@ Exemplos:
     </ref-list>
     ...
 
-11. Patente:
+
+.. _elemento-element-citation-exemplo-11:
+
+11. Patente
+-----------
 
 .. code-block:: xml
 
@@ -397,7 +455,11 @@ Exemplos:
     </ref-list>
     ...
 
-12. Software:
+
+.. _elemento-element-citation-exemplo-12:
+
+12. Software
+------------
 
 .. code-block:: xml
 
@@ -422,7 +484,11 @@ Exemplos:
     <ref-list>
     ...
 
-13. Base de dados:
+
+.. _elemento-element-citation-exemplo-13:
+
+13. Base de dados
+-----------------
 
 .. code-block:: xml
 

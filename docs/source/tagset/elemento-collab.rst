@@ -1,7 +1,7 @@
 .. _elemento-collab:
 
 <collab>
-^^^^^^^^
+========
 
 Aparece em:
 

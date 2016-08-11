@@ -1,7 +1,7 @@
 .. _elemento-institution:
 
 <institution>
-^^^^^^^^^^^^^
+=============
 
 Aparece em:
 

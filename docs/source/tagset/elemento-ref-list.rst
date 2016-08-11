@@ -1,7 +1,7 @@
 .. _elemento-ref-list:
 
 <ref-list>
-----------
+==========
 
 Aparece em:
 

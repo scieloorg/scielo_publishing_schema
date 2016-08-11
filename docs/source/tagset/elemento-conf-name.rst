@@ -1,7 +1,7 @@
 .. _elemento-conf-name:
 
 <conf-name>
-^^^^^^^^^^^
+===========
 
 Aparece em:
 

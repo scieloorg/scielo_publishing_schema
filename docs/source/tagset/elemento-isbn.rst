@@ -1,7 +1,7 @@
 .. _elemento-isbn:
 
 <isbn>
-^^^^^^
+======
 
 Aparece em:
 

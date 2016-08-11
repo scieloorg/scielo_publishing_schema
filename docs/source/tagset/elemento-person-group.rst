@@ -1,7 +1,7 @@
 .. _elemento-person-group:
 
 <person-group>
-^^^^^^^^^^^^^^
+==============
 
 Aparece em:
 

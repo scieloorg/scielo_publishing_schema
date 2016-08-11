@@ -1,7 +1,7 @@
 .. _elemento-def-list:
 
 <def-list>
-----------
+==========
 
 Aparece em:
 

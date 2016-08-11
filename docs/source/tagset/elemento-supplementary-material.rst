@@ -1,7 +1,7 @@
 .. _elemento-supplementary-material:
 
 <supplementary-material>
-------------------------
+========================
 
 Aparece em:
 

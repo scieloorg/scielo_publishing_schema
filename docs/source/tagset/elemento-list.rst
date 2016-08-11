@@ -1,7 +1,7 @@
 .. _elemento-list:
 
 <list>
-------
+======
 
 Aparece em:
 

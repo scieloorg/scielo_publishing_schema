@@ -1,7 +1,7 @@
 .. _elemento-country:
 
 <country>
-^^^^^^^^^
+=========
 
 Aparece em:
 

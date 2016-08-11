@@ -1,7 +1,7 @@
 .. _elemento-fn-group:
 
 <fn-group>
-----------
+==========
 
 Aparece em:
 

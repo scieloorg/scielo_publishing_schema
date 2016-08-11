@@ -1,7 +1,7 @@
 .. _elemento-publisher-loc:
 
 <publisher-loc>
-^^^^^^^^^^^^^^^
+===============
 
 Aparece em:
 

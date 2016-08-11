@@ -1,7 +1,7 @@
 .. _elemento-contrib-id:
 
 <contrib-id>
-^^^^^^^^^^^^
+============
 
 Aparece em:
 

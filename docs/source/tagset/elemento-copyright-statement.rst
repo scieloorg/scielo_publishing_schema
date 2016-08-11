@@ -1,7 +1,7 @@
 .. _elemento-copyright-statement:
 
 <copyright-statement>
-^^^^^^^^^^^^^^^^^^^^^
+=====================
 
 Aparece em:
 

@@ -1,7 +1,7 @@
 .. _elemento-conf-loc:
 
 <conf-loc>
-^^^^^^^^^^
+==========
 
 Aparece em:
 

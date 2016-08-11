@@ -1,7 +1,7 @@
 .. _elemento-inline-supplementary-material:
 
 <inline-supplementary-material>
--------------------------------
+===============================
 
 Aparece em:
 

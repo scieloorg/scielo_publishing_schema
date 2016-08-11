@@ -1,7 +1,7 @@
 .. _elemento-abstract:
 
 <abstract>
-----------
+==========
 
 Aparece em:
 
