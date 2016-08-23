@@ -5,9 +5,20 @@
 
 Aparece em:
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-p`
+  ``app-group``
   :ref:`elemento-app`
+  :ref:`elemento-article-meta`
+  :ref:`elemento-body`
+  :ref:`elemento-boxed-text`
+  :ref:`elemento-disp-quote`
+  :ref:`elemento-front-stub`
+  :ref:`elemento-glossary`
+  ``license-p``
+  :ref:`elemento-named-content`
+  :ref:`elemento-p`
+  :ref:`elemento-ref-list`
+  :ref:`elemento-sec`
+  
 
 Atributos obrigatórios:
 
