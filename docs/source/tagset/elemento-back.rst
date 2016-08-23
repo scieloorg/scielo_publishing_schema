@@ -6,6 +6,8 @@
 Aparece em:
 
   :ref:`elemento-article`
+  :ref:`elemento-response`
+  :ref:`elemento-sub-article`
 
 Ocorre:
 
