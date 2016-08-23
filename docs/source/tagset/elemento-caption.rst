@@ -5,11 +5,13 @@
 
 Aparece em:
 
+  :ref:`elemento-boxed-text`
   :ref:`elemento-disp-formula`
   :ref:`elemento-fig`
-  :ref:`elemento-table-wrap`
   :ref:`elemento-media`
   :ref:`elemento-supplementary-material`
+  :ref:`elemento-table-wrap`
+  
 
 Ocorre:
 
