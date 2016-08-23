@@ -131,4 +131,8 @@ Exemplo:
     ...
 
 
+
+
+.. note:: Figuras que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
+
 .. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
