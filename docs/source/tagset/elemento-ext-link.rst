@@ -23,9 +23,13 @@ Especifica referências a recursos disponíveis na internet. As únicas restriç
 * O *scheme* deve ser explícito, ou seja, deve começar com ``http://``, ``ftp://``,   ``urn:`` etc;
 * Referências locais, por meio do *scheme* ``file://`` não são permitidas.
 
-.. note:: O valor ``uri`` é obrigatório para o atributo ``@ext-link-type``.
+Os valores possíveis para o ``@ext-link-type`` são:
 
-Exemplo:
+* uri
+* ClinicalTrial
+
+
+Exemplo URL:
 
 .. code-block:: xml
 
@@ -33,5 +37,13 @@ Exemplo:
     <p>Neque porro quisquam est <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link> qui dolorem ipsum quia</p>
     ...
 
+
+Exemplo Ensaio Clínico:
+
+.. code-block:: xml
+	...
+    <ext-link ext-link-type="ClinicalTrial" xlink:href="https://clinicaltrials.gov/ct2/show/NCT01995279?term=NCT01995279">NCT01995279</ext-link>
+    ...
+    
 
 .. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
