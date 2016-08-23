@@ -6,7 +6,7 @@ Nomeação de Pasta para Envio
 
 Todos os arquivos de um pacote, incluindo *XML*, *PDF*, imagens, mídias e material suplementar, caso existam, devem estar na mesma pasta nomeada conforme o padrão abaixo:
 
-Para Número:
+Para Volume e Número:
 
     ``ISSN-acrônimo-volume-número``
 
@@ -16,15 +16,67 @@ Exemplo:
 
 Para *Ahead Of Print* considerar:
 
-    ``ISSN-acrônimo-lote``
-
-O lote é composto pelo número do pacote (01, 02...12,13 etc) + os 2 (dois) dígitos finais do ano corrente.
+    ``ISSN-acrônimo-nahead-lote``
 
 Exemplo:
 
-    ``0104-5970-hcsm-0315``
+    ``0104-5970-hcsm-nahead-0315``
+
+
+
+Para *Publicação Contínua*
+Periódico que publica em um único volume ao ano:
+
+    ``ISSN-acronimo-rpass-lote``
+
+Exemplo:
+
+    ``1678-4766-isz-rpass-0116``
+
+
+Periódico que publica volume e número:
+
+    ``ISSN-acronimo-rpass-lote-volume-número``
+
+Exemplo:
+
+    ``1414-431X-bjmbr-rpass-02-49-7``    
+
+
+.. note:: O lote é composto pelo número do pacote (01, 02...12,13 etc) + os 2 (dois) dígitos finais do ano corrente.
+
+
+Para publicação de Número:
+
+    ``ISSN-acronimo-numero``
+
+Exemplo:
+
+    ``2316-9141-rh-174``
+
+
+
+Para publicação de Número Especial:
+
+    ``ISSN-acronimo-volume-spe + nº de ordem``
+
+Exemplo:
+
+    ``2175-7968-ct-36-spe1``
+
+
+
+Para publicação de Suplemento
+
+    ``ISSN-acronimo-volume-s + Nº de ordem``
+
+Exemplo:
+
+    ``1678-2690-aabc-88-s1``
+
 
 .. note:: Nunca usar underline na nomeação de pacotes ou arquivos (XML, PDFs, ativos digitais).
+
 
 Arquivo XML
 -----------
@@ -120,6 +172,14 @@ Casos Especiais
 |    Tipo de Arquivo    |     Regra de Nomeação                                                      |             Exemplo                        |
 |                       |     (.xml, .pdf e img)                                                     |                                            |
 +=======================+============================================================================+============================================+
+|                       |                                                                            |                                            |
+|                       | ISSN-acronimo-``nº de DOI sem prefixo``(.xml)                              | 1414-431X-bjmbr-1414-431X20165281.xml      |
+|                       |                                                                            |                                            |
+| Publicação Contínua   | ISSN-acronimo-``nº de DOI sem prefixo``-nome da imagem (extensão)          | 1414-431X-bjmbr-1414-431X20165281-gf01.tif |
+|                       |                                                                            |                                            |
+|                       | ISSN-acronimo-``nº de DOI sem prefixo``(.pdf)                              | 1414-431X-bjmbr-1414-431X20165281.pdf      |
+|                       |                                                                            |                                            |
++-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
 |                       |                                                                            |                                            |
 |                       | ISSN-acronimo-vol-nº-``s+nºde ordem``-paginação (.xml)                     | 0066-782X-abc-101-06-``s1``-0001.xml       |
 |                       |                                                                            |                                            |
