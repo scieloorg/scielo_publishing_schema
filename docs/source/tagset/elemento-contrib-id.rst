@@ -38,7 +38,7 @@ Exemplo:
 
     ...
     <contrib-group>
-        <contrib>
+        <contrib contrib-type="author">
             <contrib-id contrib-id-type="orcid">0000-0001-8528-2091</contrib-id>
             <contrib-id contrib-id-type="scopus">24771926600</contrib-id>
             <name>
@@ -47,7 +47,7 @@ Exemplo:
             </name>
             ...
         </contrib>
-        <contrib>
+        <contrib contrib-type="author">
             <contrib-id contrib-id-type="lattes">4760273612238540</contrib-id>
             <name>
                 <surname>Meneghini</surname>
