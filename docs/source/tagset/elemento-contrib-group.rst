@@ -15,11 +15,12 @@ Contém o grupo de elementos relativos à contribuição na elaboração do arti
 
 Os principais elementos de ``<contrib-group>`` são:
 
+* :ref:`elemento-aff`;
 * :ref:`elemento-contrib`;
+* :ref:`elemento-front-stub`;
+* :ref:`elemento-role`;
 * :ref:`elemento-xref`;
-* :ref:`elemento-collab`;
-* :ref:`elemento-aff`; e
-* :ref:`elemento-role`.
+
 
 Exemplo:
 
