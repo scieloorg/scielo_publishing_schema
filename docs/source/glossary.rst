@@ -12,7 +12,7 @@ Glossário
 
 
    ABNT
-     Sigla de *Associação Brasileira de Normas Técnicas*. Fundada em 28 de setembro de 1940, é uma entidade privada e sem fins lucrativos, membro fundador da *International Organization for Standardization* (*ISO*), cuja missão é a elaboração de normas técnicas Brasileiras (ABNT NBR), por meio de seus comitês, unidades setoriais e comissões de estudo. Para maiores informações ver `ABNT - Associação Brasileira de Normas Técnicas <http://www.abnt.org.br/>`_.
+     Sigla de *Associação Brasileira de Normas Técnicas*. Fundada em 28 de setembro de 1940, é uma entidade privada e sem fins lucrativos, membro fundador da *International Organization for Standardization* (*ISO*), cuja missão é a elaboração de normas técnicas Brasileiras (*ABNT NBR*), por meio de seus comitês, unidades setoriais e comissões de estudo. Para maiores informações ver `ABNT - Associação Brasileira de Normas Técnicas <http://www.abnt.org.br/>`_.
 
 
    ahead of print
@@ -20,7 +20,7 @@ Glossário
 
 
    AOP
-     Sigla de *Ahead of Print* (Adiante da impressão). Ver :term:`ahead of print`.
+     Sigla de *Ahead of Print* (Publicação antecipada). Ver :term:`ahead of print`.
 
 
    APA
@@ -36,7 +36,7 @@ Glossário
 
 
    csv
-     Sigla de *Comma-separated values* (valores separados por vírgulas). Refere-se a um arquivo de computador onde a informação é apenas  textual, separada por vírgula (modo padrão) e armazenada em formato tabular. Para maiores informações ver `CSV in Wikipedia <https://en.wikipedia.org/wiki/Comma-separated_values>`_.
+     Sigla de *Comma-separated values* (valores separados por vírgulas). Refere-se a um arquivo de computador onde a informação é apenas textual, separada por vírgula (modo padrão) e armazenada em formato tabular. Para maiores informações ver `CSV in Wikipedia <https://en.wikipedia.org/wiki/Comma-separated_values>`_.
 
 
    Currículo Lattes
@@ -48,7 +48,7 @@ Glossário
 
 
    Declaração do XML
-     **termo sugerido**
+     Chamada também de *Prólogo do XML*, consiste de instruções para leitura e processamento do documento XML pelo programa de computador. Deve, minimamente, especificar a versão da linguagem utilizada para que o programa se comporte como esperado.
 
 
    Documento
@@ -68,7 +68,7 @@ Glossário
 
 
    HTML
-     Sigla de *HyperText Markup Language* (Linguagem de Marcação de Hipertexto). Principal linguagem de marcação para criação de páginas de Internet cujos elementos formam os blocos de construção de todos os sites da web. Desenvolvida e mantida pelo *World Wide Web Consortium* (*W3C*) a partir do *SGML*, foi primariamente designada como linguagem de descrição semântica de documentos científicos. Suas várias versões deram origem a novas tecnologias e padrões, entre eles *XHTML*, *CSS*, *DOM*, *XML*, *XSLT* apenas para citar alguns. Para maiores informações ver `W3C HTML <https://www.w3.org/html/>`_.
+     Sigla de *HyperText Markup Language* (Linguagem de Marcação de Hipertexto). Principal linguagem de marcação para criação de páginas de Internet cujos elementos formam os blocos de construção de todos os sites da web. Desenvolvida e mantida pelo *World Wide Web Consortium* (*W3C*) a partir do :term:`SGML`, foi primariamente designada como linguagem de descrição semântica de documentos científicos. Suas várias versões deram origem a novas tecnologias e padrões, entre eles *XHTML*, *CSS*, *DOM*, *XML*, *XSLT* apenas para citar alguns. Para maiores informações ver `W3C HTML <https://www.w3.org/html/>`_.
 
 
    ISBN
@@ -104,7 +104,7 @@ Glossário
 
 
    Markup
-     Termo em inglês que define uma operação de 'marcação' em um :term:`documento` textual de acordo com um padrão previamente definido. Na *SciELO*, *markup* refere-se ao processo de inclusão de elementos :term:`XML` para identificar, qualificar e agrupar informação de um artigo de periódico durante sua incorporação na base de dados. Refere-se também ao nome do programa que apoia o processo de marcação.
+     Termo em inglês que define uma operação de *marcação* em um :term:`documento` textual de acordo com um padrão previamente definido. Na *SciELO*, *markup* refere-se ao processo de inclusão de elementos :term:`XML` para identificar, qualificar e agrupar informação de um artigo de periódico durante sua incorporação na base de dados. Refere-se também ao nome do programa que apoia o processo de marcação. Para maiores informações ver `SciELO - Scientific Electronic Library Online <http://www.scielo.org/>`_.
 
 
    MathML
@@ -132,7 +132,7 @@ Glossário
 
 
    NISO JATS table model
-     (Modelo de tabela NISO JATS). Modelo de codificação de dados tabulados, baseado e projetado para ser convertido facilmente ao modelo de tabela do XHTML 1.1. Para maiores informações ver `Element Table (NISO JATS table model) <https://jats.nlm.nih.gov/archiving/tag-library/1.1d1/n-by90.html>`_.
+     (Modelo de tabela NISO JATS). Modelo de codificação de dados tabulados, baseado e projetado para ser convertido facilmente ao modelo de tabela do *XHTML* 1.1. Para maiores informações ver `Element Table (NISO JATS table model) <https://jats.nlm.nih.gov/archiving/tag-library/1.1d1/n-by90.html>`_.
 
 
    open source
@@ -148,7 +148,7 @@ Glossário
 
 
    Pacotes SciELO PS
-     Arquivos de computador no formato *.zip*, cada um representando um número (fascículo), com todos os arquivos :term:`XML`, e respectivos arquivos PDF e outros ativos digitais.
+     Arquivos de computador no formato *.zip*, cada um representando um número (fascículo), com todos os arquivos :term:`XML`, e respectivos arquivos *PDF* e outros ativos digitais.
 
 
    PMC
@@ -156,7 +156,7 @@ Glossário
 
 
    Pubmed
-     Sistema que compreende mais de 26 milhões de citações para literatura biomédica oriunda do *MEDLINE*, periódicos de ciências médicas e livros online. As citações podem incluir links para o texto completo no *Pubmed Central* e para sites publicadores na Internet. Para maiores informações ver `Home - PubMed - NCBI <http://www.ncbi.nlm.nih.gov/pubmed>`_.
+     Sistema que compreende mais de 26 milhões de citações para literatura biomédica proveniente do *MEDLINE*, periódicos de ciências médicas e livros online. As citações podem incluir links para o texto completo no *Pubmed Central* e para sites publicadores na Internet. Para maiores informações ver `Home - PubMed - NCBI <http://www.ncbi.nlm.nih.gov/pubmed>`_.
 
 
    Python
@@ -164,11 +164,11 @@ Glossário
 
 
    RST
-     Sigla de reStructuredText (Texto reestruturado). É uma sintaxe de marcação de texto plano, além de ser um componente de parser do software *DocUtils*. Permite realizar marcação inline em arquivos texto através de editores simples como o *Bloco de Notas* do *Windows* e o *vim* do *Linux* para formatação de conteúdo, seja para apresentação na tela ou para formatar uma saída impressa com qualidade. Foi primariamente desenvolvido para apoiar na documentação de código em linguagem :term:`Python`. Para maiores informações ver `reStrucutredText <http://docutils.sourceforge.net/rst.html>`_.
+     Sigla de *reStructuredText* (Texto reestruturado). É uma sintaxe de marcação de texto plano, além de ser um componente de parser do software *DocUtils*. Permite realizar marcação inline em arquivos texto através de editores simples como o *Bloco de Notas* do *Windows* e o *vim* do *Linux* para formatação de conteúdo, seja para apresentação na tela ou para formatação de uma saída impressa com qualidade. Foi primariamente desenvolvido para apoiar na documentação de código em linguagem :term:`Python`. Para maiores informações ver `reStrucutredText <http://docutils.sourceforge.net/rst.html>`_.
 
 
    SciELO Manager
-     Serviço online com acesso identificado para gerenciamento de periódicos da SciELO. Para maiores informações ver `SciELO Manager <http://manager.scielo.org/accounts/login/>`_.
+     Serviço *online* com acesso identificado para gerenciamento de periódicos da *SciELO*. Para maiores informações ver `SciELO Manager <http://manager.scielo.org/accounts/login/>`_.
 
 
    SciELO PS
@@ -216,4 +216,4 @@ Glossário
 
 
 
-.. {"reviewed_on": "20160808", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20160824", "by": "gandhalf_thewhite@hotmail.com"}
