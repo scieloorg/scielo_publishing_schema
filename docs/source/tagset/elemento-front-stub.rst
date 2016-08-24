@@ -32,14 +32,29 @@ Exemplo da tag completa:
 .. code-block:: xml
 
     ...
-    <sub-article article-type="translation" xml:lang="en" id="S1">
-        <front-stub>
+    <front-stub>
+        <article-categories>
             <subj-group subj-group-type="heading">
-                <subject>Letter to the Editor</subject>
+                <subject>Editorial</subject>
             </subj-group>
-        </front-stub>
-        ...
-    </sub-article>
+        </article-categories>
+        <title-group>
+            <article-title>Economia Clínica e Enfermagem</article-title>
+        </title-group>
+        <contrib-group>
+            <contrib contrib-type="author">
+                <name>
+                    <surname>Porzsolt</surname>
+                    <given-names>Franz</given-names>
+                </name>
+                <xref ref-type="aff" rid="aff4">1</xref>
+            </contrib>
+            <aff id="aff4">
+                <label>1</label>
+                <institution content-type="original">Health Care Research, General and Visceral Surgery, University Hospital Ulm, 89070 Ulm, Alemanha. Institute of Clinical Economics (ICE) e. V., 89081 Ulm, Alemanha. E-mail: pesquisador@pesquisador.org</institution>
+            </aff>
+        </contrib-group>
+    </front-stub>
     ...
 
 
