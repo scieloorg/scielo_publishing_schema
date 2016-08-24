@@ -19,7 +19,6 @@ Ocorre:
 
 Utilizado para identificar equações codificadas em linha. Nesse caso, a codificação pode ser escrita de acordo com :term:`W3C` em linguagem :term:`MathML` (http://www.w3.org/TR/MathML3/), sendo o elemento base ``<mml:math>``; ou com outros tipos de codificação, por exemplo, caracteres ASCII, TeX ou LaTeX.
 
-O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``, caso este seja utilizado.
 
 Exemplo para codificar σˆ2* usando *MathML*:
 
