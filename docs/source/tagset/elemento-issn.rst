@@ -37,7 +37,17 @@ Os valores permitidos  ``@pub-type`` são:
 
 Caso estejam disponíveis, ambos ISSNs deverão ser identificados.
 
-Exemplo:
+
+Exemplos:
+
+ * :ref:`elemento-issn-exemplo-1`
+ * :ref:`elemento-issn-exemplo-2`
+
+
+.. _elemento-issn-exemplo-1:
+
+Exemplo de ISSN em ``journal-meta`` :
+-------------------------------------
 
 .. code-block:: xml
 
@@ -49,6 +59,25 @@ Exemplo:
         ...
     </journal-meta>
     ...
+
+
+.. _elemento-exemplo-2:
+
+Exemplo de ISSN em ``element-citation`` :
+-----------------------------------------
+
+.. code-block:: xml
+  ...
+    <element-citation publication-type="journal">
+       ...
+      <source>Chronic Respiratory Disease</source>
+      <volume>vol. 1</volume>
+      <year>2004</year>
+      <issn>1479-9723</issn>
+    </element-citation>
+  ...
+
+
 
 
 .. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}
