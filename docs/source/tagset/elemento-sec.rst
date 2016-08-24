@@ -6,6 +6,7 @@
 Aparece em:
 
   :ref:`elemento-body`
+  :ref:`elemento-sec`
 
 Ocorre:
 
@@ -38,7 +39,19 @@ O corpo textual do artigo pode ser constituído por seções. Cada uma delas ten
 +------------------------+------------------------------------------------+
 
 
-Exemplo:
+Exemplos:
+
+ * :ref:`elemento-sec-exemplo-1`
+ * :ref:`elemento-sec-exemplo-2`
+ * :ref:`elemento-sec-exemplo-3`
+ * :ref:`elemento-sec-exemplo-4`
+ * :ref:`elemento-sec-exemplo-5`
+
+
+.. _elemento-sec-exemplo-1:
+
+Exemplo de ``<sec>`` do tipo simples:
+-------------------------------------
 
 .. code-block:: xml
 
@@ -55,9 +68,13 @@ Exemplo:
     ...
 
 
+.. _elemento-sec-exemplo-2:
+
+Exemplo de ``<sec>`` com seções combinadas:
+-------------------------------------------
+
 No caso de seções combinadas, ou seja, quando o título for composto por mais de um desses itens, o valor do atributo ``@sec-type`` deverá corresponder a cada um, respectivamente, separados pelo caractere ``|`` (pipe).
 
-Exemplo:
 
 .. code-block:: xml
 
@@ -73,10 +90,13 @@ Exemplo:
     </body>
     ...
 
+.. _elemento-sec-exemplo-3:
+
+Exemplo de subseção de primeiro nível:
+--------------------------------------
 
 As seções podem ser compostas por uma ou mais subseções. Nesses casos, cada subseção deverá ser marcada com o elemento ``<sec>`` dentro da seção de nível superior.
 
-Exemplo:
 
 .. code-block:: xml
 
@@ -95,10 +115,13 @@ Exemplo:
     </body>
     ...
 
+.. _elemento-sec-exemplo-4:
+
+Exemplo de ``<sec>``sem tipo padrão:
+------------------------------------
 
 Seções sem tipo padrão podem ser declaradas sem o atributo ``@sec-type``.
 
-Exemplo:
 
 .. code-block:: xml
 
@@ -115,9 +138,13 @@ Exemplo:
     ...
 
 
+.. _elemento-sec-exemplo-5:
+
+Exemplo de seção com marcador de numeração:
+-------------------------------------------
+
 Seções que apresentam marcador de numeração são identificadas juntamente com o texto no elemento ``<title>``.
 
-Exemplo:
 
 .. code-block:: xml
 
