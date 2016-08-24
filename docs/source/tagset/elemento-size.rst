@@ -5,8 +5,8 @@
 
 Aparece em:
 
-  :ref:`elemento-product`
   :ref:`elemento-element-citation`
+  :ref:`elemento-product`
 
 Atributos obrigatórios:
 
@@ -14,7 +14,7 @@ Atributos obrigatórios:
 
 Ocorre:
 
-  Zero ou mais vezes
+  Zero ou uma vez
 
 
 Identifica a quantidade total de páginas de um :term:`documento` mencionado numa referência. Deve ser utilizado com o atributo ``@units="pages"``.
