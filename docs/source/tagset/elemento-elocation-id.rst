@@ -15,7 +15,7 @@ Ocorre:
 
 Identifica uma paginação eletrônica. Pode ocorrer também em :ref:`elemento-element-citation`. Entretanto, só deverá ser utilizado quando houver um único número de paginação eletrônica. Para um intervalo de páginas, deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.
 
-Exemplo:
+Exemplo em :ref:`elemento-article-meta`:
 
 .. code-block:: xml
 
@@ -29,8 +29,21 @@ Exemplo:
     </article-meta>
     ...
 
-
 .. note:: ``<elocation-id>`` só deve ser utilizado quando não houver informação de :ref:`elemento-fpage`.
+
+
+Exemplo em :ref:`elemento-element-citation`:
+
+.. code-block:: xml
+
+    ...
+    <element-citation publication-type="journal">
+        ...
+        <source>PLoS ONE</source>
+        <volume>6</volume>
+        <elocation-id>e27721</elocation-id>
+    </element-citation>
+    ...
 
 
 .. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
