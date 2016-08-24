@@ -5,11 +5,14 @@
 
 Aparece em:
 
-  :ref:`elemento-p`
+  
   :ref:`elemento-app`
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-fig`
+  :ref:`elemento-body`
+  ``<fig-group>``
   :ref:`elemento-glossary`
+  :ref:`elemento-p`
+  :ref:`elemento-supplementary-material`
+
 
 Atributos obrigatórios:
 
@@ -21,10 +24,31 @@ Ocorre:
 
 
 Identifica as figuras de um artigo. Nesse elemento é possível especificar ``<label>``, ``<caption>``, ``<graphic>``, ``<links>`` e objetos multimídia como vídeo, áudio e filme.
+``<fig>`` pode ainda conter os seguintes atributos: ``@fig-type`` e ``@xml:lang``.
+
+O elemento ``<graphic>`` é utilizado para identificar alguns tipos de arquivo e tem como atributo ``@xlink:href:`` que é utilizado para especificar o nome completo da imagem referenciada.
+
+
+
+O atributo ``@id:`` permite fazer referência cruzada no :term:`documento` (link relacionado a um "rid"), desde que o atributo tenha um valor único no arquivo.
+
+Exemplos:
+
+    * :ref:`elemento-fig-exemplo-1`
+    * :ref:`elemento-fig-exemplo-2`
+    * :ref:`elemento-fig-exemplo-3`
+    * :ref:`elemento-fig-exemplo-4`
+    * :ref:`elemento-fig-exemplo-5`
+    * :ref:`elemento-fig-exemplo-6`
+
+
+
+.. _elemento-fig-exemplo-1:
+
+Exemplo de Figura sem label e caption:
+--------------------------------------
 
 As imagens podem ou não ter legendas. Para imagens sem legenda é necessário marcá-la como ``<fig>`` e identificá-la com o elemento ``<graphic>``.
-
-Exemplo:
 
 .. code-block:: xml
 
@@ -34,11 +58,14 @@ Exemplo:
     </fig>
     ...
 
-``<graphic>`` é utilizado para identificar alguns tipos de arquivo e tem como atributo ``@xlink:href:`` que é utilizado para especificar o nome completo da imagem referenciada.
 
-Para figuras com legenda a marcação deve ocorrer para toda a informação da imagem, inclusive sua descrição com o elemento ``<fig>``. Dentro de ``<fig>`` serão identificados o rótulo da figura (:ref:`elemento-label`) e a legenda (:ref:`elemento-caption`) com o título da figura em :ref:`elemento-p`.
 
-Exemplo:
+.. _elemento-fig-exemplo-2:
+
+Exemplo de Figura com label e caption:
+--------------------------------------
+
+Para figuras com legenda a marcação deve ocorrer para toda a informação da imagem, inclusive sua descrição com o elemento ``<fig>``. Dentro de ``<fig>`` serão identificados o rótulo da figura (:ref:`elemento-label`) e a legenda (:ref:`elemento-caption`) com o título da figura em ``title``.
 
 .. code-block:: xml
 
@@ -52,11 +79,13 @@ Exemplo:
     </fig>
     ...
 
-Esse elemento pode ainda conter os seguintes atributos: ``@fig-type`` e ``@xml:lang``.
 
-``@fig-type:``é utilizado para especificar o tipo de imagem, que pode ser: Graphic, Cartoon, Chart, Diagram, Drawing, Exhibit, Illustration, Map etc. Contudo o tipo só será definido caso ``<label>`` apresente um conteúdo diferente de "fig." ou "figure".
+.. _elemento-fig-exemplo-3:
 
-Exemplo:
+Exemplo de Figura com label específico:
+---------------------------------------
+
+O atributo ``@fig-type:`` é utilizado para especificar o tipo de imagem, que pode ser: Graphic, Cartoon, Chart, Diagram, Drawing, Exhibit, Illustration, Map etc. Contudo o tipo só será definido caso o ``<label>`` apresente um conteúdo diferente de "fig." ou "figure".
 
 .. code-block:: xml
 
@@ -71,7 +100,11 @@ Exemplo:
 
 Se a figura não possuir um tipo específico, deve-se manter o elemento sem o atributo.
 
-Exemplo:
+
+.. _elemento-fig-exemplo-4:
+
+Exemplo de Figura sem tipo definido:
+------------------------------------
 
 .. code-block:: xml
 
@@ -84,10 +117,11 @@ Exemplo:
     </fig>
     ...
 
-``@id:`` permite fazer referência cruzada no :term:`documento` (link relacionado a um "rid"), desde que o atributo tenha um valor único no arquivo.
 
+.. _elemento-fig-exemplo-5:
 
-Exemplo:
+Exemplo completo de Figura com atributo ``@id``:
+------------------------------------------------
 
 .. code-block:: xml
 
@@ -106,9 +140,13 @@ Exemplo:
 Legendas traduzidas
 -------------------
 
-Figuras que apresentam legendas traduzidas (com mais de um ``<label>`` e ``<caption>``), devem ser identificadas com o elemento ``<fig-group>``, o qual deve conter os elementos ``<fig>`` para cada idioma utilizando o atributo ``@xml:lang``.
+Figuras que apresentam legendas traduzidas (com mais de um :ref:`elemento-label` e :ref:`elemento-captiob`), devem ser identificadas com o elemento ``<fig-group>``, o qual deve conter os elementos ``<fig>`` para cada idioma utilizando o atributo ``@xml:lang``.
 
-Exemplo:
+
+.. _elemento-fig-exemplo-6:
+
+Exemplo de Figura com legenda traduzida:
+````````````````````````````````````````
 
 .. code-block:: xml
 
