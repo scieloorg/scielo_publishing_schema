@@ -5,11 +5,14 @@
 
 Aparece em:
 
-  :ref:`elemento-p`
-  ``<list-item>``
-  :ref:`elemento-disp-quote`
+  :ref:`elemento-app`
+  :ref:`elemento-body`
   :ref:`elemento-boxed-text`
-
+  :ref:`elemento-disp-quote`
+  ``<list-item>``
+  :ref:`elemento-p`
+  :ref:`elemento-sec`
+      
 Atributos obrigatórios:
 
   1. ``@list-type``
