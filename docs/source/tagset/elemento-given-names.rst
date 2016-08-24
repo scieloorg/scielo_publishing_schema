@@ -9,7 +9,7 @@ Aparece em:
 
 Ocorre:
 
-  Zero ou mais vezes
+  Zero ou uma vez
 
 
 Identifica o prenome do autor, ou seja, todos os nomes exceto pelo sobrenome.
