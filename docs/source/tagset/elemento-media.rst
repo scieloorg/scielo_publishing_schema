@@ -5,10 +5,14 @@
 
 Aparece em:
 
-  :ref:`elemento-p`
-  :ref:`elemento-fig`
   :ref:`elemento-app`
-
+  :ref:`elemento-body`
+  :ref:`elemento-fig`
+  ``<fig-group>``
+  :ref:`elemento-p`
+  :ref:`elemento-sec`
+  :ref:`elemento-table-wrap`
+  
 Atributos obrigatórios:
 
   1. ``@mime-subtype``
@@ -31,7 +35,16 @@ Ocorre:
 
 Exemplos:
 
-1. forma geral:
+ * :ref:`elemento-media-exemplo-1`
+ * :ref:`elemento-media-exemplo-2`
+ * :ref:`elemento-media-exemplo-3`
+ * :ref:`elemento-media-exemplo-4`
+
+
+.. _elemento-media-exemplo-1:
+
+Exemplo de Media generalizado:
+------------------------------
 
 .. code-block:: xml
 
@@ -40,7 +53,10 @@ Exemplos:
            xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
 
 
-2. Em parágrafo:
+.. _elemento-media-exemplo-2:
+
+Exemplo de Media em :ref:`elemento-p`:
+--------------------------------------
 
 .. code-block:: xml
 
@@ -50,7 +66,10 @@ Exemplos:
     mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/></p>
 
 
-3. Em figura:
+.. _elemento-media-exemplo-3:
+
+Exemplo de Media em :ref:`elemento-fig`:
+----------------------------------------
 
 .. code-block:: xml
 
@@ -65,7 +84,10 @@ Exemplos:
     </p>
 
 
-4. Em :ref:`elemento-sec` do tipo material suplementar:
+.. _elemento-media-exemplo-4:
+
+Exemplo de Media em :ref:`elemento-sec` do tipo Material Suplementar:
+---------------------------------------------------------------------
 
 .. code-block:: xml
 
