@@ -10,15 +10,22 @@ Aparece em:
 
 Ocorre:
 
-  1. Zero ou uma vez em :ref:`elemento-front`
-  2. Zero ou mais vezes em :ref:`elemento-back`
+  1. Zero ou uma vez
 
 
 Identifica o fascículo (ou suplemento deste), seja como parte de um volume ou de fascículo especial.
 
 Exemplos:
 
-1. Em caso de suplemento de fascículo em :ref:`elemento-front`, por exemplo, ``v10n5s1``:
+ * :ref:`elemento-issue-exemplo-1`
+ * :ref:`elemento-issue-exemplo-2`
+
+
+
+.. _elemento-issue-exemplo-1:
+
+Exemplo de Suplemento de Fascículo em :ref:`elemento-front`:
+------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -35,7 +42,12 @@ Exemplos:
     </front>
     ...
 
-2. Em caso de fascículo especial em :ref:`elemento-front`, por exemplo, ``v10nspe``:
+
+
+.. _elemento-issue-exemplo-2:
+
+Exemplo de Fascículo Especial em :ref:`elemento-front`:
+-------------------------------------------------------
 
 .. code-block:: xml
 
