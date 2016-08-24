@@ -13,7 +13,7 @@ Atributos obrigatórios:
 
 Ocorre:
 
-  Uma ou mais vezes
+  Uma vez
 
 
 
