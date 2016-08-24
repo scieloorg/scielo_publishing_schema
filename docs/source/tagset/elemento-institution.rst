@@ -43,17 +43,17 @@ Exemplo:
 .. code-block:: xml
 
     ...
-    <aff id="aff01">
-        <institution content-type="orgname">
-            Universidade de São Paulo
-        </institution>
-        <institution content-type="orgdiv1">
-            Faculdade de Filosofia, Letras e Ciências Humanas
-        </institution>
-        <institution content-type="orgdiv2">
-            Departamento de Vernáculos
-        </institution>
-        ...
+    <aff id="aff1">
+      <institution content-type="orgname">Universidade de São Paulo</institution>
+      <institution content-type="normalized">Universidade de São Paulo</institution>,
+      <institution content-type="orgdiv2">Departamento de Fisiologia e Biofísica</institution>
+      <institution content-type="orgdiv1">Instituto de Ciências Biomédicas</institution>
+      <addr-line>
+        <named-content content-type="city">São Paulo</named-content>
+        <named-content content-type="state">SP</named-content>
+      </addr-line>
+      <country country="BR">Brasil</country>
+      <institution content-type="original">Departamento de Fisiologia e Biofísica, Instituto de Ciências Biomédicas, Universidade de São Paulo, São Paulo, SP, Brasil</institution>
     </aff>
     ...
 
