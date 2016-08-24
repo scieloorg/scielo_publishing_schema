@@ -9,7 +9,7 @@ Aparece em:
 
 Ocorre:
 
-  Zero ou mais vezes
+  Zero ou uma vez
 
 
 Especifica sufixos de nome de autor, como por exemplo, "Neto", "Júnior", "Jr.", "Filho", "Sobrinho" etc.
