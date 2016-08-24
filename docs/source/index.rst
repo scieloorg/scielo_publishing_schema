@@ -142,7 +142,7 @@ Documentação narrativa
 
    faq
    glossary
-
+   reference
 
 Lista de elementos
 ------------------
