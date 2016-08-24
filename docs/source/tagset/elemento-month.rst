@@ -5,15 +5,14 @@
 
 Aparece em:
 
-  :ref:`elemento-pub-date`
-  :ref:`elemento-product`
-  :ref:`elemento-element-citation`
   :ref:`elemento-date`
+  :ref:`elemento-element-citation`
+  :ref:`elemento-product`
+  :ref:`elemento-pub-date`  
 
 Ocorre :
 
-  1. Zero ou uma vez em :ref:`elemento-front`
-  2. Zero ou mais vezes em :ref:`elemento-back`
+  Zero ou uma vez
 
 Identifica o mês em referências, podendo representar:
 
@@ -27,7 +26,16 @@ Intervalos de meses, por exemplo, ``Jan-Mar``, devem ser identificados em :ref:`
 
 Exemplos:
 
-1. em ``<pub-date>``:
+  * :ref:`elemento-month-exemplo-1`
+  * :ref:`elemento-month-exemplo-2`
+  * :ref:`elemento-month-exemplo-3`
+
+
+
+.. _elemento-month-exemplo-1:
+
+Exemplo de ``<month>`` em :ref:`elemento-pub-date`:
+---------------------------------------------------
 
 .. code-block:: xml
 
@@ -39,7 +47,10 @@ Exemplos:
    </pub-date>
    ...
 
-2. em ``<date>`` de ``<history>``:
+.. _elemento-month-exemplo-2:
+
+Exemplo de ``<month>`` em :ref:`elemento-date` de :ref:`elemento-history`:
+--------------------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -51,7 +62,10 @@ Exemplos:
    </date>
    ...
 
-3. em ``<element-citation>``:
+.. _elemento-month-exemplo-3:
+
+Exemplo de ``<month>`` em :ref:`elemento-element-citation`:
+-----------------------------------------------------------
 
 .. code-block:: xml
 
