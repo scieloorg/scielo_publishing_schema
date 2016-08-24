@@ -5,8 +5,8 @@
 
 Aparece em:
 
-  :ref:`elemento-product`
   :ref:`elemento-element-citation`
+  :ref:`elemento-product`
   :ref:`elemento-publisher`
 
 Ocorre:
@@ -18,7 +18,14 @@ Representa o nome da casa publicadora ou editora.
 
 Exemplos:
 
-1. em <journal-meta>:
+  * :ref:`elemento-pub-name-exemplo-1`
+  * :ref:`elemento-pub-name-exemplo-2`
+
+
+.. _elemento-pub-name-exemplo-1:
+
+Exemplo de ``<publisher-name>`` em :ref:`elemento-journal-meta`:
+----------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -28,7 +35,10 @@ Exemplos:
     </publisher>
     ...
 
-2. em <element-citation>:
+.. _elemento-pub-name-exemplo-2:
+
+Exemplo de ``<publisher-name>`` em :ref:`elemento-element-citation`:
+--------------------------------------------------------------------
 
 .. code-block:: xml
 
