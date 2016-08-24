@@ -10,8 +10,7 @@ Aparece em:
 
 Ocorre:
 
-  1. Zero ou uma vez em :ref:`elemento-front`
-  2. Zero ou mais vezes em :ref:`elemento-back`
+  Zero ou uma vez
 
 
 Representa o volume de uma publicação.
