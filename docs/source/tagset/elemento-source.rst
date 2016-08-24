@@ -5,13 +5,12 @@
 
 Aparece em:
 
-  :ref:`elemento-product`
   :ref:`elemento-element-citation`
+  :ref:`elemento-product`
 
 Ocorre:
 
-  Zero ou mais vezes
-
+  Zero ou uma vez
 
 Identifica o título da fonte principal de uma referência ou de um produto. O atributo ``@xml:lang`` não deve ser utilizado.
 
