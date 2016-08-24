@@ -44,7 +44,18 @@ Os atributos obrigatórios são:
 * ``@xlink:href``: Indica o nome completo do arquivo, como por exemplo, ``http://sitio/arquivos/suplementar1.pdf``, ``entrevista.mov`` etc.
 
 
-Exemplo:
+Exemplos:
+
+ * :ref:`elemento-suppl-material-exemplo-1`
+ * :ref:`elemento-suppl-material-exemplo-2`
+ * :ref:`elemento-suppl-material-exemplo-3`
+ * :ref:`elemento-suppl-material-exemplo-4`
+
+
+.. _elemento-suppl-material-exemplo-1:
+
+Exemplo de ``<supplementary-material>`` em :ref:`elemento-article-meta`:
+------------------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -60,6 +71,18 @@ Exemplo:
         </article-meta>
         ...
     </front>
+    ...
+
+
+.. _elemento-suppl-material-exemplo-2:
+
+Exemplo de ``<supplementary-material>`` no :ref:`elemento-p` envolvendo um objeto:
+----------------------------------------------------------------------------------
+    
+
+.. code-block:: xml
+
+    ...
     <body>
         ...
         <p>
@@ -71,11 +94,38 @@ Exemplo:
             </supplementary-material>
         </p>
         ...
+    </body>
+    ...
+
+
+.. _elemento-suppl-material-exemplo-3:
+
+Exemplo de ``<supplementary-material>`` em :ref:`elemento-p`:
+-------------------------------------------------------------
+
+
+.. code-block:: xml
+
+    ...
+    <body>
+      ...
         <p>
             <supplementary-material id="suppl03" mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-suppl01.pdf"/>
         </p>
-        ...
+      ...
     </body>
+    ...
+
+
+.. _elemento-suppl-material-exemplo-4:
+
+Exemplo de ``<supplementary-material>`` em :ref:`elemento-back`:
+----------------------------------------------------------------
+
+
+.. code-block:: xml
+
+    ...
     <back>
         <app-group>
             <app id="app01">
