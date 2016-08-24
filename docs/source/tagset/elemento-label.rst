@@ -6,21 +6,22 @@
 Aparece em:
 
   :ref:`elemento-aff`
+  :ref:`elemento-app`
+  :ref:`elemento-boxed-text`
   :ref:`elemento-corresp`
-  :ref:`elemento-fn`
-  :ref:`elemento-fig`
-  :ref:`elemento-table-wrap`
+  :ref:`elemento-def-list`
   :ref:`elemento-disp-formula`
-  :ref:`elemento-media`
-  :ref:`elemento-supplementary-material`
+  :ref:`elemento-fig`
+  :ref:`elemento-fn`
+  ``glossary``
   :ref:`elemento-list`
   ``list-item``
+  :ref:`elemento-media`
   :ref:`elemento-ref`
-  ``glossary``
-  :ref:`elemento-app`
-  :ref:`elemento-def-list`
+  :ref:`elemento-supplementary-material`
+  :ref:`elemento-table-wrap`  
   :ref:`elemento-verse-group`
-  :ref:`elemento-boxed-text`
+  
 
 Ocorre:
 
@@ -31,7 +32,19 @@ Ocorre:
 
 Exemplos:
 
-1. em ``<aff>``:
+ * :ref:`elemento-label-exemplo-1`
+ * :ref:`elemento-label-exemplo-2`
+ * :ref:`elemento-label-exemplo-3`
+ * :ref:`elemento-label-exemplo-4`
+ * :ref:`elemento-label-exemplo-5`
+ * :ref:`elemento-label-exemplo-6`
+
+
+.. _elemento-label-exemplo-1:
+
+Exemplo em :ref:`elemento-aff`:
+-------------------------------
+
 
 .. code-block:: xml
 
@@ -40,7 +53,12 @@ Exemplos:
         ...
     </aff>
 
-2. em ``<corresp>``:
+
+
+.. _elemento-label-exemplo-2:
+
+Exemplo em :ref:`elemento-corresp`:
+-----------------------------------
 
 .. code-block:: xml
 
@@ -49,7 +67,11 @@ Exemplos:
        ...
     </corresp>
 
-3. em ``<fig>``:
+
+.. _elemento-label-exemplo-3:
+
+Exemplo em :ref:`elemento-fig`:
+-------------------------------
 
 .. code-block:: xml
 
@@ -58,7 +80,11 @@ Exemplos:
         ...
     </fig>
 
-4. em ``<table-wrap>``:
+
+.. _elemento-label-exemplo-4:
+
+Exemplo em :ref:`elemento-table-wrap`:
+--------------------------------------
 
 .. code-block:: xml
 
@@ -67,7 +93,10 @@ Exemplos:
         ...
     </table-wrap>
 
-5. em ``<ref>``:
+
+.. _elemento-label-exemplo-5:
+
+Exemplo em :ref:`elemento-ref`:
 
 .. code-block:: xml
 
@@ -76,7 +105,11 @@ Exemplos:
         ...
     </ref>
 
-6. em ``<app>``:
+
+.. _elemento-label-exemplo-6:
+
+Exemplo em :ref:`elemento-app`:
+-------------------------------
 
 .. code-block:: xml
 
