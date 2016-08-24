@@ -14,6 +14,7 @@ Ocorre:
 
 Usado somente quando há um número de contrato explicitado no artigo. As informações de  financiamento podem aparecer nas tags :ref:`elemento-fn` ou :ref:`elemento-ack`.
 
+
 Exemplo:
 
 .. code-block:: xml
