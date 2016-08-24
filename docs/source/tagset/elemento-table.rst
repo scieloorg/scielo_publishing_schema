@@ -18,8 +18,71 @@ Elemento que identifica uma tabela codificada conforme o padrão :term:`NISO JAT
 * Elemento ``<th>`` apenas como descendente de ``<thead>``.
 * Elemento ``<td>`` apenas como descendente de ``<tbody>``.
 
+Verifique abaixo o quadro descritivo dos elementos de uma tabela:
+
++----------+--------------+---------------------------------------------+
+| Nome do  | Definição    | Descrição                                   |
+| elemento |              |                                             |
++==========+==============+=============================================+
+| thead    | Table Header | Identifica o cabeçalho da tabela            |
+|          |              |                                             |
++----------+--------------+---------------------------------------------+
+| tbody    | Table Body   | Apresenta as linhas e colunas do corpo da   |
+|          |              | tabela                                      |
++----------+--------------+---------------------------------------------+
+| tr       | Table Row    | Elemento que apresenta as células da tabela |
+|          |              | em uma única linha                          |
++----------+--------------+---------------------------------------------+
+| th       | Table Header | Identifica uma célula no cabeçalho da       | 
+|          | Cell         | tabela                                      |
++----------+--------------+-------------------------------------------- +
+| td       | Table Data   | Identifica uma célula no corpo de uma       |
+|          | Cell         | tabela                                      |
++-------------------------+---------------------------------------------+
 
 Toda a formatação para exibição deve ser realizada conforme descrito no guia `Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
+
+
+
+Exemplo de tabela codificada:
+
+.. code-block:: xml
+
+    ...
+    <table-wrap id="t1">
+        <label>Tabela 1</label>
+        <caption>
+            <title>Principais cidades do Brasil com maior população</title>
+        </caption>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Município</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td>11.376.685</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rio de Janeiro</td>
+                    <td>6.690.290</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Salvador</td>
+                    <td>2.710.968</td>
+                </tr>
+            </tbody>
+        </table>
+    </table-wrap>
+    ...
+
 
 
 .. _elemento-table-traduzida:
@@ -31,7 +94,13 @@ Tabelas com legendas traduzidas, com mais de um rótulo (``<label>``) e legenda 
 
 Exemplos:
 
-1. Exemplo de tabela codificada:
+* :ref:`elemento-tablegend-exemplo-1`
+* :ref:`elemento-tablegend-exemplo-2`
+
+
+.. _elemento-tablegend-exemplo-1:
+
+Exemplo de tabela codificada:
 
 .. code-block:: xml
 
@@ -75,7 +144,9 @@ Exemplos:
     ...
 
 
-2. Exemplo de tabela como imagem:
+.. _elemento-tablegend-exemplo-2:
+
+Exemplo de tabela como imagem:
 
 .. code-block:: xml
 
