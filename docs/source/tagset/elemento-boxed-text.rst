@@ -25,7 +25,17 @@ Ocorre:
 
 Identifica texto ou objeto que faz parte do artigo, mas não do corpo do texto (flutuante ou não ancorado). Permite apresentar texto com seções, figuras, tabelas etc.
 
-Exemplo com seção:
+
+Exemplos:
+
+  * :ref:`elemento-boxtext-exemplo-1`
+  * :ref:`elemento-boxtext-exemplo-2`
+
+
+.. _elemento-boxtext-exemplo-1:
+
+Exemplo de ``<boxed-text>`` com seção:
+--------------------------------------
 
 .. code-block:: xml
 
@@ -40,7 +50,11 @@ Exemplo com seção:
     ...
 
 
-Exemplo com figura:
+
+.. _elemento-boxtext-exemplo-2:
+
+Exemplo de ``<boxed-text>`` com figura:
+---------------------------------------
 
 .. code-block:: xml
 

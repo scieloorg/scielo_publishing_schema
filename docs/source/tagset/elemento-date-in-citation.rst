@@ -20,7 +20,17 @@ Indica a data de citação em uma referência. O atributo ``@content-type`` é o
 * ``update``;
 * ``access-date``.
 
-Exemplo 1:
+
+Exemplos:
+
+  * :ref:`elemento-datcitation-exemplo-1`
+  * :ref:`elemento-datcitation-exemplo-2`
+
+
+.. _elemento-datcitation-exemplo-1:
+
+Exemplo de ``<date-in-citation>`` do tipo data de acesso:
+---------------------------------------------------------
 
 .. code-block:: xml
 
@@ -30,7 +40,11 @@ Exemplo 1:
     </element-citation>
     ...
 
-Exemplo 2:
+
+.. _elemento-datcitation-exemplo-2:
+
+Exemplo ``<date-in-citation>`` do tipo data de atualização:
+-----------------------------------------------------------
 
 .. code-block:: xml
 
