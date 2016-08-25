@@ -18,13 +18,14 @@ Em ``<ref-list>`` deve ser inserido um rótulo sob ``<title>`` identificando aqu
 
 Exemplos:
 
-* :ref:`elemento-ref-list-exemplo-1`
-* :ref:`elemento-ref-list-exemplo-2`
+  * :ref:`elemento-ref-list-exemplo-1`
+  * :ref:`elemento-ref-list-exemplo-2`
 
 
 .. _elemento-ref-list-exemplo-1:
 
 Exemplo de ``<ref-list>`` simples:
+----------------------------------
 
 .. code-block:: xml
 
