@@ -19,7 +19,17 @@ Ocorre:
 
 Descreve uma legenda para vários tipos de objeto. ``<caption>`` envolve o elemento ``<title>`` para conter o texto descritivo de uma tabela, figura, mídia, fórmula ou objeto similar e também o elemento ``<p>`` para identificação de texto adicional.
 
-Exemplo:
+
+Exemplos:
+
+* :ref:`elemento-caption-exemplo-1`
+* :ref:`elemento-caption-exemplo-2`
+
+
+.. _elemento-caption-exemplo-1:
+
+Exemplo de :ref:`elemento-fig` com ``<caption>`` simples:
+---------------------------------------------------------
 
 .. code-block:: xml
 
@@ -33,7 +43,11 @@ Exemplo:
     </fig>
     ...
 
-Exemplo de Figura com informação adicional:
+
+.. _elemento-caption-exemplo-2:
+
+Exemplo de :ref:`elemento-fig` com ``<caption>`` com informação adicional:
+--------------------------------------------------------------------------
 
 .. code-block:: xml
 
