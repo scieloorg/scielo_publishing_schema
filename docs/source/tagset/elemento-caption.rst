@@ -28,8 +28,8 @@ Exemplos:
 
 .. _elemento-caption-exemplo-1:
 
-Exemplo de :ref:`elemento-fig` com ``<caption>`` simples:
----------------------------------------------------------
+Exemplo de ``<fig>`` com ``<caption>`` simples:
+-----------------------------------------------
 
 .. code-block:: xml
 
@@ -46,8 +46,8 @@ Exemplo de :ref:`elemento-fig` com ``<caption>`` simples:
 
 .. _elemento-caption-exemplo-2:
 
-Exemplo de :ref:`elemento-fig` com ``<caption>`` com informação adicional:
---------------------------------------------------------------------------
+Exemplo de ``<fig>`` com ``<caption>`` com informação adicional:
+----------------------------------------------------------------
 
 .. code-block:: xml
 
