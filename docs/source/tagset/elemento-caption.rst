@@ -22,8 +22,8 @@ Descreve uma legenda para vários tipos de objeto. ``<caption>`` envolve o eleme
 
 Exemplos:
 
-* :ref:`elemento-caption-exemplo-1`
-* :ref:`elemento-caption-exemplo-2`
+  * :ref:`elemento-caption-exemplo-1`
+  * :ref:`elemento-caption-exemplo-2`
 
 
 .. _elemento-caption-exemplo-1:

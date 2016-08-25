@@ -38,7 +38,7 @@ Verifique abaixo o quadro descritivo dos elementos de uma tabela:
 +----------+--------------+-------------------------------------------- +
 | td       | Table Data   | Identifica uma célula no corpo de uma       |
 |          | Cell         | tabela                                      |
-+-------------------------+---------------------------------------------+
++----------+--------------+---------------------------------------------+
 
 Toda a formatação para exibição deve ser realizada conforme descrito no guia `Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
 
@@ -94,8 +94,8 @@ Tabelas com legendas traduzidas, com mais de um rótulo (``<label>``) e legenda 
 
 Exemplos:
 
-* :ref:`elemento-tablegend-exemplo-1`
-* :ref:`elemento-tablegend-exemplo-2`
+  * :ref:`elemento-tablegend-exemplo-1`
+  * :ref:`elemento-tablegend-exemplo-2`
 
 
 .. _elemento-tablegend-exemplo-1:

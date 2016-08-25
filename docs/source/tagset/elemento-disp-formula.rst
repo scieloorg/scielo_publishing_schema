@@ -26,7 +26,13 @@ Identifica equações em parágrafos do texto, preferencialmente codificadas. Po
 
 Exemplos:
 
-1. Equação codificada:
+  * :ref:`elemento-eqcod-exemplo-1`
+  * :ref:`elemento-eqcod-exemplo-2`
+
+.. _elemento-eqcod-exemplo-1:
+
+Equação codificada:
+-------------------
 
 .. code-block:: xml
 
@@ -35,33 +41,36 @@ Exemplos:
     ...
     <xref ref-type="disp-formula" rid="e07">Equation 3</xref>
     <disp-formula id="e03">
-     <mml:math display="block">
+      <mml:math display="block">
+        <mml:mrow>
+          <mml:msub>
+            <mml:mi>q</mml:mi>
+            <mml:mi>c</mml:mi>
+          </mml:msub>
+          <mml:mo>=</mml:mo>
+          <mml:mi>h</mml:mi>
           <mml:mrow>
-               <mml:msub>
-                    <mml:mi>q</mml:mi>
-                    <mml:mi>c</mml:mi>
-               </mml:msub>
-               <mml:mo>=</mml:mo>
-               <mml:mi>h</mml:mi>
-               <mml:mrow>
-                    <mml:mo>(</mml:mo>
-                    <mml:mrow>
-                         <mml:mi>T</mml:mi>
-                         <mml:mo>−</mml:mo>
-                         <mml:msub>
-                              <mml:mi>T</mml:mi>
-                              <mml:mn>0</mml:mn>
-                         </mml:msub>
-                    </mml:mrow>
-                    <mml:mo>)</mml:mo>
-               </mml:mrow>
+            <mml:mo>(</mml:mo>
+            <mml:mrow>
+              <mml:mi>T</mml:mi>
+              <mml:mo>−</mml:mo>
+              <mml:msub>
+                <mml:mi>T</mml:mi>
+                <mml:mn>0</mml:mn>
+              </mml:msub>
+            </mml:mrow>
+            <mml:mo>)</mml:mo>
           </mml:mrow>
+        </mml:mrow>
      </mml:math>
      <label>(3)</label>
-</disp-formula>
+    </disp-formula>
     ...
 
-2. Equação em imagem:
+.. _elemento-eqcod-exemplo-2:
+
+Equação em imagem:
+------------------
 
 .. code-block:: xml
 

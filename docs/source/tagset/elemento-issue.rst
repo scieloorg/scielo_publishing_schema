@@ -17,8 +17,8 @@ Identifica o fascículo (ou suplemento deste), seja como parte de um volume ou d
 
 Exemplos:
 
- * :ref:`elemento-issue-exemplo-1`
- * :ref:`elemento-issue-exemplo-2`
+  * :ref:`elemento-issue-exemplo-1`
+  * :ref:`elemento-issue-exemplo-2`
 
 
 
