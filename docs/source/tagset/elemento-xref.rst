@@ -6,14 +6,14 @@
 Aparece em:
 
   :ref:`elemento-article-title`,
-  :ref:`elemento-trans-title`,
+  :ref:`elemento-attrib`
   :ref:`elemento-contrib`,
   :ref:`elemento-p`,
+  ``<td>``,
   ``<th>``,
-  ``<td>``.
-  ``<verse-line>``,
-  :ref:`elemento-attrib`.
-
+  :ref:`elemento-trans-title`,
+  ``<verse-line>``.
+  
 Atributos obrigatórios:
 
   1. ``@rid``
@@ -67,6 +67,16 @@ Os atributos obrigatórios para ``xref`` são:
 
 Exemplos:
 
+ * :ref:`elemento-xref-exemplo-1`
+ * :ref:`elemento-xref-exemplo-2`
+ * :ref:`elemento-xref-exemplo-3`
+ * :ref:`elemento-xref-exemplo-4`
+
+
+.. _elemento-xref-exemplo-1:
+
+Exemplo de ``<xref>`` em :ref:`elemento-article-meta`:
+------------------------------------------------------
 
 .. code-block:: xml
 
@@ -99,10 +109,26 @@ Exemplos:
     ...
 
 
+.. _elemento-xref-exemplo-2:
+
+Exemplo de ``<xref>`` em :ref:`elemento-p`:
+-------------------------------------------
+
 .. code-block:: xml
 
+  ...
+  <p>
+    ...
      <xref ref-type="bibr" rid="B13">John 2003</xref>
+     ...
+  </p>
+  ...
 
+
+.. _elemento-xref-exemplo-3:
+
+Exemplo de ``<xref>`` relacionado a objeto no texto:
+----------------------------------------------------
 
 .. code-block:: xml
 
@@ -120,10 +146,13 @@ Exemplos:
 .. note:: Não envolver a tag ``<xref>`` em ``<sup>``.
 
 
+
+.. _elemento-xref-exemplo-4:
+
+Exemplo de ``<xref>`` "fechado":
+--------------------------------
+
 Para casos em que não há rótulo (``<label>``) explícito relacionando o autor à afiliação, deve ser inserido em :ref:`elemento-contrib` um elemento ``<xref>`` "fechado".
-
-
-Exemplo:
 
 
 .. code-block:: xml
