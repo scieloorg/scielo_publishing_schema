@@ -117,8 +117,8 @@ As seções podem ser compostas por uma ou mais subseções. Nesses casos, cada 
 
 .. _elemento-sec-exemplo-4:
 
-Exemplo de ``<sec>``sem tipo padrão:
-------------------------------------
+Exemplo de ``<sec>`` sem tipo padrão:
+-------------------------------------
 
 Seções sem tipo padrão podem ser declaradas sem o atributo ``@sec-type``.
 
