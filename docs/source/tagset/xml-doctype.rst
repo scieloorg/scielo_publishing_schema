@@ -16,8 +16,68 @@ Exemplo *JATS versão 1.0*:
 Elementos Flutuantes
 ====================
 
-Os elementos flutuantes podem aparecer em todo o :term:`documento`, :ref:`elemento-front`,
-:ref:`elemento-body`, :ref:`elemento-back` e :ref:`elemento-front-stub`.
+Os elementos flutuantes podem aparecer em todo o :term:`documento`, seja em :ref:`elemento-article` :ref:`elemento-sub-article` ou em :ref:`elemento-response` nos blocos: :ref:`elemento-article-meta` ou :ref:`elemento-front-stub`, :ref:`elemento-body` e :ref:`elemento-back`.
+
+
+Exemplos:
+
+ * :ref:`elemento-xrefflut-exemplo-1`
+ * :ref:`elemento-xrefflut-exemplo-2`
+ * :ref:`elemento-xrefflut-exemplo-3`
+
+
+.. _elemento-xrefflut-exemplo-1:
+
+Exemplo de elemento flutuante ``<xref>`` em :ref:`elemento-article-meta`:
+-------------------------------------------------------------------------
+
+.. code-block:: xml
+
+	...
+	<article-meta>
+    	...
+    	<contrib contrib-type="author">
+        	<name>
+            	<surname>
+            	<given-names>
+        	</name>
+        	<xref ref-type="aff" rid="aff01">1</xref>
+    	</contrib>
+    ...
+	</article-meta>
+	...
+
+
+.. _elemento-xrefflut-exemplo-2:
+
+Exemplo de elemento flutuante ``<xref>`` em :ref:`elemento-p`:
+--------------------------------------------------------------
+
+.. code-block:: xml
+
+	...
+	<body>
+    	<p>text text text text text text text (<xref ref-type="bibr" rid="B42">Da Silva, 1976</xref>). text text text</p>
+	...
+	</body>
+	...
+
+
+.. _elemento-xrefflut-exemplo-3:
+
+Exemplo de elemento flutuante ``<xref>`` em elementos de :ref:`elemento-back`:
+------------------------------------------------------------------------------
+
+.. code-block:: xml
+
+	...
+	<fn fn-type="other" id="fn2">
+    	<label>1</label>
+        	<p>Compreende-se por habilidades "comportamentos ou conjuntos de comportamentos que caracterizam determinado desempenho do indivíduo" (<xref ref-type="bibr" rid="B22">Santos, Kienen, Viecili, Botomé, &amp; Kubo, 2009</xref>, p. 133-134).</p>
+	</fn>
+	...
+
+
 
 
 .. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
