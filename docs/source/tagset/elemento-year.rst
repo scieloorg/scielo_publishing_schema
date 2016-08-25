@@ -5,11 +5,11 @@
 
 Aparece em:
 
-  :ref:`elemento-pub-date`
-  :ref:`elemento-product`
-  :ref:`elemento-element-citation`
   :ref:`elemento-date`
-
+  :ref:`elemento-element-citation`
+  :ref:`elemento-product`
+  :ref:`elemento-pub-date`
+  
 Ocorre:
 
   1. Uma vez em :ref:`elemento-front`
