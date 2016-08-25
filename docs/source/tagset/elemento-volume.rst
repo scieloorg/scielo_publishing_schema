@@ -7,6 +7,7 @@ Aparece em:
 
   :ref:`elemento-article-meta`
   :ref:`elemento-element-citation`
+  :ref:`elemento-product`
 
 Ocorre:
 
