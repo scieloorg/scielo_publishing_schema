@@ -21,9 +21,9 @@ Os elementos flutuantes podem aparecer em todo o :term:`documento`, seja em :ref
 
 Exemplos:
 
- * :ref:`elemento-xrefflut-exemplo-1`
- * :ref:`elemento-xrefflut-exemplo-2`
- * :ref:`elemento-xrefflut-exemplo-3`
+  * :ref:`elemento-xrefflut-exemplo-1`
+  * :ref:`elemento-xrefflut-exemplo-2`
+  * :ref:`elemento-xrefflut-exemplo-3`
 
 
 .. _elemento-xrefflut-exemplo-1:
