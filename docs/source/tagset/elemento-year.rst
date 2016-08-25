@@ -21,15 +21,15 @@ Identifica o ano em referências, podendo representar o ano de publicação de u
 
 Exemplos:
 
- * :ref:`elemento-year-exemplo-1`
- * :ref:`elemento-year-exemplo-2`
- * :ref:`elemento-year-exemplo-3`
+  * :ref:`elemento-year-exemplo-1`
+  * :ref:`elemento-year-exemplo-2`
+  * :ref:`elemento-year-exemplo-3`
 
 
 .. _elemento-year-exemplo-1:
 
-Exemplo de ``<year>`` em :ref:`elemento-article-meta`:
-------------------------------------------------------
+Exemplo de ``<year>`` em ``<article-meta>``:
+--------------------------------------------
 
 .. code-block:: xml
 
@@ -43,8 +43,11 @@ Exemplo de ``<year>`` em :ref:`elemento-article-meta`:
 	</article-meta>
 	...
 
-Exemplo de ``<year>`` em :ref:`elemento-element-citation`:
-----------------------------------------------------------
+
+.. _elemento-year-exemplo-2:
+
+Exemplo de ``<year>`` em ``<element-citation>``:
+------------------------------------------------
 
 .. code-block:: xml
 
@@ -58,8 +61,12 @@ Exemplo de ``<year>`` em :ref:`elemento-element-citation`:
 	...
 
 
-Exemplo de ``<year>`` em :ref:`elemento-product`:
--------------------------------------------------
+.. _elemento-year-exemplo-3:
+
+Exemplo de ``<year>`` em ``<product>``:
+---------------------------------------
+
+.. code-block:: xml
 
 	...
    	<product product-type="book">

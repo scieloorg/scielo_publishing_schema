@@ -41,11 +41,11 @@ O corpo textual do artigo pode ser constituído por seções. Cada uma delas ten
 
 Exemplos:
 
- * :ref:`elemento-sec-exemplo-1`
- * :ref:`elemento-sec-exemplo-2`
- * :ref:`elemento-sec-exemplo-3`
- * :ref:`elemento-sec-exemplo-4`
- * :ref:`elemento-sec-exemplo-5`
+  * :ref:`elemento-sec-exemplo-1`
+  * :ref:`elemento-sec-exemplo-2`
+  * :ref:`elemento-sec-exemplo-3`
+  * :ref:`elemento-sec-exemplo-4`
+  * :ref:`elemento-sec-exemplo-5`
 
 
 .. _elemento-sec-exemplo-1:

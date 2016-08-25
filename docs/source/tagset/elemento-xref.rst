@@ -68,16 +68,16 @@ Os atributos obrigatórios para ``xref`` são:
 
 Exemplos:
 
- * :ref:`elemento-xref-exemplo-1`
- * :ref:`elemento-xref-exemplo-2`
- * :ref:`elemento-xref-exemplo-3`
- * :ref:`elemento-xref-exemplo-4`
+  * :ref:`elemento-xref-exemplo-1`
+  * :ref:`elemento-xref-exemplo-2`
+  * :ref:`elemento-xref-exemplo-3`
+  * :ref:`elemento-xref-exemplo-4`
 
 
 .. _elemento-xref-exemplo-1:
 
-Exemplo de ``<xref>`` em :ref:`elemento-article-meta`:
-------------------------------------------------------
+Exemplo de ``<xref>`` em ``<article-meta>``:
+--------------------------------------------
 
 .. code-block:: xml
 
@@ -112,8 +112,8 @@ Exemplo de ``<xref>`` em :ref:`elemento-article-meta`:
 
 .. _elemento-xref-exemplo-2:
 
-Exemplo de ``<xref>`` em :ref:`elemento-p`:
--------------------------------------------
+Exemplo de ``<xref>`` em ``<p>``:
+---------------------------------
 
 .. code-block:: xml
 
