@@ -46,8 +46,8 @@ Exemplos:
 
 .. _elemento-issn-exemplo-1:
 
-Exemplo de ISSN em :ref:`elemento-journal-meta`:
-------------------------------------------------
+Exemplo de ISSN em ``<journal-meta>``:
+--------------------------------------
 
 .. code-block:: xml
 
@@ -63,8 +63,8 @@ Exemplo de ISSN em :ref:`elemento-journal-meta`:
 
 .. _elemento-issn-exemplo-2:
 
-Exemplo de ISSN em :ref:`elemento-element-citation`:
-----------------------------------------------------
+Exemplo de ISSN em ``<element-citation>``:
+------------------------------------------
 
 .. code-block:: xml
 
