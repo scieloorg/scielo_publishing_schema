@@ -14,9 +14,17 @@ Ocorre:
 
 Identifica uma autoria institucional individual ou em grupo.
 
+
 Exemplos:
 
-1. Em Front:
+  * :ref:`elemento-collab-exemplo-1`
+  * :ref:`elemento-collab-exemplo-2`
+
+
+.. _elemento-collab-exemplo-1:
+
+Exemplo de ``<collab>`` em ``<front>``:
+---------------------------------------
 
 .. code-block:: xml
 
@@ -36,7 +44,10 @@ Exemplos:
    ...
 
 
-2. Em back:
+.. _elemento-collab-exemplo-2:
+
+Exemplo de ``<collab>`` em ``<back>``:
+--------------------------------------
 
 .. code-block:: xml
 

@@ -45,7 +45,15 @@ O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo
 
 Exemplos:
 
-1. em ``<body>``:
+  * :ref:`elemento-deflist-exemplo-1`
+  * :ref:`elemento-deflist-exemplo-2`
+
+
+
+.. _elemento-deflist-exemplo-1:
+
+Exemplo de ``<def-list>`` em  ``<body>``:
+-----------------------------------------
 
 .. code-block:: xml
 
@@ -74,7 +82,11 @@ Exemplos:
      </body>
      ...
 
-2. sublista de definições:
+
+.. _elemento-deflist-exemplo-2:
+
+Exemplo de ``<def-list>`` em sublista de definições:
+----------------------------------------------------
 
 .. code-block:: xml
 

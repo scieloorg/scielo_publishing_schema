@@ -21,7 +21,15 @@ Ocorre:
 
 Exemplos:
 
-1. em ``<contrib>``:
+    * :ref:`elemento-role-exemplo-1`
+    * :ref:`elemento-role-exemplo-2`
+
+
+
+.. _elemento-role-exemplo-1:
+
+Exemplo de ``<role>`` em ``<contrib>``:
+---------------------------------------
 
 .. code-block:: xml
 
@@ -40,7 +48,10 @@ Exemplos:
     </contrib>
     ...
 
-2. em ``<element-citation>``:
+.. _elemento-role-exemplo-2:
+
+Exemplo de ``<role>`` em ``<element-citation>``:
+------------------------------------------------
 
 .. code-block:: xml
 

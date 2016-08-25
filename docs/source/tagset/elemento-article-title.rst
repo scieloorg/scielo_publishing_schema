@@ -17,7 +17,16 @@ Utilizado para identificar o título do artigo em :ref:`elemento-title-group` ou
 .. note:: ``<article-title>`` é obrigatório em :ref:`elemento-title-group`.
 
 
-Exemplo 1:
+Exemplos:
+
+  * :ref:`elemento-article-title-exemplo-1`
+  * :ref:`elemento-article-title-exemplo-2`
+
+
+.. _elemento-article-title-exemplo-1:
+
+Exemplo de ``<article-title>`` nos dados iniciais do documento:
+---------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -29,7 +38,11 @@ Exemplo 1:
 
 .. note:: Se o título do artigo ou da referência possuir um subtítulo, este deve ser marcado juntamente com o título sob ``<article-title>``. Não se deve marcar nenhum título e/ou subtítulo separadamente em outras tags. A mesma regra se aplica a :ref:`elemento-trans-title`.
 
-Exemplo 2:
+
+.. _elemento-article-title-exemplo-2:
+
+Exemplo de ``<article-title>`` em Referência Bibliográfica:
+-----------------------------------------------------------
 
 .. code-block:: xml
 
