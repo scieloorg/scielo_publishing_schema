@@ -101,6 +101,7 @@ Exemplos:
 .. _elemento-tablegend-exemplo-1:
 
 Exemplo de tabela codificada:
+-----------------------------
 
 .. code-block:: xml
 
@@ -147,6 +148,7 @@ Exemplo de tabela codificada:
 .. _elemento-tablegend-exemplo-2:
 
 Exemplo de tabela como imagem:
+------------------------------
 
 .. code-block:: xml
 
