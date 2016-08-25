@@ -5,9 +5,10 @@
 
 Aparece em:
 
-  :ref:`elemento-p`
-  :ref:`elemento-element-citation`
   :ref:`elemento-comment`
+  :ref:`elemento-element-citation`
+  :ref:`elemento-p`
+  :ref:`elemento-product`  
 
 Atributos obrigatórios:
 
