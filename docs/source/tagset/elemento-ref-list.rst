@@ -45,7 +45,7 @@ Exemplo de ``<ref-list>`` simples:
 Exemplo de ``<ref-list>`` com 2 títulos:
 ----------------------------------------
 
-.. code-bloc:: xml
+.. code-block:: xml
 
     ...
     <ref-list>
