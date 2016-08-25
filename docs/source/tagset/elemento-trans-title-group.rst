@@ -22,6 +22,15 @@ Usado para apresentar o título traduzido ou um conjunto de títulos traduzidos 
 
 Exemplo:
 
+.. code-block:: xml
 
+	...
+	<title-group>
+    	<article-title>Between spiritual wellbeing and spiritual distress: possible related factors in elderly patients with cancer</article-title>
+    	<trans-title-group xml:lang="pt">
+    		<trans-title>Entre o bem-estar espiritual e a angústia espiritual: possíveis fatores relacionados a idosos com cancro</trans-title>
+    	</trans-title-group>
+	</title-group>
+	...
 
 .. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
