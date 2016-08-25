@@ -42,8 +42,8 @@ Exemplos:
 
 .. _elemento-label-exemplo-1:
 
-Exemplo em :ref:`elemento-aff`:
--------------------------------
+Exemplo em ``<aff>``:
+---------------------
 
 
 .. code-block:: xml
@@ -57,8 +57,8 @@ Exemplo em :ref:`elemento-aff`:
 
 .. _elemento-label-exemplo-2:
 
-Exemplo em :ref:`elemento-corresp`:
------------------------------------
+Exemplo em ``<corresp>``:
+-------------------------
 
 .. code-block:: xml
 
@@ -70,8 +70,8 @@ Exemplo em :ref:`elemento-corresp`:
 
 .. _elemento-label-exemplo-3:
 
-Exemplo em :ref:`elemento-fig`:
--------------------------------
+Exemplo em ``<fig>``:
+---------------------
 
 .. code-block:: xml
 
@@ -83,8 +83,8 @@ Exemplo em :ref:`elemento-fig`:
 
 .. _elemento-label-exemplo-4:
 
-Exemplo em :ref:`elemento-table-wrap`:
---------------------------------------
+Exemplo em ``<table-wrap>``:
+----------------------------
 
 .. code-block:: xml
 
@@ -96,7 +96,8 @@ Exemplo em :ref:`elemento-table-wrap`:
 
 .. _elemento-label-exemplo-5:
 
-Exemplo em :ref:`elemento-ref`:
+Exemplo em ``<ref>``:
+---------------------
 
 .. code-block:: xml
 
@@ -108,8 +109,8 @@ Exemplo em :ref:`elemento-ref`:
 
 .. _elemento-label-exemplo-6:
 
-Exemplo em :ref:`elemento-app`:
--------------------------------
+Exemplo em ``<app>``:
+---------------------
 
 .. code-block:: xml
 

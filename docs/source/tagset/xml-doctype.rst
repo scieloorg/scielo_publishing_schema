@@ -28,8 +28,8 @@ Exemplos:
 
 .. _elemento-xrefflut-exemplo-1:
 
-Exemplo de elemento flutuante ``<xref>`` em :ref:`elemento-article-meta`:
--------------------------------------------------------------------------
+Exemplo de elemento flutuante ``<xref>`` em ``<article-meta>``:
+---------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -50,8 +50,8 @@ Exemplo de elemento flutuante ``<xref>`` em :ref:`elemento-article-meta`:
 
 .. _elemento-xrefflut-exemplo-2:
 
-Exemplo de elemento flutuante ``<xref>`` em :ref:`elemento-p`:
---------------------------------------------------------------
+Exemplo de elemento flutuante ``<xref>`` em ``<p>``:
+----------------------------------------------------
 
 .. code-block:: xml
 
@@ -65,8 +65,8 @@ Exemplo de elemento flutuante ``<xref>`` em :ref:`elemento-p`:
 
 .. _elemento-xrefflut-exemplo-3:
 
-Exemplo de elemento flutuante ``<xref>`` em elementos de :ref:`elemento-back`:
-------------------------------------------------------------------------------
+Exemplo de elemento flutuante ``<xref>`` em elementos de ``<back>``:
+--------------------------------------------------------------------
 
 .. code-block:: xml
 
