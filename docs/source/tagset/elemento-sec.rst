@@ -140,8 +140,8 @@ Seções sem tipo padrão podem ser declaradas sem o atributo ``@sec-type``.
 
 .. _elemento-sec-exemplo-5:
 
-Exemplo de seção com marcador de numeração:
--------------------------------------------
+Exemplo de ``<sec>`` com marcador de numeração:
+-----------------------------------------------
 
 Seções que apresentam marcador de numeração são identificadas juntamente com o texto no elemento ``<title>``.
 
