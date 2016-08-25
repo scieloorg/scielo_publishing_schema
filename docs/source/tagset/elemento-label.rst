@@ -28,7 +28,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-``<label`` tem como função identificar, numérica e/ou alfabéticamente, um grupo de elementos de tipo específico.
+``<label>`` tem como função identificar, numérica e/ou alfabéticamente, um grupo de elementos de tipo específico.
 
 Exemplos:
 
