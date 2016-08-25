@@ -24,8 +24,8 @@ Exemplos:
 
 .. _elemento-issue-exemplo-1:
 
-Exemplo de Suplemento de Fascículo em :ref:`elemento-front`:
-------------------------------------------------------------
+Exemplo de Suplemento de Fascículo em ``<front>``:
+--------------------------------------------------
 
 .. code-block:: xml
 
@@ -46,8 +46,8 @@ Exemplo de Suplemento de Fascículo em :ref:`elemento-front`:
 
 .. _elemento-issue-exemplo-2:
 
-Exemplo de Fascículo Especial em :ref:`elemento-front`:
--------------------------------------------------------
+Exemplo de Fascículo Especial em ``<front>``:
+---------------------------------------------
 
 .. code-block:: xml
 
