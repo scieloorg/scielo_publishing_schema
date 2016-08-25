@@ -35,7 +35,7 @@ Verifique abaixo o quadro descritivo dos elementos de uma tabela:
 +----------+--------------+---------------------------------------------+
 | th       | Table Header | Identifica uma célula no cabeçalho da       | 
 |          | Cell         | tabela                                      |
-+----------+--------------+-------------------------------------------- +
++----------+--------------+---------------------------------------------+
 | td       | Table Data   | Identifica uma célula no corpo de uma       |
 |          | Cell         | tabela                                      |
 +----------+--------------+---------------------------------------------+
