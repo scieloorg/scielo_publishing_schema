@@ -12,6 +12,7 @@ Aparece em:
   ``<td>``,
   ``<th>``,
   :ref:`elemento-trans-title`,
+  :ref:`elemento-sec`
   ``<verse-line>``.
   
 Atributos obrigatórios:
