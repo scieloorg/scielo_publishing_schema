@@ -173,11 +173,11 @@ Casos Especiais
 |                       |     (.xml, .pdf e img)                                                     |                                            |
 +=======================+============================================================================+============================================+
 |                       |                                                                            |                                            |
-|                       | ISSN-acronimo-``nº de DOI sem prefixo``(.xml)                              | 1414-431X-bjmbr-1414-431X20165281.xml      |
+|                       | ISSN-acronimo-``nº de DOI sem prefixo`` (.xml)                             | 1414-431X-bjmbr-1414-431X20165281.xml      |
 |                       |                                                                            |                                            |
 | Publicação Contínua   | ISSN-acronimo-``nº de DOI sem prefixo``-nome da imagem (extensão)          | 1414-431X-bjmbr-1414-431X20165281-gf01.tif |
 |                       |                                                                            |                                            |
-|                       | ISSN-acronimo-``nº de DOI sem prefixo``(.pdf)                              | 1414-431X-bjmbr-1414-431X20165281.pdf      |
+|                       | ISSN-acronimo-``nº de DOI sem prefixo`` (.pdf)                             | 1414-431X-bjmbr-1414-431X20165281.pdf      |
 |                       |                                                                            |                                            |
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
 |                       |                                                                            |                                            |
