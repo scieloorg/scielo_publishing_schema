@@ -28,7 +28,7 @@ Para a composição do ``@id``, deve-se combinar o prefixo do tipo de elemento c
 +------------------------+---------------------------+---------+---------------------+
 | glossary               | Glossário                 | gl      | gl1, gl2, ...       |
 +------------------------+---------------------------+---------+---------------------+
-| inline-graphic         | Imagens em linha          | i       | i1, i2, ...         |
+| inline-graphic         | Ícones em linha           | i       | i1, i2, ...         |
 +------------------------+---------------------------+---------+---------------------+
 | inline-supplementary-  | Material suplementar em   | suppl   | suppl1, suppl3, ... |
 | material               | linha                     |         |                     |
