@@ -15,10 +15,15 @@ Ocorre:
 
 Identifica endereços de email.
 
-
 Exemplos:
 
-1. em ``<aff>``:
+    * :ref:`elemento-email-exemplo-1`
+    * :ref:`elemento-email-exemplo-2`
+
+.. _elemento-email-exemplo-1:
+
+Exemplo de ``<email>`` em ``<aff>``:
+------------------------------------
 
 .. code-block:: xml
 
@@ -30,7 +35,11 @@ Exemplos:
     </aff>
     ...
 
-2. em ``<corresp>``:
+
+.. _elemento-email-exemplo-2:
+
+Exemplo de ``<email>`` em ``<corresp>``:
+----------------------------------------
 
 .. code-block:: xml
 
