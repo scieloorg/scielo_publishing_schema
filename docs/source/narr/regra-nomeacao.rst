@@ -4,9 +4,25 @@ Regras de Nomeação de Arquivos
 Nomeação de Pasta para Envio
 ----------------------------
 
-Todos os arquivos de um pacote, incluindo *XML*, *PDF*, imagens, mídias e material suplementar, caso existam, devem estar na mesma pasta nomeada conforme o padrão abaixo:
+Todos os arquivos de um pacote, incluindo *XML*, *PDF*, imagens, mídias e material suplementar, caso existam, devem estar na mesma pasta nomeada conforme o padrão.
 
-Para Volume e Número:
+Exemplos:
+
+    * :ref:`elemento-regranomeia-exemplo-1`
+    * :ref:`elemento-regranomeia-exemplo-2`
+    * :ref:`elemento-regranomeia-exemplo-3`
+    * :ref:`elemento-regranomeia-exemplo-4`
+    * :ref:`elemento-regranomeia-exemplo-5`
+    * :ref:`elemento-regranomeia-exemplo-6`
+    * :ref:`elemento-regranomeia-exemplo-7`
+
+
+.. _elemento-regranomeia-exemplo-1:
+
+Regra para Volume e Número:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN-acrônimo-volume-número``
 
@@ -14,7 +30,14 @@ Exemplo:
 
     ``0447-032X-rbcsr-30-01``
 
-Para *Ahead Of Print* considerar:
+
+
+.. _elemento-regranomeia-exemplo-2:
+
+Regra para Ahead Of Print:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN-acrônimo-nahead-lote``
 
@@ -24,29 +47,12 @@ Exemplo:
 
 
 
-Para *Publicação Contínua*
-Periódico que publica em um único volume ao ano:
+.. _elemento-regranomeia-exemplo-3:
 
-    ``ISSN-acronimo-rpass-lote``
+Para publicação de fascículo sem volume:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Exemplo:
-
-    ``1678-4766-isz-rpass-0116``
-
-
-Periódico que publica volume e número:
-
-    ``ISSN-acronimo-rpass-lote-volume-número``
-
-Exemplo:
-
-    ``1414-431X-bjmbr-rpass-02-49-7``    
-
-
-.. note:: O lote é composto pelo número do pacote (01, 02...12,13 etc) + os 2 (dois) dígitos finais do ano corrente.
-
-
-Para publicação de Número:
+Regra:
 
     ``ISSN-acronimo-numero``
 
@@ -56,7 +62,12 @@ Exemplo:
 
 
 
+.. _elemento-regranomeia-exemplo-4:
+
 Para publicação de Número Especial:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN-acronimo-volume-spe + nº de ordem``
 
@@ -65,8 +76,12 @@ Exemplo:
     ``2175-7968-ct-36-spe1``
 
 
+.. _elemento-regranomeia-exemplo-5:
 
-Para publicação de Suplemento
+Para publicação de Suplemento:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN-acronimo-volume-s + Nº de ordem``
 
@@ -78,12 +93,65 @@ Exemplo:
 .. note:: Nunca usar underline na nomeação de pacotes ou arquivos (XML, PDFs, ativos digitais).
 
 
+
+
+Regra para Publicação Contínua:
+-------------------------------
+
+.. _elemento-regranomeia-exemplo-6:
+
+Periódico que publica 1 volume ao ano:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN-acronimo-rpass-lote``
+
+Exemplo:
+
+    ``1678-4766-isz-rpass-0116``
+
+
+
+.. _elemento-regranomeia-exemplo-7:
+
+Periódico que publica número em aberto:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN-acronimo-rpass-lote-volume-número``
+
+Exemplo:
+
+    ``1414-431X-bjmbr-rpass-02-49-7``    
+
+
+.. note:: O lote é composto pelo número do pacote (01, 02...12,13 etc) + os 2 (dois) dígitos finais do ano corrente.
+
+
+
 Arquivo XML
 -----------
 
 Para a nomeação de arquivos *XML* utilizar a estrutura determinada pelo :term:`SciELO PS`:
 
-Para Número:
+Exemplos:
+
+    * :ref:`elemento-nomeia-arquivo-exemplo-1`
+    * :ref:`elemento-nomeia-arquivo-exemplo-2`
+    * :ref:`elemento-nomeia-arquivo-exemplo-3`
+    * :ref:`elemento-nomeia-arquivo-exemplo-4`
+    * :ref:`elemento-nomeia-arquivo-exemplo-5`
+    * :ref:`elemento-nomeia-arquivo-exemplo-6`
+
+
+.. _elemento-nomeia-arquivo-exemplo-1:
+
+Regra para Volume e Número:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``
 
@@ -92,7 +160,12 @@ Exemplo:
     ``0037-8682-rsbmt-48-01-00033.xml``
 
 
-Para Ahead-Of-Print:
+.. _elemento-nomeia-arquivo-exemplo-2:
+
+Regra para Ahead-Of-Print:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN``-``acrônimo``-``NúmerodeDoiSemoPrefixo``
 
@@ -101,12 +174,91 @@ Exemplo:
     ``0104-5970-hcsm-2015005000011.xml``
 
 
+.. _elemento-nomeia-arquivo-exemplo-3:
+
+Para publicação de fascículo sem volume:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``número``-``paginação``
+
+Exemplo:
+
+    ``2316-9141-rh-174-00011.xml``
+
+
+.. _elemento-nomeia-arquivo-exemplo-4:
+
+Para publicação de Número Especial:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``volume``-nº especial-``paginação``
+
+Exemplo:
+
+    ``2175-7968-ct-36-spe1-0009.xml``
+
+
+
+Publicação Contínua:
+--------------------
+
+
+.. _elemento-nomeia-arquivo-exemplo-5:
+
+Para Número em aberto:
+^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``
+
+Exemplo:
+
+    ``1806-1117-rbef-39-01-e1301.xml``
+
+
+
+.. _elemento-nomeia-arquivo-exemplo-6:
+
+Para Volume único:
+^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+     ``ISSN``-``acrônimo``-``volume``-``elocation-id``
+
+Exemplo: 
+
+    ``2358-2936-nau-24-e2016009.xml``
+
+
+
 Imagens
 -------
 
 Em imagens (que podem ser figuras, tabelas, equações, apêndices etc), utilizar a seguinte estrutura de nomeação tanto para as que se encontram dentro do XML quanto para as da pasta do pacote do número ou lote de :term:`ahead-of-print`.
 
-Para Número:
+Exemplos:
+
+    * :ref:`elemento-regraimg-exemplo-1`
+    * :ref:`elemento-regraimg-exemplo-2`
+    * :ref:`elemento-regraimg-exemplo-3`
+    * :ref:`elemento-regraimg-exemplo-4`
+    * :ref:`elemento-regraimg-exemplo-5`
+    * :ref:`elemento-regraimg-exemplo-6`
+    * :ref:`elemento-regraimg-exemplo-7`
+
+
+.. _elemento-regraimg-exemplo-1:
+
+Regra para Volume e Número:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``nomedaimagem.extensãodaimagem``
 
@@ -115,7 +267,13 @@ Exemplo:
     ``1807-5932-clin-69-05-0308-gf01.tif``
 
 
-Para Ahead-Of-Print:
+
+.. _elemento-regraimg-exemplo-2:
+
+Regra para Ahead-Of-Print:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN``-``acrônimo``-``númerodedoisemoprefixo.extensãodaimagem``
 
@@ -124,7 +282,13 @@ Exemplo:
     ``0074-0276-mioc-00740276130057-gf01.tif``
 
 
-Imagens traduzidas:
+
+.. _elemento-regraimg-exemplo-3:
+
+Regra para Imagens traduzidas:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``nomedaimagem``-``idioma``.``extensãodaimagem``
 
@@ -132,12 +296,94 @@ Exemplo:
 
     ``0104-1169-rlae-23-01-00001-gf01-es.tif``
 
+
+
+.. _elemento-regraimg-exemplo-4:
+
+Para publicação de fascículo sem volume:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+     ``ISSN``-``acrônimo``-``número``-``paginação``-``nomedaimagem.extensãodaimagem``
+
+Exemplo:
+
+    ``2316-9141-rh-174-00101-gf1.tif``
+
+
+
+.. _elemento-regraimg-exemplo-5:
+
+Para publicação de Número Especial:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+    
+    ``ISSN``-``acrônimo``-``volume``-nº especial-``paginação``-``nomedaimagem.extensãodaimagem``
+
+Exemplo:
+
+    ``2175-7968-ct-36-spe1-0062-gf01.tif`` 
+
+
+Publicação Contínua
+-------------------
+
+
+.. _elemento-regraimg-exemplo-6:
+
+Para Número em aberto:
+^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``-``nomedaimagem.extensãodaimagem``
+
+
+Exemplo:
+
+    ``1806-1117-rbef-38-04-e4313-gf01.tif``
+
+
+.. _elemento-regraimg-exemplo-7:
+
+Para Volume único:
+^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``volume``-``elocation-id``-``nomedaimagem.extensãodaimagem``
+
+Exemplo:
+
+    ``2358-2936-nau-24-e2016009-gf1.tif``
+
+
+
+
 PDF
 ---
 
 Os PDFs também devem seguir a estrutura de nomeação de arquivos determinada pelo :term:`SciELO PS`.
 
-Para Número:
+Exemplos:
+
+    * :ref:`elemento-regrapdf-exemplo-1`
+    * :ref:`elemento-regrapdf-exemplo-2`
+    * :ref:`elemento-regrapdf-exemplo-3`
+    * :ref:`elemento-regrapdf-exemplo-4`
+    * :ref:`elemento-regrapdf-exemplo-5`
+    * :ref:`elemento-regrapdf-exemplo-6`
+    * :ref:`elemento-regrapdf-exemplo-7`
+
+
+.. _elemento-regrapdf-exemplo-1:
+
+Regra para Volume e Número:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``
 
@@ -146,7 +392,13 @@ Exemplo:
     ``0102-0935-abmvz-67-01-00037.pdf``
 
 
-Para Ahead Of Print:
+
+.. _elemento-regrapdf-exemplo-2:
+
+Regra para Ahead Of Print:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
 
     ``ISSN``-``acrônimo``-``NúmeroDoiSemoPrefixo``
 
@@ -155,13 +407,82 @@ Exemplo:
     ``1414-431X-bjmbr-1414-431X20154155.pdf``
 
 
-PDFs traduzidos:
+
+.. _elemento-regrapdf-exemplo-3:
+
+Regra para PDFs traduzidos:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``idioma``
 
 Exemplo:
 
     ``0104-1169-rlae-23-01-00003-es.pdf``
+
+
+
+.. _elemento-regrapdf-exemplo-4:
+
+Para publicação de fascículo sem volume:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``número``-``paginação``
+
+
+Exemplo:
+
+    ``2316-9141-rh-174-00101.pdf``
+
+
+.. _elemento-regrapdf-exemplo-5:
+
+Para publicação de Número Especial:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``volume``-nº especial-``paginação``
+
+Exemplo:
+
+    ``2175-7968-ct-36-spe1-0062.pdf``
+
+
+
+Publicação Contínua
+-------------------
+
+.. _elemento-regrapdf-exemplo-6:
+
+Para Número em aberto:
+^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``
+
+Exemplo:
+
+    ``1806-1117-rbef-38-04-e4313.pdf``
+
+
+
+.. _elemento-regrapdf-exemplo-7:
+
+Para Volume único:
+^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``volume``-``elocation-id``
+
+Exemplo:
+
+    ``2358-2936-nau-24-e2016009.pdf``
+
+
 
 
 Casos Especiais
