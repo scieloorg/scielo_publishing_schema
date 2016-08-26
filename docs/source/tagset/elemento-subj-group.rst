@@ -18,10 +18,17 @@ Ocorre:
 
 Designa a seção do :term:`documento` e é utilizado para agrupar documentos por assunto. É obrigatória a presença de somente uma ocorrência do elemento ``<subj-group>`` com o atributo ``@subj-group-type="heading"``. Em ``<subject>`` atribui-se a seção na qual o artigo encontra-se classificado (devendo-se consultar o sumário para melhor identificá-lo). Para :term:`ahead-of-print` deve ser adotada sempre a seção ``Articles`` conforme exemplo em :ref:`ahead-of-print`.
 
-
 Exemplos:
 
-1. Seção temática:
+    * :ref:`elemento-subjgroup-exemplo-1`
+    * :ref:`elemento-subjgroup-exemplo-2`
+    * :ref:`elemento-subjgroup-exemplo-3`
+
+
+.. _elemento-subjgroup-exemplo-1:
+
+Exemplo de ``<subj-group>`` temática:
+-------------------------------------
 
 .. code-block:: xml
 
@@ -34,7 +41,10 @@ Exemplos:
     ...
 
 
-2. Seção por tipo de documento:
+.. _elemento-subjgroup-exemplo-2:
+
+Exemplo de ``<subj-group>`` por tipo de documento:
+--------------------------------------------------
 
 .. code-block:: xml
 
@@ -46,7 +56,11 @@ Exemplos:
     </article-categories>
     ...
 
-3. Para ``<ahead-of-print>``:
+
+.. _elemento-subjgroup-exemplo-3:
+
+Exemplo de ``<subj-group>`` para ``<ahead-of-print>``:
+------------------------------------------------------
 
 .. code-block:: xml
 

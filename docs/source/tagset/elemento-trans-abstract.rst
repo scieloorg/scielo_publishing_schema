@@ -22,6 +22,17 @@ Em ``<trans-abstract>`` deve ser inserida uma informação de rótulo no element
 
 .. note:: Caso o artigo tenha versão(ões) traduzida(s), ``<trans-abstract>`` não deve ser inserido, exceto nos casos em que haja resumos traduzidos diferentes da(s) tradução(ões) disponíveis em :ref:`elemento-sub-article`.
 
+Exemplos:
+
+    * :ref:`elemento-transabstract-exemplo-1`
+    * :ref:`elemento-transabstract-exemplo-2`
+
+
+.. _elemento-transabstract-exemplo-1:
+
+Exemplo de ``<trans-abstract>`` estruturado:
+--------------------------------------------
+
 Formato estruturado: Apresenta os principais pontos do texto dividido em seções.
 
 Exemplo:
@@ -46,6 +57,11 @@ Exemplo:
     </article-meta>
     ...
 
+
+.. _elemento-transabstract-exemplo-2:
+
+Exemplo de ``<trans-abstract>`` simples:
+----------------------------------------
 
 Formato simples: Apresenta de forma sucinta os principais pontos do texto sem a divisão por seções.
 
