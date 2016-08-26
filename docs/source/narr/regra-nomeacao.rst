@@ -1,10 +1,23 @@
 Regras de Nomeação de Arquivos
 ==============================
 
+Para envio de pacotes XML é necessário seguir as instruções para submissão de arquivos. Veja abaixo as regras de nomeação:
+
+
+    * :ref:`elemento-regra-exemplo-1`
+    * :ref:`elemento-regra-exemplo-2`
+    * :ref:`elemento-regra-exemplo-3`
+    * :ref:`elemento-regra-exemplo-4`
+    * :ref:`elemento-regra-exemplo-5`
+
+
+.. _elemento-regra-exemplo-1:
+
 Nomeação de Pasta para Envio
 ----------------------------
 
 Todos os arquivos de um pacote, incluindo *XML*, *PDF*, imagens, mídias e material suplementar, caso existam, devem estar na mesma pasta nomeada conforme o padrão.
+
 
 Exemplos:
 
@@ -19,8 +32,8 @@ Exemplos:
 
 .. _elemento-regranomeia-exemplo-1:
 
-Regra para Volume e Número:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Volume e Número
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -34,23 +47,8 @@ Exemplo:
 
 .. _elemento-regranomeia-exemplo-2:
 
-Regra para Ahead Of Print:
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN-acrônimo-nahead-lote``
-
-Exemplo:
-
-    ``0104-5970-hcsm-nahead-0315``
-
-
-
-.. _elemento-regranomeia-exemplo-3:
-
-Para publicação de fascículo sem volume:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de fascículo sem volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -62,10 +60,10 @@ Exemplo:
 
 
 
-.. _elemento-regranomeia-exemplo-4:
+.. _elemento-regranomeia-exemplo-3:
 
-Para publicação de Número Especial:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de Número Especial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -76,10 +74,27 @@ Exemplo:
     ``2175-7968-ct-36-spe1``
 
 
+
+
+.. _elemento-regranomeia-exemplo-4:
+
+Regra para Ahead Of Print
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN-acrônimo-nahead-lote``
+
+Exemplo:
+
+    ``0104-5970-hcsm-nahead-0315``
+
+
+
 .. _elemento-regranomeia-exemplo-5:
 
-Para publicação de Suplemento:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de Suplemento
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -95,13 +110,13 @@ Exemplo:
 
 
 
-Regra para Publicação Contínua:
--------------------------------
+Regra para Publicação Contínua
+------------------------------
 
 .. _elemento-regranomeia-exemplo-6:
 
-Periódico que publica 1 volume ao ano:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Periódico que publica 1 volume ao ano
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -115,8 +130,8 @@ Exemplo:
 
 .. _elemento-regranomeia-exemplo-7:
 
-Periódico que publica número em aberto:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Periódico que publica número em aberto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -130,6 +145,7 @@ Exemplo:
 .. note:: O lote é composto pelo número do pacote (01, 02...12,13 etc) + os 2 (dois) dígitos finais do ano corrente.
 
 
+.. _elemento-regra-exemplo-2:
 
 Arquivo XML
 -----------
@@ -148,8 +164,8 @@ Exemplos:
 
 .. _elemento-nomeia-arquivo-exemplo-1:
 
-Regra para Volume e Número:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Volume e Número
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -160,24 +176,11 @@ Exemplo:
     ``0037-8682-rsbmt-48-01-00033.xml``
 
 
+
 .. _elemento-nomeia-arquivo-exemplo-2:
 
-Regra para Ahead-Of-Print:
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN``-``acrônimo``-``NúmerodeDoiSemoPrefixo``
-
-Exemplo:
-
-    ``0104-5970-hcsm-2015005000011.xml``
-
-
-.. _elemento-nomeia-arquivo-exemplo-3:
-
-Para publicação de fascículo sem volume:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de fascículo sem volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -188,18 +191,35 @@ Exemplo:
     ``2316-9141-rh-174-00011.xml``
 
 
-.. _elemento-nomeia-arquivo-exemplo-4:
+
+.. _elemento-nomeia-arquivo-exemplo-3:
 
 Para publicação de Número Especial:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``volume``-nº especial-``paginação``
+    ``ISSN``-``acrônimo``-``volume``-``nº especial``-``paginação``
 
 Exemplo:
 
     ``2175-7968-ct-36-spe1-0009.xml``
+
+
+
+.. _elemento-nomeia-arquivo-exemplo-4:
+
+Regra para Ahead-Of-Print
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``NúmerodeDoiSemoPrefixo``
+
+Exemplo:
+
+    ``0104-5970-hcsm-2015005000011.xml``
+
 
 
 
@@ -236,6 +256,7 @@ Exemplo:
     ``2358-2936-nau-24-e2016009.xml``
 
 
+.. _elemento-regra-exemplo-3:
 
 Imagens
 -------
@@ -270,20 +291,36 @@ Exemplo:
 
 .. _elemento-regraimg-exemplo-2:
 
-Regra para Ahead-Of-Print:
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de fascículo sem volume:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``númerodedoisemoprefixo.extensãodaimagem``
+     ``ISSN``-``acrônimo``-``número``-``paginação``-``nomedaimagem.extensãodaimagem``
 
 Exemplo:
 
-    ``0074-0276-mioc-00740276130057-gf01.tif``
+    ``2316-9141-rh-174-00101-gf1.tif``
 
 
 
 .. _elemento-regraimg-exemplo-3:
+
+Para publicação de Número Especial:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+    
+    ``ISSN``-``acrônimo``-``volume``-``nº especial``-``paginação``-``nomedaimagem.extensãodaimagem``
+
+Exemplo:
+
+    ``2175-7968-ct-36-spe1-0062-gf01.tif``
+
+
+
+
+.. _elemento-regraimg-exemplo-4:
 
 Regra para Imagens traduzidas:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -298,33 +335,20 @@ Exemplo:
 
 
 
-.. _elemento-regraimg-exemplo-4:
-
-Para publicação de fascículo sem volume:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-     ``ISSN``-``acrônimo``-``número``-``paginação``-``nomedaimagem.extensãodaimagem``
-
-Exemplo:
-
-    ``2316-9141-rh-174-00101-gf1.tif``
-
-
-
 .. _elemento-regraimg-exemplo-5:
 
-Para publicação de Número Especial:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Ahead-Of-Print:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
-    
-    ``ISSN``-``acrônimo``-``volume``-nº especial-``paginação``-``nomedaimagem.extensãodaimagem``
+
+    ``ISSN``-``acrônimo``-``númerodedoisemoprefixo.extensãodaimagem``
 
 Exemplo:
 
-    ``2175-7968-ct-36-spe1-0062-gf01.tif`` 
+    ``0074-0276-mioc-00740276130057-gf01.tif``
+
+
 
 
 Publicação Contínua
@@ -362,6 +386,8 @@ Exemplo:
 
 
 
+.. _elemento-regra-exemplo-4:
+
 PDF
 ---
 
@@ -395,34 +421,6 @@ Exemplo:
 
 .. _elemento-regrapdf-exemplo-2:
 
-Regra para Ahead Of Print:
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN``-``acrônimo``-``NúmeroDoiSemoPrefixo``
-
-Exemplo:
-
-    ``1414-431X-bjmbr-1414-431X20154155.pdf``
-
-
-
-.. _elemento-regrapdf-exemplo-3:
-
-Regra para PDFs traduzidos:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``idioma``
-
-Exemplo:
-
-    ``0104-1169-rlae-23-01-00003-es.pdf``
-
-
-
-.. _elemento-regrapdf-exemplo-4:
-
 Para publicação de fascículo sem volume:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -436,18 +434,48 @@ Exemplo:
     ``2316-9141-rh-174-00101.pdf``
 
 
-.. _elemento-regrapdf-exemplo-5:
+
+.. _elemento-regrapdf-exemplo-3:
 
 Para publicação de Número Especial:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``volume``-nº especial-``paginação``
+    ``ISSN``-``acrônimo``-``volume``-``nº especial``-``paginação``
 
 Exemplo:
 
     ``2175-7968-ct-36-spe1-0062.pdf``
+
+
+
+.. _elemento-regrapdf-exemplo-4:
+
+Regra para PDFs traduzidos:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``idioma``
+
+Exemplo:
+
+    ``0104-1169-rlae-23-01-00003-es.pdf``
+
+
+
+.. _elemento-regrapdf-exemplo-5:
+
+Regra para Ahead Of Print:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN``-``acrônimo``-``NúmeroDoiSemoPrefixo``
+
+Exemplo:
+
+    ``1414-431X-bjmbr-1414-431X20154155.pdf``
+
 
 
 
@@ -484,6 +512,7 @@ Exemplo:
 
 
 
+.. _elemento-regra-exemplo-5
 
 Casos Especiais
 ---------------
