@@ -512,7 +512,7 @@ Exemplo:
 
 
 
-.. _elemento-regra-exemplo-5
+.. _elemento-regra-exemplo-5:
 
 Casos Especiais
 ---------------
