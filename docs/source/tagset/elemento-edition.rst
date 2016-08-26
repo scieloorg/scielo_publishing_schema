@@ -14,7 +14,17 @@ Ocorre:
 
 Identifica a edição de um documento em uma referência, mas também pode indicar a versão de um software ou base de dados.
 
-Exemplo 1:
+Exemplos:
+
+  * :ref:`elemento-edition-exemplo-1`
+  * :ref:`elemento-edition-exemplo-2`
+  * :ref:`elemento-edition-exemplo-3`
+
+
+.. _elemento-edition-exemplo-1:
+
+Exemplo de ``<edition>`` envolvendo texto:
+------------------------------------------
 
 .. code-block:: xml
 
@@ -30,7 +40,10 @@ Exemplo 1:
    ...
 
 
-Exemplo 2:
+.. _elemento-edition-exemplo-2:
+
+Exemplo de ``<edition>`` envolvendo numero:
+-------------------------------------------
 
 .. code-block:: xml
 
@@ -45,7 +58,11 @@ Exemplo 2:
    ...
 
 
-Exemplo 3:
+
+.. _elemento-edition-exemplo-3:
+
+Exemplo de ``<edition>`` envolvendo versão:
+-------------------------------------------
 
 .. code-block:: xml
 

@@ -27,7 +27,15 @@ O glossário pode ser apresentado como imagem, utilizando-se o elemento ``<graph
 
 Exemplos:
 
-1. em ``<back>``:
+  * :ref:`elemento-glossary-exemplo-1`
+  * :ref:`elemento-glossary-exemplo-2`
+  * :ref:`elemento-glossary-exemplo-3`
+
+
+.. _elemento-glossary-exemplo-1:
+
+Exemplo de ``<glossary>`` em ``<back>``:
+----------------------------------------
 
 .. code-block:: xml
 
@@ -64,7 +72,10 @@ Exemplos:
   </back>
 
 
-2. em ``<app-group>``:
+.. _elemento-glossary-exemplo-2:
+
+Exemplo de ``<glossary>`` em ``<app-group>``:
+---------------------------------------------
 
 .. code-block:: xml
 
@@ -99,7 +110,10 @@ Exemplos:
   </back>
 
 
-3. em ``<boxed-text>``:
+.. _elemento-glossary-exemplo-3:
+
+Exemplo de ``<glossary>`` em ``<boxed-text>``:
+----------------------------------------------
 
 .. code-block:: xml
 

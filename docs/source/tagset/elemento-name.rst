@@ -19,7 +19,14 @@ Os elementos possíveis em ``<name>`` são: :ref:`elemento-surname`, :ref:`eleme
 
 Exemplos:
 
-1. em ``<contrib>``:
+  * :ref:`elemento-name-exemplo-1`
+  * :ref:`elemento-name-exemplo-2`
+
+
+.. _elemento-name-exemplo-1:
+
+Exemplo de ``<name>`` em ``<contrib>``:
+---------------------------------------
 
 .. code-block:: xml
 
@@ -32,7 +39,11 @@ Exemplos:
    </contrib>
    ...
 
-2. em ``<person-group>``:
+
+.. _elemento-name-exemplo-2:
+
+Exemplo de ``<name>`` em ``<person-group>``:
+--------------------------------------------
 
 .. code-block:: xml
 
