@@ -18,7 +18,14 @@ Este elemento pode ser encontrado em :ref:`elemento-pub-date` para identificaç�
 
 Exemplos:
 
-1. como estações do ano:
+    * :ref:`elemento-season-exemplo-1`
+    * :ref:`elemento-season-exemplo-2`
+
+
+.. _elemento-season-exemplo-1:
+
+Exemplo de ``<season>`` como estações do ano:
+---------------------------------------------
 
 .. code-block:: xml
 
@@ -35,7 +42,11 @@ Exemplos:
         ...
     </back>
 
-2. como intervalo de meses:
+
+.. _elemento-season-exemplo-2:
+
+Exemplo de ``<season>`` como intervalo de meses:
+------------------------------------------------
 
 .. code-block:: xml
 
