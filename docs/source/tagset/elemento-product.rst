@@ -42,7 +42,7 @@ Os valores possíveis para ``@product-type`` são:
 +-----------+---------------------------------+
 
 
-.. _elemento-product-exemplo-1
+.. _elemento-product-exemplo-1:
 
 Exemplo de marcação de ``<product>`` do tipo "book"
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
