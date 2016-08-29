@@ -229,8 +229,8 @@ Publicação Contínua
 
 .. _elemento-nomeia-arquivo-exemplo-5:
 
-Para Número em aberto:
-^^^^^^^^^^^^^^^^^^^^^^
+Para Número em aberto
+^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
