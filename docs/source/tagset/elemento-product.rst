@@ -17,7 +17,7 @@ Ocorre:
 
 
 ``<product>`` contém informações do produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
-O conteúdo de ``<product>`` deverá ser detalhado apenas quando a referenciar um tipo livro. Caso contrário, fica desnecessário detalhar seu conteúdo.
+O conteúdo de ``<product>`` deverá ser detalhado apenas quando referenciar um livro ou capítulo de livro. Caso contrário, fica desnecessário seu detalhamento.
 
 Exemplos:
 
@@ -31,7 +31,7 @@ Os valores possíveis para ``@product-type`` são:
 +-----------+---------------------------------+
 | Valor     | Descrição                       |
 +===========+=================================+
-| book      | referência de livro             |
+| book      | para livro ou capítulo de livro |
 +-----------+---------------------------------+
 | other     | outros tipos                    |
 +-----------+---------------------------------+
@@ -39,8 +39,8 @@ Os valores possíveis para ``@product-type`` são:
 
 .. _elemento-product-exemplo-1:
 
-Exemplo de marcação de ``<product>`` do tipo "book"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exemplo de marcação de ``<product>`` de livro
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: xml
 
@@ -80,7 +80,7 @@ Exemplo de marcação de ``<product>`` de capítulo de livro
     ...
     <article-meta>
         ...
-        <product>
+        <product product-type="book">
             <person-group person-group-type="author">
                 <name>
                     <surname>RUMAQUELLA</surname>
@@ -101,8 +101,8 @@ Exemplo de marcação de ``<product>`` de capítulo de livro
 
 .. _elemento-product-exemplo-3:
 
-Exemplo de marcação de ``<product>`` com tipo diferente de "book"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exemplo de marcação de ``<product>`` diferente de livro e capítulo de livro
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: xml
 
