@@ -17,12 +17,13 @@ Ocorre:
 
 
 ``<product>`` contém informações do produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
-A referência bibliográfica em ``<product>`` deverá ser detalhada apenas quando a referência for do tipo book. Caso a referência bibliográfica de ``<product>`` for diferente de book, não deve ser feito o detalhamento da referência.
+O conteúdo de ``<product>`` deverá ser detalhado apenas quando a referenciar um tipo livro. Caso contrário, fica desnecessário detalhar seu conteúdo.
 
 Exemplos:
 
     * :ref:`elemento-product-exemplo-1`
     * :ref:`elemento-product-exemplo-2`
+    * :ref:`elemento-product-exemplo-3`
 
 
 Os valores possíveis para ``@product-type`` são:
@@ -30,13 +31,7 @@ Os valores possíveis para ``@product-type`` são:
 +-----------+---------------------------------+
 | Valor     | Descrição                       |
 +===========+=================================+
-| article   | referência de artigo            |
-+-----------+---------------------------------+
 | book      | referência de livro             |
-+-----------+---------------------------------+
-| chapter   | referência de capítulo de livro |
-+-----------+---------------------------------+
-| software  | referência de software          |
 +-----------+---------------------------------+
 | other     | outros tipos                    |
 +-----------+---------------------------------+
@@ -76,6 +71,35 @@ Exemplo de marcação de ``<product>`` do tipo "book"
 
 
 .. _elemento-product-exemplo-2:
+
+Exemplo de marcação de ``<product>`` de capítulo de livro
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: xml
+
+    ...
+    <article-meta>
+        ...
+        <product>
+            <person-group person-group-type="author">
+                <name>
+                    <surname>RUMAQUELLA</surname>
+                    <given-names>M.</given-names>
+                </name>
+                <etal/>
+            </person-group>
+            <chapter-title>Os efeitos da postura sentada na coluna vertebral: uma revisão</chapter-title>
+            <source>Anais do 8º Congresso Brasileiro de Pesquisa e Desenvolvimento em Design</source>
+            <fpage>4142</fpage>
+            <lpage>4146</lpage>
+            <year>2008</year>
+        </product>
+        ...
+    </article-meta>
+    ...
+
+
+.. _elemento-product-exemplo-3:
 
 Exemplo de marcação de ``<product>`` com tipo diferente de "book"
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
