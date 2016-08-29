@@ -19,7 +19,6 @@ Ocorre:
 
 Usado para identificar ícones inseridos como imagem que estejam posicionado em linha, ou seja, ancorados em um parágrafo.
 
-O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``, caso este seja utilizado.
 
 Exemplo:
 
