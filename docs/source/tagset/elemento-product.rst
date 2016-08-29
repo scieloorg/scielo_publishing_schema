@@ -17,6 +17,13 @@ Ocorre:
 
 
 ``<product>`` contém informações do produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
+A referência bibliográfica em ``<product>`` deverá ser detalhada apenas quando a referência for do tipo book. Caso a referência bibliográfica de ``<product>`` for diferente de book, não deve ser feito o detalhamento da referência.
+
+Exemplos:
+
+    * :ref:`elemento-product-exemplo-1`
+    * :ref:`elemento-product-exemplo-2`
+
 
 Os valores possíveis para ``@product-type`` são:
 
@@ -34,6 +41,11 @@ Os valores possíveis para ``@product-type`` são:
 | other     | outros tipos                    |
 +-----------+---------------------------------+
 
+
+.. _elemento-product-exemplo-1
+
+Exemplo de marcação de ``<product>`` do tipo "book"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: xml
 
@@ -61,6 +73,21 @@ Os valores possíveis para ``@product-type`` são:
         ...
     </article-meta>
     ...
+
+
+.. _elemento-product-exemplo-2:
+
+Exemplo de marcação de ``<product>`` com tipo diferente de "book"
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: xml
+
+    ...
+    <product product-type="other">
+        GINO. A.S. Um estudo sobre as contribuições de um curso de formação continuada a partir das narrativas de professoras que ensinam matemática (2013), 254 f. Tese (Doutorado em Educação) Faculdade de Educação, Universidade Federal de Minas Gerais - Belo Horizonte. 2013
+    </product>
+    ...
+
 
 
 .. note:: A ordem dos elementos é importante! ``<product>`` deve ser inserido antes de :ref:`elemento-history` ou depois de :ref:`elemento-fpage`.
