@@ -194,8 +194,8 @@ Exemplo:
 
 .. _elemento-nomeia-arquivo-exemplo-3:
 
-Para publicação de Número Especial:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de Número Especial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -223,8 +223,8 @@ Exemplo:
 
 
 
-Publicação Contínua:
---------------------
+Publicação Contínua
+-------------------
 
 
 .. _elemento-nomeia-arquivo-exemplo-5:
@@ -244,8 +244,8 @@ Exemplo:
 
 .. _elemento-nomeia-arquivo-exemplo-6:
 
-Para Volume único:
-^^^^^^^^^^^^^^^^^^
+Para Volume único
+^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -276,8 +276,8 @@ Exemplos:
 
 .. _elemento-regraimg-exemplo-1:
 
-Regra para Volume e Número:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Volume e Número
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -291,8 +291,8 @@ Exemplo:
 
 .. _elemento-regraimg-exemplo-2:
 
-Para publicação de fascículo sem volume:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de fascículo sem volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -306,8 +306,8 @@ Exemplo:
 
 .. _elemento-regraimg-exemplo-3:
 
-Para publicação de Número Especial:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de Número Especial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
     
@@ -322,8 +322,8 @@ Exemplo:
 
 .. _elemento-regraimg-exemplo-4:
 
-Regra para Imagens traduzidas:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Imagens traduzidas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -337,8 +337,8 @@ Exemplo:
 
 .. _elemento-regraimg-exemplo-5:
 
-Regra para Ahead-Of-Print:
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Ahead-Of-Print
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -357,8 +357,8 @@ Publicação Contínua
 
 .. _elemento-regraimg-exemplo-6:
 
-Para Número em aberto:
-^^^^^^^^^^^^^^^^^^^^^^
+Para Número em aberto
+^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -372,8 +372,8 @@ Exemplo:
 
 .. _elemento-regraimg-exemplo-7:
 
-Para Volume único:
-^^^^^^^^^^^^^^^^^^
+Para Volume único
+^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -406,8 +406,8 @@ Exemplos:
 
 .. _elemento-regrapdf-exemplo-1:
 
-Regra para Volume e Número:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Volume e Número
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -421,8 +421,8 @@ Exemplo:
 
 .. _elemento-regrapdf-exemplo-2:
 
-Para publicação de fascículo sem volume:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de fascículo sem volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -437,8 +437,8 @@ Exemplo:
 
 .. _elemento-regrapdf-exemplo-3:
 
-Para publicação de Número Especial:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de Número Especial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -452,8 +452,8 @@ Exemplo:
 
 .. _elemento-regrapdf-exemplo-4:
 
-Regra para PDFs traduzidos:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para PDFs traduzidos
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``idioma``
 
@@ -465,8 +465,8 @@ Exemplo:
 
 .. _elemento-regrapdf-exemplo-5:
 
-Regra para Ahead Of Print:
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Ahead Of Print
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -484,8 +484,8 @@ Publicação Contínua
 
 .. _elemento-regrapdf-exemplo-6:
 
-Para Número em aberto:
-^^^^^^^^^^^^^^^^^^^^^^
+Para Número em aberto
+^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -499,8 +499,8 @@ Exemplo:
 
 .. _elemento-regrapdf-exemplo-7:
 
-Para Volume único:
-^^^^^^^^^^^^^^^^^^
+Para Volume único
+^^^^^^^^^^^^^^^^^
 
 Regra:
 
