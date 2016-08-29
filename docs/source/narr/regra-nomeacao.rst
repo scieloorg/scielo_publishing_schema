@@ -523,14 +523,6 @@ Casos Especiais
 |                       |     (.xml, .pdf e img)                                                     |                                            |
 +=======================+============================================================================+============================================+
 |                       |                                                                            |                                            |
-|                       | ISSN-acronimo-``nº de DOI sem prefixo`` (.xml)                             | 1414-431X-bjmbr-1414-431X20165281.xml      |
-|                       |                                                                            |                                            |
-| Publicação Contínua   | ISSN-acronimo-``nº de DOI sem prefixo``-nome da imagem (extensão)          | 1414-431X-bjmbr-1414-431X20165281-gf01.tif |
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-``nº de DOI sem prefixo`` (.pdf)                             | 1414-431X-bjmbr-1414-431X20165281.pdf      |
-|                       |                                                                            |                                            |
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-|                       |                                                                            |                                            |
 |                       | ISSN-acronimo-vol-nº-``s+nºde ordem``-paginação (.xml)                     | 0066-782X-abc-101-06-``s1``-0001.xml       |
 |                       |                                                                            |                                            |
 | Suplemento de Número  | ISSN-acronimo-vol-nº-``s+nºde ordem``-paginação-nome da imagem (extensão)  | 0066-782X-abc-101-06-``s1``-0001-gf01.tif  |
