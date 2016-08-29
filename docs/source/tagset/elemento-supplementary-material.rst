@@ -46,16 +46,16 @@ Os atributos obrigatórios são:
 
 Exemplos:
 
- * :ref:`elemento-supplmat-exemplo-1`
- * :ref:`elemento-supplmat-exemplo-2`
- * :ref:`elemento-supplmat-exemplo-3`
- * :ref:`elemento-supplmat-exemplo-4`
+ * :ref:`elemento-supplementary-material-exemplo-1`
+ * :ref:`elemento-supplementary-material-exemplo-2`
+ * :ref:`elemento-supplementary-material-exemplo-3`
+ * :ref:`elemento-supplementary-material-exemplo-4`
 
 
-.. _elemento-supplmat-exemplo-1:
+.. _elemento-supplementary-material-exemplo-1:
 
-Exemplo de ``<supplementary-material>`` em :ref:`elemento-front`:
------------------------------------------------------------------
+Exemplo de ``<supplementary-material>`` em ``<front>``
+------------------------------------------------------
 
 .. code-block:: xml
 
@@ -75,10 +75,10 @@ Exemplo de ``<supplementary-material>`` em :ref:`elemento-front`:
 
 
 
-.. _elemento-supplmat-exemplo-2:
+.. _elemento-supplementary-material-exemplo-2:
 
-Exemplo de ``<supplementary-material>`` envolvendo objeto em :ref:`elemento-body`:
-----------------------------------------------------------------------------------
+Exemplo de ``<supplementary-material>`` envolvendo objeto em ``<body>``
+-----------------------------------------------------------------------
 
 .. code-block:: xml
     
@@ -99,10 +99,10 @@ Exemplo de ``<supplementary-material>`` envolvendo objeto em :ref:`elemento-body
 
 
        
-.. _elemento-supplmat-exemplo-3:
+.. _elemento-supplementary-material-exemplo-3:
 
-Exemplo de ``<supplementary-material>`` em :ref:`elemento-p` de :ref:`elemento-body`:
--------------------------------------------------------------------------------------
+Exemplo de ``<supplementary-material>`` em ``<p>`` de ``<body>``
+----------------------------------------------------------------
 
 
 .. code-block:: xml
@@ -119,10 +119,10 @@ Exemplo de ``<supplementary-material>`` em :ref:`elemento-p` de :ref:`elemento-b
 
 
 
-.. _elemento-supplmat-exemplo-4:
+.. _elemento-supplementary-material-exemplo-4:
 
-Exemplo de ``<supplementary-material>`` em :ref:`elemento-back`:
-----------------------------------------------------------------
+Exemplo de ``<supplementary-material>`` em ``<back>``
+-----------------------------------------------------
 
 
 .. code-block:: xml
