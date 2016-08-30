@@ -1,44 +1,61 @@
 .. _elemento-supplementary-material:
 
 <supplementary-material>
-------------------------
+========================
 
-Aparece em
-  :ref:`elemento-article-meta`,
-  :ref:`elemento-p`,
+Aparece em:
+
+  ``app-group``
   :ref:`elemento-app`
+  :ref:`elemento-article-meta`
+  :ref:`elemento-body`
+  :ref:`elemento-boxed-text`
+  :ref:`elemento-disp-quote`
+  :ref:`elemento-front-stub`
+  :ref:`elemento-glossary`
+  ``license-p``
+  :ref:`elemento-named-content`
+  :ref:`elemento-p`
+  :ref:`elemento-ref-list`
+  :ref:`elemento-sec`
+  
 
-Atributos obrigatórios
-  1. id (ver :ref:`sugestao-atribuicao-id`)
-  2. xlink:href
-  3. mimetype
-  4. mime-subtype
- 
-Ocorre
+Atributos obrigatórios:
+
+  1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
+  2. ``@xlink:href``
+  3. ``@mimetype``
+  4. ``@mime-subtype``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-O material suplementar é um documento que não faz parte do texto do artigo, 
-mas que serviu como apoio para sua elaboração.
-Em ``<supplementary-material>`` é possível especificar tabelas, figuras, 
-dados brutos de planilha, banco de dados de genomas, quiz, equações, links, 
-diálogos, listas, licenças e objetos multimídia como áudio e vídeo.
- 
-O material suplementar pode estar em :ref:`elemento-front`, dentro de 
-:ref:`elemento-article-meta`, em :ref:`elemento-body` como seção ou entre 
-parágrafos ou em :ref:`elemento-back`, onde só poderá ser identificado caso 
-esteja especificado dentro do grupo de apêndices ``app-group``.
- 
-Seus atributos obrigatórios são:
- 
-* ``@id``: Utilizado como um identificador único no :term:`documento` e ganha maior 
-  importância quando há mais que um material suplementar e/ou quando o material 
-  suplementar é referenciado no corpo do texto. Nesse caso é necessário relacionar 
-  a chamada no texto com o "id" do material suplementar.
-* ``@mimetype``: Utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
-* ``@mime-subtype``: Utilizado para especificar o formato da mídia.
-* ``@xlink:href``: Utilizado para indicar do nome completo do arquivo, tais como: pdf, vídeo, zip etc.
- 
+O material suplementar é um :term:`documento` que não faz parte do texto do artigo, mas que serviu como apoio para sua elaboração. Em ``<supplementary-material>`` é possível especificar tabelas, figuras, dados brutos de planilha, bancos de dados de genomas, quiz, equações, links, diálogos, listas, licenças e objetos multimídia como áudio e vídeo.
+
+Este elemento pode ser descrito em :ref:`elemento-front`, em :ref:`elemento-article-meta`, em :ref:`elemento-body` como seção ou entre parágrafos, ou em :ref:`elemento-back` onde só poderá ser identificado dentro do grupo de apêndices, em (``app``).
+
+Os atributos obrigatórios são:
+
+* ``@id``: Utilizado como identificador único no artigo. Sua relevância aumenta quando há mais de um material suplementar e/ou quando o material   suplementar é referenciado no corpo do texto. Nesse caso, é necessário relacionar a chamada no texto com o "id" do material suplementar.
+* ``@mimetype``: Especifica o tipo de mídia, como por exemplo, "vídeo" ou "aplicação".
+* ``@mime-subtype``: Determina o formato da mídia (XVID, AVI, PDF etc).
+* ``@xlink:href``: Indica o nome completo do arquivo, como por exemplo, ``http://sitio/arquivos/suplementar1.pdf``, ``entrevista.mov`` etc.
+
+
+Exemplos:
+
+ * :ref:`elemento-supplementary-material-exemplo-1`
+ * :ref:`elemento-supplementary-material-exemplo-2`
+ * :ref:`elemento-supplementary-material-exemplo-3`
+ * :ref:`elemento-supplementary-material-exemplo-4`
+
+
+.. _elemento-supplementary-material-exemplo-1:
+
+Exemplo de ``<supplementary-material>`` em ``<front>``
+------------------------------------------------------
 
 .. code-block:: xml
 
@@ -54,6 +71,18 @@ Seus atributos obrigatórios são:
         </article-meta>
         ...
     </front>
+    ...
+
+
+
+.. _elemento-supplementary-material-exemplo-2:
+
+Exemplo de ``<supplementary-material>`` envolvendo objeto em ``<body>``
+-----------------------------------------------------------------------
+
+.. code-block:: xml
+    
+    ...
     <body>
         ...
         <p>
@@ -65,11 +94,40 @@ Seus atributos obrigatórios são:
             </supplementary-material>
         </p>
         ...
-        <p> 
+    </body>
+    ...
+
+
+       
+.. _elemento-supplementary-material-exemplo-3:
+
+Exemplo de ``<supplementary-material>`` em ``<p>`` de ``<body>``
+----------------------------------------------------------------
+
+
+.. code-block:: xml
+    
+    ...
+    <body>
+        ...
+        <p>
             <supplementary-material id="suppl03" mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-suppl01.pdf"/>
         </p>
-        ...
+      ...
     </body>
+    ...
+
+
+
+.. _elemento-supplementary-material-exemplo-4:
+
+Exemplo de ``<supplementary-material>`` em ``<back>``
+-----------------------------------------------------
+
+
+.. code-block:: xml
+    
+    ...
     <back>
         <app-group>
             <app id="app01">
@@ -91,6 +149,7 @@ Seus atributos obrigatórios são:
     ...
 
 
-.. note:: Esta tag em :ref:`elemento-front` deve ser inserida abaixo das 
-          informações de paginação ou antes de :ref:`elemento-history`.
+.. note:: Este elemento, em :ref:`elemento-front`, deve ser inserido abaixo das informações de paginação ou antes do elemento :ref:`elemento-history`.
 
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

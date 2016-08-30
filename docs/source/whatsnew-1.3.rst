@@ -14,11 +14,10 @@ relação à sua predecessora, a versão 1.2.
   [`#123 <https://github.com/scieloorg/scielo_publishing_schema/issues/123>`_].
 * Regra para o referenciamento de Ensaios Clínicos 
   [`#111 <https://github.com/scieloorg/scielo_publishing_schema/issues/111>`_].
-* Elemento ``//article-meta/counts`` deixaram de ser obrigatórios
+* Elemento ``//article-meta/counts`` deixou de ser obrigatório
   [`#104 <https://github.com/scieloorg/scielo_publishing_schema/issues/104>`_].
 * Definição de regra para a identificação de rótulos multilíngues em tabelas e 
   figuras.
-
 
 
 
@@ -68,3 +67,5 @@ especificação.
   [`#103 <https://github.com/scieloorg/scielo_publishing_schema/issues/103>`_],
   [`#102 <https://github.com/scieloorg/scielo_publishing_schema/issues/102>`_].
 
+
+.. {"reviewed_on": "20160809", "by": "gandhalf_thewhite@hotmail.com"}

@@ -18,13 +18,13 @@ Quebra de compatibilidade
 São as alterações na especificação que tornam inválidos os XMLs válidos na
 versão anterior.
 
-* Elementos ``//permission/license`` passou a ocorrer 1 ou mais vezes e é 
-  obrigatória a indicação de língua, sendo que o conteúdo de ``license-p`` deve 
-  ser obrigatoriamente em inglês ou no língua principal do artigo
+* Elemento ``//permission/license`` passou a ocorrer 1 ou mais vezes e é 
+  obrigatória a indicação de idioma, sendo que o conteúdo de ``license-p`` deve 
+  ser obrigatoriamente em inglês ou no idioma principal do artigo
   [`#71 <https://github.com/scieloorg/scielo_publishing_schema/issues/71>`_].
 * Identificadores de contribuidor
   [`#174 <https://github.com/scieloorg/scielo_publishing_schema/issues/174>`_].
-* Elemento ``title`` zero ou uma vez em ``//fn-group``
+* Elemento ``title`` com ocorrência zero ou uma vez em ``//fn-group``
   [`#128 <https://github.com/scieloorg/scielo_publishing_schema/issues/128>`_].
 
 
@@ -52,3 +52,5 @@ especificação.
   [`#85 <https://github.com/scieloorg/scielo_publishing_schema/issues/85>`_],
   [`#66 <https://github.com/scieloorg/scielo_publishing_schema/issues/66>`_].
 
+
+.. {"reviewed_on": "20160809", "by": "gandhalf_thewhite@hotmail.com"}

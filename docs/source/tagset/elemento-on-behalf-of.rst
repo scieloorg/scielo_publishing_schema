@@ -1,21 +1,20 @@
 .. _elemento-on-behalf-of:
 
 <on-behalf-of>
-^^^^^^^^^^^^^^
+==============
 
-Aparece em
-  :ref:`elemento-contrib-group`, 
+Aparece em:
+
+  :ref:`elemento-contrib-group`
   :ref:`elemento-contrib`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais vezes
 
+Utiliza-se quando um autor age como representante de um grupo ou organização na autoria ou edição de um artigo.
 
-Utiliza-se quando um autor age como representante de um grupo ou 
-organização. Ou seja, quando o autor diz ter escrito ou editado um trabalho 
-em nome de uma organização. 
 
- 
 Exemplo:
 
 .. code-block:: xml
@@ -23,7 +22,7 @@ Exemplo:
     ...
     <contrib-group>
         ...
-        <contrib>
+        <contrib contrib-type="author">
             <name>
                 <surname>Proietti</surname>
                 <given-names>Fernando Augusto</given-names>
@@ -34,4 +33,6 @@ Exemplo:
         ...
     </contrib-group>
     ...
- 
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

@@ -1,78 +1,98 @@
 .. _elemento-def-list:
- 
-<def-list>
-----------
 
-Aparece em
+<def-list>
+==========
+
+Aparece em:
+
   :ref:`elemento-app`
-  ``app-group``
+  ``<app-group>``
   :ref:`elemento-body`
   :ref:`elemento-boxed-text`
-  ``<def-list>`` 
+  ``<def-list>``
   :ref:`elemento-glossary`
   ``<list-item>``
   :ref:`elemento-p`
   :ref:`elemento-ref-list`
   :ref:`elemento-sec`
 
+Atributos obrigatórios:
 
-Ocorre
+  1. ``@id`` (Ver :ref:`sugestao-atribuicao-id`)
+
+
+Ocorre:
+
   Zero ou mais vezes
 
 
 
-Utilizada quando há uma lista de termos e suas respectivas definições.
-A lista de definições deve ser apresentada como texto e apresenta os seguintes elementos:
+Descreve uma lista de termos e suas respectivas definições, que deve ser apresentada como texto contendo os seguintes elementos:
 
-``<title>``, ``<term-head>``, ``<def-head>``, ``<def-item>``, ``<def-list>``.
+* ``<title>``
+* ``<term-head>``
+* ``<def-head>``
+* ``<def-item>``
+* ``<def-list>``
+
+Em ``<def-item>`` usam-se os seguintes sub-elementos:
+
+* ``<term>``: Identifica a palavra, frase, equação etc., que está sendo definida ou descrita.
+* ``<def>``: Descreve, explica a palavra ou frase em ``<term>``. Nesse contexto deve-se, obrigatoriamente, inserir o elemento :ref:`elemento-p`.
 
 
-Em ``<def-item>`` utilizar os seguintes elementos:
+O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``.
 
-- <term> : Utilizado para identificar a palavra, frase, equação etc que está sendo definido ou descrito.
+Exemplos:
 
-- <def> : Descrição, explicação da palavra ou frase identificada em <term>. Nesse elemento deve ser inserido, obrigatoriamente, o elemento :ref:`elemento-p`.
+  * :ref:`elemento-deflist-exemplo-1`
+  * :ref:`elemento-deflist-exemplo-2`
 
- 
-Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
-atributo ``@id``.
- 
 
-Exemplo em body:
- 
+
+.. _elemento-deflist-exemplo-1:
+
+Exemplo de ``<def-list>`` em  ``<body>``:
+-----------------------------------------
+
 .. code-block:: xml
 
-  <body>
-    <def-list id="d1">
-      <def-item>
-        <term>Angina pectoris (Angina de peito)</term>
-        <def>
-          <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
-        </def>
-      </def-item>
-      <def-item>
-        <term>Antagonista</term>
-        <def>
-            <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
-        </def>
-      </def-item>
-      <def-item>
-        <term>Biodisponibilidade</term>
-          <def>
-            <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
-          </def>
-      </def-item>
-    </def-list>
-  </body>
+    ...
+    <body>
+       <def-list id="d1">
+         <def-item>
+           <term>Angina pectoris (Angina de peito)</term>
+           <def>
+             <p>Sensação de angústia, de opressão torácica, devido a um fornecimento insuficiente de oxigênio ao coração.</p>
+           </def>
+         </def-item>
+         <def-item>
+           <term>Antagonista</term>
+           <def>
+               <p>É uma droga ou um composto que opõe os efeitos fisiológicos de outro composto. Em nível de receptor, é uma entidade química que opõe as respostas associadas à ativação do receptor, normalmente induzidas por outro agente bioativo.</p>
+           </def>
+         </def-item>
+         <def-item>
+           <term>Biodisponibilidade</term>
+             <def>
+               <p>Termo que expressa a taxa ou concentração de fármaco que atinge a circulação sistêmica a partir do seu sítio de administração.</p>
+             </def>
+         </def-item>
+       </def-list>
+     </body>
+     ...
 
 
-Exemplo sublista de definições:
- 
+.. _elemento-deflist-exemplo-2:
+
+Exemplo de ``<def-list>`` em sublista de definições:
+----------------------------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <def-list id="d2">
-      <label>Glossário</label>          
+      <label>Glossário</label>
       <def-item>
         <term>I</term>
         <def>
@@ -102,3 +122,5 @@ Exemplo sublista de definições:
     </def-list>
     ...
 
+
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

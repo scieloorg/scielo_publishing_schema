@@ -1,47 +1,47 @@
 .. _elemento-fn:
 
 <fn>
-----
+====
 
-Representa um complemento ou um comentário explicativo do que está sendo 
-citado no texto, e deve ser identificado de acordo com sua natureza 
-ao referenciar autores ou as demais partes do texto.
+Representa um complemento ou um comentário explicativo do que está sendo citado no texto e deve ser identificado de acordo com sua natureza.
 
 
 .. _elemento-fn-notas-autores:
 
 Notas de autor
-^^^^^^^^^^^^^^
+--------------
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-author-notes`
 
-Atributos obrigatórios
-  1. fn-type
- 
-Ocorre
+Atributos obrigatórios:
+
+  1. ``@fn-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Notas de rodapé de autores são notas inseridas em :ref:`elemento-author-notes` 
-e que obrigatoriamente possuem o atributo ``@fn-type``. 
+Notas de rodapé de autores são inseridas em :ref:`elemento-author-notes` e, obrigatoriamente, possuem o atributo ``@fn-type``.
 
-Os valores possíveis para o atributo ``@fn-type`` são:
- 
+Os valores possíveis para ``@fn-type`` são:
+
 +---------------------------+--------------------------------------------------+
 | Valor                     | Descrição                                        |
 +===========================+==================================================+
-| author                    | Outro tipo de nota relacionado a autor           |
+| author                    | Outro tipo de nota relacionada a autor           |
 +---------------------------+--------------------------------------------------+
 | con                       | Informação de contribuição                       |
 +---------------------------+--------------------------------------------------+
-| conflict                  | Declaração de conflito de Interesse              |
+| conflict                  | Declaração de conflito de interesse              |
 +---------------------------+--------------------------------------------------+
 | current-aff               | Afiliação atual do autor                         |
 +---------------------------+--------------------------------------------------+
-| deceased                  | Pessoa morreu desde que o artigo foi escrito     |
+| deceased                  | Pessoa falecida desde que o artigo foi escrito   |
 +---------------------------+--------------------------------------------------+
-| edited-by                 | Autor é o editor                                 |
+| edited-by                 | O autor é o editor                               |
 +---------------------------+--------------------------------------------------+
 | equal                     | Informação de contribuição igualitária           |
 +---------------------------+--------------------------------------------------+
@@ -61,20 +61,21 @@ Os valores possíveis para o atributo ``@fn-type`` são:
 |                           | tipo de nota em :ref:`elemento-fn-group` em      |
 |                           | :ref:`elemento-back`                             |
 +---------------------------+--------------------------------------------------+
-| presented-at              | Trabalho apresentado em Conferência, Colóquio etc|
+| presented-at              | Trabalho apresentado em conferência, colóquio etc|
 +---------------------------+--------------------------------------------------+
 | presented-by              | Informação de trabalho apresentado pelo autor    |
 +---------------------------+--------------------------------------------------+
- 
+
+Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <author-notes>
         <corresp id="c01">
             <label>*</label>
             <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@foo.com</email>
-        </corresp>           
+        </corresp>
         <fn fn-type="conflict">
             <p>Não há conflito de interesse entre os autores do artigo.</p>
         </fn>
@@ -83,86 +84,82 @@ Os valores possíveis para o atributo ``@fn-type`` são:
         </fn>
     </author-notes>
     ...
- 
+
 
 .. _elemento-fn-notas-gerais:
 
 Notas gerais
-^^^^^^^^^^^^
+------------
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-fn-group`
 
-Atributos obrigatórios
-  1. fn-type
+Atributos obrigatórios:
 
-Ocorre
+  1. ``@fn-type``
+
+Ocorre:
+
   Uma ou mais vezes
 
 
-Representa um complemento ou um comentário explicativo do que está sendo 
-citado no texto.
- 
-As notas que devem ser consideradas para entrar como nota de rodapé de
-:ref:`elemento-back`, são quaisquer notas que não fazem nenhum tipo de
-referência aos autores, as quais deverão ser identificadas em
-:ref:`elemento-fn-notas-autores`.
- 
-Notas em :ref:`elemento-back` devem ser identificadas dentro do grupo 
-:ref:`elemento-fn-group`.
- 
-Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
-atributo ``@id``.
- 
-Para notas que apresentam uma etiqueta de identificação (1, 2, a, b, ``*``, e etc)
-marque com a tag :ref:`elemento-label`. A tag :ref:`elemento-label` não
-pode estar dentro de :ref:`elemento-p`.
+Representa um complemento ou um comentário explicativo do que está sendo citado no texto.
 
-Os valores possíveis para o atributo ``@fn-type`` são:
- 
+As notas que devem ser consideradas como nota de rodapé de :ref:`elemento-back`, são aquelas que não fazem qualquer tipo de referência aos autores, as quais deverão ser identificadas em :ref:`elemento-fn-notas-autores`.
+
+Notas marcadas em :ref:`elemento-back` devem ser identificadas dentro do grupo :ref:`elemento-fn-group`.
+
+O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``.
+
+Notas que apresentam uma etiqueta de identificação (1, 2, a, b, ``*``, e etc) devem ser marcadas com o elemento :ref:`elemento-label`. Este elemento não pode ocorrer dentro de :ref:`elemento-p`.
+
+Os valores possíveis para ``@fn-type`` são:
+
 +-------------------------+--------------------------------------------------+
 | Valor                   | Descrição                                        |
 +=========================+==================================================+
 | abbr                    | Representa abreviaturas de termos e nomes        |
 |                         | próprios utilizadas ao longo do texto. Caso      |
 |                         | esteja falando de abreviaturas de nomes dos      |
-|                         | autores, inserir nota em                         |
+|                         | autores, deve-se inserir nota em                 |
 |                         | :ref:`elemento-author-notes` em                  |
-|                         | :ref:`elemento-front`                            |
+|                         | :ref:`elemento-front`.                           |
 +-------------------------+--------------------------------------------------+
 | com                     | Representa nota de algum tipo de comunicado      |
-|                         | relevante para a realização do artigo            |
+|                         | relevante para a realização do artigo.           |
 +-------------------------+--------------------------------------------------+
 | financial-disclosure    | Declaração de financiamento ou negação e         |
-|                         | aceitação de recursos recebidos em apoio às      |
-|                         | pesquisa em que um artigo é baseado. Serve também|
-|                         | para informações de financiamento que possuem    |
-|                         | um número de contrato ou que só informam se "sim"|
-|                         | ou "não" houve financiamento                     |
+|                         | aceitação de recursos recebidos em apoio à       |
+|                         | pesquisa na qual um artigo é baseado.            |
+|                         | Presta-se também para informações de             |
+|                         | financiamento que possuem um número de contrato  |
+|                         | ou que só informam se houve ou não financiamento |
+|                         | com "sim" ou "não".                              |
 +-------------------------+--------------------------------------------------+
 | supported-by            | Indica que a pesquisa sobre a qual o artigo é    |
 |                         | baseado foi apoiada por alguma entidade,         |
-|                         | instituição ou pessoa física. Considerar neste   |
+|                         | instituição ou pessoa física. Consideram-se neste|
 |                         | tipo, informações de financiamento que não       |
-|                         | possuem número de contrato                       |
+|                         | possuem número de contrato.                      |
 +-------------------------+--------------------------------------------------+
 | presented-at            | Indica que o artigo foi apresentado em algum     |
-|                         | evento científico                                |
+|                         | evento científico.                               |
 +-------------------------+--------------------------------------------------+
 | supplementary-material  | Indica ou descreve o material suplementar do     |
-|                         | artigo                                           |
+|                         | artigo.                                          |
 +-------------------------+--------------------------------------------------+
-| other                   | Especifica aquelas notas diferentes das          |
+| other                   | Especifica toda e qualquer nota diferente das    |
 |                         | relacionados acima. É possível também ter este   |
-|                         | tipo de nota em :ref:`elemento-author-notes`     |
+|                         | tipo de nota em :ref:`elemento-author-notes`.    |
 +-------------------------+--------------------------------------------------+
- 
+
 
 Exemplo:
- 
+
 .. code-block:: xml
 
-    ... 
+    ...
     <fn-group>
         <fn fn-type="financial-disclosure" id="fn01">
             <label>1</label>
@@ -174,34 +171,38 @@ Exemplo:
         </fn>
     </fn-group>
     ...
- 
+
 
 .. _elemento-fn-notas-tabela:
 
 Nota de Tabela
-^^^^^^^^^^^^^^
+--------------
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-table-wrap-foot`
 
 
-Atributos obrigatórios
-  1. id
+Atributos obrigatórios:
 
-Ocorre
+  1. ``@id``
+
+Ocorre:
+
   Uma ou mais vezes
 
-Notas de rodapé de tabelas são notas inseridas em :ref:`elemento-table-wrap-foot` e que obrigatoriamente possuem o atributo @id.
-Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do atributo ``@id``.
+Notas de rodapé de tabelas são incluídas em :ref:`elemento-table-wrap-foot` e, obrigatoriamente, possuem o atributo ``@id``.
+
+O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``.
 
 
 Exemplo:
- 
+
 .. code-block:: xml
 
     ...
     <table-wrap id="t05">
-      ... 
+      ...
       <table-wrap-foot>
         <fn id="TFN1">
           <label>*</label>
@@ -211,3 +212,5 @@ Exemplo:
     </table-wrap>
     ...
 
+
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

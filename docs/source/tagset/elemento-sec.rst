@@ -1,27 +1,29 @@
 .. _elemento-sec:
 
 <sec>
------
-Aparece em
-  :ref:`elemento-body`
+=====
 
-Ocorre
+Aparece em:
+
+  :ref:`elemento-body`
+  :ref:`elemento-sec`
+
+Ocorre:
+
   Zero ou mais vezes
 
- 
-O corpo textual do artigo pode ser constituído por seções. 
-Cada uma delas possui um elemento ``<title>`` seguido de um ou mais 
-:ref:`elemento-p`.
 
-:term:`Seções de primeiro nível` podem ser qualificadas de acordo com seu tipo por 
-meio do atributo ``@sec-type``, cujos valores possíveis são:
+O corpo textual do artigo pode ser constituído por seções. Cada uma delas tendo um elemento ``<title>`` seguido de um ou mais parágrafos (:ref:`elemento-p`).
+
+:term:`Seções de primeiro nível` que condizem com a lista de valores abaixo devem, obrigatoriamente, apresentar um atributo ``@sec-type``. Caso haja *seção de primeiro nível* com nome diferente do que consta na tabela, o referido atributo não deve ser inserido.
+
 
 +------------------------+------------------------------------------------+
 | Valor                  | Descrição                                      |
 +========================+================================================+
 | cases                  | relatos/estudos de caso                        |
 +------------------------+------------------------------------------------+
-| conclusions            | conclusões/considerações finais/Final Remarkes |
+| conclusions            | conclusões/considerações finais/Final Remarks  |
 +------------------------+------------------------------------------------+
 | discussion             | discussões                                     |
 +------------------------+------------------------------------------------+
@@ -36,11 +38,23 @@ meio do atributo ``@sec-type``, cujos valores possíveis são:
 | supplementary-material | material suplementar                           |
 +------------------------+------------------------------------------------+
 
- 
-Exemplo:
- 
+
+Exemplos:
+
+  * :ref:`elemento-sec-exemplo-1`
+  * :ref:`elemento-sec-exemplo-2`
+  * :ref:`elemento-sec-exemplo-3`
+  * :ref:`elemento-sec-exemplo-4`
+  * :ref:`elemento-sec-exemplo-5`
+
+
+.. _elemento-sec-exemplo-1:
+
+Exemplo de ``<sec>`` do tipo simples:
+-------------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <body>
         ...
@@ -52,16 +66,18 @@ Exemplo:
         ...
     </body>
     ...
- 
 
-No caso de seções combinadas, ou seja, quando o título for composto por mais 
-de um desses itens, o valor do atributo ``@sec-type`` deverá corresponder a 
-cada um respectivamente, separados pelo caractere ``|``.
- 
-Exemplo:
- 
+
+.. _elemento-sec-exemplo-2:
+
+Exemplo de ``<sec>`` com seções combinadas:
+-------------------------------------------
+
+No caso de seções combinadas, ou seja, quando o título for composto por mais de um desses itens, o valor do atributo ``@sec-type`` deverá corresponder a cada um, respectivamente, separados pelo caractere ``|`` (pipe).
+
+
 .. code-block:: xml
- 
+
     ...
     <body>
         ...
@@ -74,12 +90,14 @@ Exemplo:
     </body>
     ...
 
- 
-As seções podem ser compostas por uma ou mais subseções, neste caso, 
-cada subseção deverá ser marcada com tag ``<sec>`` dentro da seção maior.
- 
-Exemplo:
- 
+.. _elemento-sec-exemplo-3:
+
+Exemplo de subseção de primeiro nível:
+--------------------------------------
+
+As seções podem ser compostas por uma ou mais subseções. Nesses casos, cada subseção deverá ser marcada com o elemento ``<sec>`` dentro da seção de nível superior.
+
+
 .. code-block:: xml
 
     ...
@@ -97,14 +115,16 @@ Exemplo:
     </body>
     ...
 
- 
-No caso da seção não possuir nenhum tipo padrão pode-se inserir a tag sem o 
-atributo ``@sec-type``. 
+.. _elemento-sec-exemplo-4:
 
-Exemplo:
- 
+Exemplo de ``<sec>`` sem tipo padrão:
+-------------------------------------
+
+Seções sem tipo padrão podem ser declaradas sem o atributo ``@sec-type``.
+
+
 .. code-block:: xml
- 
+
     ...
     <body>
         ...
@@ -117,9 +137,14 @@ Exemplo:
     </body>
     ...
 
- 
-Para seções que apresentam marcador de numeração, identificar o dado dentro da tag <title>.
-Exemplo:
+
+.. _elemento-sec-exemplo-5:
+
+Exemplo de ``<sec>`` com marcador de numeração:
+-----------------------------------------------
+
+Seções que apresentam marcador de numeração são identificadas juntamente com o texto no elemento ``<title>``.
+
 
 .. code-block:: xml
 
@@ -136,5 +161,7 @@ Exemplo:
     ...
 
 
-.. note:: Não inserir a tag <label> para <sec>.
+.. note:: Não inserir o elemento ``<label>`` para ``<sec>``.
 
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

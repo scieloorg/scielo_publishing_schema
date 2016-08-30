@@ -1,26 +1,36 @@
 .. _elemento-funding-source:
- 
-<funding-source>
-^^^^^^^^^^^^^^^^
 
-Aparece em
+<funding-source>
+================
+
+Aparece em:
+
   :ref:`elemento-award-group`
- 
-Ocorre
+
+Ocorre:
+
   Uma ou mais vezes
 
 
-Esta tag deve ficar dentro de :ref:`elemento-award-group` e nela será 
-especificado o órgão e/ou instituição financiadora:
- 
-Exemplo:
+Elemento contido em :ref:`elemento-award-group` onde deve ser especificado o órgão e/ou instituição financiadora, caso exista.
+
+Exemplos:
+
+  * :ref:`elemento-fundingsource-exemplo-1`
+  * :ref:`elemento-fundingsource-exemplo-2`
+
+
+.. _elemento-fundingsource-exemplo-1:
+
+Exemplo de ``<funding-source>`` em ``<funding-group>``:
+-------------------------------------------------------
 
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
-        <funding-group>           
+        <funding-group>
             <award-group>
                 <funding-source>CNPq</funding-source>
                 <award-id>1685X6-7</award-id>
@@ -29,10 +39,15 @@ Exemplo:
         ...
     </article-meta>
     ...
- 
 
-Existem casos em que há mais que uma instituição financiadora para um único 
-número de contrato.
+
+
+.. _elemento-fundingsource-exemplo-2:
+
+Exemplo de 2 instituições financiadoras para 1 ``<award-id>``:
+--------------------------------------------------------------
+
+Um mesmo número de contrato pode ter mais de uma instituição financiadora.
 
 Exemplo:
 
@@ -51,3 +66,6 @@ Exemplo:
        ...
     </article-meta>
     ...
+
+
+.. {"reviewed_on": "20160625", "by": "gandhalf_thewhite@hotmail.com"}

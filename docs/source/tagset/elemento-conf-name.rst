@@ -1,16 +1,17 @@
 .. _elemento-conf-name:
 
 <conf-name>
-^^^^^^^^^^^
+===========
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-element-citation`
-  
-Ocorre 
- Zero ou mais vezes
 
-Identifica o nome de uma conferência, congresso, reunião, palestra, seminário e
-etc mencionado em uma referência.
+Ocorre:
+
+  Zero ou mais vezes
+
+Identifica o nome de uma conferência, congresso, reunião, palestra, seminário e similares mencionado em uma referência bibliográfica.
 
 Exemplo:
 
@@ -22,3 +23,5 @@ Exemplo:
     </element-citation>
     ...
 
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

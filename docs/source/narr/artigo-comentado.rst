@@ -3,13 +3,8 @@
 Artigo Comentado
 ================
 
-Artigos que apresentam resposta que está diretamente relacionado ao artigo 
-principal devem apresentar um elemento :ref:`elemento-related-article`. 
-Para isso, no artigo principal o atributo ``@article-type`` deve ter como valor 
-**article-commentary**.
+Artigos que apresentam um comentário diretamente relacionado ao artigo principal devem apresentar um elemento :ref:`elemento-related-article` inserido em :ref:`elemento-response`. Para isso, no artigo principal o atributo ``@article-type`` deve ter como valor ``article-commentary``.
 
-
-Em :ref:`elemento-response`, inserir o elemento :ref:`elemento-related-article`.
 Exemplo:
 
 .. code-block:: xml
@@ -30,9 +25,9 @@ Exemplo:
      </response>
    </article>
 
+.. note:: ``<related-article>`` deve ser inserido abaixo das informações de ``<permissions>`` ou acima de ``<counts>``.
 
-Para artigo relacionado, o elemento :ref:`elemento-related-article` deve 
-apresentar os seguintes atributos: ``@related-article-type`` com o valor 
-``commentary-article``; ``@id``; ``@vol`` e ``@page`` com a informação do 
-intervalo de paginação do documento.
+Para artigo relacionado, o elemento :ref:`elemento-related-article` deve conter os seguintes atributos: ``@related-article-type`` com o valor ``commentary-article``; ``@id``; ``@vol`` e ``@page`` com a informação do intervalo de paginação do documento.
 
+
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

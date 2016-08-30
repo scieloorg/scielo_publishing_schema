@@ -1,22 +1,24 @@
 .. _elemento-trans-title:
 
 <trans-title>
-^^^^^^^^^^^^^
+=============
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-trans-title-group`
- 
-Ocorre 
+
+Ocorre:
+
   Uma vez
 
 
-Marca o título traduzido, dentro da tag :ref:`elemento-trans-title-group`.
+Identifica o título traduzido do artigo dentro do elemento :ref:`elemento-trans-title-group`.
 
 
 Exemplo:
- 
+
 .. code-block:: xml
- 
+
     ...
     <title-group>
         <article-title>Between spiritual wellbeing and spiritual distress: possible related factors in elderly patients with cancer</article-title>
@@ -28,4 +30,6 @@ Exemplo:
         </trans-title-group>
     </title-group>
     ...
-          
+
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

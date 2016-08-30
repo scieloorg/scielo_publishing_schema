@@ -1,22 +1,23 @@
 .. _elemento-patent:
 
 <patent>
-^^^^^^^^
+========
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-element-citation`
-  
-Atributos obrigatórios 
-  ``@country``
 
-Ocorre 
+Atributos obrigatórios:
+
+  1. ``@country``
+
+Ocorre:
+
   Zero ou uma vez
 
-Tag utilizada para identificar um número de patente. Deve possuir o atributo 
-``@country`` e nele deve ser atribuído o código do país de acordo com a 
-Norma ISO 3166, com dois caracteres alfabéticos.
+Identifica um número de patente. Deve ter o atributo ``@country`` contendo o código de país de acordo com a norma :term:`ISO 3166`, com dois caracteres alfabéticos.
 
-Para consultar ao código do país consulte o link da norma ISO: https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
+Os códigos de país podem ser consultados na página da `norma ISO 3166 <https://www.iso.org/obp/ui/#iso:pub:PUB500001:en>`_.
 
 Exemplo de patente americana:
 
@@ -29,3 +30,4 @@ Exemplo de patente americana:
     ...
 
 
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

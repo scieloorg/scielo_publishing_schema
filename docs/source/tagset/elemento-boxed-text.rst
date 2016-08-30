@@ -1,35 +1,44 @@
 .. _elemento-boxed-text:
 
 <boxed-text>
-------------
+============
 
-Aparece em
-  :ref:`elemento-app`, 
-  ``app-group``, 
-  :ref:`elemento-body`, 
-  :ref:`elemento-boxed-text`, 
-  :ref:`glossary`, 
-  :ref:`elemento-p`, 
-  :ref:`elemento-ref-list`, 
+Aparece em:
+
+  :ref:`elemento-app`
+  ``<app-group>``
+  :ref:`elemento-body`
+  :ref:`elemento-boxed-text`
+  :ref:`elemento-glossary`
+  :ref:`elemento-p`
+  :ref:`elemento-ref-list`
   :ref:`elemento-sec`
 
 
-Atributos obrigatórios
-  1. id
+Atributos obrigatórios:
 
+  1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
 
-Ocorre
+Ocorre:
+
   Zero ou mais vezes
 
-
-É utilizado para identificação de um texto ou objeto que faz parte do artigo, mas não do corpo do texto.
-É possível apresentar um texto com seções, figura, tabela etc.
+Identifica texto ou objeto que faz parte do artigo, mas não do corpo do texto (flutuante ou não ancorado). Permite apresentar texto com seções, figuras, tabelas etc.
 
 
-Exemplo com seções:
+Exemplos:
+
+  * :ref:`elemento-boxtext-exemplo-1`
+  * :ref:`elemento-boxtext-exemplo-2`
+
+
+.. _elemento-boxtext-exemplo-1:
+
+Exemplo de ``<boxed-text>`` com seção:
+--------------------------------------
 
 .. code-block:: xml
- 
+
     ...
     <boxed-text id="bx1">
         <sec>
@@ -41,11 +50,15 @@ Exemplo com seções:
     ...
 
 
-Exemplo com figura:
+
+.. _elemento-boxtext-exemplo-2:
+
+Exemplo de ``<boxed-text>`` com figura:
+---------------------------------------
 
 .. code-block:: xml
 
-    ... 
+    ...
     <boxed-text id="bx1">
         <fig id="f12">
             <label>Figure</label>
@@ -57,3 +70,5 @@ Exemplo com figura:
     </boxed-text>
     ...
 
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

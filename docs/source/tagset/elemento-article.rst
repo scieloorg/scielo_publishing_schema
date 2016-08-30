@@ -3,117 +3,121 @@
 <article>
 =========
 
-Aparece em
+Aparece em:
+
   ``/``
- 
-Atributos obrigatórios
-  1. dtd-version
-  2. article-type
-  3. xml:lang
-  4. xmlns:xlink="http://www.w3.org/1999/xlink"
-  5. specific-use="sps-1.3"
- 
-Ocorre
+
+Atributos obrigatórios:
+
+  1. ``@dtd-version``
+  2. ``@article-type``
+  3. ``@xml:lang``
+  4. ``@xmlns:xlink="http://www.w3.org/1999/xlink"``
+  5. ``@specific-use="sps-1.0"``
+
+.. note:: No atributo ``@specific-use`` o valor **sps-1.0** é apenas uma referência genérica à versão da *SciELO PS*. Deve ser utilizada sempre          a versão corrente (atual).
+
+Ocorre:
+
   Uma vez
- 
 
-A tag :ref:`elemento-article` representa o elemento raiz do XML, e deve conter 
-obrigatoriamente os atributos ``@dtd-version``, ``@article-type``, ``@xml:lang``, 
-``@xmlns:xlink="http://www.w3.org/1999/xlink"`` e ``@specific-use``.
 
-O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e 
-deve ser utilizado quando equações :term:`MathML` forem identificadas no 
-:term:`documento`.
+:ref:`elemento-article` é a raiz do *XML* do :term:`documento` e deve explicitar, obrigatoriamente, os atributos de versão da :term:`DTD`, tipo de documento, idioma do texto, declarações de :term:`namespace` e versão da :term:`SciELO PS` utilizada.
 
-Para ``@dtd-version`` utilizar o valor 1.0 conforme a :term:`DTD`, 
-explicitada em :ref:`xml-doctype`. Para ``@article-type`` define-se a tipologia 
-de artigos, os valores que podem ser utilizados são:
- 
+O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e deve ser utilizado sempre que equações do tipo :term:`MathML` forem identificadas no :term:`documento`.
+
+Para ``@dtd-version`` deve-se utilizar o valor 1.0 conforme a :term:`DTD`, explicitada em :ref:`xml-doctype`.
+
+Para tipo de documento (``@article-type``) os valores possíveis são:
+
 +--------------------+----------------------------------------------------------+
 | Valor              | Descrição                                                |
 +====================+==========================================================+
-|                    | comentários - uma nota crítica ou esclarecedora, escrita |
+|                    | Comentários - Nota crítica ou esclarecedora, escrita     |
 |                    | para discutir, apoiar ou debater um artigo ou outra      |
-| article-commentary | apresentação anteriormente publicada. Pode ser um artigo,|
-|                    | carta, editorial, etc. Estas publicações podem aparecer  |
-|                    | como comentário, comentário editorial, ponto de vista,   |
-|                    | etc.                                                     |
+| article-commentary | apresentação publicada anteriormente.                    |
+|                    | Pode ser um artigo, carta, editorial, etc. Estas         |
+|                    | publicações podem aparecer como comentário, comentário   |
+|                    | editorial, ponto de vista, etc.                          |
 +--------------------+----------------------------------------------------------+
-|                    | resenha - análise críticas de livros e outras            |
+|                    | Resenha - Análise crítica de livros e outras             |
 | book-review        | monografias.                                             |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-| brief-report       | comunicação breve sobre resultados de uma pesquisa.      |
+|                    | Comunicação breve - Informe sucinto acerca de            |
+| brief-report       | resultados de uma pesquisa.                              |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | relato, descrição ou estudo de caso - pesquisas especiais|
-| case-report        | que despertam interesse informativo.                     |
+|                    | Relato, descrição ou estudo de caso - Pesquisas          |
+| case-report        | especiais que despertam interesse informativo.           |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | errata - corrige erros apresentados em artigos após      |
-| correction         | sua publicação online/impressa.                          |
+|                    | Errata - Corrige erros apresentados em artigos após sua  |
+| correction         | publicação online e/ou impressa.                         |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | editorial - uma declaração de opiniões, crenças e        |
+|                    | Editorial - Uma declaração de opiniões, crenças e        |
 |                    | políticas do editor do periódico, geralmente sobre       |
-| editorial          | assuntos de significado científico de interesse da       |
-|                    | comunidade científica ou da sociedade.                   |
+| editorial          | assuntos de interesse da comunidade científica e da      |
+|                    | sociedade.                                               |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | press release - comunicação breve de linguagem           |
+|                    | Press release - Comunicação breve de linguagem           |
 | in-brief           | jornalística sobre um artigo ou tema.                    |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | cartas - comunicação entre pessoas ou instituições       |
-| letter             | através de cartas. Geralmente comentando um trabalho     |
-|                    | publicado                                                |
+|                    | Cartas - Correspondência escrita entre pessoas ou        |
+| letter             | instituições, geralmente comentando um trabalho          |
+|                    | publicado.                                               |
 +--------------------+----------------------------------------------------------+
-|                    | Outro tipo de documento. Pode ser considerado adendo,    |
-| other              | anexo, discussão, artigo de preocupação, introdução entre|
-|                    | outros.                                                  |
+|                    | Outro tipo de documento - Pode ser considerado adendo,   |
+| other              | anexo, discussão, artigo de preocupação, introdução      |
+|                    | entre outros.                                            |
 +--------------------+----------------------------------------------------------+
-|                    | comunicação breve sobre atualização de investigação ou   |
-| rapid-communication| outra notícia.                                           |
+|                    | Comunicação breve - Informe sobre atualização de         |
+| rapid-communication| investigação ou outra notícia.                           |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | resposta a carta ou ao comentário, geralmente é usado    |
-| reply              | pelo autor original fazendo outros comentários a respeito|
-|                    | dos comentários anteriores                               |
+|                    | Resposta (a carta ou comentário) - Geralmente é usado    |
+| reply              | pelo autor original e contém comentários adicionais a    |
+|                    | outros anteriormente escritos.                           |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | artigo original - abrange pesquisas, experiências        |
-| research-article   | clínicas ou cirúrgicas ou outras contribuições originais.|
+|                    | Artigo original - Abrange pesquisas, experiências        |
+| research-article   | clínicas ou cirúrgicas e/ou outras contribuições         |
+|                    | originais.                                               |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | retratação - a retratação de um artigo científico é um   |
-| retraction         | instrumento para corrigir o registro acadêmico publicado |
-|                    | equivocadamente, por plágio, por exemplo.                |
+|                    | Retratação (de um artigo científico) - Instrumento para  |
+| retraction         | corrigir um registro acadêmico publicado equivocadamente,|
+|                    | por plágio, por exemplo.                                 |
 +--------------------+----------------------------------------------------------+
-|                    | são avaliações críticas sistematizadas da literatura     |
-| review-article     | sobre determinado assunto.                               |
+|                    | Revisões de literatura - Avaliações críticas             |
+| review-article     | sistematizadas da literatura sobre determinado assunto.  |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | tradução. Utilizado para artigos que apresentam tradução |
-| translation        | de um artigo produzido em idioma diferente.              |
+|                    | Tradução - Artigo traduzido a partir de original escrito |
+| translation        | em outro idioma.                                         |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
 
 
-.. note:: O atributo ``@article-type`` identifica o tipo de documento. 
-          Não confundir com a seção em que o documento aparece no sumário.
- 
+.. note:: O atributo tipo de documento não deve ser confundido com a seção em que o :term:`documento` aparece no sumário.
 
-Para ``@xml:lang``, utilizar código de duas letras conforme norma :term:`ISO 639-1`. 
-Para uma lista completa dos códigos disponíveis e mais informações sobre a 
-norma :term:`ISO 639-1`, acesse http://www.mathguide.de/info/tools/languagecode.html.
- 
 
-Exemplo da tag completa versão JATS 1.0:
- 
+O idioma do texto (``@xml:lang``) é descrito pela norma :term:`ISO 639-1` como um código de dois caracteres alfabéticos em caixa baixa, cujo conteúdo encontra-se disponível no `site <http://www.mathguide.de/info/tools/languagecode.html>`_.
+
+O atributo ``@specific-use`` identifica a versão utilizada da :term:`SciELO Publishing Schema`.
+
+Exemplo (tag completa da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_):
+
 .. code-block:: xml
- 
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.3" article-type="research-article" xml:lang="en">
- 
+
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.0" article-type="research-article" xml:lang="en">
+
+           ...
+
+	 </article>
 
 
-O atributo ``@specific-use`` identifica a versão do schema SciELO PS.
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

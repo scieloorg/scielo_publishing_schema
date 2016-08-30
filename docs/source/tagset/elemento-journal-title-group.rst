@@ -1,21 +1,23 @@
 .. _elemento-journal-title-group:
- 
+
 <journal-title-group>
-^^^^^^^^^^^^^^^^^^^^^
+=====================
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-journal-meta`
- 
-Ocorre
-  Uma vez
- 
 
-Abrange tags que representam os metadados identificadores do periódico.
- 
+Ocorre:
+
+  Uma vez
+
+
+Contém os elementos que identificam os metadados referentes ao título do periódico.
+
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <journal-meta>
         ...
@@ -27,4 +29,6 @@ Exemplo:
         ...
     </journal-meta>
     ...
- 
+
+
+.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}

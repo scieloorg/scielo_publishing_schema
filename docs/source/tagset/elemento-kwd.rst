@@ -1,22 +1,23 @@
 .. _elemento-kwd:
 
-<kwd>   
-^^^^^
+<kwd>
+=====
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-kwd-group`
- 
-Ocorre
+
+Ocorre:
+
   Uma ou mais vezes
 
 
-Esta tag é inserida obrigatoriamente dentro da tag :ref:`elemento-kwd-group` e 
-identifica cada palavra-chave individualmente.
- 
+Elemento obrigatório dentro de :ref:`elemento-kwd-group` que identifica cada palavra-chave individualmente.
+
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
@@ -25,7 +26,7 @@ Exemplo:
             <kwd>Broncoscopia</kwd>
             <kwd>Curvas de fluxo-volume expiratório máximo</kwd>
             <kwd>sensibilidade e especificidade</kwd>
-            <kwd>Neoplasias pulmonares</kwd>    
+            <kwd>Neoplasias pulmonares</kwd>
         </kwd-group>
         <kwd-group xml:lang="en">
             <title>Keywords</title>
@@ -37,4 +38,6 @@ Exemplo:
         ...
     </article-meta>
     ...
- 
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

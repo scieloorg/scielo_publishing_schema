@@ -1,16 +1,28 @@
 .. _elemento-addr-line:
-     
-<addr-line>
-^^^^^^^^^^^
 
-Aparece em
+<addr-line>
+===========
+
+Aparece em:
+
   :ref:`elemento-aff`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais vezes
 
-Em ``<addr-line>``, especifica-se os dados de endereço da instituição 
-vinculada ao autor, e deve aparecer quando a informação for descrita no 
-artigo dentro de :ref:`elemento-aff`. Pode conter somente informações de 
-estado e cidade.
- 
+Identifica a cidade e o estado da instituição vinculada ao autor, caso exista.
+
+Exemplo:
+
+.. code-block:: xml
+
+    ...
+    <addr-line>
+        <named-content content-type="city">São Paulo</named-content>
+        <named-content content-type="state">SP</named-content>
+    </addr-line>
+    ...
+
+
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

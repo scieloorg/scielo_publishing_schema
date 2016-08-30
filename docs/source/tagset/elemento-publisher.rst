@@ -1,25 +1,25 @@
 .. _elemento-publisher:
- 
-<publisher>
-^^^^^^^^^^^
 
-Aparece em
+<publisher>
+===========
+
+Aparece em:
+
   :ref:`elemento-journal-meta`
- 
-Ocorre
+
+Ocorre:
+
   Uma vez
 
 
-O nome da instituição responsável pela publicação do periódico deve ser 
-especificado de acordo com o registro na SciELO. 
+Contém o nome da casa publicadora (ou editora) do periódico conforme registro na SciELO.
 
-.. note:: Consulte o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` 
-          como referência na identificação dos elementos.
- 
+.. note:: O :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` deve ser consultado como referência na identificação dos elementos.
+
 Exemplo:
- 
+
 .. code-block:: xml
- 
+
     ...
     <journal-meta>
         ...
@@ -29,4 +29,6 @@ Exemplo:
         ...
     </journal-meta>
     ...
- 
+
+
+.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}

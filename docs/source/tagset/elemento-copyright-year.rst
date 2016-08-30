@@ -1,21 +1,22 @@
 .. _elemento-copyright-year:
 
 <copyright-year>
-^^^^^^^^^^^^^^^^^^
+================
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-permissions`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais
 
 
-O `<copyright-year>` deve ser utilizado para identificar o ano do direito autoral. 
-O elemento deve conter quatro dígitos e não deve haver espaço.
+Identifica o ano do direito autoral com quatro dígitos e sem espaços.
 
 Exemplo:
 
- .. code-block:: xml
+.. code-block:: xml
 
     ...
      <article-meta>
@@ -29,3 +30,4 @@ Exemplo:
      </article-meta>
 
 
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

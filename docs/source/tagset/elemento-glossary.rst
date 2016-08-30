@@ -1,26 +1,42 @@
 .. _elemento-glossary:
- 
-<glossary>
-----------
 
-Aparece em
-  :ref:`elemento-app`,
-  :ref:`elemento-back`,
-  :ref:`elemento-boxed-text`,
+<glossary>
+==========
+
+Aparece em:
+
+  :ref:`elemento-app`
+  :ref:`elemento-back`
+  :ref:`elemento-boxed-text`
   ``<glossary>``
 
 
-Ocorre
+Ocorre:
+
   Zero ou mais vezes
 
 
-Elemento ``<glossary>`` é utilizado com a finalidade de descrever um glossário para documento. O conteúdo desse elemento geralmente é uma lista de definições, apresentando elementos de ``<def-list>``. Nesse caso, utilizar as regras de :ref:`elemento-def-list`.
+Este elemento tem a finalidade de descrever um glossário para o :term:`documento`. Geralmente, seu conteúdo é uma lista de definições, apresentando elementos do tipo :ref:`elemento-def-list`.
 
-Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do atributo ``@id``.
+O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``, caso este seja utilizado.
+
+O glossário pode ser apresentado como imagem, utilizando-se o elemento ``<graphic>``, ou como texto.
+
+.. note:: Não deve ser utilizada pontuação nos elementos ``<term>`` e ``<def>``.
 
 
-Exemplo em back:
- 
+Exemplos:
+
+  * :ref:`elemento-glossary-exemplo-1`
+  * :ref:`elemento-glossary-exemplo-2`
+  * :ref:`elemento-glossary-exemplo-3`
+
+
+.. _elemento-glossary-exemplo-1:
+
+Exemplo de ``<glossary>`` em ``<back>``:
+----------------------------------------
+
 .. code-block:: xml
 
   <back>
@@ -56,8 +72,11 @@ Exemplo em back:
   </back>
 
 
-Exemplo em apêndice:
- 
+.. _elemento-glossary-exemplo-2:
+
+Exemplo de ``<glossary>`` em ``<app-group>``:
+---------------------------------------------
+
 .. code-block:: xml
 
   <back>
@@ -91,8 +110,11 @@ Exemplo em apêndice:
   </back>
 
 
-Exemplo em boxed-text:
- 
+.. _elemento-glossary-exemplo-3:
+
+Exemplo de ``<glossary>`` em ``<boxed-text>``:
+----------------------------------------------
+
 .. code-block:: xml
 
   ...
@@ -130,11 +152,4 @@ Exemplo em boxed-text:
  ...
 
 
-No elemento ``glossary`` pode ser inserido o atributo ``@id``.  
-Consulte a Sugestão de atribuição de @id para instruções sobre a composição do atributo @id.
- 
-O glossário pode ser apresentado como imagem, utilizando a tag ``<graphic>``,
-ou como texto.
-
-.. note:: Não inserir pontuação nos elementos ``<term>`` ou ``<def>``.
-
+.. {"reviewed_on": "20160625", "by": "gandhalf_thewhite@hotmail.com"}

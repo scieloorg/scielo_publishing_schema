@@ -1,14 +1,15 @@
 Copyright
 =========
 
-The JATS Standard is copyrighted by NISO, but all of the non-normative 
-information found on this repository is in the CC BY-NC 4.0 
+The *JATS Standard* is copyrighted by *NISO*. However, all non-normative information found on this repository is *CC BY-NC 4.0*.
 
 
-Licence
+License
 =======
 
 
-This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 
-International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.
+This work is licensed under the *:term:`Creative Commons` Attribution-NonCommercial 4.0 International License*.
 
+To view a copy of this license, please visit http://creativecommons.org/licenses/by-nc/4.0/.
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

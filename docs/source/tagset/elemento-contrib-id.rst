@@ -1,31 +1,34 @@
 .. _elemento-contrib-id:
- 
-<contrib-id>
-^^^^^^^^^^^^
 
-Aparece em
+<contrib-id>
+============
+
+Aparece em:
+
   :ref:`elemento-contrib`
- 
-Atributos obrigatórios
-  contrib-id-type
- 
-Ocorre
+
+Atributos obrigatórios:
+
+  1. ``@contrib-id-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
-Representa um identificador digital atribuído a um pesquisador. 
+Determina um identificador digital a um pesquisador.
 
-O atributo ``@contrib-id-type`` pode possuir os valores:
+O atributo ``@contrib-id-type`` possui os seguintes valores:
 
 +------------+-------------------------------------------------------+
 |  Valor     | Descrição                                             |
 +============+=======================================================+
-|  lattes    | identificador digital do Currículo Lattes             |
+| lattes     | Identifica um pesquisador no *Currículo Lattes*.      |
 +------------+-------------------------------------------------------+
-|  orcid     | identificador digital da ORCID Organization           |
+| orcid      | Identifica um pesquisador na *ORCID Organization*.    |
 +------------+-------------------------------------------------------+
-| researchid | identificador digital da Thomson Reuters              |
+| researchid | Identifica um pesquisador na *Thomson Reuters*.       |
 +------------+-------------------------------------------------------+
-|  scopus    | identificador digital do Scopus                       |
+| scopus     | Identifica um pesquisador no sistema da *Scopus*.     |
 +------------+-------------------------------------------------------+
 
 
@@ -35,16 +38,16 @@ Exemplo:
 
     ...
     <contrib-group>
-        <contrib>
+        <contrib contrib-type="author">
             <contrib-id contrib-id-type="orcid">0000-0001-8528-2091</contrib-id>
-            <contrib-id contrib-id-type="scopus">24771926600</contrib-id>            
+            <contrib-id contrib-id-type="scopus">24771926600</contrib-id>
             <name>
                 <surname>Einstein</surname>
                 <given-names>Albert</given-names>
             </name>
             ...
         </contrib>
-        <contrib>
+        <contrib contrib-type="author">
             <contrib-id contrib-id-type="lattes">4760273612238540</contrib-id>
             <name>
                 <surname>Meneghini</surname>
@@ -56,7 +59,12 @@ Exemplo:
     </contrib-group>
     ...
 
-.. note:: Não considerar URL para inserção em ``@contrib-id-type``. Exemplos **não** aceitos: 
-          
+
+.. note:: ``<contrib-id>`` não pode conter dados do tipo URI (URL), **não sendo aceitos** os exemplos:
+
           * ``<contrib-id contrib-id-type="lattes">http://lattes.cnpq.br/4760273612238540</contrib-id>``
           * ``<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8528-2091</contrib-id>``
+
+
+
+.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

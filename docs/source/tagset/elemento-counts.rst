@@ -1,34 +1,30 @@
 .. _elemento-counts:
 
 <counts>
---------
+========
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-article-meta`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou uma vez
 
+Elemento utilizado para contabilizar o número exato de tabelas, figuras, referências, equações e páginas presentes no documento. Deve ser inserido como último item de :ref:`elemento-article-meta`.
 
-Na elaboração do XML alguns dados são importantes para determinar a 
-quantidade de elementos presentes no artigo, por isso utiliza-se a tag 
-``<counts>`` para contabilizar o número exato de tabelas, figuras, 
-referências, equações e páginas presentes no arquivo. Esta tag deve ser 
-inserida como último item de :ref:`elemento-article-meta`.
+Os elementos que identificam os totais no :term:`documento` são:
 
- 
-Os elementos que identificam os totais são:
+* ``<fig-count>``: Total de figuras
+* ``<table-count>``: Total de tabelas
+* ``<equation-count>``: Total de equações
+* ``<ref-count>``: Total de referências
+* ``<page-count>``: Total de páginas
 
-* ``<fig-count>``: Total de figuras no :term:`documento`
-* ``<table-count>``: Total de tabelas no documento
-* ``<equation-count>``: Total de equações do documento
-* ``<ref-count>``: Total de referências no documento
-* ``<page-count>``: Total de páginas do artigo
- 
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
@@ -41,11 +37,8 @@ Exemplo:
         </counts>
     </article-meta>
     ...
- 
-.. note:: A ordem dos elementos é importante.
-          No caso de o :term:`documento` não apresentar alguns dos elementos contabilizados,
-          o valor dos respectivos atributos ``@count`` deve ser ``0``. e.g.
-          ``<equation-count count="0"/>``.
 
-.. note:: No caso de haver :ref:`elemento-article` e :ref:`elemento-sub-article`, 
-          deve-se contabilizar o total de elementos em ambos.
+.. note:: A ordem dos elementos é importante. Caso o :term:`documento` não  apresente algum dos elementos contabilizados, o valor do respectivo atributo ``@count`` deve ser ``0``. Ex.: ``<equation-count count="0"/>``. No caso de haver :ref:`elemento-sub-article` e/ou :ref:`elemento-response`, deve-se contabilizar o total de elementos em ambos.
+
+
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

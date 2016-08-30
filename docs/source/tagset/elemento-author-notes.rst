@@ -1,23 +1,24 @@
 .. _elemento-author-notes:
- 
-<author-notes>
---------------       
 
-Aparece em
+<author-notes>
+==============
+
+Aparece em:
+
   :ref:`elemento-article-meta`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-A tag de notas de autor deve ser utilizada para identificar informações como 
-correspondência, contribuição igualitária, conflitos de interesses, 
-ou seja, notas sobre autor.
+Identifica notas relacionadas ao autor, tais como: correspondência, contribuição igualitária etc.
+
 
 Exemplo:
- 
+
 .. code-block:: xml
- 
+
     ...
     <article-meta>
         ...
@@ -25,9 +26,11 @@ Exemplo:
             <corresp id="c01"><bold>Correspondence:</bold> Maria Silva, Avenida Senador Felinto Muller,s/n - Cidade Universitária, 79070-192 Campo Grande - MS Brasil,<email>maria.ra@foo.com</email></corresp>
             <fn fn-type="conflict">
                 <p>Conflict of interest: none</p>
-            </fn>     
+            </fn>
         </author-notes>
         ...
     </article-meta>
     ...
- 
+
+
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

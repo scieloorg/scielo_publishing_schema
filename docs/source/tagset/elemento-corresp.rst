@@ -1,26 +1,24 @@
 .. _elemento-corresp:
 
 <corresp>
----------
- 
-Aparece em
+=========
+
+Aparece em:
+
   :ref:`elemento-author-notes`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais vezes
 
+Elemento que engloba dados de correspondência de um ou mais autores do artigo. Pode ou não conter um elemento :ref:`elemento-label`. O atributo ``@id`` também é opcional. É possível ainda marcar a informação de correio eletrônico com ``<email>``, caso exista.
 
-Esta tag representa as informações de correspondência de um dos autores 
-do artigo. Pode ou não possuir um :ref:`elemento-label` e também o atributo 
-``@id``. É possível marcar o ``<email>`` caso inserido.
- 
-Consulte a :ref:`sugestao-atribuicao-id` para instruções sobre a composição do 
-atributo ``@id``.
- 
+O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``.
+
 Exemplo:
 
 .. code-block:: xml
- 
+
     ...
     <author-notes>
         ...
@@ -28,6 +26,8 @@ Exemplo:
         ...
     </author-notes>
     ...
- 
-.. note:: Esta tag não necessita da inserção de parágrafo :ref:`elemento-p`.
- 
+
+.. note:: Para este elemento não utilizar parágrafo (:ref:`elemento-p`).
+
+
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

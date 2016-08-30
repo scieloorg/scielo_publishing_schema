@@ -1,20 +1,34 @@
 .. _elemento-issue:
 
 <issue>
--------
- 
-Aparece em
-  :ref:`elemento-article-meta`, :ref:`elemento-element-citation`
- 
-Ocorre
-  1. Zero ou uma vez em :ref:`elemento-front`
-  2. Zero ou mais vezes em :ref:`elemento-back`
+=======
 
- 
-Em caso de suplemento de número em :ref:`elemento-front`, exemplo: ``v10n5s1``:
- 
+Aparece em:
+
+  :ref:`elemento-article-meta`
+  :ref:`elemento-element-citation`
+
+Ocorre:
+
+  1. Zero ou uma vez
+
+
+Identifica o fascículo (ou suplemento deste), seja como parte de um volume ou de fascículo especial.
+
+Exemplos:
+
+  * :ref:`elemento-issue-exemplo-1`
+  * :ref:`elemento-issue-exemplo-2`
+
+
+
+.. _elemento-issue-exemplo-1:
+
+Exemplo de Suplemento de Fascículo em ``<front>``:
+--------------------------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <front>
         ...
@@ -28,10 +42,15 @@ Em caso de suplemento de número em :ref:`elemento-front`, exemplo: ``v10n5s1``:
     </front>
     ...
 
-Em caso de número especial em :ref:`elemento-front`, exemplo: ``v10nspe``:
- 
+
+
+.. _elemento-issue-exemplo-2:
+
+Exemplo de Fascículo Especial em ``<front>``:
+---------------------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <front>
         ...
@@ -44,4 +63,6 @@ Em caso de número especial em :ref:`elemento-front`, exemplo: ``v10nspe``:
         ...
     </front>
     ...
- 
+
+
+.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}

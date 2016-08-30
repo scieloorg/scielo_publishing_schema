@@ -1,28 +1,22 @@
 .. _elemento-ack:
 
 <ack>
------
+=====
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-back`
 
-Ocorre
+Ocorre:
+
   Zero ou mais vezes
 
-A seção de agradecimentos quando aparecer no documento deve ser marcada dentro
-de :ref:`elemento-back`.
- 
-É em agradecimentos que frequentemente os dados de financiamento da pesquisa são 
-indicados, como descrito em :ref:`elemento-funding-group`
-em :ref:`elemento-front`.
- 
-Todo o conteúdo de agradecimentos deverá ser identificado com a tag ``<ack>``, 
-caso haja o título "Agradecimentos" ou "Acknowledgment" identifique-o com a tag
-``<title>``. Em ``<ack>`` é possível especificar um ou mais parágrafos
-:ref:`elemento-p`.
+Seção de agradecimentos. Frequentemente indica os dados de financiamento da pesquisa como descrito em :ref:`elemento-funding-group`.
+
+No caso de ter um título (ex. "Agradecimentos" ou "Acknowledgment") identifica-se com o elemento ``<title>``. O elemento :ref:`elemento-p` é utilizado para identificar parágrafos do texto.
 
 Exemplo:
- 
+
 .. code-block:: xml
 
     ...
@@ -34,6 +28,6 @@ Exemplo:
     </back>
     ...
 
-.. note:: Não inserir a tag :ref:`elemento-sec` para identificação da seção
-          agradecimentos.
+.. note:: Não se deve inserir o elemento :ref:`elemento-sec` para identificar uma seção de agradecimentos.
 
+.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

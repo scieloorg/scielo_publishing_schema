@@ -1,90 +1,78 @@
 .. _elemento-media:
 
 <media>
--------
+=======
 
-Aparece em
-  :ref:`elemento-p`,
-  :ref:`elemento-fig`,
-  :ref:`elemento-app`,
+Aparece em:
 
-Atributos obrigatórios
-  1. mime-subtype
-  2. xlink:href
-  3. mime-type
- 
-Ocorre
+  :ref:`elemento-app`
+  :ref:`elemento-body`
+  :ref:`elemento-fig`
+  ``<fig-group>``
+  :ref:`elemento-p`
+  :ref:`elemento-sec`
+  :ref:`elemento-table-wrap`
+  
+Atributos obrigatórios:
+
+  1. ``@mime-subtype``
+  2. ``@xlink:href``
+  3. ``@mime-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-A tag ``<media>`` é utilizada para especificar arquivos multimídia como:
+``<media>`` é usado para especificar arquivos multimídia como, por exemplo:
 
-- vídeo
-- áudio
-- filmes
-- animações
- 
-Atributos
- 
-- ``@id``
+- vídeos;
+- áudios;
+- filmes;
+- animações.
 
-Para composição do ``@id`` de ``<media>`` utiliza-se o seguinte padrão:
-``m`` + o número de ordem da media:
+``@mimetype`` é usado para especificar o tipo de mídia, por exemplo, "vídeo" ou "aplicação". ``@mime-subtype`` é usado para especificar o formato da mídia.
 
-**Exemplo:** m01... m10, m11;
+Exemplos:
 
-- **@mimetype:** utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
+ * :ref:`elemento-media-exemplo-1`
+ * :ref:`elemento-media-exemplo-2`
+ * :ref:`elemento-media-exemplo-3`
+ * :ref:`elemento-media-exemplo-4`
 
-- **@mime-subtype:** utilizado para especificar o formato da mídia.
 
-Exemplo:
- 
+.. _elemento-media-exemplo-1:
+
+Exemplo de Media generalizado:
+------------------------------
+
 .. code-block:: xml
- 
-    <media mimetype="video" 
-           mime-subtype="mp4" 
+
+    <media mimetype="video"
+           mime-subtype="mp4"
            xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
- 
 
-- @mimetype
-    utilizado para especificar o tipo de mídia como "vídeo" ou "aplicação".
- 
-Exemplo:
- 
-.. code-block:: xml
- 
-    <media mimetype="video" 
-           mime-subtype="mp4" 
-           xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
- 
 
-- **@xlink:href:** indica o link de um arquivo multimídia.
- 
-Exemplo:
- 
-.. code-block:: xml
- 
-    <media mimetype="video"  
-           mime-subtype="mp4" 
-           xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/>
- 
+.. _elemento-media-exemplo-2:
 
-Exemplo:
- 
-*Em parágrafo:*
- 
+Exemplo de Media em :ref:`elemento-p`:
+--------------------------------------
+
 .. code-block:: xml
- 
-    <p>Within the limitations of this study, it may be concluded that remaining 
-    tooth wall thickness did not influence the fatigue resistance of 
-    molars restored with CAD/CAM ceramic inlays <media mimetype="video"  
+
+    <p>Within the limitations of this study, it may be concluded that remaining
+    tooth wall thickness did not influence the fatigue resistance of
+    molars restored with CAD/CAM ceramic inlays <media mimetype="video"
     mime-subtype="mp4" xlink:href="1234-5678-rctb-45-05-0110-m01.mp4"/></p>
- 
 
-*Em figuras:*
- 
+
+.. _elemento-media-exemplo-3:
+
+Exemplo de Media em :ref:`elemento-fig`:
+----------------------------------------
+
 .. code-block:: xml
- 
+
     <p>
         <fig id="f01">
             <label>Figure 1</label>
@@ -94,12 +82,15 @@ Exemplo:
             <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
         </fig>
     </p>
- 
 
-*Em :ref:`elemento-sec` do tipo material suplementar:*
- 
+
+.. _elemento-media-exemplo-4:
+
+Exemplo de Media em :ref:`elemento-sec` do tipo Material Suplementar:
+---------------------------------------------------------------------
+
 .. code-block:: xml
- 
+
     <sec sec-type="supplementary-material">
         <title>Supplementary Material</title>
         <supplementary-material id="m1">
@@ -109,4 +100,6 @@ Exemplo:
             <media mimetype="application" mime-subtype="pdf" xlink:href="1234-5678-rctb-45-05-0110-m01.pdf"/>
         </supplementary-material>
     </sec>
- 
+
+
+.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}

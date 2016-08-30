@@ -1,22 +1,36 @@
 .. _elemento-date-in-citation:
 
 <date-in-citation>
-^^^^^^^^^^^^^^^^^^
+==================
 
-Aparece em
+Aparece em:
+
   :ref:`elemento-element-citation`
- 
-Atributos obrigatórios 
- ``@content-type``
 
-Ocorre 
+Atributos obrigatórios:
+
+  1. ``@content-type``
+
+Ocorre:
+
   Zero ou mais vezes
 
-Esta tag identifica a data de citação em uma referência. Deve sempre possuir 
-o atributo ``@content-type`` com os tipos de data de acesso e data de
-atualização do documento.
+Indica a data de citação em uma referência. O atributo ``@content-type`` é obrigatório e deve conter um valor que qualifica a data de acesso ou a data de atualização do :term:`documento`, cujos valores possíveis são:
 
-Exemplo 1:
+* ``update``;
+* ``access-date``.
+
+
+Exemplos:
+
+  * :ref:`elemento-datcitation-exemplo-1`
+  * :ref:`elemento-datcitation-exemplo-2`
+
+
+.. _elemento-datcitation-exemplo-1:
+
+Exemplo de ``<date-in-citation>`` do tipo data de acesso:
+---------------------------------------------------------
 
 .. code-block:: xml
 
@@ -26,7 +40,11 @@ Exemplo 1:
     </element-citation>
     ...
 
-Exemplo 2:
+
+.. _elemento-datcitation-exemplo-2:
+
+Exemplo ``<date-in-citation>`` do tipo data de atualização:
+-----------------------------------------------------------
 
 .. code-block:: xml
 
@@ -36,3 +54,5 @@ Exemplo 2:
     </element-citation>
     ...
 
+
+.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

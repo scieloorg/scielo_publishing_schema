@@ -1,27 +1,38 @@
 .. _elemento-role:
 
 <role>
-^^^^^^
+======
 
-Aparece em
-  :ref:`elemento-collab`, 
-  :ref:`elemento-contrib`, 
-  :ref:`elemento-contrib-group`, 
-  :ref:`elemento-element-citation`, 
-  :ref:`elemento-person-group`, 
+Aparece em:
+
+  :ref:`elemento-collab`
+  :ref:`elemento-contrib`
+  :ref:`elemento-contrib-group`
+  :ref:`elemento-element-citation`
+  :ref:`elemento-person-group`
   :ref:`elemento-product`
- 
-Ocorre
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-A tag ``<role>`` (função ou papel) é usada para especificar o cargo 
-(ou função) do contribuinte do documento.  
+``<role>`` (função ou papel) é usado para especificar o tipo de responsabilidade (ou função) do contribuinte do :term:`artigo`.
 
 Exemplos:
- 
+
+    * :ref:`elemento-role-exemplo-1`
+    * :ref:`elemento-role-exemplo-2`
+
+
+
+.. _elemento-role-exemplo-1:
+
+Exemplo de ``<role>`` em ``<contrib>``:
+---------------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <contrib contrib-type="author">
         ...
@@ -36,10 +47,14 @@ Exemplos:
         ...
     </contrib>
     ...
- 
- 
+
+.. _elemento-role-exemplo-2:
+
+Exemplo de ``<role>`` em ``<element-citation>``:
+------------------------------------------------
+
 .. code-block:: xml
- 
+
     ...
     <element-citation publication-type="journal">
         ...
@@ -60,4 +75,5 @@ Exemplos:
         ...
     </element-citation>
     ...
-      
+
+.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}

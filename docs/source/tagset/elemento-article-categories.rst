@@ -1,16 +1,29 @@
 .. _elemento-article-categories:
- 
-<article-categories>
---------------------
 
-Aparece em
+<article-categories>
+====================
+
+Aparece em:
+
   :ref:`elemento-article-meta`
- 
-Ocorre
+
+Ocorre:
+
   Uma vez
 
+Identifica a classificação do artigo de acordo com a seção em que aparece no sumário do periódico, podendo ser temática ou por tipologia do documento.
 
-Em ``<article-categories>`` classifica-se o artigo de acordo com a seção 
-que aparece no sumário do periódico. Esta classificação pode ser temática 
-ou por tipologia do documento.
- 
+Exemplo:
+
+.. code-block:: xml
+
+    ...
+    <article-categories>
+         <subj-group subj-group-type="heading">
+              <subject>Artigo Original</subject>
+         </subj-group>
+    </article-categories>
+    ...
+
+
+.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

@@ -6,210 +6,214 @@ Glossário
 .. glossary::
    :sorted:
 
+
+   AACR2
+     Sigla de *Anglo-American Cataloguing Rules* (Código de Catalogação Anglo Americano). Sistema classificatório internacional e amplamente aceito, que subsidia o tratamento da informação para construção de catálogos e listas em bibliotecas de quaisquer tamanhos. Para maiores detalhes ver `AACR2 <http://www.aacr2.org/>`_ .
+
+
+   ABNT
+     Sigla de *Associação Brasileira de Normas Técnicas*. Fundada em 28 de setembro de 1940, é uma entidade privada e sem fins lucrativos, membro fundador da *International Organization for Standardization* (*ISO*), cuja missão é a elaboração de normas técnicas Brasileiras (*ABNT NBR*), por meio de seus comitês, unidades setoriais e comissões de estudo. Para maiores informações ver `ABNT - Associação Brasileira de Normas Técnicas <http://www.abnt.org.br/>`_.
+
+
+   ahead of print
+     O sistema *Ahead of Print* de publicação de artigos, disponibiliza online os trabalhos aprovados pela equipe editorial de um periódico antes mesmo de sua publicação impressa tornar-se acessível aos leitores. Apesar de disponível em rede, os artigos seguem o fluxo editorial de publicação impressa - ou online - até que estejam prontos para serem inseridos em um número. O processo permite antecipar em alguns meses a publicação impressa do número do períodico.
+
+
+   AOP
+     Sigla de *Ahead of Print* (Publicação antecipada). Ver :term:`ahead of print`.
+
+
+   APA
+      Acrónimo de *American Psychological Association* (Associação Americana de Psicologia). Principal organização científica e profissional em psicologia nos Estados Unidos, tem como missão avançar na criação, comunicação e aplicação de conhecimento em psicologia para benefício da sociedade e melhora da qualidade de vida das pessoas. Para maiores informações ver `American Psychological Association (APA) <http://www.apa.org/>`_.
+
+
+   Artigo
+     Forma reduzida comum de *artigo científico*. Refere-se a um :term:`documento` produzido a partir de estudos, investigações, experimentos, práticas e teorias - de cunho científico -, como forma de disseminar a informação e os avanços ocorridos nas diversas áreas do conhecimento. Um artigo clássico possui vários elementos, tais como título, autor, afiliação, palavras-chave, resumo, textos de introdução, desenvolvimento e conclusões da pesquisa ou estudo realizado, referências bibliográficas e apêndices. Artigos acadêmicos são geralmente publicados em periódicos científicos sob critérios de qualidade definidos pela casa publicadora, podendo tambem ocorrer em anais de congressos, conferências, seminários e reuniões técnicas.
+
+
+   Creative Commons
+     Organização sem fins lucrativos de caráter global que permite compartilhar e reutilizar criatividade e conhecimento por meio de termos legais padronizados e livres de custo, mantendo-se *copyright* de autoria e de contribuição. Há vários tipos de licenciamento, cada um prevendo um nível de responsabilidade em relação ao objeto do licenciamento e seu uso. Para maiores informações ver `Creative Commons Corporation - About CC <https://creativecommons.org/faq/#what-is-creative-commons-and-what-do-you-do>`_.
+
+
+   csv
+     Sigla de *Comma-separated values* (valores separados por vírgulas). Refere-se a um arquivo de computador onde a informação é apenas textual, separada por vírgula (modo padrão) e armazenada em formato tabular. Para maiores informações ver `CSV in Wikipedia <https://en.wikipedia.org/wiki/Comma-separated_values>`_.
+
+
+   Currículo Lattes
+     Base de dados de currículos acadêmicos que, em conjunto com as bases de grupos de pesquisa e de instituições, constitui o sistema de informações da *Plataforma Lattes* desenvolvida pelo *CNPq*. A informação disponível na plataforma permite a correta identificação de pesquisadores e cientistas, grupos e linhas de pesquisa, instituições de pesquisa e ensino, e agências de fomento, apoiando as atividades de planejamento,  gestão e formulação de políticas públicas de pesquisa em orgãos governamentais das áreas de ciência, tecnologia e inovação. Para maiores informações ver `Site do CNPq - Sobre a Plataforma Lattes <http://lattes.cnpq.br/>`_.
+
+
    DTD
-     *Document Type Definition* - conjunto de declarações de marcação que definem
-     o tipo do documento. Aplicável para documentos da família *SGML*, como o 
-     :term:`XML` por exemplo.
+     Sigla de *Document Type Definition*, refere-se ao conjunto de declarações de marcação que definem a estrutura, os elementos e os atributos de um tipo de documento. Aplicável para documentos da família :term:`SGML` como, por exemplo, o :term:`XML`. Para maiores informações ver `Document Type Definition in Wikipedia <https://en.wikipedia.org/wiki/Document_type_definition>`_.
+
+
+   Declaração do XML
+     Chamada também de *Prólogo do XML*, consiste de instruções para leitura e processamento do documento XML pelo programa de computador. Deve, minimamente, especificar a versão da linguagem utilizada para que o programa se comporte como esperado.
+
+
+   Documento
+     Quando mencionado no :term:`SciELO PS`, refere-se a toda a estrutura descrita em um arquivo :term:`XML`.
+
+
+   DOI
+     Sistema de identificação de objetos digitais em conformidade com a norma *ISO 26324*. É mantido e governado pela *International DOI Foundation* (IDF), uma organização sem fins lucrativos que provê serviços de registro e atua como autoridade referencial do sistema para as agências de registro. Para maiores informações ver `Digital Object Identifier System <http://www.doi.org/>`_.
+
+
+   elemento-pai
+     Elemento *XML* hierarquicamente superior ao elemento atual.
+
+
+   Estilo SciELO PS
+     Conjunto de regras que especializam aspectos da especificação :term:`JATS Publishing`.
+
+
+   HTML
+     Sigla de *HyperText Markup Language* (Linguagem de Marcação de Hipertexto). Principal linguagem de marcação para criação de páginas de Internet cujos elementos formam os blocos de construção de todos os sites da web. Desenvolvida e mantida pelo *World Wide Web Consortium* (*W3C*) a partir do :term:`SGML`, foi primariamente designada como linguagem de descrição semântica de documentos científicos. Suas várias versões deram origem a novas tecnologias e padrões, entre eles *XHTML*, *CSS*, *DOM*, *XML*, *XSLT* apenas para citar alguns. Para maiores informações ver `W3C HTML <https://www.w3.org/html/>`_.
+
+
+   ISBN
+     Sigla de *International Standard Book Number* (Numeração padronizada internacional de livros). Criado em 1967, e oficializado como norma internacional em 1972, é um sistema que identifica numericamente quaisquer livros segundo seu título, autor, país e editora, individualizando-os inclusive por edição. Pode também identificar software e permite que seu sistema numérico seja convertido em código de barras, sendo amplamente utilizado por livrarias, bibliotecas e serviços de localização como identificador único de obras. Para maiores informações ver `ISBN <http://www.isbn.bn.br/website/>`_.
+
+
+   ISO
+     Acrónimo de *International Organization for Standardization* (Organização Internacional para Padronização). Orgão internacional independente e não governamental, com uma adesão de 163 entidades nacionais de normalização. Criado em Genebra em 1947, é responsável, através de seus membros, por compartilhar conhecimento e expertise, e desenvolver, de forma voluntária e consensual, normas internacionais relevantes para apoiar a inovação e prover soluções para os desafios globais. No Brasil, a ISO é representada pela :term:`ABNT`. Para maiores informações ver `ISO - International Organization for Standardization <http://www.iso.org/iso/home.html>`_.
+
+
+   ISO 3166
+     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define códigos de duas letras para países e suas subdivisões. Para maiores informações ver `ISO 3166 - Country codes <http://www.iso.org/iso/country_codes>`_.
+
+
+   ISO 3297:2007
+     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define e promove o uso do :term:`ISSN` como código padronizado de identificação de periódicos e outros recursos seriados. Cada *ISSN* é único para um periódico específico em uma mídia definida. A norma também descreve um mecanismo de ligação (*linking ISSN* - ISSN-L) para prover uma associação entre as diferentes mídias do mesmo recurso. Para maiores informações ver `ISO 3297:2007 - Information and documentation - International standard serial number (ISSN) <http://www.iso.org/iso/catalogue_detail?csnumber=39601>`_.
+
+
+   ISO 639-1
+     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define códigos de duas letras para a maioria dos idiomas do mundo. Para maiores informações ver `Language Codes - ISO 639 <http://www.iso.org/iso/home/standards/language_codes.htm>`_.
+
+
+   ISSN
+     Sigla de *International Standard Serial Number* (Numeração padronizada internacional de periódicos). Código de 8 (oito) dígitos usado para identificar jornais, periódicos, revistas, relatórios, coleções, sites e bases de dados de todos os tipos e em todas as mídias - impressa e eletrônica. Os critérios para identificação e registro são gerenciados pela rede do ISSN a partir de seu *International Centre for the registration of serial publications* (*CIEPS*), encontrando-se normalizado pela :term:`ISO 3297:2007` - Information and Documentation. Para maiores informações ver `ISSN <http://www.issn.org/>`_.
+
+
+   JATS
+     Acrónimo de *Journal Article Tag Suite* (Coleção de Elementos de Artigos de Periódicos). Para maiores informações ver `Journal Article Tag Suite <http://jats.nlm.nih.gov/index.html>`_. 
+
+
+   JATS Publishing
+     Modelo de artigos de periódicos, baseado na :term:`JATS` e otimizado para que acervos possam ter seus conteúdos normalizados e controlados independente da sequência ou esquema definidos por uma casa publicadora específica. Para maiores informações ver `JATS - Journal Publishing Tag Set <https://jats.nlm.nih.gov/publishing/>`_.
+
+
+   Markup
+     Termo em inglês que define uma operação de *marcação* em um :term:`documento` textual de acordo com um padrão previamente definido. Na *SciELO*, *markup* refere-se ao processo de inclusão de elementos :term:`XML` para identificar, qualificar e agrupar informação de um artigo de periódico durante sua incorporação na base de dados. Refere-se também ao nome do programa que apoia o processo de marcação. Para maiores informações ver `SciELO - Scientific Electronic Library Online <http://www.scielo.org/>`_.
+
+
+   MathML
+     Acrónimo de *Mathematical Markup Language* - (Linguagem de Marcação Matemática). Especificação de baixo nível para conteúdo matemático e científico na Internet e mídias similares. Criado e mantido pelo *Math Working Group* (Grupo de trabalho de matemática) do :term:`W3C` (*World Wide Web Consortium), tornou-se padrão regulamentado pela :term:`ISO` por meio da norma *ISO/IEC 40314:2015*. Para maiores informações ver `W3C Math Home <https://www.w3.org/Math/>`_.
+
+
+   Metodologia SciELO
+     Conjunto de normas, termos de referência, especificações, métodos, processos e programas aplicativos desenvolvidos a partir do :term:`Projeto SciELO` - iniciado em 1997 - para a publicação eletrônica de edições completas de periódicos científicos, a organização de bases de dados bibliográficas e de textos completos, a recuperação de textos por seu conteúdo, a preservação de arquivos eletrônicos e a produção de indicadores estatísticos de uso e impacto da literatura científica. A Metodologia também inclui critérios de avaliação de revistas, baseado nos padrões internacionais de comunicação científica. Os textos completos são enriquecidos dinamicamente com links de hipertexto com bases de dados nacionais e internacionais, como por exemplo, *LILACS* e *MEDLINE*. Para maiores informações ver `SciELO - Scientific Electronic Library Online <http://www.scielo.org/>`_.
+
+
+   Microsoft Word
+     Programa de computador para processamento de texto desenvolvido pela *Microsoft Corporation*. Na *SciELO* é utilizado para apoiar o processo de marcação. Para maiores informações ver `Microsoft Word - Document and word processing software <https://products.office.com/en/word>`_.
+
+
+   Namespace
+     Conjunto de símbolos utilizados para organizar e referenciar objetos de vários tipos através de um nome. São geralmente estruturados como hierarquias para permitir sua reutilização em contextos diferentes. Para maiores informações ver `Namespace in Wikipedia <https://en.wikipedia.org/wiki/Namespace>`_.
+
+
+   NISO
+     Acrónimo de *National Information Standards Organization* (Organização Nacional de Normas de Informação). É uma associação sem fins lucrativos, acreditada pelo *ANSI* (*American National Standards Institute*), que identifica, desenvolve, mantém e publica normas técnicas para gerenciar informação no ambiente digital da atualidade em constante transformação. Para maiores informações ver `NISO site <http://www.niso.org/home/>`_.
+
+
+   NISO JATS Journal Publishing DTD
+     Coleção de elementos e atributos definidos em formato *XML*, conformando a norma *NISO Z39.96-2015*, que permite descrever através de marcação três modelos de artigos de periódicos. Para maiores informações ver `JATS: Journal Publishing Tag Set <http://jats.nlm.nih.gov/publishing/>`_.
+
+
+   NISO JATS table model
+     (Modelo de tabela NISO JATS). Modelo de codificação de dados tabulados, baseado e projetado para ser convertido facilmente ao modelo de tabela do *XHTML* 1.1. Para maiores informações ver `Element Table (NISO JATS table model) <https://jats.nlm.nih.gov/archiving/tag-library/1.1d1/n-by90.html>`_.
+
+
+   open source
+     (Código aberto). É todo e qualquer programa de código fonte, disponível por meio de uma licença de uso gratuita e global e, que permite ao mesmo tempo, preservar a autoria do referido código e conceder ao usuário seu estudo, modificação e distribuição para quaisquer pessoas ou finalidades, mantidas as características originais de uso e compartilhamento. Para maiores informações ver `Open Source Software in Wikipedia <https://en.wikipedia.org/wiki/Open-source_software>`_.
+
+ 
+   Package Maker
+     Literalmente, um empacotador, o *XML Package Maker* é uma ferramenta que permite gerar arquivos :term:`XML` para uso da *SciELO* e do *PMC*. Para maiores informações ver `XML Package Maker <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>`_.
+
+
+   Packtools
+     Conjunto de ferramentas online do *SciELO Manager* que permitem validar a sintaxe de arquivos :term:`XML` com a :term:`SciELO PS` e também visualizar o conteúdo destes arquivos em formato *HTML*. Para maiores informações ver `Packtools <http://manager.scielo.org/tools/validators/stylechecker/>`_. 
+
+
+   Pacotes SciELO PS
+     Arquivos de computador no formato *.zip*, cada um representando um número (fascículo), com todos os arquivos :term:`XML`, e respectivos arquivos *PDF* e outros ativos digitais.
+
+
+   PMC
+     Sigla de *PubMed Central*. Compreende um repositório de livre acesso de texto completo da literatura científica nas áreas de biomedicina e ciências correlatas, disponível na *National Library of Medicine* por meio dos institutos nacionais de saúde norte-americanos. Também refere-se ao sistema de submissão de artigos científicos com base em padrões definidos pela instituição. Para maiores informações ver `PMC Overview <http://www.ncbi.nlm.nih.gov/pmc/about/intro/>`_.  
+
+
+   Pubmed
+     Sistema que compreende mais de 26 milhões de citações para literatura biomédica proveniente do *MEDLINE*, periódicos de ciências médicas e livros online. As citações podem incluir links para o texto completo no *Pubmed Central* e para sites publicadores na Internet. Para maiores informações ver `Home - PubMed - NCBI <http://www.ncbi.nlm.nih.gov/pubmed>`_.
+
+
+   Python
+     Linguagem de programação orientada a objetos, portável, interativa e interpretada, utilizada para escrever software, scripts de controle de sistemas operacionais, entre outros. Para maiores informações ver `Python site <https://www.python.org/>`_.
+
+
+   RST
+     Sigla de *reStructuredText* (Texto reestruturado). É uma sintaxe de marcação de texto plano, além de ser um componente de parser do software *DocUtils*. Permite realizar marcação inline em arquivos texto através de editores simples como o *Bloco de Notas* do *Windows* e o *vim* do *Linux* para formatação de conteúdo, seja para apresentação na tela ou para formatação de uma saída impressa com qualidade. Foi primariamente desenvolvido para apoiar na documentação de código em linguagem :term:`Python`. Para maiores informações ver `reStrucutredText <http://docutils.sourceforge.net/rst.html>`_.
+
+
+   SciELO Manager
+     Serviço *online* com acesso identificado para gerenciamento de periódicos da *SciELO*. Para maiores informações ver `SciELO Manager <http://manager.scielo.org/accounts/login/>`_.
+
+
+   SciELO PS
+     Forma abreviada de :term:`SciELO Publishing Schema`.
 
 
    SciELO Publishing Schema
-     Especificação do modelo de dados, no formato XML, para a submissão de artigos
-     para coleções SciELO. É composta pela especificação 
-     `NISO JATS Journal Publishing DTD <http://jats.nlm.nih.gov/publishing/>`_ 
-     na versão 1.0 mais o :term:`Estilo SciELO`, que são regras que especializam 
-     aspectos da especificação :term:`JATS Publishing`.
-     
-   
-   SciELO PS
-     Forma abreviada de :term:`SciELO Publishing Schema`.
-     
-   
-   Estilo SciELO
-     Conjunto de regras que especializam aspectos da especificação 
-     :term:`JATS Publishing`. 
-   
+     Composta pelas especificações: :term:`NISO JATS Journal Publishing DTD`, versão 1.0; e :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
 
-   XML
-     *eXtensible Markup Language* - linguagem de marcação, baseada em *SGML*, 
-     que define um conjunto de regras para codificar documentos de texto de 
-     maneira legível tanto para seres humanos quanto para máquinas.
-   
- 
-   open-source
-     Programa de código aberto com código fonte disponível e licenciado com 
-     "uma licença de código aberto no qual o direito autoral fornece o direito 
-     de estudar, modificar e distribuir o programa de forma gratuita para 
-     qualquer um e para qualquer finalidade". (SOFTWARE de Código Aberto, 2014)
-   
-
-   Python
-     Linguagem de programação utilizada para escrever softwares, scripts de 
-     controle de sistemas operacional, entre outros.
-   
-   
-   Pacotes SciELO PS
-     Pacote no formato *.zip* que representa um artigo e todos os seus
-     ativos estáticos. Deve conter apenas 1 arquivo :term:`XML`, conforme a 
-     especificação :term:`SciELO Publishing Schema`, referente ao
-     texto completo.
-   
-   
-   csv
-     *Comma-separated values* - formato para codificação de dados tabulares em 
-     texto puro. Geralmente utiliza vírgula como separador de dados nas tuplas.
-   
-   
-   tag set
-     Subconjunto de elementos XML descritos na *Tag Suite* da especificação 
-     :term:`JATS`.
-
-     .. seealso::
-
-        Leia mais na `documentação oficial da especificação JATS
-        <http://jats.nlm.nih.gov/faq.html#faq5>`_.
-
-   ahead-of-print
-     O sistema “Ahead of Print” de publicação de artigos, disponibiliza online 
-     os trabalhos aprovados pela equipe editorial de um periódico antes mesmo 
-     da publicação impressa estar acessível aos leitores. Apesar de disponível 
-     em rede, o artigo segue o fluxo editorial de publicação impressa ou online 
-     até que esteja pronto para ser inserido em um número. O processo poderá 
-     antecipar em até alguns meses a publicação impressa.
-
-   DOI
-     *Digital Object Identifier* - identificador único de conteúdos digitais.
-     
-   Documento
-     Um documento quando mencionado no SciELO PS, compõe toda a estrutura 
-     descrita em um arquivo XML.
-     
-   UTF-8 
-     *8-bit Unicode Transformation Format* – "é um tipo de codificação Unicode 
-     de comprimento variável (...) Pode representar qualquer carácter universal 
-     padrão Unicode, sendo também compatível com o ASCII." (UTF-8, 2014).
-
-   JATS Publishing
-     Modelo de artigos, baseado na :term:`JATS`, otimizado para o arquivamento 
-     regularizado e controle do conteúdo.
-
-   JATS
-     *Journal Article Tag Suite* - é a aplicação da norma NISO Z39.96-2012 que 
-     define elementos e atributos para a descrição de metadados e conteúdo 
-     completo de artigos de periódicos. A JATS inclui três modelos de artigos, 
-     ou *Tag Sets*: *Journal Archiving and Interchange*, *Journal Publishing* e 
-     *Article Authoring*.
-
-   ISBN
-     Criado em 1967 e oficializado como norma internacional em 1972, o 
-     ISBN - International Standard Book Number - é um sistema que identifica 
-     numericamente os livros segundo o título, o autor, o país e a editora, 
-     individualizando-os inclusive por edição.
 
    Seções de primeiro nível
-     Principal divisão do texto de um documento (ABNT, 2003, p.2)
+     Principal divisão do texto de um documento (ABNT, 2003, p.2).
 
-   W3C
-     O World Wide Web Consortium (W3C) é a principal organização de padronização 
-     da World Wide Web. Consiste em um consórcio internacional com quase 400 
-     membros, agrega empresas, órgãos governamentais e organizações independentes 
-     com a finalidade de estabelecer padrões para a criação e a interpretação 
-     de conteúdos para a Web.
-
-   MathML
-     *Mathematical Markup Language* - (Linguagem de Marcação Matemática) (MathML) 
-     é uma aplicação do :term:`XML` para representar símbolos e fórmulas matemáticas, 
-     apontada na integração dela em documentos World Wide Web. 
-     Ela é uma recomendação do grupo de trabalho matemático do :term:`W3C`" [1]_.
-
-   NISO JATS table model
-     **definição pendente**
-
-   ABNT
-     Fundada em 1940, a Associação Brasileira de Normas Técnicas (ABNT) é o 
-     órgão responsável pela normalização técnica no país, fornecendo a base 
-     necessária ao desenvolvimento tecnológico brasileiro. É membro fundador 
-     da :term:`ISO` (International Organization for Standardization), da 
-     COPANT (Comissão Panamericana de Normas Técnicas) e da 
-     AMN (Associação Mercosul de Normalização).
-
-   Vancouver
-     Guia e orientação criado em 1978 por um grupo de editores da área médica 
-     em Vancouver, British Columbia, para a normalização dos manuscritos submetidos 
-     aos periódicos. O grupo ficou conhecido como Grupo de Vancouver. 
-     Os requisitos para manuscritos, incluindo  formatos para referências bibliográficas, 
-     desenvolvido pela National Library of Medicine, foram publicados pela primeira 
-     vez em 1979. O grupo se expandiu e evoluiu para o International Committte of 
-     Medical Journals Editors (ICMJE). O ICMJE gradualmente ampliou sua atuação 
-     incluindo também princípios sobre ética médica nas publicações em periódicos 
-     da área biomédica.
-
-   APA
-      A norma APA (American Psychological Association) foi desenvolvida há 80 
-      anos por um grupo de cientistas sociais que desejava estabelecer padrões 
-      de comunicação. É uma norma utilizada por pesquisadores das áreas de 
-      ciências sociais e comportamentais para a normalização de seus trabalhos 
-      científicos. A APA publica um manual de estilo que oferece orientação 
-      sobre todos os aspectos do processo de escrita, ética de autoria, escolha 
-      dos melhores termos para a linguagem dos artigos e orientação sobre 
-      escolha de títulos, figuras e tabelas que facilitam a comunicação 
-      científica.
-
-   ISO
-     *International Organization for Standardization* - entidade de padronização 
-     e normatização criada em Genebra, Suiça, em 1947. "Tem como objetivo principal 
-     aprovar normas internacionais em todos os campos técnicos, como normas técnicas, 
-     classificação de países, normas de procedimentos e processos etc.  
-     No Brasil, a ISO é representada pela :term:`ABNT`." [2]_.
-
-   ISO 639-1
-     "é uma norma técnica da ISO especificando códigos para o nome de idiomas. 
-     É aplicada em áreas como linguística, lexicografia, terminologia e bibliografia. 
-     Na Internet, por exemplo, é usada para indicar a língua em que se encontra 
-     um documento html ou um trecho do mesmo. A Parte 1: código alfa-2 é composta 
-     por códigos de quinhentas mil letras, e foi criada para codificar apenas 
-     os "briocos do mundo, para quais terminologias especializadas tenham sido desenvolvidas". 
-     Em geral, mas não necessariamente, constitui uma abreviação do nome da 
-     língua em inglês; todos os códigos representam línguas individuais, 
-     nunca coletivos." [3]_.
 
    SGML
-     *Standard Generalized Markup Language* - é uma metalinguagem através da 
-     qual se pode definir linguagens de marcação para documentos, a SGML 
-     providencia uma variedade de sintaxes de marcação que podem ser usadas 
-     por várias aplicações. :term:`HTML` e :term:`XML` são ambas derivadas do SGML.
-
-   HTML
-     *HyperText Markup Language* - (Linguagem de Marcação de Hipertexto) consiste 
-     de uma aplicação específica do :term:`SGML` utilizada para produção de 
-     páginas na web, que permite a criação de documentos que podem ser lidos 
-     em praticamente qualquer tipo de computador e transmitidos pela internet.
-
-   ISSN
-     *International Standard Serial Number* - é um código numérico que constitui 
-     um identificador unívoco para cada título de publicação em série. cujos 
-     componentes não têm um significado especial em si próprios. O sistema ISSN 
-     é definido pela norma :term:`ISO 3297:2007` - Information and Documentation. 
-
-   ISO 3297:2007 
-     Define e promove o uso de um código padrão (ISSN) para a identificação 
-     única de periódicos e outros recursos contínuos. Esta norma também 
-     descreve um mecanismo, de "vinculação ISSN (ISSN-L)", que prevê a 
-     correlação entre as diferentes versões de mídia do mesmo recurso contínuo.
+     Sigla de *Standard Generalized Markup Language* (Linguagem de marcação de padrão universal). Metalinguagem definida pela *ISO 8879:1986*, é utilizada para definir linguagens de marcação, tais como :term:`HTML` :term:`XML`. Para maiores informações ver `Overview of SGML <https://www.w3.org/MarkUp/SGML/>`_ e `ISO 8879:1986 - Information Processing - Text and office systems - Standard Generalized Markup Language (SGML) <http://www.iso.org/iso/catalogue_detail.htm?csnumber=16387>`_.
 
 
-Referências bibliográficas
---------------------------
+   Stylechecker
+     Utilitário online do *SciELO Manager* para validação de arquivos :term:`XML` em conformidade com a :term:`SciELO PS`. Para maiores informações ver `Packtools - Style Checker <http://manager.scielo.org/tools/validators/stylechecker/>`_.
 
-.. [1] MathML. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/MathML>. Acesso em: 29 set. 2014.
-.. [2] O QUE é ISO. In: Significados.com.br.  [S.l.: s.n.], [20--]. Disponível em: <http://www.significados.com.br/iso/>. Acesso em: 29 set. 2014.
-.. [3] ISO 639. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/ISO_639>. Acesso em: 29 set. 2014.
-.. [4] INTERNATIONAL COMMITTEE OF MEDICAL JOURNAL EDITORS. Norma Vancouver. [S.l.], [20--?]. Disponível em: <http://www.icmje.org/>. Acesso em: 29 set. 2014.
-.. [5] AMERICAN PSYCHOLOGICAL ASSOCIATION. Norma APA. Washington, [20--?]. Disponível  em: <http://www.apa.org/>. Acesso em: 29 set. 2014.
-.. [6] US NATIONAL LIBRARY OF MEDICINE. Journal Article Tag Suite. Bethesdam, [20--]. Disponível em: <http://jats.nlm.nih.gov/>. Acesso em: 30 set. 2014.
-.. [7] US NATIONAL LIBRARY OF MEDICINE. Journal Publishing Tag Set. Bethesdam, [20--]. Disponível em: <http://jats.nlm.nih.gov/publishing/>. Acesso em: 30 set. 2014.
-.. [8] ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6024: informação e documentação: numeração progressiva das seções de um documento esrito: apresentação. Rio de Janeiro, 2003.
-.. [9] LICENÇAS Cretive Commons. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/Licen%C3%A7as_Creative_Commons>. Acesso em: 17 set. 2014.
-.. [10] SCIENTIFIC ELECTRONIC LIBRARY ONLINE. Orientação para publicar artigos em Ahead of Print (AOP) no SciELO. São Paulo, 2014. Disponível em: <http://www.scielo.org/php/level.php?lang=pt&component=56&item=60>. Acesso em: 17 set. 2014.
-.. [11] SOFTWARE de Código Aberto. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/Software_de_c%C3%B3digo_aberto>. Acesso em: 17 set. 2014.
-.. [12] UTF-8. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/UTF-8>. Acesso em: 17 set. 2014.
 
+   tag set
+     Subconjunto de elementos :term:`XML` descritos na *Tag Suite* da especificação :term:`JATS`. Para maiores informações ver `documentação oficial da especificação JATS <http://jats.nlm.nih.gov/faq.html#faq5>`_.
+
+
+   Unicode
+     Norma internacional para representação de caracteres independente de idioma, plataforma e programa utilizados. Desenvolvido pelo *Unicode Consortium*, é amplamente utilizado na indústria e nas áreas acadêmicas por permitir uma melhor integração entre sistemas, comunidades, ferramentas de busca e aplicativos em geral. Para maiores informações ver `Unicode Consortium <http://unicode.org/>`_.
+
+
+   UTF-8
+     Sigla de *8-bit Unicode Transformation Format* (Formato de transformação Unicode de 8 bits). É uma codificação da norma Unicode baseada em bytes (8 bits). A codificação compreende sequências para representação dos caracteres definidos pela Unicode, sendo definida como anexo da norma ISO/IEC 10646. Para maiores informações ver `FAQ - UTF-8, UTF-16, UTF-32 e BOM <http://unicode.org/faq/utf_bom.html>`_.
+
+
+   Vancouver
+     Conjunto de normas definidas, publicadas e mantidas pelo *International Committee of Medical Journal Editors* (ICMJE). A entidade é composta de um diminuto grupo de trabalho de editores de periódicos médicos que se reune anualmente para deferir recomendações, condutas, relatórios, normas para editoração e publicação de trabalhos técnicos em periódicos médicos. As normas são amplamente utilizadas nas áreas de medicina, biotecnologia, biomedicina e ciências da saúde, principalmente pela *National Library of Medicine* (NLM). Para maiores informações ver `ICMJE - Home <http://www.icmje.org/>`_. 
+
+
+   W3C
+     Sigla em forma reduzida de *World Wide Web Consortium* (Consórcio da Rede Global). Comunidade internacional onde suas organizações-membro, um time de tempo integral e seu público usuário interagem para desenvolver padrões para a Internet com intuito de conduzi-la ao seu pleno potencial. Para maiores informações ver `About W3C <https://www.w3.org/Consortium/>`_.
+
+
+   XML
+     Sigla de *eXtensible Markup Language* (Linguagem de Marcação Extensível). Conjunto de regras baseado em *SGML* para codificação de documentos textuais de maneira legível para seres humanos e máquinas, desenvolvido pelo *W3C* (*World Wide Web Consortium*). Para maiores informações ver `XML in Wikipedia <https://en.wikipedia.org/wiki/XML>`_.
+
+
+
+.. {"reviewed_on": "20160824", "by": "gandhalf_thewhite@hotmail.com"}

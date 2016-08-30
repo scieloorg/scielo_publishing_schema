@@ -1,33 +1,51 @@
 .. _elemento-ext-link:
 
 <ext-link>
-----------
+==========
 
-Aparece em
-  :ref:`elemento-p`,
-  :ref:`elemento-element-citation`, 
-  :ref:`elemento-comment`,
+Aparece em:
 
-Atributos obrigatórios
-  1. ext-link-type="uri"
-  2. xlink:href
- 
-Ocorre
+  :ref:`elemento-comment`
+  :ref:`elemento-element-citation`
+  :ref:`elemento-p`
+  :ref:`elemento-product`  
+
+Atributos obrigatórios:
+
+  1. ``@ext-link-type``
+  2. ``@xlink:href``
+
+Ocorre:
+
   Zero ou mais vezes
 
-Utilizado para especificar referências a recursos disponíveis na internet. As 
-únicas restrições quanto à sua utilização são:
+Especifica referências a recursos disponíveis na internet. As únicas restrições quanto à sua utilização são:
 
-* O *scheme* deve ser explícito, i.e., deve começar com ``http://``, ``ftp://``, 
-  ``urn:`` etc.
+* O *scheme* deve ser explícito, ou seja, deve começar com ``http://``, ``ftp://``,   ``urn:`` etc;
 * Referências locais, por meio do *scheme* ``file://`` não são permitidas.
 
+Os valores possíveis para o ``@ext-link-type`` são:
 
-Exemplo:
- 
+* uri
+* ClinicalTrial
+
+
+Exemplo URL:
+
 .. code-block:: xml
- 
+
     ...
     <p>Neque porro quisquam est <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link> qui dolorem ipsum quia</p>
     ...
- 
+
+
+Exemplo Ensaio Clínico:
+
+.. code-block:: xml
+
+  ...
+    <ext-link ext-link-type="ClinicalTrial" xlink:href="https://clinicaltrials.gov/ct2/show/NCT01995279?term=NCT01995279">NCT01995279</ext-link>
+  ...
+    
+
+.. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}

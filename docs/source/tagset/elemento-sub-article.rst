@@ -1,57 +1,56 @@
 .. _elemento-sub-article:
- 
-<sub-article>
--------------
 
-Aparece em
-  :ref:`elemento-article`,
+<sub-article>
+=============
+
+Aparece em:
+
+  :ref:`elemento-article`
   ``<sub-article>``
 
 
-Atributos obrigatórios
-  1. article-type
-  2. id (Ver :ref:`sugestao-atribuicao-id`)
-  3. xml:lang
+Atributos obrigatórios:
 
-Ocorre
+  1. ``@article-type``
+  2. ``@id`` (Ver :ref:`sugestao-atribuicao-id`)
+  3. ``@xml:lang``
+
+Ocorre:
+
   Zero ou mais vezes
 
 
-Tag utilizada para identificar artigos que estão dentro de outro artigo. 
-Geralmente os sub-artigos herdam os metadados do artigo pai e, para isso, é 
-necessário inserir uma tag :ref:`elemento-front-stub`
+Identifica um artigo dentro de outro. Geralmente, os sub-artigos herdam os metadados do artigo pai, sendo portanto necessário inserir um elemento :ref:`elemento-front-stub`.
 
-Para verificar os possíveis valores de ``@article-type`` em ``<sub-article>`` veja o quadro abaixo:
+Os valores possíveis de ``@article-type`` em ``<sub-article>`` são:
 
 +--------------------+----------------------------------------------------------+
 | Valor              | Descrição                                                |
 +====================+==========================================================+
 |                    | resumo - uma apresentação precisa e resumida de uma      |
-| abstract           | obra sem agregar interpretação ou crítica, acompanhado   |
+| abstract           | obra sem agregar interpretação ou crítica, acompanhada   |
 |                    | de uma referência bibliográfica da obra original.        |
 +--------------------+----------------------------------------------------------+
 |                    | cartas - comunicação entre pessoas ou instituições       |
-| letter             | através de cartas. Geralmente comentando um trabalho     |
-|                    | publicado                                                |
+| letter             | através de cartas. Geralmente, comentando um trabalho    |
+|                    | publicado.                                               |
 +--------------------+----------------------------------------------------------+
-|                    | resposta- resposta a uma carta ou a um comentário, que   |
+|                    | resposta - resposta a uma carta ou a um comentário que   |
 | reply              | não está diretamente relacionado ao artigo principal.    |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | tradução. Utilizado para artigos que apresentam tradução |
-| translation        | de um artigo produzido em idioma diferente.              |
+|                    | tradução - utilizado para o texto traduzido de um artigo |
+| translation        | produzido em idioma diferente.                           |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
 
-Para ``@xml:lang``, utilizar código de duas letras conforme norma :term:`ISO 639-1`. 
-Para uma lista completa dos códigos disponíveis e mais informações sobre a 
-norma :term:`ISO 639-1`, acesse http://www.mathguide.de/info/tools/languagecode.html.
- 
+``@xml:lang`` deve conter um código alfabético de duas letras conforme norma :term:`ISO 639-1`. Uma lista completa dos códigos disponíveis e demais informações encontram-se disponíveis na página `Language codes according to ISO 639-1 <http://www.mathguide.de/info/tools/languagecode.html>`_.
 
-Exemplo da tag completa:
- 
+
+Exemplo:
+
 .. code-block:: xml
- 
+
     ...
     <sub-article article-type="translation" xml:lang="en" id="S1">
         ...
@@ -59,6 +58,7 @@ Exemplo da tag completa:
     ...
 
 
-.. note:: Geralmente a tag ``<sub-article>`` é utilizada para identificar 
-          arquivos traduzidos ou conjunto de cartas, resumos, teses etc.
- 
+.. note:: Geralmente o elemento ``<sub-article>`` é utilizado para identificar artigos traduzidos ou conjunto de cartas, resumos, teses etc.
+
+
+.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
