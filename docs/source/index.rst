@@ -139,6 +139,7 @@ Documentação narrativa
    narr/artigo-comentado
    narr/errata
    narr/aheadofprint
+   narr/scielo-brasil
 
    faq
    glossary

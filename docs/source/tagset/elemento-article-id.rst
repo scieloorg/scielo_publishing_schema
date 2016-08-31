@@ -35,19 +35,9 @@ O atributo ``@pub-id-type`` permite os seguintes valores:
 |                    | de tecnologia).                                          |
 +--------------------+----------------------------------------------------------+
 
-Para *SciELO Brasil* é obrigatório o uso de ``@pub-id-type=”doi”`` como identificador único do artigo.
+Para *SciELO Brasil* consulte:
 
-Exemplo:
-
-.. code-block:: xml
-
-    ...
-    <article-meta>
-        ...
-        <article-id pub-id-type="doi">10.1590/0074-0276130047</article-id>
-        ...
-    </article-meta>
-    ...
+:ref:`scielo-brasil`
 
 
 .. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
