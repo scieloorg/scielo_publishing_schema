@@ -35,7 +35,7 @@ O atributo ``@pub-id-type`` permite os seguintes valores:
 |                    | de tecnologia).                                          |
 +--------------------+----------------------------------------------------------+
 
-Para *SciELO Brasil* consulte:
+Para *SciELO* Brasil consulte:
 
 :ref:`scielo-brasil`
 

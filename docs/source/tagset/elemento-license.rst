@@ -55,7 +55,7 @@ Exemplo:
     ...
 
 
-Para *SciELO Brasil* consulte:
+Para *SciELO* Brasil consulte:
 
 :ref:`scielo-brasil`
 
