@@ -3,13 +3,15 @@
 SciELO Brasil
 =============
 
-Em SciELO *Publishing Schema*, há algumas regras que se aplicam a apenas SciELO Brasil, devido aos "Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil".
-Consulte abaixo quais elementos apresentam restrições para envio de pacotes SciELO Brasil:
+Para atender aos "Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil" alguns elementos apresentam restrições:
 
 
-	* :ref:`elemento-scibrasil-article-id`
-	* :ref:`elemento-scibrasil-license`
+  * :ref:`elemento-scibrasil-article-id`
+  * :ref:`elemento-scibrasil-license`
 
+
+
+`Critérios SciELO Brasil <http://www.scielo.br/avaliacao/20141003NovosCriterios_SciELO_Brasil.pdf>`_
 
 
 .. _elemento-scibrasil-article-id:
