@@ -28,7 +28,7 @@ Exemplos:
 .. _elemento-subjgroup-exemplo-1:
 
 Exemplo de ``<subj-group>`` temática:
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: xml
 
@@ -44,7 +44,7 @@ Exemplo de ``<subj-group>`` temática:
 .. _elemento-subjgroup-exemplo-2:
 
 Exemplo de ``<subj-group>`` por tipo de documento:
---------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: xml
 
@@ -60,7 +60,7 @@ Exemplo de ``<subj-group>`` por tipo de documento:
 .. _elemento-subjgroup-exemplo-3:
 
 Exemplo de ``<subj-group>`` para ``<ahead-of-print>``:
-------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: xml
 
@@ -74,6 +74,29 @@ Exemplo de ``<subj-group>`` para ``<ahead-of-print>``:
 
 
 .. note:: Para documentos como editoriais, erratas, cartas ao editor etc., que não apresentam título, apenas a seção, é necessário repetir o título da seção no ``<front>`` e marcá-lo com os elementos de título.
+
+
+Como identificar as subseções de um documento?
+----------------------------------------------
+
+Artigos que apresentam subseções devem ser identificados no :term:`documento` por meio do elemento :ref:`elemento-subj-group`.
+
+Exemplo:
+
+.. code-block:: xml
+
+    ...
+    <article-categories>
+        <subj-group subj-group-type="heading">
+            <subject>Scientific Communication</subject>
+            <subj-group>
+                <subject>Food Safety</subject>
+            </subj-group>
+        </subj-group>
+    </article-categories>
+    ...
+
+.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor ``heading`` e que deve aparecer somente uma vez no documento *XML*.
 
 
 .. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}

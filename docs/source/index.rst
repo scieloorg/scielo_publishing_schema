@@ -137,8 +137,9 @@ Documentação narrativa
    narr/caracteres
    narr/regra-nomeacao
    narr/artigo-comentado
-   narr/errata
    narr/aheadofprint
+   narr/errata
+   narr/ensaio-clinico
    narr/scielo-brasil
 
    faq
