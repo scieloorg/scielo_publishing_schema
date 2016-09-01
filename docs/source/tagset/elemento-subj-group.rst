@@ -77,7 +77,7 @@ Exemplo de ``<subj-group>`` para ``<ahead-of-print>``:
 
 
 Como identificar as subseções de um documento?
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Artigos que apresentam subseções devem ser identificados no :term:`documento` por meio do elemento :ref:`elemento-subj-group`.
 
