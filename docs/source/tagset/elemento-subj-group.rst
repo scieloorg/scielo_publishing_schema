@@ -6,6 +6,7 @@
 Aparece em:
 
   :ref:`elemento-article-categories`
+  ``<subj-group>``
 
 Atributos obrigatórios:
 
@@ -23,6 +24,10 @@ Exemplos:
     * :ref:`elemento-subjgroup-exemplo-1`
     * :ref:`elemento-subjgroup-exemplo-2`
     * :ref:`elemento-subjgroup-exemplo-3`
+
+
+Com o elemento ``<subj-group>`` é possível identificar :ref:`subsecao-exemplo-1`
+
 
 
 .. _elemento-subjgroup-exemplo-1:
@@ -76,8 +81,12 @@ Exemplo de ``<subj-group>`` para ``<ahead-of-print>``:
 .. note:: Para documentos como editoriais, erratas, cartas ao editor etc., que não apresentam título, apenas a seção, é necessário repetir o título da seção no ``<front>`` e marcá-lo com os elementos de título.
 
 
-Como identificar as subseções de um documento?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. _subsecao-exemplo-1:
+
+Subseções em documento
+======================
 
 Artigos que apresentam subseções devem ser identificados no :term:`documento` por meio do elemento :ref:`elemento-subj-group`.
 
