@@ -35,10 +35,10 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 | letter                 | Nomeia uma carta para publicação ou uma         |
 |                        | resposta para carta.                            |
 +------------------------+-------------------------------------------------+
-| partial-retraction     | Retratação ou recusa de parte de materiais      | 
-|                        | o artigo que está sendo parcialmente retratado. |
+| partial-retraction     | Usado em retratações parciais para indicar o    | 
+|                        | artigo que está sendo parcialmente retratado    |
 +------------------------+-------------------------------------------------+
-| retracted-article      | Usado em retratações  para indicar o artigo     |
+| retracted-article      | Usado em retratações para indicar o artigo      |
 |                        | que está sendo retratado.                       |
 +------------------------+-------------------------------------------------+
 | translated-article     | Utilizado em documentos traduzidos para         |
