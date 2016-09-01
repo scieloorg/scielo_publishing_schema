@@ -74,6 +74,9 @@ Para tipo de documento (``@article-type``) os valores possíveis são:
 | other              | anexo, discussão, artigo de preocupação, introdução      |
 |                    | entre outros.                                            |
 +--------------------+----------------------------------------------------------+
+| partial            | Retratação ou recusa de parte de materiais já publicados |
+|                    |                                                          |
++--------------------+----------------------------------------------------------+
 |                    | Comunicação breve - Informe sobre atualização de         |
 | rapid-communication| investigação ou outra notícia.                           |
 |                    |                                                          |
