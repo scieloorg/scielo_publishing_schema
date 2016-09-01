@@ -38,8 +38,8 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 | partial-retraction     | Retratação ou recusa de parte de materiais      | 
 |                        | o artigo que está sendo parcialmente retratado. |
 +------------------------+-------------------------------------------------+
-| retracted-article      | Usado em retratações parciais para indicar      |
-|                        | artigo que está sendo retratado.                |
+| retracted-article      | Usado em retratações  para indicar o artigo     |
+|                        | que está sendo retratado.                       |
 +------------------------+-------------------------------------------------+
 | translated-article     | Utilizado em documentos traduzidos para         |
 |                        | indicar o artigo no idioma.                     |
