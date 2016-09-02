@@ -105,7 +105,7 @@ Exemplo:
     </article-categories>
     ...
 
-.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor ``heading`` e que deve aparecer somente uma vez no documento *XML*.
+.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor ``heading`` e deve aparecer somente uma vez no documento *XML*.
 
 
 .. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
