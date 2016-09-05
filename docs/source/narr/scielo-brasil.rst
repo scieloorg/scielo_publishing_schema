@@ -1,7 +1,7 @@
 .. _scielo-brasil:
 
-SciELO Brasil
-=============
+Regras Específicas para SciELO Brasil
+=====================================
 
 Para atender aos "Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil" alguns elementos apresentam restrições:
 
