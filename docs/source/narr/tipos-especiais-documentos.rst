@@ -6,9 +6,9 @@ Tipos Especiais de Documentos
 
 
 .. toctree::
-   :maxdepth: 1
+	:maxdepth: 1
 
-   artigo-comentado
-   narr/aheadofprint
-   narr/errata
-   narr/ensaio-clinico
+	artigo-comentado
+	aheadofprint
+	errata
+	ensaio-clinico
