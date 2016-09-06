@@ -4,7 +4,7 @@ Ensaio Clínico
 --------------
 
 
-O Ensaio Clínico é um estudo em voluntários humanos com o objetivo de responder a questões específicas de saúde, cujo registro deve ser identificado pelo elemento :ref:`elemento-ext-link`.
+O Ensaio Clínico é um estudo em voluntários com o objetivo de responder a questões específicas de saúde, cujo registro deve ser identificado pelo elemento :ref:`elemento-ext-link`.
 
 
 Exemplo:

@@ -63,6 +63,10 @@ Glossário
      Elemento *XML* hierarquicamente superior ao elemento atual.
 
 
+   Ensaio Clínico
+    Qualquer investigação em seres humanos, objetivando descobrir ou verificar os efeitos farmacodinâmicos, farmacológicos, clínicos e/ou outros efeitos de produto(s) e/ou identificar reações adversas ao produto(s) em investigação com o objetivo de averiguar sua segurança e/ou eficácia. `(EMEA, 1997) <http://www.ema.europa.eu/docs/en_GB/document_library/Scientific_guideline/2009/09/WC500002874.pdf>`_
+
+
    Estilo SciELO PS
      Conjunto de regras que especializam aspectos da especificação :term:`JATS Publishing`.
 
