@@ -35,7 +35,7 @@ São as alterações na especificação que tornam inválidos os XMLs válidos n
 versão anterior.
 
 
-*Alterada a cardinalidade dos elementos: ``<surname>``,  ``<suffix>``, ``<volume>``, ``<source>``, ``<size>``, ``<month>``, ``<issue>``,  ``<given-names>``, ``<element-citation>``, ``<chapter-title>``
+* Alterada a cardinalidade dos elementos: ``<surname>``,  ``<suffix>``, ``<volume>``, ``<source>``, ``<size>``, ``<month>``, ``<issue>``,  ``<given-names>``, ``<element-citation>``, ``<chapter-title>``
   [`#360 <https://github.com/scieloorg/scielo_publishing_schema/issues/360>`_],
   [`#358 <https://github.com/scieloorg/scielo_publishing_schema/issues/358>`_],
   [`#357 <https://github.com/scieloorg/scielo_publishing_schema/issues/357>`_],
