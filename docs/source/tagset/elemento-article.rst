@@ -99,10 +99,6 @@ Para tipo de documento (``@article-type``) os valores possíveis são:
 | review-article     | sistematizadas da literatura sobre determinado assunto.  |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
-|                    | Tradução - Artigo traduzido a partir de original escrito |
-| translation        | em outro idioma.                                         |
-|                    |                                                          |
-+--------------------+----------------------------------------------------------+
 
 
 .. note:: O atributo tipo de documento não deve ser confundido com a seção em que o :term:`documento` aparece no sumário.

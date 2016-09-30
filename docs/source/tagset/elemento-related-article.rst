@@ -41,9 +41,6 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 | retracted-article      | Usado em retratações para indicar o artigo      |
 |                        | que está sendo retratado.                       |
 +------------------------+-------------------------------------------------+
-| translated-article     | Utilizado em documentos traduzidos para         |
-|                        | indicar o artigo no idioma.                     |
-+------------------------+-------------------------------------------------+
 
 
 .. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
