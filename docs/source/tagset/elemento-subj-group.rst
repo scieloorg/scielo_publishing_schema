@@ -32,8 +32,8 @@ Com o elemento ``<subj-group>`` é possível identificar :ref:`subsecao-exemplo-
 
 .. _elemento-subjgroup-exemplo-1:
 
-Exemplo de ``<subj-group>`` temática:
--------------------------------------
+Exemplo de ``<subj-group>`` temática
+------------------------------------
 
 .. code-block:: xml
 
