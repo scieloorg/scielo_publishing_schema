@@ -6,7 +6,8 @@ Versão |version| - março de 2016.
 
 Versões anteriores:
 
-* `Versão 1.3 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.3-branch/>`_ (suportada).
+* `Versão 1.4 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.4-branch/>`_ (suportada).
+* `Versão 1.3 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.3-branch/>`_.
 * `Versão 1.2 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.2-branch/>`_.
 * `Versão 1.1 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.1-branch/>`_.
 * `Versão 1.0 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.0-branch/>`_.
@@ -37,6 +38,7 @@ Duas versões são suportadas simultaneamente, a atual e a imediatamente anterio
 .. toctree::
    :maxdepth: 1
 
+   whatsnew-1.5
    whatsnew-1.4
    whatsnew-1.3
    whatsnew-1.2
