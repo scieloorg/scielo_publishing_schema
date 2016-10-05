@@ -18,7 +18,8 @@ Usado somente quando há um número de contrato explicitado no artigo. As inform
 Exemplo:
 
 .. code-block:: xml
-	...
+
+   ...
 	<funding-group>
 		<award-group>
 			<funding-source>CNPQ</funding-source>

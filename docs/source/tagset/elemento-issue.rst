@@ -19,6 +19,7 @@ Exemplos:
 
   * :ref:`elemento-issue-exemplo-1`
   * :ref:`elemento-issue-exemplo-2`
+  * :ref:`elemento-issue-exemplo-3`
 
 
 
@@ -62,6 +63,25 @@ Exemplo de Fascículo Especial em ``<front>``:
         </article-meta>
         ...
     </front>
+    ...
+
+
+
+.. _elemento-issue-exemplo-3:
+
+Exemplo de ``<issue>`` em ``<element-citation>``:
+-------------------------------------------------
+
+.. code-block:: xml
+
+    ...
+    <ref id="B01">
+        ...
+        <source>text text text</source>
+        <volume>10</volume>
+        <issue>5</issue>
+        ...
+    </ref>
     ...
 
 

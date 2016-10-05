@@ -39,7 +39,7 @@ Equação codificada:
     <!-- codificar: σˆ2 -->
 
     ...
-    <xref ref-type="disp-formula" rid="e07">Equation 3</xref>
+    <xref ref-type="disp-formula" rid="e03">Equation 3</xref>
     <disp-formula id="e03">
       <mml:math display="block">
         <mml:mrow>

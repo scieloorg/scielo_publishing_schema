@@ -12,7 +12,7 @@ Ocorre:
   Uma vez
 
 
-Neste elemento devem ser identificados <journal-meta> e <article-meta>.
+Neste elemento devem ser identificados :ref:`elemento-journal-meta` e :ref:`elemento-article-meta`.
 
 Exemplo:
 

@@ -6,6 +6,7 @@
 Aparece em:
 
   :ref:`elemento-article-meta`
+  :ref:`elemento-front-stub`
 
 Ocorre:
 
@@ -17,7 +18,6 @@ Os principais elementos de ``<contrib-group>`` são:
 
 * :ref:`elemento-aff`;
 * :ref:`elemento-contrib`;
-* :ref:`elemento-front-stub`;
 * :ref:`elemento-role`;
 * :ref:`elemento-xref`;
 
