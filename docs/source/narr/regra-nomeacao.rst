@@ -327,7 +327,7 @@ Regra para Imagens traduzidas
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``nomedaimagem``-``idioma``.``extensãodaimagem``
+    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``nomedaimagem``-``idioma.extensãodaimagem``
 
 Exemplo:
 
