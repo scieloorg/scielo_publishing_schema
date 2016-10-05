@@ -167,7 +167,6 @@ Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A l
 =================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
 .. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}

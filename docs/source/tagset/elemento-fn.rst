@@ -61,8 +61,6 @@ Os valores possíveis para ``@fn-type`` são:
 |                           | tipo de nota em :ref:`elemento-fn-group` em      |
 |                           | :ref:`elemento-back`                             |
 +---------------------------+--------------------------------------------------+
-| presented-at              | Trabalho apresentado em conferência, colóquio etc|
-+---------------------------+--------------------------------------------------+
 | presented-by              | Informação de trabalho apresentado pelo autor    |
 +---------------------------+--------------------------------------------------+
 

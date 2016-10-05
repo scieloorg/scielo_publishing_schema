@@ -112,7 +112,7 @@ Glossário
 
 
    MathML
-     Acrónimo de *Mathematical Markup Language* - (Linguagem de Marcação Matemática). Especificação de baixo nível para conteúdo matemático e científico na Internet e mídias similares. Criado e mantido pelo *Math Working Group* (Grupo de trabalho de matemática) do :term:`W3C` (*World Wide Web Consortium), tornou-se padrão regulamentado pela :term:`ISO` por meio da norma *ISO/IEC 40314:2015*. Para maiores informações ver `W3C Math Home <https://www.w3.org/Math/>`_.
+     Acrónimo de *Mathematical Markup Language* - (Linguagem de Marcação Matemática). Especificação de baixo nível para conteúdo matemático e científico na Internet e mídias similares. Criado e mantido pelo *Math Working Group* (Grupo de trabalho de matemática) do :term:`W3C` (*World Wide Web Consortium*), tornou-se padrão regulamentado pela :term:`ISO` por meio da norma *ISO/IEC 40314:2015*. Para maiores informações ver `W3C Math Home <https://www.w3.org/Math/>`_.
 
 
    Metodologia SciELO

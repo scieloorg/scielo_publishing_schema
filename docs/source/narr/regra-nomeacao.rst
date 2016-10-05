@@ -311,7 +311,7 @@ Para publicação de Número Especial
 
 Regra:
     
-    ``ISSN``-``acrônimo``-``volume``-``nº especial``-``paginação``-``nomedaimagem.extensãodaimagem``
+    ``ISSN``-``acrônimo``-``volume``-``nº especial``-``paginação``-``nomedaimagem.extensãodaimagem`` 
 
 Exemplo:
 
@@ -327,7 +327,7 @@ Regra para Imagens traduzidas
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``nomedaimagem``-``idioma``.``extensãodaimagem``
+    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``nomedaimagem``-``idioma.extensãodaimagem``
 
 Exemplo:
 
@@ -571,7 +571,7 @@ Casos Especiais
 +-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
 
 
-.. note:: Cada item deve ser separado por um hífen e deve, obrigatoriamente, manter visível a extensão da imagem após o "ponto", optando, preferencialmente, por imagens em formato *tif*.
+.. note:: Cada item deve ser separado por um hífen e deve, obrigatoriamente, manter visível a extensão da imagem após o "ponto".
 
 
 .. important::

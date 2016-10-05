@@ -33,7 +33,7 @@ Com o elemento ``<subj-group>`` é possível identificar :ref:`subsecao-exemplo-
 .. _elemento-subjgroup-exemplo-1:
 
 Exemplo de ``<subj-group>`` temática:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
 .. code-block:: xml
 
@@ -49,7 +49,7 @@ Exemplo de ``<subj-group>`` temática:
 .. _elemento-subjgroup-exemplo-2:
 
 Exemplo de ``<subj-group>`` por tipo de documento:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------------------
 
 .. code-block:: xml
 
@@ -65,7 +65,7 @@ Exemplo de ``<subj-group>`` por tipo de documento:
 .. _elemento-subjgroup-exemplo-3:
 
 Exemplo de ``<subj-group>`` para ``<ahead-of-print>``:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------------------
 
 .. code-block:: xml
 
@@ -86,7 +86,7 @@ Exemplo de ``<subj-group>`` para ``<ahead-of-print>``:
 .. _subsecao-exemplo-1:
 
 Subseções em documento
-======================
+~~~~~~~~~~~~~~~~~~~~~~
 
 Artigos que apresentam subseções devem ser identificados no :term:`documento` por meio do elemento :ref:`elemento-subj-group`.
 
