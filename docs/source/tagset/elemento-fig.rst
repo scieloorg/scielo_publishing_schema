@@ -65,7 +65,7 @@ As imagens podem ou não ter legendas. Para imagens sem legenda é necessário m
 Exemplo de Figura com label e caption:
 --------------------------------------
 
-Para figuras com legenda a marcação deve ocorrer para toda a informação da imagem, inclusive sua descrição com o elemento ``<fig>``. Dentro de ``<fig>`` serão identificados o rótulo da figura (:ref:`elemento-label`) e a legenda (:ref:`elemento-caption`) com o título da figura em :ref:`elemento-title`.
+Para figuras com legenda a marcação deve ocorrer para toda a informação da imagem, inclusive sua descrição com o elemento ``<fig>``. Dentro de ``<fig>`` serão identificados o rótulo da figura (:ref:`elemento-label`) e a legenda (:ref:`elemento-caption`) com o título da figura em ``<title>``.
 
 .. code-block:: xml
 

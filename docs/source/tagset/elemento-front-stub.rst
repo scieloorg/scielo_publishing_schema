@@ -24,7 +24,7 @@ Utilizado em :ref:`elemento-sub-article` o qual herda os metadados do xml princi
 
 Nesse elemento devem ser inseridas apenas informações diferentes das que constam no artigo principal, ou seja, não é necessário incluir :ref:`elemento-volume`, :ref:`elemento-issue`, :ref:`elemento-pub-date`,  :ref:`elemento-funding-group` e :ref:`elemento-history` uma vez que estes tenham seus conteúdos definidos no artigo principal.
 
-.. note:: Caso ocorram *tradução de afiliação* e/ou *notas de autor*, os dados destes autores devem ser duplicados para permitir uma referência cruzada entre os elementos no artigo traduzido.
+.. note:: Caso ocorra *tradução de afiliação* e/ou *notas de autor*, os dados destes autores devem ser duplicados para permitir uma referência cruzada entre os elementos no artigo traduzido.
 
 
 Exemplo da tag completa:

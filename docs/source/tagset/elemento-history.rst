@@ -27,8 +27,8 @@ Exemplo:
         </date>
         <date date-type="rev-recd">
              <day>06</day>
-             <month>11</month>
-             <year>2013</year>
+             <month>12</month>
+             <year>2014</year>
         </date>
         <date date-type="accepted">
              <day>14</day>
