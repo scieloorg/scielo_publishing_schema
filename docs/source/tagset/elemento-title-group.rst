@@ -44,7 +44,7 @@ Exemplo de título em um único idioma:
 Exemplo de título no idioma principal e tradução:
 -------------------------------------------------
 
-.. code_block:: xml
+.. code-block:: xml
 
 	...
 	<title-group>
