@@ -27,7 +27,7 @@ Especifica referências a recursos disponíveis na internet. As únicas restriç
 Os valores possíveis para o ``@ext-link-type`` são:
 
 * uri
-* ClinicalTrial
+* clinical-trial
 
 
 Exemplo URL:
@@ -44,7 +44,7 @@ Exemplo Ensaio Clínico:
 .. code-block:: xml
 
   ...
-    <ext-link ext-link-type="ClinicalTrial" xlink:href="https://clinicaltrials.gov/ct2/show/NCT01995279?term=NCT01995279">NCT01995279</ext-link>
+    <ext-link ext-link-type="clinical-trial" xlink:href="https://clinicaltrials.gov/ct2/show/NCT01995279?term=NCT01995279">NCT01995279</ext-link>
   ...
     
 

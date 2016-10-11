@@ -12,11 +12,11 @@ Exemplo:
 .. code-block:: xml
 
    ...
-   <p>Número de registro clínico:<ext-link ext-link-type="ClinicalTrial" xlink:href="https://clinicaltrials.gov/ct2/show/NCT00981734">NCT00981734</ext-link></p>
+   <p>Número de registro clínico:<ext-link ext-link-type="clinical-trial" xlink:href="https://clinicaltrials.gov/ct2/show/NCT00981734">NCT00981734</ext-link></p>
    ...
 
 
-Para identificação de um Ensaio Clínico, o elemento :ref:`elemento-ext-link` deve apresentar o valor ``ClinicalTrial`` no atributo ``@ext-link-type`` e ter preenchida a URL do registro de Ensaio Clínico no atributo ``@xlink:href``.
+Para identificação de um Ensaio Clínico, o elemento :ref:`elemento-ext-link` deve apresentar o valor ``clinical-trial`` no atributo ``@ext-link-type`` e ter preenchida a URL do registro de Ensaio Clínico no atributo ``@xlink:href``.
 
 Informações adicionais encontram-se disponíveis nos sites abaixo identificados:
 
