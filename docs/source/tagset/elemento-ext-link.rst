@@ -29,6 +29,9 @@ Os valores possíveis para o ``@ext-link-type`` são:
 * uri
 * clinical-trial
 
+.. versionchanged:: 1.5.1
+   O valor ``ClinicalTrial``, do atributo ``@ext-link-type``, foi substituído por ``clinical-trial``.
+
 
 Exemplo URL:
 
