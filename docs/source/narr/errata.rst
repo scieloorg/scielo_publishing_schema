@@ -1,4 +1,4 @@
-.. _errata:
+﻿.. _errata:
 
 Errata
 ======
@@ -71,9 +71,9 @@ Exemplo:
     <back>
         ...
         <fn-group>
-            <fn fn-type="other">
-                <title>Erratum</title>
-                <p>Texto da errata</p>
+          <fn fn-type="other">
+            <label>Errata</label>
+              <p>Texto da errata</p>
             </fn>
         </fn-group>
         ...
