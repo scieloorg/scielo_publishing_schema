@@ -1,0 +1,119 @@
+﻿.. _elemento-alternatives:
+
+<alternatives>
+==============
+
+Aparece em:
+
+  :ref:`elemento-table-wrap`
+  :ref:`elemento-disp-formula`
+  :ref:`elemento-inline-formula`
+
+Ocorre:
+
+  Zero ou mais vezes
+
+Elemento usado para armazenar um grupo de alternativas para processamento de um determinado conjunto informacional em versões logicamente equivalentes (substituto), como por exemplo, uma tabela codificada e sua imagem equivalente. 
+
+.. note:: Em <alternatives> as imagens em <graphic> devem, obrigatoriamente, possuir a extensão .svg.
+
+Exemplos:
+
+  * :ref:`elemento-table-exemplo-1`
+  * :ref:`elemento-disp-formula-exemplo-2`
+  * :ref:`elemento-inline-formula-exemplo-3`
+
+.. _elemento-table-exemplo-1:
+
+Exemplo de <alternatives> em <table-wrap>:
+------------------------------------------
+
+.. code-block:: xml
+    ...
+    <table-wrap id="t1">
+<label>Table 1</label>
+        <caption>
+            <title>Chemical characterization of the oxides of the tailing</title>
+        </caption>
+        <alternatives>
+        <graphic xlink:href="nomedaimagemdatabela.svg"/>
+        <table frame="hsides" rules="groups">
+            <thead>
+                <tr>
+                    <th>Variável</th>
+                    <th>Resultados (N=880)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center">Gênero</td>
+                    <td align="center"/>
+                </tr>
+                <tr>
+                    <td align="center">Masculino</td>
+                    <td align="center">411 (46,7)</td>
+                </tr>
+                <tr>
+                    <td align="center">Feminino</td>
+                    <td align="center">469 (53,3)</td>
+                </tr>
+            </tbody>
+        </table>
+        </alternatives>
+    </table-wrap>
+    ...
+
+.. _elemento-disp-formula-exemplo-2:
+
+Exemplo de <alternatives> em <disp-formula>:
+--------------------------------------------
+
+.. code-block:: xml
+    ...
+<disp-formula id="e10">
+                        <label>(1)</label>
+                        <alternatives>
+                            <tex-math id="tx1">
+                                documentclass {article}
+                                \usepackage{wasysym}
+                                \usepackage[substack]{amsmath}
+                                \usepackage{amsfonts}
+                                \usepackage{amssymb}
+                                \usepackage{amsbsy}
+                                \usepackage[mathscr]{eucal}
+                                \usepackage{mathrsfs}                           
+                                \usepackage{pmc}
+                                    \usepackage[Euler]{upgreek}
+                                  \pagestyle{empty}
+                                    \oddsidemargin -1.0in
+                                    \begin{document}
+                                    \[E_it=α_i+Z_it γ+W_it δ+C_it θ+∑_i^n EFind_i+∑_t^n EFtemp_t+ ε_it
+                                    \]
+                                    \end{document}
+                            </tex-math>
+                            <graphic xlink:href="0103-507X-rbti-26-02-0089-ee10.svg"/>
+                        </alternatives>
+                    </disp-formula>
+
+.. _elemento-inline-formula-exemplo-3:
+
+Exemplo de <alternatives> em <disp-formula>:
+--------------------------------------------
+.. code-block:: xml
+    ...
+<inline-formula>
+<alternatives>
+    <mml:math id="e03">
+        <mml:mrow>
+            <mml:msup>
+                <mml:mover accent="true">
+                    <mml:mi>σ</mml:mi>
+                    <mml:mo>ˆ</mml:mo>
+                </mml:mover>
+                <mml:mn>2</mml:mn>
+            </mml:msup>
+        </mml:mrow>
+    </mml:math>
+<graphic xlink:href="0103-507X-rbti-26-02-0089-ee10.svg"/>
+</alternatives>
+</inline-formula>
