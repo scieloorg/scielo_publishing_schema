@@ -1,4 +1,4 @@
-﻿.. _elemento-attrib:
+.. _elemento-attrib:
 
 <attrib>
 ========

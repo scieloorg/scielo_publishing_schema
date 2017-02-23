@@ -1,4 +1,4 @@
-﻿.. _elemento-chapter-title:
+.. _elemento-chapter-title:
 
 <chapter-title>
 ===============
