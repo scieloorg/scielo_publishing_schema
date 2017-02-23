@@ -12,6 +12,7 @@ Aparece em:
   :ref:`elemento-supplementary-material`
   :ref:`elemento-table-wrap`
   :ref:`elemento-verse-group`
+  :ref:`elemento-table-wrap-foot`
 
 Ocorre:
 

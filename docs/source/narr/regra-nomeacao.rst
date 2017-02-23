@@ -1,4 +1,4 @@
-Regras de Nomeação de Arquivos
+﻿Regras de Nomeação de Arquivos
 ==============================
 
 Para envio de pacotes XML é necessário seguir as instruções para submissão de arquivos. Veja abaixo as regras de nomeação:
@@ -576,7 +576,7 @@ Casos Especiais
 
 .. important::
     +---------------------+---------------------------------------------------------+
-    | *ISSN:*             | Se houver mais de um, dar preferência ao impresso.      |
+    | *ISSN:*             | Se houver mais de um, dar preferência ao eletrônico.    |
     +---------------------+---------------------------------------------------------+
     | *Acrônimo:*         | Sigla do periódico na SciELO                            |
     +---------------------+---------------------------------------------------------+
@@ -590,7 +590,7 @@ Casos Especiais
     |                     | (ver :ref:`sugestao-atribuicao-id`)                     |
     +---------------------+---------------------------------------------------------+
     | *Extensão:*         | As extensões aceitas pela SciELO são: .tif, .jpg, .jpeg,|
-    |                     | .gif, .png e/ou eps.                                    |
+    |                     | .gif, .png, svg e/ou eps.                               |
     +---------------------+---------------------------------------------------------+
 
 

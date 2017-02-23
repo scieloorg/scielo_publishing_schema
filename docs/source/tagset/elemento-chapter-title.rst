@@ -23,7 +23,5 @@ Exemplo:
     </element-citation>
     ...
 
-.. note:: O exemplo acima representa o capítulo 24 do livro *As feiticeiras de East End*.
-
 
 .. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}

@@ -92,16 +92,7 @@ Legenda Traduzida
 
 Tabelas com legendas traduzidas, com mais de um rótulo (``<label>``) e legenda (``<caption>``), devem ser identificadas pelo elemento ``<table-wrap-group>``, o qual deve conter os elementos ``<table-wrap>`` para cada idioma.
 
-Exemplos:
-
-  * :ref:`elemento-tablegend-exemplo-1`
-  * :ref:`elemento-tablegend-exemplo-2`
-
-
-.. _elemento-tablegend-exemplo-1:
-
-Exemplo de tabela codificada:
------------------------------
+Exemplo de tabela codificada com legenda traduzida:
 
 .. code-block:: xml
 
@@ -140,32 +131,6 @@ Exemplo de tabela codificada:
                     </tr>
                 </tbody>
             </table>
-        </table-wrap>
-    </table-wrap-group>
-    ...
-
-
-.. _elemento-tablegend-exemplo-2:
-
-Exemplo de tabela como imagem:
-------------------------------
-
-.. code-block:: xml
-
-    ...
-    <table-wrap-group id="t03">
-        <table-wrap xml:lang="pt">
-            <label>Tabela 3</label>
-            <caption>
-                <title>Análise multivariada dos fatores de risco associados à readmissão - modelo 2</title>
-            </caption>
-        </table-wrap>
-        <table-wrap id="en">
-            <label>Table 3</label>
-            <caption>
-                <title>Multivariate analysis of risk factors associated with readmission - Model 2</title>
-            </caption>
-            <graphic xlink:href="1234-5678-rctb-45-05-0110-gt031.tif"/>
         </table-wrap>
     </table-wrap-group>
     ...
