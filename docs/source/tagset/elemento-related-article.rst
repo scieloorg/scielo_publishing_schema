@@ -19,7 +19,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-Utilizado para indicar um artigo relacionado, publicado ou não, separadamente. Este elemento deve ser inserido para artigos como: :ref:`errata` ou resposta de :ref:`artigo-comentado`.
+Utilizado para indicar um artigo relacionado, publicado ou não, separadamente. Este elemento deve ser inserido para artigos como: :ref:`errata`, resposta de :ref:`artigo-comentado`, retratações e :ref:`elemento-response`.
 
 Os valores possíveis para o atributo ``@related-article-type`` são:
 
