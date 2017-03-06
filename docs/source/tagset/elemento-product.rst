@@ -32,7 +32,7 @@ Exemplo de marcação de ``<product>`` de livro
         <product product-type="book">
             <person-group person-group-type="author">
                 <name>
-                    <surname>ONFRAY</surname>, 
+                    <surname>ONFRAY</surname> 
                     <given-names>Michel</given-names>
                 </name>
             </person-group>. 
