@@ -8,9 +8,8 @@ Para atender aos "Critérios, política e procedimentos para a admissão e a per
 
   * :ref:`elemento-scibrasil-article-id`
   * :ref:`elemento-scibrasil-license`
-  * :ref:`elemento-scibrasil-disp-inline-table`
-
-
+  * :ref:`elemento-scibrasil-disp`
+  * :ref:`elemento-scibrasil-history`
 
 `Critérios SciELO Brasil <http://www.scielo.br/avaliacao/20141003NovosCriterios_SciELO_Brasil.pdf>`_
 
@@ -34,43 +33,7 @@ Exemplo:
 <license>
 ^^^^^^^^^
 
-De acordo com a política de acesso aberto adotada por SciELO Brasil, serão aceitas apenas as licenças `Creative Commons <http://creativecommons.org/>`_  listadas na tabela abaixo:
-
-
-+----------------------------------------------------------+-------------------------+
-| Valor                                                    | Descrição               |
-+==========================================================+=========================+
-| http://creativecommons.org/licenses/by/4.0/              | CC-BY versão 4.0        |
-+----------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by/sa/4.0/           | CC-BY-SA versão 4.0     |
-+----------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by/3.0/              | CC-BY versão 3.0        |
-+----------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by/sa/3.0/           | CC-BY-SA versão 3.0     |
-+----------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by-nc/4.0/           | CC-BY-NC versão 4.0     |
-+----------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by-nc/sa/4.0/        | CC-BY-NC-SA versão 4.0  |
-+----------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by-nc/3.0/           | CC-BY-NC versão 3.0     |
-+----------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by-nc/sa/3.0/        | CC-BY-NC-SA versão 3.0  |
-+----------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc-nd/3.0/       | CC-BY-NC-ND versão 3.0  |
-+----------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc-nd/4.0/       | CC-BY-NC-ND versão 4.0  |
-+----------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by/3.0/igo/         | BY/IGO versão 3.0       |
-+----------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc/3.0/igo/      | BY-NC/IGO versão 3.0    |
-+----------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by/sa/3.0/igo/      | BY/IGO/SA versão 3.0    |
-+----------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc/sa/3.0/igo/   | BY-NC/IGO/SA versão 3.0 |
-+----------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc-nd/3.0/igo/   | BY-NC-ND/IGO versão 3.0 |
-+----------------------------------------------------------+-------------------------+
-
+De acordo com a política de acesso aberto adotada por SciELO Brasil, serão aceitas quaisquer licenças `Creative Commons <http://creativecommons.org/>`_
 
 A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de :ref:`elemento-license`. Exemplo:
 
@@ -92,12 +55,18 @@ A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de :r
     </article-meta>
     ...
 
-.. note:: Considera-se a lista de licenças permitidas apenas para :ref:`elemento-article-meta`.
 
-.._elemento-scibrasil-disp-inline-table:
+
+.. _elemento-scibrasil-disp:
 
 Tabelas e equações codificadas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Os elementos :ref:`elemento-disp-formula`, :ref:`elemento-inline-formula` e :ref:`elemento-table`, que identificam dados de tabelas e equações, devem ser codificados. Adicionalmente, o elemento :ref:`elemento-alternatives` pode ser usado para armazenar a versão em imagem desses elementos na extensão .svg.
+Os elementos :ref:`elemento-disp-formula`, :ref:`elemento-inline-formula` e :ref:`elemento-table`, que identificam dados de equações e tabelas, devem ser codificados. O elemento :ref:`elemento-alternatives` pode ser usado para armazenar a versão em imagem desses elementos na extensão .svg.
 
+.. _elemento-scibrasil-history:
+
+<history>
+^^^^^^^^^
+
+É obrigatória a indicação nos artigos publicados das principais datas do processo de arbitragem, compreendendo pelo menos as datas de recebimento e de aprovação qa quais deverão conter dia, mês e ano.
