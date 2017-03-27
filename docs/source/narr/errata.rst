@@ -1,4 +1,4 @@
-.. _errata:
+﻿.. _errata:
 
 Errata
 ======
@@ -71,9 +71,9 @@ Exemplo:
     <back>
         ...
         <fn-group>
-            <fn fn-type="other">
-                <title>Erratum</title>
-                <p>Texto da errata</p>
+          <fn fn-type="other">
+            <label>Errata</label>
+              <p>Texto da errata</p>
             </fn>
         </fn-group>
         ...
@@ -83,7 +83,7 @@ Exemplo:
 
 É possível a publicação de *Erratas* na modalidade :ref:`ahead-of-print` seguindo-se as regras anteriormente definidas. A única diferença é que em :ref:`elemento-article-title`, além da inserção da palavra ``Errata``, ``Erratum``, ``Corrigendum`` etc., (conforme PDF), deve-se inserir dois pontos e o título do artigo a ser corrigido. O padrão do documento em si deve seguir as instruções de :term:`ahead of print`.
 
-.. note:: Mais informações podem ser encontradas no "Guia para o registro e publicação de errata, retratações e manifestações de preocupação" disponível `nesse endereço <http://www.scielo.org/php/level.php?lang=pt&component=56&item=65>`_.
+.. note:: Mais informações podem ser encontradas no "Guia para o registro e publicação de errata" disponível `nesse endereço <http://www.scielo.org/local/File/Guia_para_o_registro_e_publicacao_de_Errata.pdf>`_.
 
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

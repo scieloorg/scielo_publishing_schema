@@ -8,6 +8,7 @@ Para atender aos "Critérios, política e procedimentos para a admissão e a per
 
   * :ref:`elemento-scibrasil-article-id`
   * :ref:`elemento-scibrasil-license`
+  * :ref:`elemento-scibrasil-disp-inline-table`
 
 
 
@@ -28,8 +29,6 @@ Exemplo:
 	<article-id pub-id-type="doi">10.1590/0100-29452016221</article-id>
 	...
 	
-
-
 .. _elemento-scibrasil-license:
 
 <license>
@@ -38,27 +37,39 @@ Exemplo:
 De acordo com a política de acesso aberto adotada por SciELO Brasil, serão aceitas apenas as licenças `Creative Commons <http://creativecommons.org/>`_  listadas na tabela abaixo:
 
 
-+--------------------------------------------------------+-------------------------+
-| Valor                                                  | Descrição               |
-+========================================================+=========================+
-| http://creativecommons.org/licenses/by/4.0/            | CC-BY versão 4.0        |
-+--------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by/3.0/            | CC-BY versão 3.0        |
-+--------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by-nc/4.0/         | CC-BY-NC versão 4.0     |
-+--------------------------------------------------------+-------------------------+
-| http://creativecommons.org/licenses/by-nc/3.0/         | CC-BY-NC versão 3.0     |
-+--------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc-nd/3.0/     | CC-BY-NC-ND versão 3.0  |
-+--------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc-nd/4.0/     | CC-BY-NC-ND versão 4.0  |
-+--------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by/3.0/igo/       | BY/IGO versão 3.0       |
-+--------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc/3.0/igo/    | BY-NC/IGO versão 3.0    |
-+--------------------------------------------------------+-------------------------+
-| https://creativecommons.org/licenses/by-nc-nd/3.0/igo/ | BY-NC-ND/IGO versão 3.0 |
-+--------------------------------------------------------+-------------------------+
++----------------------------------------------------------+-------------------------+
+| Valor                                                    | Descrição               |
++==========================================================+=========================+
+| http://creativecommons.org/licenses/by/4.0/              | CC-BY versão 4.0        |
++----------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by/sa/4.0/           | CC-BY-SA versão 4.0     |
++----------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by/3.0/              | CC-BY versão 3.0        |
++----------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by/sa/3.0/           | CC-BY-SA versão 3.0     |
++----------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by-nc/4.0/           | CC-BY-NC versão 4.0     |
++----------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by-nc/sa/4.0/        | CC-BY-NC-SA versão 4.0  |
++----------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by-nc/3.0/           | CC-BY-NC versão 3.0     |
++----------------------------------------------------------+-------------------------+
+| http://creativecommons.org/licenses/by-nc/sa/3.0/        | CC-BY-NC-SA versão 3.0  |
++----------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc-nd/3.0/       | CC-BY-NC-ND versão 3.0  |
++----------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc-nd/4.0/       | CC-BY-NC-ND versão 4.0  |
++----------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by/3.0/igo/         | BY/IGO versão 3.0       |
++----------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc/3.0/igo/      | BY-NC/IGO versão 3.0    |
++----------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by/sa/3.0/igo/      | BY/IGO/SA versão 3.0    |
++----------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc/sa/3.0/igo/   | BY-NC/IGO/SA versão 3.0 |
++----------------------------------------------------------+-------------------------+
+| https://creativecommons.org/licenses/by-nc-nd/3.0/igo/   | BY-NC-ND/IGO versão 3.0 |
++----------------------------------------------------------+-------------------------+
 
 
 A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de :ref:`elemento-license`. Exemplo:
@@ -81,6 +92,12 @@ A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de :r
     </article-meta>
     ...
 
-
-
 .. note:: Considera-se a lista de licenças permitidas apenas para :ref:`elemento-article-meta`.
+
+.._elemento-scibrasil-disp-inline-table:
+
+Tabelas e equações codificadas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Os elementos :ref:`elemento-disp-formula`, :ref:`elemento-inline-formula` e :ref:`elemento-table`, que identificam dados de tabelas e equações, devem ser codificados. Adicionalmente, o elemento :ref:`elemento-alternatives` pode ser usado para armazenar a versão em imagem desses elementos na extensão .svg.
+
