@@ -6,7 +6,7 @@
 Aparece em:
 
   :ref:`elemento-back`
-  :ref:`ref-list`
+  :ref:`elemento-ref-list`
 
 Ocorre:
 
@@ -15,7 +15,6 @@ Ocorre:
 Representa o conjunto de referências bibliográficas de um artigo e deve conter, obrigatoriamente, o elemento :ref:`elemento-ref`, que por sua vez contém :ref:`elemento-mixed-citation` e :ref:`elemento-element-citation`.
 
 Em ``<ref-list>`` deve ser inserido um rótulo sob ``<title>`` identificando aquela seção de texto.
-
 
 .. _elemento-ref-list-exemplo-1:
 
