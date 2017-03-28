@@ -16,7 +16,6 @@ Representa o conjunto de referências bibliográficas de um artigo e deve conter
 
 Em ``<ref-list>`` deve ser inserido um rótulo sob ``<title>`` identificando aquela seção de texto.
 
-
 .. _elemento-ref-list-exemplo-1:
 
 Exemplo de ``<ref-list>`` simples:
