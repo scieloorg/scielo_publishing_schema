@@ -1,4 +1,4 @@
-.. _elemento-disp-formula:
+﻿.. _elemento-disp-formula:
 
 <disp-formula>
 ==============

@@ -1,4 +1,4 @@
-.. _elemento-table:
+﻿.. _elemento-table:
 
 <table>
 =======
