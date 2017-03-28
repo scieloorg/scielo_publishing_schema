@@ -6,7 +6,7 @@
 Aparece em:
 
   :ref:`elemento-back`
-  :ref:`ref-list`
+  :ref:`elemento-ref-list`
 
 Ocorre:
 
