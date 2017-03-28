@@ -28,7 +28,6 @@ Exemplos:
   * :ref:`elemento-dispmath-exemplo-1`
   * :ref:`elemento-displatex-exemplo-2`
 
-
 .. _elemento-dispmath-exemplo-1:
 
 
@@ -76,33 +75,31 @@ Equação codificada em LaTeX:
 
 .. code-block:: xml
 
-...
-
-<p>... Selected as described for Acc-29
-<disp-formula>
-<tex-math id="M1"><![CDATA[\documentclass[12pt]{minimal}
-\usepackage{wasysym}
-\usepackage[substack]{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amsbsy}
-\usepackage[mathscr]{eucal}
-\usepackage{mathrsfs}
-\DeclareFontFamily{T1}{linotext}{}
-\DeclareFontShape{T1}{linotext}{m}{n} { &#x003C;-&#x003E; linotext }{}
-\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
-\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
-\begin{document}
-$$
-{\mathrm{Acc/Acc:\hspace{.5em}}}\frac{{\mathit{ade2-202}}}{{\mathit{ADE2}}}\
-hspace{.5em}\frac{{\mathit{ura3-59}}}{{\mathit{ura3-59}}}\hspace{.5em}\frac{{\
-mathit{ADE1}}}{{\mathit{adel-201}}}\hspace{.5em}\frac{{\mathit{ter1-Acc}}}{{\
-mathit{ter1-Acc}}}\hspace{.5em}\frac{{\mathit{MATa}}}{{\mathit{MAT{\alpha}}}}
-$$
-\end{document}]]>
-</tex-math>
-</disp-formula> TER1/ter1-Acc: Acc-29 crossed with ...</p>
-...
+    ...
+        <disp-formula id="e10">
+            <label>(1)</label>
+              <alternatives>
+                 <tex-math id="tx1">
+                  \documentclass {article}
+                  \usepackage{wasysym}
+                  \usepackage[substack]{amsmath}
+                  \usepackage{amsfonts}
+                  \usepackage{amssymb}
+                  \usepackage{amsbsy}
+                  \usepackage[mathscr]{eucal}
+                  \usepackage{mathrsfs}                           
+                  \usepackage{pmc}
+                  \usepackage[Euler]{upgreek}
+                  \pagestyle{empty}
+                   \oddsidemargin -1.0in
+                   \begin{document}
+                   \[E_it=α_i+Z_it γ+W_it δ+C_it θ+∑_i^n EFind_i+∑_t^n EFtemp_t+ ε_it                                 \]
+                   \end{document}
+                 </tex-math>
+                 <graphic xlink:href="0103-507X-rbti-26-02-0089-ee10.svg"/>
+                </alternatives>
+         </disp-formula>
+    ...
 
 .. note:: Equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
 
