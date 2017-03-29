@@ -13,7 +13,7 @@ Ocorre:
   Zero ou uma vez
 
 
-Identifica uma paginação eletrônica. Pode ocorrer também em :ref:`elemento-element-citation`. Entretanto, só deverá ser utilizado quando houver um único número de paginação eletrônica. Para um intervalo de páginas, deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.
+Identificador bibliográfico de um documento que não possui numeração sequencial de páginas tradicionalmente usada em publicações impressas. Pode ocorrer também em :ref:`elemento-element-citation`. Para um intervalo de páginas, deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.
 
 Exemplo em :ref:`elemento-article-meta`:
 
