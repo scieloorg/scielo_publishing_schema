@@ -3,7 +3,9 @@
 Regras Específicas para SciELO Brasil
 =====================================
 
-Para atender aos "Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil" alguns elementos apresentam restrições:
+Para atender aos "`Critérios, política e procedimentos para a admissão e a 
+permanência de periódicos científicos na Coleção SciELO Brasil <http://www.scielo.br/avaliacao/20141003NovosCriterios_SciELO_Brasil.pdf>`_" alguns 
+elementos apresentam restrições:
 
 
   * :ref:`elemento-scibrasil-article-id`
@@ -11,16 +13,14 @@ Para atender aos "Critérios, política e procedimentos para a admissão e a per
   * :ref:`elemento-scibrasil-disp`
   * :ref:`elemento-scibrasil-history`
 
-`Critérios SciELO Brasil <http://www.scielo.br/avaliacao/20141003NovosCriterios_SciELO_Brasil.pdf>`_
-
 
 .. _elemento-scibrasil-article-id:
 
 <article-id>
 ^^^^^^^^^^^^
 
-Em :ref:`elemento-article-id` o atributo ``@pub-id-type`` deve, obrigatoriamente, apresentar o valor "doi".
-Exemplo:
+Em :ref:`elemento-article-id` o atributo ``@pub-id-type`` deve, 
+obrigatoriamente, apresentar o valor "doi". Exemplo:
 
 .. code-block:: xml
 
@@ -33,9 +33,11 @@ Exemplo:
 <license>
 ^^^^^^^^^
 
-De acordo com a política de acesso aberto adotada por SciELO Brasil, serão aceitas quaisquer licenças `Creative Commons <http://creativecommons.org/>`_
+De acordo com a política de acesso aberto adotada por SciELO Brasil, serão 
+aceitas quaisquer licenças `Creative Commons <http://creativecommons.org/>`_
 
-A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de :ref:`elemento-license`. Exemplo:
+A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de 
+:ref:`elemento-license`. Exemplo:
 
 
 .. code-block:: xml
@@ -62,11 +64,17 @@ A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de :r
 Tabelas e equações codificadas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Os elementos :ref:`elemento-disp-formula`, :ref:`elemento-inline-formula` e :ref:`elemento-table`, que identificam dados de equações e tabelas, devem ser codificados. O elemento :ref:`elemento-alternatives` pode ser usado para armazenar a versão em imagem desses elementos na extensão .svg.
+Os elementos :ref:`elemento-disp-formula`, :ref:`elemento-inline-formula` e 
+:ref:`elemento-table`, que identificam dados de equações e tabelas, devem ser 
+codificados. O elemento :ref:`elemento-alternatives` pode ser usado para 
+armazenar a versão em imagem desses elementos no formato :term:`SVG`.
 
 .. _elemento-scibrasil-history:
 
 <history>
 ^^^^^^^^^
 
-É obrigatória a indicação nos artigos publicados das principais datas do processo de arbitragem, compreendendo pelo menos as datas de recebimento e de aprovação qa quais deverão conter dia, mês e ano.
+É obrigatória a indicação nos artigos publicados das principais datas do 
+processo de arbitragem, compreendendo pelo menos as datas de recebimento e 
+de aprovação, as quais deverão conter dia, mês e ano.
+
