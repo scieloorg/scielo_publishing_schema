@@ -3,10 +3,10 @@ O que há de novo na SciELO PS 1.6
 
 
 Este artigo explica as alterações da especificação :term:`SciELO PS` versão 1.6 em 
-relação à sua predecessora, a versão 1.4. 
+relação à sua predecessora, a versão 1.5. 
 
 
-* Adicionado suporte a qualquer valor para o atributo article/@article-type para artigos em Ahead of Print (AOP) 
+* Adicionado suporte a qualquer valor para o atributo ``article/@article-type`` para artigos em Ahead of Print (AOP) 
   [`#240 <https://github.com/scieloorg/scielo_publishing_schema/issues/240>`_].
 * Adicionado elemento ``<alternatives>`` 
   [`#184 <https://github.com/scieloorg/scielo_publishing_schema/issues/184>`_].
