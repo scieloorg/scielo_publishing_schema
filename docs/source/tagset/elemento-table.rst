@@ -135,6 +135,34 @@ Exemplo de tabela codificada com legenda traduzida:
     </table-wrap-group>
     ...
 
+.. _elemento-tablegend-exemplo-2:
+
+Exemplo de tabela como imagem:
+------------------------------
+
+.. code-block:: xml
+
+    ...
+    <table-wrap-group id="t03">
+        <table-wrap xml:lang="pt">
+            <label>Tabela 3</label>
+            <caption>
+                <title>Análise multivariada dos fatores de risco associados à readmissão - modelo 2</title>
+            </caption>
+        </table-wrap>
+        <table-wrap id="en">
+            <label>Table 3</label>
+            <caption>
+                <title>Multivariate analysis of risk factors associated with readmission - Model 2</title>
+            </caption>
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-gt031.tif"/>
+        </table-wrap>
+    </table-wrap-group>
+    ...
+
+Para *SciELO* Brasil consulte:
+
+:ref:`scielo-brasil`
 
 .. note:: Tabelas que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
 

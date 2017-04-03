@@ -1,4 +1,4 @@
-﻿.. _elemento-disp-formula:
+.. _elemento-disp-formula:
 
 <disp-formula>
 ==============
@@ -27,6 +27,7 @@ Exemplos:
 
   * :ref:`elemento-dispmath-exemplo-1`
   * :ref:`elemento-displatex-exemplo-2`
+  * :ref:`elemento-dispimg-exemplo-3`
 
 .. _elemento-dispmath-exemplo-1:
 
@@ -39,9 +40,10 @@ Equação codificada em MathML:
     <!-- codificar: σˆ2 -->
 
     ...
-    <xref ref-type="disp-formula" rid="e03">Equation 3</xref>
-    <disp-formula id="e03">
-      <mml:math display="block">
+    <xref ref-type="disp-formula" rid="e3">Equation 3</xref>
+    ...
+    <disp-formula id="e3">
+      <mml:math id="m1" display="block">
         <mml:mrow>
           <mml:msub>
             <mml:mi>q</mml:mi>
@@ -76,30 +78,46 @@ Equação codificada em LaTeX:
 .. code-block:: xml
 
     ...
-        <disp-formula id="e10">
-            <label>(1)</label>
-              <alternatives>
-                 <tex-math id="tx1">
-                  \documentclass {article}
-                  \usepackage{wasysym}
-                  \usepackage[substack]{amsmath}
-                  \usepackage{amsfonts}
-                  \usepackage{amssymb}
-                  \usepackage{amsbsy}
-                  \usepackage[mathscr]{eucal}
-                  \usepackage{mathrsfs}                           
-                  \usepackage{pmc}
-                  \usepackage[Euler]{upgreek}
-                  \pagestyle{empty}
-                   \oddsidemargin -1.0in
-                   \begin{document}
-                   \[E_it=α_i+Z_it γ+W_it δ+C_it θ+∑_i^n EFind_i+∑_t^n EFtemp_t+ ε_it                                 \]
-                   \end{document}
-                 </tex-math>
-                 <graphic xlink:href="0103-507X-rbti-26-02-0089-ee10.svg"/>
-                </alternatives>
-         </disp-formula>
+    <disp-formula id="e10">
+        <label>(1)</label>
+        <tex-math id="tx1">
+            \documentclass {article}
+            \usepackage{wasysym}
+            \usepackage[substack]{amsmath}
+            \usepackage{amsfonts}
+            \usepackage{amssymb}
+            \usepackage{amsbsy}
+            \usepackage[mathscr]{eucal}
+            \usepackage{mathrsfs}                           
+            \usepackage{pmc}
+            \usepackage[Euler]{upgreek}
+            \pagestyle{empty}
+            \oddsidemargin -1.0in
+            \begin{document}
+            \[E_it=α_i+Z_it γ+W_it δ+C_it θ+∑_i^n EFind_i+∑_t^n EFtemp_t+ ε_it                                 \]
+            \end{document}
+        </tex-math>
+    </disp-formula>
     ...
+
+.. _elemento-dispimg-exemplo-3:
+
+Equação em imagem:
+------------------
+
+.. code-block:: xml
+
+    ...
+    <p>The Eh measurements were recalculated to the standard hydrogen potential (Standard Hydrogen Electrode - SHE), using the following <xref ref-type="disp-formula" rid="e1">equation 1</xref>(in mV):</p>
+    <disp-formula id="e1">
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-e01.tif"/>
+    </disp-formula>
+    ...
+
+
+Para *SciELO* Brasil consulte:
+
+:ref:`scielo-brasil`
 
 .. note:: Equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
 

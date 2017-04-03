@@ -17,7 +17,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-Utilizado para identificar equações codificadas em linha. Nesse caso, a codificação pode ser escrita de acordo com :term:`W3C` em linguagem :term:`MathML` (http://www.w3.org/TR/MathML3/), sendo o elemento base ``<mml:math>``; ou com outros tipos de codificação, por exemplo, caracteres ASCII, TeX ou LaTeX.
+Utilizado para identificar equações codificadas em linha. Nesse caso, a codificação pode ser escrita de acordo com :term:`W3C` em linguagem :term:`MathML` (http://www.w3.org/TR/MathML3/), sendo o elemento base ``<mml:math>``; ou com outros tipos de codificação, por exemplo, TeX ou LaTeX.
 
 
 Exemplo para codificar σˆ2* usando *MathML*:
