@@ -31,8 +31,6 @@ São as alterações na documentação que não interferem nas regras da especif
   [`#483 <https://github.com/scieloorg/scielo_publishing_schema/issues/483>`_],
   [`#484 <https://github.com/scieloorg/scielo_publishing_schema/issues/484>`_],
   [`#485 <https://github.com/scieloorg/scielo_publishing_schema/issues/485>`_],
-  [`#486 <https://github.com/scieloorg/scielo_publishing_schema/issues/486>`_],
-  [`#489 <https://github.com/scieloorg/scielo_publishing_schema/issues/489>`_],
   [`#500 <https://github.com/scieloorg/scielo_publishing_schema/issues/500>`_],
 * Inclui URL absoluta em ``<!DOCTYPE>``
   [`#489 <https://github.com/scieloorg/scielo_publishing_schema/issues/489>`_],
