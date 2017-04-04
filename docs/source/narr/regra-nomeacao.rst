@@ -27,7 +27,6 @@ Exemplos:
     * :ref:`elemento-regranomeia-exemplo-4`
     * :ref:`elemento-regranomeia-exemplo-5`
     * :ref:`elemento-regranomeia-exemplo-6`
-    * :ref:`elemento-regranomeia-exemplo-7`
 
 
 .. _elemento-regranomeia-exemplo-1:
@@ -109,16 +108,12 @@ Exemplo:
 
 
 
-
-Regra para Publicação Contínua
-------------------------------
-
 .. _elemento-regranomeia-exemplo-6:
 
-Periódico que publica 1 volume ao ano
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para Publicação Contínua
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Regra:
+Regra para periódico que publica volume único:
 
     ``ISSN-acronimo-rpass-lote``
 
@@ -128,12 +123,8 @@ Exemplo:
 
 
 
-.. _elemento-regranomeia-exemplo-7:
 
-Periódico que publica número em aberto
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
+Regra para periódico que publica número em aberto:
 
     ``ISSN-acronimo-rpass-lote-volume-número``
 
@@ -159,7 +150,6 @@ Exemplos:
     * :ref:`elemento-nomeia-arquivo-exemplo-3`
     * :ref:`elemento-nomeia-arquivo-exemplo-4`
     * :ref:`elemento-nomeia-arquivo-exemplo-5`
-    * :ref:`elemento-nomeia-arquivo-exemplo-6`
 
 
 .. _elemento-nomeia-arquivo-exemplo-1:
@@ -222,17 +212,12 @@ Exemplo:
 
 
 
-
-Publicação Contínua
--------------------
-
-
 .. _elemento-nomeia-arquivo-exemplo-5:
 
-Para Número em aberto
-^^^^^^^^^^^^^^^^^^^^^
+Para Publicação Contínua
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Regra:
+Regra para periódico que publica número em aberto:
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``
 
@@ -242,10 +227,8 @@ Exemplo:
 
 
 
-.. _elemento-nomeia-arquivo-exemplo-6:
 
-Para Volume único
-^^^^^^^^^^^^^^^^^
+Regra para periódico que publica volume único:
 
 Regra:
 
@@ -261,7 +244,7 @@ Exemplo:
 Imagens
 -------
 
-Em imagens (que podem ser figuras, tabelas, equações, apêndices etc), utilizar a seguinte estrutura de nomeação tanto para as que se encontram dentro do XML quanto para as da pasta do pacote do número ou lote de :term:`ahead-of-print`.
+Em imagens (que podem ser figuras, tabelas, equações, apêndices etc), utilizar a seguinte estrutura de nomeação tanto para as que se encontram dentro do XML quanto para as da pasta do pacote do número ou lote de :term:`ahead of print`.
 
 Exemplos:
 
@@ -271,7 +254,6 @@ Exemplos:
     * :ref:`elemento-regraimg-exemplo-4`
     * :ref:`elemento-regraimg-exemplo-5`
     * :ref:`elemento-regraimg-exemplo-6`
-    * :ref:`elemento-regraimg-exemplo-7`
 
 
 .. _elemento-regraimg-exemplo-1:
@@ -350,17 +332,14 @@ Exemplo:
 
 
 
-
-Publicação Contínua
--------------------
-
-
 .. _elemento-regraimg-exemplo-6:
 
-Para Número em aberto
-^^^^^^^^^^^^^^^^^^^^^
+Para Publicação Contínua
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Regra:
+
+
+Regra para periódico que publica número em aberto:
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``-``nomedaimagem.extensãodaimagem``
 
@@ -370,12 +349,8 @@ Exemplo:
     ``1806-1117-rbef-38-04-e4313-gf01.tif``
 
 
-.. _elemento-regraimg-exemplo-7:
 
-Para Volume único
-^^^^^^^^^^^^^^^^^
-
-Regra:
+Regra para periódico que publica volume único:
 
     ``ISSN``-``acrônimo``-``volume``-``elocation-id``-``nomedaimagem.extensãodaimagem``
 
@@ -401,7 +376,6 @@ Exemplos:
     * :ref:`elemento-regrapdf-exemplo-4`
     * :ref:`elemento-regrapdf-exemplo-5`
     * :ref:`elemento-regrapdf-exemplo-6`
-    * :ref:`elemento-regrapdf-exemplo-7`
 
 
 .. _elemento-regrapdf-exemplo-1:
@@ -478,16 +452,13 @@ Exemplo:
 
 
 
-
-Publicação Contínua
--------------------
-
 .. _elemento-regrapdf-exemplo-6:
 
-Para Número em aberto
-^^^^^^^^^^^^^^^^^^^^^
+Para Publicação Contínua
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Regra:
+
+Regra para periódico que publica número em aberto:
 
     ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``
 
@@ -497,12 +468,8 @@ Exemplo:
 
 
 
-.. _elemento-regrapdf-exemplo-7:
 
-Para Volume único
-^^^^^^^^^^^^^^^^^
-
-Regra:
+Regra para periódico que publica volume único:
 
     ``ISSN``-``acrônimo``-``volume``-``elocation-id``
 
@@ -594,4 +561,4 @@ Casos Especiais
     +---------------------+---------------------------------------------------------+
 
 
-.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170411", "by": "carolina.tanigushi@scielo.org"}
