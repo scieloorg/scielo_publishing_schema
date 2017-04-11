@@ -14,6 +14,11 @@ Versões anteriores:
 * `Versão 1.0 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.0-branch/>`_.
 
 
+Outros idiomas:
+
+* SciELO Publishing Schema Documentation, Version 1.5.1 (`PDF in English <https://github.com/scieloorg/scielo_publishing_schema/raw/master/versions/EN-scielo-publishing-schema-1.5.pdf>`_).
+* SciELO Publishing Schema, Versión 1.5 (`PDF en español <https://github.com/scieloorg/scielo_publishing_schema/raw/master/versions/ES-scielo-publishing-schema-1.5.pdf>`_).
+
 Introdução
 ----------
 
