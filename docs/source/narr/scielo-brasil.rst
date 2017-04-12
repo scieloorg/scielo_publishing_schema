@@ -5,7 +5,7 @@ Regras Específicas para SciELO Brasil
 
 Para atender aos "`Critérios, política e procedimentos para a admissão e a 
 permanência de periódicos científicos na Coleção SciELO Brasil <http://www.scielo.br/avaliacao/20141003NovosCriterios_SciELO_Brasil.pdf>`_" alguns 
-elementos apresentam restrições:
+elementos apresentam regras específicas de uso:
 
 
   * :ref:`elemento-scibrasil-article-id`
@@ -64,17 +64,14 @@ A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de
 Tabelas e equações codificadas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Os elementos :ref:`elemento-disp-formula`, :ref:`elemento-inline-formula` e 
-:ref:`elemento-table`, que identificam dados de equações e tabelas, devem ser 
-codificados. O elemento :ref:`elemento-alternatives` pode ser usado para 
-armazenar a versão em imagem desses elementos no formato :term:`SVG`.
+Conforme `comunicado <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4aa5&id=0211ed957f&e=[UNIQID>`_ enviado aos editores em 09/12/2016, a partir de Outubro de 2017, equações, fórmulas e tabelas devem ser codificadas. Adicionalmente, as versões em imagem em formato .svg podem ser enviadas dentro do elemento :ref:`elemento-alternatives`.
 
 .. _elemento-scibrasil-history:
 
 <history>
 ^^^^^^^^^
 
-É obrigatória a indicação nos artigos publicados das principais datas do 
-processo de arbitragem, compreendendo pelo menos as datas de recebimento e 
-de aprovação, as quais deverão conter dia, mês e ano.
+O histórico do processo de arbitragem do artigo, compreendendo as datas de recebimento, 
+de aprovação e de revisão, quando presente, deve conter :ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`. Para acessar o comunicado `clique aqui <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4aa5&id=2a6634a845>`_
+
 
