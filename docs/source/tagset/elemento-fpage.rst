@@ -13,7 +13,7 @@ Ocorre:
   Zero ou uma vez
 
 
-Indica a paginação inicial do artigo. No caso de :term:`ahead-of-print`, deve ser preenchido com ``00``.
+Indica a paginação inicial do artigo. No caso de :term:`ahead of print`, deve ser preenchido com ``00``.
 
 Exemplo:
 

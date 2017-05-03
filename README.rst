@@ -2,6 +2,14 @@
 SciELO Publishing Schema
 ========================
 
+Build status
+------------
+
+.. image:: https://travis-ci.org/scieloorg/scielo_publishing_schema.svg?branch=master
+    :target: https://travis-ci.org/scieloorg/scielo_publishing_schema
+    :alt: master Travis CI Status
+
+
 See http://docs.scielo.org/projects/scielo-publishing-schema
 
 

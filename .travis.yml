@@ -1,0 +1,8 @@
+language: python
+python:
+    - "2.7"
+install: "pip install Sphinx" 
+# opcoes usadas apenas aqui:
+#   -n    nit-picky mode; Produz erros para referencias nao encontradas.
+#   -W    Torna warnings em errors, e o programa retorna valor > 0.
+script: sphinx-build -nW -b html -d docs/build/doctrees docs/source docs/build/html
