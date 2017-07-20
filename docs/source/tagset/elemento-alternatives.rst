@@ -1,4 +1,4 @@
-.. _elemento-alternatives:
+﻿.. _elemento-alternatives:
 
 <alternatives>
 ==============
@@ -13,7 +13,7 @@ Ocorre:
 
   Zero ou mais vezes
 
-Elemento usado para armazenar um grupo de alternativas para processamento de um determinado conjunto informacional em versões logicamente equivalentes (substituto), como por exemplo, uma tabela codificada e sua imagem equivalente. 
+Elemento usado para armazenar um grupo de alternativas para processamento de um determinado conjunto informacional em versões logicamente equivalentes (substituto), como por exemplo, uma tabela ou uma equação codificada e sua imagem SVG equivalente. Caso não exista mais de uma alternativa de visualização do conjunto informacional em questão, não se faz necessário a utilização da tag. 
 
 .. note:: Em <alternatives> as imagens em <graphic> devem, obrigatoriamente, possuir a extensão .svg.
 
@@ -109,7 +109,7 @@ Exemplo de <alternatives> em <disp-formula>:
 
 .. _elemento-inline-formula-exemplo-3:
 
-Exemplo de <alternatives> em <disp-formula>:
+Exemplo de <alternatives> em <inline-formula>:
 --------------------------------------------
 
 .. code-block:: xml

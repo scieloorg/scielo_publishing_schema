@@ -1,4 +1,4 @@
-.. _elemento-funding-statement:
+﻿.. _elemento-funding-statement:
 
 <funding-statement>
 ===================
@@ -30,6 +30,7 @@ Exemplo:
             <funding-group>
                 <award-group>
                     <funding-source>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</funding-source>
+		    <funding-source> Fundação de Amparo à Pesquisa do Estado de São Paulo</funding-source>
                     <award-id>04/08142-0</award-id>
                 </award-group>
                 <funding-statement>This study was supported in part by Coordenação
@@ -61,4 +62,4 @@ Exemplo:
 .. note:: Notas SEM NÚMERO DE CONTRATO, ficam apenas em :ref:`elemento-back` mas com tipo ``@fn-type="supported-by"``.
 
 
-.. {"reviewed_on": "20160625", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}

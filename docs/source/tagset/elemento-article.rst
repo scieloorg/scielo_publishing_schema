@@ -1,4 +1,4 @@
-.. _elemento-article:
+﻿.. _elemento-article:
 
 <article>
 =========
@@ -12,8 +12,9 @@ Atributos obrigatórios:
   1. ``@dtd-version``
   2. ``@article-type``
   3. ``@xml:lang``
-  4. ``@xmlns:xlink="http://www.w3.org/1999/xlink"``
-  5. ``@specific-use="sps-1.0"``
+  4. ``@xmlns:mml``
+  5. ``@xmlns:xlink="http://www.w3.org/1999/xlink"``
+  6. ``@specific-use="sps-1.0"``
 
 .. note:: No atributo ``@specific-use`` o valor **sps-1.0** é apenas uma referência genérica à versão da *SciELO PS*. Deve ser utilizada sempre          a versão corrente (atual).
 
@@ -119,4 +120,4 @@ Exemplo (tag completa da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1
 	 </article>
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}
