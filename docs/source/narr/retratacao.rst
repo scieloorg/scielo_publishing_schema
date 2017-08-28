@@ -1,7 +1,7 @@
 ﻿.. _retratacao:
 
 Retratação
-======
+==========
 
 Como regra, arquivos do tipo retratação e retratação parcial devem apresentar o valor `retraction` ou `partial-retraction` no atributo `@article-type`. O texto do elemento `//subj-group[@subj-group-type="heading"]/subject` deve conter a seção apresentada no sumário do número e, no elemento <article-title> deve figurar como título ARTIGO RETRATADO (pt), RETRACTED ARTICLE (en) ARTÍCULO RETRACTADO (es), entre colchetes, mais dois pontos e o título do artigo.
  
