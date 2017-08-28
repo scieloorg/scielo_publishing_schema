@@ -104,4 +104,4 @@ Exemplo de Media em :ref:`elemento-sec` do tipo Material Suplementar:
     </sec>
 
 
-.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170828", "by": "carolina.tanigushi@scielo.org"}
