@@ -11,5 +11,4 @@ Tipos Especiais de Documentos
 	artigo-comentado
 	aheadofprint
 	errata
-	retratacao
 	ensaio-clinico
