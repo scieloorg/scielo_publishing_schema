@@ -110,7 +110,7 @@ Exemplo de <alternatives> em <disp-formula>:
 .. _elemento-inline-formula-exemplo-3:
 
 Exemplo de <alternatives> em <inline-formula>:
---------------------------------------------
+----------------------------------------------
 
 .. code-block:: xml
 
