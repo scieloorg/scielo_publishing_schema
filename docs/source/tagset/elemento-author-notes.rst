@@ -1,4 +1,4 @@
-.. _elemento-author-notes:
+﻿.. _elemento-author-notes:
 
 <author-notes>
 ==============
@@ -6,6 +6,7 @@
 Aparece em:
 
   :ref:`elemento-article-meta`
+  :ref:`elemento-front-stub`
 
 Ocorre:
 
@@ -33,4 +34,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}
