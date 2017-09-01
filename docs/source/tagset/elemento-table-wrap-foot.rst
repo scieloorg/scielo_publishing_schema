@@ -12,9 +12,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-``<table-wrap-foot>`` permite identificar uma nota de rodapé de tabela por meio de elementos do tipo :ref:`elemento-fn`, os quais devem, obrigatoriamente, apresentar o atributo ``@id``.
-
-O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``.
+``<table-wrap-foot>`` permite identificar uma nota de rodapé de tabela por meio de elementos do tipo :ref:`elemento-fn`.
 
 A nota de rodapé poderá ser relacionada com alguma informação no corpo da tabela.
 
@@ -41,4 +39,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170901", "by": "carolina.tanigushi@scielo.org"}
