@@ -33,6 +33,8 @@ Ocorre:
 
 ``@mimetype`` é usado para especificar o tipo de mídia, por exemplo, "vídeo" ou "aplicação". ``@mime-subtype`` é usado para especificar o formato da mídia.
 
+.. note:: Para vídeos o formato mp4 é obrigatório.
+
 Exemplos:
 
  * :ref:`elemento-media-exemplo-1`
@@ -79,7 +81,7 @@ Exemplo de Media em :ref:`elemento-fig`:
             <caption>
                 <title>descrição da fig.<title>
             </caption>
-            <media xlink:href="1234-5678-rctb-45-05-0110-m01.avi" mimetype="video" mime-subtype="avi"/>
+            <media xlink:href="1234-5678-rctb-45-05-0110-m01.mp4" mimetype="video" mime-subtype="mp4"/>
         </fig>
     </p>
 
@@ -102,4 +104,4 @@ Exemplo de Media em :ref:`elemento-sec` do tipo Material Suplementar:
     </sec>
 
 
-.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170828", "by": "carolina.tanigushi@scielo.org"}
