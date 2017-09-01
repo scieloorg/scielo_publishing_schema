@@ -31,8 +31,6 @@ Os valores possíveis para ``@fn-type`` são:
 +---------------------------+--------------------------------------------------+
 | Valor                     | Descrição                                        |
 +===========================+==================================================+
-| author                    | Outro tipo de nota relacionada a autor           |
-+---------------------------+--------------------------------------------------+
 | con                       | Informação de contribuição                       |
 +---------------------------+--------------------------------------------------+
 | conflict                  | Declaração de conflito de interesse              |
@@ -211,4 +209,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170901", "by": "carolina.tanigushi@scielo.org"}
