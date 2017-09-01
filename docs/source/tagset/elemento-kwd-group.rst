@@ -1,4 +1,4 @@
-.. _elemento-kwd-group:
+﻿.. _elemento-kwd-group:
 
 <kwd-group>
 ===========
@@ -6,6 +6,7 @@
 Aparece em:
 
   :ref:`elemento-article-meta`
+  :ref:`elemento-front-stub`
 
 Atributos obrigatórios:
 
@@ -32,4 +33,4 @@ Identifica o grupo de palavras-chave do artigo por idioma. Contém, obrigatoriam
     ...
 
 
-.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}

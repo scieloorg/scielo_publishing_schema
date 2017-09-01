@@ -1,4 +1,4 @@
-.. _elemento-article-categories:
+﻿.. _elemento-article-categories:
 
 <article-categories>
 ====================
@@ -6,6 +6,7 @@
 Aparece em:
 
   :ref:`elemento-article-meta`
+  :ref:`elemento-front-stub`
 
 Ocorre:
 
@@ -26,4 +27,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}

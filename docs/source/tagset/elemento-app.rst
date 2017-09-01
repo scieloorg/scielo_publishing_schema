@@ -1,11 +1,11 @@
-.. _elemento-app:
+﻿.. _elemento-app:
 
 <app>
 =====
 
 Aparece em:
 
-  :ref:`elemento-back`
+  `<app-group>`
 
 Atributos obrigatórios:
 
@@ -211,4 +211,4 @@ Exemplo de apêndice com vídeo
     ...
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}

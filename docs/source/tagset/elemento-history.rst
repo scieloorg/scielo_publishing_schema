@@ -1,4 +1,4 @@
-.. _elemento-history:
+﻿.. _elemento-history:
 
 <history>
 =========
@@ -6,6 +6,7 @@
 Aparece em:
 
   :ref:`elemento-article-meta`
+  :ref:`elemento-front-stub`
 
 Ocorre:
 
@@ -39,4 +40,4 @@ Exemplo:
    ...
 
 
-.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}
