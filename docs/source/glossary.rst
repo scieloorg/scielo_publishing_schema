@@ -80,7 +80,7 @@ Glossário
 
 
    ISO
-     Acrónimo de *International Organization for Standardization* (Organização Internacional para Padronização). Orgão internacional independente e não governamental, com uma adesão de 163 entidades nacionais de normalização. Criado em Genebra em 1947, é responsável, através de seus membros, por compartilhar conhecimento e expertise, e desenvolver, de forma voluntária e consensual, normas internacionais relevantes para apoiar a inovação e prover soluções para os desafios globais. No Brasil, a ISO é representada pela :term:`ABNT`. Para maiores informações ver `ISO - International Organization for Standardization <http://www.iso.org/iso/home.html>`_.
+     Acrônimo de *International Organization for Standardization* (Organização Internacional para Padronização). Orgão internacional independente e não governamental, com uma adesão de 163 entidades nacionais de normalização. Criado em Genebra em 1947, é responsável, através de seus membros, por compartilhar conhecimento e expertise, e desenvolver, de forma voluntária e consensual, normas internacionais relevantes para apoiar a inovação e prover soluções para os desafios globais. No Brasil, a ISO é representada pela :term:`ABNT`. Para maiores informações ver `ISO - International Organization for Standardization <http://www.iso.org/iso/home.html>`_.
 
 
    ISO 3166
@@ -108,11 +108,11 @@ Glossário
 
 
    Markup
-     Termo em inglês que define uma operação de *marcação* em um :term:`documento` textual de acordo com um padrão previamente definido. Na *SciELO*, *markup* refere-se ao processo de inclusão de elementos :term:`XML` para identificar, qualificar e agrupar informação de um artigo de periódico durante sua incorporação na base de dados. Refere-se também ao nome do programa que apoia o processo de marcação. Para maiores informações ver `SciELO - Scientific Electronic Library Online <http://www.scielo.org/>`_.
+     Termo em inglês que define uma operação de *marcação* em um :term:`documento` textual de acordo com um padrão previamente definido. No *SciELO*, *markup* refere-se ao processo de inclusão de elementos :term:`XML` para identificar, qualificar e agrupar informação de um artigo de periódico durante sua incorporação na base de dados. Refere-se também ao nome do programa que apoia o processo de marcação. Para maiores informações ver `SciELO - Scientific Electronic Library Online <http://www.scielo.org/>`_.
 
 
    MathML
-     Acrónimo de *Mathematical Markup Language* - (Linguagem de Marcação Matemática). Especificação de baixo nível para conteúdo matemático e científico na Internet e mídias similares. Criado e mantido pelo *Math Working Group* (Grupo de trabalho de matemática) do :term:`W3C` (*World Wide Web Consortium*), tornou-se padrão regulamentado pela :term:`ISO` por meio da norma *ISO/IEC 40314:2015*. Para maiores informações ver `W3C Math Home <https://www.w3.org/Math/>`_.
+     Acrônimo de *Mathematical Markup Language* - (Linguagem de Marcação Matemática). Especificação de baixo nível para conteúdo matemático e científico na Internet e mídias similares. Criado e mantido pelo *Math Working Group* (Grupo de trabalho de matemática) do :term:`W3C` (*World Wide Web Consortium*), tornou-se padrão regulamentado pela :term:`ISO` por meio da norma *ISO/IEC 40314:2015*. Para maiores informações ver `W3C Math Home <https://www.w3.org/Math/>`_.
 
 
    Metodologia SciELO
@@ -120,7 +120,7 @@ Glossário
 
 
    Microsoft Word
-     Programa de computador para processamento de texto desenvolvido pela *Microsoft Corporation*. Na *SciELO* é utilizado para apoiar o processo de marcação. Para maiores informações ver `Microsoft Word - Document and word processing software <https://products.office.com/en/word>`_.
+     Programa de computador para processamento de texto desenvolvido pela *Microsoft Corporation*. No *SciELO* é utilizado para apoiar o processo de marcação. Para maiores informações ver `Microsoft Word - Document and word processing software <https://products.office.com/en/word>`_.
 
 
    Namespace
@@ -128,7 +128,7 @@ Glossário
 
 
    NISO
-     Acrónimo de *National Information Standards Organization* (Organização Nacional de Normas de Informação). É uma associação sem fins lucrativos, acreditada pelo *ANSI* (*American National Standards Institute*), que identifica, desenvolve, mantém e publica normas técnicas para gerenciar informação no ambiente digital da atualidade em constante transformação. Para maiores informações ver `NISO site <http://www.niso.org/home/>`_.
+     Acrônimo de *National Information Standards Organization* (Organização Nacional de Normas de Informação). É uma associação sem fins lucrativos, acreditada pelo *ANSI* (*American National Standards Institute*), que identifica, desenvolve, mantém e publica normas técnicas para gerenciar informação no ambiente digital da atualidade em constante transformação. Para maiores informações ver `NISO site <http://www.niso.org/home/>`_.
 
 
    NISO JATS Journal Publishing DTD
@@ -167,12 +167,16 @@ Glossário
      Linguagem de programação orientada a objetos, portável, interativa e interpretada, utilizada para escrever software, scripts de controle de sistemas operacionais, entre outros. Para maiores informações ver `Python site <https://www.python.org/>`_.
 
 
+   Retratação
+     A retratação é uma maneira de corrigir a literatura científica, informando que determinada publicação contém informações dúbias, sendo elas oriundas de erros humanos ou mal práticas dos pesquisadores. Retratações podem ser parciais ou totais. Para maiores informações ver `Retraction Guidelines - Committee on Publication Ethics (COPE) <https://publicationethics.org/files/retraction%20guidelines.pdf>`_.
+
+
    RST
      Sigla de *reStructuredText* (Texto reestruturado). É uma sintaxe de marcação de texto plano, além de ser um componente de parser do software *DocUtils*. Permite realizar marcação inline em arquivos texto através de editores simples como o *Bloco de Notas* do *Windows* e o *vim* do *Linux* para formatação de conteúdo, seja para apresentação na tela ou para formatação de uma saída impressa com qualidade. Foi primariamente desenvolvido para apoiar na documentação de código em linguagem :term:`Python`. Para maiores informações ver `reStrucutredText <http://docutils.sourceforge.net/rst.html>`_.
 
 
    SciELO Manager
-     Serviço *online* com acesso identificado para gerenciamento de periódicos da *SciELO*. Para maiores informações ver `SciELO Manager <http://manager.scielo.org/accounts/login/>`_.
+     Serviço *online* com acesso identificado para gerenciamento de periódicos do *SciELO*. Para maiores informações ver `SciELO Manager <http://manager.scielo.org/accounts/login/>`_.
 
 
    SciELO PS
@@ -220,4 +224,4 @@ Glossário
 
 
 
-.. {"reviewed_on": "20160824", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170901", "by": "carolina.tanigushi@scielo.org"}

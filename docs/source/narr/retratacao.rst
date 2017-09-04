@@ -3,7 +3,7 @@
 Retratação
 ==========
 
-Como regra, arquivos do tipo retratação e retratação parcial devem apresentar o valor `retraction` ou `partial-retraction` no atributo `@article-type`. O texto do elemento `//subj-group[@subj-group-type="heading"]/subject` deve conter a seção apresentada no sumário do número e, no elemento :ref:`elemento-article-title`, a informação deve ser `ARTIGO RETRATADO` (pt), `RETRACTED ARTICLE` (en) `ARTÍCULO RETRACTADO` (es), entre colchetes, mais dois pontos e o título do artigo.
+Como regra, arquivos do tipo :term:`Retratação` e retratação parcial devem apresentar o valor `retraction` ou `partial-retraction` no atributo `@article-type`. O texto do elemento `//subj-group[@subj-group-type="heading"]/subject` deve conter a seção apresentada no sumário do número e, no elemento :ref:`elemento-article-title`, a informação deve ser `ARTIGO RETRATADO` (pt), `RETRACTED ARTICLE` (en) `ARTÍCULO RETRACTADO` (es), entre colchetes, mais dois pontos e o título do artigo.
  
 O elemento :ref:`elemento-related-article` é utilizado para referenciar o artigo que se deseja retratar. Esta tag terá o valor `retracted-article` ou  `partial-retraction`. O `ext-link-type` sempre será do tipo `doi` e `xlink:href` o número de DOI do artigo que está sendo retratado.
  
