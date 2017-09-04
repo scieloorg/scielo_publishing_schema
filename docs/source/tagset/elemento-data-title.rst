@@ -1,7 +1,7 @@
 .. _elemento-data-title:
 
 <data-title>
-=========
+============
 
 Aparece em:
 
