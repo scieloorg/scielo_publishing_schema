@@ -12,13 +12,12 @@ Ocorre:
 
   Zero ou mais vezes
 
-Identifica a edição de um documento em uma referência, mas também pode indicar a versão de um software ou base de dados.
+Identifica a edição de um documento em uma referência.
 
 Exemplos:
 
   * :ref:`elemento-edition-exemplo-1`
   * :ref:`elemento-edition-exemplo-2`
-  * :ref:`elemento-edition-exemplo-3`
 
 
 .. _elemento-edition-exemplo-1:
@@ -42,7 +41,7 @@ Exemplo de ``<edition>`` envolvendo texto:
 
 .. _elemento-edition-exemplo-2:
 
-Exemplo de ``<edition>`` envolvendo numero:
+Exemplo de ``<edition>`` envolvendo número:
 -------------------------------------------
 
 .. code-block:: xml
@@ -58,26 +57,4 @@ Exemplo de ``<edition>`` envolvendo numero:
    ...
 
 
-
-.. _elemento-edition-exemplo-3:
-
-Exemplo de ``<edition>`` envolvendo versão:
--------------------------------------------
-
-.. code-block:: xml
-
-   ...
-   <element-citation publication-type="database">
-        <source>DialogWeb [Internet]</source>
-        <edition>Version 2.5</edition>
-        <publisher-loc>Cary (NC)</publisher-loc>
-        <publisher-name>The Dialog Corporation</publisher-name>
-        <year>c1997 -  </year>
-        <date-in-citation>cited 2007 Feb 1</date-in-citation>
-        <comment>Available from:
-        <ext-link ext-link-type="uri" xlink:href="http://www.dialogweb.com/">http://www.dialogweb.com/</ext-link>.
-     </comment>
-   </element-citation>
-
-
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170904", "by": "carolina.tanigushi@scielo.org"}
