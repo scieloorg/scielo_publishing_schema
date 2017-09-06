@@ -1,0 +1,31 @@
+.. _elemento-state:
+
+<state>
+=======
+
+Aparece em:
+
+  :ref:`elemento-addr-line`
+
+Ocorre:
+
+  Zero ou mais vezes
+
+
+Identifica o estado da instituição vinculada ao autor, caso exista.
+
+Exemplo:
+
+
+.. code-block:: xml
+
+    ...
+    <addr-line>
+        <city>São José do Rio Preto</city>
+        <state>São Paulo</state>
+        ...
+    </addr-line>
+    ...
+
+
+.. {"reviewed_on": "20170905", "by": "carolina.tanigushi@scielo.org"}
