@@ -70,13 +70,11 @@ Deve ser identificada como:
         <title>Lista Númerica</title>
         <list-item>
             <p>Nullam gravida tellus eget condimentum egestas.</p>
-        </list-item>
-        <list-item>
-            <list list-type="order">
-                <list-item>
-                    <p>Curabitur luctus lorem ac feugiat pretium.</p>
-                </list-item>
-            </list>
+            	<list list-type="order">
+                	<list-item>
+                    	<p>Curabitur luctus lorem ac feugiat pretium.</p>
+                	</list-item>
+            	</list>
         </list-item>
         <list-item>
             <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
@@ -87,4 +85,4 @@ Deve ser identificada como:
 .. note:: Note que o marcador não deve ser identificado como parte do texto no elemento ``<list-item>``.
 
 
-.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170912", "by": "carolina.tanigushi@scielo.org"}
