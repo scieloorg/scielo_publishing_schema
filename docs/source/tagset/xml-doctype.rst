@@ -3,7 +3,7 @@
 <!DOCTYPE>
 ==========
 
-A declaração ``<!DOCTYPE>`` indica a :term:`DTD` à qual o XML encontra-se associado, ou seja, define as regras estruturais do :term:`documento`. O :term:`SciELO Publishing Schema` utiliza como base o padrão `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_.
+A declaração ``<!DOCTYPE>`` indica a :term:`DTD` à qual o XML encontra-se associado, ou seja, define as regras estruturais do :term:`documento`. O :term:`SciELO Publishing Schema` utiliza como base o padrão JATS nas versões `1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_ e `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_.
 
 Exemplo *JATS versão 1.0*:
 
@@ -11,6 +11,12 @@ Exemplo *JATS versão 1.0*:
 
     <!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "http://jats.nlm.nih.gov/publishing/1.0/JATS-journalpublishing1.dtd">
 
+
+Exemplo *JATS versão 1.1*:
+
+.. code-block:: xml
+
+    <!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN" "https://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd">
 
 
 Elementos Flutuantes

@@ -26,7 +26,7 @@ Este guia descreve o uso do estilo de marcação adotado pela *SciELO* para subm
 
 A :term:`SciELO Publishing Schema` (:term:`SciELO PS`) é composta pelas especificações:
 
-* :term:`NISO JATS Journal Publishing DTD` (`JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_);
+* :term:`NISO JATS Journal Publishing DTD` (JATS versões `1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_ e `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_);
 * :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
 
 Os usuários deste guia devem possuir conhecimentos prévios de :term:`XML` e :term:`DTD`.
@@ -154,7 +154,7 @@ Documentação narrativa
 Lista de elementos
 ------------------
 
-Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A lista completa dos elementos *XML* que compõem o :term:`tag set` da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_ deve ser consultada se necessário.
+Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A lista completa dos elementos *XML* que compõem o :term:`tag set` da JATS nas versões `1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_ e `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_ devem ser consultadas se necessário.
 
 .. toctree::
    :maxdepth: 1
