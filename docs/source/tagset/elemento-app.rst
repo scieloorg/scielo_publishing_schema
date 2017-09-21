@@ -5,7 +5,7 @@
 
 Aparece em:
 
-  :ref:`elemento-app-group`
+  ``<app-group``
 
 Atributos obrigatórios:
 
