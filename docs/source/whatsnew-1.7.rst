@@ -6,7 +6,7 @@ Este artigo explica as alterações da especificação :term:`SciELO PS` versão
 relação à sua predecessora, a versão 1.6.  
 
 
-* Documentação dos elementos :ref:`elemento-city`, :ref:`elemento-state` e :ref:`elemento-postal-code` [`#487 <https://github.com/scieloorg/scielo_publishing_schema/issues/487>`_].
+* Documentação dos elementos :ref:`elemento-city`, :ref:`elemento-state` e ``<postal-code>`` [`#487 <https://github.com/scieloorg/scielo_publishing_schema/issues/487>`_].
 
 * Criação dos elementos :ref:`elemento-data-title` e :ref:`elemento-version`, e correção da documentação do elemento :ref:`elemento-edition` para identificar apenas a edição de um documento [`#488 <https://github.com/scieloorg/scielo_publishing_schema/issues/488>`_].
 
