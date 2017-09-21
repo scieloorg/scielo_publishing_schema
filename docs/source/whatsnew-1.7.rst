@@ -3,7 +3,7 @@ O que há de novo na SciELO PS 1.7
 
 
 Este artigo explica as alterações da especificação :term:`SciELO PS` versão 1.7 em 
-relação à sua predecessora, a versão 1.6. 
+relação à sua predecessora, a versão 1.6.  
 
 
 * Documentação dos elementos :ref:`elemento-city`, :ref:`elemento-state` e :ref:`elemento-postal-code` [`#487 <https://github.com/scieloorg/scielo_publishing_schema/issues/487>`_].
