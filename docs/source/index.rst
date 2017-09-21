@@ -1,12 +1,13 @@
 Guia de uso de elementos e atributos XML para documentos que seguem a implementação SciELO Publishing Schema.
 =============================================================================================================
 
-Versão |version| - março de 2017.
+Versão |version| - setembro de 2017.
 
 
 Versões anteriores:
 
-* `Versão 1.5 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.5-branch/>`_ (suportada).
+* `Versão 1.6 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.6-branch/>`_ (suportada).
+* `Versão 1.5 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.5-branch/>`_.
 * `Versão 1.4 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.4-branch/>`_
 * `Versão 1.3 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.3-branch/>`_.
 * `Versão 1.2 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.2-branch/>`_.
@@ -44,6 +45,7 @@ Duas versões são suportadas simultaneamente, a atual e a imediatamente anterio
 .. toctree::
    :maxdepth: 1
 
+   whatsnew-1.7
    whatsnew-1.6
    whatsnew-1.5
    whatsnew-1.4
@@ -182,4 +184,4 @@ Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A l
 
    copyright
 
-.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}
+.. {"reviewed_on": "20170921", "by": "carolina.tanigushi@scielo.org"}
