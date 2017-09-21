@@ -6,7 +6,7 @@ Este artigo explica as alterações da especificação :term:`SciELO PS` versão
 relação à sua predecessora, a versão 1.6.  
 
 
-* Documentação dos elementos :ref:`elemento-city`, :ref:`elemento-state` e ``<postal-code>`` [`#487 <https://github.com/scieloorg/scielo_publishing_schema/issues/487>`_].
+* Documentação dos elementos :ref:`elemento-city`, :ref:`elemento-state` e :ref:`elemento-postal-code` [`#487 <https://github.com/scieloorg/scielo_publishing_schema/issues/487>`_].
 
 * Criação dos elementos :ref:`elemento-data-title` e :ref:`elemento-version`, e correção da documentação do elemento :ref:`elemento-edition` para identificar apenas a edição de um documento [`#488 <https://github.com/scieloorg/scielo_publishing_schema/issues/488>`_].
 
@@ -27,7 +27,7 @@ São as alterações na documentação que não interferem nas regras da especif
 * Inclusão do exemplo da declaração de :ref:`xml-doctype` compatível com a versão `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_ da JATS
   [`#549 <https://github.com/scieloorg/scielo_publishing_schema/issues/549>`_].
 
-* Inclusão de elementos em "Aparece em" nos elementos :ref:`app`, :ref:`article-categories`, :ref:`autor-notes`, :ref:`history` e :ref:`kwd-group`
+* Inclusão de elementos em "Aparece em" nos elementos :ref:`elemento-app`, :ref:`elemento-article-categories`, :ref:`elemento-autor-notes`, :ref:`elemento-history` e :ref:`elemento-kwd-group`
   [`#531 <https://github.com/scieloorg/scielo_publishing_schema/issues/531>`_].
 
 * Correção de exemplos de uso e estilo de redação
