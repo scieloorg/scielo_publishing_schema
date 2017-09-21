@@ -10,7 +10,7 @@ relação à sua predecessora, a versão 1.6.
 
 * Criação dos elementos :ref:`elemento-data-title` e :ref:`elemento-version`, e correção da documentação do elemento :ref:`elemento-edition` para identificar apenas a edição de um documento [`#488 <https://github.com/scieloorg/scielo_publishing_schema/issues/488>`_].
 
-* Retirada da restrição de seção para :ref:`aheadofprint` (alterado em :ref:`aheadofprint` e :ref:`elemento-subj-group`) [`#535 <https://github.com/scieloorg/scielo_publishing_schema/issues/535>`_].
+* Retirada da restrição de seção para :term:`ahead of print` (AOP) (alterado em :ref:`ahead-of-print` e :ref:`elemento-subj-group`) [`#535 <https://github.com/scieloorg/scielo_publishing_schema/issues/535>`_].
 
 * Retirada do valor "author" da tabela de valores possíveis para o atributo ``@fn-type`` em :ref:`elemento-fn` [`#542 <https://github.com/scieloorg/scielo_publishing_schema/issues/542>`_].
 
