@@ -27,7 +27,7 @@ São as alterações na documentação que não interferem nas regras da especif
 * Inclusão do exemplo da declaração de :ref:`xml-doctype` compatível com a versão `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_ da JATS
   [`#549 <https://github.com/scieloorg/scielo_publishing_schema/issues/549>`_].
 
-* Inclusão de elementos em "Aparece em" nos elementos :ref:`elemento-app`, :ref:`elemento-article-categories`, :ref:`elemento-autor-notes`, :ref:`elemento-history` e :ref:`elemento-kwd-group`
+* Inclusão de elementos em "Aparece em" nos elementos :ref:`elemento-app`, :ref:`elemento-article-categories`, :ref:`elemento-author-notes`, :ref:`elemento-history` e :ref:`elemento-kwd-group`
   [`#531 <https://github.com/scieloorg/scielo_publishing_schema/issues/531>`_].
 
 * Correção de exemplos de uso e estilo de redação
