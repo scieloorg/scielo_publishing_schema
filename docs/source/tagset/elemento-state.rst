@@ -23,6 +23,7 @@ Exemplo:
     <addr-line>
         <city>São José do Rio Preto</city>
         <state>São Paulo</state>
+        <postal-code>00000-000</postal-code>
         ...
     </addr-line>
     ...

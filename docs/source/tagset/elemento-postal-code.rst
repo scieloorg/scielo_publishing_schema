@@ -1,7 +1,7 @@
-.. _elemento-city:
+.. _postal-code:
 
-<city>
-======
+<postal-code>
+=============
 
 Aparece em:
 
@@ -12,7 +12,7 @@ Ocorre:
   Zero ou mais vezes
 
 
-Identifica a cidade da instituição vinculada ao autor, caso exista.
+Identifica o código postal da instituição vinculada ao autor, caso exista.
 
 Exemplo:
 
@@ -29,4 +29,4 @@ Exemplo:
     ...
 
 
-.. {"reviewed_on": "20170905", "by": "carolina.tanigushi@scielo.org"}
+.. {"reviewed_on": "20170921", "by": "carolina.tanigushi@scielo.org"}
