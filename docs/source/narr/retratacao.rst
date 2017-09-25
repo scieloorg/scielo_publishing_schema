@@ -17,7 +17,7 @@ Exemplo:
      	<front>
         ...
        <article-meta>
-            	<article-id pub-id-type="doi">DOI (PRÓPRIO retirar) DA RETRATAÇÃO</article-id>
+            	<article-id pub-id-type="doi">DOI DA RETRATAÇÃO</article-id>
             		<article-categories>
                 			<subj-group subj-group-type="heading">
                     			<subject>Retratação</subject>
@@ -44,4 +44,4 @@ Exemplo:
 O XML do artigo retratado ou parcialmente retratado é alterado pela equipe SciELO. Para mais informações, leia o `Guia para o registro e publicação de retratação <http://www.scielo.org/local/File/Guia%20para%20o%20registro%20e%20publica%C3%A7%C3%A3o%20de%20retrata%C3%A7%C3%A3o.pdf>`_.
 
 
-.. {"reviewed_on": "20170829", "by": "carolina.tanigushi@scielo.org"}
+.. {"reviewed_on": "20170925", "by": "carolina.tanigushi@scielo.org"}
