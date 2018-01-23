@@ -28,5 +28,6 @@ Exemplo:
     </addr-line>
     ...
 
+.. note:: Elemento válido apenas na versão 1.1 da JATS. Consulte exemplo de declaração para a versão JATS v1.1 em `!DOCTYPE <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.7-branch/tagset/xml-doctype.html>`_.
 
 .. {"reviewed_on": "20170921", "by": "carolina.tanigushi@scielo.org"}
