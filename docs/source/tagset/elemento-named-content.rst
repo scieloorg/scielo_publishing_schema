@@ -3,17 +3,16 @@
 <named-content>
 ===============
 
-Aparece em:
-
-  :ref:`elemento-addr-line`
-
 Atributos obrigatórios:
 
   1. ``@content-type``
 
-Ocorre:
++---------------------------+--------------------+
+| Aparece em                | Ocorre             |
++===========================+====================+
+| :ref:`elemento-addr-line` | Zero ou mais vezes |
++---------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Representa as informações de endereço na afiliação, sendo portanto, parte de :ref:`elemento-addr-line`. Tem, obrigatoriamente, o atributo ``@content-type`` cujos valores possíveis são:

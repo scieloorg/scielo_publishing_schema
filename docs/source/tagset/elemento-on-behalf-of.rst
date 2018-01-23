@@ -3,14 +3,14 @@
 <on-behalf-of>
 ==============
 
-Aparece em:
++-------------------------------+--------------------+
+| Aparece em                    | Ocorre             |
++===============================+====================+
+| :ref:`elemento-contrib-group` | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-contrib`       | Zero ou mais vezes |
++-------------------------------+--------------------+
 
-  :ref:`elemento-contrib-group`
-  :ref:`elemento-contrib`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Utiliza-se quando um autor age como representante de um grupo ou organização na autoria ou edição de um artigo.
 

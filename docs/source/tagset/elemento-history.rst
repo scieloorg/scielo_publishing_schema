@@ -3,14 +3,14 @@
 <history>
 =========
 
-Aparece em:
++------------------------------+-----------------+
+| Aparece em                   | Ocorre          |
++==============================+=================+
+| :ref:`elemento-article-meta` | Zero ou uma vez |
++------------------------------+-----------------+
+| :ref:`elemento-front-stub`   | Zero ou uma vez |
++------------------------------+-----------------+
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-front-stub`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Agrupa as datas nas quais o artigo foi recebido, aceito e/ou revisado. Contém, obrigatoriamente, elementos do tipo :ref:`elemento-date`.

@@ -3,17 +3,16 @@
 <ref>
 =====
 
-Aparece em:
-
-  :ref:`elemento-ref-list`
-
 Atributos obrigatórios:
 
   1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
 
-Ocorre:
++--------------------------+-------------------+
+| Aparece em               | Ocorre            |
++==========================+===================+
+| :ref:`elemento-ref-list` | Uma ou mais vezes |
++--------------------------+-------------------+
 
-  Uma ou mais vezes
 
 
 O elemento é exclusivo para identificar referências em qualquer norma, e descreve livros, periódicos, conferências etc.

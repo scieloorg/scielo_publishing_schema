@@ -3,17 +3,16 @@
 <contrib>
 =========
 
-Aparece em:
-
-  :ref:`elemento-contrib-group`
-
 Atributos obrigatórios:
 
   1. ``@contrib-type``
 
-Ocorre:
++-------------------------------+-------------------+
+| Aparece em                    | Ocorre            |
++===============================+===================+
+| :ref:`elemento-contrib-group` | Uma ou mais vezes |
++-------------------------------+-------------------+
 
-  Uma ou mais vezes
 
 
 Identifica dados individuais, institucionais ou de grupo, de contribuintes do artigo, podendo ser inclusive anônimos. :ref:`elemento-name`, :ref:`elemento-collab`, :ref:`elemento-on-behalf-of`, :ref:`elemento-xref`, :ref:`elemento-role` e ``<anonymous>`` podem ser encontrados neste elemento.

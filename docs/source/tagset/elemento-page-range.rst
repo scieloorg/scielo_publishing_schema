@@ -3,14 +3,14 @@
 <page-range>
 ============
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-product`          | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-
-Ocorre:
-
-  Zero ou uma vez
 
 Identifica um ou mais sub-intervalos de paginação contidos entre os valores de :ref:`elemento-fpage` e :ref:`elemento-lpage` em uma referência bibliográfica. Cada sub-intervalo pode ser composto de um valor numérico (denotando uma página simples) ou dois valores numéricos separados por hífen (indicando um intervalo de páginas). Sub-intervalos são separados por vírgula.
 

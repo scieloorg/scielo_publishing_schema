@@ -3,14 +3,14 @@
 <edition>
 =========
 
-Aparece em:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-product`          | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  :ref:`elemento-product`
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Identifica a edição de um documento em uma referência.
 

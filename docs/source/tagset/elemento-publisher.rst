@@ -3,13 +3,12 @@
 <publisher>
 ===========
 
-Aparece em:
++------------------------------+---------+
+| Aparece em                   | Ocorre  |
++==============================+=========+
+| :ref:`elemento-journal-meta` | Uma vez |
++------------------------------+---------+
 
-  :ref:`elemento-journal-meta`
-
-Ocorre:
-
-  Uma vez
 
 
 Contém o nome da casa publicadora (ou editora) do periódico conforme registro na SciELO.

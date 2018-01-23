@@ -3,13 +3,12 @@
 <trans-title>
 =============
 
-Aparece em:
++-----------------------------------+---------+
+| Aparece em                        | Ocorre  |
++===================================+=========+
+| :ref:`elemento-trans-title-group` | Uma vez |
++-----------------------------------+---------+
 
-  :ref:`elemento-trans-title-group`
-
-Ocorre:
-
-  Uma vez
 
 
 Identifica o título traduzido do artigo dentro do elemento :ref:`elemento-trans-title-group`.

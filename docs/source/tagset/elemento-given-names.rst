@@ -3,13 +3,12 @@
 <given-names>
 =============
 
-Aparece em:
++----------------------+-----------------+
+| Aparece em           | Ocorre          |
++======================+=================+
+| :ref:`elemento-name` | Zero ou uma vez |
++----------------------+-----------------+
 
-  :ref:`elemento-name`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Identifica o prenome do autor, ou seja, todos os nomes exceto pelo sobrenome.

@@ -3,14 +3,14 @@
 <sec>
 =====
 
-Aparece em:
++----------------------+--------------------+
+| Aparece em           | Ocorre             |
++======================+====================+
+| :ref:`elemento-body` | Zero ou mais vezes |
++----------------------+--------------------+
+| :ref:`elemento-sec`  | Zero ou mais vezes |
++----------------------+--------------------+
 
-  :ref:`elemento-body`
-  :ref:`elemento-sec`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 O corpo textual do artigo pode ser constituído por seções. Cada uma delas tendo um elemento ``<title>`` seguido de um ou mais parágrafos (:ref:`elemento-p`).

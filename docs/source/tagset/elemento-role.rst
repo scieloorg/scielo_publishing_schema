@@ -3,18 +3,22 @@
 <role>
 ======
 
-Aparece em:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-collab`           | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-contrib`          | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-contrib-group`    | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-person-group`     | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-product`          | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  :ref:`elemento-collab`
-  :ref:`elemento-contrib`
-  :ref:`elemento-contrib-group`
-  :ref:`elemento-element-citation`
-  :ref:`elemento-person-group`
-  :ref:`elemento-product`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 ``<role>`` (função ou papel) é usado para especificar o tipo de responsabilidade (ou função) do contribuinte do :term:`artigo`.

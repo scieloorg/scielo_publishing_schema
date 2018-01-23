@@ -3,11 +3,6 @@
 <front-stub>
 ============
 
-Aparece em:
-
-    :ref:`elemento-sub-article`
-    :ref:`elemento-response`
-
 
 Tags obrigatórias:
 
@@ -15,9 +10,14 @@ Tags obrigatórias:
     :ref:`elemento-article-title`
 
 
-Ocorre:
++-----------------------------+---------+
+| Aparece em                  | Ocorre  |
++=============================+=========+
+| :ref:`elemento-sub-article` | Uma vez |
++-----------------------------+---------+
+| :ref:`elemento-response`    | Uma vez |
++-----------------------------+---------+
 
-    Uma vez
 
 
 Utilizado em :ref:`elemento-sub-article` o qual herda os metadados do xml principal. Por este motivo não devem ser inseridos os elementos :ref:`elemento-journal-meta` e :ref:`elemento-article-meta`.

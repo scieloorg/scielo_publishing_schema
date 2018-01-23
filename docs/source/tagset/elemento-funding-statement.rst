@@ -3,13 +3,12 @@
 <funding-statement>
 ===================
 
-Aparece em:
++-------------------------------+-----------------+
+| Aparece em                    | Ocorre          |
++===============================+=================+
+| :ref:`elemento-funding-group` | Zero ou uma vez |
++-------------------------------+-----------------+
 
-  :ref:`elemento-funding-group`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Contém os dados de financiamento exatamente como apresentado na nota de rodapé.

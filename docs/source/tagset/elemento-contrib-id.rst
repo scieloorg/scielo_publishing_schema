@@ -3,17 +3,16 @@
 <contrib-id>
 ============
 
-Aparece em:
-
-  :ref:`elemento-contrib`
-
 Atributos obrigatórios:
 
   1. ``@contrib-id-type``
 
-Ocorre:
++-------------------------+--------------------+
+| Aparece em              | Ocorre             |
++=========================+====================+
+| :ref:`elemento-contrib` | Zero ou mais vezes |
++-------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Determina um identificador digital a um pesquisador.
 

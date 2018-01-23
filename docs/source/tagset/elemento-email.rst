@@ -3,14 +3,14 @@
 <email>
 =======
 
-Aparece em:
++-------------------------+--------------------+
+| Aparece em              | Ocorre             |
++=========================+====================+
+| :ref:`elemento-aff`     | Zero ou mais vezes |
++-------------------------+--------------------+
+| :ref:`elemento-corresp` | Zero ou mais vezes |
++-------------------------+--------------------+
 
-  :ref:`elemento-aff`
-  :ref:`elemento-corresp`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Identifica endereços de email.

@@ -3,17 +3,16 @@
 <date-in-citation>
 ==================
 
-Aparece em:
-
-  :ref:`elemento-element-citation`
-
 Atributos obrigatórios:
 
   1. ``@content-type``
 
-Ocorre:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Indica a data de citação em uma referência. O atributo ``@content-type`` é obrigatório e deve conter um valor que qualifica a data de acesso ou a data de atualização do :term:`documento`, cujos valores possíveis são:
 

@@ -3,29 +3,43 @@
 <label>
 =======
 
-Aparece em:
 
-  :ref:`elemento-aff`
-  :ref:`elemento-app`
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-corresp`
-  :ref:`elemento-def-list`
-  :ref:`elemento-disp-formula`
-  :ref:`elemento-fig`
-  :ref:`elemento-fn`
-  ``glossary``
-  :ref:`elemento-list`
-  ``list-item``
-  :ref:`elemento-media`
-  :ref:`elemento-ref`
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-table-wrap`  
-  :ref:`elemento-verse-group`
-  
++----------------------------------------+--------------------+
+| Aparece em                             | Ocorre             |
++========================================+====================+
+| :ref:`elemento-aff`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-app`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-boxed-text`             | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-corresp`                | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-def-list`               | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-disp-formula`           | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-fig`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-fn`                     | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| ``glossary``                           | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-list`                   | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| ``list-item``                          | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-media`                  | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-ref`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-supplementary-material` | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-table-wrap`             | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-verse-group`            | Zero ou mais vezes |
++----------------------------------------+--------------------+
 
-Ocorre:
-
-  Zero ou mais vezes
 
 
 ``<label>`` tem como função identificar, numérica e/ou alfabéticamente, um grupo de elementos de tipo específico.

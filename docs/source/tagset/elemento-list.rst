@@ -3,23 +3,28 @@
 <list>
 ======
 
-Aparece em:
-
-  :ref:`elemento-app`
-  :ref:`elemento-body`
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-disp-quote`
-  ``<list-item>``
-  :ref:`elemento-p`
-  :ref:`elemento-sec`
-      
 Atributos obrigatórios:
 
   1. ``@list-type``
 
-Ocorre:
++----------------------------+--------------------+
+| Aparece em                 | Ocorre             |
++============================+====================+
+| :ref:`elemento-app`        | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-body`       | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-boxed-text` | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-disp-quote` | Zero ou mais vezes |
++----------------------------+--------------------+
+| ``<list-item>``            | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-p`          | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-sec`        | Zero ou mais vezes |
++----------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Lista contendo dois ou mais itens. Pode conter, opcionalmente, um elemento ``<title>`` ou um elemento ``<label>``, exclusivamente.

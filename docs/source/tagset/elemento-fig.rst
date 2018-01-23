@@ -3,24 +3,27 @@
 <fig>
 =====
 
-Aparece em:
-
-  
-  :ref:`elemento-app`
-  :ref:`elemento-body`
-  ``<fig-group>``
-  :ref:`elemento-glossary`
-  :ref:`elemento-p`
-  :ref:`elemento-supplementary-material`
-
 
 Atributos obrigatórios:
 
   1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
 
-Ocorre:
++----------------------------------------+--------------------+
+| Aparece em                             | Ocorre             |
++========================================+====================+
+| :ref:`elemento-app`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-body`                   | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| ``<fig-group>``                        | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-glossary`               | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-p`                      | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-supplementary-material` | Zero ou mais vezes |
++----------------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Identifica as figuras de um artigo. Nesse elemento é possível especificar ``<label>``, ``<caption>``, ``<graphic>``, ``<links>`` e objetos multimídia como vídeo, áudio e filme.

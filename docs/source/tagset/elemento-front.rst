@@ -3,13 +3,12 @@
 <front>
 =======
 
-Aparece em:
++-------------------------+---------+
+| Aparece em              | Ocorre  |
++=========================+=========+
+| :ref:`elemento-article` | Uma vez |
++-------------------------+---------+
 
-  :ref:`elemento-article`
-
-Ocorre:
-
-  Uma vez
 
 
 Neste elemento devem ser identificados :ref:`elemento-journal-meta` e :ref:`elemento-article-meta`.

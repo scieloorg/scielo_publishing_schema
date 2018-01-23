@@ -3,17 +3,16 @@
 <pub-date>
 ==========
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-
 Atributos obrigatórios:
 
   1. ``@pub-type``
 
-Ocorre:
++------------------------------+---------+
+| Aparece em                   | Ocorre  |
++==============================+=========+
+| :ref:`elemento-article-meta` | Uma vez |
++------------------------------+---------+
 
-  Uma vez
 
 
 A data de publicação do artigo/número utiliza o elemento ``<pub-date>``, o qual pode conter os elementos :ref:`elemento-day`, :ref:`elemento-month`, :ref:`elemento-season` e, obrigatoriamente, :ref:`elemento-year`.

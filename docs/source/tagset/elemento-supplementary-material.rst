@@ -3,22 +3,6 @@
 <supplementary-material>
 ========================
 
-Aparece em:
-
-  ``app-group``
-  :ref:`elemento-app`
-  :ref:`elemento-article-meta`
-  :ref:`elemento-body`
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-disp-quote`
-  :ref:`elemento-front-stub`
-  :ref:`elemento-glossary`
-  ``license-p``
-  :ref:`elemento-named-content`
-  :ref:`elemento-p`
-  :ref:`elemento-ref-list`
-  :ref:`elemento-sec`
-  
 
 Atributos obrigatórios:
 
@@ -27,9 +11,36 @@ Atributos obrigatórios:
   3. ``@mimetype``
   4. ``@mime-subtype``
 
-Ocorre:
++-------------------------------+--------------------+
+| Aparece em                    | Ocorre             |
++===============================+====================+
+| ``app-group``                 | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-app`           | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-article-meta`  | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-body`          | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-boxed-text`    | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-disp-quote`    | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-front-stub`    | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-glossary`      | Zero ou mais vezes |
++-------------------------------+--------------------+
+| ``license-p``                 | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-named-content` | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-p`             | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-ref-list`      | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-sec`           | Zero ou mais vezes |
++-------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 O material suplementar é um :term:`documento` que não faz parte do texto do artigo, mas que serviu como apoio para sua elaboração. Em ``<supplementary-material>`` é possível especificar tabelas, figuras, dados brutos de planilha, bancos de dados de genomas, quiz, equações, links, diálogos, listas, licenças e objetos multimídia como áudio e vídeo.

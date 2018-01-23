@@ -3,13 +3,12 @@
 <city>
 ======
 
-Aparece em:
++---------------------------+--------------------+
+| Aparece em                | Ocorre             |
++===========================+====================+
+| :ref:`elemento-addr-line` | Zero ou mais vezes |
++---------------------------+--------------------+
 
-  :ref:`elemento-addr-line`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Identifica a cidade da instituição vinculada ao autor, caso exista.

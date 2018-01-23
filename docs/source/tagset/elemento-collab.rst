@@ -3,14 +3,14 @@
 <collab>
 ========
 
-Aparece em:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-contrib`      | Zero ou mais vezes |
++------------------------------+--------------------+
+| :ref:`elemento-person-group` | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  :ref:`elemento-contrib`
-  :ref:`elemento-person-group`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Identifica uma autoria institucional individual ou em grupo.
 

@@ -3,18 +3,18 @@
 <issn>
 ======
 
-Aparece em:
-
-  :ref:`elemento-journal-meta`
-  :ref:`elemento-element-citation`
-
 Atributos obrigatórios (em :ref:`elemento-front`):
 
   1. ``@pub-type='ppub'`` ou ``@pub-type='epub'``
 
-Ocorre:
++----------------------------------+-------------------+
+| Aparece em                       | Ocorre            |
++==================================+===================+
+| :ref:`elemento-journal-meta`     | Uma ou mais vezes |
++----------------------------------+-------------------+
+| :ref:`elemento-element-citation` | Uma ou mais vezes |
++----------------------------------+-------------------+
 
-  Uma ou mais vezes
 
 
 :term:`ISSN` é um código numérico, único, que identifica uma publicação seriada definida pela norma :term:`ISO 3297:2007`.

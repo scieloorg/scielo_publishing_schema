@@ -3,13 +3,12 @@
 <postal-code>
 =============
 
-Aparece em:
++---------------------------+--------------------+
+| Aparece em                | Ocorre             |
++===========================+====================+
+| :ref:`elemento-addr-line` | Zero ou mais vezes |
++---------------------------+--------------------+
 
-  :ref:`elemento-addr-line`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Identifica o código postal da instituição vinculada ao autor, caso exista.

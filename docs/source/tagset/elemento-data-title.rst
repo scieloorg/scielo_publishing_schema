@@ -3,15 +3,15 @@
 <data-title>
 ============
 
-Aparece em:
 
-  :ref:`elemento-product`
-  :ref:`elemento-element-citation`
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-product`          | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Identifica referência do tipo base de dados.
 

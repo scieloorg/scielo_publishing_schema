@@ -3,10 +3,6 @@
 <article>
 =========
 
-Aparece em:
-
-  ``/``
-
 Atributos obrigatórios:
 
   1. ``@dtd-version``
@@ -18,9 +14,12 @@ Atributos obrigatórios:
 
 .. note:: No atributo ``@specific-use`` o valor **sps-1.0** é apenas uma referência genérica à versão da *SciELO PS*. Deve ser utilizada sempre          a versão corrente (atual).
 
-Ocorre:
++-------------+---------+
+| Aparece em  | Ocorre  |
++=============+=========+
+| ``/``       | Uma vez |
++-------------+---------+
 
-  Uma vez
 
 
 :ref:`elemento-article` é a raiz do *XML* do :term:`documento` e deve explicitar, obrigatoriamente, os atributos de versão da :term:`DTD`, tipo de documento, idioma do texto, declarações de :term:`namespace` e versão da :term:`SciELO PS` utilizada.
