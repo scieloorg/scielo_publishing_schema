@@ -10,7 +10,7 @@ Atributos obrigatórios:
 +----------------+--------------------+
 | Aparece em     | Ocorre             |
 +================+====================+
-| ``<app-group`` | Zero ou mais vezes |
+| ``<app-group>`` | Zero ou mais vezes |
 +----------------+--------------------+
 
 
