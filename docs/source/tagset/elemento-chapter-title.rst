@@ -6,7 +6,7 @@
 +----------------------------------+--------------------+
 | Aparece em                       | Ocorre             |
 +==================================+====================+
-| :ref:`elemento-element-citation` | Zero ou mais vezes |
+| :ref:`elemento-element-citation` | Zero ou uma vez    |
 +----------------------------------+--------------------+
 
 
