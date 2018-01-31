@@ -6,9 +6,9 @@
 +------------------------------+--------------------+
 | Aparece em                   | Ocorre             |
 +==============================+====================+
-| :ref:`elemento-article-meta` | Zero ou mais vezes |
+| :ref:`elemento-article-meta` | Zero ou uma vez    |
 +------------------------------+--------------------+
-| :ref:`elemento-front-stub`   | Zero ou mais vezes |
+| :ref:`elemento-front-stub`   | Zero ou uma vez    |
 +------------------------------+--------------------+
 
 
