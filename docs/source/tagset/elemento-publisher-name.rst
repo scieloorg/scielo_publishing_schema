@@ -3,15 +3,16 @@
 <publisher-name>
 ================
 
-Aparece em:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-product`          | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-publisher`        | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-  :ref:`elemento-publisher`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Representa o nome da casa publicadora ou editora.

@@ -11,17 +11,16 @@ Representa um complemento ou um comentário explicativo do que está sendo citad
 Notas de autor
 --------------
 
-Aparece em:
-
-  :ref:`elemento-author-notes`
-
 Atributos obrigatórios:
 
   1. ``@fn-type``
 
-Ocorre:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-author-notes` | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Notas de rodapé de autores são inseridas em :ref:`elemento-author-notes` e, obrigatoriamente, possuem o atributo ``@fn-type``.

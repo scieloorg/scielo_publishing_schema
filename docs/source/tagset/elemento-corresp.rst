@@ -3,13 +3,12 @@
 <corresp>
 =========
 
-Aparece em:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-author-notes` | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  :ref:`elemento-author-notes`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Elemento que engloba dados de correspondência de um ou mais autores do artigo. Pode ou não conter um elemento :ref:`elemento-label`. O atributo ``@id`` também é opcional. É possível ainda marcar a informação de correio eletrônico com ``<email>``, caso exista.
 

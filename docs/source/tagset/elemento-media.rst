@@ -3,25 +3,30 @@
 <media>
 =======
 
-Aparece em:
-
-  :ref:`elemento-app`
-  :ref:`elemento-body`
-  :ref:`elemento-fig`
-  ``<fig-group>``
-  :ref:`elemento-p`
-  :ref:`elemento-sec`
-  :ref:`elemento-table-wrap`
-  
 Atributos obrigatórios:
 
   1. ``@mime-subtype``
   2. ``@xlink:href``
   3. ``@mime-type``
 
-Ocorre:
++----------------------------+--------------------+
+| Aparece em                 | Ocorre             |
++============================+====================+
+| :ref:`elemento-app`        | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-body`       | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-fig`        | Zero ou mais vezes |
++----------------------------+--------------------+
+| ``<fig-group>``            | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-p`          | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-sec`        | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-table-wrap` | Zero ou mais vezes |
++----------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 ``<media>`` é usado para especificar arquivos multimídia como, por exemplo:

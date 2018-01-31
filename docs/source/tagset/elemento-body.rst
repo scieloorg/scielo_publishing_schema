@@ -3,15 +3,16 @@
 <body>
 ======
 
-Aparece em:
++-----------------------------+---------+
+| Aparece em                  | Ocorre  |
++=============================+=========+
+| :ref:`elemento-article`     | Uma vez |
++-----------------------------+---------+
+| :ref:`elemento-sub-article` | Uma vez |
++-----------------------------+---------+
+| :ref:`elemento-response`    | Uma vez |
++-----------------------------+---------+
 
-  :ref:`elemento-article`
-  :ref:`elemento-sub-article`
-  :ref:`elemento-response`
-
-Ocorre:
-
-  Uma vez
 
 
 Compreende todo o conteúdo formal de desenvolvimento do artigo científico, ou seja texto, imagens, tabelas, figuras, gráficos, equações, fórmulas etc.

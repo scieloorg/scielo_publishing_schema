@@ -3,14 +3,14 @@
 <lpage>
 =======
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-article-meta`     | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  Zero ou uma vez
 
 Indica a paginação final do artigo. No caso de :term:`ahead of print`, a informação deve ser preenchida com ``00``.
 

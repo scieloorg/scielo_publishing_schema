@@ -3,18 +3,18 @@
 <person-group>
 ==============
 
-Aparece em:
-
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-
 Atributos obrigatórios:
 
   1. ``@person-group-type``
 
-Ocorre:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-product`          | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Identifica grupo ou indivíduo criador/elaborador do :term:`documento`. Caso existam, os elementos :ref:`elemento-collab`, :ref:`elemento-role`, :ref:`elemento-name` e :ref:`elemento-etal`, somente devem ser identificados em ``<person-group>``.
 

@@ -3,15 +3,15 @@
 <version>
 =========
 
-Aparece em:
 
-  :ref:`elemento-product`
-  :ref:`elemento-element-citation`
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-product`          | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Identifica a versão de um software ou base de dados.
 

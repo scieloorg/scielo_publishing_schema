@@ -3,17 +3,16 @@
 <journal-id>
 ============
 
-Aparece em:
-
-  :ref:`elemento-journal-meta`
-
 Atributos obrigatórios:
 
   1. ``@journal-id-type``
 
-Ocorre:
++------------------------------+-------------------+
+| Aparece em                   | Ocorre            |
++==============================+===================+
+| :ref:`elemento-journal-meta` | Uma ou mais vezes |
++------------------------------+-------------------+
 
-  Uma ou mais vezes
 
 
 Contém o identificador único do periódico indexado em uma base de dados ou instituição publicadora. Minimamente, o acrônimo do periódico deve ser identificado por meio do valor ``publisher-id``.

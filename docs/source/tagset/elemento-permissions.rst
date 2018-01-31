@@ -3,23 +3,29 @@
 <permissions>
 =============
 
-Aparece em:
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-disp-quote`
-  :ref:`elemento-fig`
-  ``<graphic>``
-  :ref:`elemento-media`
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-table-wrap`
-  :ref:`elemento-verse-group`
++----------------------------------------+--------------------------------------------+
+| Aparece em                             | Ocorre                                     |
++========================================+============================================+
+| :ref:`elemento-article-meta`           | 1. Uma vez em :ref:`elemento-article-meta` |
++----------------------------------------+--------------------------------------------+
+| :ref:`elemento-boxed-text`             | 2. Zero ou mais vezes nos demais elementos |
++----------------------------------------+--------------------------------------------+
+| :ref:`elemento-disp-quote`             | 1. Uma vez em :ref:`elemento-article-meta` |
++----------------------------------------+--------------------------------------------+
+| :ref:`elemento-fig`                    | 1. Uma vez em :ref:`elemento-article-meta` |
++----------------------------------------+--------------------------------------------+
+| ``<graphic>``                          | 1. Uma vez em :ref:`elemento-article-meta` |
++----------------------------------------+--------------------------------------------+
+| :ref:`elemento-media`                  | 1. Uma vez em :ref:`elemento-article-meta` |
++----------------------------------------+--------------------------------------------+
+| :ref:`elemento-supplementary-material` | 1. Uma vez em :ref:`elemento-article-meta` |
++----------------------------------------+--------------------------------------------+
+| :ref:`elemento-table-wrap`             | 1. Uma vez em :ref:`elemento-article-meta` |
++----------------------------------------+--------------------------------------------+
+| :ref:`elemento-verse-group`            | 1. Uma vez em :ref:`elemento-article-meta` |
++----------------------------------------+--------------------------------------------+
 
-
-Ocorre:
-
-  1. Uma vez em :ref:`elemento-article-meta`
-  2. Zero ou mais vezes nos demais elementos
 
 A permissão é um conjunto de condições sob as quais o conteúdo do artigo pode ser usado, acessado e distribuído.
 

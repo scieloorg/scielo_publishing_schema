@@ -3,14 +3,14 @@
 <article-title>
 ===============
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-title-group`      | zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-element-citation` | zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-title-group`
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  zero ou uma vez
 
 Utilizado para identificar o título do artigo em :ref:`elemento-title-group` ou para especificar um título de documento nas referências em :ref:`elemento-element-citation`. Em ambos casos, o atributo ``@xml:lang`` não deve ser utilizado.
 

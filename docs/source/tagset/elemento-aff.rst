@@ -3,19 +3,20 @@
 <aff>
 =====
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-  :ref:`elemento-contrib-group`
-  :ref:`elemento-front-stub`
-
 Atributos obrigatórios:
 
   1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
 
-Ocorre:
++-------------------------------+--------------------+
+| Aparece em                    | Ocorre             |
++===============================+====================+
+| :ref:`elemento-article-meta`  | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-contrib-group` | Zero ou mais vezes |
++-------------------------------+--------------------+
+| :ref:`elemento-front-stub`    | Zero ou mais vezes |
++-------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Considera-se como afiliação o vínculo institucional dos contribuintes do artigo naquele momento, seja pelo título em processo de outorga, por exemplo, *Mestrando(a)*, *Doutorando(a)*, *Pós-Graduando(a)* etc, como também pessoas vinculadas diretamente à instituição, como por exemplo, *Professor na Universidade X*, *Médico na instituição Y*, *Enfermeira no Hospital Z* etc.
 

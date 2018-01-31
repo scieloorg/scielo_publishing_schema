@@ -3,13 +3,12 @@
 <journal-meta>
 ==============
 
-Aparece em:
++-----------------------+---------+
+| Aparece em            | Ocorre  |
++=======================+=========+
+| :ref:`elemento-front` | Uma vez |
++-----------------------+---------+
 
-  :ref:`elemento-front`
-
-Ocorre:
-
-  Uma vez
 
 
 Em ``<journal-meta>`` são identificados os metadados do periódico.

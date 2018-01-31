@@ -3,25 +3,31 @@
 <boxed-text>
 ============
 
-Aparece em:
-
-  :ref:`elemento-app`
-  ``<app-group>``
-  :ref:`elemento-body`
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-glossary`
-  :ref:`elemento-p`
-  :ref:`elemento-ref-list`
-  :ref:`elemento-sec`
-
 
 Atributos obrigatórios:
 
   1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
 
-Ocorre:
++----------------------------+--------------------+
+| Aparece em                 | Ocorre             |
++============================+====================+
+| :ref:`elemento-app`        | Zero ou mais vezes |
++----------------------------+--------------------+
+| ``<app-group>``            | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-body`       | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-boxed-text` | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-glossary`   | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-p`          | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-ref-list`   | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-sec`        | Zero ou mais vezes |
++----------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Identifica texto ou objeto que faz parte do artigo, mas não do corpo do texto (flutuante ou não ancorado). Permite apresentar texto com seções, figuras, tabelas etc.
 

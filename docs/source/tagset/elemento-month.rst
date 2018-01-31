@@ -3,16 +3,18 @@
 <month>
 =======
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-date`             | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-product`          | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-pub-date`         | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-date`
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-  :ref:`elemento-pub-date`  
-
-Ocorre :
-
-  Zero ou uma vez
 
 Identifica o mês em referências, podendo representar:
 

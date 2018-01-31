@@ -3,21 +3,23 @@
 <ext-link>
 ==========
 
-Aparece em:
-
-  :ref:`elemento-comment`
-  :ref:`elemento-element-citation`
-  :ref:`elemento-p`
-  :ref:`elemento-product`  
-
 Atributos obrigatórios:
 
   1. ``@ext-link-type``
   2. ``@xlink:href``
 
-Ocorre:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-comment`          | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-p`                | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-product`          | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Especifica referências a recursos disponíveis na internet. As únicas restrições quanto à sua utilização são:
 

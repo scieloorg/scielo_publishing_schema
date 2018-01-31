@@ -3,14 +3,14 @@
 <article-categories>
 ====================
 
-Aparece em:
++------------------------------+---------+
+| Aparece em                   | Ocorre  |
++==============================+=========+
+| :ref:`elemento-article-meta` | Uma vez |
++------------------------------+---------+
+| :ref:`elemento-front-stub`   | Uma vez |
++------------------------------+---------+
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-front-stub`
-
-Ocorre:
-
-  Uma vez
 
 Identifica a classificação do artigo de acordo com a seção em que aparece no sumário do periódico, podendo ser temática ou por tipologia do documento.
 

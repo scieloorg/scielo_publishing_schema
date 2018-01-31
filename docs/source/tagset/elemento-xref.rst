@@ -3,26 +3,33 @@
 <xref>
 ======
 
-Aparece em:
-
-  :ref:`elemento-article-title`,
-  :ref:`elemento-attrib`
-  :ref:`elemento-contrib`,
-  :ref:`elemento-p`,
-  ``<td>``,
-  ``<th>``,
-  :ref:`elemento-trans-title`,
-  :ref:`elemento-sec`
-  ``<verse-line>``.
-  
 Atributos obrigatórios:
 
   1. ``@rid``
   2. ``@ref-type``
 
-Ocorre:
++--------------------------------+--------------------+
+| Aparece em                     | Ocorre             |
++================================+====================+
+| :ref:`elemento-article-title`, | Zero ou mais vezes |
++--------------------------------+--------------------+
+| :ref:`elemento-attrib`         | Zero ou mais vezes |
++--------------------------------+--------------------+
+| :ref:`elemento-contrib`,       | Zero ou mais vezes |
++--------------------------------+--------------------+
+| :ref:`elemento-p`,             | Zero ou mais vezes |
++--------------------------------+--------------------+
+| ``<td>``,                      | Zero ou mais vezes |
++--------------------------------+--------------------+
+| ``<th>``,                      | Zero ou mais vezes |
++--------------------------------+--------------------+
+| :ref:`elemento-trans-title`,   | Zero ou mais vezes |
++--------------------------------+--------------------+
+| :ref:`elemento-sec`            | Zero ou mais vezes |
++--------------------------------+--------------------+
+| ``<verse-line>``.              | Zero ou mais vezes |
++--------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Elemento de referência cruzada usado para relacionar e/ou fazer ligação com alguma informação no texto.

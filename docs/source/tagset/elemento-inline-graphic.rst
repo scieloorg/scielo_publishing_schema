@@ -3,18 +3,22 @@
 <inline-graphic>
 ================
 
-Aparece em:
++-------------------------+--------------------+
+| Aparece em              | Ocorre             |
++=========================+====================+
+| :ref:`elemento-product` | Zero ou mais vezes |
++-------------------------+--------------------+
+| :ref:`elemento-body`    | Zero ou mais vezes |
++-------------------------+--------------------+
+| :ref:`elemento-p`       | Zero ou mais vezes |
++-------------------------+--------------------+
+| :ref:`elemento-sec`     | Zero ou mais vezes |
++-------------------------+--------------------+
+| ``th``                  | Zero ou mais vezes |
++-------------------------+--------------------+
+| ``td``                  | Zero ou mais vezes |
++-------------------------+--------------------+
 
-  :ref:`elemento-product`
-  :ref:`elemento-body`
-  :ref:`elemento-p`
-  :ref:`elemento-sec`
-  ``th``
-  ``td``
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Usado para identificar ícones inseridos como imagem que estejam posicionado em linha, ou seja, ancorados em um parágrafo.

@@ -3,13 +3,12 @@
 <article-meta>
 ==============
 
-Aparece em:
++-----------------------+---------+
+| Aparece em            | Ocorre  |
++=======================+=========+
+| :ref:`elemento-front` | Uma vez |
++-----------------------+---------+
 
-  :ref:`elemento-front`
-
-Ocorre:
-
-  Uma vez
 
 
 Contém os metadados do artigo, cujos elementos básicos são:

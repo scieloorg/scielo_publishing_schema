@@ -3,11 +3,6 @@
 <sub-article>
 =============
 
-Aparece em:
-
-  :ref:`elemento-article`
-  ``<sub-article>``
-
 
 Atributos obrigatórios:
 
@@ -15,9 +10,14 @@ Atributos obrigatórios:
   2. ``@id`` (Ver :ref:`sugestao-atribuicao-id`)
   3. ``@xml:lang``
 
-Ocorre:
++-------------------------+--------------------+
+| Aparece em              | Ocorre             |
++=========================+====================+
+| :ref:`elemento-article` | Zero ou mais vezes |
++-------------------------+--------------------+
+| ``<sub-article>``       | Zero ou mais vezes |
++-------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Identifica um artigo dentro de outro. Geralmente, os sub-artigos herdam os metadados do artigo pai, sendo portanto necessário inserir um elemento :ref:`elemento-front-stub`.

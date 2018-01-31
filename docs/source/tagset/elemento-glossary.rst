@@ -3,17 +3,19 @@
 <glossary>
 ==========
 
-Aparece em:
 
-  :ref:`elemento-app`
-  :ref:`elemento-back`
-  :ref:`elemento-boxed-text`
-  ``<glossary>``
++----------------------------+--------------------+
+| Aparece em                 | Ocorre             |
++============================+====================+
+| :ref:`elemento-app`        | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-back`       | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-boxed-text` | Zero ou mais vezes |
++----------------------------+--------------------+
+| ``<glossary>``             | Zero ou mais vezes |
++----------------------------+--------------------+
 
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Este elemento tem a finalidade de descrever um glossário para o :term:`documento`. Geralmente, seu conteúdo é uma lista de definições, apresentando elementos do tipo :ref:`elemento-def-list`.

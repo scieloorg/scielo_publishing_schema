@@ -3,14 +3,14 @@
 <title-group>
 =============
 
-Aparece em:
++------------------------------+---------+
+| Aparece em                   | Ocorre  |
++==============================+=========+
+| :ref:`elemento-article-meta` | Uma vez |
++------------------------------+---------+
+| :ref:`elemento-front-stub`   | Uma vez |
++------------------------------+---------+
 
-   :ref:`elemento-article-meta`
-   :ref:`elemento-front-stub`
-
-Ocorre:
-
-   Uma vez
 
 
 Especifica o título ou o conjunto de títulos do artigo. Nele são identificados :ref:`elemento-article-title` e

@@ -3,14 +3,14 @@
 <fpage>
 =======
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-article-meta`     | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Indica a paginação inicial do artigo. No caso de :term:`ahead of print`, deve ser preenchido com ``00``.

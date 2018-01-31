@@ -3,22 +3,26 @@
 <disp-formula>
 ==============
 
-Aparece em:
-
-  :ref:`elemento-body`
-  :ref:`elemento-p`
-  ``<th>``
-  ``<td>``
-  :ref:`elemento-app`
-  :ref:`elemento-supplementary-material`
-
 Atributos obrigatórios:
 
   1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
 
-Ocorre:
++----------------------------------------+--------------------+
+| Aparece em                             | Ocorre             |
++========================================+====================+
+| :ref:`elemento-body`                   | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-p`                      | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| ``<th>``                               | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| ``<td>``                               | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-app`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-supplementary-material` | Zero ou mais vezes |
++----------------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Identifica equações, expressões ou fórmulas matemáticas exibidas como um bloco dentro de um fluxo narrativo. Pode ser codificada usando MathML, TeX ou LaTeX.

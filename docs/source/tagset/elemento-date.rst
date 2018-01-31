@@ -3,17 +3,16 @@
 <date>
 ======
 
-Aparece em:
-
-  :ref:`elemento-history`
-
 Atributos obrigatórios:
 
   1. ``@date-type``
 
-Ocorre:
++-------------------------+-------------------+
+| Aparece em              | Ocorre            |
++=========================+===================+
+| :ref:`elemento-history` | Uma ou mais vezes |
++-------------------------+-------------------+
 
-  Uma ou mais vezes
 
 
 ``<date>`` deve conter obrigatoriamente o elemento :ref:`elemento-year`. Usa-se o atributo ``@date-type`` para especificar o tipo da ação envolvida.

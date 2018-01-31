@@ -3,13 +3,12 @@
 <suffix>
 ========
 
-Aparece em:
++----------------------+-----------------+
+| Aparece em           | Ocorre          |
++======================+=================+
+| :ref:`elemento-name` | Zero ou uma vez |
++----------------------+-----------------+
 
-  :ref:`elemento-name`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Especifica sufixos de nome de autor, como por exemplo, "Neto", "Júnior", "Jr.", "Filho", "Sobrinho" etc.

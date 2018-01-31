@@ -3,15 +3,16 @@
 <volume>
 ========
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-article-meta`     | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-product`          | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Representa o volume de uma publicação.
