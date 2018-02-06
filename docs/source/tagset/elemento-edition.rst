@@ -6,9 +6,9 @@
 +----------------------------------+--------------------+
 | Aparece em                       | Ocorre             |
 +==================================+====================+
-| :ref:`elemento-product`          | Zero ou mais vezes |
+| :ref:`elemento-product`          | Zero ou uma vez    |
 +----------------------------------+--------------------+
-| :ref:`elemento-element-citation` | Zero ou mais vezes |
+| :ref:`elemento-element-citation` | Zero ou uma vez    |
 +----------------------------------+--------------------+
 
 
