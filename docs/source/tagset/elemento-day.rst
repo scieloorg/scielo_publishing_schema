@@ -8,7 +8,7 @@
 +==================================+=============================================================+
 | :ref:`elemento-pub-date`         | 1. Zero ou uma vez nos elementos de :ref:`elemento-front`   |
 +----------------------------------+-------------------------------------------------------------+
-| :ref:`elemento-product`          | 2. Zero ou mais vezes nos elementos de :ref:`elemento-back` |
+| :ref:`elemento-product`          | 2. Zero ou uma vez nos elementos de :ref:`elemento-back`    |
 +----------------------------------+-------------------------------------------------------------+
 | :ref:`elemento-element-citation` | 1. Zero ou uma vez nos elementos de :ref:`elemento-front`   |
 +----------------------------------+-------------------------------------------------------------+
