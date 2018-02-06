@@ -7,37 +7,37 @@
 +----------------------------------------+--------------------+
 | Aparece em                             | Ocorre             |
 +========================================+====================+
-| :ref:`elemento-aff`                    | Zero ou mais vezes |
+| :ref:`elemento-aff`                    | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-app`                    | Zero ou mais vezes |
+| :ref:`elemento-app`                    | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-boxed-text`             | Zero ou mais vezes |
+| :ref:`elemento-boxed-text`             | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-corresp`                | Zero ou mais vezes |
+| :ref:`elemento-corresp`                | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-def-list`               | Zero ou mais vezes |
+| :ref:`elemento-def-list`               | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-disp-formula`           | Zero ou mais vezes |
+| :ref:`elemento-disp-formula`           | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-fig`                    | Zero ou mais vezes |
+| :ref:`elemento-fig`                    | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-fn`                     | Zero ou mais vezes |
+| :ref:`elemento-fn`                     | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| ``glossary``                           | Zero ou mais vezes |
+| ``glossary``                           | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-list`                   | Zero ou mais vezes |
+| :ref:`elemento-list`                   | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| ``list-item``                          | Zero ou mais vezes |
+| ``list-item``                          | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-media`                  | Zero ou mais vezes |
+| :ref:`elemento-media`                  | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-ref`                    | Zero ou mais vezes |
+| :ref:`elemento-ref`                    | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-supplementary-material` | Zero ou mais vezes |
+| :ref:`elemento-supplementary-material` | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-table-wrap`             | Zero ou mais vezes |
+| :ref:`elemento-table-wrap`             | Zero ou uma vez    |
 +----------------------------------------+--------------------+
-| :ref:`elemento-verse-group`            | Zero ou mais vezes |
+| :ref:`elemento-verse-group`            | Zero ou uma vez    |
 +----------------------------------------+--------------------+
 
 
