@@ -20,15 +20,25 @@ Ocorre:
 
 Os valores possíveis para o atributo ``@date-type`` são:
 
-+------------+------------+
-| Valor      | Descrição  |
-+============+============+
-| received   | recebido   |
-+------------+------------+
-| accepted   | aceito     |
-+------------+------------+
-| rev-recd   | revisado   |
-+------------+------------+
++-------------+-------------+
+| Valor       | Descrição   |
++=============+=============+
+| received    | recebido    |
++-------------+-------------+
+| accepted    | aceito      |
++-------------+-------------+
+| rev-recd    | revisado    |
++-------------+-------------+
+| corrected   | correção    |
++-------------+-------------+
+| pub         | publicação  |
++-------------+-------------+
+| preprint    | preprint    |
++-------------+-------------+
+| retracted   | retratação  |
++-------------+-------------+
+| rev-request | revisão     |
++-------------+-------------+
 
 Exemplo:
 
