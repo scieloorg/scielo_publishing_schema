@@ -4,7 +4,7 @@ Regras Específicas para SciELO Brasil
 =====================================
 
 Para atender aos "`Critérios, política e procedimentos para a admissão e a 
-permanência de periódicos científicos na Coleção SciELO Brasil <http://www.scielo.br/avaliacao/20141003NovosCriterios_SciELO_Brasil.pdf>`_" alguns 
+permanência de periódicos científicos na Coleção SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_" alguns 
 elementos apresentam regras específicas de uso:
 
 
