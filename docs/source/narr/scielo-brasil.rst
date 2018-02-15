@@ -12,6 +12,12 @@ elementos apresentam regras específicas de uso:
   * :ref:`elemento-scibrasil-license`
   * :ref:`elemento-scibrasil-disp`
   * :ref:`elemento-scibrasil-history`
+  * :ref:`elemento-scibrasil-article`
+  * :ref:`elemento-scibrasil-contrib-group`
+  * :ref:`elemento-scibrasil-institution`
+  * :ref:`elemento-scibrasil-article-title`
+  * :ref:`elemento-scibrasil-xref`
+  * :ref:`elemento-scibrasil-ref-list`
 
 
 .. _elemento-scibrasil-article-id:
@@ -101,7 +107,7 @@ Em :ref:`article` o atributo ``@article-type`` não permite os tipos de document
 Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>` e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`
+ Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
 
 
 .. _elemento-scibrasil-institution:
@@ -112,7 +118,7 @@ Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais veze
 Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>` e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`
+ Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
 
 
 .. _elemento-scibrasil-article-title:
@@ -131,7 +137,7 @@ Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma vez.
 É obrigatório este elemento para SciELO Brasil na referência cruzada com atributo ``@ref-type`` do tipo "bibr" e pode ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>` e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`
+ Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
 
 
 .. _elemento-scibrasil-ref-list:
@@ -142,5 +148,5 @@ Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma vez.
 Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>` e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`
+ Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
 
