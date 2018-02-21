@@ -104,7 +104,7 @@ Em :ref:`elemento-article` o atributo ``@article-type`` não permite os tipos de
 <contrib-group>
 ^^^^^^^^^^^^^^^
 
-Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais vezes.
+Este elemento é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
 
 .. note::
  Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
@@ -115,7 +115,7 @@ Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais veze
 <institution>
 ^^^^^^^^^^^^^
 
-Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais vezes.
+Este elemento é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
 
 .. note::
  Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
@@ -126,7 +126,7 @@ Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais veze
 <article-title>
 ^^^^^^^^^^^^^^^
 
-Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma vez.
+Este elemento em :ref:`elemento-title-group` é obrigatório para SciELO Brasil e deve ocorrer uma vez.
 
 
 .. _elemento-scibrasil-xref:
@@ -134,7 +134,7 @@ Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma vez.
 <xref>
 ^^^^^^
 
-É obrigatório este elemento para SciELO Brasil na referência cruzada com atributo ``@ref-type`` do tipo "bibr" e pode ocorrer uma ou mais vezes.
+É obrigatório este elemento para SciELO Brasil na referência cruzada com atributo ``@ref-type`` do tipo "bibr" e deve ocorrer uma ou mais vezes.
 
 .. note::
  Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
@@ -145,7 +145,7 @@ Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma vez.
 <ref-list>
 ^^^^^^^^^^
 
-Este elemento é obrigatório para SciELO Brasil e pode ocorrer uma ou mais vezes.
+Este elemento é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
 
 .. note::
  Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
