@@ -85,7 +85,7 @@ de aprovação e de revisão, quando presente, deve conter :ref:`elemento-day`, 
 Tipos de documentos
 ^^^^^^^^^^^^^^^^^^^
 
-Em :ref:`article` o atributo ``@article-type`` não permite os tipos de documento:
+Em :ref:`elemento-article` o atributo ``@article-type`` não permite os tipos de documento:
 
 * announcement
 * calendar
