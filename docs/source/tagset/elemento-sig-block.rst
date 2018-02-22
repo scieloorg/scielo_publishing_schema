@@ -3,13 +3,12 @@
 <sig-block>
 ===========
 
-Aparece em:
++----------------------+-----------------+
+| Aparece em           | Ocorre          |
++======================+=================+
+| :ref:`elemento-body` | Zero ou uma vez |
++----------------------+-----------------+
 
-  :ref:`elemento-body`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Contém um bloco de assinatura(s), normalmente utilizado em documentos editoriais. ``<sig-block>`` deve, obrigatoriamente, conter o elemento ``<sig>``. É permitido formatar o texto do bloco de assinatura com negrito (``<bold>``) ou itálico (``<italic>``). Para identificar as quebras de linha usa-se a tag ``<break/>``.

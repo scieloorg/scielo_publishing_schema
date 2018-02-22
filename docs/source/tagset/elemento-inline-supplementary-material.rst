@@ -3,21 +3,22 @@
 <inline-supplementary-material>
 ===============================
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-  :ref:`elemento-p`
-  :ref:`elemento-app`
-
 Atributos obrigatórios:
 
   1. ``@xlink:href``
   2. ``@mimetype``
   3. ``@mime-subtype``
 
-Ocorre:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-article-meta` | Zero ou mais vezes |
++------------------------------+--------------------+
+| :ref:`elemento-p`            | Zero ou mais vezes |
++------------------------------+--------------------+
+| :ref:`elemento-app`          | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Tem a mesma função do elemento :ref:`elemento-supplementary-material`, mas é utilizado somente quando a menção ao material suplementar está em linha, ou seja, descrita em um parágrafo.
 

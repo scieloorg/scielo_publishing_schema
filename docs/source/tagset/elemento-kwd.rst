@@ -3,13 +3,12 @@
 <kwd>
 =====
 
-Aparece em:
++---------------------------+-------------------+
+| Aparece em                | Ocorre            |
++===========================+===================+
+| :ref:`elemento-kwd-group` | Uma ou mais vezes |
++---------------------------+-------------------+
 
-  :ref:`elemento-kwd-group`
-
-Ocorre:
-
-  Uma ou mais vezes
 
 
 Elemento obrigatório dentro de :ref:`elemento-kwd-group` que identifica cada palavra-chave individualmente.

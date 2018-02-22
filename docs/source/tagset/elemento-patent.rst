@@ -3,17 +3,16 @@
 <patent>
 ========
 
-Aparece em:
-
-  :ref:`elemento-element-citation`
-
 Atributos obrigatórios:
 
   1. ``@country``
 
-Ocorre:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  Zero ou uma vez
 
 Identifica um número de patente. Deve ter o atributo ``@country`` contendo o código de país de acordo com a norma :term:`ISO 3166`, com dois caracteres alfabéticos.
 

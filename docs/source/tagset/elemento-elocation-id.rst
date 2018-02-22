@@ -3,14 +3,14 @@
 <elocation-id>
 ==============
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-article-meta`     | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Identificador bibliográfico de um documento que não possui numeração sequencial de páginas tradicionalmente usada em publicações impressas. Pode ocorrer também em :ref:`elemento-element-citation`. Para um intervalo de páginas, deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.

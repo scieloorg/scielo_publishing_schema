@@ -3,17 +3,16 @@
 <institution>
 =============
 
-Aparece em:
-
-  :ref:`elemento-aff`
-
 Atributos obrigatórios:
 
   1. ``@content-type``
 
-Ocorre:
++---------------------+--------------------+
+| Aparece em          | Ocorre             |
++=====================+====================+
+| :ref:`elemento-aff` | Zero ou mais vezes |
++---------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Neste elemento identifica-se a instituição de afiliação do autor, a qual pode ser dividida em até três níveis, definidos pelo atributo obrigatório ``@content-type``, cujos valores possíveis são:

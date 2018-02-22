@@ -3,17 +3,16 @@
 <article-id>
 ============
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-
 Atributos obrigatórios:
 
   1. ``@pub-id-type``
 
-Ocorre:
++------------------------------+-------------------+
+| Aparece em                   | Ocorre            |
++==============================+===================+
+| :ref:`elemento-article-meta` | Uma ou mais vezes |
++------------------------------+-------------------+
 
-  Uma ou mais vezes
 
 
 Identificador único do artigo em uma base de dados.

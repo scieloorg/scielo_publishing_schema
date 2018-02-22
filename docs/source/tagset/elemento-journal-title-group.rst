@@ -3,13 +3,12 @@
 <journal-title-group>
 =====================
 
-Aparece em:
++------------------------------+---------+
+| Aparece em                   | Ocorre  |
++==============================+=========+
+| :ref:`elemento-journal-meta` | Uma vez |
++------------------------------+---------+
 
-  :ref:`elemento-journal-meta`
-
-Ocorre:
-
-  Uma vez
 
 
 Contém os elementos que identificam os metadados referentes ao título do periódico.

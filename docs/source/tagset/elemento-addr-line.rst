@@ -3,13 +3,12 @@
 <addr-line>
 ===========
 
-Aparece em:
++---------------------+--------------------+
+| Aparece em          | Ocorre             |
++=====================+====================+
+| :ref:`elemento-aff` | Zero ou mais vezes |
++---------------------+--------------------+
 
-  :ref:`elemento-aff`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Identifica a cidade e o estado da instituição vinculada ao autor, caso exista.
 

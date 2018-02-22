@@ -38,7 +38,7 @@ Dúvidas e/ou comentários acerca da especificação :term:`SciELO PS`, deste gu
 Notas da versão
 ---------------
 
-As versões são disponibilizadas a cada seis meses em calendário fixo. Versões de correção são disponibilizadas por demanda, sendo identificadas no terceiro dígito da versão. Ex.: versão *1.1.1*.
+As versões são disponibilizadas a cada doze meses em calendário fixo. Versões de correção são disponibilizadas por demanda, sendo identificadas no terceiro dígito da versão. Ex.: versão *1.1.1*.
 
 Duas versões são suportadas simultaneamente, a atual e a imediatamente anterior. Essa medida garante um ciclo de vida de 1 (um) ano para cada versão.
 

@@ -3,13 +3,12 @@
 <table-wrap-foot>
 =================
 
-Aparece em:
++----------------------------+-----------------+
+| Aparece em                 | Ocorre          |
++============================+=================+
+| :ref:`elemento-table-wrap` | Zero ou uma vez |
++----------------------------+-----------------+
 
-  :ref:`elemento-table-wrap`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 ``<table-wrap-foot>`` permite identificar uma nota de rodapé de tabela por meio de elementos do tipo :ref:`elemento-fn`.

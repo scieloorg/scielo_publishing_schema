@@ -3,20 +3,26 @@
 <attrib>
 ========
 
-Aparece em:
++----------------------------------------+--------------------+
+| Aparece em                             | Ocorre             |
++========================================+====================+
+| :ref:`elemento-boxed-text`             | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-fig`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| ``<graphic>``                          | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-media`                  | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-supplementary-material` | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-table-wrap`             | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-verse-group`            | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-table-wrap-foot`        | Zero ou mais vezes |
++----------------------------------------+--------------------+
 
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-fig`
-  ``<graphic>``
-  :ref:`elemento-media`
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-table-wrap`
-  :ref:`elemento-verse-group`
-  :ref:`elemento-table-wrap-foot`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Utilizado para creditar o autor ou o licenciador de ativos ou conteúdos que requerem tal atribuição.
 

@@ -3,20 +3,20 @@
 <related-article>
 =================
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-  :ref:`elemento-front-stub`
-
 
 Atributos obrigatórios:
 
   1. ``@related-article-type``
   2. ``@id``
 
-Ocorre:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-article-meta` | Zero ou mais vezes |
++------------------------------+--------------------+
+| :ref:`elemento-front-stub`   | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Utilizado para indicar um artigo relacionado, publicado ou não, separadamente. Este elemento deve ser inserido para artigos como: :ref:`errata`, resposta de :ref:`artigo-comentado`, retratações e :ref:`elemento-response`.

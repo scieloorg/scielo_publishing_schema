@@ -3,18 +3,18 @@
 <year>
 ======
 
-Aparece em:
++----------------------------------+-----------------------------------------------------------+
+| Aparece em                       | Ocorre                                                    |
++==================================+===========================================================+
+| :ref:`elemento-date`             | 1. Uma vez em :ref:`elemento-pub-date`                    |
++----------------------------------+-----------------------------------------------------------+
+| :ref:`elemento-element-citation` | 2. Zero ou mais vezes em :ref:`elemento-element-citation` |
++----------------------------------+-----------------------------------------------------------+
+| :ref:`elemento-product`          | 3. Zero ou mais vezes em :ref:`elemento-product`          |
++----------------------------------+-----------------------------------------------------------+
+| :ref:`elemento-pub-date`         | 1. Uma vez em :ref:`elemento-pub-date`                    |
++----------------------------------+-----------------------------------------------------------+
 
-  :ref:`elemento-date`
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-  :ref:`elemento-pub-date`
-  
-Ocorre:
-
-  1. Uma vez em :ref:`elemento-pub-date`
-  2. Zero ou mais vezes em :ref:`elemento-element-citation`
-  3. Zero ou mais vezes em :ref:`elemento-product`
 
 
 Identifica o ano em referências, podendo representar o ano de publicação de um documento, de fabricação de um software, de criação de uma base de dados etc. Também é utilizado em :ref:`elemento-front` para identificar o ano da publicação de um artigo (ver :ref:`elemento-pub-date`) ou de um produto (ver :ref:`elemento-product`).

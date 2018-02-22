@@ -3,14 +3,14 @@
 <etal>
 ======
 
-Aparece em:
++------------------------------+-----------------+
+| Aparece em                   | Ocorre          |
++==============================+=================+
+| :ref:`elemento-person-group` | Zero ou uma vez |
++------------------------------+-----------------+
+| :ref:`elemento-product`      | Zero ou uma vez |
++------------------------------+-----------------+
 
-  :ref:`elemento-person-group`
-  :ref:`elemento-product`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Elemento utilizado com a finalidade de indicar contribuidores não identificados. Esta informação aparece primordialmente em referências.

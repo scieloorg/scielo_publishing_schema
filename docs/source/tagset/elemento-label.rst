@@ -3,29 +3,43 @@
 <label>
 =======
 
-Aparece em:
 
-  :ref:`elemento-aff`
-  :ref:`elemento-app`
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-corresp`
-  :ref:`elemento-def-list`
-  :ref:`elemento-disp-formula`
-  :ref:`elemento-fig`
-  :ref:`elemento-fn`
-  ``glossary``
-  :ref:`elemento-list`
-  ``list-item``
-  :ref:`elemento-media`
-  :ref:`elemento-ref`
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-table-wrap`  
-  :ref:`elemento-verse-group`
-  
++----------------------------------------+-----------------+
+| Aparece em                             | Ocorre          |
++========================================+=================+
+| :ref:`elemento-aff`                    | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-app`                    | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-boxed-text`             | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-corresp`                | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-def-list`               | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-disp-formula`           | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-fig`                    | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-fn`                     | Zero ou uma vez |
++----------------------------------------+-----------------+
+| ``glossary``                           | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-list`                   | Zero ou uma vez |
++----------------------------------------+-----------------+
+| ``list-item``                          | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-media`                  | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-ref`                    | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-supplementary-material` | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-table-wrap`             | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-verse-group`            | Zero ou uma vez |
++----------------------------------------+-----------------+
 
-Ocorre:
-
-  Zero ou mais vezes
 
 
 ``<label>`` tem como função identificar, numérica e/ou alfabéticamente, um grupo de elementos de tipo específico.

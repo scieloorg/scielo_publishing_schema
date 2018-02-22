@@ -3,13 +3,12 @@
 <award-group>
 =============
 
-Aparece em:
++-------------------------------+-------------------+
+| Aparece em                    | Ocorre            |
++===============================+===================+
+| :ref:`elemento-funding-group` | Uma ou mais vezes |
++-------------------------------+-------------------+
 
-  :ref:`elemento-funding-group`
-
-Ocorre:
-
-  Uma ou mais vezes
 
 Identifica um grupo de dados de financiamento referente a um artigo. Pode haver tantos grupos quantos forem os financiadores.
 

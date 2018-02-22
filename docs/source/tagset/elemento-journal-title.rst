@@ -3,13 +3,12 @@
 <journal-title>
 ===============
 
-Aparece em:
++-------------------------------------+---------+
+| Aparece em                          | Ocorre  |
++=====================================+=========+
+| :ref:`elemento-journal-title-group` | Uma vez |
++-------------------------------------+---------+
 
-  :ref:`elemento-journal-title-group`
-
-Ocorre:
-
-  Uma vez
 
 
 Contém o título longo do periódico de acordo com seu registro no :term:`ISSN`.

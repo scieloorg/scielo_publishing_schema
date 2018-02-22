@@ -3,13 +3,12 @@
 <award-id>
 ==========
 
-Aparece em:
++-----------------------------+-------------------+
+| Aparece em                  | Ocorre            |
++=============================+===================+
+| :ref:`elemento-award-group` | Uma ou mais vezes |
++-----------------------------+-------------------+
 
-  :ref:`elemento-award-group`
-
-Ocorre:
-
-  Uma ou mais vezes
 
 Especifica o número do contrato firmado com a instituição financiadora.
 

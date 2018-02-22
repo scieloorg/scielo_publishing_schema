@@ -3,13 +3,12 @@
 <counts>
 ========
 
-Aparece em:
++------------------------------+-----------------+
+| Aparece em                   | Ocorre          |
++==============================+=================+
+| :ref:`elemento-article-meta` | Zero ou uma vez |
++------------------------------+-----------------+
 
-  :ref:`elemento-article-meta`
-
-Ocorre:
-
-  Zero ou uma vez
 
 Elemento utilizado para contabilizar o número exato de tabelas, figuras, referências, equações e páginas presentes no documento. Deve ser inserido como último item de :ref:`elemento-article-meta`.
 

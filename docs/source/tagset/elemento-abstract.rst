@@ -3,13 +3,12 @@
 <abstract>
 ==========
 
-Aparece em:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-article-meta` | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  :ref:`elemento-article-meta`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Elemento que identifica o resumo de um artigo. Não deve conter o atributo ``@xml:lang``. Embora ``<abstract>`` possa não ocorrer, faz-se obrigatório quando :ref:`elemento-article` for declarado com atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.

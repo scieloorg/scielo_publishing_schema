@@ -3,14 +3,14 @@
 <name>
 ======
 
-Aparece em:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-contrib`      | Zero ou uma vez    |
++------------------------------+--------------------+
+| :ref:`elemento-person-group` | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  :ref:`elemento-contrib`
-  :ref:`elemento-person-group`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 ``<name>`` é usado para especificar o nome pessoal de um contribuinte autoral.

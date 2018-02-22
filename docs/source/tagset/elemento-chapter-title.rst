@@ -3,13 +3,12 @@
 <chapter-title>
 ===============
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Identifica um título de capítulo de um documento em uma referência.
 

@@ -3,14 +3,14 @@
 <contrib-group>
 ===============
 
-Aparece em:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-article-meta` | Zero ou mais vezes |
++------------------------------+--------------------+
+| :ref:`elemento-front-stub`   | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-front-stub`
-
-Ocorre:
-
-  Uma vez
 
 Contém o grupo de elementos relativos à contribuição na elaboração do artigo. Os contribuintes mais frequentes são os autores pessoais, instituições e grupos de pesquisa.
 

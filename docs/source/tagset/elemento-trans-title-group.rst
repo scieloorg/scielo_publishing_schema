@@ -3,17 +3,16 @@
 <trans-title-group>
 ===================
 
-Aparece em:
-
-  :ref:`elemento-title-group`
-
 Atributos obrigatórios:
 
   1. ``@xml:lang``
 
-Ocorre:
++-----------------------------+--------------------+
+| Aparece em                  | Ocorre             |
++=============================+====================+
+| :ref:`elemento-title-group` | Zero ou mais vezes |
++-----------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Usado para apresentar o título traduzido ou um conjunto de títulos traduzidos do artigo. O atributo ``@xml:lang`` é mandatório e identifica o idioma traduzido do título.

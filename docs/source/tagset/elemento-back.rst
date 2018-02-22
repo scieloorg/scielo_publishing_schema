@@ -3,15 +3,16 @@
 <back>
 ======
 
-Aparece em:
++-----------------------------+-----------------+
+| Aparece em                  | Ocorre          |
++=============================+=================+
+| :ref:`elemento-article`     | Zero ou uma vez |
++-----------------------------+-----------------+
+| :ref:`elemento-response`    | Zero ou uma vez |
++-----------------------------+-----------------+
+| :ref:`elemento-sub-article` | Zero ou uma vez |
++-----------------------------+-----------------+
 
-  :ref:`elemento-article`
-  :ref:`elemento-response`
-  :ref:`elemento-sub-article`
-
-Ocorre:
-
-  Zero ou uma vez
 
 Parte final do :term:`documento` que compreende:
 

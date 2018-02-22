@@ -3,25 +3,35 @@
 <p>
 ===
 
-Aparece em:
 
-  :ref:`elemento-abstract`
-  :ref:`elemento-ack`
-  :ref:`elemento-app`
-  :ref:`elemento-body`
-  :ref:`elemento-boxed-text`
-  ``<def>``
-  :ref:`elemento-disp-quote`
-  :ref:`elemento-fn`
-  ``<list-item>``
-  :ref:`elemento-ref-list`
-  :ref:`elemento-sec`
-  :ref:`elemento-trans-abstract`
++--------------------------------+-------------------+
+| Aparece em                     | Ocorre            |
++================================+===================+
+| :ref:`elemento-abstract`       | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-ack`            | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-app`            | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-body`           | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-boxed-text`     | Uma ou mais vezes |
++--------------------------------+-------------------+
+| ``<def>``                      | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-disp-quote`     | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-fn`             | Uma ou mais vezes |
++--------------------------------+-------------------+
+| ``<list-item>``                | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-ref-list`       | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-sec`            | Uma ou mais vezes |
++--------------------------------+-------------------+
+| :ref:`elemento-trans-abstract` | Uma ou mais vezes |
++--------------------------------+-------------------+
 
-
-Ocorre:
-
-  Uma ou mais vezes
 
 
 Elemento que identifica parágrafos de texto. Deve ser inserida no :term:`documento` sem qualquer atributo.

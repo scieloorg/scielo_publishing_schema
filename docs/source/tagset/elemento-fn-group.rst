@@ -3,13 +3,12 @@
 <fn-group>
 ==========
 
-Aparece em:
++----------------------+--------------------+
+| Aparece em           | Ocorre             |
++======================+====================+
+| :ref:`elemento-back` | Zero ou mais vezes |
++----------------------+--------------------+
 
-  :ref:`elemento-back`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 ``<fn-group>`` faz parte do elemento :ref:`elemento-back` e deve conter todo o grupo de notas de rodapé mencionadas no :term:`documento`, que estão relacionadas com o documento como um todo, não confundir com notas de rodapé relacionadas ao autor. Este elemento pode apresentar um único título identificado com ``<title>`` e uma ou mais notas :ref:`elemento-fn`.
 

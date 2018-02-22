@@ -3,17 +3,16 @@
 <product>
 =========
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-
 Atributos obrigatórios:
 
   1. ``@product-type``
 
-Ocorre:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-article-meta` | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 ``<product>`` contém informações do produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``. O conteúdo de ``<product>`` deverá conter conteúdo dissertativo, incluindo separadores conforme o exemplo abaixo:
