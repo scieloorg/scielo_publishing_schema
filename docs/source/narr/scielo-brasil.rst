@@ -12,6 +12,7 @@ elementos apresentam regras específicas de uso:
   * :ref:`elemento-scibrasil-license`
   * :ref:`elemento-scibrasil-disp`
   * :ref:`elemento-scibrasil-history`
+  * :ref:`elemento-scibrasil-product`
 
 
 .. _elemento-scibrasil-article-id:
@@ -74,4 +75,10 @@ Conforme `comunicado <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4
 O histórico do processo de arbitragem do artigo, compreendendo as datas de recebimento, 
 de aprovação e de revisão, quando presente, deve conter :ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`. Para acessar o comunicado `clique aqui <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4aa5&id=2a6634a845>`_
 
+.. _elemento-scibrasil-product:
+
+<product>
+^^^^^^^^^
+
+:ref:`elemento-product` contém informações de produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
 
