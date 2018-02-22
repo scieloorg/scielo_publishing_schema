@@ -18,6 +18,8 @@ elementos apresentam regras específicas de uso:
   * :ref:`elemento-scibrasil-article-title`
   * :ref:`elemento-scibrasil-xref`
   * :ref:`elemento-scibrasil-ref-list`
+  * :ref:`elemento-scibrasil-product`
+
 
 
 .. _elemento-scibrasil-article-id:
@@ -64,7 +66,6 @@ A URL da licença deve ser inserida como valor do atributo ``@xlink:href`` de
     ...
 
 
-
 .. _elemento-scibrasil-disp:
 
 Tabelas e equações codificadas
@@ -79,6 +80,7 @@ Conforme `comunicado <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4
 
 O histórico do processo de arbitragem do artigo, compreendendo as datas de recebimento, 
 de aprovação e de revisão, quando presente, deve conter :ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`. Para acessar o comunicado `clique aqui <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4aa5&id=2a6634a845>`_
+
 
 .. _elemento-scibrasil-article:
 
@@ -150,3 +152,10 @@ Este elemento é obrigatório para SciELO Brasil e deve ocorrer uma ou mais veze
 .. note::
  Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
 
+
+.. _elemento-scibrasil-product:
+
+<product>
+^^^^^^^^^
+
+:ref:`elemento-product` contém informações de produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
