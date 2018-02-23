@@ -19,15 +19,25 @@ Atributos obrigatórios:
 
 Os valores possíveis para o atributo ``@date-type`` são:
 
-+------------+------------+
-| Valor      | Descrição  |
-+============+============+
-| received   | recebido   |
-+------------+------------+
-| accepted   | aceito     |
-+------------+------------+
-| rev-recd   | revisado   |
-+------------+------------+
++-------------+------------------------------------------------+
+| Valor       | Descrição                                      |
++=============+================================================+
+| accepted    | Data em que um manuscrito foi aceito           |
++-------------+------------------------------------------------+
+| corrected   | Data em que um artigo foi corrigido            |
++-------------+------------------------------------------------+
+| pub         | Data de publicação (eletrônica ou impressa)    |
++-------------+------------------------------------------------+
+| preprint    | Data de divulgação de preprint                 |
++-------------+------------------------------------------------+
+| retracted   | Data em que um artigo foi retratado            |
++-------------+------------------------------------------------+
+| received    | Data em que um manuscrito foi recebido         |
++-------------+------------------------------------------------+
+| rev-recd    | Data em que um documento revisado foi recebido |
++-------------+------------------------------------------------+
+| rev-request | Data de solicitação das revisões               |
++-------------+------------------------------------------------+
 
 Exemplo:
 

@@ -6,7 +6,7 @@
 +------------------------------+--------------------+
 | Aparece em                   | Ocorre             |
 +==============================+====================+
-| :ref:`elemento-contrib`      | Zero ou mais vezes |
+| :ref:`elemento-contrib`      | Zero ou uma vez    |
 +------------------------------+--------------------+
 | :ref:`elemento-person-group` | Zero ou mais vezes |
 +------------------------------+--------------------+
