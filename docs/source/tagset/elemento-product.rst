@@ -15,7 +15,7 @@ Atributos obrigatórios:
 
 
 
-``<product>`` contém informações do produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``. O conteúdo de ``<product>`` deverá conter conteúdo dissertativo, incluindo separadores conforme o exemplo abaixo:
+O elemento serve para marcação relativa a um produto (por exemplo: um livro, software, site ou componente de hardware) discutido em um artigo. O conteúdo de ``<product>`` deverá ser dissertativo, incluindo separadores conforme o exemplo abaixo:
 
 
 .. _elemento-product-exemplo-1:
