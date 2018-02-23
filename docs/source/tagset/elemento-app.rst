@@ -13,7 +13,6 @@ Atributos obrigatórios:
 | ``<app-group>`` | Zero ou mais vezes |
 +-----------------+--------------------+
 
-
 Utilizado para indicar um apêndice ao documento. Exige o elemento :ref:`elemento-label` como título do apêndice. O elemento ``<app-group>`` deve sempre ser usado como agrupador do elemento ``<app>`` mesmo se houver somente uma ocorrência deste último.
 
 Exemplos:

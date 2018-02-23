@@ -11,8 +11,6 @@
 | :ref:`elemento-front-stub`   | Zero ou uma vez |
 +------------------------------+-----------------+
 
-
-
 Identifica notas relacionadas ao autor, tais como: correspondência, contribuição igualitária etc.
 
 
