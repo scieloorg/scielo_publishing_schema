@@ -60,10 +60,23 @@ Os valores possíveis para ``@product-type`` são:
 +-----------+---------------------------------+
 | Valor     | Descrição                       |
 +===========+=================================+
-| book      | para livro ou capítulo de livro |
+| book      | livro ou capítulo de livro      |
++-----------+---------------------------------+
+| article   | artigo                          |
++-----------+---------------------------------+
+| issue     | fascículo                       |
++-----------+---------------------------------+
+| website   | site ou blog                    |
++-----------+---------------------------------+
+| film      | filme                           |
++-----------+---------------------------------+
+| software  | programa de computador          |
++-----------+---------------------------------+
+| hardware  | componente físico de computador |
 +-----------+---------------------------------+
 | other     | outros tipos                    |
 +-----------+---------------------------------+
+
 
 
 .. note:: A ordem dos elementos é importante! ``<product>`` deve ser inserido antes de :ref:`elemento-history` ou depois de :ref:`elemento-fpage`.
