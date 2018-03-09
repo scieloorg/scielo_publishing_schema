@@ -12,7 +12,7 @@ Ocorre:
   Uma vez
 
 
-Identifica o título traduzido do artigo dentro do elemento :ref:`elemento-trans-title-group`.
+Identifica o título traduzido do artigo. Obrigatório o uso do atributo ``@xml:lang``.
 
 
 Exemplo:
@@ -30,6 +30,8 @@ Exemplo:
         </trans-title-group>
     </title-group>
     ...
+
+.. note:: Se o título traduzido do artigo possuir um subtítulo, este deve ser marcado juntamente com o título sob ``<trans-title>``. Não se deve marcar nenhum título e/ou subtítulo separadamente em outras tags.
 
 
 .. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
