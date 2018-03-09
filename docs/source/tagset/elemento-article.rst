@@ -113,11 +113,22 @@ Exemplo (tag completa da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1
 
 .. code-block:: xml
 
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.0" article-type="research-article" xml:lang="en">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.8" article-type="research-article" xml:lang="en">
 
            ...
 
 	 </article>
+
+Exemplo (tag completa da `JATS versão 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_):
+
+.. code-block:: xml
+
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.8" article-type="research-article" xml:lang="en">
+
+           ...
+
+	 </article>
+
 
 
 .. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}
