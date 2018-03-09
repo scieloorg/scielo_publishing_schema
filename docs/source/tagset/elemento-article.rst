@@ -10,9 +10,9 @@ Atributos obrigatórios:
   3. ``@xml:lang``
   4. ``@xmlns:mml``
   5. ``@xmlns:xlink="http://www.w3.org/1999/xlink"``
-  6. ``@specific-use="sps-1.0"``
+  6. ``@specific-use="sps-1.8"``
 
-.. note:: No atributo ``@specific-use`` o valor **sps-1.0** é apenas uma referência genérica à versão da *SciELO PS*. Deve ser utilizada sempre          a versão corrente (atual).
+.. note:: No atributo ``@specific-use`` o valor **sps-1.8** é apenas uma referência genérica à versão da *SciELO PS*. Deve ser utilizada uma das `versões vigentes <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/index.html#notas-da-versao>`_.
 
 +-------------+---------+
 | Aparece em  | Ocorre  |
@@ -26,9 +26,9 @@ Atributos obrigatórios:
 
 O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e deve ser utilizado sempre que equações do tipo :term:`MathML` forem identificadas no :term:`documento`.
 
-Para ``@dtd-version`` deve-se utilizar o valor 1.0 conforme a :term:`DTD`, explicitada em :ref:`xml-doctype`.
+Para ``@dtd-version`` deve-se utilizar o valor 1.0 ou 1.1 conforme a :term:`DTD`, explicitada em :ref:`xml-doctype`.
 
-Para tipo de documento (``@article-type``) os valores possíveis são:
+Para o atributo ``@article-type`` os valores possíveis são:
 
 +--------------------+----------------------------------------------------------+
 | Valor              | Descrição                                                |
@@ -101,22 +101,34 @@ Para tipo de documento (``@article-type``) os valores possíveis são:
 +--------------------+----------------------------------------------------------+
 
 
-.. note:: O atributo tipo de documento não deve ser confundido com a seção em que o :term:`documento` aparece no sumário.
+.. note:: O atributo ``@article-type`` não deve ser confundido com a seção (:ref:`elemento-subj-group`) em que o :term:`documento` aparece no sumário.
 
 
-O idioma do texto (``@xml:lang``) é descrito pela norma :term:`ISO 639-1` como um código de dois caracteres alfabéticos em caixa baixa, cujo conteúdo encontra-se disponível no `site <http://www.mathguide.de/info/tools/languagecode.html>`_.
+O idioma do texto em ``@xml:lang`` é descrito pela norma :term:`ISO 639-1` como um código de dois caracteres alfabéticos em caixa baixa, cujo conteúdo encontra-se disponível no `site <http://www.mathguide.de/info/tools/languagecode.html>`_.
 
 O atributo ``@specific-use`` identifica a versão utilizada da :term:`SciELO Publishing Schema`.
 
-Exemplo (tag completa da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_):
+
+Exemplo `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_:
 
 .. code-block:: xml
 
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.0" article-type="research-article" xml:lang="en">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.8" article-type="research-article" xml:lang="en">
 
            ...
 
 	 </article>
+
+
+Exemplo `JATS versão 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_:
+
+.. code-block:: xml
+
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.8" article-type="research-article" xml:lang="pt">
+
+           ...
+
+   </article>
 
 
 .. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}
