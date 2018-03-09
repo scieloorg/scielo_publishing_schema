@@ -36,7 +36,7 @@ Exemplo de ``<article-title>`` nos dados iniciais do documento:
     </title-group>
     ...
 
-.. note:: Se o título do artigo ou da referência possuir um subtítulo, este deve ser marcado juntamente com o título sob ``<article-title>``. Não se deve marcar nenhum título e/ou subtítulo separadamente em outras tags. A mesma regra se aplica a :ref:`elemento-trans-title`.
+.. note:: Se o título do artigo ou da referência possuir um subtítulo, este deve ser marcado juntamente com o título sob ``<article-title>``. Não se deve marcar nenhum título e/ou subtítulo separadamente em outras tags.
 
 
 .. _elemento-article-title-exemplo-2:
@@ -52,8 +52,6 @@ Exemplo de ``<article-title>`` em Referência Bibliográfica:
          ...
     </element-citation>
 
-
-.. note:: Caso haja coincidência entre os títulos da seção e do artigo, a informação será marcada tanto em :ref:`elemento-article-categories` como em ``<article-title>``.
 
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
