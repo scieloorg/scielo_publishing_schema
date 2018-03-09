@@ -61,11 +61,6 @@ Exemplo de ``<subj-group>`` por tipo de documento
     ...
 
 
-.. note:: Para documentos como editoriais, erratas, cartas ao editor etc., que não apresentam título, apenas a seção, é necessário repetir o título da seção no ``<front>`` e marcá-lo com os elementos de título.
-
-
-
-
 .. _subsecao-exemplo-1:
 
 Subseções em documento
@@ -88,7 +83,7 @@ Exemplo:
     </article-categories>
     ...
 
-.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor ``heading`` e deve aparecer somente uma vez no documento *XML*.
+.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor ``heading`` e deve aparecer somente uma vez no artigo.
 
 
 .. {"reviewed_on": "20170828", "by": "carolina.tanigushi@scielo.org"}
