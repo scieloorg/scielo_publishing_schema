@@ -109,6 +109,7 @@ O idioma do texto (``@xml:lang``) é descrito pela norma :term:`ISO 639-1` como 
 
 O atributo ``@specific-use`` identifica a versão utilizada da :term:`SciELO Publishing Schema`.
 
+
 Exemplo (tag completa da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_):
 
 .. code-block:: xml
@@ -119,6 +120,7 @@ Exemplo (tag completa da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1
 
 	 </article>
 
+
 Exemplo (tag completa da `JATS versão 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_):
 
 .. code-block:: xml
@@ -127,8 +129,7 @@ Exemplo (tag completa da `JATS versão 1.1 <http://jats.nlm.nih.gov/publishing/1
 
            ...
 
-	 </article>
-
+   </article>
 
 
 .. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}
