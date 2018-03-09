@@ -17,7 +17,7 @@ Atributos obrigatórios:
 
 
 
-Designa a seção do sumário ao qual pertence ao :term:`documento` e também pode ser utilizado para classificar documentos por assunto. É obrigatória a presença de somente uma ocorrência do elemento ``<subj-group>`` com o atributo ``@subj-group-type="heading"``. Em ``<subject>`` atribui-se a seção na qual o artigo encontra-se classificado (devendo-se consultar o sumário para melhor identificá-lo).
+Designa a seção do sumário ao qual pertence o :term:`documento` e também pode ser utilizado para classificar documentos por assunto. É obrigatória a presença de somente uma ocorrência do elemento ``<subj-group>`` com o atributo ``@subj-group-type="heading"``. Em ``<subject>`` atribui-se a seção na qual o artigo encontra-se classificado (devendo-se consultar o sumário para melhor identificá-lo).
 
 Exemplos:
 
