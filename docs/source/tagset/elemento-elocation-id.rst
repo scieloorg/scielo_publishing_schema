@@ -13,7 +13,7 @@ Ocorre:
   Zero ou uma vez
 
 
-Identificador bibliográfico de um documento que não possui numeração sequencial de páginas tradicionalmente usada em publicações impressas. Pode ocorrer também em :ref:`elemento-element-citation`. Para um intervalo de páginas, deve-se optar pelo uso de :ref:`elemento-fpage` e :ref:`elemento-lpage`.
+Identificador eletrônico que substitui paginação sequencial de um documento.
 
 Exemplo em :ref:`elemento-article-meta`:
 
@@ -29,8 +29,6 @@ Exemplo em :ref:`elemento-article-meta`:
     </article-meta>
     ...
 
-.. note:: ``<elocation-id>`` só deve ser utilizado quando não houver informação de :ref:`elemento-fpage`.
-
 
 Exemplo em :ref:`elemento-element-citation`:
 
@@ -44,6 +42,8 @@ Exemplo em :ref:`elemento-element-citation`:
         <elocation-id>e27721</elocation-id>
     </element-citation>
     ...
+
+.. note:: ``<elocation-id>`` só deve ser utilizado quando não houver informação de :ref:`elemento-fpage`.
 
 
 .. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
