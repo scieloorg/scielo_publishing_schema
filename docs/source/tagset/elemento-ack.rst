@@ -3,13 +3,12 @@
 <ack>
 =====
 
-Aparece em:
++----------------------+--------------------+
+| Aparece em           | Ocorre             |
++======================+====================+
+| :ref:`elemento-back` | Zero ou mais vezes |
++----------------------+--------------------+
 
-  :ref:`elemento-back`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Seção de agradecimentos. Frequentemente indica os dados de financiamento da pesquisa como descrito em :ref:`elemento-funding-group`.
 

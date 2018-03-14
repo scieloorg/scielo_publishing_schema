@@ -3,13 +3,12 @@
 <funding-group>
 ===============
 
-Aparece em:
++------------------------------+-----------------+
+| Aparece em                   | Ocorre          |
++==============================+=================+
+| :ref:`elemento-article-meta` | Zero ou uma vez |
++------------------------------+-----------------+
 
-  :ref:`elemento-article-meta`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Usado somente quando há um número de contrato explicitado no artigo. As informações de  financiamento podem aparecer nas tags :ref:`elemento-fn` ou :ref:`elemento-ack`.

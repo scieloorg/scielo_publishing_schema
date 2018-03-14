@@ -3,15 +3,13 @@
 <author-notes>
 ==============
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-  :ref:`elemento-front-stub`
-
-Ocorre:
-
-  Zero ou mais vezes
-
++------------------------------+-----------------+
+| Aparece em                   | Ocorre          |
++==============================+=================+
+| :ref:`elemento-article-meta` | Zero ou uma vez |
++------------------------------+-----------------+
+| :ref:`elemento-front-stub`   | Zero ou uma vez |
++------------------------------+-----------------+
 
 Identifica notas relacionadas ao autor, tais como: correspondência, contribuição igualitária etc.
 

@@ -3,13 +3,12 @@
 <copyright-statement>
 =====================
 
-Aparece em:
++-----------------------------+--------------+
+| Aparece em                  | Ocorre       |
++=============================+==============+
+| :ref:`elemento-permissions` | Zero ou mais |
++-----------------------------+--------------+
 
-  :ref:`elemento-permissions`
-
-Ocorre:
-
-  Zero ou mais
 
 
 Descreve pessoa ou instituição detentora dos direitos autorais, normalmente em conjunto com o símbolo ``©`` e ano.

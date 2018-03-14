@@ -3,17 +3,16 @@
 <element-citation>
 ==================
 
-Aparece em:
-
-  :ref:`elemento-ref`
-
 Atributos obrigatórios:
 
   1. ``@publication-type``
 
-Ocorre:
++---------------------+---------+
+| Aparece em          | Ocorre  |
++=====================+=========+
+| :ref:`elemento-ref` | Uma vez |
++---------------------+---------+
 
-  Uma vez
 
 
 

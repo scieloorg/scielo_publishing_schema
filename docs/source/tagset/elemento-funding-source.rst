@@ -3,13 +3,12 @@
 <funding-source>
 ================
 
-Aparece em:
++-----------------------------+-------------------+
+| Aparece em                  | Ocorre            |
++=============================+===================+
+| :ref:`elemento-award-group` | Uma ou mais vezes |
++-----------------------------+-------------------+
 
-  :ref:`elemento-award-group`
-
-Ocorre:
-
-  Uma ou mais vezes
 
 
 Elemento contido em :ref:`elemento-award-group` onde deve ser especificado o órgão e/ou instituição financiadora, caso exista.

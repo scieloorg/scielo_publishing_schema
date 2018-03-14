@@ -3,20 +3,19 @@
 <product>
 =========
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-
 Atributos obrigatórios:
 
   1. ``@product-type``
 
-Ocorre:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-article-meta` | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
-``<product>`` contém informações do produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``. O conteúdo de ``<product>`` deverá conter conteúdo dissertativo, incluindo separadores conforme o exemplo abaixo:
+O elemento serve para marcação relativa a um produto (por exemplo: um livro, software, site ou componente de hardware) discutido em um artigo. O conteúdo de ``<product>`` deverá ser dissertativo, incluindo separadores conforme o exemplo abaixo:
 
 
 .. _elemento-product-exemplo-1:
@@ -61,10 +60,23 @@ Os valores possíveis para ``@product-type`` são:
 +-----------+---------------------------------+
 | Valor     | Descrição                       |
 +===========+=================================+
-| book      | para livro ou capítulo de livro |
+| book      | livro ou capítulo de livro      |
++-----------+---------------------------------+
+| article   | artigo                          |
++-----------+---------------------------------+
+| issue     | fascículo                       |
++-----------+---------------------------------+
+| website   | site ou blog                    |
++-----------+---------------------------------+
+| film      | filme                           |
++-----------+---------------------------------+
+| software  | programa de computador          |
++-----------+---------------------------------+
+| hardware  | componente físico de computador |
 +-----------+---------------------------------+
 | other     | outros tipos                    |
 +-----------+---------------------------------+
+
 
 
 .. note:: A ordem dos elementos é importante! ``<product>`` deve ser inserido antes de :ref:`elemento-history` ou depois de :ref:`elemento-fpage`.

@@ -3,14 +3,14 @@
 <isbn>
 ======
 
-Aparece em:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-product`          | Zero ou mais vezes |
++----------------------------------+--------------------+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  :ref:`elemento-product`
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Identifica o :term:`ISBN` em uma referência bibliográfica ou produto.

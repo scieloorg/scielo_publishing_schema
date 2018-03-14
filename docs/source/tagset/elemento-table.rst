@@ -3,13 +3,12 @@
 <table>
 =======
 
-Aparece em:
++----------------------------+---------+
+| Aparece em                 | Ocorre  |
++============================+=========+
+| :ref:`elemento-table-wrap` | Uma vez |
++----------------------------+---------+
 
-  :ref:`elemento-table-wrap`
-
-Ocorre:
-
-  Uma vez
 
 
 Elemento que identifica uma tabela codificada conforme o padrão :term:`NISO JATS table model`, com a adição das regras:

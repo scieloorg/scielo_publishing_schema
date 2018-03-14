@@ -3,18 +3,18 @@
 <country>
 =========
 
-Aparece em:
-
-  :ref:`elemento-aff`
-  :ref:`elemento-corresp`
-
 Atributos obrigatórios:
 
   1. ``@country``
 
-Ocorre:
++-------------------------+---------+
+| Aparece em              | Ocorre  |
++=========================+=========+
+| :ref:`elemento-aff`     | Uma vez |
++-------------------------+---------+
+| :ref:`elemento-corresp` | Uma vez |
++-------------------------+---------+
 
-  Uma vez
 
 
 Identifica o país em um endereço. Em afiliação de autor é elemento obrigatório.

@@ -3,11 +3,6 @@
 <response>
 ==========
 
-Aparece em:
-
-  :ref:`elemento-article`
-  :ref:`elemento-sub-article`
-
 
 Atributos obrigatórios:
 
@@ -16,9 +11,14 @@ Atributos obrigatórios:
   3. ``@xml:lang``
 
 
-Ocorre:
++-----------------------------+--------------------+
+| Aparece em                  | Ocorre             |
++=============================+====================+
+| :ref:`elemento-article`     | Zero ou mais vezes |
++-----------------------------+--------------------+
+| :ref:`elemento-sub-article` | Zero ou mais vezes |
++-----------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Utilizado para apresentar uma resposta diretamente relacionada ao artigo principal, por exemplo, resposta de uma carta ou opinião contrária de um artigo publicado.

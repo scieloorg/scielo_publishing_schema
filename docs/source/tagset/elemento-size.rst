@@ -3,18 +3,18 @@
 <size>
 ======
 
-Aparece em:
-
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-
 Atributos obrigatórios:
 
   1. ``@units="pages"``
 
-Ocorre:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-product`          | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  Zero ou uma vez
 
 
 Identifica a quantidade total de páginas de um :term:`documento` mencionado numa referência. Deve ser utilizado com o atributo ``@units="pages"``.

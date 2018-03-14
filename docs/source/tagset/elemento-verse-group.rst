@@ -3,22 +3,30 @@
 <verse-group>
 =============
 
-Aparece em:
++----------------------------------------+--------------------+
+| Aparece em                             | Ocorre             |
++========================================+====================+
+| :ref:`elemento-app`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| ``<app-group>``                        | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-body`                   | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-boxed-text`             | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-disp-quote`             | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-p`                      | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-ref-list`               | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-sec`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-supplementary-material` | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-verse-group`            | Zero ou mais vezes |
++----------------------------------------+--------------------+
 
-  :ref:`elemento-app`
-  ``<app-group>``
-  :ref:`elemento-body`
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-disp-quote`
-  :ref:`elemento-p`
-  :ref:`elemento-ref-list`
-  :ref:`elemento-sec`
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-verse-group`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Elemento utilizado para apresentar poemas, versos ou músicas. Nele também podem ser inseridos os elementos :ref:`elemento-attrib` para identificação do autor e :ref:`elemento-label` para identificação do título do poema, verso etc.

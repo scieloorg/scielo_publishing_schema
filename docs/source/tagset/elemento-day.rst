@@ -3,18 +3,20 @@
 <day>
 =====
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-pub-date`         | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-product`          | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-date-in-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-date`             | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-pub-date`
-  :ref:`elemento-product`
-  :ref:`elemento-element-citation`
-  :ref:`elemento-date-in-citation`
-  :ref:`elemento-date`
-
-Ocorre :
-
-  1. Zero ou uma vez nos elementos de :ref:`elemento-front`
-  2. Zero ou mais vezes nos elementos de :ref:`elemento-back`
 
 
 Identifica o dia de acesso ao conteúdo web relativo a uma referência, podendo ser utilizado para compor a data de publicação e/ou a data de histórico.

@@ -3,13 +3,12 @@
 <comment>
 =========
 
-Aparece em:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Identifica informações adicionais, como por exemplo, "Disponível em:", que precede uma URL (ver elemento :ref:`elemento-ext-link`) em uma referência, e que não possuem marcação específica.
 

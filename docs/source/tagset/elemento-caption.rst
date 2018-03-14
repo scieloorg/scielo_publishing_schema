@@ -3,19 +3,23 @@
 <caption>
 =========
 
-Aparece em:
 
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-disp-formula`
-  :ref:`elemento-fig`
-  :ref:`elemento-media`
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-table-wrap`
-  
++----------------------------------------+-----------------+
+| Aparece em                             | Ocorre          |
++========================================+=================+
+| :ref:`elemento-boxed-text`             | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-disp-formula`           | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-fig`                    | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-media`                  | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-supplementary-material` | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-table-wrap`             | Zero ou uma vez |
++----------------------------------------+-----------------+
 
-Ocorre:
-
-  Zero ou mais vezes
 
 Descreve uma legenda para vários tipos de objeto. ``<caption>`` envolve o elemento ``<title>`` para conter o texto descritivo de uma tabela, figura, mídia, fórmula ou objeto similar e também o elemento ``<p>`` para identificação de texto adicional.
 

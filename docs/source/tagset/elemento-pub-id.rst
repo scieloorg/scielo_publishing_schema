@@ -3,18 +3,17 @@
 <pub-id>
 ========
 
-Aparece em:
-
-  :ref:`elemento-element-citation`
-
 
 Atributos obrigatórios:
 
   1. ``@pub-id-type``
 
-Ocorre:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-element-citation` | Zero ou mais vezes |
++----------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Especifica o identificador de uma publicação em uma referência bibliográfica. O atributo ``@pub-id-type`` é mandatório e explicita o tipo do identificador, autoridade ou organização responsável pela atribuição deste. Os valores possíveis são:
 

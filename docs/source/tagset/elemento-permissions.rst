@@ -3,23 +3,29 @@
 <permissions>
 =============
 
-Aparece em:
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-boxed-text`
-  :ref:`elemento-disp-quote`
-  :ref:`elemento-fig`
-  ``<graphic>``
-  :ref:`elemento-media`
-  :ref:`elemento-supplementary-material`
-  :ref:`elemento-table-wrap`
-  :ref:`elemento-verse-group`
++----------------------------------------+-----------------+
+| Aparece em                             | Ocorre          |
++========================================+=================+
+| :ref:`elemento-article-meta`           | Uma vez         |
++----------------------------------------+-----------------+
+| :ref:`elemento-boxed-text`             | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-disp-quote`             | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-fig`                    | Zero ou uma vez |
++----------------------------------------+-----------------+
+| ``<graphic>``                          | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-media`                  | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-supplementary-material` | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-table-wrap`             | Zero ou uma vez |
++----------------------------------------+-----------------+
+| :ref:`elemento-verse-group`            | Zero ou uma vez |
++----------------------------------------+-----------------+
 
-
-Ocorre:
-
-  1. Uma vez em :ref:`elemento-article-meta`
-  2. Zero ou mais vezes nos demais elementos
 
 A permissão é um conjunto de condições sob as quais o conteúdo do artigo pode ser usado, acessado e distribuído.
 

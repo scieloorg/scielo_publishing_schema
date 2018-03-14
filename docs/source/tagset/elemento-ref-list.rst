@@ -3,14 +3,14 @@
 <ref-list>
 ==========
 
-Aparece em:
++--------------------------+--------------------+
+| Aparece em               | Ocorre             |
++==========================+====================+
+| :ref:`elemento-back`     | Zero ou mais vezes |
++--------------------------+--------------------+
+| :ref:`elemento-ref-list` | Zero ou mais vezes |
++--------------------------+--------------------+
 
-  :ref:`elemento-back`
-  :ref:`elemento-ref-list`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 Representa o conjunto de referências bibliográficas de um artigo e deve conter, obrigatoriamente, o elemento :ref:`elemento-ref`, que por sua vez contém :ref:`elemento-mixed-citation` e :ref:`elemento-element-citation`.
 

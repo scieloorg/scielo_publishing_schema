@@ -3,21 +3,21 @@
 <subj-group>
 ============
 
-Aparece em:
-
-  :ref:`elemento-article-categories`
-  ``<subj-group>``
-
 Atributos obrigatórios:
 
   1. ``@subj-group-type="heading"``
 
-Ocorre:
++------------------------------------+---------+
+| Aparece em                         | Ocorre  |
++====================================+=========+
+| :ref:`elemento-article-categories` | Uma vez |
++------------------------------------+---------+
+| ``<subj-group>``                   | Uma vez |
++------------------------------------+---------+
 
-  Uma vez
 
 
-Designa a seção do sumário ao qual pertence ao :term:`documento` e também pode ser utilizado para classificar documentos por assunto. É obrigatória a presença de somente uma ocorrência do elemento ``<subj-group>`` com o atributo ``@subj-group-type="heading"``. Em ``<subject>`` atribui-se a seção na qual o artigo encontra-se classificado (devendo-se consultar o sumário para melhor identificá-lo).
+Designa a seção do sumário ao qual pertence o :term:`documento` e também pode ser utilizado para classificar documentos por assunto. É obrigatória a presença de somente uma ocorrência do elemento ``<subj-group>`` com o atributo ``@subj-group-type="heading"``. Em ``<subject>`` atribui-se a seção na qual o artigo encontra-se classificado (devendo-se consultar o sumário para melhor identificá-lo).
 
 Exemplos:
 
@@ -61,11 +61,6 @@ Exemplo de ``<subj-group>`` por tipo de documento
     ...
 
 
-.. note:: Para documentos como editoriais, erratas, cartas ao editor etc., que não apresentam título, apenas a seção, é necessário repetir o título da seção no ``<front>`` e marcá-lo com os elementos de título.
-
-
-
-
 .. _subsecao-exemplo-1:
 
 Subseções em documento
@@ -88,7 +83,7 @@ Exemplo:
     </article-categories>
     ...
 
-.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor ``heading`` e deve aparecer somente uma vez no documento *XML*.
+.. note:: Apenas a seção de nível mais alto apresenta o atributo ``@subj-group-type`` com o valor ``heading`` e deve aparecer somente uma vez no artigo.
 
 
 .. {"reviewed_on": "20170828", "by": "carolina.tanigushi@scielo.org"}

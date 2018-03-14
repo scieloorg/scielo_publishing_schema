@@ -3,13 +3,12 @@
 <copyright-year>
 ================
 
-Aparece em:
++-----------------------------+--------------+
+| Aparece em                  | Ocorre       |
++=============================+==============+
+| :ref:`elemento-permissions` | Zero ou mais |
++-----------------------------+--------------+
 
-  :ref:`elemento-permissions`
-
-Ocorre:
-
-  Zero ou mais
 
 
 Identifica o ano do direito autoral com quatro dígitos e sem espaços.

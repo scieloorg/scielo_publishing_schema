@@ -3,15 +3,16 @@
 <season>
 ========
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-product`          | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-pub-date`         | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-  :ref:`elemento-pub-date`
-
-Ocorre:
-
-  Zero ou uma vez
 
 
 Este elemento pode ser encontrado em :ref:`elemento-pub-date` para identificação de intervalo de meses do ano (ver nota informativa) e em :ref:`elemento-element-citation` e :ref:`elemento-product`) para identificação de estação do ano em uma referência bibliográfica.

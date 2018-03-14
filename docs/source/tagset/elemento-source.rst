@@ -3,14 +3,14 @@
 <source>
 ========
 
-Aparece em:
++----------------------------------+-----------------+
+| Aparece em                       | Ocorre          |
++==================================+=================+
+| :ref:`elemento-element-citation` | Zero ou uma vez |
++----------------------------------+-----------------+
+| :ref:`elemento-product`          | Zero ou uma vez |
++----------------------------------+-----------------+
 
-  :ref:`elemento-element-citation`
-  :ref:`elemento-product`
-
-Ocorre:
-
-  Zero ou uma vez
 
 Identifica o título da fonte principal de uma referência ou de um produto. O atributo ``@xml:lang`` não deve ser utilizado.
 

@@ -3,27 +3,35 @@
 <def-list>
 ==========
 
-Aparece em:
-
-  :ref:`elemento-app`
-  ``<app-group>``
-  :ref:`elemento-body`
-  :ref:`elemento-boxed-text`
-  ``<def-list>``
-  :ref:`elemento-glossary`
-  ``<list-item>``
-  :ref:`elemento-p`
-  :ref:`elemento-ref-list`
-  :ref:`elemento-sec`
-
 Atributos obrigatórios:
 
   1. ``@id`` (Ver :ref:`sugestao-atribuicao-id`)
 
 
-Ocorre:
++----------------------------+--------------------+
+| Aparece em                 | Ocorre             |
++============================+====================+
+| :ref:`elemento-app`        | Zero ou mais vezes |
++----------------------------+--------------------+
+| ``<app-group>``            | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-body`       | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-boxed-text` | Zero ou mais vezes |
++----------------------------+--------------------+
+| ``<def-list>``             | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-glossary`   | Zero ou mais vezes |
++----------------------------+--------------------+
+| ``<list-item>``            | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-p`          | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-ref-list`   | Zero ou mais vezes |
++----------------------------+--------------------+
+| :ref:`elemento-sec`        | Zero ou mais vezes |
++----------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 

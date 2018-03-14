@@ -3,24 +3,29 @@
 <table-wrap>
 ============
 
-Aparece em:
-
-  :ref:`elemento-app`
-  ``<app-group>``
-  :ref:`elemento-body`
-  :ref:`elemento-glossary`
-  :ref:`elemento-p`
-  :ref:`elemento-sec`
-  :ref:`elemento-supplementary-material`
-
 
 Atributos obrigatórios:
 
   1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
 
-Ocorre:
++----------------------------------------+--------------------+
+| Aparece em                             | Ocorre             |
++========================================+====================+
+| :ref:`elemento-app`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| ``<app-group>``                        | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-body`                   | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-glossary`               | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-p`                      | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-sec`                    | Zero ou mais vezes |
++----------------------------------------+--------------------+
+| :ref:`elemento-supplementary-material` | Zero ou mais vezes |
++----------------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 
 Especifica todas as partes de uma única tabela, incluindo :ref:`elemento-label`, :ref:`elemento-caption` e :ref:`elemento-table-wrap-foot`, caso exista.

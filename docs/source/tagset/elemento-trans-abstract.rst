@@ -3,18 +3,18 @@
 <trans-abstract>
 ================
 
-Aparece em:
-
-  :ref:`elemento-article-meta`
-  :ref:`elemento-front-stub`
-
 Atributos obrigatórios:
 
   1. ``@xml:lang``
 
-Ocorre:
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-article-meta` | Zero ou mais vezes |
++------------------------------+--------------------+
+| :ref:`elemento-front-stub`   | Zero ou mais vezes |
++------------------------------+--------------------+
 
-  Zero ou mais vezes
 
 Contém o resumo traduzido do artigo, podendo apresentar os formatos simples ou estruturado, do mesmo modo que o elemento :ref:`elemento-abstract`. Se existente, deve ser inserido imediatamente após :ref:`elemento-abstract` e, obrigatoriamente, conter o atributo ``@xml:lang``.
 

@@ -22,7 +22,6 @@ elementos apresentam regras específicas de uso:
   * :ref:`elemento-scibrasil-product`
 
 
-
 .. _elemento-scibrasil-article-id:
 
 <article-id>
@@ -159,7 +158,7 @@ Este elemento em :ref:`elemento-back` é obrigatório para SciELO Brasil e deve 
 <country>
 ^^^^^^^^^
 
-Este elemento é obrigatório para SciELO Brasil em :ref:`elemento-aff` e deve ocorrer uma vez.
+Este elemento em :ref:`elemento-aff` é obrigatório para SciELO Brasil e deve ocorrer uma vez.
 
 .. note::
  Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
@@ -171,3 +170,4 @@ Este elemento é obrigatório para SciELO Brasil em :ref:`elemento-aff` e deve o
 ^^^^^^^^^
 
 :ref:`elemento-product` contém informações de produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
+

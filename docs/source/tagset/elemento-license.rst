@@ -3,19 +3,18 @@
 <license>
 =========
 
-Aparece em:
-
-  :ref:`elemento-permissions`
-
 Atributos obrigatórios:
 
   1. ``@license-type="open-access"``
   2. ``@xlink:href``
   3. ``@xml:lang``
 
-Ocorre:
++-----------------------------+-------------------+
+| Aparece em                  | Ocorre            |
++=============================+===================+
+| :ref:`elemento-permissions` | Uma ou mais vezes |
++-----------------------------+-------------------+
 
-  Uma ou mais vezes
 
 
 Indica a licença de uso (:term:`Creative Commons`) adotada pelo artigo, por meio de referência à URL onde o texto da licença encontra-se disponível.

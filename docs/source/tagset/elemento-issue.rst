@@ -3,14 +3,14 @@
 <issue>
 =======
 
-Aparece em:
++----------------------------------+--------------------+
+| Aparece em                       | Ocorre             |
++==================================+====================+
+| :ref:`elemento-article-meta`     | 1. Zero ou uma vez |
++----------------------------------+--------------------+
+| :ref:`elemento-element-citation` | 1. Zero ou uma vez |
++----------------------------------+--------------------+
 
-  :ref:`elemento-article-meta`
-  :ref:`elemento-element-citation`
-
-Ocorre:
-
-  1. Zero ou uma vez
 
 
 Identifica o fascículo (ou suplemento deste), seja como parte de um volume ou de fascículo especial.

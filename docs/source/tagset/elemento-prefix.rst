@@ -3,13 +3,12 @@
 <prefix>
 ========
 
-Aparece em:
++----------------------+-----------------+
+| Aparece em           | Ocorre          |
++======================+=================+
+| :ref:`elemento-name` | Zero ou uma vez |
++----------------------+-----------------+
 
-  :ref:`elemento-name`
-
-Ocorre:
-
-  Zero ou mais vezes
 
 
 Especifica um qualificador que precede o prenome do autor. Geralmente, é usado para indicar qualificadores, por exemplo, "Prof. Dr.", "Dr.", "Sr.", "Presidente", "Embaixador", entre outros.

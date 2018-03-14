@@ -3,17 +3,16 @@
 <abbrev-journal-title>
 ======================
 
-Aparece em:
-
-  :ref:`elemento-journal-title-group`
-
 Atributos obrigatórios:
 
   1. ``@abbrev-type="publisher"``
 
-Ocorre:
++-------------------------------------+---------+
+| Aparece em                          | Ocorre  |
++=====================================+=========+
+| :ref:`elemento-journal-title-group` | Uma vez |
++-------------------------------------+---------+
 
-  Uma vez
 
 
 Define a forma abreviada do título do periódico de acordo com o registro no *ISSN*.
