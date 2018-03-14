@@ -95,17 +95,15 @@ Exemplo:
 Notas gerais
 ------------
 
-Aparece em:
-
-  :ref:`elemento-fn-group`
-
 Atributos obrigatórios:
 
   1. ``@fn-type``
 
-Ocorre:
-
-  Uma ou mais vezes
++--------------------------+-------------------+
+| Aparece em               | Ocorre            |
++==============================+===============+
+| :ref:`elemento-fn-group` | Uma ou mais vezes |
++--------------------------+-------------------+
 
 
 Notas gerais usualmente referenciam informação do próprio documento e da pesquisa.
@@ -174,18 +172,16 @@ Exemplo:
 Notas de Tabelas
 ----------------
 
-Aparece em:
-
-  :ref:`elemento-table-wrap-foot`
-
-
 Atributos obrigatórios:
 
   1. ``@id``
 
-Ocorre:
++---------------------------------+-------------------+
+| Aparece em                      | Ocorre            |
++=================================+===================+
+| :ref:`elemento-table-wrap-foot` | Uma ou mais vezes |
++---------------------------------+-------------------+
 
-  Uma ou mais vezes
 
 Notas de tabelas obrigatoriamente possuem o atributo ``@id``.
 
