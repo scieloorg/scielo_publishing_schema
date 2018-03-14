@@ -11,7 +11,7 @@
 
 
 
-Elemento contido em :ref:`elemento-award-group` onde deve ser especificado o órgão e/ou instituição financiadora, caso exista.
+Elemento onde deve ser especificado o órgão ou instituição financiadora.
 
 Exemplos:
 
@@ -21,8 +21,8 @@ Exemplos:
 
 .. _elemento-fundingsource-exemplo-1:
 
-Exemplo de ``<funding-source>`` em ``<funding-group>``:
--------------------------------------------------------
+Exemplo de 1 ``<funding-source>`` para 1 :ref:`elemento-award-id` :
+-------------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -43,8 +43,8 @@ Exemplo de ``<funding-source>`` em ``<funding-group>``:
 
 .. _elemento-fundingsource-exemplo-2:
 
-Exemplo de 2 instituições financiadoras para 1 ``<award-id>``:
---------------------------------------------------------------
+Exemplo de 2 ``<funding-source>`` para 1 :ref:`elemento-award-id` :
+-------------------------------------------------------------------
 
 Um mesmo número de contrato pode ter mais de uma instituição financiadora.
 
