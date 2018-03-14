@@ -59,7 +59,7 @@ Exemplo:
 .. note:: Nota de financiamento COM NÚMERO DE CONTRATO, deve ser identificada dentro de :ref:`elemento-back` em :ref:`elemento-fn-group` com :ref:`elemento-fn` do tipo ``@fn-type="financial-disclosure"``.
 
 
-.. note:: Nota de apoio a pesquisa SEM NÚMERO DE CONTRATO. Deve ser identificada dentro de :ref:`elemento-back` em :ref:`elemento-fn-group` com :ref:`elemento-fn` do tipo ``@fn-type="supported-by"``.
+.. note:: Nota de apoio a pesquisa SEM NÚMERO DE CONTRATO, deve ser identificada dentro de :ref:`elemento-back` em :ref:`elemento-fn-group` com :ref:`elemento-fn` do tipo ``@fn-type="supported-by"``.
 
 
 .. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}
