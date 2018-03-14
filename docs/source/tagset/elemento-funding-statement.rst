@@ -56,6 +56,7 @@ Exemplo:
     </back>
 
 
+
 .. note:: Nota de financiamento COM NÚMERO DE CONTRATO, deve ser identificada dentro de :ref:`elemento-back` em :ref:`elemento-fn-group` com :ref:`elemento-fn` do tipo ``@fn-type="financial-disclosure"``.
 
 
