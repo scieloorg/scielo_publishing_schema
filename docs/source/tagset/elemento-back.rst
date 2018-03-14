@@ -31,7 +31,7 @@ Parte final do :term:`documento` que compreende:
 +----------------------+--------------------------+
 | anexo                | ``app-group``            |
 +----------------------+--------------------------+
-| glossário            | ``app-group``            |
+| glossário            | :ref:`elemento-glossary` |
 +----------------------+--------------------------+
 
 
