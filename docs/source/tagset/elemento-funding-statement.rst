@@ -13,7 +13,7 @@
 
 Contém os dados de financiamento exatamente como apresentado na nota de rodapé.
 
-Este elemento só deverá ser inserido quando as informações de financiamento forem apresentadas em notas de rodapé (:ref:`elemento-fn`).
+Este elemento só deverá ser inserido quando as informações de financiamento forem apresentadas em :ref:`elemento-fn`.
 
 Exemplo:
 
@@ -56,9 +56,11 @@ Exemplo:
     </back>
 
 
-.. note:: Nota de rodapé com informação de instituição financiadora e número de contrato deve ser identificado dentro de :ref:`elemento-back` em           :ref:`elemento-fn-group` com o  tipo ``@fn-type="financial-disclosure"``.
 
-.. note:: Notas SEM NÚMERO DE CONTRATO, ficam apenas em :ref:`elemento-back` mas com tipo ``@fn-type="supported-by"``.
+.. note:: Nota de financiamento COM NÚMERO DE CONTRATO, deve ser identificada dentro de :ref:`elemento-back` em :ref:`elemento-fn-group` com :ref:`elemento-fn` do tipo ``@fn-type="financial-disclosure"``.
+
+
+.. note:: Nota de apoio a pesquisa SEM NÚMERO DE CONTRATO, deve ser identificada dentro de :ref:`elemento-back` em :ref:`elemento-fn-group` com :ref:`elemento-fn` do tipo ``@fn-type="supported-by"``.
 
 
 .. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}
