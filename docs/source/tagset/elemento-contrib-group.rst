@@ -14,12 +14,6 @@
 
 Contém o grupo de elementos relativos à contribuição na elaboração do artigo. Os contribuintes mais frequentes são os autores pessoais, instituições e grupos de pesquisa.
 
-Os principais elementos de ``<contrib-group>`` são:
-
-* :ref:`elemento-aff`;
-* :ref:`elemento-contrib`;
-* :ref:`elemento-role`;
-* :ref:`elemento-xref`;
 
 
 Exemplo:
