@@ -27,10 +27,6 @@ O atributo ``@contrib-type`` define o tipo de contribuição e pode ter os valor
 | compiler   | Compilador - Indivíduo que compilou o conteúdo a partir de     |
 |            | várias fontes.                                                 |
 +------------+----------------------------------------------------------------+
-| editor     | Editor do conteúdo.                                            |
-+------------+----------------------------------------------------------------+
-| translator | Tradutor do conteúdo.                                          |
-+------------+----------------------------------------------------------------+
 
 
 Exemplo:
@@ -53,8 +49,7 @@ Exemplo:
 
 .. note::
   * Utilizar *AACR2* - *Código de Catalogação Anglo Americano* e/ou *Currículo Lattes* dos autores e avaliar formas de entrada autorizadas para nomes.
-  * Para artigos que apresentam assinatura, - como editoriais, apresentação etc., repetir autores de ``<sig-block>`` em ``front/contrib`` caso não exista tal informação.
-  * Em caso de autorias institucionais ou de grupos o elemento não é requerido.
+  * Outros tipos de contribuidores como tradutor, ilustrador, assistente de pesquisa, editor etc, devem ser identificados em :ref:`elemento-author-notes`, com :ref:`elemento-fn` e ``@fn-type ="other"``, para editor do artigo ou fascículo usar ``@fn-type ="edited-by"``.
 
 
 .. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}
