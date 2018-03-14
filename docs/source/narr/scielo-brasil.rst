@@ -18,8 +18,8 @@ elementos apresentam regras específicas de uso:
   * :ref:`elemento-scibrasil-article-title`
   * :ref:`elemento-scibrasil-xref`
   * :ref:`elemento-scibrasil-ref-list`
+  * :ref:`elemento-scibrasil-country`
   * :ref:`elemento-scibrasil-product`
-
 
 
 .. _elemento-scibrasil-article-id:
@@ -106,7 +106,7 @@ Em :ref:`elemento-article` o atributo ``@article-type`` não permite os tipos de
 <contrib-group>
 ^^^^^^^^^^^^^^^
 
-Este elemento é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
+Este elemento em :ref:`elemento-article-meta` é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
 
 .. note::
  Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
@@ -147,7 +147,18 @@ Este elemento em :ref:`elemento-title-group` é obrigatório para SciELO Brasil 
 <ref-list>
 ^^^^^^^^^^
 
-Este elemento é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
+Este elemento em :ref:`elemento-back` é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
+
+.. note::
+ Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
+
+
+.. _elemento-scibrasil-country:
+
+<country>
+^^^^^^^^^
+
+Este elemento em :ref:`elemento-aff` é obrigatório para SciELO Brasil e deve ocorrer uma vez.
 
 .. note::
  Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
@@ -159,3 +170,4 @@ Este elemento é obrigatório para SciELO Brasil e deve ocorrer uma ou mais veze
 ^^^^^^^^^
 
 :ref:`elemento-product` contém informações de produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
+
