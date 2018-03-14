@@ -16,13 +16,25 @@
 
 Parte final do :term:`documento` que compreende:
 
-* lista de referências;
-* notas de rodapé;
-* agradecimentos
-* apêndice(s)
-* material suplementar
-* anexos; e
-* glossário.
+
++----------------------+--------------------------+
+| Itens                | Elementos                |
++======================+==========================+
+| lista de referências | :ref:`elemento-ref-list` |
++----------------------+--------------------------+
+| notas gerais         | :ref:`elemento-fn-group` |
++----------------------+--------------------------+
+| agradecimento        | :ref:`elemento-ack`      |
++----------------------+--------------------------+
+| apêndice             | ``app-group``            |
++----------------------+--------------------------+
+| material suplementar | ``app-group``            |
++----------------------+--------------------------+
+| anexo                | ``app-group``            |
++----------------------+--------------------------+
+| glossário            | :ref:`elemento-glossary` |
++----------------------+--------------------------+
+
 
 Exemplo:
 
