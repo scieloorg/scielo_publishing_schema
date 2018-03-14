@@ -7,21 +7,18 @@ Atributos obrigatórios:
 
   1. ``@country``
 
-+-------------------------+---------+
-| Aparece em              | Ocorre  |
-+=========================+=========+
-| :ref:`elemento-aff`     | Uma vez |
-+-------------------------+---------+
-| :ref:`elemento-corresp` | Uma vez |
-+-------------------------+---------+
++-------------------------+-----------------+
+| Aparece em              | Ocorre          |
++=========================+=================+
+| :ref:`elemento-aff`     | Zero ou uma vez |
++-------------------------+-----------------+
+| :ref:`elemento-corresp` | Zero ou uma vez |
++-------------------------+-----------------+
 
 
+Identifica o país em um endereço de correspondência ou afiliação.
 
-Identifica o país em um endereço. Em afiliação de autor é elemento obrigatório.
-
-O atributo ``@country`` é mandatório e deve ser preenchido de acordo com a Norma *ISO 3166*, cujos códigos tem dois caracteres alfabéticos em caixa alta.
-
-Os códigos de país podem ser consultados através deste `link <http://www.iso.org/iso/country_codes>`_.
+O atributo ``@country`` é mandatório e deve ser preenchido de acordo com a Norma *ISO 3166*, cujos códigos tem dois caracteres alfabéticos em caixa alta. Os códigos de país podem ser consultados através deste `link <http://www.iso.org/iso/country_codes>`_.
 
 
 Exemplo:
