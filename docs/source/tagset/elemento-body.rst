@@ -15,9 +15,10 @@
 
 
 
-Compreende todo o conteúdo formal de desenvolvimento do artigo científico, ou seja texto, imagens, tabelas, figuras, gráficos, equações, fórmulas etc.
+Compreende todo o conteúdo de desenvolvimento dos diversos tipos de documentos científicos, passíveis de indexação.
 
-.. note:: Tabelas, figuras e equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
+.. note:: Tabelas, figuras e equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto.
+
 
 Exemplo:
 
