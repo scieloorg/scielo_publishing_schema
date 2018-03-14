@@ -29,7 +29,7 @@ Atributos obrigatórios:
 +----------------------------+--------------------+
 
 
-Identifica texto ou objeto que faz parte do artigo, mas não do corpo do texto (flutuante ou não ancorado). Permite apresentar texto com seções, figuras, tabelas etc.
+Elemento usado para qualquer inserção de texto incluído em uma caixa. Permite apresentar texto com seções, figuras, tabelas etc.
 
 
 Exemplos:
