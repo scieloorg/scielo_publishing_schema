@@ -33,9 +33,7 @@ Atributos obrigatórios:
 +----------------------------+--------------------+
 
 
-
-
-Descreve uma lista de termos e suas respectivas definições, que deve ser apresentada como texto contendo os seguintes elementos:
+Descreve uma lista de termos e suas definições, deve ser apresentada como texto e pode conter os seguintes elementos:
 
 * ``<title>``
 * ``<term-head>``
@@ -45,8 +43,11 @@ Descreve uma lista de termos e suas respectivas definições, que deve ser apres
 
 Em ``<def-item>`` usam-se os seguintes sub-elementos:
 
-* ``<term>``: Identifica a palavra, frase, equação etc., que está sendo definida ou descrita.
-* ``<def>``: Descreve, explica a palavra ou frase em ``<term>``. Nesse contexto deve-se, obrigatoriamente, inserir o elemento :ref:`elemento-p`.
+* ``<term>``: Identifica o termo da lista.
+* ``<def>``: Descreve o termo da lista.
+
+
+.. note:: Em ``<def>`` é obrigatório inserir a descrição dentro do elemento :ref:`elemento-p`.
 
 
 O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo ``@id``.
@@ -60,7 +61,7 @@ Exemplos:
 
 .. _elemento-deflist-exemplo-1:
 
-Exemplo de ``<def-list>`` em  ``<body>``:
+Exemplo de uma lista em ``<body>``:
 -----------------------------------------
 
 .. code-block:: xml
@@ -93,7 +94,7 @@ Exemplo de ``<def-list>`` em  ``<body>``:
 
 .. _elemento-deflist-exemplo-2:
 
-Exemplo de ``<def-list>`` em sublista de definições:
+Exemplo de uma lista com sublista em ``<glossary>``:
 ----------------------------------------------------
 
 .. code-block:: xml
