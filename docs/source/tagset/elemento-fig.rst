@@ -26,11 +26,9 @@ Atributos obrigatórios:
 
 
 
-Identifica as figuras de um artigo. Nesse elemento é possível especificar ``<label>``, ``<caption>``, ``<graphic>``, ``<links>`` e objetos multimídia como vídeo, áudio e filme.
-``<fig>`` pode ainda conter os seguintes atributos: ``@fig-type`` e ``@xml:lang``.
+Identifica figura(s) de um artigo. Nesse elemento é possível especificar :ref:`elemento-label`, :ref:`elemento-caption`, ``<graphic>`` e :ref:`elemento-attrib`. ``<fig>`` pode ainda conter os seguintes atributos: ``@fig-type`` e ``@xml:lang``.
 
-O elemento ``<graphic>`` é utilizado para identificar alguns tipos de arquivo e tem como atributo ``@xlink:href:`` que é utilizado para especificar o nome completo da imagem referenciada.
-
+O elemento ``<graphic>`` é utilizado para identificar os tipos de arquivo que podem ser .tif, .jpg ou .png e tem como atributo ``@xlink:href:`` que é utilizado para especificar o nome completo da imagem referenciada.
 
 
 O atributo ``@id:`` permite fazer referência cruzada no :term:`documento` (link relacionado a um "rid"), desde que o atributo tenha um valor único no arquivo.
@@ -42,7 +40,6 @@ Exemplos:
     * :ref:`elemento-fig-exemplo-3`
     * :ref:`elemento-fig-exemplo-4`
     * :ref:`elemento-fig-exemplo-5`
-    * :ref:`elemento-fig-exemplo-6`
 
 
 
@@ -68,17 +65,18 @@ As imagens podem ou não ter legendas. Para imagens sem legenda é necessário m
 Exemplo de Figura com label e caption:
 --------------------------------------
 
-Para figuras com legenda a marcação deve ocorrer para toda a informação da imagem, inclusive sua descrição com o elemento ``<fig>``. Dentro de ``<fig>`` serão identificados o rótulo da figura (:ref:`elemento-label`) e a legenda (:ref:`elemento-caption`) com o título da figura em ``<title>``.
+Para figuras com legenda, dentro de ``<fig>`` serão identificados :ref:`elemento-label` e :ref:`elemento-caption` com o título da figura em ``<title>``.
+
 
 .. code-block:: xml
 
     ...
-    <fig id="f01">
-        <label>Fig. 1</label>
+    <fig id="f03">
+        <label>Fig. 3</label>
         <caption>
             <title>título da imagem</title>
         </caption>
-        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
+        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf03.tif"/>
     </fig>
     ...
 
@@ -88,7 +86,28 @@ Para figuras com legenda a marcação deve ocorrer para toda a informação da i
 Exemplo de Figura com label específico:
 ---------------------------------------
 
-O atributo ``@fig-type:`` é utilizado para especificar o tipo de imagem, que pode ser: Graphic, Cartoon, Chart, Diagram, Drawing, Exhibit, Illustration, Map etc. Contudo o tipo só será definido caso o ``<label>`` apresente um conteúdo diferente de "fig." ou "figure".
+O atributo ``@fig-type:`` é utilizado para especificar o tipo de imagem, que pode ser:
+
++------------+--------------+
+| Descrição  | Valor        |
++============+==============+
+| gráfico    | graphic      |
++------------+--------------+
+| desenho    | cartoon      |
++------------+--------------+
+| quadro     | chart        |
++------------+--------------+
+| diagrama   | diagram      |
++------------+--------------+
+| desenho    | drawing      |
++------------+--------------+
+| ilustração | illustration |
++------------+--------------+
+| mapa       | map          |
++------------+--------------+
+
+Contudo o tipo só será definido caso o :ref:`elemento-label` apresente um conteúdo diferente de fig, figure, figura.
+
 
 .. code-block:: xml
 
@@ -104,52 +123,32 @@ O atributo ``@fig-type:`` é utilizado para especificar o tipo de imagem, que po
 Se a figura não possuir um tipo específico, deve-se manter o elemento sem o atributo.
 
 
+
 .. _elemento-fig-exemplo-4:
 
-Exemplo de Figura sem tipo definido:
-------------------------------------
+Exemplo de figura com informação de fonte :ref:`elemento-attrib`:
+-----------------------------------------------------------------
 
 .. code-block:: xml
 
     ...
-    <fig id="f01">
-        <label>Fig 1</label>
+    <fig id="f02">
+        <label>FIGURE 2</label>
         <caption>
-            <title>Título da Figura<title>
+            <title>Título da figura</title>
         </caption>
+        <graphic xlink:href="1234-5678-zwy-12-04-0123-gf02.tif"/>
+        <attrib>Fonte: IBGE (2018)</attrib>
     </fig>
-    ...
 
 
 .. _elemento-fig-exemplo-5:
 
-Exemplo completo de Figura com atributo ``@id``:
-------------------------------------------------
-
-.. code-block:: xml
-
-    ...
-    <fig id="f01">
-        <label>FIGURE 1</label>
-        <caption>
-            <title>Título da figura</title>
-        </caption>
-        <graphic xlink:href="1234-5678-rctb-45-05-0110-gf01.tif"/>
-    </fig>
-
-
-.. _elemento-fig-traduzido:
-
-Legendas traduzidas
--------------------
+Exemplo de Figura com legenda traduzida:
+````````````````````````````````````````
 
 Figuras que apresentam legendas traduzidas (com mais de um :ref:`elemento-label` e :ref:`elemento-caption`), devem ser identificadas com o elemento ``<fig-group>``, o qual deve conter os elementos ``<fig>`` para cada idioma utilizando o atributo ``@xml:lang``.
 
-
-.. _elemento-fig-exemplo-6:
-
-Exemplo de Figura com legenda traduzida:
-````````````````````````````````````````
 
 .. code-block:: xml
 
@@ -173,7 +172,6 @@ Exemplo de Figura com legenda traduzida:
 
 
 
-
-.. note:: Figuras que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
+.. note:: Figuras que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto.
 
 .. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
