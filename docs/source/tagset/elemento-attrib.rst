@@ -24,7 +24,7 @@
 +----------------------------------------+--------------------+
 
 
-Utilizado para creditar o autor ou o licenciador de ativos ou conteúdos que requerem tal atribuição.
+Utilizado para creditar autoria ou fonte em ativos ou conteúdos.
 
 Exemplo em figura:
 
