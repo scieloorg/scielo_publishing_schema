@@ -26,7 +26,7 @@ Exemplo:
     </author-notes>
     ...
 
-.. note:: Para este elemento não utilizar parágrafo (:ref:`elemento-p`).
+.. note:: Para este elemento não utilizar :ref:`elemento-p`.
 
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
