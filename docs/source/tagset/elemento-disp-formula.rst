@@ -25,7 +25,8 @@ Atributos obrigatórios:
 
 
 
-Identifica equações, expressões ou fórmulas matemáticas exibidas como um bloco dentro de um fluxo narrativo. Pode ser codificada usando MathML, TeX ou LaTeX.
+Identifica equações e fórmulas exibidas em bloco, fora de um parágrafo. A codificação pode ser escrita de acordo com :term:`W3C` em linguagem :term:`MathML` (http://www.w3.org/TR/MathML3/), sendo o elemento base ``<mml:math>`` ou com codificação TeX ou LaTeX.
+ 
 
 Exemplos:
 
@@ -123,6 +124,6 @@ Para *SciELO* Brasil consulte:
 
 :ref:`scielo-brasil`
 
-.. note:: Equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
+.. note:: Equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto.
 
 .. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
