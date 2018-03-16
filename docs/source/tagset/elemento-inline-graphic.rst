@@ -20,8 +20,10 @@
 +-------------------------+--------------------+
 
 
+Usado para identificar caracteres que não possuem codificação em um parágrafo.
 
-Usado para identificar ícones inseridos como imagem que estejam posicionado em linha, ou seja, ancorados em um parágrafo.
+
+.. note:: Para maiores informações verificar `Codificação e caracteres especiais <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/caracteres.html>`_.
 
 
 Exemplo:
