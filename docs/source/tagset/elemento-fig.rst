@@ -93,8 +93,6 @@ O atributo ``@fig-type:`` é utilizado para especificar o tipo de imagem, que po
 +============+==============+
 | gráfico    | graphic      |
 +------------+--------------+
-| desenho    | cartoon      |
-+------------+--------------+
 | quadro     | chart        |
 +------------+--------------+
 | diagrama   | diagram      |
