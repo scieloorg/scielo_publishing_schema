@@ -60,7 +60,7 @@ Os valores possíveis para o atributo ``@publication-type`` são:
 
 .. note::
 
-  * Nunca incluir informação com formatação ``inline`` (``<italic>``, ``<bold>`` etc.) dentro de um elemento;
+  * Não incluir toda uma informação em um elemento com formatação ``<italic>`` e ``<bold>``;
   * Nunca utilizar pontuação (ponto final, vírgula etc) dentro de :ref:`elemento-element-citation`;
   * Todas as informações de uma referência devem ser marcadas. Caso não exista um elemento específico para determinada informação, esta deve ser inserida em :ref:`elemento-comment`.
 
@@ -179,9 +179,7 @@ Exemplos:
     <ref-list>
         <ref id="B03">
             <label>3</label>
-            <mixed-citation>LÉVY, Pierre. As tecnologias da inteligência: o
-            futuro do pensamento na era da informática. Edição especial. Rio de
-            Janeiro: Editora 34. 2001. 208 p.</mixed-citation>
+            <mixed-citation>LÉVY, Pierre. As tecnologias da inteligência: o futuro do pensamento na era da informática. Edição especial. Rio de Janeiro: Editora 34. 2001. 208 p.</mixed-citation>
         <element-citation publication-type="book">
             <person-group person-group-type="author">
                 <name>
@@ -189,8 +187,7 @@ Exemplos:
                     <given-names>Pierre</given-names>
                 </name>
             </person-group>
-            <source>As tecnologias da inteligência: o futuro do pensamento na
-            era da informática</source>
+            <source>As tecnologias da inteligência: o futuro do pensamento na era da informática</source>
             <edition>edição especial</edition>
             <publisher-loc>Rio de Janeiro</publisher-loc>
             <publisher-name>Editora 34</publisher-name>

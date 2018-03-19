@@ -27,5 +27,3 @@ Exemplo:
             <institution-id institution-id-type="insi">0000 0004 1937 0722</institution-id>
         <institution-wrap>
     </aff>
-
-
