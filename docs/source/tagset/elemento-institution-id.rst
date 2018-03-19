@@ -10,7 +10,7 @@
 +-------------------------+--------------------+
 
 
-Elemento que designa em afiliação um identificador padronizado para instituição.
+Elemento que designa em afiliação um identificador padronizado para instituição. É obrigatório o uso do atributo ``@institution-id-type``.
 
 
 Exemplo:
