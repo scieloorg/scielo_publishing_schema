@@ -12,8 +12,8 @@
 +----------------------------------+-----------------+
 
 
+Indica a paginação inicial do artigo. 
 
-Indica a paginação inicial do artigo. No caso de :term:`ahead of print`, deve ser preenchido com ``00``.
 
 Exemplo:
 
@@ -39,7 +39,7 @@ Exemplo:
     <article-meta>
         ...
         <fpage seq="a">82</fpage>
-        <lpage>82</lpage>
+        <lpage>83</lpage>
         ...
     </article-meta>
     ...
