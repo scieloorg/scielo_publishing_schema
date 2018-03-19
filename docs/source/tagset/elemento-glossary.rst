@@ -24,7 +24,6 @@ O guia :ref:`sugestao-atribuicao-id` descreve o modo de composição do atributo
 
 O glossário pode ser apresentado como imagem, utilizando-se o elemento ``<graphic>``, ou como texto.
 
-.. note:: Não deve ser utilizada pontuação nos elementos ``<term>`` e ``<def>``.
 
 
 Exemplos:
@@ -90,7 +89,7 @@ Exemplo de ``<glossary>`` em ``<app-group>``:
             <def-item>
               <term>Metabólito</term>
               <def>
-                <p>É qualquer intermediário ou produto resultante do metabolismo.</p>
+                <p>É qualquer intermediário ou produto resultante do metabolismo</p>
               </def>
             </def-item>
             <def-item>
