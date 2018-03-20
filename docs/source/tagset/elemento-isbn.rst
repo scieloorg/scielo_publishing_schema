@@ -13,7 +13,7 @@
 
 
 
-Identifica o :term:`ISBN` em uma referência bibliográfica ou produto.
+Identifica o :term:`ISBN` em uma referência bibliográfica.
 
 Exemplo:
 
