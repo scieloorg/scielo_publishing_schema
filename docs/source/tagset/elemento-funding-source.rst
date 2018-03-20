@@ -21,7 +21,7 @@ Exemplos:
 
 .. _elemento-fundingsource-exemplo-1:
 
-Exemplo de 1 ``<funding-source>`` para 1 :ref:`elemento-award-id` :
+Exemplo de 1 ``<funding-source>`` para 1 ``<award-id>`` :
 -------------------------------------------------------------------
 
 .. code-block:: xml
@@ -43,7 +43,7 @@ Exemplo de 1 ``<funding-source>`` para 1 :ref:`elemento-award-id` :
 
 .. _elemento-fundingsource-exemplo-2:
 
-Exemplo de 2 ``<funding-source>`` para 1 :ref:`elemento-award-id` :
+Exemplo de 2 ``<funding-source>`` para 1 ``<award-id>`` :
 -------------------------------------------------------------------
 
 Um mesmo número de contrato pode ter mais de uma instituição financiadora.
