@@ -13,7 +13,7 @@
 
 
 
-Identifica o *International Standard Book Number* - :term:`ISBN` em uma referência bibliográfica ou produto.
+Identifica o *International Standard Book Number* - :term:`ISBN` em uma referência bibliográfica.
 
 Exemplo:
 
