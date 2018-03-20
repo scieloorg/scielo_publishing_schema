@@ -45,17 +45,6 @@ Exemplo:
         <ref-list>
              <title>References</title>
              <ref id="B1">
-             <mixed-citation>Associação Brasileira das Indústrias Exportadoras de Carnes. (2012, fevereiro 29). [Entrevista com o Antônio Camardelli]. Presidente da ABIEC. Retrieved from http://www.abiec.com.br/noticia.asp?id=779#.Uj8VnWt5mSM  </mixed-citation>
-             <element-citation publication-type="book">
-                  <person-group person-group-type="author">
-                       <collab>Associação Brasileira das Indústrias Exportadoras de Carnes</collab>
-                  </person-group>
-                  <year>2012,</year>
-                  <source>[Entrevista com o Antônio Camardelli]. Presidente da ABIEC</source>
-                  <ext-link ext-link-type="uri" xlink:href="http://www.abiec.com.br/noticia.asp?id=779#.Uj8VnWt5mSM">http://www.abiec.com.br/noticia.asp?id=779#.Uj8VnWt5mSM</ext-link>
-             </element-citation>
-             </ref>
-             <ref id="B2">
                   <mixed-citation>Blumentritt, T. P. (2003). Foreign subsidiaries' government affairs activities. Business &amp; Society, 42(2), 202-233. doi: 10.1177/0007650303042002003</mixed-citation>
                   <element-citation publication-type="journal">
                        <person-group person-group-type="author">
@@ -78,14 +67,8 @@ Exemplo:
         </ref-list>
         <app-group>
              <app id="app1">
-                  <label>ANNEX A</label>
-                  <table-wrap id="t6">
-                       <label>Table 6</label>
-                       <caption>
-                            <title>Multivariate analysis of risk factors associated with readmission - Model 2</title>
-                       </caption>
-                       <graphic xlink:href="1234-5678-rctb-45-05-0110-gt031.tif"/>
-                  </table-wrap>
+                <label>Appendix 1</label>
+                <p>Para mais informações <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">clique aqui</ext-link> para verificar o pdf.</p>
              </app>
         </app-group>
    </back>
