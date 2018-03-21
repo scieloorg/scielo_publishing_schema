@@ -12,7 +12,7 @@
 +----------------------------------+-----------------+
 
 
-Indica a paginação final do artigo. No caso de :term:`ahead of print`, a informação deve ser preenchida com ``00``.
+Indica a paginação final do artigo.
 
 Exemplo:
 
