@@ -54,8 +54,4 @@ Exemplo:
     ...
 
 
-Para *SciELO* Brasil consulte:
-
-:ref:`scielo-brasil`
-
 .. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
