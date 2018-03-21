@@ -24,8 +24,8 @@ Normalmente, cada tipo de suporte utilizado pelo periódico implica em um códig
 Também se pode encontrar esta informação em :ref:`elemento-back` dentro de :ref:`elemento-element-citation` nas referências, mas não se faz uso de  nenhum atributo neste caso.
 
 .. note:: 
-* Pode-se consultar o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` como referência na identificação dos elementos. 
-* Pode-se também consultar o site do `ISSN <https://portal.issn.org/>`_.
+ * Pode-se consultar o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` como referência na identificação dos elementos. 
+ * Pode-se também consultar o site do `ISSN <https://portal.issn.org/>`_.
 
 
 Os valores permitidos  ``@pub-type`` são:
