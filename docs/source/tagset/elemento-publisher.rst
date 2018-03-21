@@ -11,9 +11,12 @@
 
 
 
-Contém o nome da casa publicadora (ou editora) do periódico conforme registro na SciELO.
+Contém o nome do publicador ou editora do periódico conforme registro no :term:`ISSN`.
 
-.. note:: O :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` deve ser consultado como referência na identificação dos elementos.
+.. note::
+ * O :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` deve ser consultado como referência na identificação dos elementos.
+ * Pode-se também consultar o site do `ISSN <https://portal.issn.org/>`_ .
+
 
 Exemplo:
 
