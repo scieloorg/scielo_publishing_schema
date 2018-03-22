@@ -20,17 +20,17 @@ Identifica grupo ou indivíduo criador/elaborador do :term:`documento`. Caso exi
 
 Os valores possíveis para ``@person-group-type`` são:
 
-+-----------+---------------+
-| Valor     | Descrição     |
-+===========+===============+
-| author    | valor padrão  |
-+-----------+---------------+
-| compiler  | compilador    |
-+-----------+---------------+
-| editor    | editor        |
-+-----------+---------------+
-| translator| tradutor      |
-+-----------+---------------+
++-----------+-------------+
+| Valor     | Descrição   |
++===========+=============+
+| author    | autor       |
++-----------+-------------+
+| compiler  | compilador  |
++-----------+-------------+
+| editor    | editor      |
++-----------+-------------+
+| translator| tradutor    |
++-----------+-------------+
 
 Exemplo:
 
@@ -52,8 +52,3 @@ Exemplo:
         ...
     </ref>
     ...
-
-.. note:: Em ``person-group`` o elemento :ref:`elemento-name` ocorre zero ou mais vezes.
-
-
-.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}
