@@ -21,22 +21,21 @@ O elemento deve, obrigatoriamente, apresentar o atributo ``@pub-id-type``, o qua
 
 O atributo ``@pub-id-type`` permite os seguintes valores:
 
-+--------------------+----------------------------------------------------------+
-| Valor              | Descrição                                                |
-+====================+==========================================================+
-| doi                | *Digital Object Identifier*.                             |
-+--------------------+----------------------------------------------------------+
-| publisher-id       | Pode ser utilizado como identificador designado pela     |
-|                    | Coleção *SciELO*.                                        |
-+--------------------+----------------------------------------------------------+
-| other              | Utilizado para ordenar documentos *Rolling Pass* e       |
-|                    | *Ahead Of Print* (Para uso durante o período de migração |
-|                    | de tecnologia).                                          |
-+--------------------+----------------------------------------------------------+
++--------------------+-------------------------------------------------------+
+| Valor              | Descrição                                             |
++====================+=======================================================+
+| doi                | *Digital Object Identifier*.                          |
++--------------------+-------------------------------------------------------+
+| publisher-id       | Pode ser utilizado como identificador designado pela  |
+|                    | Coleção *SciELO*.                                     |
++--------------------+-------------------------------------------------------+
+| other              | Utilizado para ordenar documentos nas modalidades de  |
+|                    | Publicação Contínua (PC) e *Ahead Of Print* (AOP).    |
++--------------------+-------------------------------------------------------+
 
 Para *SciELO* Brasil consulte:
 
 :ref:`scielo-brasil`
 
 
-.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
+
