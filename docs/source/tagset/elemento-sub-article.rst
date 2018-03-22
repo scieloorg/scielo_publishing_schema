@@ -27,10 +27,6 @@ Os valores possíveis de ``@article-type`` em ``<sub-article>`` são:
 +--------------------+----------------------------------------------------------+
 | Valor              | Descrição                                                |
 +====================+==========================================================+
-|                    | resumo - uma apresentação precisa e resumida de uma      |
-| abstract           | obra sem agregar interpretação ou crítica, acompanhada   |
-|                    | de uma referência bibliográfica da obra original.        |
-+--------------------+----------------------------------------------------------+
 |                    | cartas - comunicação entre pessoas ou instituições       |
 | letter             | através de cartas. Geralmente, comentando um trabalho    |
 |                    | publicado.                                               |
@@ -44,7 +40,7 @@ Os valores possíveis de ``@article-type`` em ``<sub-article>`` são:
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
 
-``@xml:lang`` deve conter um código alfabético de duas letras conforme norma :term:`ISO 639-1`. Uma lista completa dos códigos disponíveis e demais informações encontram-se disponíveis na página `Language codes according to ISO 639-1 <http://www.mathguide.de/info/tools/languagecode.html>`_.
+O idioma do texto em ``@xml:lang`` é descrito pela norma :term:`ISO 639-1` como um código de dois caracteres alfabéticos em caixa baixa, cujo conteúdo encontra-se disponível no `site <http://www.mathguide.de/info/tools/languagecode.html>`_.
 
 
 Exemplo:
@@ -58,7 +54,3 @@ Exemplo:
     ...
 
 
-.. note:: Geralmente o elemento ``<sub-article>`` é utilizado para identificar artigos traduzidos ou conjunto de cartas, resumos, teses etc.
-
-
-.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
