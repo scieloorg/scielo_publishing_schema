@@ -13,7 +13,9 @@
 
 Em ``<journal-meta>`` são identificados os metadados do periódico.
 
-.. note:: Sugere-se consultar o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` como referência na identificação dos elementos.
+.. note:: 
+ * Sugere-se consultar o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` como referência na identificação dos elementos.
+ * Pode-se também consultar o site do `ISSN <https://portal.issn.org/>`_ .
 
 Exemplo:
 
@@ -35,5 +37,3 @@ Exemplo:
    </journal-meta>
    ...
 
-
-.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}
