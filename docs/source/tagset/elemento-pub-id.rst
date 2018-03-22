@@ -17,19 +17,19 @@ Atributos obrigatórios:
 
 Especifica o identificador de uma publicação em uma referência bibliográfica. O atributo ``@pub-id-type`` é mandatório e explicita o tipo do identificador, autoridade ou organização responsável pela atribuição deste. Os valores possíveis são:
 
-+--------+----------------------------------------+
-| Valor  | Descrição                              |
-+========+========================================+
-| pmid   | :term:`PubMed` ID                      |
-+--------+----------------------------------------+
-| pcmid  | :term:`PubMed` Central ID              |
-+--------+----------------------------------------+
-| doi    | Número DOI registrado no CrossRef      |
-+--------+----------------------------------------+
-| pii    | Identificador do editor                |
-+--------+----------------------------------------+
-| other  | qualquer outro identificador           |
-+--------+----------------------------------------+
++--------+---------------------------------------+
+| Valor  | Descrição                             |
++========+=======================================+
+| pmid   | :term:`PubMed` ID                     |
++--------+---------------------------------------+
+| pcmid  | :term:`PMC` ID                        |
++--------+---------------------------------------+
+| doi    | Número DOI registrado no CrossRef     |
++--------+---------------------------------------+
+| pii    | Identificador do publicador           |
++--------+---------------------------------------+
+| other  | qualquer outro identificador          |
++--------+---------------------------------------+
 
 Exemplo:
 
