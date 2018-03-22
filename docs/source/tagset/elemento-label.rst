@@ -42,7 +42,7 @@
 
 
 
-``<label>`` tem como função identificar, numérica e/ou alfabéticamente, um grupo de elementos de tipo específico.
+``<label>`` é utilizado para identificar etiquetas ou rótulos que podem se numéricos, alfabéticos ou carácteres em diversos elementos.
 
 Exemplos:
 
@@ -133,5 +133,3 @@ Exemplo em ``<app>``:
         ...
     </app>
 
-
-.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
