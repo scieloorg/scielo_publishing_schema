@@ -21,7 +21,7 @@ Atributos obrigatórios:
 
 
 
-Utilizado para apresentar uma resposta diretamente relacionada ao artigo principal, por exemplo, resposta de uma carta ou opinião contrária de um artigo publicado.
+Utilizado para apresentar uma resposta diretamente relacionada ao artigo principal, por exemplo, resposta de uma carta ou opinião de um artigo publicado.
 
 Para esse elemento recomenda-se utilizar também o elemento :ref:`elemento-front-stub`.
 
@@ -53,4 +53,3 @@ Exemplo da tag completa:
     ...
 
 
-.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}
