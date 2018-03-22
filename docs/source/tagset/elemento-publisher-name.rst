@@ -25,7 +25,7 @@ Exemplos:
 
 .. _elemento-pub-name-exemplo-1:
 
-Exemplo de ``<publisher-name>`` em :ref:`elemento-journal-meta`:
+Exemplo de ``<publisher-name>`` em ``<journal-meta>``:
 ----------------------------------------------------------------
 
 .. code-block:: xml
@@ -38,7 +38,7 @@ Exemplo de ``<publisher-name>`` em :ref:`elemento-journal-meta`:
 
 .. _elemento-pub-name-exemplo-2:
 
-Exemplo de ``<publisher-name>`` em :ref:`elemento-element-citation`:
+Exemplo de ``<publisher-name>`` em ``<element-citation>``:
 --------------------------------------------------------------------
 
 .. code-block:: xml
