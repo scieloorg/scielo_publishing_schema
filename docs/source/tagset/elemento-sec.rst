@@ -19,7 +19,7 @@
 
 
 
-O corpo textual do artigo pode ser constituído por seções. Cada uma delas tendo um elemento ``<title>`` seguido de um ou mais parágrafos (:ref:`elemento-p`).
+O corpo textual do artigo pode ser constituído por seções. Cada uma delas tendo um elemento ``<title>`` seguido de um ou mais :ref:`elemento-p`.
 
 :term:`Seções de primeiro nível` que condizem com a lista de valores abaixo devem, obrigatoriamente, apresentar um atributo ``@sec-type``. Caso haja *seção de primeiro nível* com nome diferente do que consta na tabela, o referido atributo não deve ser inserido.
 
