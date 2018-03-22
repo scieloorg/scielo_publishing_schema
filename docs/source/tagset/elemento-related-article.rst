@@ -19,7 +19,7 @@ Atributos obrigatórios:
 
 
 
-Utilizado para indicar um artigo relacionado, publicado ou não, separadamente. Este elemento deve ser inserido para artigos como: :ref:`errata`, resposta de :ref:`artigo-comentado`, retratações e :ref:`elemento-response`.
+Utilizado para indicar um artigo relacionado, publicado ou não, separadamente. Este elemento deve ser inserido para artigos como: :ref:`errata`, resposta de :ref:`artigo-comentado`, `retratações <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ . e :ref:`elemento-response`.
 
 Os valores possíveis para o atributo ``@related-article-type`` são:
 
@@ -41,6 +41,3 @@ Os valores possíveis para o atributo ``@related-article-type`` são:
 | retracted-article      | Usado em retratações para indicar o artigo      |
 |                        | que está sendo retratado.                       |
 +------------------------+-------------------------------------------------+
-
-
-.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
