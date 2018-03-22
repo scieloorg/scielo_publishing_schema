@@ -30,8 +30,3 @@ Exemplo:
     </sig-block>
     ...
 
-
-.. note:: Para arquivos que apresentam apenas uma assinatura ao final do :term:`documento`, é necessário repetir os nomes que constam na assinatura em ``front/contrib`` e marcá-los como autores.
-
-
-.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
