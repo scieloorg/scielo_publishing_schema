@@ -36,7 +36,7 @@ Exemplos:
 
 .. _elemento-month-exemplo-1:
 
-Exemplo de ``<month>`` em :ref:`elemento-pub-date`:
+Exemplo de ``<month>`` em ``<pub-date>``:
 ---------------------------------------------------
 
 .. code-block:: xml
@@ -51,7 +51,7 @@ Exemplo de ``<month>`` em :ref:`elemento-pub-date`:
 
 .. _elemento-month-exemplo-2:
 
-Exemplo de ``<month>`` em :ref:`elemento-date` de :ref:`elemento-history`:
+Exemplo de ``<month>`` em ``<date>`` de ``<history>``:
 --------------------------------------------------------------------------
 
 .. code-block:: xml
@@ -66,7 +66,7 @@ Exemplo de ``<month>`` em :ref:`elemento-date` de :ref:`elemento-history`:
 
 .. _elemento-month-exemplo-3:
 
-Exemplo de ``<month>`` em :ref:`elemento-element-citation`:
+Exemplo de ``<month>`` em ``<element-citation>``:
 -----------------------------------------------------------
 
 .. code-block:: xml
@@ -86,4 +86,3 @@ Exemplo de ``<month>`` em :ref:`elemento-element-citation`:
    ...
 
 
-.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
