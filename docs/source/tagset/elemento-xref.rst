@@ -11,23 +11,23 @@ Atributos obrigatórios:
 +--------------------------------+--------------------+
 | Aparece em                     | Ocorre             |
 +================================+====================+
-| :ref:`elemento-article-title`, | Zero ou mais vezes |
+| :ref:`elemento-article-title`  | Zero ou mais vezes |
 +--------------------------------+--------------------+
 | :ref:`elemento-attrib`         | Zero ou mais vezes |
 +--------------------------------+--------------------+
-| :ref:`elemento-contrib`,       | Zero ou mais vezes |
+| :ref:`elemento-contrib`        | Zero ou mais vezes |
 +--------------------------------+--------------------+
-| :ref:`elemento-p`,             | Zero ou mais vezes |
+| :ref:`elemento-p`              | Zero ou mais vezes |
 +--------------------------------+--------------------+
-| ``<td>``,                      | Zero ou mais vezes |
+| ``<td>``                       | Zero ou mais vezes |
 +--------------------------------+--------------------+
-| ``<th>``,                      | Zero ou mais vezes |
+| ``<th>``                       | Zero ou mais vezes |
 +--------------------------------+--------------------+
-| :ref:`elemento-trans-title`,   | Zero ou mais vezes |
+| :ref:`elemento-trans-title`    | Zero ou mais vezes |
 +--------------------------------+--------------------+
 | :ref:`elemento-sec`            | Zero ou mais vezes |
 +--------------------------------+--------------------+
-| ``<verse-line>``.              | Zero ou mais vezes |
+| ``<verse-line>``               | Zero ou mais vezes |
 +--------------------------------+--------------------+
 
 
