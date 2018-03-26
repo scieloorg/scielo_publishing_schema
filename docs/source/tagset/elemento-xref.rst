@@ -32,7 +32,7 @@ Atributos obrigatórios:
 
 
 
-Elemento de referência cruzada usado para relacionar e/ou fazer ligação com alguma informação no texto.
+Elemento de referência cruzada usado para relacionar alguma informação no texto.
 
 Os atributos obrigatórios para ``xref`` são:
 
@@ -102,7 +102,6 @@ Exemplo de ``<xref>`` em ``<article-meta>``:
             <aff id="aff1">
                 <label>1</label>
                 <institution content-type="orgname">Universidade do Estado do Amazonas</institution>
-                <institution content-type="normalized">Universidade do Estado do Amazonas</institution>
                 <addr-line>
                     <named-content content-type="city">Manaus</named-content>
                     <named-content content-type="state">AM</named-content>
@@ -151,9 +150,6 @@ Exemplo de ``<xref>`` relacionado a objeto no texto:
     </p>
 
 
-.. note:: Não envolver a tag ``<xref>`` em ``<sup>``.
-
-
 
 .. _elemento-xref-exemplo-4:
 
@@ -178,7 +174,6 @@ Para casos em que não há rótulo (``<label>``) explícito relacionando o autor
       </contrib>
     </contrib-group>
     <aff id="aff1">
-      <institution content-type="normalized">Fundação Getúlio Vargas</institution>
       <institution content-type="orgname">Fundação Getúlio Vargas</institution>
       <institution content-type="orgdiv1">EAESP</institution>
       <addr-line>
@@ -190,7 +185,11 @@ Para casos em que não há rótulo (``<label>``) explícito relacionando o autor
     </aff>
   ...
 
-.. note:: Não inserir rótulo (``<label>``) caso não exista no :term:`documento`.
+
+.. note:: 
+ * Não envolver a tag ``<xref>`` em ``<sup>``.
+ * Não inserir ``<label>`` caso não exista no :term:`documento`.
+ * Recomenda-se ver sugestão de atribuição de `@id <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/tagset/sugestao-atribuicao-id.html>`_ .
 
 
-.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
+
