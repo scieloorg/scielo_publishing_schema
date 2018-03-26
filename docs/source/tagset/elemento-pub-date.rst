@@ -17,12 +17,19 @@ Atributos obrigatórios:
 
 A data de publicação do artigo/número utiliza o elemento ``<pub-date>``, o qual pode conter os elementos :ref:`elemento-day`, :ref:`elemento-month`, :ref:`elemento-season` e, obrigatoriamente, :ref:`elemento-year`.
 
-``<pub-date>`` deve estar acompanhada do atributo ``@pub-type``, que pode ser ``epub-ppub`` se houver uma versão impressa do número ou apenas ``epub`` quando: a. for apenas publicação online; b. quando se tratar de um documento *Rolling Pass* ou c. em caso de ser modalidade :term:`ahead of print`.
+``<pub-date>`` deve estar acompanhada do atributo ``@pub-type``, que pode ser ``epub-ppub`` se houver uma versão impressa do número ou apenas ``epub`` quando: 
+
+ * For apenas publicação online;
+ * Quando se tratar de um documento na modalidade de Publicação Contínua (PC);
+ * Em caso de ser modalidade :term:`ahead of print`.
+
 
 Exemplos:
 
     * :ref:`elemento-pubdate-exemplo-1`
     * :ref:`elemento-pubdate-exemplo-2`
+    * :ref:`elemento-pubdate-exemplo-3`
+
     
 
 .. _elemento-pubdate-exemplo-1: 
@@ -45,8 +52,8 @@ Exemplo de ``<pub-date>`` nas versões impressa e digital com ``<season>``:
 
 .. _elemento-pubdate-exemplo-2: 
 
-Exemplo de ``<pub-date>`` nas versões impressa e digital com mês e dia:
------------------------------------------------------------------------
+Exemplo de ``<pub-date>`` nas versões impressa e digital com ``<month>`` e ``<day>``:
+-------------------------------------------------------------------------------------
 
 Os valores de dia, mês e ano devem ser representados de acordo com a data de publicação do número, geralmente constante no sumário.
 
@@ -85,4 +92,3 @@ Exemplo de ``<pub-date>`` na versão digital:
     ...
 
 
-.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
