@@ -52,8 +52,8 @@ Exemplo de ``<pub-date>`` nas versões impressa e digital com ``<season>``:
 
 .. _elemento-pubdate-exemplo-2: 
 
-Exemplo de ``<pub-date>`` nas versões impressa e digital com mês e dia:
------------------------------------------------------------------------
+Exemplo de ``<pub-date>`` nas versões impressa e digital com ``<month>`` e ``<day>``:
+-------------------------------------------------------------------------------------
 
 Os valores de dia, mês e ano devem ser representados de acordo com a data de publicação do número, geralmente constante no sumário.
 
