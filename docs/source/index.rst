@@ -1,14 +1,15 @@
 Guia de uso de elementos e atributos XML para documentos que seguem a implementação SciELO Publishing Schema.
 =============================================================================================================
 
-Versão |version| - setembro de 2017.
+Versão |version| - março de 2018.
 
 
 Versões anteriores:
 
-* `Versão 1.6 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.6-branch/>`_ (suportada).
+* `Versão 1.6 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.7-branch/>`_ (suportada).
+* `Versão 1.6 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.6-branch/>`_.
 * `Versão 1.5 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.5-branch/>`_.
-* `Versão 1.4 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.4-branch/>`_
+* `Versão 1.4 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.4-branch/>`_.
 * `Versão 1.3 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.3-branch/>`_.
 * `Versão 1.2 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.2-branch/>`_.
 * `Versão 1.1 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.1-branch/>`_.
