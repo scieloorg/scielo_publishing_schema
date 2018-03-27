@@ -5,7 +5,7 @@ Retratação
 
 Arquivos do tipo retratação e retratação parcial devem apresentar em :ref:`elemento-article` o atributo ``@article-type`` o valor ``"retraction"`` ou ``"partial-retraction"``. A seção em ``<subject>`` deve conter a informação apresentada no PDF da retratação ou retratação parcial. O elemento :ref:`elemento-article-title` deve conter a informação ARTIGO RETRATADO ou ARTIGO PARCIALMENTE RETRATADO para texto no idioma em português, RETRACTED ARTICLE ou ARTICLE PARTIAL RETRACTION, para texto no idioma em inglês e ARTÍCULO RETRACTADO ou ARTÍCULO PARCIALMENTE RETRACTADO, para texto no idioma em espanhol, e devem estar entre colchetes, mais dois pontos e o título do artigo que está sendo retratado.
 
-O elemento :ref:`related-article` pode ser usado uma ou mais vezes e é utilizado para referenciar o artigo que sofre a retratação e deve conter obrigatoriamente os atributos:
+O elemento :ref:`elemento-related-article` pode ser usado uma ou mais vezes e é utilizado para referenciar o artigo que sofre a retratação e deve conter obrigatoriamente os atributos:
 
  ``@related-article-type`` com valor ``"retracted-article"`` ou ``"partial-retraction"``
  ``@id``
