@@ -24,7 +24,7 @@ Exemplos:
   * :ref:`elemento-disp-formula-exemplo-2`
   * :ref:`elemento-inline-formula-exemplo-3`
 
-.. _elemento-table-exemplo-1:
+.. _elemento-alternatives-exemplo-1:
 
 Exemplo de <alternatives> em <table-wrap>:
 ------------------------------------------
