@@ -18,12 +18,9 @@ Exemplo:
 
 Para identificação de um Ensaio Clínico, o elemento :ref:`elemento-ext-link` deve apresentar o valor ``clinical-trial`` no atributo ``@ext-link-type`` e ter preenchida a URL do registro de Ensaio Clínico no atributo ``@xlink:href``.
 
-.. versionchanged:: 1.5.1
-   O valor ``ClinicalTrial``, do atributo ``@ext-link-type``, foi substituído por ``clinical-trial``.
 
 Informações adicionais encontram-se disponíveis nos sites abaixo identificados:
 
-* `Registro Brasileiro de Ensaios Clínicos <http://www.ensaiosclinicos.gov.br/>`_;
 * `Sociedade Brasileira de Profissionais em Pesquisa Clínica <http://www.sbppc.org.br/portal/index.php>`_;
 * `Clinical Trials.Gov <https://clinicaltrials.gov/>`_;
 * `NLM's MedlinePlus - Clinical Trials information <https://www.nlm.nih.gov/medlineplus/clinicaltrials.html>`_.

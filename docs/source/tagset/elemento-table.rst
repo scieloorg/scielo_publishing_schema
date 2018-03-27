@@ -9,9 +9,14 @@
 | :ref:`elemento-table-wrap` | Uma vez |
 +----------------------------+---------+
 
+    * :ref:`elemento-table-exemplo-1`
+    * :ref:`elemento-table-exemplo-2`
+    * :ref:`elemento-table-exemplo-3`   
+    * :ref:`elemento-table-exemplo-4`
 
 
-Elemento que identifica uma tabela codificada conforme o padrão :term:`NISO JATS table model`, com a adição das regras:
+Elemento que identifica tabela como imagem ou codificada conforme o padrão :term:`NISO JATS table model`, com a adição das regras:
+
 
 * O primeiro nível da estrutura não pode conter o elemento ``<tr>``, ex.: ``//table/tr``.
 * Elemento ``<th>`` apenas como descendente de ``<thead>``.
@@ -42,8 +47,10 @@ Verifique abaixo o quadro descritivo dos elementos de uma tabela:
 Toda a formatação para exibição deve ser realizada conforme descrito no guia `Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
 
 
+.. _elemento-table-exemplo-1:
 
 Exemplo de tabela codificada:
+-----------------------------
 
 .. code-block:: xml
 
@@ -84,12 +91,12 @@ Exemplo de tabela codificada:
 
 
 
-.. _elemento-table-traduzida:
+.. _elemento-table-exemplo-2:
 
-Legenda Traduzida
------------------
+Exemplo de legenda traduzida
+----------------------------
 
-Tabelas com legendas traduzidas, com mais de um rótulo (``<label>``) e legenda (``<caption>``), devem ser identificadas pelo elemento ``<table-wrap-group>``, o qual deve conter os elementos ``<table-wrap>`` para cada idioma.
+Tabelas com legendas traduzidas, com mais de ``<label>`` e ``<caption>``, devem ser identificadas pelo elemento ``<table-wrap-group>``, o qual deve conter os elementos ``<table-wrap>`` para cada idioma.
 
 Exemplo de tabela codificada com legenda traduzida:
 
@@ -134,10 +141,28 @@ Exemplo de tabela codificada com legenda traduzida:
     </table-wrap-group>
     ...
 
-.. _elemento-tablegend-exemplo-2:
+
+.. _elemento-table-exemplo-3:
 
 Exemplo de tabela como imagem:
 ------------------------------
+
+.. code-block:: xml
+
+    ... 
+    <table-wrap id="t2">
+        <label>Table 2</label>
+        <caption>
+            <title> General characteristics of the sample according to the quintiles of thyrotropin (TSH)</title>
+        </caption>
+        <graphic xlink:href="1234-5678-cba-23-12-0234-gt02.svg"/>
+    </table-wrap>
+
+
+.. _elemento-table-exemplo-4:
+
+Exemplo de tabela como imagem com legenda traduzida:
+----------------------------------------------------
 
 .. code-block:: xml
 
@@ -154,15 +179,15 @@ Exemplo de tabela como imagem:
             <caption>
                 <title>Multivariate analysis of risk factors associated with readmission - Model 2</title>
             </caption>
-            <graphic xlink:href="1234-5678-rctb-45-05-0110-gt031.tif"/>
+            <graphic xlink:href="1234-5678-rctb-45-05-0110-gt03.tif"/>
         </table-wrap>
     </table-wrap-group>
     ...
+
+
 
 Para *SciELO* Brasil consulte:
 
 :ref:`scielo-brasil`
 
-.. note:: Tabelas que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
-
-.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
+.. note:: Tabelas que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto.

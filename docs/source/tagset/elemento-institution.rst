@@ -29,13 +29,10 @@ Neste elemento identifica-se a instituição de afiliação do autor, a qual pod
 | orgdiv2    | Representa, hierarquicamente, a segunda divisão da instituição     |
 |            | mencionada.                                                        |
 +------------+--------------------------------------------------------------------+
-| normalized | Nome da instituição na forma normalizada pela SciELO.              |
-+------------+--------------------------------------------------------------------+
 | original   | Identifica a afiliação completa conforme consta no texto do artigo |
 +------------+--------------------------------------------------------------------+
 
 
-.. note:: Divisões abaixo do terceiro nível hierárquico da institução são identificadas somente no elemento ``<institution content-type="original">``.
 
 Exemplo:
 
@@ -44,7 +41,6 @@ Exemplo:
     ...
     <aff id="aff1">
       <institution content-type="orgname">Universidade de São Paulo</institution>
-      <institution content-type="normalized">Universidade de São Paulo</institution>,
       <institution content-type="orgdiv2">Departamento de Fisiologia e Biofísica</institution>
       <institution content-type="orgdiv1">Instituto de Ciências Biomédicas</institution>
       <addr-line>
@@ -57,7 +53,8 @@ Exemplo:
     ...
 
 
-Deve-se especificar a afiliação completa como aparece no documento original.
+Em ``content-type="original"``, deve-se especificar a afiliação completa como aparece no documento original.
+
 
 Exemplo:
 
@@ -68,5 +65,6 @@ Exemplo:
      Norte, Lisboa, Portugal. mara@scielo.org</institution>
 
 
-
-.. {"reviewed_on": "20160729", "by": "gandhalf_thewhite@hotmail.com"}
+.. note:: 
+ * Divisões abaixo do terceiro nível hierárquico da institução são identificadas somente no elemento ``<institution content-type="original">``.
+ * Para mais informações sobre afiliação, verificar item "5.2.9. Afiliação de autores", dos `Critérios SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_ .
