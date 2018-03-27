@@ -14,15 +14,23 @@
 +----------------------------------+-----------------+
 
 
-
-Representa o volume de uma publicação.
-
-Caso haja suplemento de volume, este deve ser identificado em :ref:`elemento-issue` em :ref:`elemento-front`.
-
-.. note:: ``<volume>`` deve ocorrer depois de :ref:`elemento-pub-date` ou antes de :ref:`elemento-issue`.
+Identifica o volume de um fascículo. Caso haja suplemento de volume, este deve ser identificado em :ref:`elemento-issue`.
 
 
-Exemplo ``v10s1``:
+Exemplos:
+
+ * :ref:`elemento-volume-exemplo-1`
+ * :ref:`elemento-volume-exemplo-2`
+
+
+.. _elemento-volume-exemplo-1:
+
+
+Exemplo de ``<volume>`` em um fascículo:
+--------------------------------------------------
+
+ * Refere-se ao fascículo: volume 32, número 12 (``v32n12``):
+
 
 .. code-block:: xml
 
@@ -31,8 +39,8 @@ Exemplo ``v10s1``:
         ...
         <article-meta>
             ...
-            <volume>10</volume>
-            <issue>suppl 1</issue>
+            <volume>32</volume>
+            <issue>12</issue>
             ...
         </article-meta>
         ...
@@ -40,4 +48,23 @@ Exemplo ``v10s1``:
     ...
 
 
-.. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
+.. _elemento-volume-exemplo-2:
+
+Exemplo de ``<volume>`` em ``<element-citation>``:
+--------------------------------------------------
+
+ * Refere-se a um volume em uma referência
+
+
+.. code-block:: xml
+
+    ...
+    <ref id="B01">
+        ...
+        <source>SciELO Journal</source>
+        <volume>32</volume>
+        <issue>12</issue>
+        ...
+    </ref>
+    ...
+
