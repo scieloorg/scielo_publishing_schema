@@ -42,17 +42,21 @@ Atributos obrigatórios:
 +-------------------------------+--------------------+
 
 
+Material suplementar é usado para adicionar informações a um artigo, fornecendo por exemplo, objetos multimídia, tabelas ou figuras adicionais, listas, dados brutos em planilha etc.
 
-O material suplementar é um :term:`documento` que não faz parte do texto do artigo, mas que serviu como apoio para sua elaboração. Em ``<supplementary-material>`` é possível especificar tabelas, figuras, dados brutos de planilha, bancos de dados de genomas, quiz, equações, links, diálogos, listas, licenças e objetos multimídia como áudio e vídeo.
 
-Este elemento pode ser descrito em :ref:`elemento-front`, em :ref:`elemento-article-meta`, em :ref:`elemento-body` como seção ou entre parágrafos, ou em :ref:`elemento-back` onde só poderá ser identificado dentro do grupo de apêndices, em (``app``).
+* ``@id``: Utilizado como identificador único no artigo.
+* ``@mimetype``: Especifica o tipo de mídia, como por exemplo, "vídeo", "aplicação" etc.
+* ``@mime-subtype``: Determina o formato da mídia, como por exemplo "mp4", "pdf" etc).
+* ``@xlink:href``: Indica a nomeação do arquivo que está sendo referenciado.
 
-Os atributos obrigatórios são:
 
-* ``@id``: Utilizado como identificador único no artigo. Sua relevância aumenta quando há mais de um material suplementar e/ou quando o material   suplementar é referenciado no corpo do texto. Nesse caso, é necessário relacionar a chamada no texto com o "id" do material suplementar.
-* ``@mimetype``: Especifica o tipo de mídia, como por exemplo, "vídeo" ou "aplicação".
-* ``@mime-subtype``: Determina o formato da mídia (XVID, AVI, PDF etc).
-* ``@xlink:href``: Indica o nome completo do arquivo, como por exemplo, ``http://sitio/arquivos/suplementar1.pdf``, ``entrevista.mov`` etc.
+.. note:: 
+ * Este elemento, em :ref:`elemento-front`, deve ser inserido abaixo das informações de paginação ou antes do elemento :ref:`elemento-history`.
+ * Em http://www.iana.org/assignments/media-types/media-types.xhtml há informação detalhada sobre os valores dos atributos ``@mimetype`` e ``@mime-subtype``.
+ * Recomendamos por segurança, que seja utilizado o formato "pdf" para adicionar material suplementar.
+ * Para vídeos o formato "mp4" é obrigatório.
+
 
 
 Exemplos:
@@ -160,7 +164,6 @@ Exemplo de ``<supplementary-material>`` em ``<back>``
     ...
 
 
-.. note:: Este elemento, em :ref:`elemento-front`, deve ser inserido abaixo das informações de paginação ou antes do elemento :ref:`elemento-history`.
 
 
-.. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
+
