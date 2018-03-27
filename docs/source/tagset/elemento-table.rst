@@ -50,6 +50,7 @@ Toda a formatação para exibição deve ser realizada conforme descrito no guia
 .. _elemento-table-exemplo-1:
 
 Exemplo de tabela codificada:
+-----------------------------
 
 .. code-block:: xml
 
@@ -92,8 +93,8 @@ Exemplo de tabela codificada:
 
 .. _elemento-table-exemplo-2:
 
-Legenda Traduzida
------------------
+Exemplo de legenda traduzida
+----------------------------
 
 Tabelas com legendas traduzidas, com mais de ``<label>`` e ``<caption>``, devem ser identificadas pelo elemento ``<table-wrap-group>``, o qual deve conter os elementos ``<table-wrap>`` para cada idioma.
 
