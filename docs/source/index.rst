@@ -1,14 +1,15 @@
 Guia de uso de elementos e atributos XML para documentos que seguem a implementação SciELO Publishing Schema.
 =============================================================================================================
 
-Versão |version| - setembro de 2017.
+Versão 1.8 - março de 2018.
 
 
 Versões anteriores:
 
-* `Versão 1.6 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.6-branch/>`_ (suportada).
+* `Versão 1.7 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.7-branch/>`_ (suportada).
+* `Versão 1.6 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.6-branch/>`_.
 * `Versão 1.5 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.5-branch/>`_.
-* `Versão 1.4 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.4-branch/>`_
+* `Versão 1.4 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.4-branch/>`_.
 * `Versão 1.3 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.3-branch/>`_.
 * `Versão 1.2 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.2-branch/>`_.
 * `Versão 1.1 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.1-branch/>`_.
@@ -38,9 +39,10 @@ Dúvidas e/ou comentários acerca da especificação :term:`SciELO PS`, deste gu
 Notas da versão
 ---------------
 
-As versões são disponibilizadas a cada doze meses em calendário fixo. Versões de correção são disponibilizadas por demanda, sendo identificadas no terceiro dígito da versão. Ex.: versão *1.1.1*.
+As versões foram disponibilizadas a cada seis meses em calendário fixo até a versão 1.8. A partir da versão 1.9 serão disponibilizadas a cada doze meses em calendário fixo. Versões de correção são disponibilizadas por demanda, sendo identificadas no terceiro dígito da versão. Ex.: versão 1.1.1.
 
-Duas versões são suportadas simultaneamente, a atual e a imediatamente anterior. Essa medida garante um ciclo de vida de 1 (um) ano para cada versão.
+Duas versões são suportadas simultaneamente, a atual e a imediatamente anterior. Essa medida irá garantir um ciclo de vida de um ano e meio para a versão 1.7 e dois anos para a versões seguintes.
+
 
 .. toctree::
    :maxdepth: 1
