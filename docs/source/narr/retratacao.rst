@@ -3,21 +3,25 @@
 Retratação
 ==========
 
-Como regra, arquivos do tipo :term:`Retratação` e retratação parcial devem apresentar o valor `retraction` ou `partial-retraction` no atributo `@article-type`. O texto do elemento `//subj-group[@subj-group-type="heading"]/subject` deve conter a seção apresentada no sumário do número e, no elemento :ref:`elemento-article-title`, a informação deve ser `ARTIGO RETRATADO` (pt), `RETRACTED ARTICLE` (en) `ARTÍCULO RETRACTADO` (es), entre colchetes, mais dois pontos e o título do artigo.
+Arquivos do tipo retratação e retratação parcial devem apresentar em :ref:`elemento-article` o atributo ``@article-type`` o valor ``"retraction"`` ou ``"partial-retraction"``. A seção em ``<subject>`` deve conter a informação apresentada no PDF da retratação ou retratação parcial. O elemento :ref:`elemento-article-title` deve conter a informação ARTIGO RETRATADO ou ARTIGO PARCIALMENTE RETRATADO para texto no idioma em português, RETRACTED ARTICLE ou ARTICLE PARTIAL RETRACTION, para texto no idioma em inglês e ARTÍCULO RETRACTADO ou ARTÍCULO PARCIALMENTE RETRACTADO, para texto no idioma em espanhol, e devem estar entre colchetes, mais dois pontos e o título do artigo que está sendo retratado.
+
+O elemento :ref:`related-article` pode ser usado uma ou mais vezes e é utilizado para referenciar o artigo que sofre a retratação e deve conter obrigatoriamente os atributos:
+
+ ``@related-article-type`` com valor ``"retracted-article"`` ou ``"partial-retraction"``
+ ``@id``
+ ``@xLink:href`` com número DOI do artigo que está sendo retratado
+ ``@ext-link-type`` com valor "doi"
  
-O elemento :ref:`elemento-related-article` é utilizado para referenciar o artigo que se deseja retratar. Esta tag terá o valor `retracted-article` ou  `partial-retraction`. O `ext-link-type` sempre será do tipo `doi` e `xlink:href` o número de DOI do artigo que está sendo retratado.
- 
-A seção deve ser considerada tal qual no PDF, normalmente “Retratação” (pt), “Retraction” (en), ou “Retractación” (es).
- 
+
 Exemplo:
  
 .. code-block:: xml
 
-    <article article-type="retraction" specific-use="sps-1.6" dtd-version="1.0" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink">
+
      	<front>
         ...
        <article-meta>
-            	<article-id pub-id-type="doi">DOI DA RETRATAÇÃO</article-id>
+            	<article-id pub-id-type="doi">10.1590/123456720182998</article-id>
             		<article-categories>
                 			<subj-group subj-group-type="heading">
                     			<subject>Retratação</subject>
@@ -29,7 +33,7 @@ Exemplo:
             	</title-group>
             	...
          	 	</permissions>
-            		<related-article related-article-type="retracted-article" id="ra1" xlink:href="10.1590/abd1806-4841.20142998" ext-link-type="doi"/>
+            		<related-article related-article-type="retracted-article" id="r01" xlink:href="10.1590/a9012345620172123" ext-link-type="doi"/>
      	...
      	</front>
      	<body>
@@ -39,9 +43,9 @@ Exemplo:
      </article>
  
  
-.. note:: :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions` ou acima de :ref:`elemento-counts`.
+.. note:: 
+ * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions` ou acima de :ref:`elemento-counts`.
+ * O XML do artigo retratado ou parcialmente retratado é alterado pela equipe SciELO. 
+ * Mais informações podem ser obtidas no `Guia para o registro e publicação de retratação <http://www.scielo.org/local/File/Guia%20para%20o%20registro%20e%20publica%C3%A7%C3%A3o%20de%20retrata%C3%A7%C3%A3o.pdf>`_.
 
-O XML do artigo retratado ou parcialmente retratado é alterado pela equipe SciELO. Para mais informações, leia o `Guia para o registro e publicação de retratação <http://www.scielo.org/local/File/Guia%20para%20o%20registro%20e%20publica%C3%A7%C3%A3o%20de%20retrata%C3%A7%C3%A3o.pdf>`_.
 
-
-.. {"reviewed_on": "20170925", "by": "carolina.tanigushi@scielo.org"}
