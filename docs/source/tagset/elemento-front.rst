@@ -121,15 +121,15 @@ Exemplo:
                   </sec>
                   <sec>
                        <title>Methods:</title>
-                       <p>Pellentesque in rhoncus nulla. Aliquam elementum euismod pulvinar. Vestibulum consequat, nisi sit amet auctor sodales, risus erat condimentum libero, eget avada kedava ultrices sem ante id est. Duis hendrerit est augue, sit amet varius erat semper id. Mauris non tortor et mauris dignissim ultricies. </p>
+                       <p>Pellentesque in rhoncus nulla. Aliquam elementum euismod pulvinar. Vestibulum consequat, nisi sit amet auctor sodales, risus erat condimentum libero, eget avada kedava ultrices sem ante id est. Duis hendrerit est augue, sit amet varius erat semper id. Mauris non tortor et mauris dignissim ultricies.</p>
                   </sec>
                   <sec>
                        <title>Results:</title>
-                       <p> Maecenas auctor bibendum aliquam. Vestibulum accumsan consectetur tellus, sed placerat purus. Nullam ullamcorper tincidunt diam quis bazinga tincidunt. Pellentesque convallis arcu quis nunc sodales, eu pretium diam pulvinar. Integer posuere nulla non aliquet varius. Sed a velit non nunc dignissim tempus. </p>
+                       <p> Maecenas auctor bibendum aliquam. Vestibulum accumsan consectetur tellus, sed placerat purus. Nullam ullamcorper tincidunt diam quis bazinga tincidunt. Pellentesque convallis arcu quis nunc sodales, eu pretium diam pulvinar. Integer posuere nulla non aliquet varius. Sed a velit non nunc dignissim tempus.</p>
                   </sec>
                   <sec>
                        <title>Conclusions:</title>
-                       <p> Cruciatus Cras accumsan consequat urna, vitae placerat sem. Aenean elementum ex sed est feugiat, eget posuere nisl eleifend. Praesent posuere erat vel mauris malesuada accumsan. Suspendisse potenti. Nam nec justo elit. </p>
+                       <p> Cruciatus Cras accumsan consequat urna, vitae placerat sem. Aenean elementum ex sed est feugiat, eget posuere nisl eleifend. Praesent posuere erat vel mauris malesuada accumsan. Suspendisse potenti. Nam nec justo elit.</p>
                   </sec>
              </abstract>
              <kwd-group xml:lang="en">
