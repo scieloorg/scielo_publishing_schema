@@ -103,7 +103,7 @@ Exemplo lista numérica com sub-item:
 
 Vivamus cursus
 1. Nullam gravida tellus eget condimentum egestas.
- 1.1. Curabitur luctus lorem ac feugiat pretium.
+1.1. Curabitur luctus lorem ac feugiat pretium.
 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
 
 
