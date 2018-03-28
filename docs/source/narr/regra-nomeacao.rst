@@ -1,22 +1,56 @@
 ﻿Regras de Nomeação de Arquivos
 ==============================
 
-Para envio de pacotes XML é necessário seguir as instruções para submissão de arquivos. Veja abaixo as regras de nomeação:
+Para envio de pacotes XML é necessário seguir as instruções do `Guia de Entrega de Pacote para Publicação em SciELO <http://www.scielo.org/local/File/Entrega_de_Pacote_para_Publicacao.pdf>`_ . Está documentado as seguintes regras de nomeação:
 
 
     * :ref:`elemento-regra-exemplo-1`
     * :ref:`elemento-regra-exemplo-2`
     * :ref:`elemento-regra-exemplo-3`
-    * :ref:`elemento-regra-exemplo-4`
-    * :ref:`elemento-regra-exemplo-5`
+
+
+.. important::
+    +---------------------+----------------------------------------------------+
+    | *ISSN:*             | Número do periódico registrado no ISSN. (Se houver |
+    |                     | mais de um, dar preferência ao eletrônico)         |
+    +---------------------+----------------------------------------------------+
+    | *Acrônimo:*         | Sigla do periódico na SciELO                       |
+    +---------------------+----------------------------------------------------+
+    | *Volume:*           | v= volume do fascículo                             |
+    +---------------------+----------------------------------------------------+
+    | *Número:*           | n= Número do fascículo                             |
+    +---------------------+----------------------------------------------------+
+    | *Número especial:*  | nspe = Número especial do fascículo                |
+    +---------------------+----------------------------------------------------+
+    | *Suplemento:*       | s = Suplemento do fascículo                        |
+    +---------------------+----------------------------------------------------+
+    | *Paginação:*        | Informação da primeira página do artigo            |
+    +---------------------+----------------------------------------------------+
+    | *Elocation:*        | Paginação eletrônica do artigo                     |
+    +---------------------+----------------------------------------------------+
+    | *Nome da imagem:*   | Prefixo com uma numeração sequencial (ver          |
+    |                     | :ref:`sugestao-atribuicao-id`)                     |
+    +---------------------+----------------------------------------------------+
+    | *Extensão:*         | As extensões aceitas pela SciELO são: .tif, .jpg,  |
+    |                     | .png e svg.                                        | 
+    +---------------------+----------------------------------------------------+
+    | *DOI:*              | Sistema de identificação de objetos digitais       |                                   
+    +---------------------+----------------------------------------------------+
+
+
+.. note:: 
+ * Deve-se sempre usar traço sem espaço para separação dos itens.
+ * Nunca usar underline para nomeação de pastas ou arquivos.
+ * Usado dados fictícios para criação dos exemplos:  "scie" como acrônimo de periódico e "0124-4567" para número de ISSN.
+
 
 
 .. _elemento-regra-exemplo-1:
 
-Nomeação de Pasta para Envio
-----------------------------
+Nomeação de pastas
+------------------
 
-Todos os arquivos de um pacote, incluindo *XML*, *PDF*, imagens, mídias e material suplementar, caso existam, devem estar na mesma pasta nomeada conforme o padrão.
+Todos os arquivos de um pacote, incluindo XML, PDF, imagens, mídias e material suplementar, caso existam, devem estar na mesma pasta nomeada conforme o padrão. 
 
 
 Exemplos:
@@ -27,12 +61,18 @@ Exemplos:
     * :ref:`elemento-regranomeia-exemplo-4`
     * :ref:`elemento-regranomeia-exemplo-5`
     * :ref:`elemento-regranomeia-exemplo-6`
+    * :ref:`elemento-regranomeia-exemplo-7`
+    * :ref:`elemento-regranomeia-exemplo-8`
+    * :ref:`elemento-regranomeia-exemplo-9`
+
 
 
 .. _elemento-regranomeia-exemplo-1:
 
-Regra para Volume e Número
+Regra para volume e número
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie v10n3
 
 Regra:
 
@@ -40,108 +80,161 @@ Regra:
 
 Exemplo:
 
-    ``0447-032X-rbcsr-30-01``
+    ``0124-4567-scie-10-03``
 
 
 
 .. _elemento-regranomeia-exemplo-2:
 
-Para publicação de fascículo sem volume
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para volume sem número
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie v10
 
 Regra:
 
-    ``ISSN-acronimo-numero``
+    ``ISSN-acrônimo-número``
 
 Exemplo:
 
-    ``2316-9141-rh-174``
+    ``0124-4567-scie-10``
 
 
 
 .. _elemento-regranomeia-exemplo-3:
 
-Para publicação de Número Especial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para número sem volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie n03
 
 Regra:
 
-    ``ISSN-acronimo-volume-spe + nº de ordem``
+    ``ISSN-acrônimo-número``
 
 Exemplo:
 
-    ``2175-7968-ct-36-spe1``
-
+    ``0124-4567-scie-03``
 
 
 
 .. _elemento-regranomeia-exemplo-4:
 
-Regra para Ahead Of Print
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de número especial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie v10nspe01
 
 Regra:
 
-    ``ISSN-acrônimo-nahead-lote``
+    ``ISSN-acrônimo-volume-spe + nº de ordem``
 
 Exemplo:
 
-    ``0104-5970-hcsm-nahead-0315``
+    ``0124-4567-scie-10-spe01``
 
 
 
 .. _elemento-regranomeia-exemplo-5:
 
-Para publicação de Suplemento
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de suplemento de volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie v10s01
 
 Regra:
 
-    ``ISSN-acronimo-volume-s + Nº de ordem``
+    ``ISSN-acrônimo-volume-s + nº de ordem``
 
 Exemplo:
 
-    ``1678-2690-aabc-88-s1``
-
-
-.. note:: Nunca usar underline na nomeação de pacotes ou arquivos (XML, PDFs, ativos digitais).
+    ``0124-4567-scie-10-s01``
 
 
 
 .. _elemento-regranomeia-exemplo-6:
 
-Para Publicação Contínua
-^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de suplemento de número
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Regra para periódico que publica volume único:
+scie v10n03s01
 
-    ``ISSN-acronimo-rpass-lote``
+Regra:
 
-Exemplo:
-
-    ``1678-4766-isz-rpass-0116``
-
-
-
-
-Regra para periódico que publica número em aberto:
-
-    ``ISSN-acronimo-rpass-lote-volume-número``
+    ``ISSN-acrônimo-volume-número-s + nº de ordem``
 
 Exemplo:
 
-    ``1414-431X-bjmbr-rpass-02-49-7``    
+    ``0124-4567-scie-10-03-s01``
 
 
-.. note:: O lote é composto pelo número do pacote (01, 02...12,13 etc) + os 2 (dois) dígitos finais do ano corrente.
+.. _elemento-regranomeia-exemplo-7:
+
+Regra para *Ahead Of Print*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie nahead2018 lote 01
+
+Regra:
+
+    ``ISSN-acrônimo-nahead-nº lote``
+
+Exemplo:
+
+    ``0124-4567-scie-nahead0118``
+
+
+* Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc, mais dois últimos dígitos do ano de publicação: primeiro lote 01 de 2018 = lote 0118
+
+
+.. _elemento-regranomeia-exemplo-8:
+
+Regra para Publicação Contínua com um volume ao ano
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie v41 lote 01
+
+Regra:
+
+    ``ISSN-acrônimo-volume-nº lote``
+
+Exemplo:
+
+    ``0124-4567-scie-41-01``
+
+
+* Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc.
+
+
+
+.. _elemento-regranomeia-exemplo-9:
+
+Regra para Publicação Contínua com um volume e número
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie v41n02 lote 01
+
+Regra:
+
+    ``ISSN-acrônimo-volume-nº lote``
+
+Exemplo:
+
+    ``0124-4567-scie-41-02-01``
+
+
+* Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc.
+
+
 
 
 .. _elemento-regra-exemplo-2:
 
-Arquivo XML
------------
+Nomeação de arquivos
+--------------------
 
-Para a nomeação de arquivos *XML* utilizar a estrutura determinada pelo :term:`SciELO PS`:
+Todos os arquivos de um pacote, incluindo XML, PDF, imagens, mídias e material suplementar, caso existam, devem estar com nomeação padrão.
+
 
 Exemplos:
 
@@ -150,415 +243,198 @@ Exemplos:
     * :ref:`elemento-nomeia-arquivo-exemplo-3`
     * :ref:`elemento-nomeia-arquivo-exemplo-4`
     * :ref:`elemento-nomeia-arquivo-exemplo-5`
+    * :ref:`elemento-nomeia-arquivo-exemplo-6`
+    * :ref:`elemento-nomeia-arquivo-exemplo-7`
+    * :ref:`elemento-nomeia-arquivo-exemplo-8`
+    * :ref:`elemento-nomeia-arquivo-exemplo-9`
 
 
 .. _elemento-nomeia-arquivo-exemplo-1:
 
-Regra para Volume e Número
+Regra para volume e número
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``
+    ``ISSN-acrônimo-volume-número-paginação``
 
 Exemplo:
 
-    ``0037-8682-rsbmt-48-01-00033.xml``
+    ``0124-4567-scie-10-03-365``
 
 
 
 .. _elemento-nomeia-arquivo-exemplo-2:
 
-Para publicação de fascículo sem volume
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para volume sem número
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``número``-``paginação``
+    ``ISSN-acrônimo-volume-paginação``
 
 Exemplo:
 
-    ``2316-9141-rh-174-00011.xml``
+    ``0124-4567-scie-10-365``
 
 
 
 .. _elemento-nomeia-arquivo-exemplo-3:
 
-Para publicação de Número Especial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para número sem volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``volume``-``nº especial``-``paginação``
+    ``ISSN-acrônimo-número-paginação``
 
 Exemplo:
 
-    ``2175-7968-ct-36-spe1-0009.xml``
+    ``0124-4567-scie-03-365``
 
 
 
 .. _elemento-nomeia-arquivo-exemplo-4:
 
-Regra para Ahead-Of-Print
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Para publicação de número especial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``NúmerodeDoiSemoPrefixo``
+    ``ISSN-acrônimo-volume-spe + nº de ordem-paginação``
 
 Exemplo:
 
-    ``0104-5970-hcsm-2015005000011.xml``
+    ``0124-4567-scie-10-spe01-365``
 
 
 
 .. _elemento-nomeia-arquivo-exemplo-5:
 
-Para Publicação Contínua
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra para periódico que publica número em aberto:
-
-    ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``
-
-Exemplo:
-
-    ``1806-1117-rbef-39-01-e1301.xml``
-
-
-
-
-Regra para periódico que publica volume único:
+Para publicação de suplemento de volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-     ``ISSN``-``acrônimo``-``volume``-``elocation-id``
+    ``ISSN-acrônimo-volume-s + nº de ordem-paginação``
 
-Exemplo: 
+Exemplo:
 
-    ``2358-2936-nau-24-e2016009.xml``
+    ``0124-4567-scie-10-s01-365``
+
+
+.. _elemento-nomeia-arquivo-exemplo-6:
+
+Para publicação de suplemento de número
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scie v10n03s01
+
+Regra:
+
+    ``ISSN-acrônimo-volume-número-s + nº de ordem-paginação``
+
+Exemplo:
+
+    ``0124-4567-scie-10-03-s01-365``
+
+
+
+.. _elemento-nomeia-arquivo-exemplo-7:
+
+Regra para *Ahead Of Print*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN-acrônimo-número doi sem prefixo``
+
+Exemplo:
+
+    ``0124-4567-scie-S0123-45672018050``
+
+
+* DOI completo = 10.1590/S0123-45672018050. Mais informações consultar `Orientação para criação e apresentação do DOI <http://www.scielo.org/local/File/Orientacao_para_criacao_e_apresentacao_do_DOI.pdf>`_ .
+
+
+.. _elemento-nomeia-arquivo-exemplo-8:
+
+Regra para Publicação Contínua com um volume ao ano
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN-acrônimo-volume-elocation``
+
+Exemplo:
+
+    ``0124-4567-scie-41-01-e0123``
+
+
+
+.. _elemento-nomeia-arquivo-exemplo-9:
+
+Regra para Publicação Contínua com um volume e número
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN-acrônimo-volume-elocation``
+
+Exemplo:
+
+    ``0124-4567-scie-41-02-01-e234``
+
+
 
 
 .. _elemento-regra-exemplo-3:
 
-Imagens
--------
+Nomeação para casos especiais
+-----------------------------
 
-Em imagens (que podem ser figuras, tabelas, equações, apêndices etc), utilizar a seguinte estrutura de nomeação tanto para as que se encontram dentro do XML quanto para as da pasta do pacote do número ou lote de :term:`ahead of print`.
+
+Alguns artigos podem conter documentos adicionais. Para estes, as regras devem seguir a nomeação dos fascículos ao qual estão inseridos, com volume, publicação contínua etc (descrito como XXXXX nos exemplos) mais as informações que seguem:
+
 
 Exemplos:
 
-    * :ref:`elemento-regraimg-exemplo-1`
-    * :ref:`elemento-regraimg-exemplo-2`
-    * :ref:`elemento-regraimg-exemplo-3`
-    * :ref:`elemento-regraimg-exemplo-4`
-    * :ref:`elemento-regraimg-exemplo-5`
-    * :ref:`elemento-regraimg-exemplo-6`
+    * :ref:`elemento-nomeia-especial-exemplo-1`
+    * :ref:`elemento-nomeia-especial-exemplo-2`
 
 
-.. _elemento-regraimg-exemplo-1:
+.. _elemento-nomeia-especial-exemplo-1:
 
-Regra para Volume e Número
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra para arquivo com material suplementar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``nomedaimagem.extensãodaimagem``
+    ``ISSN-acrônimo-XXXXX-paginação ou elocation-suppl + nº de ordem``
 
 Exemplo:
 
-    ``1807-5932-clin-69-05-0308-gf01.tif``
+    ``0124-4567-scie-XXXXX-e0123-suppl01``
 
 
 
-.. _elemento-regraimg-exemplo-2:
+.. _elemento-nomeia-especial-exemplo-2:
 
-Para publicação de fascículo sem volume
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra para arquivo com apêndice
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
-     ``ISSN``-``acrônimo``-``número``-``paginação``-``nomedaimagem.extensãodaimagem``
+    ``ISSN-acrônimo-XXXXX-paginação ou elocation-app + nº de ordem``
 
 Exemplo:
 
-    ``2316-9141-rh-174-00101-gf1.tif``
+    ``0124-4567-scie-XXXXX-365-appl01``
 
 
 
-.. _elemento-regraimg-exemplo-3:
 
-Para publicação de Número Especial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Regra:
-    
-    ``ISSN``-``acrônimo``-``volume``-``nº especial``-``paginação``-``nomedaimagem.extensãodaimagem`` 
 
-Exemplo:
-
-    ``2175-7968-ct-36-spe1-0062-gf01.tif``
-
-
-
-
-.. _elemento-regraimg-exemplo-4:
-
-Regra para Imagens traduzidas
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``nomedaimagem``-``idioma.extensãodaimagem``
-
-Exemplo:
-
-    ``0104-1169-rlae-23-01-00001-gf01-es.tif``
-
-
-
-.. _elemento-regraimg-exemplo-5:
-
-Regra para Ahead-Of-Print
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN``-``acrônimo``-``númerodedoisemoprefixo.extensãodaimagem``
-
-Exemplo:
-
-    ``0074-0276-mioc-00740276130057-gf01.tif``
-
-
-
-.. _elemento-regraimg-exemplo-6:
-
-Para Publicação Contínua
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-Regra para periódico que publica número em aberto:
-
-    ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``-``nomedaimagem.extensãodaimagem``
-
-
-Exemplo:
-
-    ``1806-1117-rbef-38-04-e4313-gf01.tif``
-
-
-
-Regra para periódico que publica volume único:
-
-    ``ISSN``-``acrônimo``-``volume``-``elocation-id``-``nomedaimagem.extensãodaimagem``
-
-Exemplo:
-
-    ``2358-2936-nau-24-e2016009-gf1.tif``
-
-
-
-
-.. _elemento-regra-exemplo-4:
-
-PDF
----
-
-Os PDFs também devem seguir a estrutura de nomeação de arquivos determinada pelo :term:`SciELO PS`.
-
-Exemplos:
-
-    * :ref:`elemento-regrapdf-exemplo-1`
-    * :ref:`elemento-regrapdf-exemplo-2`
-    * :ref:`elemento-regrapdf-exemplo-3`
-    * :ref:`elemento-regrapdf-exemplo-4`
-    * :ref:`elemento-regrapdf-exemplo-5`
-    * :ref:`elemento-regrapdf-exemplo-6`
-
-
-.. _elemento-regrapdf-exemplo-1:
-
-Regra para Volume e Número
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``
-
-Exemplo:
-
-    ``0102-0935-abmvz-67-01-00037.pdf``
-
-
-
-.. _elemento-regrapdf-exemplo-2:
-
-Para publicação de fascículo sem volume
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN``-``acrônimo``-``número``-``paginação``
-
-
-Exemplo:
-
-    ``2316-9141-rh-174-00101.pdf``
-
-
-
-.. _elemento-regrapdf-exemplo-3:
-
-Para publicação de Número Especial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN``-``acrônimo``-``volume``-``nº especial``-``paginação``
-
-Exemplo:
-
-    ``2175-7968-ct-36-spe1-0062.pdf``
-
-
-
-.. _elemento-regrapdf-exemplo-4:
-
-Regra para PDFs traduzidos
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-    ``ISSN``-``acrônimo``-``volume``-``número``-``paginação``-``idioma``
-
-Exemplo:
-
-    ``0104-1169-rlae-23-01-00003-es.pdf``
-
-
-
-.. _elemento-regrapdf-exemplo-5:
-
-Regra para Ahead Of Print
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Regra:
-
-    ``ISSN``-``acrônimo``-``NúmeroDoiSemoPrefixo``
-
-Exemplo:
-
-    ``1414-431X-bjmbr-1414-431X20154155.pdf``
-
-
-
-.. _elemento-regrapdf-exemplo-6:
-
-Para Publicação Contínua
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-Regra para periódico que publica número em aberto:
-
-    ``ISSN``-``acrônimo``-``volume``-``número``-``elocation-id``
-
-Exemplo:
-
-    ``1806-1117-rbef-38-04-e4313.pdf``
-
-
-
-
-Regra para periódico que publica volume único:
-
-    ``ISSN``-``acrônimo``-``volume``-``elocation-id``
-
-Exemplo:
-
-    ``2358-2936-nau-24-e2016009.pdf``
-
-
-
-.. _elemento-regra-exemplo-5:
-
-Casos Especiais
----------------
-
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-|                       |                                                                            |                                            |
-|    Tipo de Arquivo    |     Regra de Nomeação                                                      |             Exemplo                        |
-|                       |     (.xml, .pdf e img)                                                     |                                            |
-+=======================+============================================================================+============================================+
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-vol-nº-``s+nºde ordem``-paginação (.xml)                     | 0066-782X-abc-101-06-``s1``-0001.xml       |
-|                       |                                                                            |                                            |
-| Suplemento de Número  | ISSN-acronimo-vol-nº-``s+nºde ordem``-paginação-nome da imagem (extensão)  | 0066-782X-abc-101-06-``s1``-0001-gf01.tif  |
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-vol-nº-``s+nºde ordem``-paginação (.pdf)                     | 0066-782X-abc-101-06-``s1``-0001.pdf       |
-|                       |                                                                            |                                            |
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-vol-``s+nºde ordem``-nº-paginação (.xml)                     | 0066-782X-rlpf-13-``s1``-0012.xml          |
-|                       |                                                                            |                                            |
-| Suplemento de volume  | ISSN-acronimo-vol-``s+nºde ordem``-paginação-nome da imagem (extensão)     | 0066-782X-rlpf-13-``s1``-0012-gf02.tif     |
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-vol-``s+nºde ordem``-nº-paginação (.pdf)                     | 0066-782X-rlpf-13-``s1``-0012.pdf          |
-|                       |                                                                            |                                            |
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-``nº``-paginação (.xml)                                      | 0101-4358-er-``55``-00189.xml              |
-|                       |                                                                            |                                            |
-| Número sem volume     | ISSN-acronimo-``nº``-paginação-nome da imagem (extensão)                   | 0101-4358-er-``55``-00189-gf1.jpg          |
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-``nº``-paginação (.pdf)                                      | 0101-4358-er-``55``-00189.pdf              |
-|                       |                                                                            |                                            |
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-vol-``spe``-paginação (.xml)                                 | 1984-0292-fractal-26-``spe``-0645.xml      |
-|                       |                                                                            |                                            |
-| Volume especial       | ISSN-acronimo-vol-``spe``-paginação-nome da imagem (extensão)              | 1984-0292-fractal-26-``spe``-0645-gf01.tif |
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-vol-``spe``-paginação (.pdf)                                 | 1984-0292-fractal-26-``spe``-0645.pdf      |
-|                       |                                                                            |                                            |
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-nº-``spe``-paginação (.xml)                                  | 0101-4358-er-04-``spe``-00015.xml          |
-|                       |                                                                            |                                            |
-| Número especial       | ISSN-acronimo-nº-``spe``-paginação-nome da imagem (extensão)               | 0101-4358-er-04-``spe``-00015-gf1.png      |
-|                       |                                                                            |                                            |
-|                       | ISSN-acronimo-nº-``spe``-paginação (.pdf)                                  | 0101-4358-er-04-``spe``-00015.pdf          |
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-|                       |                                                                            |                                            |
-| Arquivo com           | ISSN-acronimo-vol-nº-paginação-``suppl + nº de ordem``                     | 1983-3083-refuem-24-03-0316-``suppl01``.pdf|
-| Material Suplementar  |                                                                            |                                            |
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-|                       |                                                                            |                                            |
-| Arquivo com           | ISSN-acronimo-vol-nº-paginação-``app + nº de ordem``                       | 1983-3083-refuem-24-03-0316-``app01``.pdf  |
-| Apêndice              |                                                                            |                                            |
-+-----------------------+----------------------------------------------------------------------------+--------------------------------------------+
-
-
-.. note:: Cada item deve ser separado por um hífen e deve, obrigatoriamente, manter visível a extensão da imagem após o "ponto".
-
-
-.. important::
-    +---------------------+---------------------------------------------------------+
-    | *ISSN:*             | Se houver mais de um, dar preferência ao eletrônico.    |
-    +---------------------+---------------------------------------------------------+
-    | *Acrônimo:*         | Sigla do periódico na SciELO                            |
-    +---------------------+---------------------------------------------------------+
-    | *Volume:*           | Volume do número                                        |
-    +---------------------+---------------------------------------------------------+
-    | *Número:*           | Número ou suplemento do número                          |
-    +---------------------+---------------------------------------------------------+
-    | *Paginação:*        | Manter a informação da primeira página                  |
-    +---------------------+---------------------------------------------------------+
-    | *Nome da imagem:*   | Prefixo com uma numeração sequencial                    |
-    |                     | (ver :ref:`sugestao-atribuicao-id`)                     |
-    +---------------------+---------------------------------------------------------+
-    | *Extensão:*         | As extensões aceitas pela SciELO são: .tif, .jpg, .jpeg,|
-    |                     | .gif, .png, svg e/ou eps.                               |
-    +---------------------+---------------------------------------------------------+
-
-
-.. {"reviewed_on": "20170411", "by": "carolina.tanigushi@scielo.org"}
