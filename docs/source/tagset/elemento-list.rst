@@ -80,16 +80,16 @@ Deve ser identificada como:
 
     ...
     <list list-type="order">
-        <title>Donec rhoncus</title>
-          <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-          </list-item>
-          <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-          </list-item>
-          <list-item>
-            <p>Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.</p>
-         </list-item>
+      <title>Donec rhoncus</title>
+        <list-item>
+          <p>Nullam gravida tellus eget condimentum egestas.</p>
+        </list-item>
+        <list-item>
+          <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+        </list-item>
+        <list-item>
+          <p>Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.</p>
+        </list-item>
     </list>
     ...
 
@@ -117,15 +117,15 @@ Deve ser identificada como:
     <list list-type="order">
         <title>Vivamus cursus</title>
         <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-              <list list-type="order">
-                  <list-item>
-                      <p>Curabitur luctus lorem ac feugiat pretium.</p>
-                  </list-item>
-              </list>
+          <p>Nullam gravida tellus eget condimentum egestas.</p>
+            <list list-type="order">
+              <list-item>
+                <p>Curabitur luctus lorem ac feugiat pretium.</p>
+              </list-item>
+            </list>
         </list-item>
         <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+          <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
         </list-item>
     </list>
     ...
@@ -138,11 +138,11 @@ Deve ser identificada como:
 Exemplo lista com numeral romano:
 ---------------------------------
 
- Nam commodo
- I. Morbi luctus elit enim.
- II. Nullam nunc leo.
- III. Proin id dui lorem.
- VI. Nunc finibus risus.
+Nam commodo
+I. Morbi luctus elit enim.
+II. Nullam nunc leo.
+III. Proin id dui lorem.
+VI. Nunc finibus risus.
 
 
 Deve ser identificada como:
@@ -152,19 +152,19 @@ Deve ser identificada como:
 
     ...
     <list list-type="roman-lower">
-       <title>Nam commodo</title>
-          <list-item>
-            <p>Morbi luctus elit enim.</p>
-          </list-item>
-          <list-item>
-            <p>Nullam nunc leo.</p>
-          </list-item>
-          <list-item>
-            <p>Proin id dui lorem.</p>
-          </list-item>
-          <list-item>
-            <p>Nunc finibus risus.</p>
-          </list-item>
+      <title>Nam commodo</title>
+        <list-item>
+          <p>Morbi luctus elit enim.</p>
+        </list-item>
+        <list-item>
+          <p>Nullam nunc leo.</p>
+        </list-item>
+        <list-item>
+          <p>Proin id dui lorem.</p>
+        </list-item>
+        <list-item>
+          <p>Nunc finibus risus.</p>
+        </list-item>
     </list>
     ...
 

@@ -3,6 +3,9 @@
 <ref-list>
 ==========
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 +--------------------------+--------------------+
 | Aparece em               | Ocorre             |
 +==========================+====================+
@@ -34,4 +37,3 @@ Exemplo de ``<ref-list>`` simples:
     ...
 
 
-.. {"reviewed_on": "20160628", "by": "gandhalf_thewhite@hotmail.com"}

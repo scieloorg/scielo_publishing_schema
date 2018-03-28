@@ -3,6 +3,9 @@
 <history>
 =========
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 +------------------------------+-----------------+
 | Aparece em                   | Ocorre          |
 +==============================+=================+
@@ -40,4 +43,3 @@ Exemplo:
    ...
 
 
-.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}

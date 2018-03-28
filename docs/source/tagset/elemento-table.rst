@@ -3,6 +3,9 @@
 <table>
 =======
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 +----------------------------+---------+
 | Aparece em                 | Ocorre  |
 +============================+=========+
@@ -184,10 +187,5 @@ Exemplo de tabela como imagem com legenda traduzida:
     </table-wrap-group>
     ...
 
-
-
-Para *SciELO* Brasil consulte:
-
-:ref:`scielo-brasil`
 
 .. note:: Tabelas que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto.
