@@ -27,7 +27,7 @@ Atributos obrigatórios:
 
 
 
-Elemento utilizado para identificação de uma lista que contem dois ou mais itens. Pode conter, opcionalmente, um elemento :ref:`elemento-title` ou um elemento :ref:`elemento-label`, exclusivamente.
+Elemento utilizado para identificação de uma lista que contem dois ou mais itens. Pode conter, opcionalmente, um elemento ``<title>`` ou um elemento :ref:`elemento-label`, exclusivamente.
 
 O elemento :ref:`elemento-label` deve ser utilizado para identificar a legenda que pode acompanhar a lista. São consideradas legendas: legenda de equação, figura, referência, etc.
 
@@ -102,9 +102,9 @@ Exemplo lista numérica com sub-item:
 
 
 Vivamus cursus
-1. Nullam gravida tellus eget condimentum egestas.
-1.1. Curabitur luctus lorem ac feugiat pretium.
-2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+ 1. Nullam gravida tellus eget condimentum egestas.
+   1.1. Curabitur luctus lorem ac feugiat pretium.
+ 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
 
 
 
