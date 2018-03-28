@@ -66,11 +66,11 @@ Exemplos:
 Exemplo de lista numérica:
 --------------------------
 
- Donec rhoncus
+Donec rhoncus
 
- 1. Nullam gravida tellus eget condimentum egestas.
- 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
+1. Nullam gravida tellus eget condimentum egestas.
+2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
 
 
 
@@ -101,10 +101,10 @@ Exemplo lista numérica com sub-item:
 ------------------------------------
 
 
- Vivamus cursus
- 1. Nullam gravida tellus eget condimentum egestas.
-   1.1. Curabitur luctus lorem ac feugiat pretium.
- 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+Vivamus cursus
+1. Nullam gravida tellus eget condimentum egestas.
+ 1.1. Curabitur luctus lorem ac feugiat pretium.
+2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
 
 
 
