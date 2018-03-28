@@ -69,10 +69,9 @@ Exemplo de lista numérica:
 --------------------------
 
 Donec rhoncus
-
-1. Nullam gravida tellus eget condimentum egestas.
-2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
-3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
+ 1. Nullam gravida tellus eget condimentum egestas.
+ 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+ 3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
 
 
 
@@ -143,10 +142,10 @@ Exemplo lista com numeral romano:
 ---------------------------------
 
 Nam commodo
-I. Morbi luctus elit enim.
-II. Nullam nunc leo.
-III. Proin id dui lorem.
-VI. Nunc finibus risus.
+ I. Morbi luctus elit enim.
+ II. Nullam nunc leo.
+ III. Proin id dui lorem.
+ VI. Nunc finibus risus.
 
 
 
