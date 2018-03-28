@@ -3,6 +3,9 @@
 <article>
 =========
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 Atributos obrigatórios:
 
   1. ``@dtd-version``
@@ -131,4 +134,3 @@ Exemplo `JATS versão 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_:
    </article>
 
 
-.. {"reviewed_on": "20170720", "by": "aline.cristina@scielo.org"}

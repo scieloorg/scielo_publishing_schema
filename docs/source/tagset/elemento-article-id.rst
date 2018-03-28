@@ -3,6 +3,9 @@
 <article-id>
 ============
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 Atributos obrigatórios:
 
   1. ``@pub-id-type``
@@ -33,9 +36,6 @@ O atributo ``@pub-id-type`` permite os seguintes valores:
 |                    | Publicação Contínua (PC) e *Ahead Of Print* (AOP).    |
 +--------------------+-------------------------------------------------------+
 
-Para *SciELO* Brasil consulte:
-
-:ref:`scielo-brasil`
 
 
 

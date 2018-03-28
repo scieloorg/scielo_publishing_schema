@@ -3,6 +3,9 @@
 <institution>
 =============
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 Atributos obrigatórios:
 
   1. ``@content-type``

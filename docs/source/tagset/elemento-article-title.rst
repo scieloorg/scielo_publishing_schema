@@ -3,6 +3,9 @@
 <article-title>
 ===============
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 +----------------------------------+-----------------+
 | Aparece em                       | Ocorre          |
 +==================================+=================+
@@ -52,5 +55,3 @@ Exemplo de ``<article-title>`` em Referência Bibliográfica:
     </element-citation>
 
 
-
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

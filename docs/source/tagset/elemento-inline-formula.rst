@@ -3,6 +3,9 @@
 <inline-formula>
 ================
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 +-------------------------+--------------------+
 | Aparece em              | Ocorre             |
 +=========================+====================+
@@ -46,5 +49,3 @@ Exemplo para codificar σˆ2* usando *MathML*:
     Nulla quis leo sed turpis congue finibus feugiat ut dui. Donec id tincidunt tellus. Nunc fermentum dolor et congue convallis. <p/>
     ...
 
-
-.. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}

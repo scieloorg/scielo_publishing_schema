@@ -3,6 +3,9 @@
 <product>
 =========
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 Atributos obrigatórios:
 
   1. ``@product-type``
@@ -82,4 +85,4 @@ Os valores possíveis para ``@product-type`` são:
 .. note:: A ordem dos elementos é importante! ``<product>`` deve ser inserido antes de :ref:`elemento-history` ou depois de :ref:`elemento-fpage`.
 
 
-.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
+

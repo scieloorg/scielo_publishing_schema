@@ -3,6 +3,9 @@
 <disp-formula>
 ==============
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 Atributos obrigatórios:
 
   1. ``@id`` (ver :ref:`sugestao-atribuicao-id`)
@@ -120,10 +123,6 @@ Equação em imagem:
     ...
 
 
-Para *SciELO* Brasil consulte:
-
-:ref:`scielo-brasil`
 
 .. note:: Equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto.
 
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

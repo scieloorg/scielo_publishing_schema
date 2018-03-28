@@ -27,7 +27,7 @@ Atributos obrigatórios:
 
 
 
-Elemento utilizado para identificação de uma lista que contem dois ou mais itens. Pode conter, opcionalmente, um elemento :ref:`elemento-title` ou um elemento :ref:`elemento-label`, exclusivamente.
+Elemento utilizado para identificação de uma lista que contem dois ou mais itens. Pode conter, opcionalmente, um elemento ``<title>`` ou um elemento :ref:`elemento-label`, exclusivamente.
 
 O elemento :ref:`elemento-label` deve ser utilizado para identificar a legenda que pode acompanhar a lista. São consideradas legendas: legenda de equação, figura, referência, etc.
 
@@ -61,16 +61,18 @@ Exemplos:
   * :ref:`elemento-list-exemplo-3`
 
 
+
+
 .. _elemento-list-exemplo-1:
 
 Exemplo de lista numérica:
 --------------------------
 
 Donec rhoncus
+ 1. Nullam gravida tellus eget condimentum egestas.
+ 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+ 3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
 
-1. Nullam gravida tellus eget condimentum egestas.
-2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
-3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
 
 
 
@@ -78,20 +80,20 @@ Deve ser identificada como:
 
 .. code-block:: xml
 
-    ...
-    <list list-type="order">
-        <title>Donec rhoncus</title>
-          <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-          </list-item>
-          <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-          </list-item>
-          <list-item>
-            <p>Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.</p>
-         </list-item>
-    </list>
-    ...
+  ...
+  <list list-type="order">
+    <title>Donec rhoncus</title>
+      <list-item>
+        <p>Nullam gravida tellus eget condimentum egestas.</p>
+      </list-item>
+      <list-item>
+        <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+      </list-item>
+      <list-item>
+        <p>Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.</p>
+      </list-item>
+  </list>
+  ...
 
 
 
@@ -102,9 +104,10 @@ Exemplo lista numérica com sub-item:
 
 
 Vivamus cursus
-1. Nullam gravida tellus eget condimentum egestas.
- 1.1. Curabitur luctus lorem ac feugiat pretium.
-2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+ 1. Nullam gravida tellus eget condimentum egestas.
+   1.1. Curabitur luctus lorem ac feugiat pretium.
+ 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+
 
 
 
@@ -113,22 +116,22 @@ Deve ser identificada como:
 
 .. code-block:: xml
 
-    ...
-    <list list-type="order">
-        <title>Vivamus cursus</title>
-        <list-item>
-            <p>Nullam gravida tellus eget condimentum egestas.</p>
-              <list list-type="order">
-                  <list-item>
-                      <p>Curabitur luctus lorem ac feugiat pretium.</p>
-                  </list-item>
-              </list>
-        </list-item>
-        <list-item>
-            <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
-        </list-item>
-    </list>
-    ...
+  ...
+  <list list-type="order">
+    <title>Vivamus cursus</title>
+      <list-item>
+        <p>Nullam gravida tellus eget condimentum egestas.</p>
+          <list list-type="order">
+            <list-item>
+              <p>Curabitur luctus lorem ac feugiat pretium.</p>
+            </list-item>
+          </list>
+      </list-item>
+      <list-item>
+        <p>Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.</p>
+      </list-item>
+  </list>
+  ...
 
 
 
@@ -138,11 +141,12 @@ Deve ser identificada como:
 Exemplo lista com numeral romano:
 ---------------------------------
 
- Nam commodo
+Nam commodo
  I. Morbi luctus elit enim.
  II. Nullam nunc leo.
  III. Proin id dui lorem.
  VI. Nunc finibus risus.
+
 
 
 Deve ser identificada como:
@@ -150,23 +154,23 @@ Deve ser identificada como:
 
 .. code-block:: xml
 
-    ...
-    <list list-type="roman-lower">
-       <title>Nam commodo</title>
-          <list-item>
-            <p>Morbi luctus elit enim.</p>
-          </list-item>
-          <list-item>
-            <p>Nullam nunc leo.</p>
-          </list-item>
-          <list-item>
-            <p>Proin id dui lorem.</p>
-          </list-item>
-          <list-item>
-            <p>Nunc finibus risus.</p>
-          </list-item>
-    </list>
-    ...
+  ...
+  <list list-type="roman-lower">
+    <title>Nam commodo</title>
+      <list-item>
+        <p>Morbi luctus elit enim.</p>
+      </list-item>
+      <list-item>
+        <p>Nullam nunc leo.</p>
+      </list-item>
+      <list-item>
+        <p>Proin id dui lorem.</p>
+      </list-item>
+      <list-item>
+        <p>Nunc finibus risus.</p>
+      </list-item>
+  </list>
+  ...
 
 
 

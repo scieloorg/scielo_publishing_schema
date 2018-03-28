@@ -3,6 +3,10 @@
 <contrib-group>
 ===============
 
+
+Este elemento possui :ref:`scielo-brasil`
+
+
 +------------------------------+--------------------+
 | Aparece em                   | Ocorre             |
 +==============================+====================+
@@ -43,5 +47,3 @@ Exemplo:
     </contrib-group>
     ...
 
-
-.. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
