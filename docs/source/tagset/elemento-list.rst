@@ -139,16 +139,16 @@ Deve ser identificada como:
 .. _elemento-list-exemplo-3:
 
 
-Exemplo lista com numeral romano:
----------------------------------
+Exemplo lista com bullet:
+-------------------------
 
 
 Nam commodo
 
- I. Morbi luctus elit enim.
- II. Nullam nunc leo.
- III. Proin id dui lorem.
- IV. Nunc finibus risus.
+ * Morbi luctus elit enim.
+ * Nullam nunc leo.
+ * III.Proin id dui lorem.
+ * Nunc finibus risus.
 
 
 
@@ -158,7 +158,7 @@ Deve ser identificada como:
 .. code-block:: xml
 
   ...
-  <list list-type="roman-lower">
+  <list list-type="bullet">
     <title>Nam commodo</title>
       <list-item>
         <p>Morbi luctus elit enim.</p>
