@@ -70,9 +70,9 @@ Exemplo de lista numérica:
 
 Donec rhoncus
 
- 1. Nullam gravida tellus eget condimentum egestas.
- 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
- 3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
+1. Nullam gravida tellus eget condimentum egestas.
+2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
 
 
 
@@ -105,10 +105,9 @@ Exemplo lista numérica com sub-item:
 
 Vivamus cursus
 
- 1. Nullam gravida tellus eget condimentum egestas.
-  1.1. Curabitur luctus lorem ac feugiat pretium.
-  
- 2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
+1. Nullam gravida tellus eget condimentum egestas.
+    1.1. Curabitur luctus lorem ac feugiat pretium.  
+2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
 
 
 
@@ -146,11 +145,10 @@ Exemplo lista com bullet:
 
 Nam commodo
 
- * Morbi luctus elit enim.
- * Nullam nunc leo.
- * III.Proin id dui lorem.
- * Nunc finibus risus.
-
+* Morbi luctus elit enim.
+* Nullam nunc leo.
+* Proin id dui lorem.
+* Nunc finibus risus.
 
 
 Deve ser identificada como:
