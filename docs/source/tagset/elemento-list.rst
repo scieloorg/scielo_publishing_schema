@@ -62,17 +62,17 @@ Exemplos:
 
 
 
-
 .. _elemento-list-exemplo-1:
 
 Exemplo de lista numérica:
 --------------------------
 
+
 Donec rhoncus
+
  1. Nullam gravida tellus eget condimentum egestas.
  2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
  3. Vestibulum urna elit, auctor ac fringilla ac, sagittis in ex.
-
 
 
 
@@ -104,8 +104,9 @@ Exemplo lista numérica com sub-item:
 
 
 Vivamus cursus
+
  1. Nullam gravida tellus eget condimentum egestas.
-   1.1. Curabitur luctus lorem ac feugiat pretium.
+  1.1. Curabitur luctus lorem ac feugiat pretium.
  2. Donec pulvinar odio ut enim lobortis, eu dignissim elit accumsan.
 
 
@@ -141,7 +142,9 @@ Deve ser identificada como:
 Exemplo lista com numeral romano:
 ---------------------------------
 
+
 Nam commodo
+
  I. Morbi luctus elit enim.
  II. Nullam nunc leo.
  III. Proin id dui lorem.
