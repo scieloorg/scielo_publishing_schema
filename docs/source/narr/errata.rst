@@ -3,26 +3,31 @@
 Errata
 ======
 
-Como regra, arquivos do tipo *errata* devem apresentar o valor ``correction`` no atributo ``@article-type``. O texto do elemento ``//subj-group[@subj-group-type="heading"]/subject`` deve conter a seção apresentada no sumário do número e, no elemento :ref:`elemento-article-title` deve figurar como título ``Errata`` ou ``Erratum``, de acordo com o que está especificado no *PDF*.
+Arquivos do tipo errata devem apresentar no atributo ``@article-type`` o valor ``correction`` . A seção em ``<subject>`` deve conter a informação apresentada no PDF da errata. O elemento :ref:`elemento-article-title` para publicações regulares e contínua em números, deve replicar a informação da seção, usualmente encontra-se: Errata, Erratum, Correção, Correction, etc, para arquivos em *Ahead of Print* ou publicação contínua em um único volume, além de replicar o título da seção, deve-se inserir dois pontos mais o título do artigo a ser corrigido.
 
-O elemento :ref:`elemento-related-article` é utilizado para referenciar o artigo que se deseja retificar.
+O elemento :ref:`elemento-related-article` pode ser usado uma ou mais vezes e é utilizado para referenciar o artigo que se deseja corrigir e deve conter obrigatoriamente os atributos:
+
+
+ ``@related-article-type`` com valor ``"corrected-article"``
+ ``@id``
+ ``@xLink:href`` com número DOI do artigo que está sendo corrigido
+ ``@ext-link-type`` com valor "doi"
+
 
 Exemplo:
 
 .. code-block:: xml
 
+
     ...
-    <article article-type="correction"
-             specific-use="sps-1.2"
-             dtd-version="1.0"
-             xml:lang="en"
-             xmlns:xlink="http://www.w3.org/1999/xlink">
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.8" article-type="correction" xml:lang="pt">`
+    ...
         <front>
             <article-meta>
-                <article-id pub-id-type="doi">10.1590/abd1806-4841.20142998e</article-id>
+                <article-id pub-id-type="doi">10.1590/123456720182998e</article-id>
                 <article-categories>
                     <subj-group subj-group-type="heading">
-                        <subject>Erratum</subject>
+                        <subject>Errata</subject>
                     </subj-group>
                     ...
                 </article-categories>
@@ -33,10 +38,7 @@ Exemplo:
                 <permissions>
                     ...
                 </permissions>
-                <related-article related-article-type="corrected-article"
-                                 id="ra1"
-                                 xlink:href="10.1590/abd1806-4841.20142998"
-                                 ext-link-type="doi"/>
+                <related-article related-article-type="corrected-article" id="r01" xlink:href="10.1590/abd1806-4841.20142998" ext-link-type="doi"/>
                 <counts>
                     ...
                 </counts>
@@ -48,20 +50,9 @@ Exemplo:
     </article>
 
 
-.. note:: ``<related-article>`` deve ser inserido abaixo das informações de ``<permissions>`` ou acima de ``<counts>``.
 
+No artigo que esta sendo corrigido, deve-se inserir uma nota geral em :ref:`elemento-back` com atributo ``fn-type`` com valor ``other`` contendo o :ref:`elemento-label` igual ao título do arquivo da errata e os parágrafos considerando exatamente o mesmo texto publicado na errata.
 
-Para ``Errata`` o elemento :ref:`elemento-related-article` deve, obrigatoriamente, apresentar os seguintes atributos: ``@related-article-type``; ``@id``; ``@xlink:href`` e ``@ext-link-type``.
-
-Os valores possíveis para ``@ext-link-type`` são:
-
-* ``doi``
-* ``scielo-pid``
-* ``scielo-aid``
-
-``@related-article-type`` deverá ter o valor "corrected-article".
-
-No artigo ao qual a errata se refere, deve-se inserir uma nota de rodapé com ``@fn-type`` com valor ``other`` e os demais elementos relativos à errata.
 
 Exemplo:
 
@@ -74,6 +65,7 @@ Exemplo:
           <fn fn-type="other">
             <label>Errata</label>
               <p>Texto da errata</p>
+              <p>Texto da errata</p>
             </fn>
         </fn-group>
         ...
@@ -81,9 +73,9 @@ Exemplo:
     ...
 
 
-É possível a publicação de *Erratas* na modalidade :ref:`ahead-of-print` seguindo-se as regras anteriormente definidas. A única diferença é que em :ref:`elemento-article-title`, além da inserção da palavra ``Errata``, ``Erratum``, ``Corrigendum`` etc., (conforme PDF), deve-se inserir dois pontos e o título do artigo a ser corrigido. O padrão do documento em si deve seguir as instruções de :term:`ahead of print`.
 
-.. note:: Mais informações podem ser encontradas no "Guia para o registro e publicação de errata" disponível `nesse endereço <http://www.scielo.org/local/File/Guia_para_o_registro_e_publicacao_de_Errata.pdf>`_.
+.. note::
+ * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions` ou acima de :ref:`elemento-counts`.
+ * Mais informações podem ser obtidas no `Guia para o registro e publicação de Errata <http://www.scielo.org/local/File/Guia_para_o_registro_e_publicacao_de_Errata.pdf>`_.
 
 
-.. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
