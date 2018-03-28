@@ -8,10 +8,10 @@ Arquivos do tipo errata devem apresentar no atributo ``@article-type`` o valor `
 O elemento :ref:`elemento-related-article` pode ser usado uma ou mais vezes e é utilizado para referenciar o artigo que se deseja corrigir e deve conter obrigatoriamente os atributos:
 
 
- ``@related-article-type`` com valor ``"corrected-article"``
- ``@id``
- ``@xLink:href`` com número DOI do artigo que está sendo corrigido
- ``@ext-link-type`` com valor "doi"
+ * ``@related-article-type`` com valor ``"corrected-article"``
+ * ``@id``
+ * ``@xLink:href`` com número DOI do artigo que está sendo corrigido
+ * ``@ext-link-type`` com valor "doi"
 
 
 Exemplo:

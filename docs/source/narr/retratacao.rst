@@ -7,10 +7,10 @@ Arquivos do tipo retratação e retratação parcial devem apresentar em :ref:`e
 
 O elemento :ref:`elemento-related-article` pode ser usado uma ou mais vezes e é utilizado para referenciar o artigo que sofre a retratação e deve conter obrigatoriamente os atributos:
 
- ``@related-article-type`` com valor ``"retracted-article"`` ou ``"partial-retraction"``
- ``@id``
- ``@xLink:href`` com número DOI do artigo que está sendo retratado
- ``@ext-link-type`` com valor "doi"
+ * ``@related-article-type`` com valor ``"retracted-article"`` ou ``"partial-retraction"``
+ * ``@id``
+ * ``@xLink:href`` com número DOI do artigo que está sendo retratado
+ * ``@ext-link-type`` com valor "doi"
  
 
 Exemplo:
