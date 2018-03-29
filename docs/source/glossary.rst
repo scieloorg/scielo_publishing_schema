@@ -15,7 +15,7 @@ Glossário
      Sigla de *Associação Brasileira de Normas Técnicas*. Fundada em 28 de setembro de 1940, é uma entidade privada e sem fins lucrativos, membro fundador da *International Organization for Standardization* (*ISO*), cuja missão é a elaboração de normas técnicas Brasileiras (*ABNT NBR*), por meio de seus comitês, unidades setoriais e comissões de estudo. Para maiores informações ver `ABNT - Associação Brasileira de Normas Técnicas <http://www.abnt.org.br/>`_.
 
 
-   ahead of print
+   Ahead of Print
      O sistema *Ahead of Print* de publicação de artigos, disponibiliza online os trabalhos aprovados pela equipe editorial de um periódico antes mesmo de sua publicação impressa tornar-se acessível aos leitores. Apesar de disponível em rede, os artigos seguem o fluxo editorial de publicação impressa - ou online - até que estejam prontos para serem inseridos em um número. O processo permite antecipar em alguns meses a publicação impressa do número do períodico.
 
 
@@ -155,12 +155,24 @@ Glossário
      Arquivos de computador no formato *.zip*, cada um representando um número (fascículo), com todos os arquivos :term:`XML`, e respectivos arquivos *PDF* e outros ativos digitais.
 
 
+   PC
+     Sigla de *Publicação Contínua*. Ver :term:`Publicação Contínua`.
+
+
    PMC
-     Sigla de *PubMed Central*. Compreende um repositório de livre acesso de texto completo da literatura científica nas áreas de biomedicina e ciências correlatas, disponível na *National Library of Medicine* por meio dos institutos nacionais de saúde norte-americanos. Também refere-se ao sistema de submissão de artigos científicos com base em padrões definidos pela instituição. Para maiores informações ver `PMC Overview <http://www.ncbi.nlm.nih.gov/pmc/about/intro/>`_.  
+     Sigla de *PubMed Central*. Ver :term:`PubMed Central`.
+
+
+   Publicação Contínua
+     Representa a publicação contínua de artigos, sem a necessidade de esperar a composição completa dos fascículos ou de edições seriadas. Essa modalidade de publicação promove rapidez no processo de comunicação e disponibilização das pesquisas. O objetivo principal da publicação contínua de artigos é acelerar o processo de comunicação das pesquisas e assim contribuir para a sua disponibilidade para leitura e citação.
 
 
    Pubmed
      Sistema que compreende mais de 26 milhões de citações para literatura biomédica proveniente do *MEDLINE*, periódicos de ciências médicas e livros online. As citações podem incluir links para o texto completo no *Pubmed Central* e para sites publicadores na Internet. Para maiores informações ver `Home - PubMed - NCBI <http://www.ncbi.nlm.nih.gov/pubmed>`_.
+
+
+   PubMed Central
+     Compreende um repositório de livre acesso de texto completo da literatura científica nas áreas de biomedicina e ciências correlatas, disponível na National Library of Medicine por meio dos institutos nacionais de saúde norte-americanos. Também refere-se ao sistema de submissão de artigos científicos com base em padrões definidos pela instituição. Para maiores informações ver `PMC Overview <http://www.ncbi.nlm.nih.gov/pmc/about/intro/>`_.  
 
 
    Python
@@ -184,7 +196,7 @@ Glossário
 
 
    SciELO Publishing Schema
-     Composta pelas especificações: :term:`NISO JATS Journal Publishing DTD`, versão 1.0; e :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
+     Composta pelas especificações: :term:`NISO JATS Journal Publishing DTD`, versões `1.0 <https://jats.nlm.nih.gov/publishing/1.0/>`_. e `1.1 <https://jats.nlm.nih.gov/publishing/1.1/>`_. mais o :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
 
 
    Seções de primeiro nível
