@@ -72,7 +72,7 @@ Exemplos:
 Regra para volume e número
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie v10n3
+* scie v10n3
 
 Regra:
 
@@ -89,7 +89,7 @@ Exemplo:
 Regra para volume sem número
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie v10
+* scie v10
 
 Regra:
 
@@ -106,7 +106,7 @@ Exemplo:
 Regra para número sem volume
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie n03
+* scie n03
 
 Regra:
 
@@ -120,10 +120,10 @@ Exemplo:
 
 .. _elemento-regranomeia-exemplo-4:
 
-Para publicação de número especial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para publicação de número especial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie v10nspe01
+* scie v10nspe01
 
 Regra:
 
@@ -137,10 +137,10 @@ Exemplo:
 
 .. _elemento-regranomeia-exemplo-5:
 
-Para publicação de suplemento de volume
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para publicação de suplemento de volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie v10s01
+* scie v10s01
 
 Regra:
 
@@ -154,10 +154,10 @@ Exemplo:
 
 .. _elemento-regranomeia-exemplo-6:
 
-Para publicação de suplemento de número
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para publicação de suplemento de número
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie v10n03s01
+* scie v10n03s01
 
 Regra:
 
@@ -173,7 +173,7 @@ Exemplo:
 Regra para *Ahead Of Print*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie nahead2018 lote 01
+* scie nahead2018 lote 01
 
 Regra:
 
@@ -184,7 +184,9 @@ Exemplo:
     ``0124-4567-scie-nahead0118``
 
 
-* Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc, mais dois últimos dígitos do ano de publicação: primeiro lote 01 de 2018 = lote 0118
+
+.. note:: Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc, mais dois últimos dígitos do ano de publicação: primeiro lote 01 de 2018 = lote 0118
+
 
 
 .. _elemento-regranomeia-exemplo-8:
@@ -192,7 +194,7 @@ Exemplo:
 Regra para Publicação Contínua com um volume ao ano
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie v41 lote 01
+* scie v41 lote 01
 
 Regra:
 
@@ -203,16 +205,16 @@ Exemplo:
     ``0124-4567-scie-41-01``
 
 
-* Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc.
+.. note:: Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc.
 
 
 
 .. _elemento-regranomeia-exemplo-9:
 
-Regra para Publicação Contínua com um volume e número
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para Publicação Contínua com um volume e números
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-scie v41n02 lote 01
+* scie v41n02 lote 01
 
 Regra:
 
@@ -223,8 +225,8 @@ Exemplo:
     ``0124-4567-scie-41-02-01``
 
 
-* Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc.
 
+.. note:: Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc.
 
 
 
@@ -296,8 +298,8 @@ Exemplo:
 
 .. _elemento-nomeia-arquivo-exemplo-4:
 
-Para publicação de número especial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para publicação de número especial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -311,8 +313,8 @@ Exemplo:
 
 .. _elemento-nomeia-arquivo-exemplo-5:
 
-Para publicação de suplemento de volume
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para publicação de suplemento de volume
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
 
@@ -325,8 +327,8 @@ Exemplo:
 
 .. _elemento-nomeia-arquivo-exemplo-6:
 
-Para publicação de suplemento de número
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regra para publicação de suplemento de número
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 scie v10n03s01
 
@@ -354,7 +356,8 @@ Exemplo:
     ``0124-4567-scie-S0123-45672018050``
 
 
-* DOI completo = 10.1590/S0123-45672018050. Mais informações consultar `Orientação para criação e apresentação do DOI <http://www.scielo.org/local/File/Orientacao_para_criacao_e_apresentacao_do_DOI.pdf>`_ .
+.. note:: DOI completo = 10.1590/S0123-45672018050. Mais informações consultar `Orientação para criação e apresentação do DOI <http://www.scielo.org/local/File/Orientacao_para_criacao_e_apresentacao_do_DOI.pdf>`_ .
+
 
 
 .. _elemento-nomeia-arquivo-exemplo-8:
@@ -374,7 +377,7 @@ Exemplo:
 
 .. _elemento-nomeia-arquivo-exemplo-9:
 
-Regra para Publicação Contínua com um volume e número
+Regra para Publicação Contínua com um volume e números
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Regra:
