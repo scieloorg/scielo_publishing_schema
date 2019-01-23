@@ -205,7 +205,7 @@ Exemplo:
     ``0124-4567-scie-41-01``
 
 
-.. note:: Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc
+.. note:: Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc.
 
 
 
@@ -226,7 +226,7 @@ Exemplo:
 
 
 
-.. note:: Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc
+.. note:: Para lote, usar regra de dois dígitos sequenciais, 01, 02, 03 etc.
 
 
 
