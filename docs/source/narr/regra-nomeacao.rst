@@ -371,7 +371,7 @@ Regra:
 
 Exemplo:
 
-    ``0124-4567-scie-41-01-e0123``
+    ``0124-4567-scie-41-e0123``
 
 
 
@@ -382,11 +382,11 @@ Regra para Publicação Contínua com um volume e números
 
 Regra:
 
-    ``ISSN-acrônimo-volume-elocation``
+    ``ISSN-acrônimo-volume-número-elocation``
 
 Exemplo:
 
-    ``0124-4567-scie-41-02-01-e234``
+    ``0124-4567-scie-41-01-e234``
 
 
 
