@@ -62,17 +62,17 @@ Opcionalmente, além do resumo tradicional, pode-se utilizar um Resumo Visual (V
 * Resumo Visual (Visual Abstract): Imagem que reperesenta o texto do resumo de um artigo.
 
 
-      .. code-block:: xml
+  .. code-block:: xml
 
       ...
       <abstract abstract-type="graphical">
-        <fig id="vf01">                
-          <label>Visual Abstract</label>                
-              <caption>
+          <fig id="vf01">                
+            <label>Visual Abstract</label>                
+               <caption>
                   <title>Título<title>  
-              </caption>  
-              <graphic xlink:href="1234-5678-zwy-12-04-0123-v01.tif"/>                 
-        </fig>
+               </caption>  
+               <graphic xlink:href="1234-5678-zwy-12-04-0123-v01.tif"/>                 
+          </fig>
       </abstract>
       ...
 
