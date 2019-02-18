@@ -36,8 +36,7 @@ O atributo ``@list-type`` especifica o prefixo a ser utilizado no marcador da li
 +----------------+-------------------------------------------------------------------+
 | Valor          | Descrição                                                         |
 +================+===================================================================+
-| order          | Lista ordenada, cujo prefixo é um número ou letra, dependendo     |
-|                | do estilo utilizado.                                              |
+| order          | Lista ordenada, cujo prefixo é um número.                         |
 +----------------+-------------------------------------------------------------------+
 | bullet         | Lista desordenada, cujo prefixo utilizado é um ponto, barra ou    |
 |                | outro símbolo.                                                    |
@@ -51,8 +50,7 @@ O atributo ``@list-type`` especifica o prefixo a ser utilizado no marcador da li
 | roman-upper    | Lista ordenada, cujo prefixo é um numeral romano maiúsculo.       |
 +----------------+-------------------------------------------------------------------+
 | simple         | Lista simples, sem prefixo nos itens.                             |
-+----------------+-------------------------------------------------------------------+
-
++----------------+-------------------------------------------------------------------+                                                             
 
 Exemplos:
 
