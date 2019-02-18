@@ -13,14 +13,16 @@
 
 Elemento que identifica o resumo de um artigo. Não deve conter o atributo ``@xml:lang``. Embora ``<abstract>`` possa não ocorrer, faz-se obrigatório quando :ref:`elemento-article` for declarado com atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
 
+Opcionalmente, além do resumo tradicional, pode-se utilizar um Resumo Visual (Visual Abstract). Para este caso declarar em ``<abstract>`` o atributo ``@abstract-type="graphical"``.
+
+
 ``<abstract>`` contém obrigatoriamente um elemento ``<title>`` que especifica o título do resumo.
 
-Os resumos dos artigos publicados na *SciELO* normalmente se apresentam em dois formatos:
+ Exemplos:
 
 * Estruturado: Possui grupos de textos organizados em seções identificadas com um título (Por exemplo: Introdução, Objetivos, Métodos e Resultados).
 
-  Exemplo:
-
+ 
   .. code-block:: xml
 
       ...
@@ -43,8 +45,7 @@ Os resumos dos artigos publicados na *SciELO* normalmente se apresentam em dois 
 
 * Simples: Apresenta de forma sucinta os principais pontos do texto sem a divisão por seções.
 
-  Exemplo:
-
+  
   .. code-block:: xml
 
       ...
@@ -57,5 +58,25 @@ Os resumos dos artigos publicados na *SciELO* normalmente se apresentam em dois 
           ...
       </article-meta>
       ...
+
+* Resumo Visual (Visual Abstract): Imagem que reperesenta o texto do resumo de um artigo.
+
+
+      .. code-block:: xml
+
+      ...
+      <abstract abstract-type="graphical">
+        <fig id="vf01">                
+          <label>Visual Abstract</label>                
+              <caption>
+                  <title>Título<title>  
+              </caption>  
+              <graphic xlink:href="1234-5678-zwy-12-04-0123-v01.tif"/>                 
+        </fig>
+      </abstract>
+      ...
+
+. note:: Para mais informações sobre Resumo Visual, recomendamos leitura do texto `"Use of a VISUAL ABSTRACT to Disseminate
+Scientific Research" <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>`_ de Andrew M. Ibrahim, 2018. 
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
