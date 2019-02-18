@@ -76,7 +76,7 @@ Opcionalmente, além do resumo tradicional, pode-se utilizar um Resumo Visual (V
       </abstract>
       ...
 
-. note:: Para mais informações sobre Resumo Visual, recomendamos leitura do texto `"Use of a VISUAL ABSTRACT to Disseminate
+.. note:: Para mais informações sobre Resumo Visual, recomendamos leitura do texto `"Use of a VISUAL ABSTRACT to Disseminate
 Scientific Research" <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>`_ de Andrew M. Ibrahim, 2018. 
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
