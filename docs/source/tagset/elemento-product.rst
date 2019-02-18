@@ -32,23 +32,24 @@ Exemplo de marcação de ``<product>`` de livro
     <article-meta>
         ...
         <product product-type="book">
-            <person-group person-group-type="author">
-                <name>
-                    <surname>ONFRAY</surname> 
-                    <given-names>Michel</given-names>
-                </name>
-            </person-group>. 
-            <source>La comunidad filosófica: manifiesto por una universidad popular</source> Trad. e notas de 
-            <person-group person-group-type="translator">
-                <name>
-                    <surname>Castro</surname> 
-                    <given-names>Antonia García</given-names>
-                </name>
-            </person-group>. 
-            <publisher-loc>Barcelona</publisher-loc>: 
-            <publisher-name>Gedisa</publisher-name>, 
-            <year>2008</year> 
-            <size units="pages">155</size>p.
+        <person-group person-group-type="author">
+            <name>
+                <surname>ONFRAY</surname>
+                <given-names>Michel</given-names>
+            </name>
+        </person-group>
+        <source>La comunidad filosófica: manifiesto por una universidad popular</source>
+        <person-group person-group-type="translator">
+            <name>
+                <surname>Castro</surname>
+                <given-names>Antonia García</given-names>
+            </name>
+        </person-group>
+        <publisher-loc>Barcelona</publisher-loc>
+        <publisher-name>Gedisa</publisher-name>
+        <year>2008</year>
+        <size units="pages">155</size>
+        <isbn>78-84-9784-252-5</isbn>
         </product>
         <history>
             ...
