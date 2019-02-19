@@ -19,6 +19,7 @@ elementos apresentam regras específicas de uso:
   * :ref:`elemento-scibrasil-ref-list`
   * :ref:`elemento-scibrasil-country`
   * :ref:`elemento-scibrasil-product`
+  * :ref:`elemento-scibrasil-license`
 
 
 .. _elemento-scibrasil-article-id:
@@ -140,4 +141,15 @@ Este elemento em :ref:`elemento-aff` é obrigatório para SciELO Brasil e deve o
 ^^^^^^^^^
 
 :ref:`elemento-product` contém informações de produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
+
+
+.. _elemento-scibrasil-license:
+
+<license>
+^^^^^^^^^
+
+Em ``license-p`` é obrigatório o uso da seguinte frase:
+- Inglês: This is an article published in open access under a Creative Commons license.
+- Português: Este é um artigo publicado em acesso aberto sob uma licença Creative Commons.
+- Espanhol: Este es un artículo publicado en acceso abierto bajo una licencia Creative Commons.
 
