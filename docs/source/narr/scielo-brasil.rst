@@ -149,7 +149,7 @@ Este elemento em :ref:`elemento-aff` é obrigatório para SciELO Brasil e deve o
 ^^^^^^^^^
 
 Em ``license-p`` é obrigatório o uso da seguinte frase:
-- Inglês: This is an article published in open access under a Creative Commons license.
-- Português: Este é um artigo publicado em acesso aberto sob uma licença Creative Commons.
-- Espanhol: Este es un artículo publicado en acceso abierto bajo una licencia Creative Commons.
+ * Inglês: This is an article published in open access under a Creative Commons license.
+ * Português: Este é um artigo publicado em acesso aberto sob uma licença Creative Commons.
+ * Espanhol: Este es un artículo publicado en acceso abierto bajo una licencia Creative Commons.
 
