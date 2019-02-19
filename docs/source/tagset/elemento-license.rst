@@ -3,6 +3,9 @@
 <license>
 =========
 
+Este elemento possui :ref:`scielo-brasil`
+
+
 Atributos obrigatórios:
 
   1. ``@license-type="open-access"``
@@ -36,17 +39,17 @@ Exemplo:
             <license license-type="open-access"
                      xlink:href="http://creativecommons.org/licenses/by/4.0/"
                      xml:lang="en">
-                <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+                <license-p>This is an article published in open access under a Creative Commons license.</license-p>
             </license>
             <license license-type="open-access"
                      xlink:href="http://creativecommons.org/licenses/by/4.0/"
                      xml:lang="pt">
-                <license-p>Este artigo está licenciado com uma Licença Creative Commons que permite uso irrestrito, distribuição, e reprodução em qualquer mídia, desde que a obra original seja citada adequadamente.</license-p>
+                <license-p>Este é um artigo publicado em acesso aberto sob uma licença Creative Commons.</license-p>
             </license>
             <license license-type="open-access"
                      xlink:href="http://creativecommons.org/licenses/by/4.0/"
                      xml:lang="es">
-                <license-p>Este es un artículo de acceso abierto distribuido bajo los términos de la licencia Creative Commons Attribution License, que permite el uso ilimitado, distribución y reproducción en cualquier medio, siempre que el artículo original esté debidamente citado.</license-p>
+                <license-p>Este es un artículo publicado en acceso abierto bajo una licencia Creative Commons.</license-p>
             </license>
         </permissions>
         ...
