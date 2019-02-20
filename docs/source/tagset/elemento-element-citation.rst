@@ -54,6 +54,8 @@ Os valores possíveis para o atributo ``@publication-type`` são:
 +-----------+------------------------------------------------------------------+
 | newspaper | Identifica artigos de jornal.                                    |
 +-----------+------------------------------------------------------------------+
+| data      | Referencia dados de pesquisa.                                    |
++-----------+------------------------------------------------------------------+
 | other     | Especifica tipos não previstos pela *SciELO PS*.                 |
 +-----------+------------------------------------------------------------------+
 
@@ -80,6 +82,9 @@ Exemplos:
   * :ref:`elemento-element-citation-exemplo-11`
   * :ref:`elemento-element-citation-exemplo-12`
   * :ref:`elemento-element-citation-exemplo-13`
+  * :ref:`elemento-element-citation-exemplo-14`
+  * :ref:`elemento-element-citation-exemplo-15`
+  * :ref:`elemento-element-citation-exemplo-16`
 
 
 .. _elemento-element-citation-exemplo-1:
@@ -507,6 +512,87 @@ Exemplos:
         </ref>
     </ref-list>
     ...
+
+.. _elemento-element-citation-exemplo-14:
+
+14. Dados de Pesquisa 1
+------------------------
+
+.. code-block:: xml
+
+    <!-- Data Sample -->
+
+    <ref id="B01">
+        <label>1</label>
+            <element-citation publication-type="data">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>ANDRADE</surname>
+                        <given-names>Márcio</given-names>
+                    </name>                        
+                </person-group>                      
+                <data-title>Estudos de genes em ratos albinos na América Latina</data-title>
+                <version>20 jan.</version>
+                <year>2018</year>
+                <source>Open Science Framework</source>
+                <pub-id pub-id-type="art-access-id">NR 109833.1</pub-id>
+                <pub-id pub-id-type="doi">10.1590/0123-45620187214</pub-id>
+            </element-citation>
+    </ref>
+
+.. _elemento-element-citation-exemplo-15:
+
+15. Dados de Pesquisa 2
+------------------------
+
+.. code-block:: xml
+
+    <!-- Data Sample -->
+
+    <ref id="B02">
+        <label>2</label>
+            <element-citation publication-type="data">
+                <person-group person-group-type="author">
+                    <collab>BEILSTEIN INSTITUIT</collab>                        
+                </person-group>                   
+                <data-title>Estudos de genes em ratos albinos na América Latina</data-title>
+                <version>23 jan.</version>
+                <year>2018</year>
+                <source>Open Science Framework</source>
+                <pub-id pub-id-type="art-access-id">NR 109833.1</pub-id>
+                <pub-id pub-id-type="doi">10.1590/0123-45620187214</pub-id>
+            </element-citation>
+    </ref>
+
+
+.. _elemento-element-citation-exemplo-16:
+
+16. Dados de Pesquisa 3
+------------------------
+
+.. code-block:: xml
+
+    <!-- Data Sample -->
+
+    <ref id="B03">
+        <label>3</label>
+            <element-citation publication-type="data">
+                <person-group person-group-type="author">
+                    <name>
+                        <surname>ANDRADE</surname>
+                        <given-names>Márcio</given-names>
+                    </name>                        
+                    </person-group>                   
+                    <data-title>Estudos de genes em ratos albinos na América Latina</data-title>            
+                    <year>2018</year>
+                    <source>OSF</source>                    
+                    <ext-link ext-link-type="uri" xlink:href="https://osf.io/">https://osf.io/</ext-link>
+            </element-citation>
+    </ref>
+
+
+..note:: Para mais informações consulte `Guia de citação de dados de pesquisa SciELO <http://www.scielo.org/local/File/Guia_de_citacao_de_dados.pdf>`_ e `Data citation da JATS4R <http://jats4r.org/data-citations>`_
+
 
 
 .. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
