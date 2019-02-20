@@ -28,7 +28,7 @@ Este guia descreve o uso do estilo de marcação adotado pela *SciELO* para subm
 
 A :term:`SciELO Publishing Schema` (:term:`SciELO PS`) é composta pelas especificações:
 
-* :term:`NISO JATS Journal Publishing DTD `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_);
+* :term:`NISO JATS Journal Publishing DTD 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_;
 * :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
 
 Os usuários deste guia devem possuir conhecimentos prévios de :term:`XML` e :term:`DTD`.
