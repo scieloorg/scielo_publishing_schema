@@ -39,9 +39,9 @@ Dúvidas e/ou comentários acerca da especificação :term:`SciELO PS`, deste gu
 Notas da versão
 ---------------
 
-As versões foram disponibilizadas a cada seis meses em calendário fixo até a versão 1.8. A partir da versão 1.9 serão disponibilizadas a cada doze meses em calendário fixo. Versões de correção são disponibilizadas por demanda, sendo identificadas no terceiro dígito da versão. Ex.: versão 1.1.1.
+As versões são disponibilizadas a cada doze meses em calendário fixo. Versões de correção são disponibilizadas por demanda, sendo identificadas no terceiro dígito da versão. Ex.: versão 1.1.1.
 
-Duas versões são suportadas simultaneamente, a atual e a imediatamente anterior. Essa medida irá garantir um ciclo de vida de um ano e meio para a versão 1.7 e dois anos para a versões seguintes.
+Duas versões são suportadas simultaneamente, a atual e a imediatamente anterior. Essa medida garante um ciclo de vida de 2 (dois) anos para cada versão.
 
 
 .. toctree::

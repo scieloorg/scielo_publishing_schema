@@ -196,7 +196,7 @@ Glossário
 
 
    SciELO Publishing Schema
-     Composta pelas especificações: :term:`NISO JATS Journal Publishing DTD`, versões `1.0 <https://jats.nlm.nih.gov/publishing/1.0/>`_. e `1.1 <https://jats.nlm.nih.gov/publishing/1.1/>`_. mais o :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
+     Composta pela especificação: :term:`NISO JATS Journal Publishing DTD`, versão `1.1 <https://jats.nlm.nih.gov/publishing/1.1/>`_. mais o :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
 
 
    Seções de primeiro nível
