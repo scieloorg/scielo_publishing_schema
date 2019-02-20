@@ -21,7 +21,7 @@ Tags obrigatórias:
 
 Utilizado em :ref:`elemento-sub-article` o qual herda os metadados do xml principal. Por este motivo não devem ser inseridos os elementos :ref:`elemento-journal-meta` e :ref:`elemento-article-meta`.
 
-Nesse elemento devem ser inseridas apenas informações diferentes das que constam no artigo principal, como por exemplo :ref:`<article-id>` do tipo DOI quando houver um número DOI diferente para o artigo traduzido, ou seja, não é necessário incluir :ref:`elemento-volume`, :ref:`elemento-issue`, :ref:`elemento-pub-date`,  :ref:`elemento-funding-group` e :ref:`elemento-history` uma vez que estes tenham seus conteúdos definidos no artigo principal.
+Nesse elemento devem ser inseridas apenas informações diferentes das que constam no artigo principal, como por exemplo :ref:`elemento-article-id` do tipo DOI quando houver um número DOI diferente para o artigo traduzido, ou seja, não é necessário incluir :ref:`elemento-volume`, :ref:`elemento-issue`, :ref:`elemento-pub-date`,  :ref:`elemento-funding-group` e :ref:`elemento-history` uma vez que estes tenham seus conteúdos definidos no artigo principal.
 
 .. note:: Caso ocorra *tradução de afiliação* e/ou *notas de autor*, os dados destes autores devem ser duplicados para permitir uma referência cruzada entre os elementos no artigo traduzido.
 
