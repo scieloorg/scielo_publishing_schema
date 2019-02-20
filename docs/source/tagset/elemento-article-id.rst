@@ -15,7 +15,8 @@ Atributos obrigatórios:
 +==============================+===================+
 | :ref:`elemento-article-meta` | Uma ou mais vezes |
 +------------------------------+-------------------+
-
+| :ref:`elemento-front-stub`   | Uma ou mais vezes |
++------------------------------+-------------------+
 
 
 Identificador único do artigo em uma base de dados.

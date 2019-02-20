@@ -36,6 +36,8 @@ obrigatoriamente, apresentar o valor "doi". Exemplo:
 	<article-id pub-id-type="doi">10.1590/0100-29452016221</article-id>
 	...
 	
+.. note:: 
+ Quando existir no PDF um número DOI diferente para o artigo traduzido, obrigatoriamente deve ser identificado em :ref:`elemento-front-stub`.
 
 .. _elemento-scibrasil-disp:
 
