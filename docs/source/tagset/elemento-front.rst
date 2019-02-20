@@ -110,7 +110,7 @@ Exemplo:
              </history>
              <permissions>
                   <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/" xml:lang="en">
-                       <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License</license-p>
+                       <license-p>This is an article published in open access under a Creative Commons license</license-p>
                   </license>
              </permissions>
              <abstract>
