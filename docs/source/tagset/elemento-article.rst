@@ -29,7 +29,7 @@ Atributos obrigatórios:
 
 O atributo ``@xmlns:mml="http://www.w3.org/1998/Math/MathML"`` é opcional e deve ser utilizado sempre que equações do tipo :term:`MathML` forem identificadas no :term:`documento`.
 
-Para ``@dtd-version`` deve-se utilizar o valor 1.0 ou 1.1 conforme a :term:`DTD`, explicitada em :ref:`xml-doctype`.
+Para ``@dtd-version`` deve-se utilizar o valor 1.1 conforme a :term:`DTD`, explicitada em :ref:`xml-doctype`.
 
 Para o atributo ``@article-type`` os valores possíveis são:
 
@@ -102,6 +102,13 @@ Para o atributo ``@article-type`` os valores possíveis são:
 | review-article     | sistematizadas da literatura sobre determinado assunto.  |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
+|                    | Artigo de dados - Descreve uma coleção de conjunto de    |
+|                    | dados de pesquisa. Este tipo de publicação explica os    |
+|   data-article     | métodos de obtenção/coleta dos dados, bem como à         |
+|                    | descrição dos ativos que compõem um conjunto de dados,   |
+|                    | sua estrutura e formato.                                 |
++--------------------+----------------------------------------------------------+                                                                 
+                                                                 
 
 
 .. note:: O atributo ``@article-type`` não deve ser confundido com a seção (:ref:`elemento-subj-group`) em que o :term:`documento` aparece no sumário.
@@ -110,17 +117,6 @@ Para o atributo ``@article-type`` os valores possíveis são:
 O idioma do texto em ``@xml:lang`` é descrito pela norma :term:`ISO 639-1` como um código de dois caracteres alfabéticos em caixa baixa, cujo conteúdo encontra-se disponível no `site <http://www.mathguide.de/info/tools/languagecode.html>`_.
 
 O atributo ``@specific-use`` identifica a versão utilizada da :term:`SciELO Publishing Schema`.
-
-
-Exemplo `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_:
-
-.. code-block:: xml
-
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.8" article-type="research-article" xml:lang="en">
-
-           ...
-
-	 </article>
 
 
 Exemplo `JATS versão 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_:
