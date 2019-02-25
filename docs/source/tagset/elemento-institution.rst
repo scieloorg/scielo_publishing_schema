@@ -47,8 +47,8 @@ Exemplo:
       <institution content-type="orgdiv2">Departamento de Fisiologia e Biofísica</institution>
       <institution content-type="orgdiv1">Instituto de Ciências Biomédicas</institution>
       <addr-line>
-        <named-content content-type="city">São Paulo</named-content>
-        <named-content content-type="state">SP</named-content>
+        <city>São Paulo</city>
+        <state>SP</state>
       </addr-line>
       <country country="BR">Brasil</country>
       <institution content-type="original">Departamento de Fisiologia e Biofísica, Instituto de Ciências Biomédicas, Universidade de São Paulo, São Paulo, SP, Brasil</institution>
