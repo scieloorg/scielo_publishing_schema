@@ -165,16 +165,13 @@ Em ``license-p`` é obrigatório o uso da seguinte frase:
 ``<pub-date>`` deve estar acompanhada do atributo ``@pub-type``, do tipo ``scielo`` e ``collection`` quando necessário, sendo: 
 
 
-+-------------------------------------------------------------+--------------------+
-| ``@pub-type`` | Descrição                                   | Tipos de Datas     |
-+=============================================================+====================+
-|    scielo     | Data efetiva de publicação em SciELO.       | dia + mês + ano    |
-+-------------------------------------------------------------+--------------------+
-|               |                                             | ano OU;            |
-|  collection   | Data do fascículo ao qual pertence o artigo.| mês + ano OU;      |
-|               |                                             | season + ano.      |
-+-------------------------------------------------------------+--------------------+
-
++-------------------------------------------------------------+------------------------------------+
+| ``@pub-type`` | Descrição                                   | Tipos de Datas                     |
++=============================================================+====================================+
+|    scielo     | Data efetiva de publicação em SciELO.       | dia + mês + ano                    |
++-------------------------------------------------------------+------------------------------------+
+|  collection   | Data do fascículo ao qual pertence o artigo.| ano OU; mês + ano OU; season + ano.|
++-------------------------------------------------------------+------------------------------------+
 
 Exemplos:
 
@@ -184,7 +181,6 @@ Exemplos:
     * :ref:`elemento-pubdate-exemplo-4`
 
     
-
 .. _elemento-pubdate-exemplo-1: 
 
 Exemplo de ``<pub-date>`` em publicação regular 1:
@@ -252,10 +248,10 @@ Exemplo de ``<pub-date>`` em modalidade `ahead of print (AOP) <http://www.scielo
     </pub-date>
 
 
-.. note:: 
-* Para datas do tipo scielo, criar as tags :ref:`elemento-day` e :ref:`elemento-month` com informação 00 para que seja alterada posteriormente com a data efetiva da publicação pela unidade de produção.
-* Para datas do tipo collection, sempre preencher a data ao qual o fascículo pertence, seguindo sua periodicidade.
-* Para revistas que adotam `publicação contínua (PC) <http://www.scielo.org/local/Image/guiarpass.pdf>`_, só considerar o ano ao qual o fascículo pertence para data do tipo collection.
+.. note::
+ * Para datas do tipo scielo, criar as tags :ref:`elemento-day` e :ref:`elemento-month` com informação 00 para que seja alterada posteriormente com a data efetiva da publicação pela unidade de produção.
+ * Para datas do tipo collection, sempre preencher a data ao qual o fascículo pertence, seguindo sua periodicidade.
+ * Para revistas que adotam `publicação contínua (PC) <http://www.scielo.org/local/Image/guiarpass.pdf>`_, só considerar o ano ao qual o fascículo pertence para data do tipo collection.
 
 
 

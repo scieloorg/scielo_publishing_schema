@@ -37,7 +37,7 @@ Exemplo:
              <issn pub-type="ppub">1234-5678</issn>
              <issn pub-type="epub">8765-4321</issn>
              <publisher>
-                  <publisher-name>Paker and Cia</publisher-name>
+                  <publisher-name>Packer and Cia</publisher-name>
              </publisher>
         </journal-meta>
         <article-meta>
@@ -78,8 +78,8 @@ Exemplo:
                        <institution content-type="orgname">Universidade de Hogwarts</institution>
                        <institution content-type="orgdiv1">Faculdade de Ciência</institution>
                        <addr-line>
-                            <named-content content-type="city">Parnaíba</named-content>
-                            <named-content content-type="state">PI</named-content>
+                            <city>Parnaíba</city>
+                            <state>PI</state
                        </addr-line>
                        <country country="BR">Brazil</country>
                   </aff>
@@ -88,7 +88,12 @@ Exemplo:
                   <corresp id="c1">Correspondence to:  Minerva McGonagall Rua Beco Diagonal 2076 - Ininga CEP: 12345-000 Teresina, PI, E-mail: <email>mcgonagall@nimbus2000.com</email>
                   </corresp>
              </author-notes>
-             <pub-date pub-type="epub-ppub">
+             <pub-date pub-type="scielo">
+                  <day>10</day>
+                  <month>10</month>
+                  <year>2015</year>
+             </pub-date>
+             <pub-date pub-type="collection">
                   <season>Oct-Dec</season>
                   <year>2015</year>
              </pub-date>
