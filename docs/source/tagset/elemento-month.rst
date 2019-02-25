@@ -42,7 +42,7 @@ Exemplo de ``<month>`` em ``<pub-date>``:
 .. code-block:: xml
 
    ...
-   <pub-date pub-type="epub-ppub">
+   <pub-date pub-type="scielo">
         <day>01</day>
         <month>06</month>
         <year>2016</year>
