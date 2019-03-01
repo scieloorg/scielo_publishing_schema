@@ -32,8 +32,6 @@ Atributos obrigatórios:
 +-------------------------------+--------------------+
 | ``license-p``                 | Zero ou mais vezes |
 +-------------------------------+--------------------+
-| :ref:`elemento-named-content` | Zero ou mais vezes |
-+-------------------------------+--------------------+
 | :ref:`elemento-p`             | Zero ou mais vezes |
 +-------------------------------+--------------------+
 | :ref:`elemento-ref-list`      | Zero ou mais vezes |

@@ -8,7 +8,7 @@ a versão 1.8.
 
 * Adicionado suporte para Visual Abstract `#773 <https://github.com/scieloorg/scielo_publishing_schema/issues/773>`_
 * Retirada de restrição para Editorial em Regras Específicas para SciELO Brasil `#782 <https://github.com/scieloorg/scielo_publishing_schema/issues/782>`_
-* Adicionado restrição de uso para texto de licença em :ref:`elemento-license-p` `#789 <https://github.com/scieloorg/scielo_publishing_schema/issues/789>`_
+* Adicionado restrição de uso para texto de licença em ``license-p`` `#789 <https://github.com/scieloorg/scielo_publishing_schema/issues/789>`_
 * Adicionado suporte para DOI em tradução de artigo em :ref:`elemento-sub-article` `#175 <https://github.com/scieloorg/scielo_publishing_schema/issues/175>`_
 * Retirado o suporte para a `DTD 1.0 <https://jats.nlm.nih.gov/publishing/tag-library/1.0/>`_ `#792 <https://github.com/scieloorg/scielo_publishing_schema/issues/792>`_
 * Adicionado tipo “data” para referência em :ref:`elemento-element-citation` `#775 <https://github.com/scieloorg/scielo_publishing_schema/issues/775>`_
