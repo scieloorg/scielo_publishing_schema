@@ -95,13 +95,13 @@ Equação codificada em LaTeX:
             \usepackage{amssymb}
             \usepackage{amsbsy}
             \usepackage[mathscr]{eucal}
-            \usepackage{mathrsfs}                           
+            \usepackage{mathrsfs}
             \usepackage{pmc}
             \usepackage[Euler]{upgreek}
             \pagestyle{empty}
             \oddsidemargin -1.0in
             \begin{document}
-            \[E_it=α_i+Z_it γ+W_it δ+C_it θ+∑_i^n EFind_i+∑_t^n EFtemp_t+ ε_it                                 \]
+            \[E_it=α_i+Z_it γ+W_it δ+C_it θ+∑_i^n EFind_i+∑_t^n EFtemp_t+ ε_it \]
             \end{document}
         </tex-math>
     </disp-formula>
@@ -111,5 +111,7 @@ Equação codificada em LaTeX:
 
 
 
-.. note:: Equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto.
+.. note:: 
+ * Recomenda-se também o uso das equações e fórmulas em formato .svg utilizando :ref:`elemento-alternatives`.
+ * Equações que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto.
 

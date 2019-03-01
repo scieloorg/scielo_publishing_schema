@@ -115,6 +115,7 @@ Contudo o tipo só será definido caso o :ref:`elemento-label` apresente um cont
         <caption>
             <title>Título do Mapa<title>
         </caption>
+        <graphic xlink:href="1234-5678-zwy-12-04-0123-gf01.tif"/>
     </fig>
     ...
 

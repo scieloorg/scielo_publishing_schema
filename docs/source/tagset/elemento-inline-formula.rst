@@ -46,6 +46,37 @@ Exemplo para codificar σˆ2* usando *MathML*:
             </mml:mrow>
         </mml:math>
     </inline-formula>
-    Nulla quis leo sed turpis congue finibus feugiat ut dui. Donec id tincidunt tellus. Nunc fermentum dolor et congue convallis. <p/>
+    Nulla quis leo sed turpis congue finibus feugiat ut dui. Donec id tincidunt tellus. Nunc fermentum dolor et congue convallis.<p/>
     ...
 
+Exemplo em Latex:
+
+.. code-block:: xml
+
+   ...
+    <p>Nulla velit magna, semper quis dignissim id, condimentum nec diam
+    <inline-formula>
+     <tex-math>
+        \documentclass {article}
+        \usepackage{wasysym}
+        \usepackage[substack]{amsmath}
+        \usepackage{amsfonts}
+        \usepackage{amssymb}
+        \usepackage{amsbsy}
+        \usepackage[mathscr]{eucal}
+        \usepackage{mathrsfs}
+        \usepackage{pmc}
+        \usepackage[Euler]{upgreek}
+        \pagestyle{empty}
+        \oddsidemargin -1.0in
+        \begin{document}
+        \( ( VPL_0 = FC_1 / ( k-g )  \)
+        \end{document}
+     </tex-math>
+    </inline-formula>
+    Nulla quis leo sed turpis congue finibus feugiat ut dui. Donec id tincidunt tellus. Nunc fermentum dolor et congue convallis.<p/>
+    ...
+
+.. note:: 
+ * Recomenda-se também o uso das equações e fórmulas em formato .svg utilizando :ref:`elemento-alternatives`.
+ 
