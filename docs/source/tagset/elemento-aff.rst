@@ -41,8 +41,8 @@ Exemplo:
         <institution content-type="orgdiv1">Escola Nacional de Saúde Pública Sérgio Arouca</institution>
         <institution content-type="orgdiv2">Centro de Estudos da Saúde do Trabalhador e Ecologia Humana</institution>
         <addr-line>
-            <named-content content-type="city">Manguinhos</named-content>
-            <named-content content-type="state">RJ</named-content>
+            <city>Manguinhos</city>
+            <state>RJ</state>
         </addr-line>
         <country country="BR">Brasil</country>
         <email>maurosilva@foo.com</email>

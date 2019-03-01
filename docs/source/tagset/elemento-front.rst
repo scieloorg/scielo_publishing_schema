@@ -79,7 +79,7 @@ Exemplo:
                        <institution content-type="orgdiv1">Faculdade de Ciência</institution>
                        <addr-line>
                             <city>Parnaíba</city>
-                            <state>PI</state
+                            <state>PI</state>
                        </addr-line>
                        <country country="BR">Brazil</country>
                   </aff>

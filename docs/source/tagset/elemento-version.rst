@@ -25,7 +25,7 @@ Exemplo:
         <version>Version 2.5</version>
         <publisher-loc>Cary (NC)</publisher-loc>
         <publisher-name>The Dialog Corporation</publisher-name>
-        <year>c1997 -  </year>
+        <year>c1997</year>
         <date-in-citation>cited 2007 Feb 1</date-in-citation>
         <comment>Available from:
         <ext-link ext-link-type="uri" xlink:href="http://www.dialogweb.com/">http://www.dialogweb.com/</ext-link>.
