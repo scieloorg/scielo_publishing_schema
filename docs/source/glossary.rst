@@ -131,7 +131,7 @@ Glossário
      Acrônimo de *National Information Standards Organization* (Organização Nacional de Normas de Informação). É uma associação sem fins lucrativos, acreditada pelo *ANSI* (*American National Standards Institute*), que identifica, desenvolve, mantém e publica normas técnicas para gerenciar informação no ambiente digital da atualidade em constante transformação. Para maiores informações ver `NISO site <http://www.niso.org/home/>`_.
 
 
-   NISO JATS Journal Publishing DTD
+   NISO JATS Journal Publishing
      Coleção de elementos e atributos definidos em formato *XML*, conformando a norma *NISO Z39.96-2015*, que permite descrever através de marcação três modelos de artigos de periódicos. Para maiores informações ver `JATS: Journal Publishing Tag Set <http://jats.nlm.nih.gov/publishing/>`_.
 
 
@@ -196,7 +196,7 @@ Glossário
 
 
    SciELO Publishing Schema
-     Composta pela especificação: :term:`NISO JATS Journal Publishing DTD`, versão `1.1 <https://jats.nlm.nih.gov/publishing/1.1/>`_. mais o :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
+     Composta pela especificação: :term:`NISO JATS Journal Publishing`, versão `1.1 <https://jats.nlm.nih.gov/publishing/1.1/>`_. mais o :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
 
 
    Seções de primeiro nível

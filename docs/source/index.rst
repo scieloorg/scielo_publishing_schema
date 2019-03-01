@@ -142,10 +142,10 @@ Na descrição dos elementos, devem obrigatoriamente aparecer os seguintes itens
 
 7. Nota(s). (se necessário)
 
-.. note:: A especificação :term:`NISO JATS Journal Publishing DTD` deve ser consultada sempre que houver dúvida em relação a contextualização de elementos.
+.. note:: A especificação :term:`NISO JATS Journal Publishing` deve ser consultada sempre que houver dúvida em relação a contextualização de elementos.
 
 Documentação narrativa
-----------------------
+----------------------          
 
 .. toctree::
    :maxdepth: 2

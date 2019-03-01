@@ -35,7 +35,6 @@ Exemplos:
 
   * :ref:`elemento-dispmath-exemplo-1`
   * :ref:`elemento-displatex-exemplo-2`
-  * :ref:`elemento-dispimg-exemplo-3`
 
 .. _elemento-dispmath-exemplo-1:
 
@@ -109,18 +108,6 @@ Equação codificada em LaTeX:
     ...
 
 .. _elemento-dispimg-exemplo-3:
-
-Equação em imagem:
-------------------
-
-.. code-block:: xml
-
-    ...
-    <p>The Eh measurements were recalculated to the standard hydrogen potential (Standard Hydrogen Electrode - SHE), using the following <xref ref-type="disp-formula" rid="e1">equation 1</xref>(in mV):</p>
-    <disp-formula id="e1">
-        <graphic xlink:href="1234-5678-rctb-45-05-0110-e01.tif"/>
-    </disp-formula>
-    ...
 
 
 
