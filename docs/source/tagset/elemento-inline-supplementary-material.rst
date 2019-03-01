@@ -44,7 +44,7 @@ Os atributos obrigatórios são:
 
 
 Exemplo de <inline-supplementary-material> envolvendo texto:
------------------------------------------------------------
+-------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -54,8 +54,8 @@ Exemplo de <inline-supplementary-material> envolvendo texto:
 .. _elemento-inlinesm-exemplo-2:
 
 
-Exemplo de<inline-supplementary-material> sem texto:
----------------------------------------------------
+Exemplo de <inline-supplementary-material> sem texto:
+------------------------------------------------------
 
 .. code-block:: xml
 
