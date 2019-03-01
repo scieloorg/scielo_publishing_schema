@@ -27,7 +27,7 @@ Exemplo:
     <element-citation publication-type="book">
          <publisher-name>Guanabara Koogan</publisher-name>
          <year>1997</year>
-         <size units="pages">2647 p</size>
+         <size units="pages">2647</size>
     </element-citation>
     ...
 

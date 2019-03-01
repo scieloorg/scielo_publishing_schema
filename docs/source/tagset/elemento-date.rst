@@ -62,6 +62,11 @@ Exemplo:
                 <month>05</month>
                 <year>2014</year>
             </date>
+            <date date-type="preprint">
+                <day>21</day>
+                <month>09</month>
+                <year>2012</year>
+            </date>
         </history>
         ...
     </article-meta>

@@ -48,7 +48,7 @@ Exemplo:
     ...
 
 .. note::
-  * Utilizar *AACR2* - *Código de Catalogação Anglo Americano* e/ou *Currículo Lattes* dos autores e avaliar formas de entrada autorizadas para nomes.
+  * Utilizar *AACR2* - *Código de Catalogação Anglo Americano*, *Registro de ORCID* e/ou *Currículo Lattes* dos autores e avaliar formas de entrada autorizadas para nomes.
   * Outros tipos de contribuidores como tradutor, ilustrador, assistente de pesquisa, editor etc, devem ser identificados em :ref:`elemento-author-notes`, com :ref:`elemento-fn` e ``@fn-type ="other"``, para editor do artigo ou fascículo usar ``@fn-type ="edited-by"``.
 
 
