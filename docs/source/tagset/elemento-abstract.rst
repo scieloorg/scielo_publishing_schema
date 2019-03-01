@@ -13,7 +13,7 @@
 
 Elemento que identifica o resumo de um artigo. Não deve conter o atributo ``@xml:lang``. Embora ``<abstract>`` possa não ocorrer, faz-se obrigatório quando :ref:`elemento-article` for declarado com atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
 
-Opcionalmente, além do resumo tradicional, pode-se utilizar um Resumo Visual (Visual Abstract). Para este caso declarar em ``<abstract>`` o atributo ``@abstract-type="graphical"``.
+Opcionalmente, além do resumo tradicional, pode-se utilizar um Resumo Visual (Visual Abstract). Para este caso declarar em ``<abstract>`` o atributo ``@abstract-type="graphical"`` com atributo ``@xml:lang``.
 
 
 ``<abstract>`` contém obrigatoriamente um elemento ``<title>`` que especifica o título do resumo.
@@ -59,13 +59,13 @@ Opcionalmente, além do resumo tradicional, pode-se utilizar um Resumo Visual (V
       </article-meta>
       ...
 
-* Resumo Visual (Visual Abstract): Imagem que reperesenta o texto do resumo de um artigo.
+* Resumo Visual (Visual Abstract): Imagem que representa o texto do resumo de um artigo.
 
 
   .. code-block:: xml
 
       ...
-      <abstract abstract-type="graphical">
+      <abstract abstract-type="graphical" xml:lang="en">
           <fig id="vf01">                
             <label>Visual Abstract</label>                
                <caption>
