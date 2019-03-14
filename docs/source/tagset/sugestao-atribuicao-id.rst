@@ -47,6 +47,8 @@ Para a composição do ``@id``, deve-se combinar o prefixo do tipo de elemento c
 +------------------------+---------------------------+---------+---------------------+
 | table-wrap             | Tabela                    | t       | t1, t2, ...         |
 +------------------------+---------------------------+---------+---------------------+
-
+| abstract abstract-type | Resumo Visual             | vs      | vs01 ...            |
+|  ="graphical"          | (Visual Abstract)         |         |                     |
++------------------------+---------------------------+---------+---------------------+
 
 .. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}

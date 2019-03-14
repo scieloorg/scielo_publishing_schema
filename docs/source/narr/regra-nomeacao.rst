@@ -249,6 +249,7 @@ Exemplos:
     * :ref:`elemento-nomeia-arquivo-exemplo-7`
     * :ref:`elemento-nomeia-arquivo-exemplo-8`
     * :ref:`elemento-nomeia-arquivo-exemplo-9`
+    * :ref:`elemento-nomeia-arquivo-exemplo-10`
 
 
 .. _elemento-nomeia-arquivo-exemplo-1:
@@ -389,6 +390,23 @@ Exemplo:
     ``0124-4567-scie-41-01-e234``
 
 
+.. _elemento-nomeia-arquivo-exemplo-10:
+
+Regra para arquivo traduzido
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Regra:
+
+    ``ISSN-acrônimo-volume-número-elocation-idioma``
+
+Exemplo:
+
+    ``0124-4567-scie-41-01-e234-pt``
+
+.. note:: Não acrescente informação de idioma nos documentos do idioma original, apenas nas suas taraduções, sendo:
+  -pt para português
+  -es para espanhol
+  -en para inglês
 
 
 .. _elemento-regra-exemplo-3:
