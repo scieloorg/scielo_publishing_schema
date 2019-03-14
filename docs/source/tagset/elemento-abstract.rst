@@ -66,13 +66,15 @@ Opcionalmente, além do resumo tradicional, pode-se utilizar um Resumo Visual (V
 
       ...
       <abstract abstract-type="graphical" xml:lang="en">
-          <fig id="vf01">                
-            <label>Visual Abstract</label>                
+        <title>Visual Abstract</title>
+          <p>
+            <fig id="vf01">                 
                <caption>
-                  <title>Título<title>  
+                  <title>Título</title>  
                </caption>  
-               <graphic xlink:href="1234-5678-zwy-12-04-0123-v01.tif"/>                 
-          </fig>
+               <graphic xlink:href="1234-5678-zwy-12-04-0123-vs01.tif"/>                 
+            </fig>
+          </p>  
       </abstract>
       ...
 
