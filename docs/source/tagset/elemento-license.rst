@@ -3,8 +3,6 @@
 <license>
 =========
 
-Este elemento possui :ref:`scielo-brasil`
-
 
 Atributos obrigatórios:
 
