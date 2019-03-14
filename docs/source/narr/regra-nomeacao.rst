@@ -403,10 +403,10 @@ Exemplo:
 
     ``0124-4567-scie-41-01-e234-pt``
 
-.. note:: Não acrescente informação de idioma nos documentos do idioma original, apenas nas suas taraduções, sendo:
-  -pt para português
-  -es para espanhol
-  -en para inglês
+.. note:: Não acrescente informação de idioma nos documentos do idioma original, apenas nas suas traduções, sendo:
+  -pt para português,
+  -es para espanhol e
+  -en para inglês.
 
 
 .. _elemento-regra-exemplo-3:
