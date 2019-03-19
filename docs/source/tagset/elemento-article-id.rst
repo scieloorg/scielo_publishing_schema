@@ -10,13 +10,13 @@ Atributos obrigatórios:
 
   1. ``@pub-id-type``
 
-+------------------------------+-------------------+
-| Aparece em                   | Ocorre            |
-+==============================+===================+
-| :ref:`elemento-article-meta` | Uma ou mais vezes |
-+------------------------------+-------------------+
-| :ref:`elemento-front-stub`   | Uma ou mais vezes |
-+------------------------------+-------------------+
++------------------------------+--------------------+
+| Aparece em                   | Ocorre             |
++==============================+====================+
+| :ref:`elemento-article-meta` | Uma ou mais vezes  |
++------------------------------+--------------------+
+| :ref:`elemento-front-stub`   | Zero ou mais vezes |
++------------------------------+--------------------+
 
 
 Identificador único do artigo em uma base de dados.
