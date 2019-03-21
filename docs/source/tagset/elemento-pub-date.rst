@@ -6,8 +6,8 @@
 
 Atributos obrigatórios:
 
-  1. ``@date-type``
-  2. ``@publication-format``
+  1. ``@date-type="pub"``
+  2. ``@publication-format="electronic"``
 
 +------------------------------+-------------------+
 | Aparece em                   | Ocorre            |
@@ -19,7 +19,7 @@ Atributos obrigatórios:
 Representam as datas de publicação do artigo/número.
 
 
-O :ref:`elemento-pub-date` deve estar acompanhado do atributo ``@date-type``, do tipo "pub" e "collection" quando necessário e do atributo ``@publication-format`` obrigatoriemante com valor "electronic" sendo: 
+O :ref:`elemento-pub-date` deve estar acompanhado do atributo ``@date-type`` dos tipos "pub" e "collection", quando necessário, e do atributo ``@publication-format``, obrigatoriamente com valor "electronic" sendo: 
 
 
 +---------------+---------------------------------------------+------------------------------------+
@@ -106,6 +106,6 @@ Exemplo de ``<pub-date>`` em modalidade `ahead of print (AOP) <http://www.scielo
 
 
 .. note::
- * Para datas do tipo pub, criar as tags :ref:`elemento-day` e :ref:`elemento-month` com informação 00 para que seja alterada posteriormente com a data efetiva da publicação pela unidade de produção.
- * Para datas do tipo collection, sempre preencher a data ao qual o fascículo pertence, seguindo sua periodicidade.
- * Para revistas que adotam `publicação contínua (PC) <http://www.scielo.org/local/Image/guiarpass.pdf>`_, só considerar o ano ao qual o fascículo pertence para data do tipo collection.
+ * Para datas do tipo "pub", criar as tags :ref:`elemento-day` e :ref:`elemento-month` com informação 00 ou qualquer outra data para que seja alterada posteriormente com a data efetiva da publicação pela unidade de produção SciELO.
+ * Para datas do tipo "collection", sempre preencher a data a qual o fascículo pertence, seguindo sua periodicidade.
+ * Para revistas que adotam `publicação contínua (PC) <http://www.scielo.org/local/Image/guiarpass.pdf>`_, só considerar o ano a qual o fascículo pertence para data do tipo "collection".
