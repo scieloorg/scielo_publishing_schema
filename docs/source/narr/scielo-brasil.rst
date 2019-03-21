@@ -18,8 +18,7 @@ elementos apresentam regras específicas de uso:
   * :ref:`elemento-scibrasil-xref`
   * :ref:`elemento-scibrasil-ref-list`
   * :ref:`elemento-scibrasil-country`
-  * :ref:`elemento-scibrasil-product`  
-  * :ref:`elemento-scibrasil-pub-date`
+  * :ref:`elemento-scibrasil-product`    
 
 
 .. _elemento-scibrasil-article-id:
@@ -143,104 +142,4 @@ Este elemento em :ref:`elemento-aff` é obrigatório para SciELO Brasil e deve o
 ^^^^^^^^^
 
 :ref:`elemento-product` contém informações de produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
-
-
-.. _elemento-scibrasil-pub-date:
-
-<pub-date>
-^^^^^^^^^^
-
-``<pub-date>`` deve estar acompanhada do atributo ``@pub-type``, do tipo ``scielo`` e ``collection`` quando necessário, sendo: 
-
-
-+---------------+---------------------------------------------+------------------------------------+
-| ``@pub-type`` | Descrição                                   | Tipos de Datas                     |
-+===============+=============================================+====================================+
-|    scielo     | Data efetiva de publicação em SciELO.       | dia + mês + ano                    |
-+---------------+---------------------------------------------+------------------------------------+
-|  collection   | Data do fascículo ao qual pertence o artigo.| ano OU; mês + ano OU; season + ano.|
-+---------------+---------------------------------------------+------------------------------------+
-
-Exemplos:
-
-    * :ref:`elemento-pubdate-exemplo-1`
-    * :ref:`elemento-pubdate-exemplo-2`
-    * :ref:`elemento-pubdate-exemplo-3`
-    * :ref:`elemento-pubdate-exemplo-4`
-
-    
-.. _elemento-pubdate-exemplo-1: 
-
-Exemplo de ``<pub-date>`` em publicação regular 1:
---------------------------------------------------
-
-.. code-block:: xml
-
-    <pub-date pub-type="scielo">
-       <day>01</day>
-       <month>01</month>
-       <year>2018</year>
-    </pub-date>
-     <pub-date pub-type="collection">
-       <season>Jan-Feb</season>
-       <year>2018</year>
-    </pub-date>
-
-
-.. _elemento-pubdate-exemplo-2: 
-
-Exemplo de ``<pub-date>`` em publicação regular 2:
---------------------------------------------------
-
-.. code-block:: xml
-
-    <pub-date pub-type="scielo">
-       <day>01</day>
-       <month>01</month>
-       <year>2018</year>
-    </pub-date>
-     <pub-date pub-type="collection">
-       <month>01</month>
-       <year>2018</year>
-    </pub-date>
-
-
-.. _elemento-pubdate-exemplo-3: 
-
-Exemplo de ``<pub-date>`` em modalidade de `publicação contínua (PC) <http://www.scielo.org/local/Image/guiarpass.pdf>`_
--------------------------------------------------------------------------------------------------------------------------
-
-.. code-block:: xml
-
-    <pub-date pub-type="scielo">
-       <day>01</day>
-       <month>12</month>
-       <year>2018</year>
-    </pub-date>
-     <pub-date pub-type="collection">      
-       <year>2019</year>
-    </pub-date>
-
-
-.. _elemento-pubdate-exemplo-4:
-
-Exemplo de ``<pub-date>`` em modalidade `ahead of print (AOP) <http://www.scielo.org/local/File/Guia_AOP.pdf>`_
-----------------------------------------------------------------------------------------------------------------
-
-.. code-block:: xml
-
-    <pub-date pub-type="scielo">
-       <day>17</day>
-       <month>02</month>
-       <year>2019</year>
-    </pub-date>
-
-
-.. note::
- * Para datas do tipo scielo, criar as tags :ref:`elemento-day` e :ref:`elemento-month` com informação 00 para que seja alterada posteriormente com a data efetiva da publicação pela unidade de produção.
- * Para datas do tipo collection, sempre preencher a data ao qual o fascículo pertence, seguindo sua periodicidade.
- * Para revistas que adotam `publicação contínua (PC) <http://www.scielo.org/local/Image/guiarpass.pdf>`_, só considerar o ano ao qual o fascículo pertence para data do tipo collection.
-
-
-
 
