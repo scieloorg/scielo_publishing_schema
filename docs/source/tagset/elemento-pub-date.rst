@@ -19,7 +19,7 @@ Atributos obrigatórios:
 Representam as datas de publicação do artigo/número.
 
 
-O :ref:`elemento-pub-date` deve estar acompanhada do atributo ``@date-type``, do tipo "pub" e "collection" quando necessário e do atributo ``@publication-format`` obrigatoriemante com valor "electronic" sendo: 
+O :ref:`elemento-pub-date` deve estar acompanhado do atributo ``@date-type``, do tipo "pub" e "collection" quando necessário e do atributo ``@publication-format`` obrigatoriemante com valor "electronic" sendo: 
 
 
 +---------------+---------------------------------------------+------------------------------------+
