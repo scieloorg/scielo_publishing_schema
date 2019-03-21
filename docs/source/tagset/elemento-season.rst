@@ -56,9 +56,9 @@ Exemplo de ``<season>`` como intervalo de meses:
         ...
         <article-meta>
             ...
-            <pub-date pub-type="epub">
-                <season>Nov-Dec</season>
-                <year>2013</year>
+            <pub-date publication-format="electronic" date-type="collection">
+              <season>Jan-Feb</season>
+              <year>2018</year>
             </pub-date>
             ...
         </article-meta>

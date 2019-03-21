@@ -42,11 +42,11 @@ Exemplo de ``<month>`` em ``<pub-date>``:
 .. code-block:: xml
 
    ...
-   <pub-date pub-type="scielo">
-        <day>01</day>
-        <month>06</month>
-        <year>2016</year>
-   </pub-date>
+   <pub-date publication-format="electronic" date-type="pub">
+       <day>01</day>
+       <month>01</month>
+       <year>2019</year>
+    </pub-date>
    ...
 
 .. _elemento-month-exemplo-2:
@@ -60,7 +60,7 @@ Exemplo de ``<month>`` em ``<date>`` de ``<history>``:
    <date date-type="received">
         <day>20</day>
         <month>10</month>
-        <year>2014</year>
+        <year>2018</year>
    </date>
    ...
 

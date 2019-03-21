@@ -36,10 +36,12 @@ Exemplo de ``<year>`` em ``<article-meta>``:
 	...
 	<article-meta>
    	...
-   		<pub-date pub-type="epub-ppub">
-    		<season>Apr-Jun</season>
-      		<year>2016</year>
-   		</pub-date>
+   		<pub-date publication-format="electronic" date-type="pub">
+        <day>01</day>
+        <month>12</month>
+        <year>2018</year>
+      </pub-date>
+    ...
 	</article-meta>
 	...
 

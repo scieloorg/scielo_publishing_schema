@@ -57,6 +57,7 @@ Exemplo:
                              <given-names>Bellatrix</given-names>
                        </name>
                        <xref ref-type="aff" rid="aff1">1</xref>
+                       <xref ref-type="corresp" rid="c1">*</xref>
                   </contrib>
                   <contrib contrib-type="author">
                        <name>
@@ -85,17 +86,18 @@ Exemplo:
                   </aff>
              </contrib-group>
              <author-notes>
-                  <corresp id="c1">Correspondence to:  Minerva McGonagall Rua Beco Diagonal 2076 - Ininga CEP: 12345-000 Teresina, PI, E-mail: <email>mcgonagall@nimbus2000.com</email>
+                  <corresp id="c1">
+                  <label>*</label>Correspondence to:  Minerva McGonagall Rua Beco Diagonal 2076 - Ininga CEP: 12345-000 Teresina, PI, E-mail: <email>mcgonagall@nimbus2000.com</email>
                   </corresp>
              </author-notes>
-             <pub-date pub-type="scielo">
-                  <day>10</day>
-                  <month>10</month>
-                  <year>2015</year>
+             <pub-date publication-format="electronic" date-type="pub">
+                 <day>01</day>
+                 <month>01</month>
+                 <year>2019</year>
              </pub-date>
-             <pub-date pub-type="collection">
-                  <season>Oct-Dec</season>
-                  <year>2015</year>
+             <pub-date publication-format="electronic" date-type="collection">
+                 <season>Jan-Feb</season>
+                 <year>2019</year>
              </pub-date>
              <volume>14</volume>
              <issue>04</issue>
