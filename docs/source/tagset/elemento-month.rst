@@ -85,4 +85,4 @@ Exemplo de ``<month>`` em ``<element-citation>``:
    </element-citation>
    ...
 
-.. note:: Este elemento é obrigatório em :ref:`elemento-pub-date` com atributo ``@date-type`` com valor "pub" e em em :ref:`elemento-date` com atributo ``@date-type`` com valor "received" e "accepted".
+.. note:: Este elemento é obrigatório em :ref:`elemento-pub-date` com atributo ``@date-type`` com valor "pub" e em :ref:`elemento-date` com atributo ``@date-type`` com valor "received" e "accepted".
