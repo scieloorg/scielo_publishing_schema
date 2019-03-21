@@ -88,7 +88,7 @@ Equação codificada em LaTeX:
     <disp-formula id="e10">
         <label>(1)</label>
         <tex-math id="tx1">
-            \documentclass {article}
+            \documentclass{article}
             \usepackage{wasysym}
             \usepackage[substack]{amsmath}
             \usepackage{amsfonts}
