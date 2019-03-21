@@ -74,7 +74,7 @@ Exemplo:
 
 
 .. note:: 
- * ``<date>`` deve conter obrigatoriamente o elemento :ref:`elemento-year`.
+ * Em ``<date>`` deve conter obrigatoriamente o elemento :ref:`elemento-year`.
  * @date-type com os valores "received" e "accepted" obrigatoriamente devem ter suas datas completas considerando :ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`. Para mais informações consultar `Comunicado SciELO <https://us4.campaign-archive.com/?u=f26dcf71797dd37381acb4aa5&id=2a6634a845>`_ e `Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_  
 
 
