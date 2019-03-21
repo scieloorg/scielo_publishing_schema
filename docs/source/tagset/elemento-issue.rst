@@ -214,4 +214,4 @@ Refere-se a um número em uma referência
     ...
 
 
-.. note:: Se o periódico publicar mais de um suplemento ou número especial por ano, recomenda-se publicar informando a numeração do suplemento ou número especial (exemplos 2). Se apenas publicar um ao ano, não informe numeração no suplemento ou número especial (exemplos 1).
+.. note:: Se o periódico publicar mais de um suplemento ou número especial por ano, recomenda-se publicar informando a numeração do suplemento ou número especial (exemplo 2). Se apenas publicar um ao ano, não informe numeração no suplemento ou número especial (exemplo 1).

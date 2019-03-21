@@ -31,5 +31,7 @@ Exemplo:
     <day>12</day>
     ...
 
+.. note:: Este elemento é obrigatório em :ref:`elemento-pub-date` com atributo ``@date-type`` com valor "pub" e em em :ref:`elemento-date` com atributo ``@date-type`` com valor "received" e "accepted".
+
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
