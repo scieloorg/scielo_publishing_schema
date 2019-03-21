@@ -52,7 +52,10 @@ Contém os metadados do artigo, cujos elementos básicos são:
 
 
 
-.. note:: Os itens identificados com asterisco devem ser inseridos no :term:`documento` somente se aplicável.
+.. note:: 
+ * Os itens identificados com asterisco devem ser inseridos no :term:`documento` somente se aplicável.
+ * Artigos publicados na modalidade Ahead of Print (AOP), excepcionalmente não possuem informação de paginação. Para mais informações consulte Tipos Especiais de Documentos :ref:`ahead-of-print`.
+ * Erratas e Retratações também possuem particularidades em sua publicação. Para mais informações consulte Tipos Especiais de Documentos :ref:`errata`, `Guia para o registro e publicação de Errata <http://www.scielo.org/local/File/Guia_para_o_registro_e_publicacao_de_Errata.pdf>`_ e :ref:`retratacao`, `Guia para o registro e publicação de retratação <http://www.scielo.org/local/File/Guia%20para%20o%20registro%20e%20publica%C3%A7%C3%A3o%20de%20retrata%C3%A7%C3%A3o.pdf>`_ .
 
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}

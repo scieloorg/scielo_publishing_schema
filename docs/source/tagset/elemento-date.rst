@@ -14,10 +14,10 @@ Atributos obrigatórios:
 +-------------------------+-------------------+
 
 
+ Usa-se o atributo ``@date-type`` para especificar o tipo da ação envolvida.
 
-``<date>`` deve conter obrigatoriamente o elemento :ref:`elemento-year`. Usa-se o atributo ``@date-type`` para especificar o tipo da ação envolvida.
 
-Os valores possíveis para o atributo ``@date-type`` são:
+ Os valores possíveis para o atributo ``@date-type`` em :ref:`elemento-history`são:
 
 +-------------+------------------------------------------------+
 | Valor       | Descrição                                      |
@@ -71,6 +71,12 @@ Exemplo:
         ...
     </article-meta>
     ...
+
+
+.. note:: 
+ * ``<date>`` deve conter obrigatoriamente o elemento :ref:`elemento-year`.
+ * @date-type com os valores "received" e "accepted" obrigatoriamente devem ter suas datas completas considerando :ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`. Para mais informações consultar `Comunicado SciELO <https://us4.campaign-archive.com/?u=f26dcf71797dd37381acb4aa5&id=2a6634a845>`_ e `Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_  
+
 
 
 .. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

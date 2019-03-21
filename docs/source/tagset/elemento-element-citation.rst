@@ -577,11 +577,11 @@ Exemplos:
     <ref id="B03">
         <label>3</label>
             <element-citation publication-type="data">
-                <person-group person-group-type="author">
-                    <name>
+                   <person-group person-group-type="author">
+                      <name>
                         <surname>ANDRADE</surname>
                         <given-names>Márcio</given-names>
-                    </name>                        
+                      </name>                        
                     </person-group>                   
                     <data-title>Estudos de genes em ratos albinos na América Latina</data-title>            
                     <year>2018</year>
@@ -591,7 +591,9 @@ Exemplos:
     </ref>
 
 
- ..note:: Para mais informações consulte `Guia de citação de dados de pesquisa SciELO <http://www.scielo.org/local/File/Guia_de_citacao_de_dados.pdf>`_ e `Data citation da JATS4R <http://jats4r.org/data-citations>`_
+.. note:: Para mais informações consulte `Guia de citação de dados de pesquisa SciELO <http://www.scielo.org/local/File/Guia_de_citacao_de_dados.pdf>`_ e `Data citation da JATS4R <http://jats4r.org/data-citations>`_.
+
+
 
 
 
