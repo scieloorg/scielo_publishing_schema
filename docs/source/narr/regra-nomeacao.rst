@@ -1,7 +1,7 @@
 ﻿Regras de Nomeação de Arquivos
 ==============================
 
-Para envio de pacotes XML é necessário seguir as instruções do `Guia de Entrega de Pacote para Publicação em SciELO <http://www.scielo.org/local/File/Entrega_de_Pacote_para_Publicacao.pdf>`_ . Está documentado as seguintes regras de nomeação:
+Para envio de pacotes XML é necessário seguir as instruções do `Guia de Entrega de Pacote para Publicação em SciELO <https://wp.scielo.org/wp-content/uploads/2018/08/Entrega_de_Pacote_para_Publicacao.pdf>`_ . Está documentado as seguintes regras de nomeação:
 
 
     * :ref:`elemento-regra-exemplo-1`
@@ -357,7 +357,7 @@ Exemplo:
     ``0124-4567-scie-S0123-45672018050``
 
 
-.. note:: DOI completo = 10.1590/S0123-45672018050. Mais informações consultar `Orientação para criação e apresentação do DOI <http://www.scielo.org/local/File/Orientacao_para_criacao_e_apresentacao_do_DOI.pdf>`_ .
+.. note:: DOI completo = 10.1590/S0123-45672018050. Mais informações consultar `Orientação para criação e apresentação do DOI <https://wp.scielo.org/wp-content/uploads/2018/08/Orientacao_para_criacao_e_apresentacao_do_DOI.pdf>`_ .
 
 
 

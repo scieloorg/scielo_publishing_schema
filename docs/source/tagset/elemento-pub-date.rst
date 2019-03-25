@@ -76,8 +76,8 @@ Exemplo de ``<pub-date>`` em publicação regular 2:
 
 .. _elemento-pubdate-exemplo-3: 
 
-Exemplo de ``<pub-date>`` em modalidade de `publicação contínua (PC) <http://www.scielo.org/local/Image/guiarpass.pdf>`_
--------------------------------------------------------------------------------------------------------------------------
+Exemplo de ``<pub-date>`` em modalidade de `publicação contínua (PC) <https://wp.scielo.org/wp-content/uploads/2018/08/guiarpass.pdf>`_
+----------------------------------------------------------------------------------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -93,8 +93,8 @@ Exemplo de ``<pub-date>`` em modalidade de `publicação contínua (PC) <http://
 
 .. _elemento-pubdate-exemplo-4:
 
-Exemplo de ``<pub-date>`` em modalidade `ahead of print (AOP) <http://www.scielo.org/local/File/Guia_AOP.pdf>`_
-----------------------------------------------------------------------------------------------------------------
+Exemplo de ``<pub-date>`` em modalidade `ahead of print (AOP) <https://wp.scielo.org/wp-content/uploads/2018/08/Guia_AOP.pdf>`_
+---------------------------------------------------------------------------------------------------------------------------------
 
 .. code-block:: xml
 
@@ -108,4 +108,4 @@ Exemplo de ``<pub-date>`` em modalidade `ahead of print (AOP) <http://www.scielo
 .. note::
  * Para datas do tipo "pub", criar as tags :ref:`elemento-day` e :ref:`elemento-month` com informação 00 ou qualquer outra data para que seja alterada posteriormente com a data efetiva da publicação pela unidade de produção SciELO.
  * Para datas do tipo "collection", sempre preencher a data a qual o fascículo pertence, seguindo sua periodicidade.
- * Para revistas que adotam `publicação contínua (PC) <http://www.scielo.org/local/Image/guiarpass.pdf>`_, só considerar o ano a qual o fascículo pertence para data do tipo "collection".
+ * Para revistas que adotam `publicação contínua (PC) <https://wp.scielo.org/wp-content/uploads/2018/08/guiarpass.pdf>`_, só considerar o ano a qual o fascículo pertence para data do tipo "collection".
