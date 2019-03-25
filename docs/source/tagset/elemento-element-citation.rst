@@ -591,7 +591,7 @@ Exemplos:
     </ref>
 
 
-.. note:: Para mais informações consulte `Guia de citação de dados de pesquisa SciELO <http://www.scielo.org/local/File/Guia_de_citacao_de_dados.pdf>`_ e `Data citation da JATS4R <http://jats4r.org/data-citations>`_.
+.. note:: Para mais informações consulte `Guia de citação de dados de pesquisa SciELO <https://wp.scielo.org/wp-content/uploads/2019/03/Guia_de_citacao_de_dados.pdf>`_ e `Data citation da JATS4R <http://jats4r.org/data-citations>`_.
 
 
 
