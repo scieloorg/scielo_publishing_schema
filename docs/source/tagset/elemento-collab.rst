@@ -32,14 +32,7 @@ Exemplo de ``<collab>`` em ``<front>``:
    <contrib-group>
         <contrib contrib-type="author">
              <collab>BFG - The Brazil Flora Group</collab>
-        </contrib>
-        <contrib contrib-type="author">
-             <name>
-                  <surname>Zappi</surname>
-                  <given-names>Daniela C.</given-names>
-             </name>
-             <xref ref-type="corresp" rid="c1">1</xref>
-        </contrib>
+        </contrib>        
    </contrib-group>
    ...
 
