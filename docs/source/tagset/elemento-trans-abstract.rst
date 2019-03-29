@@ -16,7 +16,9 @@ Atributos obrigatórios:
 +------------------------------+--------------------+
 
 
-Contém o resumo traduzido do artigo, podendo apresentar os formatos simples ou estruturado, do mesmo modo que o elemento :ref:`elemento-abstract`. Se existente, deve ser inserido imediatamente após :ref:`elemento-abstract` e, obrigatoriamente, conter o atributo ``@xml:lang``.
+Contém o resumo traduzido do artigo, podendo apresentar os formatos simples ou estruturado, 
+do mesmo modo que o elemento :ref:`elemento-abstract`. Se existente, deve ser inserido 
+imediatamente após :ref:`elemento-abstract` e, obrigatoriamente, conter o atributo ``@xml:lang``.
 
 Em ``<trans-abstract>`` deve ser inserida uma informação de rótulo no elemento ``<title>``.
 
@@ -26,6 +28,7 @@ Exemplos:
 
     * :ref:`elemento-transabstract-exemplo-1`
     * :ref:`elemento-transabstract-exemplo-2`
+    * :ref:`elemento-transabstract-exemplo-3`
 
 
 .. _elemento-transabstract-exemplo-1:
@@ -81,5 +84,33 @@ Exemplo:
     </article-meta>
     ...
 
+
+.. _elemento-transabstract-exemplo-3:
+
+Exemplo de ``<trans-abstract>`` para Resumo Visual:
+---------------------------------------------------
+* Resumo Visual (Visual Abstract): Imagem que representa o texto do resumo de um artigo.
+  Mais informação em :ref:`elemento-abstract`.
+
+
+  .. code-block:: xml
+
+      ...
+      <article-meta>
+          ...
+          <trans-abstract abstract-type="graphical" xml:lang="en">
+              <title>Visual Abstract</title>
+              <p>
+                  <fig id="vf01">                 
+                      <caption>
+                          <title>Some title</title>  
+                      </caption>  
+                      <graphic xlink:href="1234-5678-zwy-12-04-0123-vs01.tif"/>                 
+                  </fig>
+              </p>  
+          </trans-abstract>
+          ...
+      </article-meta>
+      ...
 
 .. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
