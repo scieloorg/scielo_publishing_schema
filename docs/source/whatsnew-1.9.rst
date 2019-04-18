@@ -14,6 +14,7 @@ a versão 1.8.
 * Adicionado tipo data-article para ``@article-type`` `#800 <https://github.com/scieloorg/scielo_publishing_schema/issues/800>`_
 * Retirado suporte para o atributo ``@pub-type`` em :ref:`elemento-pub-date` e retirado o suporte aos valores "epub", "ppub" e ”epub-ppub” `#565 <https://github.com/scieloorg/scielo_publishing_schema/issues/565>`_
 * Adicionada obrigatoriedade do uso de :ref:`elemento-pub-date` com ``@date-type`` "pub" e "collection" (este último exceto para AOP) `#565 <https://github.com/scieloorg/scielo_publishing_schema/issues/565>`_
+* Adicionado em :ref:`elemento-collab` o uso de ``<contrib-group content-type="collab-list">`` `#846 <https://github.com/scieloorg/scielo_publishing_schema/issues/846>`_
 
 
  
