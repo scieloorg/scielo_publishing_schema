@@ -80,8 +80,7 @@ Exemplos:
 
   * :ref:`elemento-xref-exemplo-1`
   * :ref:`elemento-xref-exemplo-2`
-  * :ref:`elemento-xref-exemplo-3`
-  * :ref:`elemento-xref-exemplo-4`
+  * :ref:`elemento-xref-exemplo-3` 
 
 
 .. _elemento-xref-exemplo-1:
@@ -106,8 +105,8 @@ Exemplo de ``<xref>`` em ``<article-meta>``:
                 <label>1</label>
                 <institution content-type="orgname">Universidade do Estado do Amazonas</institution>
                 <addr-line>
-                    <named-content content-type="city">Manaus</named-content>
-                    <named-content content-type="state">AM</named-content>
+                     <city>Manaus</city>
+                     <state>AM</state>
                 </addr-line>
                 <country country="BR">Brasil</country>
                 <institution content-type="original">Universidade do Estado do Amazonas, Manaus, AM, Brasil</institution>
@@ -151,42 +150,6 @@ Exemplo de ``<xref>`` relacionado a objeto no texto:
             <graphic xlink:href="0074-0276-mioc-0074-0276140068-gf01"/>
         </fig>
     </p>
-
-
-
-.. _elemento-xref-exemplo-4:
-
-Exemplo de ``<xref>`` "fechado":
---------------------------------
-
-Para casos em que não há rótulo (``<label>``) explícito relacionando o autor à afiliação, deve ser inserido em :ref:`elemento-contrib` um elemento ``<xref>`` "fechado".
-
-
-.. code-block:: xml
-
-  ...
-  <article-meta>
-    ...
-    <contrib-group>
-      <contrib contrib-type="author">
-        <name>
-            <surname>Broering</surname>
-            <given-names>Laurent Wiliam</given-names>
-        </name>
-        <xref ref-type="aff" rid="aff1"/>
-      </contrib>
-    </contrib-group>
-    <aff id="aff1">
-      <institution content-type="orgname">Fundação Getúlio Vargas</institution>
-      <institution content-type="orgdiv1">EAESP</institution>
-      <addr-line>
-        <named-content content-type="city">São Paulo</named-content>
-        <named-content content-type="state">SP</named-content>
-      </addr-line>
-      <country country="BR">Brazil</country>
-      <institution content-type="original">Fundação Getúlio Vargas - FGV-EAESP, Av. 9 de Julho, 2029, Bela Vista, 01313-902, São Paulo, SP, Brazil.</institution>
-    </aff>
-  ...
 
 
 .. note:: 
