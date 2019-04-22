@@ -12,7 +12,7 @@
 +------------------------------+--------------------+
 
 
-Identifica uma autoria institucional individual ou em grupo. Quando descrito nomes dos colaboradores identifica-los em :ref:`elemento-contrib-group` com ``@content-type="collab-list"``, para estes casos o tipo de contribuição deve ser ``@contrib-type="non-byline-author"``.
+Identifica uma autoria institucional individual ou em grupo. 
 
 
 Exemplos:
@@ -101,7 +101,7 @@ Exemplo de ``<collab>`` em ``<front>`` com duas autorias institucionais:
 
 .. _elemento-collab-exemplo-4:
 
-Exemplo de ``<collab>`` em ``<front>`` com uma autoria institucional e nomes dos colaboradores pertencentes a instituição mais nomes de autores pessoa física, não pertencentes a instituição (autoria mista):
+Exemplo de ``<collab>`` em ``<front>`` com uma autoria institucional e nomes dos colaboradores pertencentes à instituição mais nomes de autores pessoa física, não pertencentes à instituição (autoria mista):
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 .. code-block:: xml
@@ -164,6 +164,10 @@ Exemplo de ``<collab>`` em ``<back>``:
    ...
 
 .. note:: 
- * Independente dos autores pessoa física fazerem parte da autoria institucional ``<collab>``, cada um deles devem possuir afiliação completa. Para mais informações acessar item 5.2.9. Afiliação de autores dos `Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_ 
+   Todos os autores, mesmo os que fazem parte de autoria institucional, devem 
+   contar com a marcação completa da sua afiliação institucional. Para mais 
+   informação consulte o item 5.2.9 do documento de `Critérios, política e 
+   procedimentos para a admissão e a permanência de periódicos científicos na 
+   Coleção SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_ 
 
 .. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
