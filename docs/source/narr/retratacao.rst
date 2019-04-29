@@ -46,6 +46,6 @@ Exemplo:
 .. note:: 
  * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions` ou acima de :ref:`elemento-counts`.
  * O XML do artigo retratado ou parcialmente retratado é alterado pela equipe SciELO. 
- * Mais informações podem ser obtidas no `Guia para o registro e publicação de retratação <http://www.scielo.org/local/File/Guia%20para%20o%20registro%20e%20publica%C3%A7%C3%A3o%20de%20retrata%C3%A7%C3%A3o.pdf>`_.
+ * Mais informações podem ser obtidas no `Guia para o registro e publicação de retratação <https://wp.scielo.org/wp-content/uploads/guia_retratacao.pdf>`_.
 
 
