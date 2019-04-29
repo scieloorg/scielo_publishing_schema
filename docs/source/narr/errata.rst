@@ -76,6 +76,6 @@ Exemplo:
 
 .. note::
  * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions` ou acima de :ref:`elemento-counts`.
- * Mais informações podem ser obtidas no `Guia para o registro e publicação de Errata <http://www.scielo.org/local/File/Guia_para_o_registro_e_publicacao_de_Errata.pdf>`_.
+ * Mais informações podem ser obtidas no `Guia para o registro e publicação de Errata <https://wp.scielo.org/wp-content/uploads/guia_errata.pdf>`_.
 
 
