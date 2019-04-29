@@ -20,7 +20,7 @@ Exemplo:
 
 
     ...
-    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.0" specific-use="sps-1.8" article-type="correction" xml:lang="pt">`
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.9" article-type="correction" xml:lang="pt">`
     ...
         <front>
             <article-meta>
@@ -76,6 +76,6 @@ Exemplo:
 
 .. note::
  * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions` ou acima de :ref:`elemento-counts`.
- * Mais informações podem ser obtidas no `Guia para o registro e publicação de Errata <https://wp.scielo.org/wp-content/uploads/2018/08/Guia_para_o_registro_e_publicacao_de_Errata.pdf>`_.
+ * Mais informações podem ser obtidas no `Guia para o registro e publicação de Errata <https://wp.scielo.org/wp-content/uploads/guia_errata.pdf>`_.
 
 
