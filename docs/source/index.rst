@@ -1,7 +1,7 @@
 Guia de uso de elementos e atributos XML para documentos que seguem a implementação SciELO Publishing Schema.
 =============================================================================================================
 
-Versão 1.8 - março de 2018.
+Versão 1.8.1 - maio de 2019.
 
 
 Versões anteriores:
