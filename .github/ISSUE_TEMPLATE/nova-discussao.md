@@ -1,5 +1,5 @@
 ---
-name: Nova funcionalidade
+name: Nova Discussão
 about: Contribua com novas idéias e necessidades
 title: ''
 labels: feature-request
@@ -7,12 +7,12 @@ assignees: ''
 
 ---
 
-### Descrição da nova funcionalidade
-Eu, como **[tipo de cargo/ usuário / papel em sistema]**, gostaria que **[descrição breve da funcionalidade]**, então **[consequência ou o porque da requisição da atividade]**.
+### Descrição da nova discussão
+Eu, como **[tipo de cargo/ usuário / papel em sistema]**, gostaria que **[descrição breve da demanda]**, então **[consequência ou o porque da requisição da atividade]**.
 
 ### Critérios de aceitação
-
-Lista de critérios a serem observados pela equipe de engenharia durante a elaboração e construção da tarefa. Seja claro(a), descreva os pontos que são importantes para você:
+(Editar)
+Lista de critérios a serem observados pela equipe durante a elaboração e construção da tarefa. Seja claro(a), descreva os pontos que são importantes para você:
 - Ex 1: Fale sobre qual deve ser o comportamento da funcionalidade;
 - Ex 2: Fale sobre quais validações um formulário deve conter;
 - Ex 3: Fale sobre os tipos de impressão uma página deve suportar;
