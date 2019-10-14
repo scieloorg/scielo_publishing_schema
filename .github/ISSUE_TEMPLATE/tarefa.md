@@ -1,8 +1,8 @@
 ---
-name: Tarefa de desenvolvimento
+name: Tarefa
 about: Tarefas definidas pelo próprio time de desenvolvimento
 title: ''
-labels: ''
+labels: 'task'
 assignees: ''
 
 ---
