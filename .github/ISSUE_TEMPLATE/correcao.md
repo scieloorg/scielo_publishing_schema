@@ -1,6 +1,6 @@
 ---
-name: Reportar problema
-about: Reporte um erro ou problema e nos ajude a melhorar nossos produtos
+name: Solicitar correção
+about: Reporte um erro ou problema e nos ajude a melhorar a documentação
 title: ''
 labels: Bug
 assignees: ''
