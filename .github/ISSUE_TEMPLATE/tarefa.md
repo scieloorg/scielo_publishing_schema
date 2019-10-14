@@ -2,7 +2,7 @@
 name: Tarefa
 about: Tarefas definidas pelo próprio time de desenvolvimento
 title: ''
-labels: 'task'
+labels: 'Tarefa'
 assignees: ''
 
 ---
