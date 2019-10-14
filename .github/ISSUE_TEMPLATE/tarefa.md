@@ -18,5 +18,5 @@ Descreva de forma clara e objetiva a tarefa em questão. Por exemplo, estudar as
 
 ## Considerações e notas
 
-* A implementação destas mudanças implica em aumentar o consumo de disco..
+* A implementação destas mudanças implica em ...
 
