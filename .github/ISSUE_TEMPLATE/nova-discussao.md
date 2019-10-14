@@ -2,7 +2,7 @@
 name: Nova Discussão
 about: Contribua com novas idéias e necessidades
 title: ''
-labels: feature-request
+labels: 'Em discussão'
 assignees: ''
 
 ---
