@@ -22,7 +22,7 @@ Especifica o identificador de uma publicação em uma referência bibliográfica
 +==============+===================================================+
 | pmid         | :term:`PubMed` ID                                 |
 +--------------+---------------------------------------------------+
-| pcmid        | :term:`PMC` ID                                    |
+| pmcid        | :term:`PMC` ID                                    |
 +--------------+---------------------------------------------------+
 | doi          | Número DOI registrado no CrossRef                 |
 +--------------+---------------------------------------------------+
