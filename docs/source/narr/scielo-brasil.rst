@@ -18,7 +18,9 @@ elementos apresentam regras específicas de uso:
   * :ref:`elemento-scibrasil-xref`
   * :ref:`elemento-scibrasil-ref-list`
   * :ref:`elemento-scibrasil-country`
-  * :ref:`elemento-scibrasil-product`    
+  * :ref:`elemento-scibrasil-product`
+  * :ref:`elemento-scibrasil-contrib-id`
+
 
 
 .. _elemento-scibrasil-article-id:
@@ -143,3 +145,12 @@ Este elemento em :ref:`elemento-aff` é obrigatório para SciELO Brasil e deve o
 
 :ref:`elemento-product` contém informações de produto resenhado, mas somente deverá ser utilizado quando :ref:`elemento-article` possuir o atributo ``@article-type="book-review"``.
 
+.. _elemento-scibrasil-contrib-id:
+
+<contrib-id>
+^^^^^^^^^^^^
+
+Este elemento em :ref:`elemento-contrib` com o atributo ``@contrib-id-type`` e valor "orcid" é obrigatório para SciELO Brasil em pelo menos um dos autores e deve ocorrer até uma vez para cada autor. 
+
+.. note::
+ Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
