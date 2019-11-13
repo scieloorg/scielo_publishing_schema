@@ -13,3 +13,4 @@ Tipos Especiais de Documentos
 	errata
 	retratacao
 	ensaio-clinico
+	artigo-dados
