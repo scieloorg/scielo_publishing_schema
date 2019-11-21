@@ -41,7 +41,7 @@ Os valores possíveis para ``@fn-type`` são:
 +===========================+==================================================+
 | con                       | Informação de contribuição                       |
 +---------------------------+--------------------------------------------------+
-| conflict                  | Declaração de conflito de interesse              |
+| COI-statement             | Declaração de conflito de interesse              |
 +---------------------------+--------------------------------------------------+
 | current-aff               | Afiliação atual do autor                         |
 +---------------------------+--------------------------------------------------+
@@ -80,7 +80,7 @@ Exemplo:
             <label>*</label>
             <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@foo.com</email>
         </corresp>
-        <fn fn-type="conflict">
+        <fn fn-type="COI-statement">
             <p>Não há conflito de interesse entre os autores do artigo.</p>
         </fn>
         <fn fn-type="equal">
