@@ -21,6 +21,6 @@ Para identificação de um Ensaio Clínico, o elemento :ref:`elemento-ext-link` 
 
 Informações adicionais encontram-se disponíveis nos sites abaixo identificados:
 
-* `Sociedade Brasileira de Profissionais em Pesquisa Clínica <http://www.sbppc.org.br/portal/index.php>`_;
+* `Sociedade Brasileira de Profissionais em Pesquisa Clínica <https://www.sbppc.org.br/home>`_;
 * `Clinical Trials.Gov <https://clinicaltrials.gov/>`_;
 * `NLM's MedlinePlus - Clinical Trials information <https://www.nlm.nih.gov/medlineplus/clinicaltrials.html>`_.
