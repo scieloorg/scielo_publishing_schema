@@ -156,6 +156,7 @@ Documentação narrativa
    narr/regra-nomeacao
    narr/tipos-especiais-documentos
    narr/scielo-brasil
+   narr/taxonomia-credit 
 
    glossary
    reference
