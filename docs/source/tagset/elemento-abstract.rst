@@ -16,8 +16,8 @@ Embora ``<abstract>`` possa não ocorrer, faz-se obrigatório quando :ref:`eleme
 for declarado com atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
 
 Opcionalmente, além do resumo tradicional, pode-se identificar um Resumo Visual (Visual Abstract) ou 
-os Destaques do Artigo (Highlights). Nestes casos, o uso do atributo ``@abstract-type="graphical"`` 
-ou ``@abstract-type="key-points"`` é obrigatório.
+os Destaques do Artigo (Highlights). Nestes casos, devem ser utilizados os atributos ``@abstract-type="graphical"`` 
+e ``@abstract-type="key-points"``, respectivamente.
 
 
 ``<abstract>`` contém obrigatoriamente um elemento ``<title>`` que especifica o título do resumo.
