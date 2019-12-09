@@ -39,9 +39,6 @@ Exemplo:
                     ...
                 </permissions>
                 <related-article related-article-type="corrected-article" id="r01" xlink:href="10.1590/abd1806-4841.20142998" ext-link-type="doi"/>
-                <counts>
-                    ...
-                </counts>
                 ...
             </article-meta>
             ...
@@ -75,7 +72,7 @@ Exemplo:
 
 
 .. note::
- * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions` ou acima de :ref:`elemento-counts`.
+ * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions`.
  * Mais informações podem ser obtidas no `Guia para o registro e publicação de Errata <https://wp.scielo.org/wp-content/uploads/guia_errata.pdf>`_.
 
 
