@@ -21,7 +21,11 @@
 
 
 
-``<role>`` (função ou papel) é usado para especificar o tipo de responsabilidade (ou função) do contribuinte do :term:`artigo`.
+``<role>`` (função ou papel) é usado para especificar o tipo de responsabilidade 
+(ou função) do contribuinte do :term:`artigo`. Recomenda-se o uso da taxonomia 
+CRediT para representar esta informação de maneira a prover maior transparência 
+em relação às contribuições dos autores aos trabalhos científicos. Saiba mais 
+detalhes em :ref:`taxonomia-credit`.
 
 Exemplos:
 
@@ -47,7 +51,7 @@ Exemplo de ``<role>`` em ``<contrib>``:
             <suffix>Junior</suffix>
         </name>
         <xref ref-type="aff" rid="aff02">2</xref>
-        <role>Pesquisador</role>
+        <role content-type="https://dictionary.casrai.org/Contributor_Roles/Investigation">Pesquisador</role>
         ...
     </contrib>
     ...

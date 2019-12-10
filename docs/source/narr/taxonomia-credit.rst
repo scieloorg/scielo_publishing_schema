@@ -1,6 +1,6 @@
 .. _taxonomia-credit:
 
-Contribuição dos autores (taxonomia CrediT)
+Contribuição dos autores (taxonomia CRediT)
 ===========================================
 
 A taxonomia CRediT proporciona uma maneira de representar informação sobre a 
