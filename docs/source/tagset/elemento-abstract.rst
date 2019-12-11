@@ -15,9 +15,9 @@ Elemento que identifica o resumo de um artigo. Não deve conter o atributo ``@xm
 Embora ``<abstract>`` possa não ocorrer, faz-se obrigatório quando :ref:`elemento-article` 
 for declarado com atributo ``@article-type="research-article"`` ou ``@article-type="review-article"``.
 
-Opcionalmente, além do resumo tradicional, pode-se identificar um Resumo Visual 
-(Visual Abstract). Neste caso, o uso do atributo ``@abstract-type="graphical"`` 
-é obrigatório.
+Opcionalmente, além do resumo tradicional, pode-se identificar um Resumo Visual (Visual Abstract) ou 
+os Destaques do Artigo (Highlights). Nestes casos, devem ser utilizados os atributos ``@abstract-type="graphical"`` 
+e ``@abstract-type="key-points"``, respectivamente.
 
 
 ``<abstract>`` contém obrigatoriamente um elemento ``<title>`` que especifica o título do resumo.
@@ -84,5 +84,21 @@ Opcionalmente, além do resumo tradicional, pode-se identificar um Resumo Visual
       ...
 
 .. note:: Para mais informação sobre Resumo Visual, recomendamos leitura do texto `"Use of a VISUAL ABSTRACT to Disseminate Scientific Research <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>`_ de Andrew M. Ibrahim, 2018. 
+
+
+* Destaques do Artigo (Highlights): Palavras que transmitem os resultados principais do artigo. 
+
+
+  .. code-block:: xml
+
+      ...
+      <abstract abstract-type="key-points">
+        <title>HIGHLIGHTS</title>            
+          <p>Nam vitae leo aliquet, pretium ante at, faucibus felis</p>
+          <p>Aliquam ac mauris et libero pulvinar facilisis</p>
+          <p>Fusce aliquam ipsum ut diam luctus porta</p>
+          <p>Ut a erat ac odio placerat convallis</p>
+      </abstract>
+      ...
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
