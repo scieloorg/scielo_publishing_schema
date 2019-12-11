@@ -1,12 +1,13 @@
 Guia de uso de elementos e atributos XML para documentos que seguem a implementação SciELO Publishing Schema.
 =============================================================================================================
 
-Versão 1.9 - março de 2019.
+Versão 1.10 - março de 2020.
 
 
 Versões anteriores:
 
-* `Versão 1.8 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.8-branch/>`_ (suportada).
+* `Versão 1.9 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.9-branch/>`_ (suportada).
+* `Versão 1.8 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.8-branch/>`_
 * `Versão 1.7 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.7-branch/>`_ 
 * `Versão 1.6 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.6-branch/>`_.
 * `Versão 1.5 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.5-branch/>`_.
@@ -40,7 +41,7 @@ Dúvidas e/ou comentários acerca da especificação :term:`SciELO PS`, deste gu
 Notas da versão
 ---------------
 
-As versões são disponibilizadas a cada doze meses em calendário fixo. Versões de correção são disponibilizadas por demanda, sendo identificadas no terceiro dígito da versão. Ex.: versão 1.1.1.
+As versões são disponibilizadas anualmente no primeiro semestre de cada ano. Versões de correção são disponibilizadas por demanda, sendo identificadas no terceiro dígito da versão. Ex.: versão 1.1.1.
 
 Duas versões são suportadas simultaneamente, a atual e a imediatamente anterior. Essa medida garante um ciclo de vida de 2 (dois) anos para cada versão.
 
@@ -48,6 +49,7 @@ Duas versões são suportadas simultaneamente, a atual e a imediatamente anterio
 .. toctree::
    :maxdepth: 1
 
+   whatsnew-1.10
    whatsnew-1.9
    whatsnew-1.8
    whatsnew-1.7
@@ -154,6 +156,7 @@ Documentação narrativa
    narr/regra-nomeacao
    narr/tipos-especiais-documentos
    narr/scielo-brasil
+   narr/taxonomia-credit 
 
    glossary
    reference
@@ -161,7 +164,7 @@ Documentação narrativa
 Lista de elementos
 ------------------
 
-Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A lista completa dos elementos *XML* que compõem o :term:`tag set` da JATS nas versões `1.0 <http://jats.nlm.nih.gov/publishing/1.0/>`_ e `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_ devem ser consultadas se necessário.
+Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A lista completa dos elementos *XML* que compõem o :term:`tag set` da JATS na versão `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_ deve ser consultada se necessário.
 
 .. toctree::
    :maxdepth: 1
