@@ -123,19 +123,18 @@ Os valores possíveis para ``@fn-type`` são:
 | com                     | Representa nota de algum tipo de comunicado      |
 |                         | relevante para a realização do artigo.           |
 +-------------------------+--------------------------------------------------+
-| financial-disclosure    | Declaração de financiamento ou negação e         |
-|                         | aceitação de recursos recebidos em apoio à       |
-|                         | pesquisa na qual um artigo é baseado.            |
-|                         | Presta-se também para informações de             |
-|                         | financiamento que possuem um número de contrato  |
-|                         | ou que só informam se houve ou não financiamento |
-|                         | com "sim" ou "não".                              |
+| financial-disclosure    | Declaração de financiamento e aceitação de       |
+|                         | recursos recebidos em apoio à pesquisa na qual   |
+|                         | um artigo é baseado. Obrigatoriamente usado para |
+|                         | informações de financiamento que possuem um      |
+|                         | número de contrato.                              |
 +-------------------------+--------------------------------------------------+
 | supported-by            | Indica que a pesquisa sobre a qual o artigo é    |
 |                         | baseado foi apoiada por alguma entidade,         |
-|                         | instituição ou pessoa física. Consideram-se neste|
-|                         | tipo, informações de financiamento que não       |
-|                         | possuem número de contrato.                      |
+|                         | instituição ou pessoa física ou que só informam  |
+|                         | se houve ou não financiamento com "sim" ou "não".|
+|                         | Consideram-se neste tipo, informações de         |
+|                         | financiamento que não possuem número de contrato.|                                                 
 +-------------------------+--------------------------------------------------+
 | presented-at            | Indica que o artigo foi apresentado em algum     |
 |                         | evento científico.                               |
@@ -157,7 +156,7 @@ Exemplo:
     <fn-group>
         <fn fn-type="financial-disclosure" id="fn01">
             <label>1</label>
-            <p>Declaração de financiamento: sim</p>
+            <p>Declaração de financiamento: FAPESP Contrato: #12345.</p>
         </fn>
         <fn fn-type="presented-at" id="fn02">
             <label>**</label>
