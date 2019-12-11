@@ -28,7 +28,7 @@ Exemplo:
 	...
 
 
-.. note:: ``<funding-group>`` deve ser inserido antes de :ref:`elemento-counts` ou depois de :ref:`elemento-kwd-group`.
+.. note:: ``<funding-group>`` deve ser inserido depois de :ref:`elemento-kwd-group`.
 
 
 .. {"reviewed_on": "20160625", "by": "gandhalf_thewhite@hotmail.com"}

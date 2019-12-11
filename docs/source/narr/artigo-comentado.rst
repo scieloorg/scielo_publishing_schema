@@ -32,7 +32,7 @@ Exemplo:
     </article>
 
 
-.. note:: ``<related-article>`` deve ser inserido abaixo das informações de ``<permissions>`` ou acima de ``<counts>``.
+.. note:: ``<related-article>`` deve ser inserido abaixo das informações de ``<permissions>``.
 
 
 

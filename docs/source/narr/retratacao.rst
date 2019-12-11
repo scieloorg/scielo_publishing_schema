@@ -44,7 +44,7 @@ Exemplo:
  
  
 .. note:: 
- * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions` ou acima de :ref:`elemento-counts`.
+ * :ref:`elemento-related-article` deve ser inserido abaixo das informações de :ref:`elemento-permissions`.
  * O XML do artigo retratado ou parcialmente retratado é alterado pela equipe SciELO. 
  * Mais informações podem ser obtidas no `Guia para o registro e publicação de retratação <https://wp.scielo.org/wp-content/uploads/guia_retratacao.pdf>`_.
 
