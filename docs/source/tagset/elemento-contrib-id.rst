@@ -3,6 +3,8 @@
 <contrib-id>
 ============
 
+Este elemento possui :ref:`scielo-brasil`.
+
 Atributos obrigatórios:
 
   1. ``@contrib-id-type``

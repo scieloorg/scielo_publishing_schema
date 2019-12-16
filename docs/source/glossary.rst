@@ -31,8 +31,16 @@ Glossário
      Forma reduzida comum de *artigo científico*. Refere-se a um :term:`documento` produzido a partir de estudos, investigações, experimentos, práticas e teorias - de cunho científico -, como forma de disseminar a informação e os avanços ocorridos nas diversas áreas do conhecimento. Um artigo clássico possui vários elementos, tais como título, autor, afiliação, palavras-chave, resumo, textos de introdução, desenvolvimento e conclusões da pesquisa ou estudo realizado, referências bibliográficas e apêndices. Artigos acadêmicos são geralmente publicados em periódicos científicos sob critérios de qualidade definidos pela casa publicadora, podendo tambem ocorrer em anais de congressos, conferências, seminários e reuniões técnicas.
 
 
+   CASRAI
+     (Consortia Advancing Standards in Research Administration) Organização de pesquisa que desenvolve :term:`taxonomia` (vocabulário controlado) para facilitar a troca de informações entre as organizações de pesquisa.
+
+
    Creative Commons
      Organização sem fins lucrativos de caráter global que permite compartilhar e reutilizar criatividade e conhecimento por meio de termos legais padronizados e livres de custo, mantendo-se *copyright* de autoria e de contribuição. Há vários tipos de licenciamento, cada um prevendo um nível de responsabilidade em relação ao objeto do licenciamento e seu uso. Para maiores informações ver `Creative Commons Corporation - About CC <https://creativecommons.org/faq/#what-is-creative-commons-and-what-do-you-do>`_.
+   
+
+   CREDIT
+     (Contributor Roles Taxonomy) Taxonomia da :term:`CASRAI` para identificação de contribuição de autoria, dividida em 14 categorias. Tem o intuito de melhorar a acessibilidade e a visibilidade da gama de contribuições de autoria para os resultados da pesquisa publicada.
 
 
    csv
@@ -71,6 +79,10 @@ Glossário
      Conjunto de regras que especializam aspectos da especificação :term:`JATS Publishing`.
 
 
+   Highlights
+     Ponto alto ou as partes mais importantes de algum artigo científico, organizado em frases curtas.
+
+
    HTML
      Sigla de *HyperText Markup Language* (Linguagem de Marcação de Hipertexto). Principal linguagem de marcação para criação de páginas de Internet cujos elementos formam os blocos de construção de todos os sites da web. Desenvolvida e mantida pelo *World Wide Web Consortium* (*W3C*) a partir do :term:`SGML`, foi primariamente designada como linguagem de descrição semântica de documentos científicos. Suas várias versões deram origem a novas tecnologias e padrões, entre eles *XHTML*, *CSS*, *DOM*, *XML*, *XSLT* apenas para citar alguns. Para maiores informações ver `W3C HTML <https://www.w3.org/html/>`_.
 
@@ -101,6 +113,10 @@ Glossário
 
    JATS
      Acrónimo de *Journal Article Tag Suite* (Coleção de Elementos de Artigos de Periódicos). Para maiores informações ver `Journal Article Tag Suite <http://jats.nlm.nih.gov/index.html>`_. 
+
+
+   JATS4R
+    (JATS FOR REUSE) Grupo de trabalho dedicado a otimizar a reutilização de conteúdo acadêmico científico, desenvolvendo recomendações de melhores práticas para a marcação de conteúdo XML :term:`JATS`.
 
 
    JATS Publishing
@@ -141,6 +157,10 @@ Glossário
 
    open source
      (Código aberto). É todo e qualquer programa de código fonte, disponível por meio de uma licença de uso gratuita e global e, que permite ao mesmo tempo, preservar a autoria do referido código e conceder ao usuário seu estudo, modificação e distribuição para quaisquer pessoas ou finalidades, mantidas as características originais de uso e compartilhamento. Para maiores informações ver `Open Source Software in Wikipedia <https://en.wikipedia.org/wiki/Open-source_software>`_.
+
+
+   ORCID
+     (Open Researcher and Contributor ID) Código alfanumérico não proprietário para identificar exclusivamente cientistas e outros autores académicos e contribuidores.
 
  
    Package Maker
@@ -213,6 +233,10 @@ Glossário
 
    tag set
      Subconjunto de elementos :term:`XML` descritos na *Tag Suite* da especificação :term:`JATS`. Para maiores informações ver `documentação oficial da especificação JATS <http://jats.nlm.nih.gov/faq.html#faq5>`_.
+
+
+   Taxonomia
+     Estudo científico responsável por determinar a classificação sistemática de diferentes coisas em categorias.
 
 
    Unicode
