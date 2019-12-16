@@ -32,7 +32,7 @@ Glossário
 
 
    CASRAI
-     (Consortia Advancing Standards in Research Administration) Organização de pesquisa que desenvolve :term:`taxonomias` (vocabulário controlado) para facilitar a troca de informações entre as organizações de pesquisa.
+     (Consortia Advancing Standards in Research Administration) Organização de pesquisa que desenvolve :term:`taxonomia` (vocabulário controlado) para facilitar a troca de informações entre as organizações de pesquisa.
 
 
    Creative Commons
