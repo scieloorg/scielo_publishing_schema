@@ -27,7 +27,7 @@ FAPESP/FAP/CNPq. SciELO: Scientific Electronic Library Online. Site da Internet.
 
 FEDERAÇÃO BRASILEIRA DE ASSOCIAÇÕES DE BIBLIOTECÁRIOS, CIENTISTAS DA INFORMAÇÃO E INSTITUIÇÕES – FEBAB. AACR2: Código de Catalogação Anglo-Americano. (tradução) 2nd. ed. Disponível em: <http://www.febab.org.br/aacr2-2/>.
 
-IBRAHIM, Andrew M. Use of a visual abstract to disseminate scientific research. University of Michigan, 2018, version 4. Disponível em: <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>. 
+IBRAHIM, Andrew M. Use of a visual abstract to disseminate scientific research. University of Michigan, 2018, version 4. Disponível em: <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>.
 
 INTERNATIONAL DOI FOUNDATION. Digital Object Identifier System. Página da Internet. Disponível em: <http://www.doi.org/>.
 
