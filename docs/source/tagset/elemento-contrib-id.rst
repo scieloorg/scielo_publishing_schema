@@ -3,7 +3,7 @@
 <contrib-id>
 ============
 
-Este elemento possui :ref:`scielo-brasil`
+Este elemento possui :ref:`scielo-brasil`.
 
 Atributos obrigatórios:
 
