@@ -90,7 +90,7 @@ Exemplo:
     ...
 
 .. note::
-  * Recomendamos para editor de artigo/fascículo a identificação através de :ref:`contrib` com atributo ``@contrib-type`` do tipo editor.
+  * Recomendamos para editor de artigo/fascículo a identificação através de :ref:`elemento-contrib` com atributo ``@contrib-type`` do tipo editor.
 
 .. _elemento-fn-notas-gerais:
 
