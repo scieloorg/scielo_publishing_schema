@@ -27,7 +27,7 @@ FAPESP/FAP/CNPq. SciELO: Scientific Electronic Library Online. Site da Internet.
 
 FEDERAÇÃO BRASILEIRA DE ASSOCIAÇÕES DE BIBLIOTECÁRIOS, CIENTISTAS DA INFORMAÇÃO E INSTITUIÇÕES – FEBAB. AACR2: Código de Catalogação Anglo-Americano. (tradução) 2nd. ed. Disponível em: <http://www.febab.org.br/aacr2-2/>.
 
-INTERNATIONAL COMMITTEE OF MEDICAL JOURNAL EDITORS. Norma Vancouver. [S.l.], [20--?]. Disponível em: <http://www.icmje.org/>.
+IBRAHIM, Andrew M. Use of a visual abstract to disseminate scientific research. University of Michigan, 2018, version 4. Disponível em: <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>.
 
 INTERNATIONAL DOI FOUNDATION. Digital Object Identifier System. Página da Internet. Disponível em: <http://www.doi.org/>.
 
@@ -41,7 +41,7 @@ INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO 3166-3 - Country codes. Gene
 
 INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO 3297:2007 - Information and documentation - International standard serial number (ISSN). Genebra, 2007. Disponível em: <http://www.iso.org/iso/catalogue_detail?csnumber=39601>.
 
-INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO 8879:1986 - Information Processing - Text and office systems - Standard Generalized Markup Language (SGML). Genebra, 1986. Disponível em: <http://www.iso.org/iso/catalogue_detail.htm?csnumber=16387>.
+INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO 639-1 - Language Codes, 2012. Disponível em: <http://www.mathguide.de/info/tools/languagecode.html>. 
 
 FUNDAÇÃO BIBLIOTECA NACIONAL. Agência Brasileira do ISBN. Site da Internet. Rio de Janeiro, 2016. Disponível em: <http://www.isbn.bn.br/website/>.
 
@@ -75,33 +75,33 @@ PYTHON SOFTWARE FOUNDATION. Welcome to Python.org. Site de Internet. Disponível
 
 SBPPC. Sociedade brasileira de profissionais em pesquisa cínica. SBPPC. Disponível em: <https://www.sbppc.org.br/home>.
 
-SCIELO. Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil. SciELO, 2017. Disponível em: <http://www.scielo.br/avaliacao/Criterios%20SciELO%20Brasil.pdf>.
+SciELO. Critérios, política e procedimentos para a admissão e a permanência de periódicos científicos na Coleção SciELO Brasil. SciELO, 2017. Disponível em: <http://www.scielo.br/avaliacao/Criterios%20SciELO%20Brasil.pdf>.
 
-SCIELO. Guia de citação de dados de pesquisa. SciELO, 2018. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia-de-citacao-de-dados_pt.pdf>.
+SciELO. Guia de citação de dados de pesquisa. SciELO, 2018. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia-de-citacao-de-dados_pt.pdf>.
 
-SCIELO. Guia de Entrega de Pacote para Publicação em SciELO. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_entrega_pacotes.pdf>.
+SciELO. Guia de Entrega de Pacote para Publicação em SciELO. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_entrega_pacotes.pdf>.
 
-SCIELO. Guia para a publicação avançada de artigos Ahead of Print (AOP) no SciELO. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_AOP.pdf>.
+SciELO. Guia para a publicação avançada de artigos Ahead of Print (AOP) no SciELO. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_AOP.pdf>.
 
-SCIELO. Guia para o registro e publicação de Errata. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_errata.pdf>.
+SciELO. Guia para o registro e publicação de Errata. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_errata.pdf>.
 
-SCIELO. Guia para o registro e publicação de retratação. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_retratacao.pdf>.
+SciELO. Guia para o registro e publicação de retratação. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_retratacao.pdf>.
 
-SCIELO. Guia para Publicação Contínua de artigos em periódicos indexados no SciELO. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_pc.pdf>.
+SciELO. Guia para Publicação Contínua de artigos em periódicos indexados no SciELO. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/guia_pc.pdf>.
 
-SCIELO. Lista de repositórios para depósito de dados de pesquisa. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/Lista-de-Repositorios-Recomendados_pt.pdf>.
+SciELO. Lista de repositórios para depósito de dados de pesquisa. SciELO, 2019. Disponível em: <https://wp.scielo.org/wp-content/uploads/Lista-de-Repositorios-Recomendados_pt.pdf>.
 
-SCIELO. Orientação para criação e apresentação do DOI. SciELO, 2018. Disponível em: <https://wp.scielo.org/wp-content/uploads/orientacao_doi.pdf>.
+SciELO. Orientação para criação e apresentação do DOI. SciELO, 2018. Disponível em: <https://wp.scielo.org/wp-content/uploads/orientacao_doi.pdf>.
 
-SCIELO. Packtools. Programa de computador. SciELO. Disponível em:  <http://manager.scielo.org/tools/validators/stylechecker/>.
+SciELO. Packtools. Programa de computador. SciELO. Disponível em:  <http://manager.scielo.org/tools/validators/stylechecker/>.
 
-SCIELO. Packtools - Style Checker. Programa de computador. SciELO. Disponível em: <http://manager.scielo.org/tools/validators/stylechecker/>.
+SciELO. Packtools - Style Checker. Programa de computador. SciELO. Disponível em: <http://manager.scielo.org/tools/validators/stylechecker/>.
 
-SCIELO. SciELO Manager. Programa de computador. SciELO. Disponível em: <http://manager.scielo.org/accounts/login/>.
+SciELO. SciELO Manager. Programa de computador. SciELO. Disponível em: <http://manager.scielo.org/accounts/login/>.
 
-SCIELO. SciELO PC Programs. SciELO. Disponível em: <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/>.
+SciELO. SciELO PC Programs. SciELO. Disponível em: <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/>.
 
-SCIELO. XML Package Maker. Programa de computador. SciELO. Disponível em: <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>.
+SciELO. XML Package Maker. Programa de computador. SciELO. Disponível em: <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>.
 
 SOFTWARE de Código Aberto. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/Software_de_c%C3%B3digo_aberto>.
 
