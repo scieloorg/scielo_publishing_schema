@@ -7,10 +7,6 @@ Glossário
    :sorted:
 
 
-   AACR2
-     Sigla de *Anglo-American Cataloguing Rules* (Código de Catalogação Anglo Americano). Sistema classificatório internacional e amplamente aceito, que subsidia o tratamento da informação para construção de catálogos e listas em bibliotecas de quaisquer tamanhos. Para maiores detalhes ver `AACR2 <http://www.aacr2.org/>`_ .
-
-
    ABNT
      Sigla de *Associação Brasileira de Normas Técnicas*. Fundada em 28 de setembro de 1940, é uma entidade privada e sem fins lucrativos, membro fundador da *International Organization for Standardization* (*ISO*), cuja missão é a elaboração de normas técnicas Brasileiras (*ABNT NBR*), por meio de seus comitês, unidades setoriais e comissões de estudo. Para maiores informações ver `ABNT - Associação Brasileira de Normas Técnicas <http://www.abnt.org.br/>`_.
 

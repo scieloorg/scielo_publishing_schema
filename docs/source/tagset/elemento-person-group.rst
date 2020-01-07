@@ -20,13 +20,22 @@ Identifica grupo ou indivíduo criador/elaborador do :term:`documento`. Caso exi
 
 Os valores possíveis para ``@person-group-type`` são:
 
-+-----------+-------------+
-| Valor     | Descrição   |
-+===========+=============+
-| author    | autor       |
-+-----------+-------------+
-| compiler  | compilador  |
-+-----------+-------------+
++--------------------+----------------------------------------------------------------+
+| Valor              | Descrição                                                      |
++====================+================================================================+
+| author             | Autor do conteúdo.                                             |
++--------------------+----------------------------------------------------------------+
+| compiler           | Adaptador - Indivíduo que compilou o conteúdo a partir de      |
+|                    | várias fontes.                                                 |
++--------------------+----------------------------------------------------------------+
+| editor             | Editor do artigo ou fascículo.                                 |
++--------------------+----------------------------------------------------------------+
+| illustrator        | Ilustrador do conteúdo.                                        |
++--------------------+----------------------------------------------------------------+
+| translator         | Tradutor do conteúdo.                                          |
++--------------------+----------------------------------------------------------------+
+| research-assistant | Assistente de pesquisa do artigo.                              |
++--------------------+----------------------------------------------------------------+
 
 
 Exemplo:
@@ -51,7 +60,7 @@ Exemplo:
     ...
 
 .. note::
-  * Utilizar *AACR2* - *Código de Catalogação Anglo Americano*, *Registro de ORCID* e/ou *Currículo Lattes* dos autores e avaliar formas de entrada autorizadas para nomes.
-  * Outros tipos de contribuidores como tradutor, ilustrador, assistente de pesquisa, editor etc, devem ser identificados em :ref:`elemento-author-notes`, com :ref:`elemento-fn` e ``@fn-type ="other"``, para editor do artigo ou fascículo usar ``@fn-type ="edited-by"``.
+  * Recomendamos utilizar Registro de :term:`ORCID` e/ou *Currículo Lattes* dos autores para 
+    avaliar formas de entrada para nomes.
 
   
