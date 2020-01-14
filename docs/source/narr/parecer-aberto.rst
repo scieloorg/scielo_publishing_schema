@@ -61,6 +61,7 @@ Exemplo:
                 <permissions>
                 ...
                 </permissions>
+                <related-object object-type="peer-reviewed-material" id="r01" xlink:href="10.1590/abd1806-4841.20142998" ext-link-type="doi"/>
                 <history>
                     <date date-type="referee-report-received">
                        <day>10</day>
@@ -68,14 +69,13 @@ Exemplo:
                         <year>2020</year>
                     </date>
                 </history>
-                <related-object object-type="peer-reviewed-material" id="r01" xlink:href="10.1590/abd1806-4841.20142998" ext-link-type="doi"/>
                 <custom-meta-group>
-                <custom-meta>
-                    <meta-name>peer-review-recommendation</meta-name>
-                    <meta-value>accept</meta-value>
-                </custom-meta>
-            </custom-meta-group>
-                ...                
+                   <custom-meta>
+                     <meta-name>peer-review-recommendation</meta-name>
+                     <meta-value>accept</meta-value>
+                   </custom-meta>
+                </custom-meta-group>
+                ...
             </article-meta>
         </front>
         <body>
@@ -142,12 +142,12 @@ Exemplo:
                     </date>
                 </history>
                 <custom-meta-group>
-                <custom-meta>
-                    <meta-name>peer-review-recommendation</meta-name>
-                    <meta-value>accept</meta-value>
-                </custom-meta>
-            </custom-meta-group>
-                ...                
+                   <custom-meta>
+                     <meta-name>peer-review-recommendation</meta-name>
+                     <meta-value>accept</meta-value>
+                   </custom-meta>
+                </custom-meta-group>
+                ...
             </article-meta>
         </front-stub>
         <body>
