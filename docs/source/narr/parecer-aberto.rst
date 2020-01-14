@@ -3,7 +3,7 @@
 Revisão por pares aberta (Open Peer Review)
 ============================================
 
-É o  processo pelo qual passa um artigo científico submetido à uma revista científica feita por pessoas da área – os pares, de forma aberta onde os autores sabem quem são os revisores e vice e versa. A revisão por pares aberta (em inglês Open Peer Review ou OPR) coincide com o advento da Ciência Aberta a partir do surgimento de periódicos de acesso aberto, e de abordagens a respeito da forma com que a pesquisa é conduzida, disseminada e publicada. É também caracterizada como um movimento no sentido de maior transparência, participação e explorando novas formas de colaboração, comunicação e difusão do conhecimento.
+É o processo pelo qual passa um artigo científico submetido à uma revista científica feita por pessoas da área – os pares –, de forma aberta, onde os autores sabem quem são os revisores e vice-versa. A revisão por pares aberta (em inglês, Open Peer Review ou OPR) coincide com o advento da Ciência Aberta, a partir do surgimento de periódicos de acesso aberto e de abordagens a respeito da forma com que a pesquisa é conduzida, disseminada e publicada. É também caracterizada como um movimento no sentido de maior transparência, participação e exploração de novas formas de colaboração, comunicação e difusão do conhecimento.
 
 Para a publicação de OPR em SciELO deve-se considerar os seguintes aspectos:
 
@@ -165,7 +165,7 @@ Exemplo:
 OPR como link externo
 ----------------------
 
-O OPR pode estar publicado em outro site, neste caso deve-se usar a publicação do parecer como link. Esta modalidade também pode ocorrer como :ref:`elemento-article` (Recomendado) ou :ref:`elemento-sub-article`. Para isso considerar uma das regras mencionadas acima, mais:
+O OPR pode estar publicado em outro site; neste caso, deve-se usar a publicação do parecer como link externo. Esta modalidade também pode ocorrer como :ref:elemento-article (Recomendado) ou :ref:elemento-sub-article. Para isso considerar uma das regras mencionadas acima, mais:
 
 
  * ``@object-type`` com valor ``"referee-report"``;
@@ -181,7 +181,7 @@ Exemplo:
     <body>
         <sec>
             <title>Reviewer</title>
-            <p>This report can be read on:<related-object object-type="referee-report" ext-link-type="uri" xlink:href="https://publons.com/publon/000000/#review-2020xxx">Publons</related-article>
+            <p>This report can be read on:<related-object object-type="referee-report" ext-link-type="uri" xlink:href="https://publons.com/publon/000000/#review-2020xxx">Publons</related-object>
             </p>
         </sec>
     </body>
