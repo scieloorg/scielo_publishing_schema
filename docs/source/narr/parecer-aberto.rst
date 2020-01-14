@@ -17,7 +17,7 @@ Para a publicação de OPR em SciELO deve-se considerar os seguintes aspectos:
 OPR como ``<article>`` (Recomendado)
 ------------------------------------
 
-Publicar OPR como um documento separado :ref:`elemento-article`, mas relacionado :ref:`elemento-related-article`` ao artigo. SciELO só publicará um parecer por documento. Para isso considerar:
+Publicar OPR como um documento separado :ref:`elemento-article`, mas relacionado :ref:`elemento-related-object` ao artigo. SciELO só publicará um parecer por documento. Para isso considerar:
 
  * ``@article-type`` com valor ``"aggregated-review-documents"``;
  * ``@object-type`` com valor ``"peer-reviewed-material"``;
