@@ -11,7 +11,7 @@
 
 
 
-Especifica o sobrenome do autor. Deve-se identificar o sobrenome de acordo com a norma adotada pelo periódico. A recomendação da :term:`Metodologia SciELO` é utilizar Registro de :term:`ORCID` e/ou :term:`Currículo Lattes` dos autores.
+Especifica o sobrenome do autor. Deve-se identificar o sobrenome de acordo com a norma adotada pelo periódico. A recomendação da :term:`Metodologia SciELO` é utilizar registro de :term:`ORCID` e/ou :term:`Currículo Lattes` dos autores.
 
 Exemplo:
 

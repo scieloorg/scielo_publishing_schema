@@ -66,7 +66,7 @@ Exemplo:
 
 
 .. note::
-  * Recomendamos utilizar Registro de :term:`ORCID` e/ou *Currículo Lattes* dos autores para 
+  * Recomenda-se o uso do registro de :term:`ORCID` e/ou *Currículo Lattes* dos autores para 
     avaliar formas de entrada para nomes.
   * Recomenda-se o uso da taxonomia CRediT para representar a função ou papel de
     cada contribuinte individual. Saiba mais detalhes em :ref:`taxonomia-credit`.

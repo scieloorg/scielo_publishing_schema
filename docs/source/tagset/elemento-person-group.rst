@@ -60,7 +60,7 @@ Exemplo:
     ...
 
 .. note::
-  * Recomendamos utilizar Registro de :term:`ORCID` e/ou *Currículo Lattes* dos autores para 
+  * Recomenda-se o uso do registro de :term:`ORCID` e/ou *Currículo Lattes* dos autores para 
     avaliar formas de entrada para nomes.
 
   
