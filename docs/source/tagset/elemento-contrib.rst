@@ -22,15 +22,22 @@ artigo, podendo ser inclusive anônimos. :ref:`elemento-name`, :ref:`elemento-co
 
 O atributo ``@contrib-type`` define o tipo de contribuição e pode ter os valores:
 
-+------------+----------------------------------------------------------------+
-| Valor      | Descrição                                                      |
-+============+================================================================+
-| author     | Autor do conteúdo.                                             |
-+------------+----------------------------------------------------------------+
-| compiler   | Compilador - Indivíduo que compilou o conteúdo a partir de     |
-|            | várias fontes.                                                 |
-+------------+----------------------------------------------------------------+
-
++--------------------+----------------------------------------------------------------+
+| Valor              | Descrição                                                      |
++====================+================================================================+
+| author             | Autor do conteúdo.                                             |
++--------------------+----------------------------------------------------------------+
+| compiler           | Adaptador - Indivíduo que compilou o conteúdo a partir de      |
+|                    | várias fontes.                                                 |
++--------------------+----------------------------------------------------------------+
+| editor             | Editor do artigo ou fascículo.                                 |
++--------------------+----------------------------------------------------------------+
+| illustrator        | Ilustrador do conteúdo.                                        |
++--------------------+----------------------------------------------------------------+
+| translator         | Tradutor do conteúdo.                                          |
++--------------------+----------------------------------------------------------------+
+| research-assistant | Assistente de pesquisa do artigo.                              |
++--------------------+----------------------------------------------------------------+
 
 Exemplo:
 
@@ -47,19 +54,20 @@ Exemplo:
             <xref ref-type="aff" rid="aff01">1</xref>
             <role content-type="https://dictionary.casrai.org/Contributor_Roles/Investigation">Pesquisador</role>
         </contrib>
+        <contrib contrib-type="editor">
+            <name>
+                <surname>Santos</surname>
+                <given-names>Solange</given-names>
+            </name>
+        </contrib>
         ...
     </contrib-group>
     ...
 
 
 .. note::
-  * Utilizar *AACR2* - *Código de Catalogação Anglo Americano*, *Registro de ORCID* 
-    e/ou *Currículo Lattes* dos autores e avaliar formas de entrada autorizadas 
-    para nomes.
-  * Outros tipos de contribuidores como tradutor, ilustrador, assistente de 
-    pesquisa, editor etc, devem ser identificados em :ref:`elemento-author-notes`, 
-    com :ref:`elemento-fn` e ``@fn-type ="other"``, para editor do artigo ou 
-    fascículo usar ``@fn-type ="edited-by"``.
+  * Recomenda-se o uso do registro de :term:`ORCID` e/ou *Currículo Lattes* dos autores para 
+    avaliar formas de entrada para nomes.
   * Recomenda-se o uso da taxonomia CRediT para representar a função ou papel de
     cada contribuinte individual. Saiba mais detalhes em :ref:`taxonomia-credit`.
 

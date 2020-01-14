@@ -78,7 +78,7 @@ Exemplo:
     <author-notes>
         <corresp id="c01">
             <label>*</label>
-            <bold>Correspondence</bold>: Dr. Edmundo Figueira Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@foo.com</email>
+            <bold>Correspondence</bold>: Dr. Edmundo Figueira, Departamento de Fisioterapia, Universidade FISP - Hogwarts,  Brasil. E-mail: <email>contato@foo.com</email>
         </corresp>
         <fn fn-type="conflict">
             <p>Não há conflito de interesse entre os autores do artigo.</p>
@@ -89,6 +89,8 @@ Exemplo:
     </author-notes>
     ...
 
+.. note::
+  * Recomendamos para editor de artigo/fascículo a identificação através de :ref:`elemento-contrib` com atributo ``@contrib-type`` do tipo editor.
 
 .. _elemento-fn-notas-gerais:
 
