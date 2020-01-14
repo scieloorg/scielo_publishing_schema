@@ -104,11 +104,14 @@ Para o atributo ``@article-type`` os valores possíveis são:
 +--------------------+----------------------------------------------------------+
 |                    | Artigo de dados - Descreve uma coleção de conjunto de    |
 |                    | dados de pesquisa. Este tipo de publicação explica os    |
-|   data-article     | métodos de obtenção/coleta dos dados, bem como à         |
+| data-article       | métodos de obtenção/coleta dos dados, bem como à         |
 |                    | descrição dos ativos que compõem um conjunto de dados,   |
 |                    | sua estrutura e formato.                                 |
-+--------------------+----------------------------------------------------------+                                                                 
-                                                                 
++--------------------+----------------------------------------------------------+
+| aggregated-review- | Parecer / Revisão por pares aberta (Open Peer Review     |
+| documents          | ou OPR)                                                  |
++--------------------+----------------------------------------------------------+
+                                                                
 
 
 .. note:: O atributo ``@article-type`` não deve ser confundido com a seção (:ref:`elemento-subj-group`) em que o :term:`documento` aparece no sumário.

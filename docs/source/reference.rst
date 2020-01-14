@@ -57,11 +57,15 @@ JATS. Journal Publishing Tag Library NISO JATS Version 1.2. Rockville, USA: Nati
 
 JATS4R. JATS for reuse. JATS4R Recommendations. USA: NISO Working Group. Disponível em: <https://jats4r.org/recommendations-list>.
 
+MENDES-DA-SILVA, W. Revisão pelos pares aberta e ciência aberta na comunidade de pesquisa em negócios. Rev. adm. contemp. 2019, vol.23, n.4, pp.1-6. Disponível em: <http://dx.doi.org/10.1590/1982-7849rac2019190278>.
+
 MICROSOFT CORPORATION. Microsoft Word - Document and word processing software. Programa de computador. Disponível em: <https://products.office.com/en/word>.
 
 Namespace. In: Wikipedia: the free encyclopedia. [S.l.: s.n.], [20--]. Disponível em: <https://en.wikipedia.org/wiki/Namespace>.
 
 NISO. Site da instituição. Disponível em: <http://www.niso.org/home/>.
+
+OLIVEIRA, E. C. P. de. Revisão por pares aberta: análise das revistas open access. In: ABEC MEETING, 2, 2018, São Paulo. Anais... São Paulo: Associação Brasileira de Editores Científicos, 2018. p. 1-5. Disponível em: <http://dx.doi.org/10.21452/abecmeeting.2018.180>.
 
 Open Source Software. In: Wikipedia: the free encyclopedia. [S.l.: s.n.], [20--]. Disponível em: <https://en.wikipedia.org/wiki/Open-source_software>.
 
@@ -104,6 +108,8 @@ SciELO. SciELO PC Programs. SciELO. Disponível em: <http://docs.scielo.org/proj
 SciELO. XML Package Maker. Programa de computador. SciELO. Disponível em: <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>.
 
 SOFTWARE de Código Aberto. In: Wikipédia: a enciclopédia livre. [S.l.: s.n.], [20--]. Disponível em: <http://pt.wikipedia.org/wiki/Software_de_c%C3%B3digo_aberto>.
+
+SOUZA, F.A. de. A evolução da revisão por pares de artigos científicos. Deviante, 2017. Disponível em: <https://www.deviante.com.br/noticias/ciencia/evolucao-da-revisao-por-pares-de-artigos-cientificos/>.
 
 UNICODE CONSORTIUM. FAQ - UTF-8, UTF-16, UTF-32 and BOM. Página da Internet. Disponível em: <http://unicode.org/faq/utf_bom.html>.
 
