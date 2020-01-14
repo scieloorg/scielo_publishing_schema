@@ -158,7 +158,8 @@ Exemplo:
         </sec>
     </body>
         ...
-    </article>
+    </sub-article>
+
 
 .. _elemento-parecer-exemplo-3:
 
