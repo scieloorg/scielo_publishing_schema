@@ -52,7 +52,7 @@ Exemplo:
                 <contrib contrib-type="reviewer">
                     <name>
                         <surname>Doe</surname>
-                        <given-names>Jane X.</given-names>
+                        <given-names>Jane X</given-names>
                     </name>
                     <xref ref-type="aff" rid="aff1"/>
                 </contrib>
