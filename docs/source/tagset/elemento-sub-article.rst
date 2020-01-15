@@ -39,6 +39,10 @@ Os valores possíveis de ``@article-type`` em ``<sub-article>`` são:
 | translation        | produzido em idioma diferente.                           |
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
+| referee-report     | Parecer / Revisão por pares aberta (Open Peer Review     |
+|                    | ou OPR)                                                  |
++--------------------+----------------------------------------------------------+
+
 
 O idioma do texto em ``@xml:lang`` é descrito pela norma :term:`ISO 639-1` como um código de dois caracteres alfabéticos em caixa baixa, cujo conteúdo encontra-se disponível no `site <http://www.mathguide.de/info/tools/languagecode.html>`_.
 

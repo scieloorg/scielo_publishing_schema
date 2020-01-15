@@ -38,6 +38,10 @@ Atributos obrigatórios:
 +-------------+------------------------------------------------+
 | rev-request | Data de solicitação das revisões               |
 +-------------+------------------------------------------------+
+| referee-    |                                                |
+| report-     | Data da revisão por pares / parecer            |
+| received    |                                                |
++-------------+------------------------------------------------+
 
 Exemplo:
 

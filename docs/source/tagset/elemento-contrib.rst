@@ -38,6 +38,8 @@ O atributo ``@contrib-type`` define o tipo de contribuição e pode ter os valor
 +--------------------+----------------------------------------------------------------+
 | research-assistant | Assistente de pesquisa do artigo.                              |
 +--------------------+----------------------------------------------------------------+
+| reviewer           | Revisor por pares / Parecerista                                |
++--------------------+----------------------------------------------------------------+
 
 Exemplo:
 
