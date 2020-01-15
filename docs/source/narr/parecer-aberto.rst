@@ -129,9 +129,11 @@ Exemplo:
                     </name>
                     <xref ref-type="aff" rid="aff1"/>
                 </contrib>
+                </contrib-group>
                 <aff id="aff1">
-                ...
-                <permissions
+                  ...
+                </aff>
+                <permissions>
                 ...
                 </permissions>
                 <history>
