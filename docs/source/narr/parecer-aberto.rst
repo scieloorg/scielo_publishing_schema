@@ -21,7 +21,7 @@ Publicar OPR como um documento separado :ref:`elemento-article`, mas relacionado
 
  * ``@article-type`` com valor ``"aggregated-review-documents"``;
  * ``@object-type`` com valor ``"peer-reviewed-material"``;
- * ``@xLink:href`` com número DOI do artigo revisado;
+ * ``@xlink:href`` com número DOI do artigo revisado;
  * ``@ext-link-type`` com valor ``"doi"``;
  * ``@contrib-type`` com valor ``"reviewer"``;
  * ``@date-type`` com valor ``"referee-report-received"``;
@@ -170,7 +170,7 @@ O OPR pode estar publicado em outro site; neste caso, deve-se usar a publicaçã
 
 
  * ``@object-type`` com valor ``"referee-report"``;
- * ``@xLink:href`` com a URL do parecer (desde o https://);
+ * ``@xlink:href`` com a URL do parecer (desde o https://);
  * ``@ext-link-type`` com valor ``"uri"``.
 
 Exemplo:
