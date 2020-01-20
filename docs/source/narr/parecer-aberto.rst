@@ -3,7 +3,7 @@
 Revisão por pares aberta (Open Peer Review)
 ============================================
 
-É o processo pelo qual passa um artigo científico submetido à uma revista científica feita por pessoas da área – os pares –, de forma aberta, onde os autores sabem quem são os revisores e vice-versa. A revisão por pares aberta (em inglês, Open Peer Review ou OPR) coincide com o advento da Ciência Aberta, a partir do surgimento de periódicos de acesso aberto e de abordagens a respeito da forma com que a pesquisa é conduzida, disseminada e publicada. É também caracterizada como um movimento no sentido de maior transparência, participação e exploração de novas formas de colaboração, comunicação e difusão do conhecimento.
+É o processo pelo qual passa um artigo científico submetido a uma revista científica feita por pessoas da área – os pares –, de forma aberta, onde os autores sabem quem são os revisores e vice-versa. A revisão por pares aberta (em inglês, Open Peer Review ou OPR) coincide com o advento da Ciência Aberta, a partir do surgimento de periódicos de acesso aberto e de abordagens a respeito da forma com que a pesquisa é conduzida, disseminada e publicada. É também caracterizada como um movimento no sentido de maior transparência, participação e exploração de novas formas de colaboração, comunicação e difusão do conhecimento.
 
 Para a publicação de OPR em SciELO deve-se considerar os seguintes aspectos:
 

@@ -157,8 +157,7 @@ Documentação narrativa
    narr/tipos-especiais-documentos
    narr/scielo-brasil
    narr/taxonomia-credit 
-   narr/parecer-aberto
-
+   
    glossary
    reference
 

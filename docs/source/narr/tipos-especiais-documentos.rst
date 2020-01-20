@@ -14,3 +14,4 @@ Tipos Especiais de Documentos
 	retratacao
 	ensaio-clinico
 	artigo-dados
+	parecer-aberto
