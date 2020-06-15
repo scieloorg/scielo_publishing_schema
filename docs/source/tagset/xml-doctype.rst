@@ -3,7 +3,7 @@
 <!DOCTYPE>
 ==========
 
-A declaração ``<!DOCTYPE>`` indica a :term:`DTD` à qual o XML encontra-se associado, ou seja, define as regras estruturais do :term:`documento`. O :term:`SciELO Publishing Schema` utiliza como base o padrão JATS na versão `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_.
+A declaração ``<!DOCTYPE>`` indica a :term:`DTD` à qual o XML encontra-se associado, ou seja, define as regras estruturais do :term:`documento`. O :term:`SciELO Publishing Schema` utiliza como base o padrão JATS na versão `1.1 <https://jats.nlm.nih.gov/publishing/1.1/>`_.
 
 Exemplo *JATS versão 1.1*:
 

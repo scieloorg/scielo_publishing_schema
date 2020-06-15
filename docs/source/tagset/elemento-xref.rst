@@ -155,7 +155,7 @@ Exemplo de ``<xref>`` relacionado a objeto no texto:
 .. note:: 
  * Não envolver a tag ``<xref>`` em ``<sup>``.
  * Não inserir ``<label>`` caso não exista no :term:`documento`.
- * Recomenda-se ver sugestão de atribuição de `@id <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/tagset/sugestao-atribuicao-id.html>`_ .
+ * Recomenda-se ver sugestão de atribuição de `@id <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/tagset/sugestao-atribuicao-id.html>`_ .
 
 
 

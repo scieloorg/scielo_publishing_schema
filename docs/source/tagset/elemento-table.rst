@@ -47,7 +47,7 @@ Verifique abaixo o quadro descritivo dos elementos de uma tabela:
 |          | Cell         | tabela                                      |
 +----------+--------------+---------------------------------------------+
 
-Toda a formatação para exibição deve ser realizada conforme descrito no guia `Table Formatting <http://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
+Toda a formatação para exibição deve ser realizada conforme descrito no guia `Table Formatting <https://jats.nlm.nih.gov/publishing/tag-library/1.0/n-unw2.html#pub-tag-table-format>`_.
 
 
 .. _elemento-table-exemplo-1:

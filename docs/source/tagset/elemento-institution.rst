@@ -70,4 +70,4 @@ Exemplo:
 
 .. note:: 
  * Divisões abaixo do terceiro nível hierárquico da institução são identificadas somente no elemento ``<institution content-type="original">``.
- * Para mais informações sobre afiliação, verificar item "5.2.9. Afiliação de autores", dos `Critérios SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_ .
+ * Para mais informações sobre afiliação, verificar item "5.2.9. Afiliação de autores", dos `Critérios SciELO Brasil <https://www.scielo.br/avaliacao/20200500%20Criterios%20SciELO%20Brasil.pdf>`_ .

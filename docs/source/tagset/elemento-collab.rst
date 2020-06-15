@@ -158,7 +158,7 @@ Exemplo de ``<collab>`` em ``<back>``:
         <source>The top 10 causes of death. Fact sheet nº 310</source>
         <date-in-citation content-type="updated">Updated May 2014</date-in-citation>
         <date-in-citation content-type="access-date">citado 2012 Out 10</date-in-citation>
-        <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.who.int/mediacentre/factsheets/fs310/en/index2.html">http://www.who.int/mediacentre/factsheets/fs310/en/index2.html</ext-link>
+        <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="https://www.who.int/mediacentre/factsheets/fs310/en/index2.html">https://www.who.int/mediacentre/factsheets/fs310/en/index2.html</ext-link>
         </comment>
    </element-citation>
    ...
@@ -168,6 +168,6 @@ Exemplo de ``<collab>`` em ``<back>``:
    contar com a marcação completa da sua afiliação institucional. Para mais 
    informação consulte o item 5.2.9 do documento de `Critérios, política e 
    procedimentos para a admissão e a permanência de periódicos científicos na 
-   Coleção SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_ 
+   Coleção SciELO Brasil <https://www.scielo.br/avaliacao/20200500%20Criterios%20SciELO%20Brasil.pdf>`_ 
 
 .. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

@@ -63,8 +63,8 @@ Exemplo:
 
 .. note:: ``<contrib-id>`` não pode conter dados do tipo URI (URL), **não sendo aceitos** os exemplos:
 
-          * ``<contrib-id contrib-id-type="lattes">http://lattes.cnpq.br/4760273612238540</contrib-id>``
-          * ``<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8528-2091</contrib-id>``
+          * ``<contrib-id contrib-id-type="lattes">https://lattes.cnpq.br/4760273612238540</contrib-id>``
+          * ``<contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-8528-2091</contrib-id>``
 
 
 
