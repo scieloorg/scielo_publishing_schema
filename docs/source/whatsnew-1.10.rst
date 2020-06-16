@@ -6,12 +6,12 @@ Este artigo explica as alterações da especificação :term:`SciELO PS` versão
 a versão 1.9.
 
 
-* Adicionado em :ref:`abstract` o ``@abstract-type`` do tipo "key-points". `#862 <https://github.com/scieloorg/scielo_publishing_schema/issues/862>`
-* Adicionado em :ref:`abstract` do tipo "graphical" a possibilidade de usar vídeo. `#899 <https://github.com/scieloorg/scielo_publishing_schema/issues/899>`
-* Adicionado na documentação narrativa Taxonomia CRediT para uso em :ref:`role`. `#821 <https://github.com/scieloorg/scielo_publishing_schema/issues/821>`
+* Adicionado em :ref:`elemento-abstract` o ``@abstract-type`` do tipo "key-points". `#862 <https://github.com/scieloorg/scielo_publishing_schema/issues/862>`
+* Adicionado em :ref:`elemento-abstract` do tipo "graphical" a possibilidade de usar vídeo. `#899 <https://github.com/scieloorg/scielo_publishing_schema/issues/899>`
+* Adicionado na documentação narrativa Taxonomia CRediT para uso em :ref:`elemento-role`. `#821 <https://github.com/scieloorg/scielo_publishing_schema/issues/821>`
 * Adicionado na documentação narrativa suporte para marcação de Pareceres Abertos (Open Peer Review). `#791 <https://github.com/scieloorg/scielo_publishing_schema/issues/791>`
-* Adicionado em :ref:`contrib` a obrigatoriedade do uso de ``@contrib-id-type="orcid"`` para pelo menos um autor do documento. `#634 <https://github.com/scieloorg/scielo_publishing_schema/issues/634>`
-* Retirado a restrição de tipos de contribuidores para :ref:`contrib`. `#890 <https://github.com/scieloorg/scielo_publishing_schema/issues/890>`
+* Adicionado em :ref:`elemento-contrib` a obrigatoriedade do uso de ``@contrib-id-type="orcid"`` para pelo menos um autor do documento. `#634 <https://github.com/scieloorg/scielo_publishing_schema/issues/634>`
+* Retirado a restrição de tipos de contribuidores para :ref:`elemento-contrib`. `#890 <https://github.com/scieloorg/scielo_publishing_schema/issues/890>`
 * Retirado da documentação a tag ``<counts>``. `#872 <https://github.com/scieloorg/scielo_publishing_schema/issues/872>`
 
 
