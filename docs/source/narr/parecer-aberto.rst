@@ -19,20 +19,12 @@ OPR como ``<article>`` (Recomendado)
 
 Publicar OPR como um documento separado :ref:`elemento-article`, mas relacionado ``<related-object>`` ao artigo. SciELO só publicará um parecer por documento. Para isso considerar:
 
- * ``@article-type``com valor ``"referee-report"`` 
+ * ``@article-type``com valor ``"referee-report"``; 
  * ``@object-type`` com valor ``"peer-reviewed-material"``;
  * ``@xlink:href`` com número DOI do artigo revisado;
  * ``@ext-link-type`` com valor ``"doi"``;
  * ``@contrib-type`` com valor ``"author"``;
- * ``<role>`` com ``"@content-type"`` com um dos valores:
-``"reviewer"``;
-``"review-assistant"``;
-``"stats-reviewer"``;
-``"reviewer-external"``;
-``"reader"``;
-``"translator"``;
-``"author"``;
-``"editor"``.
+ * ``<role>`` com ``"@content-type"`` com um dos valores: ``"reviewer"``; ``"review-assistant"``; ``"stats-reviewer"``; ``"reviewer-external"``; ``"reader"``; ``"translator"``; ``"author"``; ``"editor"``.
  * ``@date-type`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
@@ -105,23 +97,9 @@ OPR como ``<sub-article>``
 
 Publicar OPR junto ao artigo como um :ref:`elemento-sub-article`. SciELO só publicará um parecer por :ref:`elemento-sub-article`. Para isso considerar:
 
- * ``@article-type`` com um dos valores: 
-``"referee-report"``;
-``"aggregated-review-documents"``;
-``"referee-report"``;
-``"editor-report"``;
-``"author-comment"``;
-``"community-comment"``.
+ * ``@article-type`` com um dos valores: ``"referee-report"``; ``"aggregated-review-documents"``; ``"referee-report"``; ``"editor-report"``; ``"author-comment"``; ``"community-comment"``.
  * ``@contrib-type`` com valor ``"author"``;
- * ``<role>`` com ``"@content-type"`` com um dos valores:
-``"reviewer"``;
-``"review-assistant"``;
-``"stats-reviewer"``;
-``"reviewer-external"``;
-``"reader"``;
-``"translator"``;
-``"author"``;
-``"editor"``.
+ * ``<role>`` com ``"@content-type"`` com um dos valores: ``"reviewer"``; ``"review-assistant"``; ``"stats-reviewer"``; ``"reviewer-external"``; ``"reader"``; ``"translator"``; ``"author"``; ``"editor"``.
  * ``@date-type`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
