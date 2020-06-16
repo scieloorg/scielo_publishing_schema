@@ -24,7 +24,7 @@ Publicar OPR como um documento separado :ref:`elemento-article`, mas relacionado
  * ``@xlink:href`` com número DOI do artigo revisado;
  * ``@ext-link-type`` com valor ``"doi"``;
  * ``@contrib-type`` com valor ``"author"``;
- * ``<role>`` com ``"@content-type"`` com um dos valores: ``"reviewer"``; ``"review-assistant"``; ``"stats-reviewer"``; ``"reviewer-external"``; ``"reader"``; ``"translator"``; ``"author"``; ``"editor"``.
+ * ``<role>`` com ``"@specific-use"`` com um dos valores: ``"reviewer"``; ``"review-assistant"``; ``"stats-reviewer"``; ``"reviewer-external"``; ``"reader"``; ``"translator"``; ``"author"``; ``"editor"``.
  * ``@date-type`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
@@ -55,7 +55,7 @@ Exemplo:
                         <surname>Doe</surname>
                         <given-names>Jane X</given-names>
                     </name>
-                    <role content-type="reviewer">Reviewer</role>
+                    <role specific-use="reviewer">Reviewer</role>
                     <xref ref-type="aff" rid="aff1"/>
                 </contrib>
                 <aff id="aff1">
@@ -99,7 +99,7 @@ Publicar OPR junto ao artigo como um :ref:`elemento-sub-article`. SciELO só pub
 
  * ``@article-type`` com um dos valores: ``"referee-report"``; ``"aggregated-review-documents"``; ``"referee-report"``; ``"editor-report"``; ``"author-comment"``; ``"community-comment"``.
  * ``@contrib-type`` com valor ``"author"``;
- * ``<role>`` com ``"@content-type"`` com um dos valores: ``"reviewer"``; ``"review-assistant"``; ``"stats-reviewer"``; ``"reviewer-external"``; ``"reader"``; ``"translator"``; ``"author"``; ``"editor"``.
+ * ``<role>`` com ``"@specific-use"`` com um dos valores: ``"reviewer"``; ``"review-assistant"``; ``"stats-reviewer"``; ``"reviewer-external"``; ``"reader"``; ``"translator"``; ``"author"``; ``"editor"``.
  * ``@date-type`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
@@ -130,7 +130,7 @@ Exemplo:
                         <surname>Doe</surname>
                         <given-names>Jane X.</given-names>
                     </name>
-                    <role content-type="reviewer">Reviewer</role>
+                    <role specific-use="reviewer">Reviewer</role>
                     <xref ref-type="aff" rid="aff1"/>
                 </contrib>
                 </contrib-group>
