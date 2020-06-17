@@ -66,7 +66,7 @@ Exemplo:
                 </permissions>
                 <related-object object-type="peer-reviewed-material" id="r01" xlink:href="10.1590/abd1806-4841.20142998" ext-link-type="doi"/>
                 <history>
-                    <date date-type="referee-report-received" @specific-use"referee-1">
+                    <date date-type="referee-report-received">
                        <day>10</day>
                        <month>01</month>
                         <year>2020</year>
