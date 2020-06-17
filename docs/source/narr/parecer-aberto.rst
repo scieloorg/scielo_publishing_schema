@@ -24,7 +24,7 @@ Publicar OPR como um documento separado :ref:`elemento-article`, mas relacionado
  * ``@xlink:href`` com número DOI do artigo revisado;
  * ``@ext-link-type`` com valor ``"doi"``;
  * ``@contrib-type`` com valor ``"author"``;
- * ``<role>`` com ``"@specific-use"`` com um dos valores: ``"reviewer"``; ``"review-assistant"``; ``"stats-reviewer"``; ``"reviewer-external"``; ``"reader"``; ``"translator"``; ``"author"``; ``"editor"``.
+ * ``<role>`` com ``"@specific-use"`` com valores ``"reviewer"`` ou ``"editor"``;
  * ``@date-type`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
@@ -60,6 +60,7 @@ Exemplo:
                 </contrib>
                 <aff id="aff1">
                 ...
+                </aff>
                 <permissions>
                 ...
                 </permissions>
@@ -97,9 +98,9 @@ OPR como ``<sub-article>``
 
 Publicar OPR junto ao artigo como um :ref:`elemento-sub-article`. SciELO só publicará um parecer por :ref:`elemento-sub-article`. Para isso considerar:
 
- * ``@article-type`` com um dos valores: ``"referee-report"``; ``"aggregated-review-documents"``; ``"referee-report"``; ``"editor-report"``; ``"author-comment"``; ``"community-comment"``.
+ * ``@article-type``com valor ``"referee-report"``;
  * ``@contrib-type`` com valor ``"author"``;
- * ``<role>`` com ``"@specific-use"`` com um dos valores: ``"reviewer"``; ``"review-assistant"``; ``"stats-reviewer"``; ``"reviewer-external"``; ``"reader"``; ``"translator"``; ``"author"``; ``"editor"``.
+ * ``<role>`` com ``"@specific-use"`` com valores ``"reviewer"`` ou ``"editor"``;
  * ``@date-type`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
@@ -166,9 +167,6 @@ Exemplo:
         ...
     </sub-article>
 
-.. note::
- * Se houver mais de um ``<sub-article>`` usar nas datas de ``<history>`` o atributo ``@specific-use`` com valor referee-1, referee-2, etc.
-
 
 .. _elemento-parecer-exemplo-3:
 
@@ -199,7 +197,7 @@ Exemplo:
 
 
 .. note::
- * Quando o parecer não considerar autoria explicita utilizar ``"<anonymous/>"`` + ``"<role>"`` com atributo ``"@specific-use"`` com os valores: reviewer, reader, author ou editor. 
+ * Quando o parecer não considerar autoria explícita utilizar ``"<anonymous/>"`` + ``"<role>"`` com atributo ``"@specific-use"`` com os valores: ``"reviewer"`` ou ``"editor"``. 
  * É obrigatório o uso de DOI próprio para publicação de parecer. 
  * Fonte: MENDES-DA-SILVA, (2019); SOUZA, (2017) e OLIVEIRA, (2018).
 
