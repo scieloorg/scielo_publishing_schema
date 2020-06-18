@@ -158,7 +158,7 @@ Exemplo de ``<collab>`` em ``<back>``:
         <source>The top 10 causes of death. Fact sheet nº 310</source>
         <date-in-citation content-type="updated">Updated May 2014</date-in-citation>
         <date-in-citation content-type="access-date">citado 2012 Out 10</date-in-citation>
-        <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="https://www.who.int/mediacentre/factsheets/fs310/en/index2.html">https://www.who.int/mediacentre/factsheets/fs310/en/index2.html</ext-link>
+        <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="https://www.who.int/">https://www.who.int/</ext-link>
         </comment>
    </element-citation>
    ...

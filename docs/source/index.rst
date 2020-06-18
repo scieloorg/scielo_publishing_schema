@@ -70,7 +70,7 @@ Algumas ferramentas são disponibilizadas e mantidas pela *SciELO* seguindo o mo
      Coleção de macros para :term:`Microsoft Word` para marcação de documentos conforme a :term:`SciELO PS`.
 
 
- `Stylechecker <https://manager.scielo.org/tools/validators/stylechecker/>`_:
+ `Stylechecker <http://manager.scielo.org/tools/validators/stylechecker/>`_:
      Ferramenta online para verificar se determinado *XML* está em conformidade com a especificação :term:`SciELO PS`. Disponível a partir do :term:`SciELO  Manager`.
 
 

@@ -43,7 +43,7 @@ INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO 3297:2007 - Information and 
 
 INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO 639-1 - Language Codes, 2012. Disponível em: <https://www.mathguide.de/info/tools/languagecode.html>. 
 
-FUNDAÇÃO BIBLIOTECA NACIONAL. Agência Brasileira do ISBN. Site da Internet. Rio de Janeiro, 2016. Disponível em: <https://www.isbn.bn.br/website/>.
+FUNDAÇÃO BIBLIOTECA NACIONAL. Agência Brasileira do ISBN. Site da Internet. Rio de Janeiro, 2016. Disponível em: <https://servicos.cbl.org.br/isbn/>.
 
 JATS. Journal Article Tag Suite ANSI/NISO Z39.96-2012. Baltimore, USA: National Information Standards Organization, 2012. Disponível em: <https://jats.niso.org/>.
 
@@ -97,13 +97,13 @@ SciELO. Lista de repositórios para depósito de dados de pesquisa. SciELO, 2019
 
 SciELO. Orientação para criação e apresentação do DOI. SciELO, 2018. Disponível em: <https://wp.scielo.org/wp-content/uploads/orientacao_doi.pdf>.
 
-SciELO. Packtools. Programa de computador. SciELO. Disponível em:  <https://manager.scielo.org/tools/validators/stylechecker/>.
+SciELO. Packtools. Programa de computador. SciELO. Disponível em:  <http://manager.scielo.org/tools/validators/stylechecker/>.
 
-SciELO. Packtools - Style Checker. Programa de computador. SciELO. Disponível em: <https://manager.scielo.org/tools/validators/stylechecker/>.
+SciELO. Packtools - Style Checker. Programa de computador. SciELO. Disponível em: <http://manager.scielo.org/tools/validators/stylechecker/>.
 
-SciELO. SciELO Manager. Programa de computador. SciELO. Disponível em: <https://manager.scielo.org/accounts/login/>.
+SciELO. SciELO Manager. Programa de computador. SciELO. Disponível em: <http://manager.scielo.org/accounts/login/>.
 
-SciELO. SciELO PC Programs. SciELO. Disponível em: <https://docs.scielo.org/projects/scielo-pc-programs/en/latest/>.
+SciELO. SciELO PC Programs. SciELO. Disponível em: <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/>.
 
 SciELO. XML Package Maker. Programa de computador. SciELO. Disponível em: <https://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>.
 
@@ -137,6 +137,6 @@ WORLD WIDE WEB CONSORTIUM (W3C). W3C HTML. Disponível em: <<https://www.w3.org/
 
 WORLD WIDE WEB CONSORTIUM (W3C). Overview of SGML. Disponível em: <https://www.w3.org/MarkUp/SGML/>.
 
-ZOPE CORPORATION. reStrucutredText. Linguagem de computador. [S.l.], 1996. Disponível em: <https://docutils.sourceforge.net/rst.html>.
+ZOPE CORPORATION. reStrucutredText. Linguagem de computador. [S.l.], 1996. Disponível em: <http://docutils.sourceforge.net/rst.html>.
 
 
