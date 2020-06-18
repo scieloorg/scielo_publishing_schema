@@ -108,8 +108,8 @@ Para o atributo ``@article-type`` os valores possíveis são:
 |                    | descrição dos ativos que compõem um conjunto de dados,   |
 |                    | sua estrutura e formato.                                 |
 +--------------------+----------------------------------------------------------+
-| aggregated-review- | Parecer / Revisão por pares aberta (Open Peer Review     |
-| documents          | ou OPR)                                                  |
+| referee-report     | Parecer / Revisão por pares aberta (Open Peer Review     |
+|                    | ou OPR)                                                  |
 +--------------------+----------------------------------------------------------+
                                                                 
 
@@ -126,7 +126,7 @@ Exemplo `JATS versão 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_:
 
 .. code-block:: xml
 
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.8" article-type="research-article" xml:lang="pt">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.9" article-type="research-article" xml:lang="pt">
 
            ...
 
