@@ -25,7 +25,7 @@ Publicar OPR como um documento separado :ref:`elemento-article`, mas relacionado
  * ``@ext-link-type`` com valor ``"doi"``;
  * ``@contrib-type`` com valor ``"author"``;
  * ``<role>`` com ``"@specific-use"`` com valores ``"reviewer"`` ou ``"editor"``;
- * ``@date-type`` com valor ``"referee-report-received"``;
+ * ``@date-type`` em ``<history>`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
 
@@ -35,7 +35,7 @@ Exemplo:
 
 
     ...
-    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.10" article-type="aggregated-review-documents" xml:lang="en">
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.10" article-type="referee-report" xml:lang="en">
     ...
         <front>
             <article-meta>
@@ -101,7 +101,7 @@ Publicar OPR junto ao artigo como um :ref:`elemento-sub-article`. SciELO só pub
  * ``@article-type``com valor ``"referee-report"``;
  * ``@contrib-type`` com valor ``"author"``;
  * ``<role>`` com ``"@specific-use"`` com valores ``"reviewer"`` ou ``"editor"``;
- * ``@date-type`` com valor ``"referee-report-received"``;
+ * ``@date-type`` em ``<history>`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
 
