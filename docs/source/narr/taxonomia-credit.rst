@@ -11,39 +11,39 @@ sistemas de atribuição, crédito e prestação de contas.
 
 A tabela a seguir apresenta os termos definidos pela taxonomia CRediT. É 
 importante notar que múltiplos termos podem ser atribuídos a um único contribuidor. 
-Para mais informação acesse https://dictionary.casrai.org/Contributor_Roles.
+Para mais informação acesse https://casrai.org/term/contributor-roles/.
 
-+----------------------------+------------------------------------------------------------------------+
-| Termo                      | URL                                                                    |
-+============================+========================================================================+
-| Conceptualization          | https://dictionary.casrai.org/Contributor_Roles/Conceptualization      |
-+----------------------------+------------------------------------------------------------------------+
-| Data curation              | https://dictionary.casrai.org/Contributor_Roles/Data_curation          |
-+----------------------------+------------------------------------------------------------------------+
-| Formal analysis            | https://dictionary.casrai.org/Contributor_Roles/Formal_analysis        |
-+----------------------------+------------------------------------------------------------------------+
-| Funding acquisition        | https://dictionary.casrai.org/Contributor_Roles/Funding_acquisition    |
-+----------------------------+------------------------------------------------------------------------+
-| Investigation              | https://dictionary.casrai.org/Contributor_Roles/Investigation          |
-+----------------------------+------------------------------------------------------------------------+
-| Methodology                | https://dictionary.casrai.org/Contributor_Roles/Methodology            |
-+----------------------------+------------------------------------------------------------------------+
-| Project administration     | https://dictionary.casrai.org/Contributor_Roles/Project_administration |
-+----------------------------+------------------------------------------------------------------------+
-| Resources                  | https://dictionary.casrai.org/Contributor_Roles/Resources              |
-+----------------------------+------------------------------------------------------------------------+
-| Software                   | https://dictionary.casrai.org/Contributor_Roles/Software               |
-+----------------------------+------------------------------------------------------------------------+
-| Supervision                | https://dictionary.casrai.org/Contributor_Roles/Supervision            |
-+----------------------------+------------------------------------------------------------------------+
-| Validation                 | https://dictionary.casrai.org/Contributor_Roles/Validation             |
-+----------------------------+------------------------------------------------------------------------+
-| Visualization              | https://dictionary.casrai.org/Contributor_Roles/Visualization          |
-+----------------------------+------------------------------------------------------------------------+
-| Writing – original draft   | https://dictionary.casrai.org/Contributor_Roles/Writing_original_draft |
-+----------------------------+------------------------------------------------------------------------+
-| Writing – review & editing | https://dictionary.casrai.org/Contributor_Roles/Writing_review_editing |
-+----------------------------+------------------------------------------------------------------------+
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Termo                      | URL                                                                                                     |
++============================+=========================================================================================================+
+| Conceptualization          | https://casrai.org/term/contributor-roles-conceptualization/                                            |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Data curation              | https://casrai.org/term/contributor-roles-data-curation/                                                |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Formal analysis            | https://casrai.org/term/contributor-roles-formal-analysis/                                              |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Funding acquisition        | https://casrai.org/term/contributor-roles-funding-acquisition/                                          |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Investigation              | https://casrai.org/term/contributor-roles-investigation/                                                |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Methodology                | https://casrai.org/term/contributor-roles-methodology/                                                  |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Project administration     | https://casrai.org/term/contributor-roles-project-administration/                                       |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Resources                  | https://casrai.org/term/contributor-roles-resources/                                                    |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Software                   | https://casrai.org/term/contributor-roles-software/                                                     |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Supervision                | https://casrai.org/term/contributor-roles-supervision/                                                  |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Validation                 | https://casrai.org/term/contributor-roles-validation/                                                   |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Visualization              | https://web.archive.org/web/20180313224017/http://dictionary.casrai.org/Contributor_Roles/Visualization |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Writing – original draft   | https://casrai.org/term/contributor-roles-writing-original-draft/                                       |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| Writing – review & editing | https://casrai.org/term/contributor-roles-writing-review-editing/                                       |
++----------------------------+---------------------------------------------------------------------------------------------------------+
 
 O papel do autor em relação ao artigo deve ser expresso por um termo no elemento 
 `<role>` do XML. Este termo pode ou não ser idêntico aos da tabela acima, desde 
@@ -62,11 +62,11 @@ Exemplo:
                 <given-names>Ismael Forte</given-names>
                 <suffix>Júnior</suffix>
             </name>
-            <role content-type="https://dictionary.casrai.org/Contributor_Roles/Conceptualization">Conceptualization</role>
-            <role content-type="https://dictionary.casrai.org/Contributor_Roles/Data_curation">Data curation</role>
-            <role content-type="https://dictionary.casrai.org/Contributor_Roles/Formal_analysis">Formal analysis</role>
-            <role content-type="https://dictionary.casrai.org/Contributor_Roles/Investigation">Investigation</role>
-            <role content-type=" https://dictionary.casrai.org/Contributor_Roles/Writing_original_draft">Writing - original draft</role>
+            <role content-type="https://casrai.org/term/contributor-roles-conceptualization/">Conceptualization</role>
+            <role content-type="https://casrai.org/term/contributor-roles-data-curation/">Data curation</role>
+            <role content-type="https://casrai.org/term/contributor-roles-formal-analysis/">Formal analysis</role>
+            <role content-type="https://casrai.org/term/contributor-roles-investigation/">Investigation</role>
+            <role content-type="https://casrai.org/term/contributor-roles-writing-original-draft/">Writing - original draft</role>
             <xref ref-type="aff" rid="aff01">1</xref>
         </contrib>
         ...
@@ -89,7 +89,7 @@ Exemplo:
                 <surname>Silva</surname>
                 <given-names>Rosângela</given-names>
             </name>
-            <role content-type="https://dictionary.casrai.org/Contributor_Roles/Conceptualization">Conceitualização</role>
+            <role content-type="https://casrai.org/term/contributor-roles-conceptualization/">Conceitualização</role>
             <role>Editor de seção</role>
             <xref ref-type="aff" rid="aff02">2</xref>
         </contrib>
@@ -100,6 +100,6 @@ Exemplo:
 Referências
 
 * JATS4R CRediT Taxonomy Guidelines: https://jats4r.org/credit-taxonomy
-* NISO JATS 1.1: https://jats.nlm.nih.gov/publishing/tag-library/1.1/
-* CASRAI Contributor Roles: https://dictionary.casrai.org/Contributor_Roles
+* NISO JATS 1.1: http://jats.nlm.nih.gov/publishing/tag-library/1.1/
+* CASRAI Contributor Roles: https://casrai.org/term/contributor-roles/
 * CRediT: Contributor Role Taxonomy - Going beyond authorship: https://docs.google.com/document/d/1aJxrQXYHW5U6By3KEAHrx1Iho6ioeh3ohNsRMwsoGPM
