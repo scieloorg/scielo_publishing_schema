@@ -11,8 +11,8 @@ a versão 1.9.
 * Adicionado na documentação narrativa Taxonomia CRediT para uso em :ref:`elemento-role`. `#821 <https://github.com/scieloorg/scielo_publishing_schema/issues/821>`
 * Adicionado na documentação narrativa suporte para marcação de Pareceres Abertos (Open Peer Review). `#791 <https://github.com/scieloorg/scielo_publishing_schema/issues/791>`
 * Adicionado em :ref:`elemento-contrib` a obrigatoriedade do uso de ``@contrib-id-type="orcid"`` para pelo menos um autor do documento. `#634 <https://github.com/scieloorg/scielo_publishing_schema/issues/634>`
-* Retirado a restrição de tipos de contribuidores para :ref:`elemento-contrib`. `#890 <https://github.com/scieloorg/scielo_publishing_schema/issues/890>`
-* Retirado da documentação a tag ``<counts>``. `#872 <https://github.com/scieloorg/scielo_publishing_schema/issues/872>`
+* Retirada a restrição de tipos de contribuidores para :ref:`elemento-contrib`. `#890 <https://github.com/scieloorg/scielo_publishing_schema/issues/890>`
+* Retirada da documentação a tag ``<counts>``. `#872 <https://github.com/scieloorg/scielo_publishing_schema/issues/872>`
 
 
  
