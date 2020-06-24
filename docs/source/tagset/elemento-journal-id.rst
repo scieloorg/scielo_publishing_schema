@@ -44,7 +44,7 @@ Exemplo:
     </journal-meta>
     ...
 
-Pode-se consultar o `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/advanced>`_ para verificar se o periódico encontra-se indexado.
+Pode-se consultar o `PubMed <https://www.ncbi.nlm.nih.gov/pubmed/advanced>`_ para verificar se o periódico encontra-se indexado.
 
 
 .. note:: Sugere-se consultar o :ref:`arquivo de metadados dos periódicos <journal-meta-csv>` como referência na identificação dos elementos.

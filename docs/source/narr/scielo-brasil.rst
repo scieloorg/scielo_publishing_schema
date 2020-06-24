@@ -4,7 +4,7 @@ Regras Específicas para SciELO Brasil
 =====================================
 
 Para atender aos "`Critérios, política e procedimentos para a admissão e a 
-permanência de periódicos científicos na Coleção SciELO Brasil <http://www.scielo.br/avaliacao/Criterios_SciELO_Brasil_versao_revisada_atualizada_outubro_20171206.pdf>`_" alguns 
+permanência de periódicos científicos na Coleção SciELO Brasil <https://www.scielo.br/avaliacao/20200500%20Criterios%20SciELO%20Brasil.pdf>`_" alguns 
 elementos apresentam regras específicas de uso:
 
 
@@ -45,7 +45,7 @@ obrigatoriamente, apresentar o valor "doi". Exemplo:
 Tabelas e equações codificadas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Conforme `comunicado <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4aa5&id=0211ed957f&e=[UNIQID>`_ enviado aos editores em 09/12/2016, a partir de Outubro de 2017, equações, fórmulas e tabelas devem ser codificadas. Adicionalmente, as versões em imagem em formato .svg podem ser enviadas dentro do elemento :ref:`elemento-alternatives`.
+Conforme `comunicado <https://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4aa5&id=0211ed957f&e=[UNIQID>`_ enviado aos editores em 09/12/2016, a partir de Outubro de 2017, equações, fórmulas e tabelas devem ser codificadas. Adicionalmente, as versões em imagem em formato .svg podem ser enviadas dentro do elemento :ref:`elemento-alternatives`.
 
 .. _elemento-scibrasil-history:
 
@@ -53,7 +53,7 @@ Conforme `comunicado <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4
 ^^^^^^^^^
 
 O histórico do processo de arbitragem do artigo, compreendendo as datas de recebimento, 
-de aprovação e de revisão, quando presente, deve conter :ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`. Para acessar o comunicado `clique aqui <http://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4aa5&id=2a6634a845>`_
+de aprovação e de revisão, quando presente, deve conter :ref:`elemento-day`, :ref:`elemento-month` e :ref:`elemento-year`. Para acessar o comunicado `clique aqui <https://us4.campaign-archive2.com/?u=f26dcf71797dd37381acb4aa5&id=2a6634a845>`_
 
 
 .. _elemento-scibrasil-article:
@@ -83,7 +83,7 @@ Em :ref:`elemento-article` o atributo ``@article-type`` não permite os tipos de
 Este elemento em :ref:`elemento-article-meta` é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
+ Uso não é obrigatório para `Errata <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ e `Retratação <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_
 
 
 .. _elemento-scibrasil-institution:
@@ -94,7 +94,7 @@ Este elemento em :ref:`elemento-article-meta` é obrigatório para SciELO Brasil
 Este elemento é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ e :ref:`parecer-aberto`
+ Uso não é obrigatório para `Errata <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ e :ref:`parecer-aberto`
 
 
 .. _elemento-scibrasil-article-title:
@@ -113,7 +113,7 @@ Este elemento em :ref:`elemento-title-group` é obrigatório para SciELO Brasil 
 É obrigatório este elemento para SciELO Brasil na referência cruzada com atributo ``@ref-type`` do tipo "bibr" e deve ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ , Editorial e :ref:`parecer-aberto`.
+ Uso não é obrigatório para `Errata <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ , Editorial e :ref:`parecer-aberto`.
 
 
 .. _elemento-scibrasil-ref-list:
@@ -124,7 +124,7 @@ Este elemento em :ref:`elemento-title-group` é obrigatório para SciELO Brasil 
 Este elemento em :ref:`elemento-back` é obrigatório para SciELO Brasil e deve ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ , Editorial e :ref:`parecer-aberto`.
+ Uso não é obrigatório para `Errata <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ , Editorial e :ref:`parecer-aberto`.
 
 
 .. _elemento-scibrasil-country:
@@ -135,7 +135,7 @@ Este elemento em :ref:`elemento-back` é obrigatório para SciELO Brasil e deve 
 Este elemento em :ref:`elemento-aff` é obrigatório para SciELO Brasil e deve ocorrer uma vez.
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ e :ref:`parecer-aberto`.
+ Uso não é obrigatório para `Errata <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ e :ref:`parecer-aberto`.
 
 
 .. _elemento-scibrasil-product:
@@ -153,4 +153,4 @@ Este elemento em :ref:`elemento-aff` é obrigatório para SciELO Brasil e deve o
 Este elemento em :ref:`elemento-contrib` com o atributo ``@contrib-id-type`` e valor "orcid" é obrigatório para SciELO Brasil em pelo menos um dos autores e deve ocorrer até uma vez para cada autor. 
 
 .. note::
- Uso não é obrigatório para `Errata <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ e :ref:`parecer-aberto`.
+ Uso não é obrigatório para `Errata <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ e :ref:`parecer-aberto`.
