@@ -77,7 +77,7 @@ Exemplos:
             <copyright-statement>Copyright © 2014 SciELO</copyright-statement>
             <copyright-year>2014</copyright-year>
             <copyright-holder>SciELO</copyright-holder>
-            <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/" xml:lang="en">
+            <license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by-nc/4.0/" xml:lang="en">
                 <license-p>This is an article published in open access under a Creative Commons license</license-p>
             </license>
         </permissions>
@@ -104,7 +104,7 @@ Exemplos:
             <copyright-statement>Copyright © 2014 SciELO</copyright-statement>
             <copyright-year>2014</copyright-year>
             <copyright-holder>SciELO</copyright-holder>
-            <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="pt">
+            <license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="pt">
                 <license-p>Esta é uma figura publicada em acesso aberto sob uma licença Creative Commons</license-p>
             </license>
         </permissions>
@@ -151,7 +151,7 @@ Exemplos:
             <copyright-statement>Copyright © 2014 SciELO</copyright-statement>
             <copyright-year>2014</copyright-year>
             <copyright-holder>SciELO</copyright-holder>
-            <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="en">
+            <license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by-nc-sa/4.0/" xml:lang="en">
                 <license-p>This is a table published in open access under a Creative Commons license</license-p>
             </license>
       </permissions>
