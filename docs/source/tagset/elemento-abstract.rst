@@ -64,7 +64,8 @@ e ``@abstract-type="key-points"``, respectivamente.
       </article-meta>
       ...
 
-* Resumo Visual em imagem (Visual Abstract): Imagem que representa o texto do resumo de um artigo.
+
+* Resumo Visual com imagem (Visual Abstract): Imagem que representa o texto do resumo de um artigo.
 
 
   .. code-block:: xml
@@ -83,10 +84,11 @@ e ``@abstract-type="key-points"``, respectivamente.
       </abstract>
       ...
 
-.. note:: Para mais informação sobre Resumo Visual em imagem, recomendamos leitura do texto `"Use of a VISUAL ABSTRACT to Disseminate Scientific Research <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>`_ de Andrew M. Ibrahim, 2018. 
+
+.. note:: Para mais informação sobre Resumo Visual com imagem, recomendamos leitura do texto `"Use of a VISUAL ABSTRACT to Disseminate Scientific Research <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>`_ de Andrew M. Ibrahim, 2018. 
 
 
-* Resumo Visual em vídeo (Visual Abstract): Vídeo que representa o resumo de um artigo.
+* Resumo Visual com vídeo (Visual Abstract): Vídeo que representa o resumo de um artigo.
 
 
   .. code-block:: xml
