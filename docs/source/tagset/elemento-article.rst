@@ -15,7 +15,10 @@ Atributos obrigatórios:
   5. ``@xmlns:xlink="http://www.w3.org/1999/xlink"``
   6. ``@specific-use="sps-1.10"``
 
+
 .. note:: No atributo ``@specific-use`` o valor **sps-1.10** é apenas uma referência genérica à versão da *SciELO PS*. Deve ser utilizada uma das `versões vigentes <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/index.html#notas-da-versao>`_.
+
+
 
 +-------------+---------+
 | Aparece em  | Ocorre  |

@@ -23,7 +23,7 @@
 Usado para identificar caracteres que não possuem codificação em um parágrafo.
 
 
-.. note:: Para maiores informações verificar `Codificação e caracteres especiais <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/caracteres.html>`_.
+.. note:: Para maiores informações verificar `Codificação e caracteres especiais <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/caracteres.html>`_.
 
 
 Exemplo:
