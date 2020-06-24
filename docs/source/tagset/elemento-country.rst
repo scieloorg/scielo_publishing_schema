@@ -21,7 +21,7 @@ Atributos obrigatórios:
 
 Identifica o país em um endereço de correspondência ou afiliação.
 
-O atributo ``@country`` é mandatório e deve ser preenchido de acordo com a Norma *ISO 3166*, cujos códigos tem dois caracteres alfabéticos em caixa alta. Os códigos de país podem ser consultados através deste `link <http://www.iso.org/iso/country_codes>`_.
+O atributo ``@country`` é mandatório e deve ser preenchido de acordo com a Norma *ISO 3166*, cujos códigos tem dois caracteres alfabéticos em caixa alta. Os códigos de país podem ser consultados através deste `link <https://www.iso.org/iso/country_codes>`_.
 
 
 Exemplo:

@@ -116,7 +116,7 @@ Exemplo:
                   </date>
              </history>
              <permissions>
-                  <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/" xml:lang="en">
+                  <license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by/4.0/" xml:lang="en">
                        <license-p>This is an article published in open access under a Creative Commons license</license-p>
                   </license>
              </permissions>

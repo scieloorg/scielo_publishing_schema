@@ -23,7 +23,7 @@ Atributos obrigatórios:
 
 Especifica referências a recursos disponíveis na internet. As únicas restrições quanto à sua utilização são:
 
-* O *scheme* deve ser explícito, ou seja, deve começar com ``http://``, ``ftp://``,   ``urn:`` etc;
+* O *scheme* deve ser explícito, ou seja, deve começar com ``https://``, ``ftp://``,   ``urn:`` etc;
 * Referências locais, por meio do *scheme* ``file://`` não são permitidas.
 
 Os valores possíveis para o ``@ext-link-type`` são:
@@ -37,7 +37,7 @@ Exemplo URL:
 .. code-block:: xml
 
     ...
-    <p>Neque porro quisquam est <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">www.scielo.org</ext-link> qui dolorem ipsum quia</p>
+    <p>Neque porro quisquam est <ext-link ext-link-type="uri" xlink:href="https://www.scielo.org">www.scielo.org</ext-link> qui dolorem ipsum quia</p>
     ...
 
 

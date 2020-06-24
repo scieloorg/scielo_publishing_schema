@@ -41,7 +41,7 @@ Atributos obrigatórios:
 ``@mime-subtype``: Determina o formato da mídia, como por exemplo, "mp4", "avi", etc.
 
 .. note::
- * Em http://www.iana.org/assignments/media-types/media-types.xhtml há informação detalhada sobre os valores dos atributos ``@mimetype`` e ``@mime-subtype``.
+ * Em https://www.iana.org/assignments/media-types/media-types.xhtml há informação detalhada sobre os valores dos atributos ``@mimetype`` e ``@mime-subtype``.
  * Para vídeos o formato mp4 é obrigatório.
 
 Exemplos:

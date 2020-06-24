@@ -100,6 +100,6 @@ Exemplo:
 Referências
 
 * JATS4R CRediT Taxonomy Guidelines: https://jats4r.org/credit-taxonomy
-* NISO JATS 1.1: http://jats.nlm.nih.gov/publishing/tag-library/1.1/
+* NISO JATS 1.1: https://jats.nlm.nih.gov/publishing/tag-library/1.1/
 * CASRAI Contributor Roles: https://dictionary.casrai.org/Contributor_Roles
 * CRediT: Contributor Role Taxonomy - Going beyond authorship: https://docs.google.com/document/d/1aJxrQXYHW5U6By3KEAHrx1Iho6ioeh3ohNsRMwsoGPM

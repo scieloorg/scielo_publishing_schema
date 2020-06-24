@@ -100,7 +100,7 @@ Exemplos:
     <ref-list>
         <ref id="B01">
             <label>1</label>
-            <mixed-citation>ARRETCHE, M. Federalism and territorial equality: a contradiction in terms? Dados, Rio de Janeiro, v. 5, n. 02, 2010 . Disponível em: &lt;http://socialsciences.scielo.org.</mixed-citation>
+            <mixed-citation>ARRETCHE, M. Federalism and territorial equality: a contradiction in terms? Dados, Rio de Janeiro, v. 5, n. 02, 2010 . Disponível em: &lt;https://socialsciences.scielo.org.</mixed-citation>
             <element-citation publication-type="journal">
                 <person-group person-group-type="author">
                     <name>
@@ -114,7 +114,7 @@ Exemplos:
                 <volume>5</volume>
                 <issue>02</issue>
                 <year>2010</year>
-                <ext-link ext-link-type="uri" xlink:href="http://socialsciences.scielo.org">http://socialsciences.scielo.org</ext-link>
+                <ext-link ext-link-type="uri" xlink:href="https://socialsciences.scielo.org">https://socialsciences.scielo.org</ext-link>
             </element-citation>
         </ref>
     <ref-list>
@@ -216,13 +216,13 @@ Exemplos:
     ...
     <ref id="B04">
         <label>4</label>
-        <mixed-citation>COB - Comitê Olímpico Brasileiro. Desafio para o corpo. Disponível em: http://www.cob.org.br/esportes/esporte.asp?id=39. (Acesso em 10 abr 2010)</mixed-citation>
+        <mixed-citation>COB - Comitê Olímpico Brasileiro. Desafio para o corpo. Disponível em: https://www.cob.org.br/esportes/esporte.asp?id=39. (Acesso em 10 abr 2010)</mixed-citation>
         <element-citation publication-type="webpage">
             <person-group person-group-type="author">
                 <collab>COB -Comitê Olímpico Brasileiro</collab>
             </person-group>
             <source>Desafio para o corpo</source>
-            <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.cob.org.br/esportes/esporte.asp?id=39">http://www.cob.org.br/esportes/esporte.asp?id=39</ext-link></comment>
+            <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="https://www.cob.org.br/esportes/esporte.asp?id=39">https://www.cob.org.br/esportes/esporte.asp?id=39</ext-link></comment>
             <date-in-citation content-type="access-date">10 abr 2010</date-in-citation>
         </element-citation>
     </ref>
@@ -242,7 +242,7 @@ Exemplos:
 
     <ref id="B21">
         <label>21</label>
-        <mixed-citation>Fugh-Berman A. PharmedOUT [Internet]. Washington: Georgetown University, Department of Physiology and Biophysics; c2006 [cited 2007 Mar 23]. Available from: http://www.pharmedout.org/.</mixed-citation>
+        <mixed-citation>Fugh-Berman A. PharmedOUT [Internet]. Washington: Georgetown University, Department of Physiology and Biophysics; c2006 [cited 2007 Mar 23]. Available from: https://www.pharmedout.org/.</mixed-citation>
         <element-citation publication-type="webpage">
             <person-group person-group-type="author">
                 <name>
@@ -255,7 +255,7 @@ Exemplos:
             <publisher-name>Georgetown University, Department of Physiology and Biophysics</publisher-name>
             <year>c2006</year>
             <date-in-citation>cited 2007 Mar 23</date-in-citation>
-            <comment>Available from: <ext-link ext-link-type="uri" xlink:href="http://www.pharmedout.org">http://www.pharmedout.org</ext-link></comment>
+            <comment>Available from: <ext-link ext-link-type="uri" xlink:href="https://www.pharmedout.org">https://www.pharmedout.org</ext-link></comment>
         </element-citation>
     </ref>
 
@@ -499,14 +499,14 @@ Exemplos:
     <ref-list>
         <ref id="B10">
             <label>10</label>
-            <mixed-citation>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA "ANDRÉ TOSELLO". Base de Dados Tropical. 1985. Disponível em: &lt;http://www.bdt.fat.org.br/acaro/sp/&gt;. Acesso em: 30 maio 2002.</mixed-citation>
+            <mixed-citation>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA "ANDRÉ TOSELLO". Base de Dados Tropical. 1985. Disponível em: &lt;https://www.bdt.fat.org.br/acaro/sp/&gt;. Acesso em: 30 maio 2002.</mixed-citation>
             <element-citation publication-type="database">
                 <person-group person-group-type="author">
                     <collab>FUNDAÇÃO TROPICAL DE PESQUISAS E TECNOLOGIA "ANDRÉ TOSELLO"</collab>
                 </person-group>
                 <source>Base de Dados Tropical</source>
                 <year>1985</year>
-                <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="http://www.bdt.fat.org.br/acaro/sp/">http://www.bdt.fat.org.br/acaro/sp/</ext-link></comment>
+                <comment>Disponível em: <ext-link ext-link-type="uri" xlink:href="https://www.bdt.fat.org.br/acaro/sp/">https://www.bdt.fat.org.br/acaro/sp/</ext-link></comment>
                 <date-in-citation content-type="access-date">30 maio 2002</date-in-citation>
             </element-citation>
         </ref>
@@ -591,7 +591,7 @@ Exemplos:
     </ref>
 
 
-.. note:: Para mais informações consulte `Guia de citação de dados de pesquisa SciELO <https://wp.scielo.org/wp-content/uploads/guia-de-citacao-de-dados_pt.pdf>`_ e `Data citation da JATS4R <http://jats4r.org/data-citations>`_.
+.. note:: Para mais informações consulte `Guia de citação de dados de pesquisa SciELO <https://wp.scielo.org/wp-content/uploads/guia-de-citacao-de-dados_pt.pdf>`_ e `Data citation da JATS4R <https://jats4r.org/data-citations>`_.
 
 
 
