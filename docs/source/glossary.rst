@@ -8,7 +8,7 @@ Glossário
 
 
    ABNT
-     Sigla de *Associação Brasileira de Normas Técnicas*. Fundada em 28 de setembro de 1940, é uma entidade privada e sem fins lucrativos, membro fundador da *International Organization for Standardization* (*ISO*), cuja missão é a elaboração de normas técnicas Brasileiras (*ABNT NBR*), por meio de seus comitês, unidades setoriais e comissões de estudo. Para maiores informações ver `ABNT - Associação Brasileira de Normas Técnicas <http://www.abnt.org.br/>`_.
+     Sigla de *Associação Brasileira de Normas Técnicas*. Fundada em 28 de setembro de 1940, é uma entidade privada e sem fins lucrativos, membro fundador da *International Organization for Standardization* (*ISO*), cuja missão é a elaboração de normas técnicas Brasileiras (*ABNT NBR*), por meio de seus comitês, unidades setoriais e comissões de estudo. Para maiores informações ver `ABNT - Associação Brasileira de Normas Técnicas <https://www.abnt.org.br/>`_.
 
 
    Ahead of Print
@@ -20,7 +20,7 @@ Glossário
 
 
    APA
-      Acrónimo de *American Psychological Association* (Associação Americana de Psicologia). Principal organização científica e profissional em psicologia nos Estados Unidos, tem como missão avançar na criação, comunicação e aplicação de conhecimento em psicologia para benefício da sociedade e melhora da qualidade de vida das pessoas. Para maiores informações ver `American Psychological Association (APA) <http://www.apa.org/>`_.
+      Acrónimo de *American Psychological Association* (Associação Americana de Psicologia). Principal organização científica e profissional em psicologia nos Estados Unidos, tem como missão avançar na criação, comunicação e aplicação de conhecimento em psicologia para benefício da sociedade e melhora da qualidade de vida das pessoas. Para maiores informações ver `American Psychological Association (APA) <https://www.apa.org/>`_.
 
 
    Artigo
@@ -44,7 +44,7 @@ Glossário
 
 
    Currículo Lattes
-     Base de dados de currículos acadêmicos que, em conjunto com as bases de grupos de pesquisa e de instituições, constitui o sistema de informações da *Plataforma Lattes* desenvolvida pelo *CNPq*. A informação disponível na plataforma permite a correta identificação de pesquisadores e cientistas, grupos e linhas de pesquisa, instituições de pesquisa e ensino, e agências de fomento, apoiando as atividades de planejamento,  gestão e formulação de políticas públicas de pesquisa em orgãos governamentais das áreas de ciência, tecnologia e inovação. Para maiores informações ver `Site do CNPq - Sobre a Plataforma Lattes <http://lattes.cnpq.br/>`_.
+     Base de dados de currículos acadêmicos que, em conjunto com as bases de grupos de pesquisa e de instituições, constitui o sistema de informações da *Plataforma Lattes* desenvolvida pelo *CNPq*. A informação disponível na plataforma permite a correta identificação de pesquisadores e cientistas, grupos e linhas de pesquisa, instituições de pesquisa e ensino, e agências de fomento, apoiando as atividades de planejamento,  gestão e formulação de políticas públicas de pesquisa em orgãos governamentais das áreas de ciência, tecnologia e inovação. Para maiores informações ver `Site do CNPq - Sobre a Plataforma Lattes <https://lattes.cnpq.br/>`_.
 
 
    DTD
@@ -60,7 +60,7 @@ Glossário
 
 
    DOI
-     Sistema de identificação de objetos digitais em conformidade com a norma *ISO 26324*. É mantido e governado pela *International DOI Foundation* (IDF), uma organização sem fins lucrativos que provê serviços de registro e atua como autoridade referencial do sistema para as agências de registro. Para maiores informações ver `Digital Object Identifier System <http://www.doi.org/>`_.
+     Sistema de identificação de objetos digitais em conformidade com a norma *ISO 26324*. É mantido e governado pela *International DOI Foundation* (IDF), uma organização sem fins lucrativos que provê serviços de registro e atua como autoridade referencial do sistema para as agências de registro. Para maiores informações ver `Digital Object Identifier System <https://www.doi.org/>`_.
 
 
    elemento-pai
@@ -68,7 +68,7 @@ Glossário
 
 
    Ensaio Clínico
-    Qualquer investigação em seres humanos, objetivando descobrir ou verificar os efeitos farmacodinâmicos, farmacológicos, clínicos e/ou outros efeitos de produto(s) e/ou identificar reações adversas ao produto(s) em investigação com o objetivo de averiguar sua segurança e/ou eficácia. `(EMEA, 1997) <http://www.ema.europa.eu/docs/en_GB/document_library/Scientific_guideline/2009/09/WC500002874.pdf>`_
+    Qualquer investigação em seres humanos, objetivando descobrir ou verificar os efeitos farmacodinâmicos, farmacológicos, clínicos e/ou outros efeitos de produto(s) e/ou identificar reações adversas ao produto(s) em investigação com o objetivo de averiguar sua segurança e/ou eficácia. `(EMEA, 1997) <https://www.ema.europa.eu/docs/en_GB/document_library/Scientific_guideline/2009/09/WC500002874.pdf>`_
 
 
    Estilo SciELO PS
@@ -84,31 +84,31 @@ Glossário
 
 
    ISBN
-     Sigla de *International Standard Book Number* (Numeração padronizada internacional de livros). Criado em 1967, e oficializado como norma internacional em 1972, é um sistema que identifica numericamente quaisquer livros segundo seu título, autor, país e editora, individualizando-os inclusive por edição. Pode também identificar software e permite que seu sistema numérico seja convertido em código de barras, sendo amplamente utilizado por livrarias, bibliotecas e serviços de localização como identificador único de obras. Para maiores informações ver `ISBN <http://www.isbn.bn.br/website/>`_.
+     Sigla de *International Standard Book Number* (Numeração padronizada internacional de livros). Criado em 1967, e oficializado como norma internacional em 1972, é um sistema que identifica numericamente quaisquer livros segundo seu título, autor, país e editora, individualizando-os inclusive por edição. Pode também identificar software e permite que seu sistema numérico seja convertido em código de barras, sendo amplamente utilizado por livrarias, bibliotecas e serviços de localização como identificador único de obras. Para maiores informações ver `ISBN <https://www.isbn.bn.br/website/>`_.
 
 
    ISO
-     Acrônimo de *International Organization for Standardization* (Organização Internacional para Padronização). Orgão internacional independente e não governamental, com uma adesão de 163 entidades nacionais de normalização. Criado em Genebra em 1947, é responsável, através de seus membros, por compartilhar conhecimento e expertise, e desenvolver, de forma voluntária e consensual, normas internacionais relevantes para apoiar a inovação e prover soluções para os desafios globais. No Brasil, a ISO é representada pela :term:`ABNT`. Para maiores informações ver `ISO - International Organization for Standardization <http://www.iso.org/iso/home.html>`_.
+     Acrônimo de *International Organization for Standardization* (Organização Internacional para Padronização). Orgão internacional independente e não governamental, com uma adesão de 163 entidades nacionais de normalização. Criado em Genebra em 1947, é responsável, através de seus membros, por compartilhar conhecimento e expertise, e desenvolver, de forma voluntária e consensual, normas internacionais relevantes para apoiar a inovação e prover soluções para os desafios globais. No Brasil, a ISO é representada pela :term:`ABNT`. Para maiores informações ver `ISO - International Organization for Standardization <https://www.iso.org/iso/home.html>`_.
 
 
    ISO 3166
-     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define códigos de duas letras para países e suas subdivisões. Para maiores informações ver `ISO 3166 - Country codes <http://www.iso.org/iso/country_codes>`_.
+     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define códigos de duas letras para países e suas subdivisões. Para maiores informações ver `ISO 3166 - Country codes <https://www.iso.org/iso/country_codes>`_.
 
 
    ISO 3297:2007
-     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define e promove o uso do :term:`ISSN` como código padronizado de identificação de periódicos e outros recursos seriados. Cada *ISSN* é único para um periódico específico em uma mídia definida. A norma também descreve um mecanismo de ligação (*linking ISSN* - ISSN-L) para prover uma associação entre as diferentes mídias do mesmo recurso. Para maiores informações ver `ISO 3297:2007 - Information and documentation - International standard serial number (ISSN) <http://www.iso.org/iso/catalogue_detail?csnumber=39601>`_.
+     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define e promove o uso do :term:`ISSN` como código padronizado de identificação de periódicos e outros recursos seriados. Cada *ISSN* é único para um periódico específico em uma mídia definida. A norma também descreve um mecanismo de ligação (*linking ISSN* - ISSN-L) para prover uma associação entre as diferentes mídias do mesmo recurso. Para maiores informações ver `ISO 3297:2007 - Information and documentation - International standard serial number (ISSN) <https://www.iso.org/iso/catalogue_detail?csnumber=39601>`_.
 
 
    ISO 639-1
-     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define códigos de duas letras para a maioria dos idiomas do mundo. Para maiores informações ver `Language Codes - ISO 639 <http://www.iso.org/iso/home/standards/language_codes.htm>`_.
+     Norma internacional publicada pela *ISO* (*International Standards Organization*) que define códigos de duas letras para a maioria dos idiomas do mundo. Para maiores informações ver `Language Codes - ISO 639 <https://www.iso.org/iso/home/standards/language_codes.htm>`_.
 
 
    ISSN
-     Sigla de *International Standard Serial Number* (Numeração padronizada internacional de periódicos). Código de 8 (oito) dígitos usado para identificar jornais, periódicos, revistas, relatórios, coleções, sites e bases de dados de todos os tipos e em todas as mídias - impressa e eletrônica. Os critérios para identificação e registro são gerenciados pela rede do ISSN a partir de seu *International Centre for the registration of serial publications* (*CIEPS*), encontrando-se normalizado pela :term:`ISO 3297:2007` - Information and Documentation. Para maiores informações ver `ISSN <http://www.issn.org/>`_.
+     Sigla de *International Standard Serial Number* (Numeração padronizada internacional de periódicos). Código de 8 (oito) dígitos usado para identificar jornais, periódicos, revistas, relatórios, coleções, sites e bases de dados de todos os tipos e em todas as mídias - impressa e eletrônica. Os critérios para identificação e registro são gerenciados pela rede do ISSN a partir de seu *International Centre for the registration of serial publications* (*CIEPS*), encontrando-se normalizado pela :term:`ISO 3297:2007` - Information and Documentation. Para maiores informações ver `ISSN <https://www.issn.org/>`_.
 
 
    JATS
-     Acrónimo de *Journal Article Tag Suite* (Coleção de Elementos de Artigos de Periódicos). Para maiores informações ver `Journal Article Tag Suite <http://jats.nlm.nih.gov/index.html>`_. 
+     Acrónimo de *Journal Article Tag Suite* (Coleção de Elementos de Artigos de Periódicos). Para maiores informações ver `Journal Article Tag Suite <https://jats.nlm.nih.gov/index.html>`_. 
 
 
    JATS4R
@@ -120,7 +120,7 @@ Glossário
 
 
    Markup
-     Termo em inglês que define uma operação de *marcação* em um :term:`documento` textual de acordo com um padrão previamente definido. No *SciELO*, *markup* refere-se ao processo de inclusão de elementos :term:`XML` para identificar, qualificar e agrupar informação de um artigo de periódico durante sua incorporação na base de dados. Refere-se também ao nome do programa que apoia o processo de marcação. Para maiores informações ver `SciELO - Scientific Electronic Library Online <http://www.scielo.org/>`_.
+     Termo em inglês que define uma operação de *marcação* em um :term:`documento` textual de acordo com um padrão previamente definido. No *SciELO*, *markup* refere-se ao processo de inclusão de elementos :term:`XML` para identificar, qualificar e agrupar informação de um artigo de periódico durante sua incorporação na base de dados. Refere-se também ao nome do programa que apoia o processo de marcação. Para maiores informações ver `SciELO - Scientific Electronic Library Online <https://www.scielo.org/>`_.
 
 
    MathML
@@ -128,7 +128,7 @@ Glossário
 
 
    Metodologia SciELO
-     Conjunto de normas, termos de referência, especificações, métodos, processos e programas aplicativos desenvolvidos a partir do Projeto SciELO - iniciado em 1997 - para a publicação eletrônica de edições completas de periódicos científicos, a organização de bases de dados bibliográficas e de textos completos, a recuperação de textos por seu conteúdo, a preservação de arquivos eletrônicos e a produção de indicadores estatísticos de uso e impacto da literatura científica. A Metodologia também inclui critérios de avaliação de revistas, baseado nos padrões internacionais de comunicação científica. Os textos completos são enriquecidos dinamicamente com links de hipertexto com bases de dados nacionais e internacionais, como por exemplo, *LILACS* e *MEDLINE*. Para maiores informações ver `SciELO - Scientific Electronic Library Online <http://www.scielo.org/>`_.
+     Conjunto de normas, termos de referência, especificações, métodos, processos e programas aplicativos desenvolvidos a partir do Projeto SciELO - iniciado em 1997 - para a publicação eletrônica de edições completas de periódicos científicos, a organização de bases de dados bibliográficas e de textos completos, a recuperação de textos por seu conteúdo, a preservação de arquivos eletrônicos e a produção de indicadores estatísticos de uso e impacto da literatura científica. A Metodologia também inclui critérios de avaliação de revistas, baseado nos padrões internacionais de comunicação científica. Os textos completos são enriquecidos dinamicamente com links de hipertexto com bases de dados nacionais e internacionais, como por exemplo, *LILACS* e *MEDLINE*. Para maiores informações ver `SciELO - Scientific Electronic Library Online <https://www.scielo.org/>`_.
 
 
    Microsoft Word
@@ -140,11 +140,11 @@ Glossário
 
 
    NISO
-     Acrônimo de *National Information Standards Organization* (Organização Nacional de Normas de Informação). É uma associação sem fins lucrativos, acreditada pelo *ANSI* (*American National Standards Institute*), que identifica, desenvolve, mantém e publica normas técnicas para gerenciar informação no ambiente digital da atualidade em constante transformação. Para maiores informações ver `NISO site <http://www.niso.org/home/>`_.
+     Acrônimo de *National Information Standards Organization* (Organização Nacional de Normas de Informação). É uma associação sem fins lucrativos, acreditada pelo *ANSI* (*American National Standards Institute*), que identifica, desenvolve, mantém e publica normas técnicas para gerenciar informação no ambiente digital da atualidade em constante transformação. Para maiores informações ver `NISO site <https://www.niso.org/home/>`_.
 
 
    NISO JATS Journal Publishing
-     Coleção de elementos e atributos definidos em formato *XML*, conformando a norma *NISO Z39.96-2015*, que permite descrever através de marcação três modelos de artigos de periódicos. Para maiores informações ver `JATS: Journal Publishing Tag Set <http://jats.nlm.nih.gov/publishing/>`_.
+     Coleção de elementos e atributos definidos em formato *XML*, conformando a norma *NISO Z39.96-2015*, que permite descrever através de marcação três modelos de artigos de periódicos. Para maiores informações ver `JATS: Journal Publishing Tag Set <https://jats.nlm.nih.gov/publishing/>`_.
 
 
    NISO JATS table model
@@ -160,11 +160,11 @@ Glossário
 
  
    Package Maker
-     Literalmente, um empacotador, o *XML Package Maker* é uma ferramenta que permite gerar arquivos :term:`XML` para uso da *SciELO* e do *PMC*. Para maiores informações ver `XML Package Maker <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>`_.
+     Literalmente, um empacotador, o *XML Package Maker* é uma ferramenta que permite gerar arquivos :term:`XML` para uso da *SciELO* e do *PMC*. Para maiores informações ver `XML Package Maker <https://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>`_.
 
 
    Packtools
-     Conjunto de ferramentas online do *SciELO Manager* que permitem validar a sintaxe de arquivos :term:`XML` com a :term:`SciELO PS` e também visualizar o conteúdo destes arquivos em formato *HTML*. Para maiores informações ver `Packtools <http://manager.scielo.org/tools/validators/stylechecker/>`_. 
+     Conjunto de ferramentas online do *SciELO Manager* que permitem validar a sintaxe de arquivos :term:`XML` com a :term:`SciELO PS` e também visualizar o conteúdo destes arquivos em formato *HTML*. Para maiores informações ver `Packtools <https://manager.scielo.org/tools/validators/stylechecker/>`_. 
 
 
    Pacotes SciELO PS
@@ -184,11 +184,11 @@ Glossário
 
 
    Pubmed
-     Sistema que compreende mais de 26 milhões de citações para literatura biomédica proveniente do *MEDLINE*, periódicos de ciências médicas e livros online. As citações podem incluir links para o texto completo no *Pubmed Central* e para sites publicadores na Internet. Para maiores informações ver `Home - PubMed - NCBI <http://www.ncbi.nlm.nih.gov/pubmed>`_.
+     Sistema que compreende mais de 26 milhões de citações para literatura biomédica proveniente do *MEDLINE*, periódicos de ciências médicas e livros online. As citações podem incluir links para o texto completo no *Pubmed Central* e para sites publicadores na Internet. Para maiores informações ver `Home - PubMed - NCBI <https://www.ncbi.nlm.nih.gov/pubmed>`_.
 
 
    PubMed Central
-     Compreende um repositório de livre acesso de texto completo da literatura científica nas áreas de biomedicina e ciências correlatas, disponível na National Library of Medicine por meio dos institutos nacionais de saúde norte-americanos. Também refere-se ao sistema de submissão de artigos científicos com base em padrões definidos pela instituição. Para maiores informações ver `PMC Overview <http://www.ncbi.nlm.nih.gov/pmc/about/intro/>`_.  
+     Compreende um repositório de livre acesso de texto completo da literatura científica nas áreas de biomedicina e ciências correlatas, disponível na National Library of Medicine por meio dos institutos nacionais de saúde norte-americanos. Também refere-se ao sistema de submissão de artigos científicos com base em padrões definidos pela instituição. Para maiores informações ver `PMC Overview <https://www.ncbi.nlm.nih.gov/pmc/about/intro/>`_.  
 
 
    Python
@@ -200,11 +200,11 @@ Glossário
 
 
    RST
-     Sigla de *reStructuredText* (Texto reestruturado). É uma sintaxe de marcação de texto plano, além de ser um componente de parser do software *DocUtils*. Permite realizar marcação inline em arquivos texto através de editores simples como o *Bloco de Notas* do *Windows* e o *vim* do *Linux* para formatação de conteúdo, seja para apresentação na tela ou para formatação de uma saída impressa com qualidade. Foi primariamente desenvolvido para apoiar na documentação de código em linguagem :term:`Python`. Para maiores informações ver `reStrucutredText <http://docutils.sourceforge.net/rst.html>`_.
+     Sigla de *reStructuredText* (Texto reestruturado). É uma sintaxe de marcação de texto plano, além de ser um componente de parser do software *DocUtils*. Permite realizar marcação inline em arquivos texto através de editores simples como o *Bloco de Notas* do *Windows* e o *vim* do *Linux* para formatação de conteúdo, seja para apresentação na tela ou para formatação de uma saída impressa com qualidade. Foi primariamente desenvolvido para apoiar na documentação de código em linguagem :term:`Python`. Para maiores informações ver `reStrucutredText <https://docutils.sourceforge.net/rst.html>`_.
 
 
    SciELO Manager
-     Serviço *online* com acesso identificado para gerenciamento de periódicos do *SciELO*. Para maiores informações ver `SciELO Manager <http://manager.scielo.org/accounts/login/>`_.
+     Serviço *online* com acesso identificado para gerenciamento de periódicos do *SciELO*. Para maiores informações ver `SciELO Manager <https://manager.scielo.org/accounts/login/>`_.
 
 
    SciELO PS
@@ -220,15 +220,15 @@ Glossário
 
 
    SGML
-     Sigla de *Standard Generalized Markup Language* (Linguagem de marcação de padrão universal). Metalinguagem definida pela *ISO 8879:1986*, é utilizada para definir linguagens de marcação, tais como :term:`HTML` :term:`XML`. Para maiores informações ver `Overview of SGML <https://www.w3.org/MarkUp/SGML/>`_ e `ISO 8879:1986 - Information Processing - Text and office systems - Standard Generalized Markup Language (SGML) <http://www.iso.org/iso/catalogue_detail.htm?csnumber=16387>`_.
+     Sigla de *Standard Generalized Markup Language* (Linguagem de marcação de padrão universal). Metalinguagem definida pela *ISO 8879:1986*, é utilizada para definir linguagens de marcação, tais como :term:`HTML` :term:`XML`. Para maiores informações ver `Overview of SGML <https://www.w3.org/MarkUp/SGML/>`_ e `ISO 8879:1986 - Information Processing - Text and office systems - Standard Generalized Markup Language (SGML) <https://www.iso.org/iso/catalogue_detail.htm?csnumber=16387>`_.
 
 
    Stylechecker
-     Utilitário online do *SciELO Manager* para validação de arquivos :term:`XML` em conformidade com a :term:`SciELO PS`. Para maiores informações ver `Packtools - Style Checker <http://manager.scielo.org/tools/validators/stylechecker/>`_.
+     Utilitário online do *SciELO Manager* para validação de arquivos :term:`XML` em conformidade com a :term:`SciELO PS`. Para maiores informações ver `Packtools - Style Checker <https://manager.scielo.org/tools/validators/stylechecker/>`_.
 
 
    tag set
-     Subconjunto de elementos :term:`XML` descritos na *Tag Suite* da especificação :term:`JATS`. Para maiores informações ver `documentação oficial da especificação JATS <http://jats.nlm.nih.gov/faq.html#faq5>`_.
+     Subconjunto de elementos :term:`XML` descritos na *Tag Suite* da especificação :term:`JATS`. Para maiores informações ver `documentação oficial da especificação JATS <https://jats.nlm.nih.gov/faq.html#faq5>`_.
 
 
    Taxonomia
@@ -236,15 +236,15 @@ Glossário
 
 
    Unicode
-     Norma internacional para representação de caracteres independente de idioma, plataforma e programa utilizados. Desenvolvido pelo *Unicode Consortium*, é amplamente utilizado na indústria e nas áreas acadêmicas por permitir uma melhor integração entre sistemas, comunidades, ferramentas de busca e aplicativos em geral. Para maiores informações ver `Unicode Consortium <http://unicode.org/>`_.
+     Norma internacional para representação de caracteres independente de idioma, plataforma e programa utilizados. Desenvolvido pelo *Unicode Consortium*, é amplamente utilizado na indústria e nas áreas acadêmicas por permitir uma melhor integração entre sistemas, comunidades, ferramentas de busca e aplicativos em geral. Para maiores informações ver `Unicode Consortium <https://unicode.org/>`_.
 
 
    UTF-8
-     Sigla de *8-bit Unicode Transformation Format* (Formato de transformação Unicode de 8 bits). É uma codificação da norma Unicode baseada em bytes (8 bits). A codificação compreende sequências para representação dos caracteres definidos pela Unicode, sendo definida como anexo da norma ISO/IEC 10646. Para maiores informações ver `FAQ - UTF-8, UTF-16, UTF-32 e BOM <http://unicode.org/faq/utf_bom.html>`_.
+     Sigla de *8-bit Unicode Transformation Format* (Formato de transformação Unicode de 8 bits). É uma codificação da norma Unicode baseada em bytes (8 bits). A codificação compreende sequências para representação dos caracteres definidos pela Unicode, sendo definida como anexo da norma ISO/IEC 10646. Para maiores informações ver `FAQ - UTF-8, UTF-16, UTF-32 e BOM <https://unicode.org/faq/utf_bom.html>`_.
 
 
    Vancouver
-     Conjunto de normas definidas, publicadas e mantidas pelo *International Committee of Medical Journal Editors* (ICMJE). A entidade é composta de um diminuto grupo de trabalho de editores de periódicos médicos que se reune anualmente para deferir recomendações, condutas, relatórios, normas para editoração e publicação de trabalhos técnicos em periódicos médicos. As normas são amplamente utilizadas nas áreas de medicina, biotecnologia, biomedicina e ciências da saúde, principalmente pela *National Library of Medicine* (NLM). Para maiores informações ver `ICMJE - Home <http://www.icmje.org/>`_. 
+     Conjunto de normas definidas, publicadas e mantidas pelo *International Committee of Medical Journal Editors* (ICMJE). A entidade é composta de um diminuto grupo de trabalho de editores de periódicos médicos que se reune anualmente para deferir recomendações, condutas, relatórios, normas para editoração e publicação de trabalhos técnicos em periódicos médicos. As normas são amplamente utilizadas nas áreas de medicina, biotecnologia, biomedicina e ciências da saúde, principalmente pela *National Library of Medicine* (NLM). Para maiores informações ver `ICMJE - Home <https://www.icmje.org/>`_. 
 
 
    W3C

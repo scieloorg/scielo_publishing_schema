@@ -68,7 +68,7 @@ Exemplo:
         <app-group>
              <app id="app1">
                 <label>Appendix 1</label>
-                <p>Para mais informações <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org">clique aqui</ext-link> para verificar o pdf.</p>
+                <p>Para mais informações <ext-link ext-link-type="uri" xlink:href="https://www.scielo.org">clique aqui</ext-link> para verificar o pdf.</p>
              </app>
         </app-group>
    </back>

@@ -54,7 +54,7 @@ Exemplo:
                 <suffix>Júnior</suffix>
             </name>
             <xref ref-type="aff" rid="aff01">1</xref>
-            <role content-type="https://dictionary.casrai.org/Contributor_Roles/Investigation">Pesquisador</role>
+            <role content-type="https://casrai.org/term/contributor-roles-investigation/">Pesquisador</role>
         </contrib>
         <contrib contrib-type="editor">
             <name>
