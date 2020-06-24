@@ -10,6 +10,6 @@ License
 
 This work is licensed under the *:term:`Creative Commons` Attribution-NonCommercial 4.0 International License*.
 
-To view a copy of this license, please visit http://creativecommons.org/licenses/by-nc/4.0/.
+To view a copy of this license, please visit https://creativecommons.org/licenses/by-nc/4.0/.
 
 .. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}

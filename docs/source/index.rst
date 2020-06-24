@@ -6,16 +6,16 @@ Versão 1.10 - março de 2020.
 
 Versões anteriores:
 
-* `Versão 1.9 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.9-branch/>`_ (suportada).
-* `Versão 1.8 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.8-branch/>`_
-* `Versão 1.7 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.7-branch/>`_ 
-* `Versão 1.6 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.6-branch/>`_.
-* `Versão 1.5 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.5-branch/>`_.
-* `Versão 1.4 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.4-branch/>`_.
-* `Versão 1.3 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.3-branch/>`_.
-* `Versão 1.2 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.2-branch/>`_.
-* `Versão 1.1 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.1-branch/>`_.
-* `Versão 1.0 <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.0-branch/>`_.
+* `Versão 1.9 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.9-branch/>`_ (suportada).
+* `Versão 1.8 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.8-branch/>`_
+* `Versão 1.7 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.7-branch/>`_ 
+* `Versão 1.6 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.6-branch/>`_.
+* `Versão 1.5 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.5-branch/>`_.
+* `Versão 1.4 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.4-branch/>`_.
+* `Versão 1.3 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.3-branch/>`_.
+* `Versão 1.2 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.2-branch/>`_.
+* `Versão 1.1 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.1-branch/>`_.
+* `Versão 1.0 <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/1.0-branch/>`_.
 
 
 Outros idiomas:
@@ -30,12 +30,12 @@ Este guia descreve o uso do estilo de marcação adotado pela *SciELO* para subm
 
 A :term:`SciELO Publishing Schema` (:term:`SciELO PS`) é composta pelas especificações:
 
-* :term:`NISO JATS Journal Publishing` `DTD 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_;
+* :term:`NISO JATS Journal Publishing` `DTD 1.1 <https://jats.nlm.nih.gov/publishing/1.1/>`_;
 * :term:`Estilo SciELO PS` com regras especializadas da :term:`Metodologia SciELO`.
 
 Os usuários deste guia devem possuir conhecimentos prévios de :term:`XML` e :term:`DTD`.
 
-Dúvidas e/ou comentários acerca da especificação :term:`SciELO PS`, deste guia de uso ou das ferramentas disponibilizadas pela *SciELO* como apoio à marcação em :term:`XML` devem ser tratadas por meio de lista de discussão `scielo-xml <http://groups.google.com/group/scielo-xml/>`_.
+Dúvidas e/ou comentários acerca da especificação :term:`SciELO PS`, deste guia de uso ou das ferramentas disponibilizadas pela *SciELO* como apoio à marcação em :term:`XML` devem ser tratadas por meio de lista de discussão `scielo-xml <https://groups.google.com/group/scielo-xml/>`_.
 
 
 Notas da versão
@@ -66,7 +66,7 @@ Ferramentas de apoio
 
 Algumas ferramentas são disponibilizadas e mantidas pela *SciELO* seguindo o modelo :term:`open source`, para apoiar o processo de marcação de documentos em formato *XML*.
 
- `Markup <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/markup.html>`_:
+ `Markup <https://docs.scielo.org/projects/scielo-pc-programs/en/latest/markup.html>`_:
      Coleção de macros para :term:`Microsoft Word` para marcação de documentos conforme a :term:`SciELO PS`.
 
 
@@ -78,7 +78,7 @@ Algumas ferramentas são disponibilizadas e mantidas pela *SciELO* seguindo o mo
      Biblioteca escrita em :term:`Python` com funcionalidades e utilitários para manipulação de pacotes e XMLs da :term:`SciELO PS`.
 
 
- `Package Maker <http://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>`_:
+ `Package Maker <https://docs.scielo.org/projects/scielo-pc-programs/en/latest/xml_package_maker.html>`_:
      Ferramenta para geração de :term:`Pacotes SciELO PS` e :term:`PMC`. Adicionalmente, fornece relatórios detalhados sobre a estrutura e a validade de alguns metadados de documentos *XML* como subproduto do processo de geração.
 
 .. _journal-meta-csv:
@@ -86,7 +86,7 @@ Algumas ferramentas são disponibilizadas e mantidas pela *SciELO* seguindo o mo
 Metadados de periódicos
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Complementarmente, encontra-se disponível em formato :term:`csv` uma lista de metadados de periódicos necessários para identificação de elementos em ``<journal-meta>``. O documento pode ser baixado a partir deste `link <http://static.scielo.org/sps/titles-tab-v2-utf-8.csv>`_ e sua atualização é semanal, sempre às quartas-feiras.
+Complementarmente, encontra-se disponível em formato :term:`csv` uma lista de metadados de periódicos necessários para identificação de elementos em ``<journal-meta>``. O documento pode ser baixado a partir deste `link <https://static.scielo.org/sps/titles-tab-v2-utf-8.csv>`_ e sua atualização é semanal, sempre às quartas-feiras.
 
 
 Convenções utilizadas neste guia
@@ -164,7 +164,7 @@ Documentação narrativa
 Lista de elementos
 ------------------
 
-Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A lista completa dos elementos *XML* que compõem o :term:`tag set` da JATS na versão `1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_ deve ser consultada se necessário.
+Esta lista compreende apenas os elementos *XML* do :term:`Estilo SciELO PS`. A lista completa dos elementos *XML* que compõem o :term:`tag set` da JATS na versão `1.1 <https://jats.nlm.nih.gov/publishing/1.1/>`_ deve ser consultada se necessário.
 
 .. toctree::
    :maxdepth: 1

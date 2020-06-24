@@ -51,7 +51,7 @@ Exemplo de ``<role>`` em ``<contrib>``:
             <suffix>Junior</suffix>
         </name>
         <xref ref-type="aff" rid="aff02">2</xref>
-        <role content-type="https://dictionary.casrai.org/Contributor_Roles/Investigation">Pesquisador</role>
+        <role content-type="https://casrai.org/term/contributor-roles-investigation/">Pesquisador</role>
         ...
     </contrib>
     ...

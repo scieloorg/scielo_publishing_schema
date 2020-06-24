@@ -30,7 +30,7 @@ Os atributos obrigatórios são:
 
 
 .. note:: 
- * No endereço http://www.iana.org/assignments/media-types/media-types.xhtml há informação detalhada sobre os valores dos atributos ``@mimetype`` e ``@mime-subtype``.
+ * No endereço https://www.iana.org/assignments/media-types/media-types.xhtml há informação detalhada sobre os valores dos atributos ``@mimetype`` e ``@mime-subtype``.
  * Recomendamos por segurança, que seja utilizado o formato "pdf" para adicionar material suplementar.
  * Para vídeos o formato mp4 é obrigatório.
 

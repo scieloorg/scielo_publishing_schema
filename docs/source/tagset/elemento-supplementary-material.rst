@@ -51,7 +51,7 @@ Material suplementar é usado para adicionar informações a um artigo, fornecen
 
 .. note:: 
  * Este elemento, em :ref:`elemento-front`, deve ser inserido abaixo das informações de paginação ou antes do elemento :ref:`elemento-history`.
- * Em http://www.iana.org/assignments/media-types/media-types.xhtml há informação detalhada sobre os valores dos atributos ``@mimetype`` e ``@mime-subtype``.
+ * Em https://www.iana.org/assignments/media-types/media-types.xhtml há informação detalhada sobre os valores dos atributos ``@mimetype`` e ``@mime-subtype``.
  * Recomendamos por segurança, que seja utilizado o formato "pdf" para adicionar material suplementar.
  * Para vídeos o formato "mp4" é obrigatório.
 
