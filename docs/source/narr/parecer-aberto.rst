@@ -19,12 +19,13 @@ OPR como ``<article>`` (Recomendado)
 
 Publicar OPR como um documento separado :ref:`elemento-article`, mas relacionado ``<related-object>`` ao artigo. SciELO só publicará um parecer por documento. Para isso considerar:
 
- * ``@article-type`` com valor ``"aggregated-review-documents"``;
+ * ``@article-type``com valor ``"referee-report"``; 
  * ``@object-type`` com valor ``"peer-reviewed-material"``;
  * ``@xlink:href`` com número DOI do artigo revisado;
  * ``@ext-link-type`` com valor ``"doi"``;
- * ``@contrib-type`` com valor ``"reviewer"``;
- * ``@date-type`` com valor ``"referee-report-received"``;
+ * ``@contrib-type`` com valor ``"author"``;
+ * ``<role>`` com ``"@specific-use"`` com valores ``"reviewer"`` ou ``"editor"``;
+ * ``@date-type`` em ``<history>`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
 
@@ -34,7 +35,7 @@ Exemplo:
 
 
     ...
-    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.10" article-type="aggregated-review-documents" xml:lang="en">
+    <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.10" article-type="referee-report" xml:lang="en">
     ...
         <front>
             <article-meta>
@@ -49,15 +50,17 @@ Exemplo:
                     <article-title>Open Peer Review: article X</article-title>
                 </title-group>
                 <contrib-group>
-                <contrib contrib-type="reviewer">
+                <contrib contrib-type="author">
                     <name>
                         <surname>Doe</surname>
                         <given-names>Jane X</given-names>
                     </name>
+                    <role specific-use="reviewer">Reviewer</role>
                     <xref ref-type="aff" rid="aff1"/>
                 </contrib>
                 <aff id="aff1">
                 ...
+                </aff>
                 <permissions>
                 ...
                 </permissions>
@@ -95,9 +98,10 @@ OPR como ``<sub-article>``
 
 Publicar OPR junto ao artigo como um :ref:`elemento-sub-article`. SciELO só publicará um parecer por :ref:`elemento-sub-article`. Para isso considerar:
 
- * ``@article-type`` com valor ``"referee-report"``;
- * ``@contrib-type`` com valor ``"reviewer"``;
- * ``@date-type`` com valor ``"referee-report-received"``;
+ * ``@article-type``com valor ``"referee-report"``;
+ * ``@contrib-type`` com valor ``"author"``;
+ * ``<role>`` com ``"@specific-use"`` com valores ``"reviewer"`` ou ``"editor"``;
+ * ``@date-type`` em ``<history>`` com valor ``"referee-report-received"``;
  * ``<custom-meta-group>`` + ``<custom-meta>`` + ``<meta-name>`` e ``<meta-value>``.
 
 
@@ -122,11 +126,12 @@ Exemplo:
                     <article-title>Open Peer Review: article X</article-title>
                 </title-group>
                 <contrib-group>
-                <contrib contrib-type="reviewer">
+                <contrib contrib-type="author">
                     <name>
                         <surname>Doe</surname>
                         <given-names>Jane X.</given-names>
                     </name>
+                    <role specific-use="reviewer">Reviewer</role>
                     <xref ref-type="aff" rid="aff1"/>
                 </contrib>
                 </contrib-group>
@@ -192,6 +197,8 @@ Exemplo:
 
 
 .. note::
- * É obrigatório o uso de DOI próprio para publicação de parecer.
+ * Quando o parecer não considerar autoria explícita utilizar ``"<anonymous/>"`` + ``"<role>"`` com atributo ``"@specific-use"`` com os valores: ``"reviewer"`` ou ``"editor"``. 
+ * É obrigatório o uso de DOI próprio para publicação de parecer. 
  * Fonte: MENDES-DA-SILVA, (2019); SOUZA, (2017) e OLIVEIRA, (2018).
+
  

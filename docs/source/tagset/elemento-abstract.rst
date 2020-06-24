@@ -64,6 +64,7 @@ e ``@abstract-type="key-points"``, respectivamente.
       </article-meta>
       ...
 
+
 * Resumo Visual com imagem (Visual Abstract): Imagem que representa o texto do resumo de um artigo.
 
 
@@ -82,6 +83,7 @@ e ``@abstract-type="key-points"``, respectivamente.
           </p>  
       </abstract>
       ...
+
 
 .. note:: Para mais informação sobre Resumo Visual com imagem, recomendamos leitura do texto `"Use of a VISUAL ABSTRACT to Disseminate Scientific Research <https://static1.squarespace.com/static/5854aaa044024321a353bb0d/t/5a527aa89140b76bbfb2028a/1515354827682/VisualAbstract_Primer_v4_1.pdf>`_ de Andrew M. Ibrahim, 2018. 
 

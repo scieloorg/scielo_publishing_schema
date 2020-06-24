@@ -13,9 +13,12 @@ Atributos obrigatórios:
   3. ``@xml:lang``
   4. ``@xmlns:mml``
   5. ``@xmlns:xlink="http://www.w3.org/1999/xlink"``
-  6. ``@specific-use="sps-1.8"``
+  6. ``@specific-use="sps-1.10"``
 
-.. note:: No atributo ``@specific-use`` o valor **sps-1.8** é apenas uma referência genérica à versão da *SciELO PS*. Deve ser utilizada uma das `versões vigentes <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/index.html#notas-da-versao>`_.
+
+.. note:: No atributo ``@specific-use`` o valor **sps-1.10** é apenas uma referência genérica à versão da *SciELO PS*. Deve ser utilizada uma das `versões vigentes <http://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/index.html#notas-da-versao>`_.
+
+
 
 +-------------+---------+
 | Aparece em  | Ocorre  |
@@ -108,8 +111,8 @@ Para o atributo ``@article-type`` os valores possíveis são:
 |                    | descrição dos ativos que compõem um conjunto de dados,   |
 |                    | sua estrutura e formato.                                 |
 +--------------------+----------------------------------------------------------+
-| aggregated-review- | Parecer / Revisão por pares aberta (Open Peer Review     |
-| documents          | ou OPR)                                                  |
+| referee-report     | Parecer / Revisão por pares aberta (Open Peer Review     |
+|                    | ou OPR)                                                  |
 +--------------------+----------------------------------------------------------+
                                                                 
 
@@ -126,7 +129,7 @@ Exemplo `JATS versão 1.1 <http://jats.nlm.nih.gov/publishing/1.1/>`_:
 
 .. code-block:: xml
 
-     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.8" article-type="research-article" xml:lang="pt">
+     <article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1" specific-use="sps-1.10" article-type="research-article" xml:lang="pt">
 
            ...
 
