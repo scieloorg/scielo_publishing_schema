@@ -113,7 +113,7 @@ Este elemento em :ref:`elemento-title-group` é obrigatório para SciELO Brasil 
 É obrigatório este elemento para SciELO Brasil na referência cruzada com atributo ``@ref-type`` do tipo "bibr" e deve ocorrer uma ou mais vezes.
 
 .. note::
- Uso não é obrigatório para `Errata <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ , Editorial, :ref:`parecer-aberto`e Adendo.
+ Uso não é obrigatório para `Errata <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/errata.html>`_ , `Retratação <https://docs.scielo.org/projects/scielo-publishing-schema/pt_BR/latest/narr/retratacao.html>`_ , Editorial, :ref:`parecer-aberto` e Adendo.
 
 
 .. _elemento-scibrasil-ref-list:
