@@ -80,7 +80,7 @@ Para o atributo ``@article-type`` os valores possíveis são:
 | other              | anexo, discussão, artigo de preocupação, introdução      |
 |                    | entre outros.                                            |
 +--------------------+----------------------------------------------------------+
-| partial-retraction | Retratação ou recusa de parte de materiais já publicados |
+| partial-retraction | Retratação ou recusa de parte de materiais já publicados.|
 |                    |                                                          |
 +--------------------+----------------------------------------------------------+
 |                    | Comunicação breve - Informe sobre atualização de         |
@@ -111,8 +111,10 @@ Para o atributo ``@article-type`` os valores possíveis são:
 |                    | descrição dos ativos que compõem um conjunto de dados,   |
 |                    | sua estrutura e formato.                                 |
 +--------------------+----------------------------------------------------------+
-| referee-report     | Parecer / Revisão por pares aberta (Open Peer Review     |
-|                    | ou OPR)                                                  |
+| referee-report     | Parecer / Revisão por pares aberta.                      |
++--------------------+----------------------------------------------------------+
+| addendum           | Documento que agrega informação ou esclarecimento a um   |
+|                    | documento já publicado.                                  |
 +--------------------+----------------------------------------------------------+
                                                                 
 
