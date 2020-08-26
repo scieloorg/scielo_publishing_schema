@@ -177,7 +177,7 @@ Regra para *Ahead Of Print*
 
 Regra:
 
-    ``ISSN-acrônimo-nahead-nº lote``
+    ``ISSN-acrônimo-nahead-nº lote + dois últimos dígitos do ano``
 
 Exemplo:
 
